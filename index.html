@@ -1524,7 +1524,7 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label class="form-label">차종</label>
-                    <select id="vacq-type" class="form-select">
+                    <select id="vacq-type" class="select">
                       <option value="passenger">비영업용 승용차 (7%)</option>
                       <option value="passenger-biz">영업용 승용차 (4%)</option>
                       <option value="light">경차 (4%)</option>
@@ -1536,13 +1536,13 @@
                   <div class="form-group">
                     <label class="form-label">취득가액 (원)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="vacq-price" class="form-input" inputmode="numeric" placeholder="예: 30,000,000">
-                      <span class="unit-label">원</span>
+                      <input type="text" id="vacq-price" class="input" inputmode="numeric" placeholder="예: 30,000,000">
+                      <span class="num-input-unit">원</span>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="form-label">친환경차 감면</label>
-                    <select id="vacq-eco" class="form-select">
+                    <select id="vacq-eco" class="select">
                       <option value="none">해당 없음</option>
                       <option value="hybrid">하이브리드 (최대 140만원)</option>
                       <option value="electric">전기차 (최대 140만원)</option>
@@ -1583,13 +1583,13 @@
                   <div class="form-group">
                     <label class="form-label">차량 출고가 (원)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="vexcise-price" class="form-input" inputmode="numeric" placeholder="예: 40,000,000">
-                      <span class="unit-label">원</span>
+                      <input type="text" id="vexcise-price" class="input" inputmode="numeric" placeholder="예: 40,000,000">
+                      <span class="num-input-unit">원</span>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="form-label">친환경차 감면</label>
-                    <select id="vexcise-eco" class="form-select">
+                    <select id="vexcise-eco" class="select">
                       <option value="none">해당 없음</option>
                       <option value="hybrid">하이브리드 (최대 100만원)</option>
                       <option value="electric">전기차 (최대 300만원)</option>
@@ -2333,22 +2333,22 @@
                   <div class="form-group">
                     <label class="form-label">양도가액 (매도금액)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="sdom-sell" class="form-input" inputmode="numeric" placeholder="예: 100,000,000">
-                      <span class="unit-label">원</span>
+                      <input type="text" id="sdom-sell" class="input" inputmode="numeric" placeholder="예: 100,000,000">
+                      <span class="num-input-unit">원</span>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="form-label">취득가액 (매수금액)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="sdom-buy" class="form-input" inputmode="numeric" placeholder="예: 80,000,000">
-                      <span class="unit-label">원</span>
+                      <input type="text" id="sdom-buy" class="input" inputmode="numeric" placeholder="예: 80,000,000">
+                      <span class="num-input-unit">원</span>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="form-label">필요경비 (수수료·세금 등)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="sdom-expense" class="form-input" inputmode="numeric" placeholder="예: 500,000">
-                      <span class="unit-label">원</span>
+                      <input type="text" id="sdom-expense" class="input" inputmode="numeric" placeholder="예: 500,000">
+                      <span class="num-input-unit">원</span>
                     </div>
                   </div>
                   <div class="calc-action-bar">
@@ -2393,23 +2393,23 @@
                   <div class="form-group">
                     <label class="form-label">배당금 총액 (연간)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="sdiv-amount" class="form-input" inputmode="numeric" placeholder="예: 25,000,000">
-                      <span class="unit-label">원</span>
+                      <input type="text" id="sdiv-amount" class="input" inputmode="numeric" placeholder="예: 25,000,000">
+                      <span class="num-input-unit">원</span>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="form-label">기타 종합소득 (종합과세 시)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="sdiv-other-income" class="form-input" inputmode="numeric" placeholder="예: 50,000,000">
-                      <span class="unit-label">원</span>
+                      <input type="text" id="sdiv-other-income" class="input" inputmode="numeric" placeholder="예: 50,000,000">
+                      <span class="num-input-unit">원</span>
                     </div>
                   </div>
                   <div id="sdiv-foreign-section" style="display:none">
                     <div class="form-group">
                       <label class="form-label">외국납부세액 (원)</label>
                       <div class="num-input-wrap">
-                        <input type="text" id="sdiv-foreign-tax" class="form-input" inputmode="numeric" placeholder="예: 3,750,000">
-                        <span class="unit-label">원</span>
+                        <input type="text" id="sdiv-foreign-tax" class="input" inputmode="numeric" placeholder="예: 3,750,000">
+                        <span class="num-input-unit">원</span>
                       </div>
                     </div>
                   </div>
@@ -2524,14 +2524,14 @@
                   <div data-section="individual">
                     <div class="form-group">
                       <label class="form-label">세대 수</label>
-                      <input type="number" id="resident-household" class="form-input" value="1" min="1" style="max-width:120px">
+                      <input type="number" id="resident-household" class="input" value="1" min="1" style="max-width:120px">
                     </div>
                   </div>
                   <!-- 사업소분 -->
                   <div data-section="business" style="display:none">
                     <div class="form-group">
                       <label class="form-label">사업장 규모</label>
-                      <select id="resident-biz-scale" class="form-select">
+                      <select id="resident-biz-scale" class="select">
                         <option value="small">개인 / 자본금 1억 이하 (5만원)</option>
                         <option value="medium">자본금 1억 초과 ~ 10억 이하 (10만원)</option>
                         <option value="large">자본금 10억 초과 ~ 50억 이하 (20만원)</option>
@@ -2540,7 +2540,7 @@
                     </div>
                     <div class="form-group">
                       <label class="form-label">사업장 연면적 (㎡)</label>
-                      <input type="number" id="resident-area" class="form-input" placeholder="예: 500" style="max-width:200px">
+                      <input type="number" id="resident-area" class="input" placeholder="예: 500" style="max-width:200px">
                       <span style="font-size:12px;color:var(--text-secondary)">330㎡ 초과 시 ㎡당 250원 부과</span>
                     </div>
                   </div>
@@ -2549,13 +2549,13 @@
                     <div class="form-group">
                       <label class="form-label">월 급여총액</label>
                       <div class="num-input-wrap">
-                        <input type="text" id="resident-salary" class="form-input" inputmode="numeric" placeholder="예: 200,000,000">
-                        <span class="unit-label">원</span>
+                        <input type="text" id="resident-salary" class="input" inputmode="numeric" placeholder="예: 200,000,000">
+                        <span class="num-input-unit">원</span>
                       </div>
                     </div>
                     <div class="form-group">
                       <label class="form-label">종업원 수</label>
-                      <input type="number" id="resident-emp-count" class="form-input" placeholder="예: 100" style="max-width:150px">
+                      <input type="number" id="resident-emp-count" class="input" placeholder="예: 100" style="max-width:150px">
                       <span style="font-size:12px;color:var(--text-secondary)">50명 이하 면제</span>
                     </div>
                   </div>
