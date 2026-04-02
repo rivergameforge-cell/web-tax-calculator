@@ -1,0 +1,220 @@
+/* ===== Responsive Styles ===== */
+
+/* ===== Large Desktop (1440px+): Show side ads ===== */
+@media (min-width: 1440px) {
+  #body-wrapper {
+    justify-content: center;
+  }
+
+  .ad-side-left,
+  .ad-side-right {
+    display: block;
+  }
+}
+
+/* ===== Desktop (1024px - 1439px): Hide side ads ===== */
+@media (max-width: 1439px) {
+  .ad-side-left,
+  .ad-side-right {
+    display: none;
+  }
+}
+
+/* ===== Tablet (640px - 1023px) ===== */
+@media (max-width: 1023px) {
+  :root {
+    --sidebar-width: 220px;
+  }
+
+  .calc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-search {
+    max-width: 200px;
+  }
+}
+
+/* ===== Mobile (< 640px) ===== */
+@media (max-width: 639px) {
+  :root {
+    --sidebar-width: 280px;
+  }
+
+  /* Header */
+  #header {
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .header-logo .logo-sub {
+    display: none;
+  }
+
+  .header-search {
+    display: none;
+  }
+
+  #btn-hamburger {
+    display: flex;
+  }
+
+  /* Sidebar becomes slide-in drawer */
+  #sidebar {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    bottom: 0;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 250ms ease;
+    height: calc(100vh - var(--header-height));
+    box-shadow: var(--shadow-xl);
+    border-right: 1px solid var(--border);
+  }
+
+  #sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* Mobile category chips strip */
+  #mobile-cat-strip {
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding: 10px 12px;
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex-shrink: 0;
+  }
+
+  #mobile-cat-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-cat-chip {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all var(--transition);
+    flex-shrink: 0;
+  }
+
+  .mobile-cat-chip.active {
+    background: var(--accent-light);
+    border-color: var(--accent-border);
+    color: var(--accent);
+  }
+
+  /* Tab bar on mobile */
+  .tab-bar {
+    padding: 0 12px;
+  }
+
+  .tab-item {
+    padding: 12px 12px;
+    font-size: 12px;
+  }
+
+  /* Calculator area */
+  .calculator-area {
+    padding: 14px 12px;
+  }
+
+  .calc-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card-body {
+    padding: 14px;
+  }
+
+  .result-row.total .r-value {
+    font-size: 18px;
+  }
+
+  /* Ad banner — show mobile version */
+  .ad-banner-content {
+    padding: 6px 12px;
+  }
+
+  .ad-728x90 {
+    display: none;
+  }
+
+  .ad-320x50 {
+    display: flex;
+  }
+
+  /* Bottom anchor */
+  #ad-anchor {
+    height: 50px;
+  }
+
+  :root {
+    --ad-anchor-height: 50px;
+  }
+
+  /* Period inputs */
+  .period-input-group {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  /* Welcome grid */
+  .welcome-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .welcome-title {
+    font-size: 18px;
+  }
+
+  /* Page title bar */
+  .page-title-bar {
+    padding: 12px 12px 0;
+  }
+
+  .page-title {
+    font-size: 16px;
+  }
+}
+
+/* ===== Desktop-only: show mobile cat strip hidden ===== */
+@media (min-width: 640px) {
+  #mobile-cat-strip {
+    display: none;
+  }
+}
+
+/* ===== Very small screens (< 360px) ===== */
+@media (max-width: 359px) {
+  .radio-group {
+    flex-direction: column;
+  }
+
+  .radio-label {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+  }
+}

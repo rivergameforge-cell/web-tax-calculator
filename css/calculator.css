@@ -1,0 +1,287 @@
+/* ===== Calculator Specific Styles ===== */
+
+/* Input Panel */
+.input-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.input-panel .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 16px;
+}
+
+/* ===== Number Input with Comma Format ===== */
+.num-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.num-input-wrap .input {
+  padding-right: 48px;
+}
+
+.num-input-unit {
+  position: absolute;
+  right: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+
+/* Unit Toggle Row */
+.unit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.unit-row .form-label {
+  margin-bottom: 0;
+}
+
+/* ===== Tax Rate Display ===== */
+.rate-display {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  background: var(--warning-light);
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--warning);
+}
+
+/* ===== Result Breakdown ===== */
+.result-breakdown {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.breakdown-title {
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+.breakdown-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.breakdown-row:last-child {
+  border-bottom: none;
+}
+
+.breakdown-row .br-label {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.breakdown-row .br-value {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.breakdown-row .br-value.positive {
+  color: var(--success);
+}
+
+.breakdown-row .br-value.negative {
+  color: var(--danger);
+}
+
+.breakdown-row.indent {
+  padding-left: 28px;
+  background: var(--bg-secondary);
+}
+
+.breakdown-row.indent .br-label {
+  font-size: 12px;
+}
+
+.breakdown-row.total {
+  background: var(--accent-light);
+  padding: 14px 16px;
+}
+
+.breakdown-row.total .br-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.breakdown-row.total .br-value {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+/* ===== Calculator Action Bar ===== */
+.calc-action-bar {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+/* ===== Info Reference ===== */
+.info-ref-page {
+  padding: 24px;
+  max-width: 700px;
+}
+
+.info-ref-page h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.info-ref-page .info-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.info-table {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.info-table th {
+  background: var(--bg-secondary);
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+}
+
+.info-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.info-table tr:last-child td {
+  border-bottom: none;
+}
+
+.info-table tr:nth-child(even) td {
+  background: var(--bg-secondary);
+}
+
+/* ===== Tax Rate Table ===== */
+.rate-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
+
+/* ===== Period Input ===== */
+.period-input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+/* ===== Calculation Steps ===== */
+.calc-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.calc-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--accent);
+  font-size: 12px;
+}
+
+.calc-step-num {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.calc-step-content .step-label {
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+
+.calc-step-content .step-value {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+/* ===== Tax Exempt Badge ===== */
+.exempt-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: var(--success-light);
+  border: 1px solid var(--success);
+  border-radius: var(--radius-md);
+  color: var(--success);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ===== Print Styles ===== */
+@media print {
+  #header, #sidebar, .ad-side-left, .ad-side-right, #ad-anchor,
+  .calc-action-bar, .tab-bar, .ad-banner-content, #btn-hamburger {
+    display: none !important;
+  }
+
+  #main-content {
+    width: 100%;
+  }
+
+  .calc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-breakdown {
+    break-inside: avoid;
+  }
+}

@@ -1,0 +1,2842 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="대한민국 세금 계산기 - 부동산 취득세, 양도소득세, 근로소득세, 자동차세, 주식 양도세 등 31종 세금을 2026년 최신 세율로 정확하게 계산하세요.">
+  <meta name="keywords" content="세금계산기,취득세,양도소득세,근로소득세,자동차세,증여세,상속세,부가가치세,종합소득세,부동산세금,2026년세율">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="세금계산기 - 대한민국 모든 세금 한번에">
+  <meta property="og:description" content="부동산, 자동차, 주식, 소득 등 31종 세금을 2026년 최신 세율로 정확하게 계산하세요.">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="세금계산기 - 대한민국 모든 세금 한번에">
+  <meta name="twitter:description" content="부동산, 자동차, 주식, 소득 등 31종 세금을 2026년 최신 세율로 정확하게 계산하세요.">
+
+  <title>세금계산기 - 대한민국 모든 세금 한번에</title>
+
+  <!-- 구조화 데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "대한민국 세금 계산기",
+    "description": "부동산, 자동차, 주식, 소득 등 31종 세금을 2026년 최신 세율로 정확하게 계산",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+    "inLanguage": "ko"
+  }
+  </script>
+
+  <!-- Pretendard Font -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/calculator.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <button id="btn-hamburger" class="btn-icon" title="메뉴">☰</button>
+    <a class="header-logo" href="#" onclick="App.navigateTo && false">
+      <div class="logo-icon">₩</div>
+      <div>
+        <div class="logo-text">세금계산기</div>
+        <div class="logo-sub">2026년 기준</div>
+      </div>
+    </a>
+    <div class="header-spacer"></div>
+    <div class="header-search">
+      <input type="text" id="search-input" placeholder="세금 검색... (예: 취득세, 자동차세)">
+      <span class="search-icon">🔍</span>
+      <div id="search-results"></div>
+    </div>
+    <div class="header-actions">
+      <button id="btn-share" class="btn-icon" title="공유하기" onclick="UI.shareCurrentPage()">🔗</button>
+      <button id="btn-theme" class="btn-icon" title="다크 모드">🌙</button>
+    </div>
+  </header>
+
+  <!-- ===== BODY ===== -->
+  <div id="body-wrapper">
+
+    <!-- Left Ad -->
+    <div class="ad-side-left">
+      <div class="ad-sticky">
+        <div class="ad-slot ad-160x600" id="ad-left">
+          <!-- Google AdSense 160x600 -->
+          <span>광고</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main: Sidebar + Content -->
+    <div id="main-wrapper">
+
+      <!-- ===== SIDEBAR ===== -->
+      <nav id="sidebar"></nav>
+
+      <!-- ===== MAIN CONTENT ===== -->
+      <main id="main-content">
+
+        <!-- Mobile Category Chips -->
+        <div id="mobile-cat-strip"></div>
+
+        <!-- Tab Bar -->
+        <div id="tab-bar" class="tab-bar"></div>
+
+        <!-- Ad Banner: Tab ~ Calculator -->
+        <div class="ad-banner-content">
+          <div class="ad-slot ad-728x90" id="ad-banner-top">
+            <!-- Google AdSense 728x90 -->
+            <span>광고</span>
+          </div>
+          <div class="ad-slot ad-320x50" id="ad-banner-top-mobile" style="display:none">
+            <!-- Google AdSense 320x50 Mobile -->
+            <span>광고</span>
+          </div>
+        </div>
+
+        <!-- Page Title Bar -->
+        <div class="page-title-bar" id="page-title-bar" style="display:none">
+          <span class="page-title-icon" id="page-title-icon">🏠</span>
+          <span class="page-title" id="page-title-text"></span>
+          <span class="page-year-badge">2026년 기준</span>
+        </div>
+
+        <!-- Calculator Views -->
+        <div class="calculator-area">
+
+          <!-- ===== 대출 계산기 ===== -->
+          <div id="view-loan-calculator" class="calculator-view">
+            <div class="calc-grid">
+              <!-- 입력 패널 -->
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏦</span>
+                  <div>
+                    <div class="card-title">대출금 계산기</div>
+                    <div class="card-subtitle">월 납입액·총 이자를 바로 확인하세요</div>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <!-- 대출금액 -->
+                  <div class="form-group">
+                    <label class="form-label" for="loan-amount">대출금액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="loan-amount" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <!-- 대출기간 -->
+                  <div class="form-group">
+                    <div class="unit-row">
+                      <label class="form-label" for="loan-period">대출기간 <span class="required">*</span></label>
+                      <div class="unit-toggle">
+                        <span class="unit-btn active loan-period-unit-btn" data-unit="year">년</span>
+                        <span class="unit-btn loan-period-unit-btn" data-unit="month">개월</span>
+                      </div>
+                    </div>
+                    <div class="num-input-wrap">
+                      <input type="number" id="loan-period" class="input" placeholder="예: 30" min="1" max="600">
+                      <span class="num-input-unit" id="loan-period-unit-label">년</span>
+                    </div>
+                  </div>
+
+                  <!-- 연 금리 -->
+                  <div class="form-group">
+                    <label class="form-label" for="loan-rate">연 금리 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="loan-rate" class="input" placeholder="예: 4.5" min="0" max="50" step="0.01">
+                      <span class="num-input-unit">%</span>
+                    </div>
+                    <div class="form-hint">연 이자율 기준 (예: 4.5% → 4.5 입력)</div>
+                  </div>
+
+                  <div class="section-divider"><span>상환 방식</span></div>
+
+                  <!-- 상환 방식 -->
+                  <div class="form-group">
+                    <div class="radio-group" style="flex-direction:column;gap:10px">
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="loan-method" value="equal-payment" checked>
+                        <span class="radio-label" style="width:100%;justify-content:flex-start;gap:10px;padding:10px 14px">
+                          <span style="font-size:18px">📅</span>
+                          <span>
+                            <strong>원리금균등분할</strong>
+                            <span style="display:block;font-size:11px;font-weight:400;color:var(--text-secondary);margin-top:2px">매월 동일 금액 납부 (가장 일반적)</span>
+                          </span>
+                        </span>
+                      </label>
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="loan-method" value="equal-principal">
+                        <span class="radio-label" style="width:100%;justify-content:flex-start;gap:10px;padding:10px 14px">
+                          <span style="font-size:18px">📉</span>
+                          <span>
+                            <strong>원금균등분할</strong>
+                            <span style="display:block;font-size:11px;font-weight:400;color:var(--text-secondary);margin-top:2px">매월 동일 원금 납부, 이자는 감소</span>
+                          </span>
+                        </span>
+                      </label>
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="loan-method" value="bullet">
+                        <span class="radio-label" style="width:100%;justify-content:flex-start;gap:10px;padding:10px 14px">
+                          <span style="font-size:18px">💰</span>
+                          <span>
+                            <strong>만기일시상환</strong>
+                            <span style="display:block;font-size:11px;font-weight:400;color:var(--text-secondary);margin-top:2px">매월 이자만 납부, 만기에 원금 전액 상환</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="btn-group" style="margin-top:8px">
+                    <button class="btn btn-primary" id="loan-calc" style="flex:1">계산하기</button>
+                    <button class="btn btn-reset btn-sm" id="loan-reset">초기화</button>
+                  </div>
+                  <div class="btn-group" style="margin-top:8px">
+                    <button class="btn btn-secondary btn-sm" id="loan-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="loan-print">🖨️ 인쇄</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- 결과 패널 -->
+              <div class="card" style="display:flex;flex-direction:column">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="loan-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🏦</div>
+                    대출 정보를 입력하고 계산 버튼을 눌러주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  본 계산기는 <strong>원화 기준</strong>으로 계산되며, 중도상환수수료·보증료 등은 포함되지 않습니다. 실제 대출 조건은 금융기관에 문의하세요.
+                </div>
+              </div>
+            </div>
+
+            <!-- 월별 상환 스케줄 -->
+            <div id="loan-schedule" style="max-width:900px;margin-top:0"></div>
+          </div>
+
+          <!-- ===== WELCOME SCREEN ===== -->
+          <div id="view-welcome" class="calculator-view active">
+            <div class="welcome-screen">
+              <div class="welcome-icon">₩</div>
+              <h1 class="welcome-title">대한민국 세금 계산기</h1>
+              <p class="welcome-desc">부동산, 자동차, 주식, 소득 등 대한민국의 모든 세금을 한 곳에서 정확하게 계산하세요.<br>2026년 최신 세율 기준으로 계산됩니다.</p>
+              <div class="welcome-grid">
+                <div class="welcome-card" onclick="App.navigateToCategory('real-estate')">
+                  <div class="wc-icon">🏠</div>
+                  <div class="wc-label">부동산</div>
+                  <div class="wc-count">취득세, 양도세 외 8종</div>
+                </div>
+                <div class="welcome-card" onclick="App.navigateToCategory('vehicle')">
+                  <div class="wc-icon">🚗</div>
+                  <div class="wc-label">자동차</div>
+                  <div class="wc-count">자동차세, 취득세, 개소세</div>
+                </div>
+                <div class="welcome-card" onclick="App.navigateToCategory('income')">
+                  <div class="wc-icon">💼</div>
+                  <div class="wc-label">소득</div>
+                  <div class="wc-count">근로소득세, 부가세 외 5종</div>
+                </div>
+                <div class="welcome-card" onclick="App.navigateToCategory('stocks')">
+                  <div class="wc-icon">📈</div>
+                  <div class="wc-label">주식/금융</div>
+                  <div class="wc-count">국내·해외주식, 배당소득세</div>
+                </div>
+                <div class="welcome-card" onclick="App.navigateToCategory('other')">
+                  <div class="wc-icon">📋</div>
+                  <div class="wc-label">기타</div>
+                  <div class="wc-count">주민세, 유류세 외 6종</div>
+                </div>
+              </div>
+
+              <div class="welcome-popular">
+                <h3 style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--text-secondary)">인기 계산기 바로가기</h3>
+                <div class="welcome-quick-links">
+                  <a class="quick-link" onclick="App.navigateTo('real-estate/acquisition')">🏠 부동산 취득세</a>
+                  <a class="quick-link" onclick="App.navigateTo('real-estate/capital-gains')">📊 양도소득세</a>
+                  <a class="quick-link" onclick="App.navigateTo('income/employment')">💼 근로소득세</a>
+                  <a class="quick-link" onclick="App.navigateTo('income/customs')">📦 해외직구 관세</a>
+                  <a class="quick-link" onclick="App.navigateTo('vehicle/vehicle-tax')">🚗 자동차세</a>
+                  <a class="quick-link" onclick="App.navigateTo('stocks/foreign')">📈 해외주식 양도세</a>
+                  <a class="quick-link" onclick="App.navigateTo('real-estate/gift')">🎁 증여세</a>
+                  <a class="quick-link" onclick="App.navigateTo('loan/loan')">🏦 대출금 계산</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== 부동산: 취득세 ===== -->
+          <div id="view-real-estate-acquisition" class="calculator-view">
+            <div class="calc-grid">
+              <!-- 입력 패널 -->
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏠</span>
+                  <div>
+                    <div class="card-title">취득세 계산</div>
+                    <div class="card-subtitle">부동산 취득 시 납부하는 지방세</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <!-- 취득 유형 -->
+                  <div class="form-group">
+                    <div class="form-label">취득 유형 <span class="required">*</span></div>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="radio" name="acq-type" value="housing" checked>
+                        <span class="radio-label">주택</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="acq-type" value="non-housing">
+                        <span class="radio-label">건물(비주택)</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="acq-type" value="land">
+                        <span class="radio-label">토지</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 취득가액 -->
+                  <div class="form-group">
+                    <div class="unit-row">
+                      <label class="form-label" for="acq-price">취득가액 <span class="required">*</span></label>
+                    </div>
+                    <div class="num-input-wrap">
+                      <input type="text" id="acq-price" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <!-- 면적 -->
+                  <div class="form-group">
+                    <label class="form-label" for="acq-area">주택 전용면적 <span style="font-weight:400;color:var(--text-muted)">(농특세 판단)</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="acq-area" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">㎡</span>
+                    </div>
+                    <div class="form-hint">85㎡ 초과 시 농어촌특별세 부과</div>
+                  </div>
+
+                  <!-- 주택 수 (주택만) -->
+                  <div id="acq-house-section" class="form-group">
+                    <div class="form-label">취득 후 주택 수 <span class="required">*</span></div>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="radio" name="acq-house-count" value="1" checked>
+                        <span class="radio-label">1주택</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="acq-house-count" value="2">
+                        <span class="radio-label">2주택</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="acq-house-count" value="3">
+                        <span class="radio-label">3주택</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="acq-house-count" value="4">
+                        <span class="radio-label">4주택+</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 옵션 -->
+                  <div class="form-group">
+                    <div class="form-label">추가 옵션</div>
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="acq-adjusted">
+                        <div>
+                          <div class="cb-label">조정대상지역</div>
+                          <div class="cb-desc">2주택 이상 시 중과세율 적용</div>
+                        </div>
+                      </label>
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="acq-first-home">
+                        <div>
+                          <div class="cb-label">생애최초 주택 구입</div>
+                          <div class="cb-desc">최대 200만원 감면</div>
+                        </div>
+                      </label>
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="acq-birth">
+                        <div>
+                          <div class="cb-label">출산·양육 주택 취득</div>
+                          <div class="cb-desc">최대 500만원 감면 (12억 이하, 2028년까지)</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="acq-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="acq-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="acq-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 결과 패널 -->
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="acq-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🏠</div>
+                    취득가액을 입력하면 세금이 계산됩니다
+                  </div>
+                </div>
+
+                <div class="notice-box info" style="margin:16px">
+                  <strong>참고사항</strong><br>
+                  취득세는 취득일로부터 60일 이내에 신고·납부해야 합니다. 본 계산기는 참고용이며 실제 세액은 관할 시·군·구청에서 확인하세요.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== 부동산: 양도소득세 ===== -->
+          <div id="view-real-estate-capital-gains" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏠</span>
+                  <div>
+                    <div class="card-title">양도소득세 계산</div>
+                    <div class="card-subtitle">부동산 매도 시 양도차익에 대한 세금</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="cg-sale-price">양도가액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="cg-sale-price" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="cg-buy-price">취득가액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="cg-buy-price" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="cg-expenses">필요경비 <span style="font-weight:400;color:var(--text-muted)">(중개수수료, 취득세 등)</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="cg-expenses" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <div class="section-divider"><span>보유 / 거주 기간</span></div>
+
+                  <div class="form-group">
+                    <label class="form-label">보유기간</label>
+                    <div class="period-input-group">
+                      <div class="num-input-wrap">
+                        <input type="number" id="cg-hold-years" class="input" placeholder="0" min="0" max="50">
+                        <span class="num-input-unit">년</span>
+                      </div>
+                      <div class="num-input-wrap">
+                        <input type="number" id="cg-hold-months" class="input" placeholder="0" min="0" max="11">
+                        <span class="num-input-unit">개월</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="cg-resid-years">거주기간 <span style="font-weight:400;color:var(--text-muted)">(년, 고가주택 장특공제)</span></label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="cg-resid-years" class="input" placeholder="0" min="0" max="20">
+                      <span class="num-input-unit">년</span>
+                    </div>
+                  </div>
+
+                  <div class="section-divider"><span>주택 조건</span></div>
+
+                  <div class="form-group">
+                    <div class="form-label">보유 주택 수</div>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="radio" name="cg-house-count" value="1" checked>
+                        <span class="radio-label">1주택</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="cg-house-count" value="2">
+                        <span class="radio-label">2주택</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="cg-house-count" value="3">
+                        <span class="radio-label">3주택+</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="cg-one-household">
+                        <div>
+                          <div class="cb-label">1세대 1주택</div>
+                          <div class="cb-desc">12억 이하 비과세, 고가주택 장특공제 적용</div>
+                        </div>
+                      </label>
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="cg-adjusted">
+                        <div>
+                          <div class="cb-label">조정대상지역</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="cg-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="cg-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="cg-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="cg-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🏠</div>
+                    양도가액과 취득가액을 입력해주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  <strong>신고 기한:</strong> 양도일이 속한 연도의 다음 해 5월 31일까지<br>
+                  <strong>예정신고:</strong> 양도일이 속한 달의 말일부터 2개월 이내
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== 부동산: 종합부동산세 ===== -->
+          <div id="view-real-estate-comprehensive" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏠</span>
+                  <div>
+                    <div class="card-title">종합부동산세 계산</div>
+                    <div class="card-subtitle">공시가격 합산 기준 종부세 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <!-- 자산 유형 -->
+                  <div class="form-group">
+                    <div class="form-label">자산 유형 <span class="required">*</span></div>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="radio" name="comp-type" value="house" checked>
+                        <span class="radio-label">주택</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="comp-type" value="land-general">
+                        <span class="radio-label">토지(종합합산)</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="comp-type" value="land-special">
+                        <span class="radio-label">토지(별도합산)</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 공시가격 합산 -->
+                  <div class="form-group">
+                    <label class="form-label" for="comp-price">공시가격 합산 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="comp-price" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">공동명의 시 각자 지분 공시가격 입력</div>
+                  </div>
+
+                  <!-- 주택 전용 옵션 -->
+                  <div class="comp-house-only">
+                    <div class="section-divider"><span>주택 옵션</span></div>
+
+                    <div class="form-group">
+                      <div class="form-label">주택 보유 수</div>
+                      <div class="radio-group">
+                        <label class="radio-option">
+                          <input type="radio" name="comp-count" value="1" checked>
+                          <span class="radio-label">1주택</span>
+                        </label>
+                        <label class="radio-option">
+                          <input type="radio" name="comp-count" value="2">
+                          <span class="radio-label">2주택</span>
+                        </label>
+                        <label class="radio-option">
+                          <input type="radio" name="comp-count" value="3">
+                          <span class="radio-label">3주택 이상</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="checkbox-group">
+                        <label class="checkbox-item">
+                          <input type="checkbox" id="comp-one-house">
+                          <div>
+                            <div class="cb-label">1세대1주택자</div>
+                            <div class="cb-desc">기본공제 12억 적용</div>
+                          </div>
+                        </label>
+                        <label class="checkbox-item">
+                          <input type="checkbox" id="comp-adjusted2">
+                          <div>
+                            <div class="cb-label">조정대상지역 2주택</div>
+                            <div class="cb-desc">중과세율 적용</div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="section-divider"><span>세액공제 (1세대1주택자)</span></div>
+
+                    <div class="form-group">
+                      <label class="form-label" for="comp-age">납세자 연령 <span style="font-weight:400;color:var(--text-muted)">(고령자 공제)</span></label>
+                      <div class="num-input-wrap">
+                        <input type="number" id="comp-age" class="input" placeholder="예: 65" min="0" max="120">
+                        <span class="num-input-unit">세</span>
+                      </div>
+                      <div class="form-hint">60세 이상 20% / 65세 이상 30% / 70세 이상 40%</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label" for="comp-hold-years">주택 보유 기간 <span style="font-weight:400;color:var(--text-muted)">(장기보유 공제)</span></label>
+                      <div class="num-input-wrap">
+                        <input type="number" id="comp-hold-years" class="input" placeholder="예: 10" min="0" max="50">
+                        <span class="num-input-unit">년</span>
+                      </div>
+                      <div class="form-hint">5년 이상 20% / 10년 이상 40% / 15년 이상 50%</div>
+                    </div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="comp-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="comp-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="comp-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="comp-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🏠</div>
+                    공시가격을 입력하면 종부세가 계산됩니다
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  종합부동산세는 매년 <strong>12월 1일~15일</strong>에 납부합니다. 공시가격 9억(1주택 12억) 초과 시 과세됩니다. 농어촌특별세 20%가 추가됩니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== 부동산: 재산세 ===== -->
+          <div id="view-real-estate-property-tax" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏠</span>
+                  <div>
+                    <div class="card-title">재산세 계산</div>
+                    <div class="card-subtitle">공시가격 기준 재산세 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <!-- 자산 유형 -->
+                  <div class="form-group">
+                    <div class="form-label">자산 유형 <span class="required">*</span></div>
+                    <div class="radio-group" style="flex-wrap:wrap">
+                      <label class="radio-option">
+                        <input type="radio" name="ptax-type" value="house" checked>
+                        <span class="radio-label">주택</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="ptax-type" value="land-general">
+                        <span class="radio-label">토지(종합합산)</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="ptax-type" value="land-special">
+                        <span class="radio-label">토지(별도합산)</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="ptax-type" value="building">
+                        <span class="radio-label">건물(일반)</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 공시가격 -->
+                  <div class="form-group">
+                    <label class="form-label" for="ptax-price">공시가격 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="ptax-price" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">주택공시가격 / 개별공시지가 기준</div>
+                  </div>
+
+                  <!-- 도시지역 여부 -->
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="ptax-urban" checked>
+                        <div>
+                          <div class="cb-label">도시지역 (도시지역분 가산)</div>
+                          <div class="cb-desc">과표의 0.14% 추가 부담</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="ptax-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="ptax-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="ptax-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="ptax-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🏠</div>
+                    공시가격을 입력하면 재산세가 계산됩니다
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  재산세는 <strong>7월 (1/2)</strong>과 <strong>9월 (1/2)</strong> 두 차례 납부합니다. 주택의 공정시장가액비율은 2026년 기준 <strong>43%</strong>입니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== 부동산: 임대소득세 ===== -->
+          <div id="view-real-estate-rental-income" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏠</span>
+                  <div>
+                    <div class="card-title">임대소득세 계산</div>
+                    <div class="card-subtitle">주택 임대수입 세금 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <!-- 연간 임대수입 -->
+                  <div class="form-group">
+                    <label class="form-label" for="rental-income">연간 임대수입금액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="rental-income" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">연간 총 임대수입 (월세×12 또는 전세 간주임대료)</div>
+                  </div>
+
+                  <!-- 과세 방식 -->
+                  <div class="form-group">
+                    <div class="form-label">과세 방식 <span class="required">*</span></div>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="radio" name="rental-method" value="separate" checked>
+                        <span class="radio-label">분리과세 (2천만원 이하)</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="rental-method" value="comprehensive">
+                        <span class="radio-label">종합과세</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 임대사업자 등록 -->
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="rental-registered">
+                        <div>
+                          <div class="cb-label">임대사업자 등록</div>
+                          <div class="cb-desc">등록 시 필요경비율 60% (미등록 50%)</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 분리과세 전용: 기본공제 -->
+                  <div id="rental-separate-section" class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="rental-std-ded" checked>
+                        <div>
+                          <div class="cb-label">기본공제 적용</div>
+                          <div class="cb-desc">등록 400만원 / 미등록 200만원</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 종합과세 전용: 다른 소득 합산 -->
+                  <div id="rental-comp-section" class="form-group" style="display:none">
+                    <label class="form-label" for="rental-other-income">다른 소득 합산액 <span style="font-weight:400;color:var(--text-muted)">(근로·사업 등)</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="rental-other-income" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">공제 반영 전 다른 소득금액 입력 (단순 합산 계산)</div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="rental-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="rental-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="rental-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="rental-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🏠</div>
+                    임대수입금액을 입력해주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  2천만원 이하 임대수입은 <strong>분리과세(14%) 또는 종합과세</strong> 중 유리한 방식 선택 가능합니다. 신고 기한: 다음 해 <strong>5월 31일</strong>.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== 부동산: 상속세 ===== -->
+          <div id="view-real-estate-inheritance" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>📋</span>
+                  <div>
+                    <div class="card-title">상속세 계산</div>
+                    <div class="card-subtitle">공제 반영 상속세 추정 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <!-- 상속재산 총액 -->
+                  <div class="form-group">
+                    <label class="form-label" for="inh-total-asset">상속재산 총액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="inh-total-asset" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <!-- 채무·장례비 -->
+                  <div class="form-group">
+                    <label class="form-label" for="inh-debt">채무·장례비용 등</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="inh-debt" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">피상속인의 채무, 장례비(최대 500만원), 공과금</div>
+                  </div>
+
+                  <div class="section-divider"><span>인적 공제</span></div>
+
+                  <!-- 배우자 -->
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="inh-spouse">
+                        <div>
+                          <div class="cb-label">배우자 있음</div>
+                          <div class="cb-desc">최소 5억 ~ 최대 30억 공제</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div id="inh-spouse-section" class="form-group" style="display:none">
+                    <label class="form-label" for="inh-spouse-inherit">배우자 실제 상속금액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="inh-spouse-inherit" class="input" placeholder="0 (미입력 시 법정상속분)" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <!-- 자녀 수 -->
+                  <div class="form-group">
+                    <label class="form-label" for="inh-child-count">자녀 수</label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="inh-child-count" class="input" placeholder="0" min="0" max="20">
+                      <span class="num-input-unit">명</span>
+                    </div>
+                    <div class="form-hint">1인당 5천만원 공제</div>
+                  </div>
+
+                  <!-- 직계존속 수 -->
+                  <div class="form-group">
+                    <label class="form-label" for="inh-ancestor-count">직계존속 수 (65세 이상)</label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="inh-ancestor-count" class="input" placeholder="0" min="0" max="10">
+                      <span class="num-input-unit">명</span>
+                    </div>
+                    <div class="form-hint">1인당 5천만원 공제</div>
+                  </div>
+
+                  <div class="section-divider"><span>기타 공제</span></div>
+
+                  <!-- 금융재산 -->
+                  <div class="form-group">
+                    <label class="form-label" for="inh-financial">순 금융재산 가액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="inh-financial" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">금융재산의 20% 공제 (최대 2억)</div>
+                  </div>
+
+                  <!-- 동거주택 -->
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="inh-cohabit">
+                        <div>
+                          <div class="cb-label">동거주택 상속공제</div>
+                          <div class="cb-desc">주택 가액의 100% 공제 (최대 6억)</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div id="inh-cohabit-section" class="form-group" style="display:none">
+                    <label class="form-label" for="inh-cohabit-price">동거주택 가액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="inh-cohabit-price" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <!-- 장애인 공제 -->
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="inh-disabled">
+                        <div>
+                          <div class="cb-label">장애인 공제</div>
+                          <div class="cb-desc">1천만원 × 기대여명(년)</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div id="inh-disabled-section" class="form-group" style="display:none">
+                    <label class="form-label" for="inh-disabled-age">장애인 나이</label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="inh-disabled-age" class="input" placeholder="예: 40" min="0" max="120">
+                      <span class="num-input-unit">세</span>
+                    </div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="inh-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="inh-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="inh-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="inh-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">📋</div>
+                    상속재산 총액을 입력해주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  자진 신고 시 <strong>3% 세액공제</strong>가 적용됩니다. 신고 기한: 상속 개시일이 속한 달의 말일부터 <strong>6개월 이내</strong>. 실제 세액은 전문가 상담을 권장합니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== 부동산: 증여세 ===== -->
+          <div id="view-real-estate-gift" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🎁</span>
+                  <div>
+                    <div class="card-title">증여세 계산</div>
+                    <div class="card-subtitle">증여재산공제 반영 증여세 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <!-- 증여가액 -->
+                  <div class="form-group">
+                    <label class="form-label" for="gift-amount">이번 증여가액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="gift-amount" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <!-- 증여자 관계 -->
+                  <div class="form-group">
+                    <label class="form-label" for="gift-donor-type">증여자 관계 <span class="required">*</span></label>
+                    <select id="gift-donor-type" class="select">
+                      <option value="spouse">배우자 (공제 6억)</option>
+                      <option value="lineal" selected>직계존비속 - 성인 (공제 5천만원)</option>
+                      <option value="lineal-minor">직계존비속 - 미성년자 (공제 2천만원)</option>
+                      <option value="relative">기타 친족 (공제 500만원)</option>
+                      <option value="other">타인 (공제 없음)</option>
+                    </select>
+                    <div class="form-hint">공제한도는 10년 합산 기준입니다</div>
+                  </div>
+
+                  <!-- 미성년자 여부 -->
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="gift-minor">
+                        <div>
+                          <div class="cb-label">수증자가 미성년자</div>
+                          <div class="cb-desc">직계존비속 공제 2천만원 적용</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 10년 내 기증여액 -->
+                  <div class="form-group">
+                    <label class="form-label" for="gift-prior">10년 내 동일인 기증여액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="gift-prior" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">동일인으로부터 10년 내 받은 증여 합산</div>
+                  </div>
+
+                  <!-- 자진신고 세액공제 -->
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="gift-report-disc" checked>
+                        <div>
+                          <div class="cb-label">자진신고 세액공제 (3%)</div>
+                          <div class="cb-desc">신고 기한 내 신고 시 적용</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="gift-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="gift-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="gift-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="gift-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🎁</div>
+                    증여가액을 입력해주세요
+                  </div>
+                </div>
+                <div style="padding:0 16px 16px">
+                  <div class="section-divider"><span>증여재산공제 한도 (10년 합산)</span></div>
+                  <table class="info-table" style="font-size:12px">
+                    <thead><tr><th>관계</th><th>공제 한도</th></tr></thead>
+                    <tbody>
+                      <tr><td>배우자</td><td>6억원</td></tr>
+                      <tr><td>직계존비속 (성인)</td><td>5천만원</td></tr>
+                      <tr><td>직계존비속 (미성년자)</td><td>2천만원</td></tr>
+                      <tr><td>기타 친족 (6촌 이내)</td><td>500만원</td></tr>
+                      <tr><td>타인</td><td>없음</td></tr>
+                    </tbody>
+                  </table>
+                  <div class="notice-box info" style="margin-top:12px">
+                    신고 기한: 증여일이 속한 달의 말일부터 <strong>3개월 이내</strong>. 신고 기한 내 신고 시 3% 세액공제 적용.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== 부동산: 인지세 ===== -->
+          <div id="view-real-estate-stamp" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>📄</span>
+                  <div>
+                    <div class="card-title">인지세 계산</div>
+                    <div class="card-subtitle">계약서 작성 시 납부하는 정액세</div>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <!-- 문서 종류 -->
+                  <div class="form-group">
+                    <label class="form-label" for="stamp-doc-type">문서 종류 <span class="required">*</span></label>
+                    <select id="stamp-doc-type" class="select">
+                      <option value="property-transfer" selected>부동산 소유권 이전 계약서</option>
+                      <option value="loan">금전소비대차계약서 (대출)</option>
+                      <option value="other">기타 계약서 (도급·위임 등)</option>
+                    </select>
+                  </div>
+
+                  <!-- 계약금액 -->
+                  <div class="form-group">
+                    <label class="form-label" for="stamp-amount">거래(계약)금액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="stamp-amount" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">부동산: 매매가액 / 대출: 대출금액</div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="stamp-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="stamp-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="stamp-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="stamp-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">📄</div>
+                    거래금액을 입력해주세요
+                  </div>
+                </div>
+                <div style="padding:0 16px 16px">
+                  <div class="section-divider"><span>부동산 인지세 세율표</span></div>
+                  <table class="info-table" style="font-size:12px">
+                    <thead><tr><th>거래금액</th><th>인지세</th></tr></thead>
+                    <tbody>
+                      <tr><td>1천만원 이하</td><td>5만원</td></tr>
+                      <tr><td>1천만~3천만원</td><td>15만원</td></tr>
+                      <tr><td>3천만~5천만원</td><td>20만원</td></tr>
+                      <tr><td>5천만~1억원</td><td>30만원</td></tr>
+                      <tr><td>1억원 초과</td><td>35만원</td></tr>
+                    </tbody>
+                  </table>
+                  <div class="notice-box info" style="margin-top:12px">
+                    인지세는 <strong>전자수입인지</strong>(e-stamp.or.kr)로 구매·납부하며, 매도인과 매수인이 <strong>50%씩</strong> 부담합니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== 부동산: 등록면허세 ===== -->
+          <div id="view-real-estate-registration" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>📋</span>
+                  <div>
+                    <div class="card-title">등록면허세 계산</div>
+                    <div class="card-subtitle">소유권·저당권 등기 시 납부하는 세금</div>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <!-- 등기 유형 -->
+                  <div class="form-group">
+                    <label class="form-label" for="reg-type">등기 유형 <span class="required">*</span></label>
+                    <select id="reg-type" class="select">
+                      <option value="ownership-transfer-housing" selected>주택 소유권 이전 (0.8%)</option>
+                      <option value="ownership-transfer-other">토지·건물 소유권 이전 (2%)</option>
+                      <option value="ownership-conservation">소유권 보존 등기 (0.8%)</option>
+                      <option value="mortgage">저당권(근저당) 설정 (0.2%)</option>
+                      <option value="lease">전세권 설정 (0.2%)</option>
+                      <option value="surface">지상권 설정 (0.2%)</option>
+                    </select>
+                  </div>
+
+                  <!-- 부동산 가액 -->
+                  <div class="form-group">
+                    <label class="form-label" for="reg-value">부동산 가액 (채권금액) <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="reg-value" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">소유권: 실거래가 / 저당·전세권: 채권(전세)금액</div>
+                  </div>
+
+                  <!-- 생애최초 감면 (주택 이전 시) -->
+                  <div class="form-group" id="reg-first-home-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="reg-first-home">
+                        <div>
+                          <div class="cb-label">생애최초 주택 취득 감면</div>
+                          <div class="cb-desc">등록면허세 최대 200만원 감면</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="reg-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="reg-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="reg-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="reg-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">📋</div>
+                    부동산 가액을 입력해주세요
+                  </div>
+                </div>
+                <div style="padding:0 16px 16px">
+                  <div class="section-divider"><span>주요 세율표</span></div>
+                  <table class="info-table" style="font-size:12px">
+                    <thead><tr><th>등기 유형</th><th>세율</th></tr></thead>
+                    <tbody>
+                      <tr><td>주택 소유권 이전</td><td>0.8%</td></tr>
+                      <tr><td>토지·건물 소유권 이전</td><td>2.0%</td></tr>
+                      <tr><td>소유권 보존</td><td>0.8%</td></tr>
+                      <tr><td>저당권(근저당) 설정</td><td>0.2%</td></tr>
+                      <tr><td>전세권 설정</td><td>0.2%</td></tr>
+                    </tbody>
+                  </table>
+                  <div class="notice-box info" style="margin-top:12px">
+                    지방교육세(20%)가 추가됩니다. 등기 시 취득세·등록면허세를 함께 신고·납부해야 합니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== 부동산: 복비(중개보수) ===== -->
+          <div id="view-real-estate-commission" class="calculator-view">
+            <div class="calc-grid">
+              <!-- 입력 패널 -->
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏠</span>
+                  <div>
+                    <div class="card-title">부동산 복비 계산</div>
+                    <div class="card-subtitle">공인중개사법 기준 중개보수 상한액</div>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <!-- 부동산 유형 -->
+                  <div class="form-group">
+                    <div class="form-label">부동산 유형 <span class="required">*</span></div>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="radio" name="comm-prop" value="housing" checked>
+                        <span class="radio-label">주택</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="comm-prop" value="other">
+                        <span class="radio-label">주택 외 (토지·상가·오피스텔 등)</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 거래 유형 (주택만) -->
+                  <div class="form-group" id="comm-trans-section">
+                    <div class="form-label">거래 유형 <span class="required">*</span></div>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="radio" name="comm-trans" value="매매" checked>
+                        <span class="radio-label">매매</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="comm-trans" value="전세">
+                        <span class="radio-label">전세</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="comm-trans" value="월세">
+                        <span class="radio-label">월세</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 거래금액 / 보증금 -->
+                  <div class="form-group">
+                    <label class="form-label" id="comm-price-label" for="comm-price">거래금액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="comm-price" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <!-- 전세/월세 보증금 (전세·월세일 때) -->
+                  <div class="form-group" id="comm-deposit-section" style="display:none">
+                    <label class="form-label" for="comm-deposit">월세 보증금</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="comm-deposit" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <!-- 월세액 (월세일 때) -->
+                  <div class="form-group" id="comm-monthly-section" style="display:none">
+                    <label class="form-label" for="comm-monthly-rent">월세액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="comm-monthly-rent" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원/월</span>
+                    </div>
+                    <div class="form-hint">환산보증금 = 보증금 + (월세 × 100)</div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="comm-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="comm-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="comm-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 결과 패널 -->
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="comm-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🏠</div>
+                    거래금액을 입력하면 복비가 계산됩니다
+                  </div>
+                </div>
+
+                <!-- 상한 요율표 -->
+                <div style="padding:0 16px 16px">
+                  <div class="section-divider"><span>주택 상한 요율 기준</span></div>
+                  <table class="info-table" style="font-size:12px">
+                    <thead>
+                      <tr><th>거래 유형</th><th>거래금액</th><th>상한요율</th><th>한도액</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td rowspan="5">매매</td><td>5천만원 미만</td><td>0.6%</td><td>25만원</td></tr>
+                      <tr><td>5천만~2억 미만</td><td>0.5%</td><td>80만원</td></tr>
+                      <tr><td>2억~6억 미만</td><td>0.4%</td><td>—</td></tr>
+                      <tr><td>6억~9억 미만</td><td>0.5%</td><td>—</td></tr>
+                      <tr><td>9억 이상</td><td>0.7% 이내</td><td>—</td></tr>
+                      <tr><td rowspan="5">전·월세</td><td>5천만원 미만</td><td>0.5%</td><td>20만원</td></tr>
+                      <tr><td>5천만~1억 미만</td><td>0.4%</td><td>30만원</td></tr>
+                      <tr><td>1억~3억 미만</td><td>0.3%</td><td>—</td></tr>
+                      <tr><td>3억~6억 미만</td><td>0.4%</td><td>—</td></tr>
+                      <tr><td>6억 이상</td><td>0.8% 이내</td><td>—</td></tr>
+                    </tbody>
+                  </table>
+                  <div class="notice-box info" style="margin-top:12px">
+                    주택 외(토지·상가·오피스텔 등)는 <strong>0.9% 이내</strong>에서 협의. 위 금액은 법정 <strong>상한액</strong>이며 중개사와 협의 가능합니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== 자동차: 자동차세 ===== -->
+          <div id="view-vehicle-vehicle-tax" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🚗</span>
+                  <div>
+                    <div class="card-title">자동차세 계산</div>
+                    <div class="card-subtitle">배기량·차령 기준 연간 자동차세</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <div class="form-label">차종</div>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="radio" name="vtax-type" value="passenger" checked>
+                        <span class="radio-label">비영업용 승용</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="vtax-type" value="commercial">
+                        <span class="radio-label">영업용</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="vtax-type" value="truck">
+                        <span class="radio-label">화물</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="vtax-cc">배기량 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="vtax-cc" class="input" placeholder="예: 1998" min="50" max="10000">
+                      <span class="num-input-unit">cc</span>
+                    </div>
+                    <div class="form-hint">1,000cc 이하: 80원/cc · 1,001~1,600cc: 140원/cc · 1,601cc~: 200원/cc</div>
+                  </div>
+
+                  <div class="section-divider"><span>최초 등록일</span></div>
+
+                  <div class="form-group">
+                    <label class="form-label">최초 등록 연월 <span style="font-weight:400;color:var(--text-muted)">(차령 경감 계산)</span></label>
+                    <div class="period-input-group">
+                      <div class="num-input-wrap">
+                        <input type="number" id="vtax-reg-year" class="input" placeholder="예: 2018" min="1980" max="2026">
+                        <span class="num-input-unit">년</span>
+                      </div>
+                      <div class="num-input-wrap">
+                        <input type="number" id="vtax-reg-month" class="input" placeholder="예: 3" min="1" max="12">
+                        <span class="num-input-unit">월</span>
+                      </div>
+                    </div>
+                    <div class="form-hint">3년차부터 연 5% 경감, 최대 50% 경감</div>
+                  </div>
+
+                  <div class="section-divider"><span>연납 (선납)</span></div>
+
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="vtax-advance">
+                        <div>
+                          <div class="cb-label">연납 신청</div>
+                          <div class="cb-desc">연간 세액의 약 5% 할인</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div id="vtax-advance-section" style="display:none" class="form-group">
+                    <label class="form-label" for="vtax-advance-month">연납 납부 월</label>
+                    <select id="vtax-advance-month" class="select">
+                      <option value="1">1월 (약 4.57% 할인)</option>
+                      <option value="3">3월 (약 3.76% 할인)</option>
+                      <option value="6">6월 (약 2.52% 할인)</option>
+                      <option value="9">9월 (약 1.25% 할인)</option>
+                    </select>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="vtax-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="vtax-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="vtax-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="vtax-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🚗</div>
+                    배기량을 입력해주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  자동차세는 6월(1~6월분)과 12월(7~12월분) 두 차례 부과됩니다. 연납 신청 시 1월에 전체를 납부하고 할인 혜택을 받을 수 있습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 자동차 준비 중 -->
+          <div id="view-vehicle-acquisition" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🚗</span>
+                  <div>
+                    <div class="card-title">자동차 취득세 계산</div>
+                    <div class="card-subtitle">차량 취득 시 납부할 세금을 계산합니다</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label">차종</label>
+                    <select id="vacq-type" class="form-select">
+                      <option value="passenger">비영업용 승용차 (7%)</option>
+                      <option value="passenger-biz">영업용 승용차 (4%)</option>
+                      <option value="light">경차 (4%)</option>
+                      <option value="truck">화물·특수차 (5%)</option>
+                      <option value="van9">승합 10인 이하 (5%)</option>
+                      <option value="van10">승합 11인 이상 (5%)</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">취득가액 (원)</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="vacq-price" class="form-input" inputmode="numeric" placeholder="예: 30,000,000">
+                      <span class="unit-label">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">친환경차 감면</label>
+                    <select id="vacq-eco" class="form-select">
+                      <option value="none">해당 없음</option>
+                      <option value="hybrid">하이브리드 (최대 140만원)</option>
+                      <option value="electric">전기차 (최대 140만원)</option>
+                      <option value="hydrogen">수소차 (최대 140만원)</option>
+                    </select>
+                  </div>
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="vacq-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="vacq-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="vacq-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
+                <div class="result-breakdown" id="vacq-result">
+                  <div class="result-empty"><div class="result-empty-icon">🚗</div>차량 취득가액을 입력해주세요</div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  <strong>취득세율:</strong> 비영업용 승용 7%, 영업용 4%, 경차 4%, 화물 5%<br>
+                  <strong>부가세:</strong> 지방교육세 30%, 농어촌특별세 10% (경차·영업용 면제)<br>
+                  <strong>친환경차:</strong> 하이브리드·전기·수소차 취득세 감면 (2026년 기준)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="view-vehicle-excise" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏭</span>
+                  <div>
+                    <div class="card-title">자동차 개별소비세 계산</div>
+                    <div class="card-subtitle">차량 출고 시 부과되는 개별소비세를 계산합니다</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label">차량 출고가 (원)</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="vexcise-price" class="form-input" inputmode="numeric" placeholder="예: 40,000,000">
+                      <span class="unit-label">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">친환경차 감면</label>
+                    <select id="vexcise-eco" class="form-select">
+                      <option value="none">해당 없음</option>
+                      <option value="hybrid">하이브리드 (최대 100만원)</option>
+                      <option value="electric">전기차 (최대 300만원)</option>
+                      <option value="hydrogen">수소차 (최대 400만원)</option>
+                    </select>
+                  </div>
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="vexcise-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="vexcise-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="vexcise-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
+                <div class="result-breakdown" id="vexcise-result">
+                  <div class="result-empty"><div class="result-empty-icon">🏭</div>차량 출고가를 입력해주세요</div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  <strong>개별소비세:</strong> 출고가의 5%<br>
+                  <strong>교육세:</strong> 개별소비세의 30%<br>
+                  <strong>부가가치세:</strong> (출고가 + 개소세 + 교육세)의 10%<br>
+                  <strong>친환경차:</strong> 전기차 최대 300만원, 수소차 최대 400만원 감면
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== 소득 준비 중 ===== -->
+          <!-- ===== 소득: 근로소득세·연말정산 ===== -->
+          <div id="view-income-employment" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>💼</span>
+                  <div>
+                    <div class="card-title">근로소득세·연말정산</div>
+                    <div class="card-subtitle">예상 환급/추가납부 계산 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="emp-annual-pay">연간 총급여 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="emp-annual-pay" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">비과세 소득 제외 연봉 (식대, 자가운전보조금 등 제외)</div>
+                  </div>
+
+                  <div class="section-divider"><span>인적공제</span></div>
+
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="emp-spouse">
+                        <div>
+                          <div class="cb-label">배우자 공제</div>
+                          <div class="cb-desc">연소득 100만원 이하 배우자</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="emp-dependents">부양가족 수</label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="emp-dependents" class="input" placeholder="0" min="0" max="20">
+                      <span class="num-input-unit">명</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="emp-child-count">7세 이상 자녀 수 <span style="font-weight:400;color:var(--text-muted)">(자녀세액공제)</span></label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="emp-child-count" class="input" placeholder="0" min="0" max="10">
+                      <span class="num-input-unit">명</span>
+                    </div>
+                  </div>
+
+                  <div class="section-divider"><span>소득공제 (연간 납입액)</span></div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="emp-insurance">보험료</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="emp-insurance" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="emp-housing">주택자금 (월세·청약저축 등)</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="emp-housing" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <div class="section-divider"><span>세액공제 (연간 지출액)</span></div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="emp-medical">의료비 지출</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="emp-medical" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">총급여 3% 초과분의 15% 세액공제</div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="emp-education">교육비 지출</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="emp-education" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="emp-donation">기부금</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="emp-donation" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <div class="section-divider"><span>기납부세액</span></div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="emp-paid-tax">연간 원천징수세액 (소득세+지방소득세)</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="emp-paid-tax" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">원천징수영수증 또는 급여명세서 확인</div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="emp-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="emp-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="emp-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
+                <div class="result-breakdown" id="emp-result">
+                  <div class="result-empty"><div class="result-empty-icon">💼</div>연간 총급여를 입력해주세요</div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  간소화된 계산으로 실제 연말정산과 차이가 있을 수 있습니다. 정확한 계산은 국세청 <strong>연말정산 간소화 서비스</strong>를 이용하세요.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== 소득: 사업소득세 ===== -->
+          <div id="view-income-business" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>💼</span>
+                  <div>
+                    <div class="card-title">사업소득세 계산</div>
+                    <div class="card-subtitle">업종별 경비율 적용 종합소득세 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="biz-revenue">연간 수입금액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="biz-revenue" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="biz-industry">업종</label>
+                    <select id="biz-industry" class="select">
+                      <option value="retail">소매업 (단순 89.3%)</option>
+                      <option value="food">음식점업 (단순 87.4%)</option>
+                      <option value="manufacture">제조업 (단순 87.0%)</option>
+                      <option value="construction">건설업 (단순 87.0%)</option>
+                      <option value="service" selected>서비스업 (단순 64.0%)</option>
+                      <option value="freelance">프리랜서/인적용역 (단순 64.1%)</option>
+                      <option value="realestate">부동산업 (단순 42.0%)</option>
+                      <option value="it">IT/소프트웨어 (단순 64.1%)</option>
+                      <option value="custom">직접 입력</option>
+                    </select>
+                  </div>
+
+                  <div class="section-divider"><span>경비 산정 방식</span></div>
+
+                  <div class="form-group">
+                    <div class="radio-group" style="flex-direction:column;gap:8px">
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="biz-expense-method" value="simple" checked>
+                        <span class="radio-label" style="width:100%;justify-content:flex-start;padding:8px 12px">
+                          <strong>단순경비율</strong>
+                          <span style="font-size:11px;color:var(--text-secondary);margin-left:8px">소규모 사업자</span>
+                        </span>
+                      </label>
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="biz-expense-method" value="standard">
+                        <span class="radio-label" style="width:100%;justify-content:flex-start;padding:8px 12px">
+                          <strong>기준경비율</strong>
+                          <span style="font-size:11px;color:var(--text-secondary);margin-left:8px">일정 규모 이상</span>
+                        </span>
+                      </label>
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="biz-expense-method" value="actual">
+                        <span class="radio-label" style="width:100%;justify-content:flex-start;padding:8px 12px">
+                          <strong>실제 경비</strong>
+                          <span style="font-size:11px;color:var(--text-secondary);margin-left:8px">장부 기장</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div id="biz-actual-section" class="form-group" style="display:none">
+                    <label class="form-label" for="biz-actual-expense">실제 필요경비</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="biz-actual-expense" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <div id="biz-custom-section" class="form-group" style="display:none">
+                    <label class="form-label" for="biz-custom-rate">경비율 직접 입력</label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="biz-custom-rate" class="input" placeholder="예: 60" min="0" max="100" step="0.1">
+                      <span class="num-input-unit">%</span>
+                    </div>
+                  </div>
+
+                  <div class="section-divider"><span>소득공제</span></div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="biz-personal-ded">소득공제 합계</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="biz-personal-ded" class="input" placeholder="1,500,000" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">미입력 시 본인 기본공제 150만원 적용</div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="biz-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="biz-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="biz-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
+                <div class="result-breakdown" id="biz-result">
+                  <div class="result-empty"><div class="result-empty-icon">💼</div>수입금액을 입력해주세요</div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  종합소득세 신고 기한: 매년 <strong>5월 1일~31일</strong>. 성실신고확인대상 사업자는 <strong>6월 30일</strong>까지.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== 소득: 종합소득세 ===== -->
+          <div id="view-income-comprehensive" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>💼</span>
+                  <div>
+                    <div class="card-title">종합소득세 계산</div>
+                    <div class="card-subtitle">6개 소득 합산 누진세율 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-hint" style="margin-bottom:12px">각 소득의 <strong>소득금액</strong>(수입 - 필요경비)을 입력하세요. 해당 없는 항목은 비워두세요.</div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="compinc-earned">근로소득금액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="compinc-earned" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="compinc-business">사업소득금액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="compinc-business" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="compinc-interest">이자소득금액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="compinc-interest" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="compinc-dividend">배당소득금액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="compinc-dividend" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="compinc-pension">연금소득금액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="compinc-pension" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="compinc-other">기타소득금액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="compinc-other" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+
+                  <div class="section-divider"><span>소득공제</span></div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="compinc-deduction">소득공제 합계</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="compinc-deduction" class="input" placeholder="1,500,000" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">미입력 시 본인 기본공제 150만원 적용</div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="compinc-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="compinc-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="compinc-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
+                <div class="result-breakdown" id="compinc-result">
+                  <div class="result-empty"><div class="result-empty-icon">💼</div>소득금액을 입력해주세요</div>
+                </div>
+                <div style="padding:0 16px 16px">
+                  <div class="section-divider"><span>2026년 종합소득세 누진세율표</span></div>
+                  <table class="info-table" style="font-size:12px">
+                    <thead><tr><th>과세표준</th><th>세율</th><th>누진공제</th></tr></thead>
+                    <tbody>
+                      <tr><td>1,400만원 이하</td><td>6%</td><td>—</td></tr>
+                      <tr><td>5,000만원 이하</td><td>15%</td><td>126만원</td></tr>
+                      <tr><td>8,800만원 이하</td><td>24%</td><td>576만원</td></tr>
+                      <tr><td>1.5억원 이하</td><td>35%</td><td>1,544만원</td></tr>
+                      <tr><td>3억원 이하</td><td>38%</td><td>1,994만원</td></tr>
+                      <tr><td>5억원 이하</td><td>40%</td><td>2,594만원</td></tr>
+                      <tr><td>10억원 이하</td><td>42%</td><td>3,594만원</td></tr>
+                      <tr><td>10억원 초과</td><td>45%</td><td>6,594만원</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== 소득: 이자·배당소득세 ===== -->
+          <div id="view-income-interest-dividend" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>💰</span>
+                  <div>
+                    <div class="card-title">이자·배당소득세 계산</div>
+                    <div class="card-subtitle">금융소득종합과세 판단 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="intdiv-interest">연간 이자소득</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="intdiv-interest" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">예금·적금 이자, 채권 이자 등</div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="intdiv-dividend">연간 배당소득</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="intdiv-dividend" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">주식 배당금, 펀드 분배금 등</div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="intdiv-other">다른 종합소득 <span style="font-weight:400;color:var(--text-muted)">(종합과세 시)</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="intdiv-other" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">근로·사업 등 다른 소득금액 (종합과세 합산용)</div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="intdiv-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="intdiv-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="intdiv-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
+                <div class="result-breakdown" id="intdiv-result">
+                  <div class="result-empty"><div class="result-empty-icon">💰</div>이자 또는 배당소득을 입력해주세요</div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  금융소득(이자+배당) 합계가 연 <strong>2,000만원</strong>을 초과하면 <strong>금융소득종합과세</strong> 대상이 됩니다. 2천만원 이하는 14% 원천징수로 과세 종결.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== 소득: 퇴직소득세 ===== -->
+          <div id="view-income-retirement" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>💼</span>
+                  <div>
+                    <div class="card-title">퇴직소득세 계산</div>
+                    <div class="card-subtitle">근속연수·환산급여 기준 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="retire-pay">퇴직급여 총액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="retire-pay" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">퇴직금 + DC형 퇴직연금 적립금 등</div>
+                  </div>
+
+                  <div class="section-divider"><span>근속기간</span></div>
+
+                  <div class="form-group">
+                    <label class="form-label">근속연수 <span class="required">*</span></label>
+                    <div class="period-input-group">
+                      <div class="num-input-wrap">
+                        <input type="number" id="retire-years" class="input" placeholder="예: 15" min="0" max="50">
+                        <span class="num-input-unit">년</span>
+                      </div>
+                      <div class="num-input-wrap">
+                        <input type="number" id="retire-months" class="input" placeholder="예: 6" min="0" max="11">
+                        <span class="num-input-unit">개월</span>
+                      </div>
+                    </div>
+                    <div class="form-hint">1년 미만은 1년으로 올림 처리</div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="retire-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="retire-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="retire-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
+                <div class="result-breakdown" id="retire-result">
+                  <div class="result-empty"><div class="result-empty-icon">💼</div>퇴직급여와 근속연수를 입력해주세요</div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  퇴직소득세는 근속연수가 길수록 세부담이 줄어듭니다. 퇴직급여를 IRP 계좌로 이체하면 <strong>퇴직소득세 이연</strong>이 가능합니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== 소득: 부가가치세 ===== -->
+          <div id="view-income-vat" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>💼</span>
+                  <div>
+                    <div class="card-title">부가가치세 계산</div>
+                    <div class="card-subtitle">일반/간이과세자 부가세 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <div class="form-label">과세유형 <span class="required">*</span></div>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="radio" name="vat-tax-type" value="general" checked>
+                        <span class="radio-label">일반과세자</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="vat-tax-type" value="simplified">
+                        <span class="radio-label">간이과세자</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="vat-sales">매출(공급)액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="vat-sales" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">부가세 미포함 공급가액 (일반) / 공급대가 (간이)</div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="vat-purchase">매입(공급)액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="vat-purchase" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">세금계산서 수취분 매입액</div>
+                  </div>
+
+                  <!-- 간이과세 전용 -->
+                  <div id="vat-simplified-section" style="display:none">
+                    <div class="form-group">
+                      <label class="form-label" for="vat-industry">업종 (부가가치율)</label>
+                      <select id="vat-industry" class="select">
+                        <option value="retail">소매업·음식점 (15%)</option>
+                        <option value="manufacture">제조업·전기가스 (20%)</option>
+                        <option value="service" selected>서비스업 (30%)</option>
+                        <option value="realestate">부동산임대 (40%)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="vat-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="vat-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="vat-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
+                <div class="result-breakdown" id="vat-result">
+                  <div class="result-empty"><div class="result-empty-icon">💼</div>매출액을 입력해주세요</div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  <strong>일반과세자:</strong> 1기(1~6월) 7월 25일, 2기(7~12월) 다음해 1월 25일 신고.<br>
+                  <strong>간이과세자:</strong> 연 1회 다음해 1월 25일 신고. 연 공급대가 4,800만원 미만 시 납부 면제.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== 소득: 해외 구매 관세 ===== -->
+          <div id="view-income-customs" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>📦</span>
+                  <div>
+                    <div class="card-title">해외 구매 관세 계산</div>
+                    <div class="card-subtitle">해외직구 관세·부가세 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="customs-item-type">품목 <span class="required">*</span></label>
+                    <select id="customs-item-type" class="select">
+                      <option value="electronics" selected>전자제품 (8%)</option>
+                      <option value="phone">스마트폰·태블릿 (0%)</option>
+                      <option value="clothing">의류·잡화 (13%)</option>
+                      <option value="shoes">신발·가방 (13%)</option>
+                      <option value="cosmetics">화장품 (6.5%)</option>
+                      <option value="perfume">향수 (6.5% + 개소세 7%)</option>
+                      <option value="healthfood">건강기능식품 (8%)</option>
+                      <option value="food">식품·커피·차 (8%)</option>
+                      <option value="watch">시계 - 200만원 이하 (8%)</option>
+                      <option value="watch-luxury">시계 - 200만원 초과 (8% + 개소세 20%)</option>
+                      <option value="jewelry">귀금속·보석 (8% + 개소세 20%)</option>
+                      <option value="other">기타 (8%)</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="customs-price">물품가격 (USD) <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="customs-price" class="input" placeholder="예: 500" min="0" step="0.01">
+                      <span class="num-input-unit">$</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="customs-shipping">운임 (USD)</label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="customs-shipping" class="input" placeholder="예: 20" min="0" step="0.01">
+                      <span class="num-input-unit">$</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="customs-insurance">보험료 (USD)</label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="customs-insurance" class="input" placeholder="0" min="0" step="0.01">
+                      <span class="num-input-unit">$</span>
+                    </div>
+                  </div>
+
+                  <div class="section-divider"><span>환율</span></div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="customs-exchange">적용 환율 (원/USD) <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="customs-exchange" class="input" placeholder="예: 1350" min="0" step="0.01" value="1350">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">관세청 고시 환율 기준 (매주 변동)</div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="customs-from-us">
+                        <div>
+                          <div class="cb-label">미국 직구 (면세 $200)</div>
+                          <div class="cb-desc">FTA 적용 시 면세 기준 $200 (기타 국가 $150)</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="customs-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="customs-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="customs-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
+                <div class="result-breakdown" id="customs-result">
+                  <div class="result-empty"><div class="result-empty-icon">📦</div>물품가격과 환율을 입력해주세요</div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  물품가격 <strong>$150 이하</strong>(미국 $200)는 관세·부가세 면제. 면세 초과 시 <strong>전체 금액</strong>에 과세됩니다. 자가사용 목적에 한합니다.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== 주식: 해외주식 양도소득세 ===== -->
+          <div id="view-stocks-foreign" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>📈</span>
+                  <div>
+                    <div class="card-title">해외주식 양도소득세</div>
+                    <div class="card-subtitle">해외주식 매도 차익 세금 계산 (기본공제 250만원)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="foreign-sale">매도가액 (합계) <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="foreign-sale" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">원화 환산 기준</div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="foreign-buy">취득가액 (합계) <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="foreign-buy" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="foreign-fees">매매수수료</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="foreign-fees" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="foreign-other">동일 연도 다른 해외주식 손익 합산</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="foreign-other" class="input" placeholder="0 (음수 입력 가능)" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">손실 발생 시 음수로 입력 (예: -500000)</div>
+                  </div>
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="foreign-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="foreign-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="foreign-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="foreign-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">📈</div>
+                    매도가액과 취득가액을 입력해주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  <strong>세율:</strong> 소득세 20% + 지방소득세 2% = 22%<br>
+                  <strong>기본공제:</strong> 연간 250만원 (국내·해외 합산)<br>
+                  <strong>신고 기한:</strong> 매도 연도의 다음 해 5월 31일
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 주식: 국내 준비 중 -->
+          <div id="view-stocks-domestic" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>📈</span>
+                  <div>
+                    <div class="card-title">국내주식 양도소득세 계산</div>
+                    <div class="card-subtitle">국내주식 매도 시 양도소득세를 계산합니다</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label">기업 구분</label>
+                    <div class="radio-group">
+                      <label class="radio-label"><input type="radio" name="sdom-company" value="general" checked> 일반기업 (20%/25%)</label>
+                      <label class="radio-label"><input type="radio" name="sdom-company" value="small"> 중소기업 (10%)</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">
+                      <label class="checkbox-label" style="font-weight:600">
+                        <input type="checkbox" id="sdom-major"> 대주주 (종목당 10억원 이상 보유)
+                      </label>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">양도가액 (매도금액)</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="sdom-sell" class="form-input" inputmode="numeric" placeholder="예: 100,000,000">
+                      <span class="unit-label">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">취득가액 (매수금액)</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="sdom-buy" class="form-input" inputmode="numeric" placeholder="예: 80,000,000">
+                      <span class="unit-label">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">필요경비 (수수료·세금 등)</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="sdom-expense" class="form-input" inputmode="numeric" placeholder="예: 500,000">
+                      <span class="unit-label">원</span>
+                    </div>
+                  </div>
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="sdom-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="sdom-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="sdom-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
+                <div class="result-breakdown" id="sdom-result">
+                  <div class="result-empty"><div class="result-empty-icon">📈</div>양도가액과 취득가액을 입력해주세요</div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  <strong>대주주 기준:</strong> 종목당 10억원 이상 보유 시 대주주<br>
+                  <strong>세율:</strong> 중소기업 10%, 일반기업 20% (3억 초과 25%)<br>
+                  <strong>기본공제:</strong> 연간 250만원<br>
+                  <strong>신고 기한:</strong> 양도일이 속하는 반기의 말일부터 2개월 이내
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="view-stocks-dividend" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>💰</span>
+                  <div>
+                    <div class="card-title">배당소득세 계산</div>
+                    <div class="card-subtitle">배당소득에 대한 세금을 계산합니다</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label">배당 출처</label>
+                    <div class="radio-group">
+                      <label class="radio-label"><input type="radio" name="sdiv-source" value="domestic" checked> 국내 배당</label>
+                      <label class="radio-label"><input type="radio" name="sdiv-source" value="foreign"> 해외 배당</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">배당금 총액 (연간)</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="sdiv-amount" class="form-input" inputmode="numeric" placeholder="예: 25,000,000">
+                      <span class="unit-label">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">기타 종합소득 (종합과세 시)</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="sdiv-other-income" class="form-input" inputmode="numeric" placeholder="예: 50,000,000">
+                      <span class="unit-label">원</span>
+                    </div>
+                  </div>
+                  <div id="sdiv-foreign-section" style="display:none">
+                    <div class="form-group">
+                      <label class="form-label">외국납부세액 (원)</label>
+                      <div class="num-input-wrap">
+                        <input type="text" id="sdiv-foreign-tax" class="form-input" inputmode="numeric" placeholder="예: 3,750,000">
+                        <span class="unit-label">원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="sdiv-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="sdiv-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="sdiv-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
+                <div class="result-breakdown" id="sdiv-result">
+                  <div class="result-empty"><div class="result-empty-icon">💰</div>배당금 총액을 입력해주세요</div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  <strong>분리과세:</strong> 연간 2,000만원 이하 → 14% 원천징수로 종결<br>
+                  <strong>종합과세:</strong> 연간 2,000만원 초과 → 다른 소득과 합산 과세<br>
+                  <strong>Gross-up:</strong> 국내 배당은 11% 가산 후 세액공제 적용<br>
+                  <strong>해외 배당:</strong> 외국납부세액공제로 이중과세 방지
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== 주식: 증권거래세 ===== -->
+          <div id="view-stocks-transaction" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div>
+                    <div class="card-title">증권거래세 계산</div>
+                    <div class="card-subtitle">주식 매도 시 납부하는 세금 (2026년 단일화)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <div class="form-label">거래 시장 <span class="required">*</span></div>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="radio" name="txn-market" value="kospi" checked>
+                        <span class="radio-label">코스피 (0.20%)</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="txn-market" value="kosdaq">
+                        <span class="radio-label">코스닥 (0.20%)</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="txn-market" value="konex">
+                        <span class="radio-label">코넥스 (0.10%)</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="txn-market" value="unlisted">
+                        <span class="radio-label">비상장 (0.35%)</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="txn-amount">매도금액 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="txn-amount" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="txn-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="txn-copy">📋 복사</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="txn-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">📊</div>
+                    매도금액을 입력해주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  2026년부터 코스피·코스닥 증권거래세가 <strong>0.20%</strong>로 단일화되었습니다. 증권사에서 매도 시 자동 원천징수됩니다.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 기타 준비 중 -->
+          <div id="view-other-resident" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏛️</span>
+                  <div>
+                    <div class="card-title">주민세 계산</div>
+                    <div class="card-subtitle">개인균등분·사업소분·종업원분을 계산합니다</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label">주민세 유형</label>
+                    <div class="radio-group">
+                      <label class="radio-label"><input type="radio" name="resident-type" value="individual" checked> 개인균등분</label>
+                      <label class="radio-label"><input type="radio" name="resident-type" value="business"> 사업소분</label>
+                      <label class="radio-label"><input type="radio" name="resident-type" value="employee"> 종업원분</label>
+                    </div>
+                  </div>
+                  <!-- 개인균등분 -->
+                  <div data-section="individual">
+                    <div class="form-group">
+                      <label class="form-label">세대 수</label>
+                      <input type="number" id="resident-household" class="form-input" value="1" min="1" style="max-width:120px">
+                    </div>
+                  </div>
+                  <!-- 사업소분 -->
+                  <div data-section="business" style="display:none">
+                    <div class="form-group">
+                      <label class="form-label">사업장 규모</label>
+                      <select id="resident-biz-scale" class="form-select">
+                        <option value="small">개인 / 자본금 1억 이하 (5만원)</option>
+                        <option value="medium">자본금 1억 초과 ~ 10억 이하 (10만원)</option>
+                        <option value="large">자본금 10억 초과 ~ 50억 이하 (20만원)</option>
+                        <option value="xlarge">자본금 50억 초과 (50만원)</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">사업장 연면적 (㎡)</label>
+                      <input type="number" id="resident-area" class="form-input" placeholder="예: 500" style="max-width:200px">
+                      <span style="font-size:12px;color:var(--text-secondary)">330㎡ 초과 시 ㎡당 250원 부과</span>
+                    </div>
+                  </div>
+                  <!-- 종업원분 -->
+                  <div data-section="employee" style="display:none">
+                    <div class="form-group">
+                      <label class="form-label">월 급여총액</label>
+                      <div class="num-input-wrap">
+                        <input type="text" id="resident-salary" class="form-input" inputmode="numeric" placeholder="예: 200,000,000">
+                        <span class="unit-label">원</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">종업원 수</label>
+                      <input type="number" id="resident-emp-count" class="form-input" placeholder="예: 100" style="max-width:150px">
+                      <span style="font-size:12px;color:var(--text-secondary)">50명 이하 면제</span>
+                    </div>
+                  </div>
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="resident-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="resident-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="resident-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
+                <div class="result-breakdown" id="resident-result">
+                  <div class="result-empty"><div class="result-empty-icon">🏛️</div>항목을 선택하고 정보를 입력해주세요</div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  <strong>개인균등분:</strong> 세대당 연 1만원 (8월 부과)<br>
+                  <strong>사업소분:</strong> 기본세액 + 연면적분 (7월 부과)<br>
+                  <strong>종업원분:</strong> 급여총액 × 0.5% (50명 이하 면제)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="view-other-fuel" class="calculator-view">
+            <div class="info-ref-page">
+              <h2>유류세 안내</h2>
+              <p class="info-desc">유류세는 휘발유, 경유, LPG 등 연료 가격에 포함된 세금으로 소비자가 직접 신고하지 않습니다.</p>
+              <table class="info-table">
+                <thead><tr><th>연료 종류</th><th>교통에너지환경세</th><th>교육세</th><th>주행세</th><th>부가세(10%)</th></tr></thead>
+                <tbody>
+                  <tr><td>휘발유</td><td>529원/L</td><td>79.35원/L</td><td>137.54원/L</td><td>VAT 포함</td></tr>
+                  <tr><td>경유</td><td>375원/L</td><td>56.25원/L</td><td>97.5원/L</td><td>VAT 포함</td></tr>
+                  <tr><td>LPG(부탄)</td><td>182원/kg</td><td>27.3원/kg</td><td>47.32원/kg</td><td>VAT 포함</td></tr>
+                </tbody>
+              </table>
+              <div class="notice-box info">2026년 기준 참고값입니다. 실제 세율은 유가 보조금 정책에 따라 변동될 수 있습니다.</div>
+            </div>
+          </div>
+          <div id="view-other-customs-info" class="calculator-view">
+            <div class="info-ref-page">
+              <h2>관세 안내</h2>
+              <p class="info-desc">관세는 수입 물품에 부과되는 세금으로, 품목별로 세율이 다릅니다. 해외직구 시 면세 기준을 초과하면 관세가 부과됩니다.</p>
+              <table class="info-table">
+                <thead><tr><th>품목</th><th>관세율</th><th>비고</th></tr></thead>
+                <tbody>
+                  <tr><td>의류·잡화</td><td>13%</td><td>FTA 적용 시 인하 가능</td></tr>
+                  <tr><td>전자제품</td><td>8%</td><td>스마트폰·태블릿 0%</td></tr>
+                  <tr><td>화장품</td><td>6.5%</td><td></td></tr>
+                  <tr><td>건강기능식품</td><td>8%</td><td></td></tr>
+                  <tr><td>시계·귀금속</td><td>8%</td><td>200만원 초과 시 개소세 20%</td></tr>
+                  <tr><td>향수</td><td>6.5%</td><td>개소세 7%</td></tr>
+                </tbody>
+              </table>
+              <div class="notice-box info">
+                <strong>면세 기준:</strong> 일반 $150 이하, 미국 직구 $200 이하 면세<br>
+                <strong>과세 계산:</strong> 관세 + 부가세(10%) + 개별소비세(해당 시)<br>
+                해외구매 관세 계산은 <strong>소득 &gt; 해외 구매 관세</strong> 메뉴를 이용해주세요.
+              </div>
+            </div>
+          </div>
+          <div id="view-other-excise-info" class="calculator-view">
+            <div class="info-ref-page">
+              <h2>개별소비세 안내</h2>
+              <p class="info-desc">개별소비세는 사치품이나 특정 물품·장소에 부과되는 간접세입니다.</p>
+              <table class="info-table">
+                <thead><tr><th>과세 대상</th><th>세율</th><th>비고</th></tr></thead>
+                <tbody>
+                  <tr><td>승용자동차</td><td>출고가의 5%</td><td>경차·화물차 면제</td></tr>
+                  <tr><td>보석·귀금속 (200만원 초과)</td><td>20%</td><td>개당 가격 기준</td></tr>
+                  <tr><td>고급 시계 (200만원 초과)</td><td>20%</td><td></td></tr>
+                  <tr><td>고급 가방 (200만원 초과)</td><td>20%</td><td></td></tr>
+                  <tr><td>향수</td><td>7%</td><td></td></tr>
+                  <tr><td>카지노·경마장</td><td>10%</td><td>입장 행위에 부과</td></tr>
+                  <tr><td>유흥주점</td><td>10%</td><td>음식·유흥 요금</td></tr>
+                </tbody>
+              </table>
+              <div class="notice-box info">
+                <strong>부가세:</strong> 교육세(개소세의 30%) + 부가가치세(10%) 추가 부과<br>
+                자동차 개별소비세 계산은 <strong>자동차 &gt; 개별소비세</strong> 메뉴를 이용해주세요.
+              </div>
+            </div>
+          </div>
+          <div id="view-other-liquor" class="calculator-view">
+            <div class="info-ref-page">
+              <h2>주세 안내</h2>
+              <p class="info-desc">주세는 주류 제조자 또는 수입자가 납부하며, 소비자 가격에 포함되어 있습니다.</p>
+              <table class="info-table">
+                <thead><tr><th>주류 종류</th><th>세율</th><th>교육세</th></tr></thead>
+                <tbody>
+                  <tr><td>맥주</td><td>885.7원/L</td><td>30%</td></tr>
+                  <tr><td>탁주 (막걸리)</td><td>41.7원/L</td><td>10%</td></tr>
+                  <tr><td>소주 (희석식)</td><td>72%</td><td>30%</td></tr>
+                  <tr><td>위스키·브랜디</td><td>72%</td><td>30%</td></tr>
+                  <tr><td>와인 (과실주)</td><td>30%</td><td>10%</td></tr>
+                  <tr><td>청주</td><td>30%</td><td>10%</td></tr>
+                  <tr><td>증류식 소주</td><td>72%</td><td>30%</td></tr>
+                </tbody>
+              </table>
+              <div class="notice-box info">
+                맥주·탁주는 <strong>종량세</strong>(L당 정액), 기타 주류는 <strong>종가세</strong>(출고가 기준 %)입니다.<br>
+                주세 외 교육세 + 부가가치세(10%)가 추가 부과됩니다. (2026년 기준)
+              </div>
+            </div>
+          </div>
+          <div id="view-other-tobacco" class="calculator-view">
+            <div class="info-ref-page">
+              <h2>담배소비세 안내</h2>
+              <p class="info-desc">담배 한 갑(20개비, 4,500원 기준)에 포함된 세금 구성입니다.</p>
+              <table class="info-table">
+                <thead><tr><th>세금 항목</th><th>금액 (갑당)</th><th>비율</th></tr></thead>
+                <tbody>
+                  <tr><td>담배소비세</td><td>1,007원</td><td>22.4%</td></tr>
+                  <tr><td>지방교육세</td><td>443원</td><td>9.8%</td></tr>
+                  <tr><td>건강증진부담금</td><td>841원</td><td>18.7%</td></tr>
+                  <tr><td>개별소비세</td><td>594원</td><td>13.2%</td></tr>
+                  <tr><td>부가가치세</td><td>409원</td><td>9.1%</td></tr>
+                  <tr><td>폐기물부담금</td><td>24.4원</td><td>0.5%</td></tr>
+                  <tr><td><strong>세금 합계</strong></td><td><strong>약 3,318원</strong></td><td><strong>73.7%</strong></td></tr>
+                </tbody>
+              </table>
+              <div class="notice-box info">
+                담배 가격의 약 <strong>73.7%</strong>가 각종 세금·부담금입니다.<br>
+                담배소비세는 지방세이며, 제조자 또는 수입자가 신고·납부합니다. (2026년 기준)
+              </div>
+            </div>
+          </div>
+          <div id="view-other-leisure" class="calculator-view">
+            <div class="info-ref-page">
+              <h2>레저세 안내</h2>
+              <p class="info-desc">레저세는 경마, 경륜, 경정, 소싸움 등의 승자·승마투표권 발매금에 부과되는 지방세입니다.</p>
+              <table class="info-table">
+                <thead><tr><th>과세 대상</th><th>세율</th><th>부가세</th></tr></thead>
+                <tbody>
+                  <tr><td>경마 (한국마사회)</td><td>10%</td><td>지방교육세 40%, 농특세 20%</td></tr>
+                  <tr><td>경륜 (자전거경주)</td><td>10%</td><td>지방교육세 40%</td></tr>
+                  <tr><td>경정 (모터보트)</td><td>10%</td><td>지방교육세 40%</td></tr>
+                  <tr><td>소싸움</td><td>10%</td><td>지방교육세 40%</td></tr>
+                </tbody>
+              </table>
+              <div class="notice-box info">
+                <strong>과세표준:</strong> 승자·승마투표권 발매 총액 중 환급금을 제외한 금액<br>
+                <strong>납세의무자:</strong> 경주 시행자 (한국마사회, 경륜경정사업단 등)<br>
+                일반 소비자가 직접 신고·납부하는 세금이 아닙니다. (2026년 기준)
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.calculator-area -->
+      </main><!-- /#main-content -->
+    </div><!-- /#main-wrapper -->
+
+    <!-- Right Ad -->
+    <div class="ad-side-right">
+      <div class="ad-sticky">
+        <div class="ad-slot ad-160x600" id="ad-right">
+          <!-- Google AdSense 160x600 -->
+          <span>광고</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /#body-wrapper -->
+
+  <!-- ===== MOBILE SIDEBAR OVERLAY ===== -->
+  <div id="sidebar-overlay"></div>
+
+  <!-- ===== BOTTOM ANCHOR AD ===== -->
+  <div id="ad-anchor">
+    <button class="anchor-close" title="닫기">✕</button>
+    <div class="ad-slot ad-728x90" id="ad-anchor-desktop">
+      <!-- Google AdSense 728x90 -->
+      <span>광고</span>
+    </div>
+    <div class="ad-slot ad-320x50" id="ad-anchor-mobile" style="display:none">
+      <!-- Google AdSense 320x50 Mobile -->
+      <span>광고</span>
+    </div>
+  </div>
+
+  <!-- ===== INTERSTITIAL AD OVERLAY ===== -->
+  <div id="interstitial-overlay">
+    <div class="interstitial-box">
+      <button class="interstitial-close" disabled>✕</button>
+      <div class="interstitial-label">광고</div>
+      <div class="ad-slot" style="width:320px;height:250px;border-radius:8px" id="ad-interstitial">
+        <!-- Google AdSense Interstitial -->
+        <span>광고</span>
+      </div>
+      <div class="interstitial-countdown"></div>
+    </div>
+  </div>
+
+</div><!-- /#app -->
+
+<!-- ===== SCRIPTS ===== -->
+<script src="js/ui.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/router.js"></script>
+<script src="js/ads.js"></script>
+<script src="js/calculators/loan/loan.js?v=2"></script>
+<script src="js/calculators/real-estate/acquisition.js?v=2"></script>
+<script src="js/calculators/real-estate/commission.js?v=2"></script>
+<script src="js/calculators/real-estate/capital-gains.js?v=2"></script>
+<script src="js/calculators/real-estate/comprehensive.js?v=1"></script>
+<script src="js/calculators/real-estate/property-tax.js?v=1"></script>
+<script src="js/calculators/real-estate/rental-income.js?v=1"></script>
+<script src="js/calculators/real-estate/inheritance.js?v=1"></script>
+<script src="js/calculators/real-estate/gift.js?v=1"></script>
+<script src="js/calculators/real-estate/stamp.js?v=1"></script>
+<script src="js/calculators/real-estate/registration.js?v=1"></script>
+<script src="js/calculators/income/employment.js?v=1"></script>
+<script src="js/calculators/income/business.js?v=1"></script>
+<script src="js/calculators/income/comprehensive.js?v=1"></script>
+<script src="js/calculators/income/interest-dividend.js?v=1"></script>
+<script src="js/calculators/income/retirement.js?v=1"></script>
+<script src="js/calculators/income/vat.js?v=1"></script>
+<script src="js/calculators/income/customs.js?v=1"></script>
+<script src="js/calculators/stocks/foreign.js?v=2"></script>
+<script src="js/calculators/stocks/transaction.js?v=2"></script>
+<script src="js/calculators/vehicle/vehicle-tax.js?v=2"></script>
+<script src="js/calculators/vehicle/acquisition.js?v=1"></script>
+<script src="js/calculators/vehicle/excise.js?v=1"></script>
+<script src="js/calculators/stocks/domestic.js?v=1"></script>
+<script src="js/calculators/stocks/dividend.js?v=1"></script>
+<script src="js/calculators/other/resident.js?v=1"></script>
+<script src="js/app.js?v=2"></script>
+
+<script>
+  // Initialize calculators after DOM ready
+  document.addEventListener('DOMContentLoaded', () => {
+    CalcLoan.init();
+    CalcAcquisition.init();
+    CalcCommission.init();
+    CalcCapitalGains.init();
+    CalcComprehensive.init();
+    CalcPropertyTax.init();
+    CalcRentalIncome.init();
+    CalcInheritance.init();
+    CalcGift.init();
+    CalcStamp.init();
+    CalcRegistration.init();
+    CalcEmployment.init();
+    CalcBusiness.init();
+    CalcCompIncome.init();
+    CalcInterestDividend.init();
+    CalcRetirement.init();
+    CalcVat.init();
+    CalcCustoms.init();
+    CalcForeignStocks.init();
+    CalcTransaction.init();
+    CalcVehicleTax.init();
+    CalcVehicleAcq.init();
+    CalcVehicleExcise.init();
+    CalcStockDomestic.init();
+    CalcStockDividend.init();
+    CalcResident.init();
+
+    // Show page title bar when a calculator is active
+    const observer = new MutationObserver(() => {
+      const hasActive = document.querySelector('.calculator-view.active:not(#view-welcome)');
+      const titleBar = document.getElementById('page-title-bar');
+      if (titleBar) titleBar.style.display = hasActive ? '' : 'none';
+    });
+    const area = document.querySelector('.calculator-area');
+    if (area) observer.observe(area, { subtree: true, attributes: true, attributeFilter: ['class'] });
+
+    // Responsive: show correct anchor ad based on viewport
+    function resizeAds() {
+      const isMobile = window.innerWidth < 640;
+      const desktopBanner = document.getElementById('ad-banner-top');
+      const mobileBanner = document.getElementById('ad-banner-top-mobile');
+      const anchorDesktop = document.getElementById('ad-anchor-desktop');
+      const anchorMobile = document.getElementById('ad-anchor-mobile');
+
+      if (desktopBanner) desktopBanner.style.display = isMobile ? 'none' : '';
+      if (mobileBanner) mobileBanner.style.display = isMobile ? '' : 'none';
+      if (anchorDesktop) anchorDesktop.style.display = isMobile ? 'none' : '';
+      if (anchorMobile) anchorMobile.style.display = isMobile ? '' : 'none';
+    }
+    resizeAds();
+    window.addEventListener('resize', resizeAds);
+  });
+</script>
+
+</body>
+</html>

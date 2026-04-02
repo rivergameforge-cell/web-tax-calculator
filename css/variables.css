@@ -1,0 +1,105 @@
+/* ===== CSS Custom Properties (Design Tokens) ===== */
+:root {
+  /* Light Mode (Default) */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F7F8FA;
+  --bg-sidebar: #F0F2F5;
+  --bg-card: #FFFFFF;
+  --bg-input: #FFFFFF;
+  --bg-hover: #EEF2FF;
+  --bg-active: #E0E7FF;
+
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+  --text-accent: #2563EB;
+  --text-inverse: #FFFFFF;
+
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+  --accent-light: #EEF2FF;
+  --accent-border: #93C5FD;
+
+  --success: #10B981;
+  --success-light: #D1FAE5;
+  --warning: #F59E0B;
+  --warning-light: #FEF3C7;
+  --danger: #EF4444;
+  --danger-light: #FEE2E2;
+
+  --border: #E5E7EB;
+  --border-focus: #2563EB;
+  --border-strong: #D1D5DB;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  --sidebar-width: 260px;
+  --header-height: 60px;
+  --ad-side-width: 160px;
+  --ad-anchor-height: 60px;
+
+  --transition: 150ms ease;
+  --transition-slow: 250ms ease;
+
+  /* Category Colors */
+  --cat-loan: #0891B2;
+  --cat-realestate: #2563EB;
+  --cat-vehicle: #16A34A;
+  --cat-income: #D97706;
+  --cat-stocks: #7C3AED;
+  --cat-other: #6B7280;
+}
+
+/* ===== Dark Mode ===== */
+[data-theme="dark"] {
+  --bg-primary: #1E1E2E;
+  --bg-secondary: #181825;
+  --bg-sidebar: #13131A;
+  --bg-card: #24243E;
+  --bg-input: #2A2A40;
+  --bg-hover: #2A2A50;
+  --bg-active: #313160;
+
+  --text-primary: #CDD6F4;
+  --text-secondary: #A6ADC8;
+  --text-muted: #6C7086;
+  --text-accent: #89B4FA;
+  --text-inverse: #1E1E2E;
+
+  --accent: #89B4FA;
+  --accent-hover: #74A9F5;
+  --accent-light: #1E1E3E;
+  --accent-border: #4A6FA5;
+
+  --success: #A6E3A1;
+  --success-light: #1A2E1A;
+  --warning: #F9E2AF;
+  --warning-light: #2E1A00;
+  --danger: #F38BA8;
+  --danger-light: #2E1A1A;
+
+  --border: #313244;
+  --border-focus: #89B4FA;
+  --border-strong: #45475A;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+
+  --cat-loan: #67E8F9;
+  --cat-realestate: #89B4FA;
+  --cat-vehicle: #A6E3A1;
+  --cat-income: #F9E2AF;
+  --cat-stocks: #CBA6F7;
+  --cat-other: #A6ADC8;
+}
