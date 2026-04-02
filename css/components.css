@@ -615,6 +615,26 @@
   padding-bottom: 0;
 }
 
+/* 외부 도움 링크 (공시가격 확인 등) */
+.external-help-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+.external-help-link:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
 .ad-728x90 {
   width: 100%;
   max-width: 728px;
