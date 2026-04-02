@@ -1768,7 +1768,7 @@
                       <input type="text" id="vbuy-price" class="input" placeholder="0" inputmode="numeric">
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">신차: 출고가 (세전) / 중고차: 매입가</div>
+                    <div class="form-hint">신차: 판매가격 (개소세·부가세 포함) / 중고차: 매입가</div>
                   </div>
                   <div class="form-group">
                     <label class="form-label" for="vbuy-type">차종</label>
@@ -1791,9 +1791,15 @@
                   </div>
                   <div class="form-group">
                     <label class="check-label">
+                      <input type="checkbox" id="vbuy-excise-cut"> 개별소비세 한시 인하 적용 (5% → 3.5%)
+                    </label>
+                    <div class="form-hint">정부 한시 인하 기간 중이면 체크</div>
+                  </div>
+                  <div class="form-group">
+                    <label class="check-label">
                       <input type="checkbox" id="vbuy-used"> 중고차
                     </label>
-                    <div class="form-hint">중고차는 개소세·부가세 미포함 (이미 포함된 가격 입력)</div>
+                    <div class="form-hint">중고차는 개소세·부가세 없이 매입가 그대로 입력</div>
                   </div>
 
                   <div class="calc-action-bar">
@@ -2967,7 +2973,7 @@
 <script src="js/calculators/real-estate/stamp.js?v=1"></script>
 <script src="js/calculators/real-estate/registration.js?v=1"></script>
 <script src="js/calculators/real-estate/total-cost.js?v=1"></script>
-<script src="js/calculators/vehicle/buying.js?v=1"></script>
+<script src="js/calculators/vehicle/buying.js?v=2"></script>
 <script src="js/calculators/income/employment.js?v=1"></script>
 <script src="js/calculators/income/business.js?v=1"></script>
 <script src="js/calculators/income/comprehensive.js?v=1"></script>
