@@ -174,7 +174,7 @@ const CalcInheritance = (() => {
   }
 
   function init() {
-    const view = document.getElementById('view-real-estate-inheritance');
+    const view = document.getElementById('view-inherit-inheritance');
     if (!view) return;
 
     const resultContainer = view.querySelector('#inh-result');

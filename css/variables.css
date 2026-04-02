@@ -56,6 +56,7 @@
   --cat-vehicle: #16A34A;
   --cat-income: #D97706;
   --cat-stocks: #7C3AED;
+  --cat-inherit: #DC2626;
   --cat-other: #6B7280;
 }
 
@@ -101,5 +102,6 @@
   --cat-vehicle: #A6E3A1;
   --cat-income: #F9E2AF;
   --cat-stocks: #CBA6F7;
+  --cat-inherit: #FCA5A5;
   --cat-other: #A6ADC8;
 }

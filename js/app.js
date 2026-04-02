@@ -22,11 +22,20 @@ const NAV_CONFIG = [
       { id: 'real-estate/comprehensive', label: '종합부동산세', badge: null },
       { id: 'real-estate/property-tax', label: '재산세', badge: null },
       { id: 'real-estate/rental-income', label: '임대소득세', badge: null },
-      { id: 'real-estate/inheritance', label: '상속세', badge: null },
-      { id: 'real-estate/gift', label: '증여세', badge: null },
       { id: 'real-estate/stamp', label: '인지세', badge: null },
       { id: 'real-estate/registration', label: '등록면허세', badge: null },
       { id: 'real-estate/commission', label: '부동산 복비', badge: null },
+      { id: 'real-estate/total-cost', label: '집 살 때 / 팔 때', badge: '종합' },
+    ]
+  },
+  {
+    id: 'inherit',
+    label: '상속/증여',
+    icon: '📜',
+    color: 'var(--cat-inherit)',
+    items: [
+      { id: 'inherit/inheritance', label: '상속세', badge: null },
+      { id: 'inherit/gift', label: '증여세', badge: null },
     ]
   },
   {
@@ -38,6 +47,7 @@ const NAV_CONFIG = [
       { id: 'vehicle/vehicle-tax', label: '자동차세', badge: null },
       { id: 'vehicle/acquisition', label: '자동차 취득세', badge: null },
       { id: 'vehicle/excise', label: '자동차 개별소비세', badge: null },
+      { id: 'vehicle/buying', label: '자동차 살 때', badge: '종합' },
     ]
   },
   {
@@ -108,16 +118,20 @@ const TAB_CONFIG = {
     { id: 'real-estate/comprehensive', label: '종합부동산세' },
     { id: 'real-estate/property-tax', label: '재산세' },
     { id: 'real-estate/rental-income', label: '임대소득세' },
-    { id: 'real-estate/inheritance', label: '상속세' },
-    { id: 'real-estate/gift', label: '증여세' },
     { id: 'real-estate/stamp', label: '인지세' },
     { id: 'real-estate/registration', label: '등록면허세' },
     { id: 'real-estate/commission', label: '복비 계산' },
+    { id: 'real-estate/total-cost', label: '집 살 때/팔 때' },
+  ],
+  'inherit': [
+    { id: 'inherit/inheritance', label: '상속세' },
+    { id: 'inherit/gift', label: '증여세' },
   ],
   'vehicle': [
     { id: 'vehicle/vehicle-tax', label: '자동차세' },
     { id: 'vehicle/acquisition', label: '자동차 취득세' },
     { id: 'vehicle/excise', label: '개별소비세' },
+    { id: 'vehicle/buying', label: '자동차 살 때' },
   ],
   'income': [
     { id: 'income/employment', label: '근로소득세·연말정산' },

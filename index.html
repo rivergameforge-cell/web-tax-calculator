@@ -253,12 +253,17 @@
                 <div class="welcome-card" onclick="App.navigateToCategory('real-estate')">
                   <div class="wc-icon">🏠</div>
                   <div class="wc-label">부동산</div>
-                  <div class="wc-count">취득세, 양도세 외 8종</div>
+                  <div class="wc-count">취득세, 양도세 외 7종</div>
+                </div>
+                <div class="welcome-card" onclick="App.navigateToCategory('inherit')">
+                  <div class="wc-icon">📜</div>
+                  <div class="wc-label">상속/증여</div>
+                  <div class="wc-count">상속세, 증여세</div>
                 </div>
                 <div class="welcome-card" onclick="App.navigateToCategory('vehicle')">
                   <div class="wc-icon">🚗</div>
                   <div class="wc-label">자동차</div>
-                  <div class="wc-count">자동차세, 취득세, 개소세</div>
+                  <div class="wc-count">자동차세, 취득세 외 2종</div>
                 </div>
                 <div class="welcome-card" onclick="App.navigateToCategory('income')">
                   <div class="wc-icon">💼</div>
@@ -286,7 +291,7 @@
                   <a class="quick-link" onclick="App.navigateTo('income/customs')">📦 해외직구 관세</a>
                   <a class="quick-link" onclick="App.navigateTo('vehicle/vehicle-tax')">🚗 자동차세</a>
                   <a class="quick-link" onclick="App.navigateTo('stocks/foreign')">📈 해외주식 양도세</a>
-                  <a class="quick-link" onclick="App.navigateTo('real-estate/gift')">🎁 증여세</a>
+                  <a class="quick-link" onclick="App.navigateTo('inherit/gift')">🎁 증여세</a>
                   <a class="quick-link" onclick="App.navigateTo('loan/loan')">🏦 대출금 계산</a>
                 </div>
               </div>
@@ -861,8 +866,8 @@
               </div>
             </div>
           </div>
-          <!-- ===== 부동산: 상속세 ===== -->
-          <div id="view-real-estate-inheritance" class="calculator-view">
+          <!-- ===== 상속/증여: 상속세 ===== -->
+          <div id="view-inherit-inheritance" class="calculator-view">
             <div class="calc-grid">
               <div class="card input-panel">
                 <div class="card-header">
@@ -1012,8 +1017,8 @@
               </div>
             </div>
           </div>
-          <!-- ===== 부동산: 증여세 ===== -->
-          <div id="view-real-estate-gift" class="calculator-view">
+          <!-- ===== 상속/증여: 증여세 ===== -->
+          <div id="view-inherit-gift" class="calculator-view">
             <div class="calc-grid">
               <div class="card input-panel">
                 <div class="card-header">
@@ -1405,6 +1410,133 @@
             </div>
           </div>
 
+          <!-- ===== 부동산: 총 비용 (집 살 때 / 팔 때) ===== -->
+          <div id="view-real-estate-total-cost" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏠</span>
+                  <div>
+                    <div class="card-title">부동산 총 비용 계산</div>
+                    <div class="card-subtitle">매매 시 발생하는 모든 비용을 한번에 계산</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <!-- 모드 토글 -->
+                  <div class="form-group">
+                    <div class="radio-group">
+                      <label class="radio-label">
+                        <input type="radio" name="tc-mode" value="buy" checked> 집 살 때
+                      </label>
+                      <label class="radio-label">
+                        <input type="radio" name="tc-mode" value="sell"> 집 팔 때
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 집 살 때 입력 -->
+                  <div id="tc-buy-panel">
+                    <div class="form-group">
+                      <label class="form-label" for="tc-buy-price">매매가격 <span class="required">*</span></label>
+                      <div class="num-input-wrap">
+                        <input type="text" id="tc-buy-price" class="input" placeholder="0" inputmode="numeric">
+                        <span class="num-input-unit">원</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="tc-buy-area">전용면적</label>
+                      <div class="num-input-wrap">
+                        <input type="number" id="tc-buy-area" class="input" value="60" min="1" max="500">
+                        <span class="num-input-unit">㎡</span>
+                      </div>
+                      <div class="form-hint">85㎡ 초과 시 농어촌특별세 부과</div>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="tc-buy-houses">보유 주택 수</label>
+                      <select id="tc-buy-houses" class="select">
+                        <option value="1">1주택 (무주택 → 1주택)</option>
+                        <option value="2">2주택</option>
+                        <option value="3">3주택 이상</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="check-label">
+                        <input type="checkbox" id="tc-buy-adjusted"> 조정대상지역
+                      </label>
+                      <div class="form-hint">다주택자 중과세율 적용 여부</div>
+                    </div>
+                  </div>
+
+                  <!-- 집 팔 때 입력 -->
+                  <div id="tc-sell-panel" style="display:none">
+                    <div class="form-group">
+                      <label class="form-label" for="tc-sell-price">매도가격 <span class="required">*</span></label>
+                      <div class="num-input-wrap">
+                        <input type="text" id="tc-sell-price" class="input" placeholder="0" inputmode="numeric">
+                        <span class="num-input-unit">원</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="tc-sell-buyprice">취득가격 (매수가) <span class="required">*</span></label>
+                      <div class="num-input-wrap">
+                        <input type="text" id="tc-sell-buyprice" class="input" placeholder="0" inputmode="numeric">
+                        <span class="num-input-unit">원</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="tc-sell-years">보유기간</label>
+                      <div class="num-input-wrap">
+                        <input type="number" id="tc-sell-years" class="input" value="0" min="0" max="50">
+                        <span class="num-input-unit">년</span>
+                      </div>
+                      <div class="form-hint">장기보유특별공제 적용 (1주택 연 8%, 일반 연 2%)</div>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="tc-sell-houses">보유 주택 수</label>
+                      <select id="tc-sell-houses" class="select">
+                        <option value="1">1주택</option>
+                        <option value="2">2주택</option>
+                        <option value="3">3주택 이상</option>
+                      </select>
+                      <div class="form-hint">1주택 + 2년 보유 + 매도가 12억 이하 → 비과세</div>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="tc-sell-expenses">필요경비 (수리비 등)</label>
+                      <div class="num-input-wrap">
+                        <input type="text" id="tc-sell-expenses" class="input" placeholder="0" inputmode="numeric">
+                        <span class="num-input-unit">원</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="tc-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="tc-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="tc-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 결과 패널 -->
+              <div class="card">
+                <div class="result-breakdown" id="tc-buy-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🏠</div>
+                    매매가격을 입력해주세요
+                  </div>
+                </div>
+                <div class="result-breakdown" id="tc-sell-result" style="display:none">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">💰</div>
+                    매도·매수 가격을 입력해주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  법무사 비용, 국민주택채권 할인비, 공채할인비는 <strong>추정값</strong>입니다. 실제 금액은 지역·법무사에 따라 다를 수 있습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- ===== 자동차: 자동차세 ===== -->
           <div id="view-vehicle-vehicle-tax" class="calculator-view">
             <div class="calc-grid">
@@ -1613,6 +1745,74 @@
                   <strong>교육세:</strong> 개별소비세의 30%<br>
                   <strong>부가가치세:</strong> (출고가 + 개소세 + 교육세)의 10%<br>
                   <strong>친환경차:</strong> 전기차 최대 300만원, 수소차 최대 400만원 감면
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== 자동차: 자동차 살 때 ===== -->
+          <div id="view-vehicle-buying" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🚗</span>
+                  <div>
+                    <div class="card-title">자동차 구매 총 비용</div>
+                    <div class="card-subtitle">차량 구매 시 발생하는 모든 세금·등록비 계산</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="vbuy-price">차량 가격 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="vbuy-price" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">신차: 출고가 (세전) / 중고차: 매입가</div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="vbuy-type">차종</label>
+                    <select id="vbuy-type" class="select">
+                      <option value="passenger">승용차</option>
+                      <option value="light">경차 (1000cc 이하)</option>
+                      <option value="electric">전기차</option>
+                      <option value="truck">화물차</option>
+                      <option value="van">승합차</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="vbuy-eco">친환경차 감면</label>
+                    <select id="vbuy-eco" class="select">
+                      <option value="none">해당 없음</option>
+                      <option value="hybrid">하이브리드</option>
+                      <option value="electric">전기차</option>
+                      <option value="hydrogen">수소차</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="check-label">
+                      <input type="checkbox" id="vbuy-used"> 중고차
+                    </label>
+                    <div class="form-hint">중고차는 개소세·부가세 미포함 (이미 포함된 가격 입력)</div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="vbuy-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="vbuy-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="vbuy-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 결과 패널 -->
+              <div class="card">
+                <div class="result-breakdown" id="vbuy-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🚗</div>
+                    차량 가격을 입력해주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  공채할인비는 지역별로 다릅니다 (서울 기준 추정). 보험료·검사비는 별도입니다.
                 </div>
               </div>
             </div>
@@ -2762,10 +2962,12 @@
 <script src="js/calculators/real-estate/comprehensive.js?v=1"></script>
 <script src="js/calculators/real-estate/property-tax.js?v=1"></script>
 <script src="js/calculators/real-estate/rental-income.js?v=1"></script>
-<script src="js/calculators/real-estate/inheritance.js?v=1"></script>
-<script src="js/calculators/real-estate/gift.js?v=1"></script>
+<script src="js/calculators/inherit/inheritance.js?v=2"></script>
+<script src="js/calculators/inherit/gift.js?v=2"></script>
 <script src="js/calculators/real-estate/stamp.js?v=1"></script>
 <script src="js/calculators/real-estate/registration.js?v=1"></script>
+<script src="js/calculators/real-estate/total-cost.js?v=1"></script>
+<script src="js/calculators/vehicle/buying.js?v=1"></script>
 <script src="js/calculators/income/employment.js?v=1"></script>
 <script src="js/calculators/income/business.js?v=1"></script>
 <script src="js/calculators/income/comprehensive.js?v=1"></script>
@@ -2781,7 +2983,7 @@
 <script src="js/calculators/stocks/domestic.js?v=1"></script>
 <script src="js/calculators/stocks/dividend.js?v=1"></script>
 <script src="js/calculators/other/resident.js?v=1"></script>
-<script src="js/app.js?v=2"></script>
+<script src="js/app.js?v=4"></script>
 
 <script>
   // Initialize calculators after DOM ready
@@ -2812,6 +3014,8 @@
     CalcStockDomestic.init();
     CalcStockDividend.init();
     CalcResident.init();
+    CalcTotalCost.init();
+    CalcVehicleBuying.init();
 
     // Show page title bar when a calculator is active
     const observer = new MutationObserver(() => {

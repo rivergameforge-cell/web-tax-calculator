@@ -132,7 +132,7 @@ const CalcGift = (() => {
   }
 
   function init() {
-    const view = document.getElementById('view-real-estate-gift');
+    const view = document.getElementById('view-inherit-gift');
     if (!view) return;
 
     const resultContainer = view.querySelector('#gift-result');
