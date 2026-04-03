@@ -268,7 +268,7 @@
                 <div class="welcome-card" onclick="App.navigateToCategory('income')">
                   <div class="wc-icon">💼</div>
                   <div class="wc-label">소득</div>
-                  <div class="wc-count">근로소득세, 4대보험 외 8종</div>
+                  <div class="wc-count">연봉계산기, 4대보험 외 9종</div>
                 </div>
                 <div class="welcome-card" onclick="App.navigateToCategory('stocks')">
                   <div class="wc-icon">📈</div>
@@ -1965,6 +1965,96 @@
           </div>
 
           <!-- ===== 소득 준비 중 ===== -->
+          <!-- ===== 소득: 연봉 계산기 ===== -->
+          <div id="view-income-salary" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>💰</span>
+                  <div>
+                    <div class="card-title">연봉/월급/시급 계산기</div>
+                    <div class="card-subtitle">실수령액, 4대보험, 세금 한번에 계산</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="sal-mode">입력 방식</label>
+                    <select id="sal-mode" class="select">
+                      <option value="annual">연봉</option>
+                      <option value="monthly">월급</option>
+                      <option value="hourly">시급</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="sal-amount" id="sal-amount-label">연봉 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="sal-amount" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group" id="sal-hours-group" style="display:none">
+                    <label class="form-label" for="sal-hours">주당 근무시간</label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="sal-hours" class="input" value="40" min="1" max="80">
+                      <span class="num-input-unit">시간</span>
+                    </div>
+                    <div class="form-hint">주 40시간 = 하루 8시간 × 5일</div>
+                  </div>
+
+                  <div class="section-divider"><span>공제 설정</span></div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="sal-family">부양가족 수 (본인 포함)</label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="sal-family" class="input" value="1" min="1" max="20">
+                      <span class="num-input-unit">명</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="sal-child">20세 이하 자녀 수</label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="sal-child" class="input" value="0" min="0" max="10">
+                      <span class="num-input-unit">명</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="sal-nontax">비과세 수당 (월)</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="sal-nontax" class="input" value="200,000" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">식대 20만원 등 비과세 항목 합계</div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="salary-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="salary-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="salary-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="result-breakdown" id="salary-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">💰</div>
+                    연봉(또는 월급/시급)을 입력해주세요
+                  </div>
+                </div>
+                <details class="tax-tip-box" style="margin:16px">
+                  <summary>💡 실수령액 높이는 팁</summary>
+                  <div class="tip-content">
+                    <ul>
+                      <li><strong>비과세 수당 활용</strong> — 식대(20만원), 자가운전보조금(20만원) 등 <span class="tip-highlight">비과세 항목이 많을수록 실수령액 증가</span></li>
+                      <li><strong>연금저축·IRP</strong> — 연말정산 시 세액공제로 환급받을 수 있어 실질 수령액 상승</li>
+                      <li><strong>부양가족 등록</strong> — 부양가족이 많을수록 원천징수 세금이 줄어 월 실수령액 증가</li>
+                      <li><strong>2026년 최저시급</strong> — 10,030원 (주 40시간 기준 월 2,096,270원, 연 25,155,240원)</li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+
           <!-- ===== 소득: 근로소득세·연말정산 ===== -->
           <div id="view-income-employment" class="calculator-view">
             <div class="calc-grid">
@@ -3369,6 +3459,7 @@
 <script src="js/calculators/real-estate/total-cost.js?v=1"></script>
 <script src="js/calculators/vehicle/buying.js?v=2"></script>
 <script src="js/calculators/vehicle/overdue.js?v=1"></script>
+<script src="js/calculators/income/salary.js?v=1"></script>
 <script src="js/calculators/income/employment.js?v=1"></script>
 <script src="js/calculators/income/business.js?v=1"></script>
 <script src="js/calculators/income/comprehensive.js?v=1"></script>
@@ -3387,7 +3478,7 @@
 <script src="js/calculators/stocks/domestic.js?v=1"></script>
 <script src="js/calculators/stocks/dividend.js?v=1"></script>
 <script src="js/calculators/other/resident.js?v=1"></script>
-<script src="js/app.js?v=5"></script>
+<script src="js/app.js?v=6"></script>
 
 <script>
   // Initialize calculators after DOM ready
@@ -3424,6 +3515,7 @@
     CalcPenalty.init();
     CalcCorporate.init();
     CalcInsurance.init();
+    CalcSalary.init();
 
     // Show page title bar when a calculator is active
     const observer = new MutationObserver(() => {

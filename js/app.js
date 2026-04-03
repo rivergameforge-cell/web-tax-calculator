@@ -57,6 +57,7 @@ const NAV_CONFIG = [
     icon: '💼',
     color: 'var(--cat-income)',
     items: [
+      { id: 'income/salary', label: '연봉 계산기', badge: '인기' },
       { id: 'income/employment', label: '근로소득세·연말정산', badge: null },
       { id: 'income/business', label: '사업소득세', badge: null },
       { id: 'income/comprehensive', label: '종합소득세', badge: null },
@@ -139,6 +140,7 @@ const TAB_CONFIG = {
     { id: 'vehicle/overdue', label: '미납 가산금' },
   ],
   'income': [
+    { id: 'income/salary', label: '연봉 계산기' },
     { id: 'income/employment', label: '근로소득세·연말정산' },
     { id: 'income/business', label: '사업소득세' },
     { id: 'income/comprehensive', label: '종합소득세' },
