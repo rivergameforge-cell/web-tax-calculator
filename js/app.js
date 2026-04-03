@@ -48,6 +48,7 @@ const NAV_CONFIG = [
       { id: 'vehicle/acquisition', label: '자동차 취득세', badge: null },
       { id: 'vehicle/excise', label: '자동차 개별소비세', badge: null },
       { id: 'vehicle/buying', label: '자동차 살 때', badge: '종합' },
+      { id: 'vehicle/overdue', label: '자동차세 미납', badge: null },
     ]
   },
   {
@@ -59,6 +60,9 @@ const NAV_CONFIG = [
       { id: 'income/employment', label: '근로소득세·연말정산', badge: null },
       { id: 'income/business', label: '사업소득세', badge: null },
       { id: 'income/comprehensive', label: '종합소득세', badge: null },
+      { id: 'income/penalty', label: '종합소득세 가산세', badge: null },
+      { id: 'income/corporate', label: '법인세', badge: null },
+      { id: 'income/insurance', label: '4대보험', badge: '인기' },
       { id: 'income/interest-dividend', label: '이자·배당소득세', badge: null },
       { id: 'income/retirement', label: '퇴직소득세', badge: null },
       { id: 'income/vat', label: '부가가치세', badge: null },
@@ -132,11 +136,15 @@ const TAB_CONFIG = {
     { id: 'vehicle/acquisition', label: '자동차 취득세' },
     { id: 'vehicle/excise', label: '개별소비세' },
     { id: 'vehicle/buying', label: '자동차 살 때' },
+    { id: 'vehicle/overdue', label: '미납 가산금' },
   ],
   'income': [
     { id: 'income/employment', label: '근로소득세·연말정산' },
     { id: 'income/business', label: '사업소득세' },
     { id: 'income/comprehensive', label: '종합소득세' },
+    { id: 'income/penalty', label: '가산세' },
+    { id: 'income/corporate', label: '법인세' },
+    { id: 'income/insurance', label: '4대보험' },
     { id: 'income/interest-dividend', label: '이자·배당소득세' },
     { id: 'income/retirement', label: '퇴직소득세' },
     { id: 'income/vat', label: '부가가치세' },

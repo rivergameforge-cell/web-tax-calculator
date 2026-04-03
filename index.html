@@ -263,12 +263,12 @@
                 <div class="welcome-card" onclick="App.navigateToCategory('vehicle')">
                   <div class="wc-icon">🚗</div>
                   <div class="wc-label">자동차</div>
-                  <div class="wc-count">자동차세, 취득세 외 2종</div>
+                  <div class="wc-count">자동차세, 취득세 외 3종</div>
                 </div>
                 <div class="welcome-card" onclick="App.navigateToCategory('income')">
                   <div class="wc-icon">💼</div>
                   <div class="wc-label">소득</div>
-                  <div class="wc-count">근로소득세, 부가세 외 5종</div>
+                  <div class="wc-count">근로소득세, 4대보험 외 8종</div>
                 </div>
                 <div class="welcome-card" onclick="App.navigateToCategory('stocks')">
                   <div class="wc-icon">📈</div>
@@ -1824,6 +1824,54 @@
             </div>
           </div>
 
+          <!-- ===== 자동차: 미납 가산금 ===== -->
+          <div id="view-vehicle-overdue" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🚨</span>
+                  <div>
+                    <div class="card-title">자동차세 미납 가산금</div>
+                    <div class="card-subtitle">체납 기간별 가산금·중가산금 계산</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="vod-tax">자동차세 본세 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="vod-tax" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="vod-due-date">납부기한</label>
+                    <input type="date" id="vod-due-date" class="input">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="vod-today">납부 예정일 (오늘)</label>
+                    <input type="date" id="vod-today" class="input">
+                  </div>
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="vod-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="vod-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="vod-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="result-breakdown" id="vod-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🚨</div>
+                    자동차세 본세와 납부기한을 입력해주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  납부기한 경과 시 <strong>3% 가산금</strong> 즉시 부과. 1개월 초과 시부터 매월 <strong>0.75% 중가산금</strong> 추가 (최대 60개월, 45%).
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- ===== 소득 준비 중 ===== -->
           <!-- ===== 소득: 근로소득세·연말정산 ===== -->
           <div id="view-income-employment" class="calculator-view">
@@ -2155,6 +2203,179 @@
               </div>
             </div>
           </div>
+          <!-- ===== 소득: 종합소득세 가산세 ===== -->
+          <div id="view-income-penalty" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>⚠️</span>
+                  <div>
+                    <div class="card-title">종합소득세 가산세</div>
+                    <div class="card-subtitle">무신고·과소신고·납부지연 가산세 계산</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="pen-tax-amount">본세 (납부할 세금) <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="pen-tax-amount" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="pen-type">가산세 유형</label>
+                    <select id="pen-type" class="select">
+                      <option value="no-report">무신고 (20%)</option>
+                      <option value="no-report-fraud">부정 무신고 (40%)</option>
+                      <option value="under-report">과소신고 (10%)</option>
+                      <option value="under-report-fraud">부정 과소신고 (40%)</option>
+                    </select>
+                  </div>
+                  <div class="section-divider"><span>납부지연 가산세</span></div>
+                  <div class="form-group">
+                    <label class="form-label" for="pen-overdue-amount">미납세액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="pen-overdue-amount" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">납부기한까지 미납한 세액 (본세와 같으면 동일 입력)</div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="pen-overdue-days">납부지연 일수</label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="pen-overdue-days" class="input" value="0" min="0" max="3650">
+                      <span class="num-input-unit">일</span>
+                    </div>
+                    <div class="form-hint">납부기한 다음날부터 경과일 (일 0.022%)</div>
+                  </div>
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="penalty-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="penalty-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="penalty-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="result-breakdown" id="penalty-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">⚠️</div>
+                    본세를 입력해주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  가산세는 신고 가산세와 납부지연 가산세로 구분됩니다. 신고 기한: 매년 <strong>5월 31일</strong>.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== 소득: 법인세 ===== -->
+          <div id="view-income-corporate" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏢</span>
+                  <div>
+                    <div class="card-title">법인세 계산</div>
+                    <div class="card-subtitle">법인 과세소득에 대한 세금 계산 (2026년)</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="corp-income">과세표준 (법인 소득) <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="corp-income" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">각 사업연도 소득 - 이월결손금 - 비과세소득 - 소득공제</div>
+                  </div>
+                  <div class="form-group">
+                    <label class="check-label">
+                      <input type="checkbox" id="corp-is-sme"> 중소기업
+                    </label>
+                    <div class="form-hint">참고 표시용 (세율 자체는 동일)</div>
+                  </div>
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="corp-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="corp-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="corp-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="result-breakdown" id="corp-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🏢</div>
+                    과세표준을 입력해주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  법인세 신고·납부 기한: 사업연도 종료일 후 <strong>3개월 이내</strong>. 지방소득세는 법인세의 10%가 추가됩니다.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== 소득: 4대보험 ===== -->
+          <div id="view-income-insurance" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🛡️</span>
+                  <div>
+                    <div class="card-title">4대보험 계산</div>
+                    <div class="card-subtitle">국민연금·건강보험·고용보험·산재보험</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label" for="ins-salary">월 보수 (급여) <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="ins-salary" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">비과세 수당 제외한 월 보수월액</div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="ins-type">가입자 유형</label>
+                    <select id="ins-type" class="select">
+                      <option value="employee">직장가입자 (근로자 부담분)</option>
+                      <option value="employer">사업주 부담분</option>
+                      <option value="self">지역가입자 (전액 본인)</option>
+                    </select>
+                  </div>
+                  <div class="form-group" id="ins-industry-group" style="display:none">
+                    <label class="form-label" for="ins-industry">산재보험 업종</label>
+                    <select id="ins-industry" class="select">
+                      <option value="office">사무직 (0.7%)</option>
+                      <option value="retail">도소매업 (0.9%)</option>
+                      <option value="food">음식숙박업 (1.2%)</option>
+                      <option value="manufacturing">제조업 (1.6%)</option>
+                      <option value="construction">건설업 (3.5%)</option>
+                      <option value="other">기타 (1.0%)</option>
+                    </select>
+                  </div>
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="ins-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="ins-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="ins-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="result-breakdown" id="ins-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🛡️</div>
+                    월 보수를 입력해주세요
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  국민연금 상한: 보수월액 590만원. 건강보험 상한: 약 1억원. 지역가입자는 고용·산재보험 미적용.
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- ===== 소득: 이자·배당소득세 ===== -->
           <div id="view-income-interest-dividend" class="calculator-view">
             <div class="calc-grid">
@@ -2974,9 +3195,13 @@
 <script src="js/calculators/real-estate/registration.js?v=1"></script>
 <script src="js/calculators/real-estate/total-cost.js?v=1"></script>
 <script src="js/calculators/vehicle/buying.js?v=2"></script>
+<script src="js/calculators/vehicle/overdue.js?v=1"></script>
 <script src="js/calculators/income/employment.js?v=1"></script>
 <script src="js/calculators/income/business.js?v=1"></script>
 <script src="js/calculators/income/comprehensive.js?v=1"></script>
+<script src="js/calculators/income/penalty.js?v=1"></script>
+<script src="js/calculators/income/corporate.js?v=1"></script>
+<script src="js/calculators/income/insurance.js?v=1"></script>
 <script src="js/calculators/income/interest-dividend.js?v=1"></script>
 <script src="js/calculators/income/retirement.js?v=1"></script>
 <script src="js/calculators/income/vat.js?v=1"></script>
@@ -2989,7 +3214,7 @@
 <script src="js/calculators/stocks/domestic.js?v=1"></script>
 <script src="js/calculators/stocks/dividend.js?v=1"></script>
 <script src="js/calculators/other/resident.js?v=1"></script>
-<script src="js/app.js?v=4"></script>
+<script src="js/app.js?v=5"></script>
 
 <script>
   // Initialize calculators after DOM ready
@@ -3022,6 +3247,10 @@
     CalcResident.init();
     CalcTotalCost.init();
     CalcVehicleBuying.init();
+    CalcVehicleOverdue.init();
+    CalcPenalty.init();
+    CalcCorporate.init();
+    CalcInsurance.init();
 
     // Show page title bar when a calculator is active
     const observer = new MutationObserver(() => {
