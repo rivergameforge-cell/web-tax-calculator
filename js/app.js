@@ -17,8 +17,8 @@ const NAV_CONFIG = [
     icon: '🏠',
     color: 'var(--cat-realestate)',
     items: [
-      { id: 'real-estate/acquisition', label: '취득세', badge: null },
       { id: 'real-estate/capital-gains', label: '양도소득세', badge: null },
+      { id: 'real-estate/acquisition', label: '취득세', badge: null },
       { id: 'real-estate/comprehensive', label: '종합부동산세', badge: null },
       { id: 'real-estate/property-tax', label: '재산세', badge: null },
       { id: 'real-estate/rental-income', label: '임대소득세', badge: null },
@@ -45,10 +45,10 @@ const NAV_CONFIG = [
     color: 'var(--cat-vehicle)',
     items: [
       { id: 'vehicle/vehicle-tax', label: '자동차세', badge: null },
+      { id: 'vehicle/overdue', label: '자동차세 미납', badge: null },
       { id: 'vehicle/acquisition', label: '자동차 취득세', badge: null },
       { id: 'vehicle/excise', label: '자동차 개별소비세', badge: null },
       { id: 'vehicle/buying', label: '자동차 살 때', badge: '종합' },
-      { id: 'vehicle/overdue', label: '자동차세 미납', badge: null },
     ]
   },
   {
@@ -59,12 +59,12 @@ const NAV_CONFIG = [
     items: [
       { id: 'income/salary', label: '연봉 계산기', badge: '인기' },
       { id: 'income/employment', label: '근로소득세·연말정산', badge: null },
+      { id: 'income/pension-saving', label: '연금저축·IRP 공제', badge: null },
       { id: 'income/business', label: '사업소득세', badge: null },
       { id: 'income/comprehensive', label: '종합소득세', badge: null },
       { id: 'income/penalty', label: '종합소득세 가산세', badge: null },
       { id: 'income/corporate', label: '법인세', badge: null },
       { id: 'income/insurance', label: '4대보험', badge: '인기' },
-      { id: 'income/pension-saving', label: '연금저축·IRP 공제', badge: null },
       { id: 'income/interest-dividend', label: '이자·배당소득세', badge: null },
       { id: 'income/retirement', label: '퇴직소득세', badge: null },
       { id: 'income/vat', label: '부가가치세', badge: null },
@@ -119,8 +119,8 @@ const TAB_CONFIG = {
     { id: 'loan/calculator', label: '대출금 계산기' },
   ],
   'real-estate': [
-    { id: 'real-estate/acquisition', label: '취득세' },
     { id: 'real-estate/capital-gains', label: '양도소득세' },
+    { id: 'real-estate/acquisition', label: '취득세' },
     { id: 'real-estate/comprehensive', label: '종합부동산세' },
     { id: 'real-estate/property-tax', label: '재산세' },
     { id: 'real-estate/rental-income', label: '임대소득세' },
@@ -135,20 +135,20 @@ const TAB_CONFIG = {
   ],
   'vehicle': [
     { id: 'vehicle/vehicle-tax', label: '자동차세' },
+    { id: 'vehicle/overdue', label: '미납 가산금' },
     { id: 'vehicle/acquisition', label: '자동차 취득세' },
     { id: 'vehicle/excise', label: '개별소비세' },
     { id: 'vehicle/buying', label: '자동차 살 때' },
-    { id: 'vehicle/overdue', label: '미납 가산금' },
   ],
   'income': [
     { id: 'income/salary', label: '연봉 계산기' },
     { id: 'income/employment', label: '근로소득세·연말정산' },
+    { id: 'income/pension-saving', label: '연금저축·IRP' },
     { id: 'income/business', label: '사업소득세' },
     { id: 'income/comprehensive', label: '종합소득세' },
     { id: 'income/penalty', label: '가산세' },
     { id: 'income/corporate', label: '법인세' },
     { id: 'income/insurance', label: '4대보험' },
-    { id: 'income/pension-saving', label: '연금저축·IRP' },
     { id: 'income/interest-dividend', label: '이자·배당소득세' },
     { id: 'income/retirement', label: '퇴직소득세' },
     { id: 'income/vat', label: '부가가치세' },
