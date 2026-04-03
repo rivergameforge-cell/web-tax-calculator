@@ -56,14 +56,20 @@ web_tex_calculator/
 
 ## 새 계산기 추가 시 체크리스트
 
+> **⚠️ 중요: 모든 변경 파일을 한 커밋에 포함할 것!**
+> `js/app.js` (NAV_CONFIG/TAB_CONFIG), 계산기 JS 파일, `index.html` 변경을 **반드시 같은 커밋**에 넣어야 한다.
+> 파일을 나눠서 커밋하면 배포 시 사이드바/탭에 항목이 안 나오는 버그 발생.
+> 커밋 전 `git status`로 수정된 파일이 모두 staged 되었는지 반드시 확인!
+
 1. **`js/app.js`** — `NAV_CONFIG`와 `TAB_CONFIG`에 항목 추가
 2. **`js/calculators/<category>/<name>.js`** — 계산기 모듈 생성
    - 파일 맨 아래 `const Calc<Name> = (() => { ... return { init }; })();` 패턴 사용
-3. **`index.html`** — 두 곳 수정
+3. **`index.html`** — 세 곳 수정
    - `<div id="view-<category>-<name>" class="calculator-view">` 뷰 HTML 추가
    - `<script src="js/calculators/<category>/<name>.js?v=N">` 스크립트 태그 추가
    - `DOMContentLoaded` 블록에 `Calc<Name>.init();` 추가
 4. **캐시버스팅** — 스크립트 수정 시 `?v=N` 숫자 올리기
+5. **커밋 전 검증** — `git diff --name-only`로 위 1~4의 파일이 모두 포함되었는지 확인
 
 ---
 
