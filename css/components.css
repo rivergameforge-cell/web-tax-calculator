@@ -502,6 +502,70 @@
   color: inherit;
 }
 
+/* ===== Tax Tip Box ===== */
+.tax-tip-box {
+  margin: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.tax-tip-box summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, #FFF7ED 0%, #FEF3C7 100%);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+.tax-tip-box summary::-webkit-details-marker { display: none; }
+.tax-tip-box summary::before {
+  content: '▶';
+  font-size: 10px;
+  transition: transform 0.2s;
+}
+.tax-tip-box[open] summary::before {
+  transform: rotate(90deg);
+}
+.tax-tip-box .tip-content {
+  padding: 16px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+}
+.tax-tip-box .tip-content li {
+  margin-bottom: 6px;
+  padding-left: 4px;
+}
+.tax-tip-box .tip-content li::marker {
+  color: var(--warning);
+}
+.tax-tip-box .tip-content strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.tax-tip-box .tip-content .tip-highlight {
+  display: inline-block;
+  background: #FEF3C7;
+  color: #92400E;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+[data-theme="dark"] .tax-tip-box summary {
+  background: linear-gradient(135deg, #2E1A00 0%, #3D2200 100%);
+}
+[data-theme="dark"] .tax-tip-box .tip-content .tip-highlight {
+  background: #3D2200;
+  color: #F9E2AF;
+}
+
 /* ===== Section Divider ===== */
 .section-divider {
   display: flex;
