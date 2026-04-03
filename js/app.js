@@ -17,14 +17,14 @@ const NAV_CONFIG = [
     icon: '🏠',
     color: 'var(--cat-realestate)',
     items: [
-      { id: 'real-estate/capital-gains', label: '양도소득세', badge: null },
       { id: 'real-estate/acquisition', label: '취득세', badge: null },
+      { id: 'real-estate/capital-gains', label: '양도소득세', badge: null },
+      { id: 'real-estate/commission', label: '부동산 복비', badge: null },
       { id: 'real-estate/comprehensive', label: '종합부동산세', badge: null },
       { id: 'real-estate/property-tax', label: '재산세', badge: null },
       { id: 'real-estate/rental-income', label: '임대소득세', badge: null },
       { id: 'real-estate/stamp', label: '인지세', badge: null },
       { id: 'real-estate/registration', label: '등록면허세', badge: null },
-      { id: 'real-estate/commission', label: '부동산 복비', badge: null },
       { id: 'real-estate/total-cost', label: '집 살 때 / 팔 때', badge: '종합' },
     ]
   },
@@ -119,14 +119,14 @@ const TAB_CONFIG = {
     { id: 'loan/calculator', label: '대출금 계산기' },
   ],
   'real-estate': [
-    { id: 'real-estate/capital-gains', label: '양도소득세' },
     { id: 'real-estate/acquisition', label: '취득세' },
+    { id: 'real-estate/capital-gains', label: '양도소득세' },
+    { id: 'real-estate/commission', label: '복비 계산' },
     { id: 'real-estate/comprehensive', label: '종합부동산세' },
     { id: 'real-estate/property-tax', label: '재산세' },
     { id: 'real-estate/rental-income', label: '임대소득세' },
     { id: 'real-estate/stamp', label: '인지세' },
     { id: 'real-estate/registration', label: '등록면허세' },
-    { id: 'real-estate/commission', label: '복비 계산' },
     { id: 'real-estate/total-cost', label: '집 살 때/팔 때' },
   ],
   'inherit': [
