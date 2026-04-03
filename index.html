@@ -2676,6 +2676,214 @@
             </div>
           </div>
 
+          <!-- ===== 소득: 프리랜서 3.3% ===== -->
+          <div id="view-income-freelancer" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span class="card-icon">📝</span>
+                  <div>
+                    <h2 class="card-title">프리랜서 3.3% 세금 계산</h2>
+                    <p class="card-subtitle">원천징수 vs 종합소득세 비교</p>
+                  </div>
+                </div>
+                <div class="form-body">
+                  <div class="form-group">
+                    <label class="form-label" for="fl-revenue">연간 수입금액 <span class="required">*</span></label>
+                    <div class="input-with-unit">
+                      <input type="text" id="fl-revenue" class="form-input" inputmode="numeric" placeholder="0" value="">
+                      <span class="unit-label">원</span>
+                    </div>
+                    <span class="form-hint">1년간 받은 총 수입 (원천징수 전 금액)</span>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="fl-expense-type">업종 (경비율)</label>
+                    <select id="fl-expense-type" class="form-input">
+                      <option value="it">IT/소프트웨어 (64.1%)</option>
+                      <option value="design">디자인/영상 (61.2%)</option>
+                      <option value="writing">저술/번역 (72.9%)</option>
+                      <option value="consulting">경영컨설팅 (62.4%)</option>
+                      <option value="education">교육/강의 (72.4%)</option>
+                      <option value="custom">직접 입력</option>
+                    </select>
+                    <span class="form-hint">단순경비율 기준 (수입 2,400만원 이하 적용)</span>
+                  </div>
+                  <div class="form-group" id="fl-custom-rate-group" style="display:none">
+                    <label class="form-label" for="fl-custom-rate">경비율 (%)</label>
+                    <div class="input-with-unit">
+                      <input type="number" id="fl-custom-rate" class="form-input" min="0" max="100" step="0.1" value="60">
+                      <span class="unit-label">%</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="fl-family">부양가족 수 (본인 포함)</label>
+                    <div class="input-with-unit">
+                      <input type="number" id="fl-family" class="form-input" min="1" max="20" value="1">
+                      <span class="unit-label">명</span>
+                    </div>
+                  </div>
+                  <div class="btn-row">
+                    <button type="button" id="freelancer-reset" class="btn btn-outline">초기화</button>
+                    <button type="button" id="freelancer-copy" class="btn btn-outline">📋복사</button>
+                    <button type="button" id="freelancer-print" class="btn btn-outline">🖨️인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card result-panel" id="freelancer-result">
+                <div class="result-empty">
+                  <div class="result-empty-icon">📝</div>
+                  연간 수입금액을 입력해주세요
+                </div>
+              </div>
+            </div>
+            <details class="tax-tip-box">
+              <summary class="tip-header">💡 프리랜서 절세 팁</summary>
+              <div class="tip-content">
+                <ul class="tip-list">
+                  <li><span class="tip-highlight">경비 증빙</span>을 철저히 하면 기준경비율 적용 시 세금을 크게 줄일 수 있습니다.</li>
+                  <li>수입 <span class="tip-highlight">2,400만원 이하</span>는 단순경비율, 초과 시 기준경비율이 적용됩니다.</li>
+                  <li><span class="tip-highlight">사업자 등록</span>을 하면 부가세 환급, 경비처리 등 추가 절세가 가능합니다.</li>
+                  <li><span class="tip-highlight">연금저축·IRP</span> 납입으로 세액공제를 받으면 종합소득세 부담을 줄일 수 있습니다.</li>
+                  <li><span class="tip-highlight">노란우산공제</span> 가입 시 소득공제 혜택 (최대 500만원)을 받을 수 있습니다.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
+          <!-- ===== 소득: 퇴직금 계산기 ===== -->
+          <div id="view-income-severance" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span class="card-icon">💼</span>
+                  <div>
+                    <h2 class="card-title">퇴직금 계산</h2>
+                    <p class="card-subtitle">근속연수·평균임금 기반 퇴직금 산정</p>
+                  </div>
+                </div>
+                <div class="form-body">
+                  <div class="form-group">
+                    <label class="form-label" for="sev-start">입사일 <span class="required">*</span></label>
+                    <input type="date" id="sev-start" class="form-input">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="sev-end">퇴사일 <span class="required">*</span></label>
+                    <input type="date" id="sev-end" class="form-input">
+                  </div>
+                  <hr class="form-divider">
+                  <p class="form-section-title">최근 3개월 급여 (세전)</p>
+                  <div class="form-group">
+                    <label class="form-label" for="sev-salary1">최근 1개월 급여</label>
+                    <div class="input-with-unit">
+                      <input type="text" id="sev-salary1" class="form-input" inputmode="numeric" placeholder="0" value="">
+                      <span class="unit-label">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="sev-salary2">최근 2개월 급여</label>
+                    <div class="input-with-unit">
+                      <input type="text" id="sev-salary2" class="form-input" inputmode="numeric" placeholder="0" value="">
+                      <span class="unit-label">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="sev-salary3">최근 3개월 급여</label>
+                    <div class="input-with-unit">
+                      <input type="text" id="sev-salary3" class="form-input" inputmode="numeric" placeholder="0" value="">
+                      <span class="unit-label">원</span>
+                    </div>
+                    <span class="form-hint">상여금·수당 포함 세전 급여</span>
+                  </div>
+                  <div class="btn-row">
+                    <button type="button" id="severance-reset" class="btn btn-outline">초기화</button>
+                    <button type="button" id="severance-copy" class="btn btn-outline">📋복사</button>
+                    <button type="button" id="severance-print" class="btn btn-outline">🖨️인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card result-panel" id="severance-result">
+                <div class="result-empty">
+                  <div class="result-empty-icon">💼</div>
+                  입사일, 퇴사일, 최근 3개월 급여를 입력해주세요
+                </div>
+              </div>
+            </div>
+            <details class="tax-tip-box">
+              <summary class="tip-header">💡 퇴직금 관련 팁</summary>
+              <div class="tip-content">
+                <ul class="tip-list">
+                  <li><span class="tip-highlight">1년 이상</span> 근무해야 퇴직금 지급 대상입니다.</li>
+                  <li>퇴직금은 <span class="tip-highlight">IRP 계좌</span>로 이체하면 퇴직소득세를 이연할 수 있습니다.</li>
+                  <li>중간정산 시 이전 근속기간은 <span class="tip-highlight">리셋</span>되니 신중하게 판단하세요.</li>
+                  <li>상여금, 연차수당 등도 <span class="tip-highlight">평균임금</span>에 포함됩니다.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
+          <!-- ===== 소득: 월세 세액공제 ===== -->
+          <div id="view-income-rent-credit" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span class="card-icon">🏠</span>
+                  <div>
+                    <h2 class="card-title">월세 세액공제</h2>
+                    <p class="card-subtitle">총급여 기준 월세 공제액 계산</p>
+                  </div>
+                </div>
+                <div class="form-body">
+                  <div class="form-group">
+                    <label class="form-label" for="rc-salary">총급여 (연봉) <span class="required">*</span></label>
+                    <div class="input-with-unit">
+                      <input type="text" id="rc-salary" class="form-input" inputmode="numeric" placeholder="0" value="">
+                      <span class="unit-label">원</span>
+                    </div>
+                    <span class="form-hint">5,500만원 이하 17%, 8,000만원 이하 15%, 초과 시 공제 불가</span>
+                  </div>
+                  <hr class="form-divider">
+                  <div class="form-group">
+                    <label class="form-label" for="rc-rent">월 임대료 <span class="required">*</span></label>
+                    <div class="input-with-unit">
+                      <input type="text" id="rc-rent" class="form-input" inputmode="numeric" placeholder="0" value="">
+                      <span class="unit-label">원</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="rc-months">납입 개월수</label>
+                    <div class="input-with-unit">
+                      <input type="number" id="rc-months" class="form-input" min="1" max="12" value="12">
+                      <span class="unit-label">개월</span>
+                    </div>
+                  </div>
+                  <div class="btn-row">
+                    <button type="button" id="rent-credit-reset" class="btn btn-outline">초기화</button>
+                    <button type="button" id="rent-credit-copy" class="btn btn-outline">📋복사</button>
+                    <button type="button" id="rent-credit-print" class="btn btn-outline">🖨️인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card result-panel" id="rent-credit-result">
+                <div class="result-empty">
+                  <div class="result-empty-icon">🏠</div>
+                  총급여와 월세를 입력해주세요
+                </div>
+              </div>
+            </div>
+            <details class="tax-tip-box">
+              <summary class="tip-header">💡 월세 공제 팁</summary>
+              <div class="tip-content">
+                <ul class="tip-list">
+                  <li><span class="tip-highlight">현금영수증 발급</span>을 받으면 월세 세액공제와 별도로 소득공제도 가능합니다.</li>
+                  <li>세액공제를 못 받는 경우 <span class="tip-highlight">월세 현금영수증</span>(소득공제 30%)을 대안으로 활용하세요.</li>
+                  <li><span class="tip-highlight">전입신고</span>와 <span class="tip-highlight">임대차계약서</span>가 반드시 필요합니다.</li>
+                  <li>총급여 8,000만원 초과 시에도 <span class="tip-highlight">현금영수증</span>으로 소득공제는 가능합니다.</li>
+                  <li>주민등록등본상 <span class="tip-highlight">무주택 세대주</span>(또는 세대원) 요건을 확인하세요.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
           <!-- ===== 소득: 이자·배당소득세 ===== -->
           <div id="view-income-interest-dividend" class="calculator-view">
             <div class="calc-grid">
@@ -3538,6 +3746,9 @@
 <script src="js/calculators/income/corporate.js?v=1"></script>
 <script src="js/calculators/income/insurance.js?v=1"></script>
 <script src="js/calculators/income/pension-saving.js?v=1"></script>
+<script src="js/calculators/income/freelancer.js?v=1"></script>
+<script src="js/calculators/income/severance.js?v=1"></script>
+<script src="js/calculators/income/rent-credit.js?v=1"></script>
 <script src="js/calculators/income/interest-dividend.js?v=1"></script>
 <script src="js/calculators/income/retirement.js?v=1"></script>
 <script src="js/calculators/income/vat.js?v=1"></script>
@@ -3550,7 +3761,7 @@
 <script src="js/calculators/stocks/domestic.js?v=1"></script>
 <script src="js/calculators/stocks/dividend.js?v=1"></script>
 <script src="js/calculators/other/resident.js?v=1"></script>
-<script src="js/app.js?v=9"></script>
+<script src="js/app.js?v=10"></script>
 
 <script>
   // Initialize calculators after DOM ready
@@ -3588,6 +3799,9 @@
     CalcCorporate.init();
     CalcInsurance.init();
     CalcPensionSaving.init();
+    CalcFreelancer.init();
+    CalcSeverance.init();
+    CalcRentCredit.init();
     CalcSalary.init();
 
     // Show page title bar when a calculator is active
