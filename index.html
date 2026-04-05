@@ -1529,10 +1529,15 @@
                       </select>
                     </div>
                     <div class="form-group">
-                      <label class="check-label">
-                        <input type="checkbox" id="tc-buy-adjusted"> 조정대상지역
-                      </label>
-                      <div class="form-hint">다주택자 중과세율 적용 여부</div>
+                      <div class="checkbox-group">
+                        <label class="checkbox-item">
+                          <input type="checkbox" id="tc-buy-adjusted">
+                          <div>
+                            <div class="cb-label">조정대상지역</div>
+                            <div class="cb-desc">다주택자 중과세율 적용 여부</div>
+                          </div>
+                        </label>
+                      </div>
                     </div>
                   </div>
 
@@ -1870,16 +1875,26 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label class="check-label">
-                      <input type="checkbox" id="vbuy-excise-cut"> 개별소비세 한시 인하 적용 (5% → 3.5%)
-                    </label>
-                    <div class="form-hint">정부 한시 인하 기간 중이면 체크</div>
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="vbuy-excise-cut">
+                        <div>
+                          <div class="cb-label">개별소비세 한시 인하 적용 (5% → 3.5%)</div>
+                          <div class="cb-desc">정부 한시 인하 기간 중이면 체크</div>
+                        </div>
+                      </label>
+                    </div>
                   </div>
                   <div class="form-group">
-                    <label class="check-label">
-                      <input type="checkbox" id="vbuy-used"> 중고차
-                    </label>
-                    <div class="form-hint">중고차는 개소세·부가세 없이 매입가 그대로 입력</div>
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="vbuy-used">
+                        <div>
+                          <div class="cb-label">중고차</div>
+                          <div class="cb-desc">중고차는 개소세·부가세 없이 매입가 그대로 입력</div>
+                        </div>
+                      </label>
+                    </div>
                   </div>
 
                   <div class="calc-action-bar">
@@ -2510,10 +2525,12 @@
                     <div class="checkbox-group">
                       <label class="checkbox-item">
                         <input type="checkbox" id="corp-is-sme">
-                        <span>중소기업</span>
+                        <div>
+                          <div class="cb-label">중소기업</div>
+                          <div class="cb-desc">참고 표시용 (세율 자체는 동일)</div>
+                        </div>
                       </label>
                     </div>
-                    <div class="form-hint">참고 표시용 (세율 자체는 동일)</div>
                   </div>
                   <div class="calc-action-bar">
                     <button class="btn btn-reset btn-sm" id="corp-reset">초기화</button>
@@ -3301,11 +3318,15 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="form-label">
-                      <label class="checkbox-label" style="font-weight:600">
-                        <input type="checkbox" id="sdom-major"> 대주주 (종목당 10억원 이상 보유)
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="sdom-major">
+                        <div>
+                          <div class="cb-label">대주주</div>
+                          <div class="cb-desc">종목당 10억원 이상 보유</div>
+                        </div>
                       </label>
-                    </label>
+                    </div>
                   </div>
                   <div class="form-group">
                     <label class="form-label">양도가액 (매도금액)</label>
