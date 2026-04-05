@@ -61,6 +61,12 @@ web_tex_calculator/
 > 파일을 나눠서 커밋하면 배포 시 사이드바/탭에 항목이 안 나오는 버그 발생.
 > 커밋 전 `git status`로 수정된 파일이 모두 staged 되었는지 반드시 확인!
 
+> **⚠️ 중요: 작업 완료 후 반드시 커밋 & 푸시할 것!**
+> 사용자는 배포된 GitHub Pages 사이트(`https://rivergameforge-cell.github.io/web-tax-calculator/`)에서 테스트한다.
+> 로컬 파일만 수정하고 커밋/푸시하지 않으면 사용자 화면에는 변경사항이 **전혀 반영되지 않는다**.
+> 파일 수정 → `git add` → `git commit` → `git push`까지 **한 세트**로 묶어 진행할 것.
+> "수정했다"고 답하기 전에 `git status`로 working tree가 clean한지, `git log`로 푸시된 커밋이 최신인지 확인 필수!
+
 1. **`js/app.js`** — `NAV_CONFIG`와 `TAB_CONFIG`에 항목 추가
 2. **`js/calculators/<category>/<name>.js`** — 계산기 모듈 생성
    - 파일 맨 아래 `const Calc<Name> = (() => { ... return { init }; })();` 패턴 사용
