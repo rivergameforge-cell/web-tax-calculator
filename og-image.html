@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>OG Image Template - 1200x630</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Pretendard', -apple-system, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .og-card {
+      width: 1200px;
+      height: 630px;
+      background: linear-gradient(135deg, #2563EB 0%, #1E40AF 50%, #1E3A8A 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 80px;
+      color: white;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    }
+    /* 배경 장식 */
+    .bg-circle-1 {
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 50%;
+    }
+    .bg-circle-2 {
+      position: absolute;
+      bottom: -150px;
+      left: -100px;
+      width: 400px;
+      height: 400px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    /* 헤더 */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .logo-box {
+      width: 80px;
+      height: 80px;
+      background: white;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      font-weight: 900;
+      color: #2563EB;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+    .brand {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .brand-sub {
+      font-size: 16px;
+      opacity: 0.8;
+      margin-top: 4px;
+    }
+    /* 메인 타이틀 */
+    .main {
+      position: relative;
+      z-index: 1;
+    }
+    .year-badge {
+      display: inline-block;
+      background: #FCD34D;
+      color: #1E3A8A;
+      font-size: 22px;
+      font-weight: 800;
+      padding: 10px 24px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 12px rgba(252,211,77,0.4);
+    }
+    h1 {
+      font-size: 88px;
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin-bottom: 20px;
+    }
+    h1 .accent {
+      color: #FCD34D;
+    }
+    .subtitle {
+      font-size: 28px;
+      font-weight: 500;
+      opacity: 0.95;
+      line-height: 1.5;
+      letter-spacing: -0.5px;
+    }
+    /* 푸터 */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .tags {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .tag {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: 18px;
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+    .count-box {
+      text-align: right;
+    }
+    .count-num {
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1;
+      color: #FCD34D;
+    }
+    .count-label {
+      font-size: 18px;
+      font-weight: 600;
+      opacity: 0.9;
+      margin-top: 4px;
+    }
+    /* 가이드 */
+    .guide {
+      max-width: 1200px;
+      margin: 30px auto 0;
+      padding: 24px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      font-size: 15px;
+      line-height: 1.7;
+      color: #374151;
+    }
+    .guide h3 { color: #2563EB; margin-bottom: 12px; font-size: 18px; }
+    .guide code { background: #F3F4F6; padding: 2px 8px; border-radius: 4px; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="og-card" id="og-card">
+      <div class="bg-grid"></div>
+      <div class="bg-circle-1"></div>
+      <div class="bg-circle-2"></div>
+
+      <div class="header">
+        <div class="logo-box">₩</div>
+        <div>
+          <div class="brand">세금계산기</div>
+          <div class="brand-sub">한국 세금 통합 계산 플랫폼</div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="year-badge">📅 2026년 최신 세율</div>
+        <h1>
+          대한민국 <span class="accent">모든 세금</span><br>
+          한 곳에서 정확하게
+        </h1>
+        <div class="subtitle">
+          취득세 · 양도세 · 자동차세 · 종합소득세 · 상속·증여세 · 주식 양도세
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="tags">
+          <div class="tag">🏠 부동산</div>
+          <div class="tag">🚗 자동차</div>
+          <div class="tag">📈 주식</div>
+          <div class="tag">💼 소득</div>
+        </div>
+        <div class="count-box">
+          <div class="count-num">31+</div>
+          <div class="count-label">세목 계산기</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="guide">
+      <h3>📸 OG 이미지 생성 방법</h3>
+      <strong>방법 1. 스크린샷 (가장 쉬움)</strong><br>
+      1. 이 파일을 브라우저에서 엽니다 (<code>og-image.html</code>)<br>
+      2. 개발자도구(F12) → Elements → <code>&lt;div class="og-card"&gt;</code> 우클릭 → "Capture node screenshot"<br>
+      3. 저장된 PNG 파일명을 <code>og-image.png</code>로 바꿔 루트 폴더에 저장<br><br>
+
+      <strong>방법 2. Puppeteer / Playwright (자동화)</strong><br>
+      <code>npx playwright screenshot --viewport-size=1200,630 --element='.og-card' og-image.html og-image.png</code><br><br>
+
+      <strong>방법 3. macOS 스크린샷</strong><br>
+      1. 브라우저 창을 1200px 이상으로 키우기<br>
+      2. <code>Cmd + Shift + 4</code> 후 파란 카드 영역만 드래그<br>
+      3. 프리뷰에서 1200×630으로 리사이즈 → <code>og-image.png</code>로 저장<br><br>
+
+      💡 <strong>디자인 수정하고 싶다면:</strong> 이 HTML 파일의 텍스트/색상을 직접 편집하세요.
+    </div>
+  </div>
+</body>
+</html>
