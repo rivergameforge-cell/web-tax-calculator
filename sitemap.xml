@@ -7,6 +7,18 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- 사이트 정보 -->
+  <url>
+    <loc>https://taxcalc.co.kr/about.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://taxcalc.co.kr/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
   <!-- 대출 -->
   <url>
     <loc>https://taxcalc.co.kr/#loan/calculator</loc>
