@@ -211,6 +211,23 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- 과태료/범칙금 -->
+  <url>
+    <loc>https://taxcalc.co.kr/#fines/traffic</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taxcalc.co.kr/#fines/parking</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taxcalc.co.kr/#fines/living</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- 기타 -->
   <url>
     <loc>https://taxcalc.co.kr/#other/resident</loc>

@@ -87,6 +87,17 @@ const NAV_CONFIG = [
     ]
   },
   {
+    id: 'fines',
+    label: '과태료/범칙금',
+    icon: '🚨',
+    color: 'var(--cat-fines)',
+    items: [
+      { id: 'fines/traffic', label: '교통 과태료·범칙금', badge: null },
+      { id: 'fines/parking', label: '주정차 위반', badge: null },
+      { id: 'fines/living', label: '생활 과태료', badge: null },
+    ]
+  },
+  {
     id: 'other',
     label: '기타',
     icon: '📋',
@@ -165,6 +176,11 @@ const TAB_CONFIG = {
     { id: 'stocks/foreign', label: '해외주식' },
     { id: 'stocks/transaction', label: '증권거래세' },
     { id: 'stocks/dividend', label: '배당소득세' },
+  ],
+  'fines': [
+    { id: 'fines/traffic', label: '교통 과태료' },
+    { id: 'fines/parking', label: '주정차 위반' },
+    { id: 'fines/living', label: '생활 과태료' },
   ],
   'other': [
     { id: 'other/resident', label: '주민세' },

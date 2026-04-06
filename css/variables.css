@@ -58,6 +58,7 @@
   --cat-stocks: #7C3AED;
   --cat-inherit: #DC2626;
   --cat-other: #6B7280;
+  --cat-fines: #E11D48;
 }
 
 /* ===== Dark Mode ===== */
@@ -104,4 +105,5 @@
   --cat-stocks: #CBA6F7;
   --cat-inherit: #FCA5A5;
   --cat-other: #A6ADC8;
+  --cat-fines: #FDA4AF;
 }

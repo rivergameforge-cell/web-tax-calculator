@@ -349,6 +349,11 @@
                   <div class="wc-label">주식/금융</div>
                   <div class="wc-count">국내·해외주식, 배당소득세</div>
                 </div>
+                <div class="welcome-card" onclick="App.navigateToCategory('fines')">
+                  <div class="wc-icon">🚨</div>
+                  <div class="wc-label">과태료/범칙금</div>
+                  <div class="wc-count">교통, 주정차, 생활 과태료</div>
+                </div>
                 <div class="welcome-card" onclick="App.navigateToCategory('other')">
                   <div class="wc-icon">📋</div>
                   <div class="wc-label">기타</div>
@@ -3573,6 +3578,187 @@
           </div>
 
           <!-- 기타 준비 중 -->
+          <!-- ===== 과태료/범칙금 ===== -->
+          <div id="view-fines-traffic" class="calculator-view">
+            <div class="info-ref-page">
+              <h2>교통 과태료·범칙금 안내</h2>
+              <p class="info-desc">도로교통법 위반 시 부과되는 과태료(차량 소유자 부과)와 범칙금(운전자 부과)을 안내합니다. 범칙금은 벌점이 부과되며, 과태료는 벌점이 없습니다.</p>
+
+              <h3 style="margin:24px 0 12px;font-size:16px;font-weight:700">🚗 속도위반</h3>
+              <table class="info-table">
+                <thead><tr><th>초과 속도</th><th>범칙금 (승용차)</th><th>과태료 (승용차)</th><th>벌점</th></tr></thead>
+                <tbody>
+                  <tr><td>20km/h 이하</td><td>3만원</td><td>4만원</td><td>-</td></tr>
+                  <tr><td>20~40km/h</td><td>6만원</td><td>7만원</td><td>15점</td></tr>
+                  <tr><td>40~60km/h</td><td>9만원</td><td>10만원</td><td>30점</td></tr>
+                  <tr><td>60~80km/h</td><td>12만원</td><td>13만원</td><td>60점</td></tr>
+                  <tr><td>80km/h 초과</td><td>15만원</td><td>16만원</td><td>80점</td></tr>
+                </tbody>
+              </table>
+
+              <h3 style="margin:24px 0 12px;font-size:16px;font-weight:700">🚦 신호·지시 위반</h3>
+              <table class="info-table">
+                <thead><tr><th>위반 유형</th><th>범칙금 (승용차)</th><th>과태료 (승용차)</th><th>벌점</th></tr></thead>
+                <tbody>
+                  <tr><td>신호 위반</td><td>6만원</td><td>7만원</td><td>15점</td></tr>
+                  <tr><td>중앙선 침범</td><td>6만원</td><td>7만원</td><td>30점</td></tr>
+                  <tr><td>끼어들기</td><td>4만원</td><td>5만원</td><td>10점</td></tr>
+                  <tr><td>유턴·횡단·후진 위반</td><td>4만원</td><td>5만원</td><td>15점</td></tr>
+                  <tr><td>보행자 보호 의무 위반</td><td>6만원</td><td>7만원</td><td>10점</td></tr>
+                  <tr><td>안전띠 미착용</td><td>3만원</td><td>3만원</td><td>-</td></tr>
+                  <tr><td>휴대전화 사용</td><td>7만원</td><td>8만원</td><td>15점</td></tr>
+                </tbody>
+              </table>
+
+              <h3 style="margin:24px 0 12px;font-size:16px;font-weight:700">🍺 음주운전</h3>
+              <table class="info-table">
+                <thead><tr><th>혈중알코올농도</th><th>처벌</th><th>벌점</th></tr></thead>
+                <tbody>
+                  <tr><td>0.03~0.08% 미만</td><td>1년 이하 징역 또는 500만원 이하 벌금<br>면허정지 100일</td><td>100점</td></tr>
+                  <tr><td>0.08~0.2% 미만</td><td>1~2년 징역 또는 500~1,000만원 벌금<br>면허취소</td><td>-</td></tr>
+                  <tr><td>0.2% 이상</td><td>2~5년 징역 또는 1,000~2,000만원 벌금<br>면허취소</td><td>-</td></tr>
+                  <tr><td>측정 거부</td><td>1~5년 징역 또는 500~2,000만원 벌금<br>면허취소</td><td>-</td></tr>
+                </tbody>
+              </table>
+
+              <h3 style="margin:24px 0 12px;font-size:16px;font-weight:700">📋 기타 교통 위반</h3>
+              <table class="info-table">
+                <thead><tr><th>위반 유형</th><th>범칙금 (승용차)</th><th>과태료</th><th>벌점</th></tr></thead>
+                <tbody>
+                  <tr><td>무면허 운전</td><td>30만원 이하 벌금</td><td>-</td><td>-</td></tr>
+                  <tr><td>뺑소니</td><td>5년 이하 징역 또는 3,000만원 이하 벌금</td><td>-</td><td>-</td></tr>
+                  <tr><td>버스전용차로 위반</td><td>5만원</td><td>6만원</td><td>10점</td></tr>
+                  <tr><td>적재물 추락방지 위반</td><td>5만원</td><td>5만원</td><td>10점</td></tr>
+                  <tr><td>긴급차량 양보 불이행</td><td>5만원</td><td>6만원</td><td>-</td></tr>
+                </tbody>
+              </table>
+
+              <div class="notice-box info" style="margin-top:20px">
+                <strong>범칙금 vs 과태료:</strong> 범칙금은 운전자가 현장에서 단속될 때, 과태료는 무인카메라 등으로 차량 소유자에게 부과됩니다.<br>
+                <strong>벌점 누적:</strong> 40점 이상 면허정지(1점=1일), 3회 이상 면허정지 시 면허취소 가능.<br>
+                <strong>납부 기한:</strong> 범칙금은 통고일로부터 10일 이내, 과태료는 60일 이내 납부. 체납 시 최대 75% 가산금.<br>
+                <strong>이의신청:</strong> 과태료는 60일 이내 이의신청 가능 (경찰서 또는 교통민원24 사이트).<br>
+                2026년 기준이며, 차종(승합·화물 등)에 따라 금액이 다를 수 있습니다.
+              </div>
+            </div>
+          </div>
+
+          <div id="view-fines-parking" class="calculator-view">
+            <div class="info-ref-page">
+              <h2>주정차 위반 과태료 안내</h2>
+              <p class="info-desc">주정차 금지 구역에서의 위반 시 부과되는 과태료를 안내합니다. 장소와 차종에 따라 금액이 다릅니다.</p>
+
+              <h3 style="margin:24px 0 12px;font-size:16px;font-weight:700">🅿️ 일반 주정차 위반</h3>
+              <table class="info-table">
+                <thead><tr><th>차종</th><th>과태료</th><th>범칙금</th></tr></thead>
+                <tbody>
+                  <tr><td>승용차</td><td>4만원</td><td>4만원</td></tr>
+                  <tr><td>승합차 (4톤 이하)</td><td>4만원</td><td>4만원</td></tr>
+                  <tr><td>승합차 (4톤 초과)</td><td>5만원</td><td>5만원</td></tr>
+                  <tr><td>이륜차</td><td>3만원</td><td>3만원</td></tr>
+                </tbody>
+              </table>
+
+              <h3 style="margin:24px 0 12px;font-size:16px;font-weight:700">🚒 특별 구역 위반 (가중)</h3>
+              <table class="info-table">
+                <thead><tr><th>구역</th><th>과태료 (승용차)</th><th>비고</th></tr></thead>
+                <tbody>
+                  <tr><td>소방차 전용구역</td><td>8만원</td><td>소방시설 5m 이내 포함</td></tr>
+                  <tr><td>어린이 보호구역</td><td>8만원</td><td>일반 주정차의 2배</td></tr>
+                  <tr><td>장애인 전용 주차구역</td><td>10만원</td><td>불법 주차 시</td></tr>
+                  <tr><td>소화전 부근 (5m 이내)</td><td>8만원</td><td></td></tr>
+                  <tr><td>버스정류장 (10m 이내)</td><td>5만원</td><td></td></tr>
+                  <tr><td>횡단보도 위</td><td>5만원</td><td></td></tr>
+                </tbody>
+              </table>
+
+              <h3 style="margin:24px 0 12px;font-size:16px;font-weight:700">📐 견인 기준</h3>
+              <table class="info-table">
+                <thead><tr><th>항목</th><th>금액</th><th>비고</th></tr></thead>
+                <tbody>
+                  <tr><td>견인비 (기본)</td><td>약 4~5만원</td><td>지역·업체별 상이</td></tr>
+                  <tr><td>보관료 (1일)</td><td>약 1만원</td><td>24시간 단위 부과</td></tr>
+                  <tr><td>견인 면제</td><td>-</td><td>운전자가 즉시 이동 시 견인 취소 가능</td></tr>
+                </tbody>
+              </table>
+
+              <div class="notice-box info" style="margin-top:20px">
+                <strong>주차 vs 정차:</strong> 주차는 5분 초과 정지, 정차는 5분 이내 일시 정지입니다.<br>
+                <strong>주정차 금지 구역:</strong> 교차로, 횡단보도, 버스정류장 10m, 소방전 5m, 터널 안 등.<br>
+                <strong>감경:</strong> 장애인·국가유공자 차량은 일부 구역에서 주차 허용.<br>
+                <strong>조회:</strong> 위반 내역은 <strong>교통민원24(efine.go.kr)</strong>에서 확인 가능.<br>
+                2026년 기준이며, 지자체 조례에 따라 금액이 다를 수 있습니다.
+              </div>
+            </div>
+          </div>
+
+          <div id="view-fines-living" class="calculator-view">
+            <div class="info-ref-page">
+              <h2>생활 과태료 안내</h2>
+              <p class="info-desc">일상생활에서 위반 시 부과되는 주요 과태료를 안내합니다. 환경, 안전, 공공질서 관련 과태료가 포함됩니다.</p>
+
+              <h3 style="margin:24px 0 12px;font-size:16px;font-weight:700">🗑️ 환경·쓰레기</h3>
+              <table class="info-table">
+                <thead><tr><th>위반 유형</th><th>과태료</th><th>비고</th></tr></thead>
+                <tbody>
+                  <tr><td>쓰레기 불법투기 (생활폐기물)</td><td>20~100만원</td><td>투기량에 따라 차등</td></tr>
+                  <tr><td>음식물쓰레기 무단배출</td><td>20~100만원</td><td></td></tr>
+                  <tr><td>분리수거 위반</td><td>10~100만원</td><td>종량제봉투 미사용 포함</td></tr>
+                  <tr><td>담배꽁초 투기</td><td>5만원</td><td>길거리 투기 시</td></tr>
+                  <tr><td>침 뱉기·노상방뇨</td><td>5만원</td><td></td></tr>
+                  <tr><td>반려동물 배변 미수거</td><td>5~10만원</td><td>공공장소</td></tr>
+                  <tr><td>자동차 매연 기준 초과</td><td>10~50만원</td><td>배출가스 검사 불합격</td></tr>
+                </tbody>
+              </table>
+
+              <h3 style="margin:24px 0 12px;font-size:16px;font-weight:700">🏠 주거·건물</h3>
+              <table class="info-table">
+                <thead><tr><th>위반 유형</th><th>과태료</th><th>비고</th></tr></thead>
+                <tbody>
+                  <tr><td>층간소음 (야간·반복)</td><td>최대 200만원</td><td>이웃간소음 관리법</td></tr>
+                  <tr><td>전입신고 미이행</td><td>5만원 이하</td><td>14일 이내 미신고 시</td></tr>
+                  <tr><td>무단 증축·개축</td><td>100만원~</td><td>건축법 위반</td></tr>
+                  <tr><td>소방시설 미비 (다중이용업소)</td><td>300만원 이하</td><td>화재예방법</td></tr>
+                </tbody>
+              </table>
+
+              <h3 style="margin:24px 0 12px;font-size:16px;font-weight:700">📱 공공질서·기타</h3>
+              <table class="info-table">
+                <thead><tr><th>위반 유형</th><th>과태료</th><th>비고</th></tr></thead>
+                <tbody>
+                  <tr><td>개인정보 미동의 수집</td><td>5,000만원 이하</td><td>개인정보보호법</td></tr>
+                  <tr><td>스팸 문자·전화</td><td>3,000만원 이하</td><td>정보통신망법</td></tr>
+                  <tr><td>금연구역 흡연</td><td>10만원</td><td>공공장소·음식점 등</td></tr>
+                  <tr><td>안전벨트 미착용 (동승자)</td><td>3만원</td><td>운전자 책임</td></tr>
+                  <tr><td>전동킥보드 인도 주행</td><td>4만원</td><td>개인형 이동장치</td></tr>
+                  <tr><td>전동킥보드 무면허 운전</td><td>10만원</td><td>원동기면허 이상 필요</td></tr>
+                  <tr><td>전동킥보드 음주운전</td><td>10만원</td><td>음주운전 동일 처벌</td></tr>
+                  <tr><td>무단횡단</td><td>2만원</td><td>보행자 범칙금</td></tr>
+                </tbody>
+              </table>
+
+              <h3 style="margin:24px 0 12px;font-size:16px;font-weight:700">🐕 반려동물</h3>
+              <table class="info-table">
+                <thead><tr><th>위반 유형</th><th>과태료</th><th>비고</th></tr></thead>
+                <tbody>
+                  <tr><td>목줄 미착용 (외출 시)</td><td>5~50만원</td><td>2m 이내 목줄·가슴줄</td></tr>
+                  <tr><td>맹견 입마개 미착용</td><td>50~300만원</td><td>맹견 지정 품종</td></tr>
+                  <tr><td>동물등록 미이행</td><td>40~100만원</td><td>2개월 이상 반려견 의무</td></tr>
+                  <tr><td>배변 미수거</td><td>5~10만원</td><td>공공장소</td></tr>
+                  <tr><td>동물학대</td><td>3년 이하 징역 또는 3,000만원 이하 벌금</td><td>동물보호법</td></tr>
+                </tbody>
+              </table>
+
+              <div class="notice-box info" style="margin-top:20px">
+                <strong>과태료 납부:</strong> 대부분 60일 이내 납부 (미납 시 가산금 부과, 최종적으로 재산 압류 가능).<br>
+                <strong>감경:</strong> 자진신고 시 20~50% 감경되는 항목이 있습니다.<br>
+                <strong>이의신청:</strong> 60일 이내 해당 행정기관에 이의신청 가능.<br>
+                2026년 기준이며, 지자체·법률 개정에 따라 변동될 수 있습니다. 정확한 금액은 해당 기관에 확인하세요.
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== 기타 ===== -->
           <div id="view-other-resident" class="calculator-view">
             <div class="calc-grid">
               <div class="card input-panel">
@@ -3882,7 +4068,7 @@
 <script src="js/calculators/stocks/domestic.js?v=1"></script>
 <script src="js/calculators/stocks/dividend.js?v=1"></script>
 <script src="js/calculators/other/resident.js?v=1"></script>
-<script src="js/app.js?v=10"></script>
+<script src="js/app.js?v=11"></script>
 
 <script>
   // Initialize calculators after DOM ready
