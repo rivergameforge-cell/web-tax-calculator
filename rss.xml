@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>세금계산기 2026 - 대한민국 모든 세금 계산</title>
+    <link>https://taxcalc.co.kr</link>
+    <description>2026년 최신 세율 기준. 취득세, 양도소득세, 자동차세, 종합소득세, 상속·증여세 등 31종 세금을 무료로 정확하게 계산하세요.</description>
+    <language>ko</language>
+    <lastBuildDate>Sun, 06 Apr 2026 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://taxcalc.co.kr/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>부동산 취득세 계산기</title>
+      <link>https://taxcalc.co.kr/#real-estate/acquisition</link>
+      <description>2026년 최신 세율로 주택·토지·건물 취득세를 계산합니다. 다주택 중과, 생애최초 감면, 출산·양육 감면까지 반영.</description>
+      <pubDate>Sun, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://taxcalc.co.kr/#real-estate/acquisition</guid>
+    </item>
+    <item>
+      <title>양도소득세 계산기</title>
+      <link>https://taxcalc.co.kr/#real-estate/capital-gains</link>
+      <description>부동산 매도 시 양도소득세를 계산합니다. 1세대 1주택 비과세, 장기보유특별공제, 조정대상지역 중과 반영.</description>
+      <pubDate>Sun, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://taxcalc.co.kr/#real-estate/capital-gains</guid>
+    </item>
+    <item>
+      <title>종합부동산세 계산기</title>
+      <link>https://taxcalc.co.kr/#real-estate/comprehensive</link>
+      <description>주택·토지 종합부동산세를 계산합니다. 1세대 1주택자 기본공제 12억, 다주택 중과세율 반영.</description>
+      <pubDate>Sun, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://taxcalc.co.kr/#real-estate/comprehensive</guid>
+    </item>
+    <item>
+      <title>자동차세 계산기</title>
+      <link>https://taxcalc.co.kr/#vehicle/vehicle-tax</link>
+      <description>배기량 기준 자동차세를 계산합니다. 차령 할인, 연납 할인 반영.</description>
+      <pubDate>Sun, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://taxcalc.co.kr/#vehicle/vehicle-tax</guid>
+    </item>
+    <item>
+      <title>연봉 실수령액 계산기</title>
+      <link>https://taxcalc.co.kr/#income/salary</link>
+      <description>연봉에서 4대보험, 소득세, 지방소득세를 제외한 월 실수령액을 계산합니다.</description>
+      <pubDate>Sun, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://taxcalc.co.kr/#income/salary</guid>
+    </item>
+    <item>
+      <title>종합소득세 계산기</title>
+      <link>https://taxcalc.co.kr/#income/comprehensive</link>
+      <description>사업소득, 근로소득, 이자·배당소득 등을 합산한 종합소득세를 계산합니다.</description>
+      <pubDate>Sun, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://taxcalc.co.kr/#income/comprehensive</guid>
+    </item>
+    <item>
+      <title>상속세 계산기</title>
+      <link>https://taxcalc.co.kr/#inherit/inheritance</link>
+      <description>상속재산에 대한 상속세를 계산합니다. 배우자 공제, 일괄공제, 동거주택 공제 반영.</description>
+      <pubDate>Sun, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://taxcalc.co.kr/#inherit/inheritance</guid>
+    </item>
+    <item>
+      <title>증여세 계산기</title>
+      <link>https://taxcalc.co.kr/#inherit/gift</link>
+      <description>증여재산에 대한 증여세를 계산합니다. 관계별 공제한도, 자진신고 세액공제 반영.</description>
+      <pubDate>Sun, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://taxcalc.co.kr/#inherit/gift</guid>
+    </item>
+    <item>
+      <title>해외주식 양도소득세 계산기</title>
+      <link>https://taxcalc.co.kr/#stocks/foreign</link>
+      <description>해외주식 매도 시 양도소득세를 계산합니다. 기본공제 250만원, 세율 22% 반영.</description>
+      <pubDate>Sun, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://taxcalc.co.kr/#stocks/foreign</guid>
+    </item>
+    <item>
+      <title>해외직구 관세 계산기</title>
+      <link>https://taxcalc.co.kr/#income/customs</link>
+      <description>해외직구 물품의 관세, 부가세를 계산합니다. 미국 FTA $200 면세, 기타 $150 면세 기준 반영.</description>
+      <pubDate>Sun, 06 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://taxcalc.co.kr/#income/customs</guid>
+    </item>
+  </channel>
+</rss>
