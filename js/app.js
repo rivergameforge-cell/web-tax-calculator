@@ -315,19 +315,10 @@ const App = (() => {
     const catalog = document.getElementById('welcome-catalog');
     if (!catalog) return;
 
+    const grid = document.createElement('div');
+    grid.className = 'welcome-grid';
+
     NAV_CONFIG.forEach(cat => {
-      const section = document.createElement('div');
-      section.className = 'welcome-cat-section';
-
-      const header = document.createElement('div');
-      header.className = 'welcome-cat-header';
-      header.style.borderColor = cat.color;
-      header.innerHTML = `<span class="wch-icon">${cat.icon}</span>${cat.label}<span class="wch-count">${cat.items.length}종</span>`;
-      section.appendChild(header);
-
-      const grid = document.createElement('div');
-      grid.className = 'welcome-grid';
-
       cat.items.forEach(item => {
         const card = document.createElement('div');
         card.className = 'welcome-card';
@@ -352,10 +343,9 @@ const App = (() => {
         });
         grid.appendChild(card);
       });
-
-      section.appendChild(grid);
-      catalog.appendChild(section);
     });
+
+    catalog.appendChild(grid);
   }
 
   function navigateToCategory(catId) {
