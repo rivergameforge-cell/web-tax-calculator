@@ -9,6 +9,7 @@ const NAV_CONFIG = [
     color: 'var(--cat-loan)',
     items: [
       { id: 'loan/calculator', label: '대출금 계산기', badge: null },
+      { id: 'loan/dsr', label: 'DSR 계산기', badge: 'NEW' },
     ]
   },
   {
@@ -110,6 +111,8 @@ const NAV_CONFIG = [
       { id: 'other/liquor', label: '주세', badge: 'ℹ️' },
       { id: 'other/tobacco', label: '담배소비세', badge: 'ℹ️' },
       { id: 'other/leisure', label: '레저세', badge: 'ℹ️' },
+      { id: 'other/progressive-tax', label: '누진세 속산표', badge: 'ℹ️' },
+      { id: 'other/no-son-day', label: '손 없는 날', badge: 'NEW' },
     ]
   },
 ];
@@ -131,6 +134,7 @@ NAV_CONFIG.forEach(cat => {
 const TAB_CONFIG = {
   'loan': [
     { id: 'loan/calculator', label: '대출금 계산기' },
+    { id: 'loan/dsr', label: 'DSR 계산기' },
   ],
   'real-estate': [
     { id: 'real-estate/acquisition', label: '취득세' },
@@ -190,6 +194,8 @@ const TAB_CONFIG = {
     { id: 'other/liquor', label: '주세' },
     { id: 'other/tobacco', label: '담배소비세' },
     { id: 'other/leisure', label: '레저세' },
+    { id: 'other/progressive-tax', label: '누진세 속산표' },
+    { id: 'other/no-son-day', label: '손 없는 날' },
   ],
 };
 

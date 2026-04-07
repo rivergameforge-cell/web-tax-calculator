@@ -228,6 +228,13 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- 대출 - DSR -->
+  <url>
+    <loc>https://taxcalc.co.kr/#loan/dsr</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- 기타 -->
   <url>
     <loc>https://taxcalc.co.kr/#other/resident</loc>
@@ -237,6 +244,16 @@
   <url>
     <loc>https://taxcalc.co.kr/#other/fuel</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://taxcalc.co.kr/#other/progressive-tax</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taxcalc.co.kr/#other/no-son-day</loc>
+    <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 </urlset>
