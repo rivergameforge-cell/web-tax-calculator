@@ -6,6 +6,30 @@ body {
   transition: background var(--transition-slow), color var(--transition-slow);
 }
 
+/* ===== Scrollbar Theming ===== */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
 /* ===== App Shell ===== */
 #app {
   display: flex;
