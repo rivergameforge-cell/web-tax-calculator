@@ -79,5 +79,9 @@ const Router = (() => {
     onChangeCallback = fn;
   }
 
-  return { register, navigate, render, getCurrentRoute, parseHash, init, onChange };
+  function _resetRoute() {
+    currentRoute = null;
+  }
+
+  return { register, navigate, render, getCurrentRoute, parseHash, init, onChange, _resetRoute };
 })();

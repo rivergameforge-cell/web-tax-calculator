@@ -462,13 +462,23 @@ const App = (() => {
   }
 
   function goHome() {
-    history.replaceState(null, '', location.pathname);
+    // 라우터의 currentRoute 초기화
+    Router._resetRoute();
     currentCategory = null;
+
+    // URL 해시 제거
+    history.replaceState(null, '', location.pathname);
+
+    // 모든 뷰 비활성화 → 웰컴 활성화
     document.querySelectorAll('.calculator-view.active').forEach(v => v.classList.remove('active'));
     const welcome = document.getElementById('view-welcome');
     if (welcome) welcome.classList.add('active');
+
+    // 제목바 숨기기
     const titleBar = document.getElementById('page-title-bar');
     if (titleBar) titleBar.style.display = 'none';
+
+    // 사이드바·탭바·모바일칩 초기화
     document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.sidebar-items').forEach(el => el.classList.remove('open'));
     document.querySelectorAll('.sidebar-category').forEach(el => {
@@ -476,7 +486,8 @@ const App = (() => {
       el.classList.remove('active');
     });
     document.querySelectorAll('.mobile-cat-chip').forEach(el => el.classList.remove('active'));
-    document.getElementById('tab-bar').innerHTML = '';
+    const tabBar = document.getElementById('tab-bar');
+    if (tabBar) tabBar.innerHTML = '';
     closeSidebar();
   }
 
