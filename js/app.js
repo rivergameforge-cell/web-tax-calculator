@@ -461,8 +461,27 @@ const App = (() => {
     }
   }
 
+  function goHome() {
+    history.replaceState(null, '', location.pathname);
+    currentCategory = null;
+    document.querySelectorAll('.calculator-view.active').forEach(v => v.classList.remove('active'));
+    const welcome = document.getElementById('view-welcome');
+    if (welcome) welcome.classList.add('active');
+    const titleBar = document.getElementById('page-title-bar');
+    if (titleBar) titleBar.style.display = 'none';
+    document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.sidebar-items').forEach(el => el.classList.remove('open'));
+    document.querySelectorAll('.sidebar-category').forEach(el => {
+      el.classList.remove('open');
+      el.classList.remove('active');
+    });
+    document.querySelectorAll('.mobile-cat-chip').forEach(el => el.classList.remove('active'));
+    document.getElementById('tab-bar').innerHTML = '';
+    closeSidebar();
+  }
+
   // Expose navigateTo for calculator files
-  return { init, navigateTo, navigateToCategory };
+  return { init, navigateTo, navigateToCategory, goHome };
 })();
 
 document.addEventListener('DOMContentLoaded', () => App.init());
