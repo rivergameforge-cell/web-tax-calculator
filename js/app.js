@@ -73,6 +73,10 @@ const NAV_CONFIG = [
       { id: 'income/retirement', label: '퇴직소득세', badge: null },
       { id: 'income/vat', label: '부가가치세', badge: null },
       { id: 'income/customs', label: '해외 구매 관세', badge: '인기' },
+      { id: 'income/hourly-wage', label: '시급 계산기', badge: 'NEW' },
+      { id: 'income/daily-worker', label: '일용직 소득세', badge: 'NEW' },
+      { id: 'income/other-income', label: '기타소득세', badge: 'NEW' },
+      { id: 'income/pension-income', label: '연금소득세', badge: 'NEW' },
     ]
   },
   {
@@ -174,6 +178,10 @@ const TAB_CONFIG = {
     { id: 'income/retirement', label: '퇴직소득세' },
     { id: 'income/vat', label: '부가가치세' },
     { id: 'income/customs', label: '해외구매 관세' },
+    { id: 'income/hourly-wage', label: '시급 계산기' },
+    { id: 'income/daily-worker', label: '일용직' },
+    { id: 'income/other-income', label: '기타소득세' },
+    { id: 'income/pension-income', label: '연금소득세' },
   ],
   'stocks': [
     { id: 'stocks/domestic', label: '국내주식' },
