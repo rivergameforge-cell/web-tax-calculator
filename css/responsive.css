@@ -119,16 +119,6 @@
     color: var(--accent);
   }
 
-  /* Tab bar on mobile */
-  .tab-bar {
-    padding: 0 12px;
-  }
-
-  .tab-item {
-    padding: 12px 12px;
-    font-size: 12px;
-  }
-
   /* Calculator area */
   .calculator-area {
     padding: 14px 12px;

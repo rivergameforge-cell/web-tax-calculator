@@ -301,7 +301,7 @@
 /* ===== Print Styles ===== */
 @media print {
   #header, #sidebar, .ad-side-left, .ad-side-right, #ad-anchor,
-  .calc-action-bar, .tab-bar, .ad-banner-content, #btn-hamburger {
+  .calc-action-bar, .ad-banner-content, #btn-hamburger {
     display: none !important;
   }
 

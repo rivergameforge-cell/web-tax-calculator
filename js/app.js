@@ -134,79 +134,6 @@ NAV_CONFIG.forEach(cat => {
   });
 });
 
-// Tab bar config per category
-const TAB_CONFIG = {
-  'loan': [
-    { id: 'loan/calculator', label: '대출금 계산기' },
-    { id: 'loan/dsr', label: 'DSR 계산기' },
-  ],
-  'real-estate': [
-    { id: 'real-estate/acquisition', label: '취득세' },
-    { id: 'real-estate/capital-gains', label: '양도소득세' },
-    { id: 'real-estate/commission', label: '복비 계산' },
-    { id: 'real-estate/comprehensive', label: '종합부동산세' },
-    { id: 'real-estate/property-tax', label: '재산세' },
-    { id: 'real-estate/rental-income', label: '임대소득세' },
-    { id: 'real-estate/stamp', label: '인지세' },
-    { id: 'real-estate/registration', label: '등록면허세' },
-    { id: 'real-estate/total-cost', label: '집 살 때/팔 때' },
-  ],
-  'inherit': [
-    { id: 'inherit/inheritance', label: '상속세' },
-    { id: 'inherit/gift', label: '증여세' },
-  ],
-  'vehicle': [
-    { id: 'vehicle/vehicle-tax', label: '자동차세' },
-    { id: 'vehicle/overdue', label: '미납 가산금' },
-    { id: 'vehicle/acquisition', label: '자동차 취득세' },
-    { id: 'vehicle/excise', label: '개별소비세' },
-    { id: 'vehicle/buying', label: '자동차 살 때' },
-  ],
-  'income': [
-    { id: 'income/salary', label: '연봉 계산기' },
-    { id: 'income/employment', label: '근로소득세·연말정산' },
-    { id: 'income/pension-saving', label: '연금저축·IRP' },
-    { id: 'income/business', label: '사업소득세' },
-    { id: 'income/comprehensive', label: '종합소득세' },
-    { id: 'income/penalty', label: '가산세' },
-    { id: 'income/corporate', label: '법인세' },
-    { id: 'income/insurance', label: '4대보험' },
-    { id: 'income/freelancer', label: '프리랜서 3.3%' },
-    { id: 'income/severance', label: '퇴직금' },
-    { id: 'income/rent-credit', label: '월세 공제' },
-    { id: 'income/interest-dividend', label: '이자·배당소득세' },
-    { id: 'income/retirement', label: '퇴직소득세' },
-    { id: 'income/vat', label: '부가가치세' },
-    { id: 'income/customs', label: '해외구매 관세' },
-    { id: 'income/hourly-wage', label: '시급 계산기' },
-    { id: 'income/daily-worker', label: '일용직' },
-    { id: 'income/other-income', label: '기타소득세' },
-    { id: 'income/pension-income', label: '연금소득세' },
-  ],
-  'stocks': [
-    { id: 'stocks/domestic', label: '국내주식' },
-    { id: 'stocks/foreign', label: '해외주식' },
-    { id: 'stocks/transaction', label: '증권거래세' },
-    { id: 'stocks/dividend', label: '배당소득세' },
-  ],
-  'fines': [
-    { id: 'fines/traffic', label: '교통 과태료' },
-    { id: 'fines/parking', label: '주정차 위반' },
-    { id: 'fines/living', label: '생활 과태료' },
-  ],
-  'other': [
-    { id: 'other/resident', label: '주민세' },
-    { id: 'other/fuel', label: '유류세' },
-    { id: 'other/customs-info', label: '관세 안내' },
-    { id: 'other/excise-info', label: '개별소비세' },
-    { id: 'other/liquor', label: '주세' },
-    { id: 'other/tobacco', label: '담배소비세' },
-    { id: 'other/leisure', label: '레저세' },
-    { id: 'other/progressive-tax', label: '누진세 속산표' },
-    { id: 'other/no-son-day', label: '손 없는 날' },
-  ],
-};
-
 const App = (() => {
 
   let currentCategory = null;
@@ -357,7 +284,6 @@ const App = (() => {
   function navigateTo(routeId) {
     Router.navigate(routeId);
     updateActiveNav(routeId);
-    updateTabBar(routeId);
     updatePageTitleBar(routeId);
     updateMobileChips(routeId);
 
@@ -383,24 +309,6 @@ const App = (() => {
   function updateActiveNav(routeId) {
     document.querySelectorAll('.sidebar-item').forEach(el => {
       el.classList.toggle('active', el.dataset.routeId === routeId);
-    });
-  }
-
-  function updateTabBar(routeId) {
-    const catId = getCategoryOfRoute(routeId);
-    const tabBar = document.getElementById('tab-bar');
-    if (!tabBar) return;
-
-    const tabs = TAB_CONFIG[catId] || [];
-    tabBar.innerHTML = '';
-
-    tabs.forEach(tab => {
-      const el = document.createElement('div');
-      el.className = `tab-item${tab.id === routeId ? ' active' : ''}`;
-      el.textContent = tab.label;
-      el.dataset.routeId = tab.id;
-      el.addEventListener('click', () => navigateTo(tab.id));
-      tabBar.appendChild(el);
     });
   }
 
@@ -556,8 +464,6 @@ const App = (() => {
       el.classList.remove('active');
     });
     document.querySelectorAll('.mobile-cat-chip').forEach(el => el.classList.remove('active'));
-    const tabBar = document.getElementById('tab-bar');
-    if (tabBar) tabBar.innerHTML = '';
     closeSidebar();
   }
 
