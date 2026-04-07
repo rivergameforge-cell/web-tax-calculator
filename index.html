@@ -323,57 +323,9 @@
               <div class="welcome-icon">₩</div>
               <h1 class="welcome-title">대한민국 세금 계산기</h1>
               <p class="welcome-desc">부동산, 자동차, 주식, 소득 등 대한민국의 모든 세금을 한 곳에서 정확하게 계산하세요.<br>2026년 최신 세율 기준으로 계산됩니다.</p>
-              <div class="welcome-grid">
-                <div class="welcome-card" onclick="App.navigateToCategory('real-estate')">
-                  <div class="wc-icon">🏠</div>
-                  <div class="wc-label">부동산</div>
-                  <div class="wc-count">취득세, 양도세 외 7종</div>
-                </div>
-                <div class="welcome-card" onclick="App.navigateToCategory('inherit')">
-                  <div class="wc-icon">📜</div>
-                  <div class="wc-label">상속/증여</div>
-                  <div class="wc-count">상속세, 증여세</div>
-                </div>
-                <div class="welcome-card" onclick="App.navigateToCategory('vehicle')">
-                  <div class="wc-icon">🚗</div>
-                  <div class="wc-label">자동차</div>
-                  <div class="wc-count">자동차세, 취득세 외 3종</div>
-                </div>
-                <div class="welcome-card" onclick="App.navigateToCategory('income')">
-                  <div class="wc-icon">💼</div>
-                  <div class="wc-label">소득</div>
-                  <div class="wc-count">연봉계산기, 4대보험 외 9종</div>
-                </div>
-                <div class="welcome-card" onclick="App.navigateToCategory('stocks')">
-                  <div class="wc-icon">📈</div>
-                  <div class="wc-label">주식/금융</div>
-                  <div class="wc-count">국내·해외주식, 배당소득세</div>
-                </div>
-                <div class="welcome-card" onclick="App.navigateToCategory('fines')">
-                  <div class="wc-icon">🚨</div>
-                  <div class="wc-label">과태료/범칙금</div>
-                  <div class="wc-count">교통, 주정차, 생활 과태료</div>
-                </div>
-                <div class="welcome-card" onclick="App.navigateToCategory('other')">
-                  <div class="wc-icon">📋</div>
-                  <div class="wc-label">기타</div>
-                  <div class="wc-count">주민세, 유류세 외 6종</div>
-                </div>
-              </div>
 
-              <div class="welcome-popular">
-                <h3 style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--text-secondary)">인기 계산기 바로가기</h3>
-                <div class="welcome-quick-links">
-                  <a class="quick-link" onclick="App.navigateTo('real-estate/acquisition')">🏠 부동산 취득세</a>
-                  <a class="quick-link" onclick="App.navigateTo('real-estate/capital-gains')">📊 양도소득세</a>
-                  <a class="quick-link" onclick="App.navigateTo('income/employment')">💼 근로소득세</a>
-                  <a class="quick-link" onclick="App.navigateTo('income/customs')">📦 해외직구 관세</a>
-                  <a class="quick-link" onclick="App.navigateTo('vehicle/vehicle-tax')">🚗 자동차세</a>
-                  <a class="quick-link" onclick="App.navigateTo('stocks/foreign')">📈 해외주식 양도세</a>
-                  <a class="quick-link" onclick="App.navigateTo('inherit/gift')">🎁 증여세</a>
-                  <a class="quick-link" onclick="App.navigateTo('loan/loan')">🏦 대출금 계산</a>
-                </div>
-              </div>
+              <!-- 카테고리별 개별 계산기 카드 -->
+              <div class="welcome-catalog" id="welcome-catalog"></div>
             </div>
           </div>
 
@@ -4548,7 +4500,7 @@
 <script src="js/calculators/stocks/dividend.js?v=1"></script>
 <script src="js/calculators/other/resident.js?v=1"></script>
 <script src="js/calculators/other/no-son-day.js?v=1"></script>
-<script src="js/app.js?v=14"></script>
+<script src="js/app.js?v=15"></script>
 
 <script>
   // Initialize calculators after DOM ready

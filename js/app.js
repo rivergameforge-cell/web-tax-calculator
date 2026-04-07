@@ -288,6 +288,76 @@ const App = (() => {
     });
   }
 
+  // 개별 계산기 아이콘 맵
+  const ITEM_ICONS = {
+    'loan/calculator': '🏦', 'loan/dsr': '📊',
+    'real-estate/acquisition': '🏠', 'real-estate/capital-gains': '📈', 'real-estate/commission': '🔑',
+    'real-estate/comprehensive': '🏘️', 'real-estate/property-tax': '🏡', 'real-estate/rental-income': '💵',
+    'real-estate/stamp': '📝', 'real-estate/registration': '📋', 'real-estate/total-cost': '🧾',
+    'inherit/inheritance': '📜', 'inherit/gift': '🎁',
+    'vehicle/vehicle-tax': '🚗', 'vehicle/overdue': '⚠️', 'vehicle/acquisition': '🚙',
+    'vehicle/excise': '⛽', 'vehicle/buying': '🧾',
+    'income/salary': '💰', 'income/employment': '💼', 'income/pension-saving': '🏦',
+    'income/business': '🏪', 'income/comprehensive': '📑', 'income/penalty': '⚠️',
+    'income/corporate': '🏢', 'income/insurance': '❤️', 'income/freelancer': '💻',
+    'income/severance': '🎒', 'income/rent-credit': '🏠', 'income/interest-dividend': '💳',
+    'income/retirement': '🧓', 'income/vat': '🧾', 'income/customs': '📦',
+    'income/hourly-wage': '⏰', 'income/daily-worker': '👷', 'income/other-income': '🎰',
+    'income/pension-income': '🧓',
+    'stocks/domestic': '🇰🇷', 'stocks/foreign': '🌍', 'stocks/transaction': '💹', 'stocks/dividend': '💰',
+    'fines/traffic': '🚦', 'fines/parking': '🅿️', 'fines/living': '🏠',
+    'other/resident': '🏙️', 'other/fuel': '⛽', 'other/customs-info': '📦',
+    'other/excise-info': '💎', 'other/liquor': '🍺', 'other/tobacco': '🚬',
+    'other/leisure': '🎯', 'other/progressive-tax': '📊', 'other/no-son-day': '📅',
+  };
+
+  function buildWelcomeCatalog() {
+    const catalog = document.getElementById('welcome-catalog');
+    if (!catalog) return;
+
+    NAV_CONFIG.forEach(cat => {
+      const section = document.createElement('div');
+      section.className = 'welcome-cat-section';
+
+      const header = document.createElement('div');
+      header.className = 'welcome-cat-header';
+      header.style.borderColor = cat.color;
+      header.innerHTML = `<span class="wch-icon">${cat.icon}</span>${cat.label}<span class="wch-count">${cat.items.length}종</span>`;
+      section.appendChild(header);
+
+      const grid = document.createElement('div');
+      grid.className = 'welcome-grid';
+
+      cat.items.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'welcome-card';
+
+        let badgeHTML = '';
+        if (item.badge === '인기') badgeHTML = '<span class="wc-badge hot">인기</span>';
+        else if (item.badge === 'NEW') badgeHTML = '<span class="wc-badge">NEW</span>';
+        else if (item.badge === 'ℹ️') badgeHTML = '<span class="wc-badge info">안내</span>';
+        else if (item.badge === '종합') badgeHTML = '<span class="wc-badge">종합</span>';
+
+        const icon = ITEM_ICONS[item.id] || cat.icon;
+
+        card.innerHTML = `
+          ${badgeHTML}
+          <div class="wc-icon">${icon}</div>
+          <div class="wc-label">${item.label}</div>
+        `;
+
+        card.addEventListener('click', () => {
+          navigateTo(item.id);
+          closeSidebar();
+        });
+        grid.appendChild(card);
+      });
+
+      section.appendChild(grid);
+      catalog.appendChild(section);
+    });
+  }
+
   function navigateToCategory(catId) {
     const cat = NAV_CONFIG.find(c => c.id === catId);
     if (!cat || cat.items.length === 0) return;
@@ -446,6 +516,7 @@ const App = (() => {
   function init() {
     buildSidebar();
     buildSearchDropdown();
+    buildWelcomeCatalog();
     initHamburger();
     Theme.init();
     Ads.init();
