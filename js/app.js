@@ -450,6 +450,15 @@ const App = (() => {
     Theme.init();
     Ads.init();
 
+    // 로고 클릭 → 홈
+    const logoBtn = document.getElementById('logo-home');
+    if (logoBtn) {
+      logoBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        goHome();
+      });
+    }
+
     // Handle initial route from hash
     const { path } = Router.parseHash();
     if (path && NAV_CONFIG.some(c => c.items.some(i => i.id === path))) {
