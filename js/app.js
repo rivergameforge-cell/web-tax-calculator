@@ -4,12 +4,13 @@
 const NAV_CONFIG = [
   {
     id: 'loan',
-    label: '대출 계산기',
+    label: '대출',
     icon: '🏦',
     color: 'var(--cat-loan)',
     items: [
       { id: 'loan/calculator', label: '대출금 계산기', badge: null },
-      { id: 'loan/dsr', label: 'DSR 계산기', badge: 'NEW' },
+      { id: 'loan/dsr', label: 'DSR 계산기', badge: null },
+      { id: 'loan/ltv', label: 'LTV 계산기', badge: 'NEW' },
     ]
   },
   {
@@ -217,7 +218,7 @@ const App = (() => {
 
   // 개별 계산기 아이콘 맵
   const ITEM_ICONS = {
-    'loan/calculator': '🏦', 'loan/dsr': '📊',
+    'loan/calculator': '🏦', 'loan/dsr': '📊', 'loan/ltv': '🏠',
     'real-estate/acquisition': '🏠', 'real-estate/capital-gains': '📈', 'real-estate/commission': '🔑',
     'real-estate/comprehensive': '🏘️', 'real-estate/property-tax': '🏡', 'real-estate/rental-income': '💵',
     'real-estate/stamp': '📝', 'real-estate/registration': '📋', 'real-estate/total-cost': '🧾',

@@ -1832,19 +1832,20 @@
             <div class="calc-grid">
               <div class="card input-panel">
                 <div class="card-header">
-                  <span>🏭</span>
+                  <span>🚗</span>
                   <div>
-                    <div class="card-title">자동차 개별소비세 계산</div>
-                    <div class="card-subtitle">차량 출고 시 부과되는 개별소비세를 계산합니다</div>
+                    <div class="card-title">자동차 개별소비세 역산</div>
+                    <div class="card-subtitle">구매가격에서 출고가와 세금을 역산합니다</div>
                   </div>
                 </div>
                 <div class="card-body">
                   <div class="form-group">
-                    <label class="form-label">차량 출고가 (원)</label>
+                    <label class="form-label">차량 구매가격 (원)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="vexcise-price" class="input" inputmode="numeric" placeholder="예: 40,000,000">
+                      <input type="text" id="vexcise-price" class="input" inputmode="numeric" placeholder="예: 45,000,000">
                       <span class="num-input-unit">원</span>
                     </div>
+                    <div class="form-hint">실제 지불한 차량 가격 (출고가 + 세금 포함)</div>
                   </div>
                   <div class="form-group">
                     <label class="form-label">친환경차 감면</label>
@@ -1865,9 +1866,10 @@
               <div class="card">
                 <div class="card-header"><span>📊</span><div class="card-title">계산 결과</div></div>
                 <div class="result-breakdown" id="vexcise-result">
-                  <div class="result-empty"><div class="result-empty-icon">🏭</div>차량 출고가를 입력해주세요</div>
+                  <div class="result-empty"><div class="result-empty-icon">🚗</div>차량 구매가격을 입력해주세요</div>
                 </div>
                 <div class="notice-box info" style="margin:16px">
+                  <strong>역산 방식:</strong> 구매가격에서 출고가를 역산합니다<br>
                   <strong>개별소비세:</strong> 출고가의 5%<br>
                   <strong>교육세:</strong> 개별소비세의 30%<br>
                   <strong>부가가치세:</strong> (출고가 + 개소세 + 교육세)의 10%<br>
@@ -4280,6 +4282,113 @@
             </div>
           </div>
 
+          <!-- ===== LTV 계산기 ===== -->
+          <div id="view-loan-ltv" class="calculator-view">
+            <div class="calc-grid">
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏠</span>
+                  <div>
+                    <div class="card-title">LTV 계산기</div>
+                    <div class="card-subtitle">담보인정비율(LTV)과 최대 대출가능액을 확인하세요</div>
+                  </div>
+                </div>
+                <div class="card-body">
+
+                  <div class="form-group">
+                    <label class="form-label" for="ltv-property-value">주택 가격 (시가) <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="ltv-property-value" class="input" placeholder="예: 500,000,000" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">KB시세, 감정가 등 담보 평가 기준 금액</div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="ltv-loan-amount">대출 희망 금액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="ltv-loan-amount" class="input" placeholder="예: 300,000,000" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">비워두면 최대 대출가능액만 계산합니다</div>
+                  </div>
+
+                  <div class="section-divider"><span>규제 지역 · 주택 수</span></div>
+
+                  <div class="form-group">
+                    <label class="form-label">규제 지역</label>
+                    <div class="radio-group" style="flex-direction:column;gap:6px">
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="ltv-region" value="non-regulated" checked>
+                        <span class="radio-label" style="width:100%;padding:8px 12px;font-size:13px">비규제지역</span>
+                      </label>
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="ltv-region" value="regulated">
+                        <span class="radio-label" style="width:100%;padding:8px 12px;font-size:13px">조정대상지역</span>
+                      </label>
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="ltv-region" value="speculative">
+                        <span class="radio-label" style="width:100%;padding:8px 12px;font-size:13px">투기과열지구</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">주택 보유 수</label>
+                    <div class="radio-group" style="flex-direction:column;gap:6px">
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="ltv-housing" value="homeless" checked>
+                        <span class="radio-label" style="width:100%;padding:8px 12px;font-size:13px">무주택</span>
+                      </label>
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="ltv-housing" value="1house">
+                        <span class="radio-label" style="width:100%;padding:8px 12px;font-size:13px">1주택 (처분 조건부)</span>
+                      </label>
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="ltv-housing" value="multi">
+                        <span class="radio-label" style="width:100%;padding:8px 12px;font-size:13px">2주택 이상</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">대출 유형</label>
+                    <div class="radio-group">
+                      <label class="radio-option">
+                        <input type="radio" name="ltv-loantype" value="bank" checked>
+                        <span class="radio-label">은행권</span>
+                      </label>
+                      <label class="radio-option">
+                        <input type="radio" name="ltv-loantype" value="nonbank">
+                        <span class="radio-label">비은행권</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="ltv-existing-loan">기존 담보대출 잔액</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="ltv-existing-loan" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">같은 주택에 이미 설정된 대출 잔액</div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="card result-panel">
+                <div class="card-body" id="ltv-result">
+                  <div class="result-empty"><div class="result-empty-icon">🏠</div>주택 가격을 입력해주세요</div>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-outline" id="ltv-copy">📋 복사</button>
+                  <button class="btn btn-outline" id="ltv-reset">↩️ 초기화</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- ===== 누진세 속산표 ===== -->
           <div id="view-other-progressive-tax" class="calculator-view">
             <div class="info-ref-page">
@@ -4458,6 +4567,7 @@
 <script src="js/ads.js"></script>
 <script src="js/calculators/loan/loan.js?v=2"></script>
 <script src="js/calculators/loan/dsr.js?v=1"></script>
+<script src="js/calculators/loan/ltv.js?v=1"></script>
 <script src="js/calculators/real-estate/acquisition.js?v=2"></script>
 <script src="js/calculators/real-estate/commission.js?v=2"></script>
 <script src="js/calculators/real-estate/capital-gains.js?v=2"></script>
@@ -4494,12 +4604,12 @@
 <script src="js/calculators/stocks/transaction.js?v=2"></script>
 <script src="js/calculators/vehicle/vehicle-tax.js?v=3"></script>
 <script src="js/calculators/vehicle/acquisition.js?v=1"></script>
-<script src="js/calculators/vehicle/excise.js?v=1"></script>
+<script src="js/calculators/vehicle/excise.js?v=2"></script>
 <script src="js/calculators/stocks/domestic.js?v=1"></script>
 <script src="js/calculators/stocks/dividend.js?v=1"></script>
 <script src="js/calculators/other/resident.js?v=1"></script>
 <script src="js/calculators/other/no-son-day.js?v=1"></script>
-<script src="js/app.js?v=17"></script>
+<script src="js/app.js?v=18"></script>
 
 <script>
   // Initialize calculators after DOM ready
@@ -4542,6 +4652,7 @@
     CalcRentCredit.init();
     CalcSalary.init();
     CalcDSR.init();
+    CalcLTV.init();
     CalcHourlyWage.init();
     CalcDailyWorker.init();
     CalcOtherIncome.init();

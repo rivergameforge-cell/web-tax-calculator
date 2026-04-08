@@ -1,4 +1,4 @@
-/* ===== 자동차 개별소비세 계산기 (2026년 기준) ===== */
+/* ===== 자동차 개별소비세 계산기 (2026년 기준) — 역산 방식 ===== */
 const CalcVehicleExcise = (() => {
 
   const EXCISE_RATE = 0.05;          // 개별소비세 5%
@@ -13,37 +13,52 @@ const CalcVehicleExcise = (() => {
     'hydrogen':  { rate: 1.00, max: 4_000_000, label: '수소차 (최대 400만원)' },
   };
 
-  function calculate(params) {
-    const {
-      factoryPrice,   // 출고가 (원)
-      ecoType,        // 친환경차 종류
-    } = params;
-
-    if (!factoryPrice || factoryPrice <= 0) return null;
-
-    // 1) 개별소비세 = 출고가 × 5%
+  // 출고가로부터 최종가 정방향 계산
+  function forwardCalc(factoryPrice, ecoType) {
     const exciseTax = Math.floor(factoryPrice * EXCISE_RATE);
-
-    // 친환경차 감면
     const eco = ECO_DISCOUNT[ecoType] || ECO_DISCOUNT['none'];
     const ecoDiscount = Math.min(Math.floor(exciseTax * eco.rate), eco.max);
     const exciseAfter = Math.max(0, exciseTax - ecoDiscount);
-
-    // 2) 교육세 = 개소세(감면 후) × 30%
     const educationTax = Math.floor(exciseAfter * EDUCATION_TAX_RATE);
-
-    // 3) 부가가치세 = (출고가 + 개소세 + 교육세) × 10%
-    const vatBase = factoryPrice + exciseAfter + educationTax;
-    const vat = Math.floor(vatBase * VAT_RATE);
-
-    // 최종 차량 가격
+    const vat = Math.floor((factoryPrice + exciseAfter + educationTax) * VAT_RATE);
     const totalTax = exciseAfter + educationTax + vat;
     const finalPrice = factoryPrice + totalTax;
+    return { factoryPrice, exciseTax, ecoLabel: eco.label, ecoDiscount, exciseAfter, educationTax, vat, totalTax, finalPrice };
+  }
+
+  function calculate(params) {
+    const { purchasePrice, ecoType } = params;
+    if (!purchasePrice || purchasePrice <= 0) return null;
+
+    // 친환경차 감면 없으면 단순 역산
+    // 최종가 = 출고가 × (1 + 개소세율 + 교육세율 + VAT율)
+    // 감면 없을 때: multiplier = 1 + 0.05 + 0.015 + (1+0.05+0.015)×0.1 = 1.1715
+    const eco = ECO_DISCOUNT[ecoType] || ECO_DISCOUNT['none'];
+
+    // 이진 탐색으로 역산 (감면 한도 때문에 비선형)
+    let lo = 0, hi = purchasePrice;
+    for (let i = 0; i < 100; i++) {
+      const mid = Math.floor((lo + hi) / 2);
+      const result = forwardCalc(mid, ecoType);
+      if (result.finalPrice <= purchasePrice) {
+        lo = mid;
+      } else {
+        hi = mid;
+      }
+      if (hi - lo <= 1) break;
+    }
+
+    // lo가 출고가 후보, 검증
+    let best = forwardCalc(lo, ecoType);
+    const bestHi = forwardCalc(lo + 1, ecoType);
+    // 구매가격에 더 가까운 쪽 선택
+    if (Math.abs(bestHi.finalPrice - purchasePrice) < Math.abs(best.finalPrice - purchasePrice)) {
+      best = bestHi;
+    }
 
     return {
-      factoryPrice, exciseTax,
-      ecoLabel: eco.label, ecoDiscount, exciseAfter,
-      educationTax, vat, totalTax, finalPrice,
+      ...best,
+      purchasePrice,
       params,
     };
   }
@@ -52,8 +67,8 @@ const CalcVehicleExcise = (() => {
     if (!result) {
       container.innerHTML = `
         <div class="result-empty">
-          <div class="result-empty-icon">🏭</div>
-          차량 출고가를 입력해주세요
+          <div class="result-empty-icon">🚗</div>
+          차량 구매가격을 입력해주세요
         </div>`;
       return;
     }
@@ -61,10 +76,14 @@ const CalcVehicleExcise = (() => {
     const r = result;
 
     container.innerHTML = `
-      <div class="breakdown-title">자동차 개별소비세 계산 결과</div>
+      <div class="breakdown-title">개별소비세 역산 결과</div>
       <div class="breakdown-row">
-        <span class="br-label">출고가</span>
-        <span class="br-value">${UI.fmtWon(r.factoryPrice)}</span>
+        <span class="br-label">차량 구매가격 (입력)</span>
+        <span class="br-value">${UI.fmtWon(r.purchasePrice)}</span>
+      </div>
+      <div class="breakdown-row total" style="margin-bottom:12px">
+        <span class="br-label">역산 출고가</span>
+        <span class="br-value" style="color:var(--accent)">${UI.fmtWon(r.factoryPrice)}</span>
       </div>
       <div class="breakdown-row">
         <span class="br-label">개별소비세 (5%)</span>
@@ -92,9 +111,13 @@ const CalcVehicleExcise = (() => {
         <span class="br-value">${UI.fmtWon(r.totalTax)}</span>
       </div>
       <div class="breakdown-row total" style="margin-top:8px">
-        <span class="br-label">최종 차량 가격 (출고가+세금)</span>
+        <span class="br-label">검증: 출고가 + 세금</span>
         <span class="br-value">${UI.fmtWon(r.finalPrice)}</span>
       </div>
+      ${r.finalPrice !== r.purchasePrice ? `
+      <div style="font-size:11px;color:var(--text-muted);margin-top:4px;text-align:right">
+        * 절삭(원 단위 버림) 차이: ${UI.fmtWon(Math.abs(r.purchasePrice - r.finalPrice))}
+      </div>` : ''}
     `;
   }
 
@@ -111,8 +134,8 @@ const CalcVehicleExcise = (() => {
 
     function getParams() {
       return {
-        factoryPrice: UI.parseNum((view.querySelector('#vexcise-price')?.value || '').replace(/,/g, '')),
-        ecoType:      view.querySelector('#vexcise-eco')?.value || 'none',
+        purchasePrice: UI.parseNum((view.querySelector('#vexcise-price')?.value || '').replace(/,/g, '')),
+        ecoType:       view.querySelector('#vexcise-eco')?.value || 'none',
       };
     }
 
@@ -128,12 +151,12 @@ const CalcVehicleExcise = (() => {
       btnCopy.addEventListener('click', async () => {
         const r = calculate(getParams());
         if (!r) return;
-        await UI.copyText(UI.formatResultForCopy('자동차 개별소비세 계산', [
-          { label: '출고가', value: UI.fmtWon(r.factoryPrice) },
+        await UI.copyText(UI.formatResultForCopy('자동차 개별소비세 역산', [
+          { label: '구매가격', value: UI.fmtWon(r.purchasePrice) },
+          { label: '역산 출고가', value: UI.fmtWon(r.factoryPrice) },
           { label: '개별소비세', value: UI.fmtWon(r.exciseAfter) },
           { label: '교육세', value: UI.fmtWon(r.educationTax) },
           { label: '부가가치세', value: UI.fmtWon(r.vat) },
-          { label: '최종 차량 가격', value: UI.fmtWon(r.finalPrice) },
         ]));
         UI.toast('복사되었습니다', 'success');
       });
