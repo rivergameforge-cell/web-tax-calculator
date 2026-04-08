@@ -17,8 +17,8 @@ const CalcResident = (() => {
 
   // 종업원분 세율
   const EMPLOYEE_RATE = 0.005;        // 급여총액의 0.5%
-  // 종업원분 면제: 최근 1년간 월평균 급여총액 1.5억원 이하
-  const EMPLOYEE_EXEMPT_SALARY = 150_000_000;
+  // 종업원분 면제: 최근 1년간 월평균 급여총액 1.8억원 이하 (2025년~ 인상)
+  const EMPLOYEE_EXEMPT_SALARY = 180_000_000;
 
   function calculate(params) {
     const {
@@ -65,7 +65,7 @@ const CalcResident = (() => {
     if (taxSubType === 'employee') {
       if (!totalSalary || totalSalary <= 0) return null;
       const count = employeeCount || 0;
-      // 월평균 급여총액 1.5억원 이하 면제
+      // 월평균 급여총액 1.8억원 이하 면제
       const isExempt = totalSalary <= EMPLOYEE_EXEMPT_SALARY;
       const tax = isExempt ? 0 : Math.floor(totalSalary * EMPLOYEE_RATE);
       return {
@@ -165,7 +165,7 @@ const CalcResident = (() => {
       <div style="padding:16px;text-align:center">
         <div class="exempt-badge">✅ 납부 면제</div>
         <p style="margin-top:12px;font-size:13px;color:var(--text-secondary)">
-          월평균 급여총액 1억 5천만원 이하 사업장은 종업원분 주민세가 <strong>면제</strong>됩니다.
+          월평균 급여총액 1억 8천만원 이하 사업장은 종업원분 주민세가 <strong>면제</strong>됩니다.
         </p>
       </div>` : `
       <div class="breakdown-row">

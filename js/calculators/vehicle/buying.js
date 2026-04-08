@@ -1,7 +1,7 @@
 /* ===== 자동차 살 때 총 비용 계산기 (2026년 기준) ===== */
 const CalcVehicleBuying = (() => {
 
-  const EDU_RATE = 0.20; // 교육세: 개소세의 20%
+  const EDU_RATE = 0.30; // 교육세: 개소세의 30%
 
   // 취득세율
   const ACQ_RATES = {
@@ -12,9 +12,9 @@ const CalcVehicleBuying = (() => {
     'electric':  0.07,
   };
 
-  // 친환경차 취득세 감면 한도 (2026년: 하이브리드 폐지)
+  // 친환경차 취득세 감면 한도 (2026년)
   const ECO_ACQ_MAX = {
-    'hybrid':          0,  // 2026년부터 폐지
+    'hybrid':   400_000,  // 2026년 하이브리드 40만원
     'electric': 1_400_000,
     'hydrogen': 1_400_000,
   };
@@ -32,7 +32,7 @@ const CalcVehicleBuying = (() => {
    * → 공장가 = 판매가 / ((1 + exciseRate × 1.3) × 1.1)
    */
   function reverseFactoryPrice(salePrice, exciseRate) {
-    const multiplier = (1 + exciseRate * 1.2) * 1.1;
+    const multiplier = (1 + exciseRate * 1.3) * 1.1;
     return Math.floor(salePrice / multiplier);
   }
 
@@ -150,7 +150,7 @@ const CalcVehicleBuying = (() => {
         <span class="br-value">${UI.fmtWon(r.exciseTax)}</span>
       </div>
       <div class="breakdown-row indent">
-        <span class="br-label">교육세 (개소세의 20%)</span>
+        <span class="br-label">교육세 (개소세의 30%)</span>
         <span class="br-value">${UI.fmtWon(r.eduTax)}</span>
       </div>
       <div class="breakdown-row indent">

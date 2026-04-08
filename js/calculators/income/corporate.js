@@ -1,15 +1,15 @@
 /* ===== 법인세 계산기 ===== */
 const CalcCorporate = (() => {
 
-  // 2026년 기준 법인세 누진 구간
+  // 2026년 기준 법인세 누진 구간 (2025년 세법개정, 전 구간 1%p 인상)
   const BRACKETS = [
-    { limit: 200_000_000,         rate: 0.09, deduction: 0 },
-    { limit: 20_000_000_000,      rate: 0.19, deduction: 20_000_000 },
-    { limit: 300_000_000_000,     rate: 0.21, deduction: 420_000_000 },
-    { limit: Infinity,            rate: 0.24, deduction: 9_420_000_000 },
+    { limit: 200_000_000,         rate: 0.10, deduction: 0 },
+    { limit: 20_000_000_000,      rate: 0.20, deduction: 20_000_000 },
+    { limit: 300_000_000_000,     rate: 0.22, deduction: 420_000_000 },
+    { limit: Infinity,            rate: 0.25, deduction: 9_420_000_000 },
   ];
 
-  const BRACKET_LABELS = ['2억 이하 (9%)', '200억 이하 (19%)', '3,000억 이하 (21%)', '3,000억 초과 (24%)'];
+  const BRACKET_LABELS = ['2억 이하 (10%)', '200억 이하 (20%)', '3,000억 이하 (22%)', '3,000억 초과 (25%)'];
 
   // 지방소득세: 법인세의 10%
   const LOCAL_TAX_RATE = 0.10;

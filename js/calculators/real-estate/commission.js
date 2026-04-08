@@ -11,7 +11,7 @@ const CalcCommission = (() => {
       { limit:  50_000_000,   rate: 0.006, maxFee:  250_000 },
       { limit: 200_000_000,   rate: 0.005, maxFee:  800_000 },
       { limit: 600_000_000,   rate: 0.004, maxFee: null },
-      { limit: 900_000_000,   rate: 0.004, maxFee: null },  // 6~9억: 0.4%
+      { limit: 900_000_000,   rate: 0.005, maxFee: null },  // 6~9억: 0.5%
       { limit: 1_200_000_000, rate: 0.005, maxFee: null },  // 9~12억: 0.5%
       { limit: 1_500_000_000, rate: 0.006, maxFee: null },  // 12~15억: 0.6%
       { limit: Infinity,      rate: 0.007, maxFee: null },  // 15억 초과: 0.7% 이내 협의

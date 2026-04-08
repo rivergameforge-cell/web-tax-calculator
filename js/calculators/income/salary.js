@@ -185,6 +185,10 @@ const CalcSalary = (() => {
         <span class="br-label">연 실수령액</span>
         <span class="br-value">${UI.fmtWon(r.annualNet)}</span>
       </div>
+      ${new Date() < new Date(2026, 6, 1) ? `
+      <div class="notice-box warning" style="margin-top:12px">
+        <strong>2026.7.1 변경 예정:</strong> 국민연금 기준소득월액 상한이 637만원 → 659만원으로 인상됩니다. 7월부터 자동 반영됩니다.
+      </div>` : ''}
     `;
   }
 

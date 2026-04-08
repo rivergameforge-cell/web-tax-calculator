@@ -129,6 +129,10 @@ const CalcInsurance = (() => {
         <span class="br-label">연간 합계</span>
         <span class="br-value">${UI.fmtWon(result.yearlyTotal)}</span>
       </div>
+      ${new Date() < new Date(2026, 6, 1) ? `
+      <div class="notice-box warning" style="margin-top:12px">
+        <strong>2026.7.1 변경 예정:</strong> 국민연금 기준소득월액 상한 637만원 → 659만원, 하한 40만원 ��� 41만원으로 인상됩니다. 보험료율 9.5%는 동일합니다.
+      </div>` : ''}
     `;
   }
 

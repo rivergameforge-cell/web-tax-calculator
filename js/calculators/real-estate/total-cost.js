@@ -20,6 +20,8 @@ const CalcTotalCost = (() => {
     { limit: 200_000_000, rate: 0.005, max:  800_000 },
     { limit: 600_000_000, rate: 0.004, max: null },
     { limit: 900_000_000, rate: 0.005, max: null },
+    { limit: 1_200_000_000, rate: 0.005, max: null },
+    { limit: 1_500_000_000, rate: 0.006, max: null },
     { limit: Infinity,    rate: 0.007, max: null },
   ];
 
@@ -62,12 +64,12 @@ const CalcTotalCost = (() => {
 
   // ── 장기보유특별공제율 ──
   function getLongTermDeduction(years, isOneHouse) {
-    if (years < 2) return 0;
+    if (years < 3) return 0;
     if (isOneHouse) {
-      // 1주택 보유: 연 8%, 최대 80%
+      // 1주택: 보유 연 4% + 거주 연 4%, 합산 최대 80% (간이: 연 8%)
       return Math.min(years * 0.08, 0.80);
     }
-    // 일반: 연 2%, 최대 30%
+    // 일반: 3년 이상, 연 2%, 최대 30%
     return Math.min(years * 0.02, 0.30);
   }
 

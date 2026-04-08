@@ -2,7 +2,7 @@
 const CalcVehicleExcise = (() => {
 
   const EXCISE_RATE = 0.05;          // 개별소비세 5%
-  const EDUCATION_TAX_RATE = 0.20;   // 교육세 = 개소세의 20%
+  const EDUCATION_TAX_RATE = 0.30;   // 교육세 = 개소세의 30%
   const VAT_RATE = 0.10;             // 부가가치세 10%
 
   // 친환경차 개별소비세 감면
@@ -32,7 +32,7 @@ const CalcVehicleExcise = (() => {
 
     // 친환경차 감면 없으면 단순 역산
     // 최종가 = 출고가 × (1 + 개소세율 + 교육세율 + VAT율)
-    // 감면 없을 때: multiplier = 1 + 0.05 + 0.015 + (1+0.05+0.015)×0.1 = 1.1715
+    // 감면 없을 때: multiplier = 1 + 0.05 + 0.015 + (1+0.05+0.015)×0.1 (교육세 30% 기준)
     const eco = ECO_DISCOUNT[ecoType] || ECO_DISCOUNT['none'];
 
     // 이진 탐색으로 역산 (감면 한도 때문에 비선형)
@@ -99,7 +99,7 @@ const CalcVehicleExcise = (() => {
         <span class="br-value">${UI.fmtWon(r.exciseAfter)}</span>
       </div>` : ''}
       <div class="breakdown-row">
-        <span class="br-label">교육세 (개소세의 20%)</span>
+        <span class="br-label">교육세 (개소세의 30%)</span>
         <span class="br-value">${UI.fmtWon(r.educationTax)}</span>
       </div>
       <div class="breakdown-row">

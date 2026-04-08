@@ -207,6 +207,10 @@ const CalcFreelancer = (() => {
           ? '원천징수가 더 많아 <strong>환급</strong>받을 수 있습니다.'
           : '종합소득세가 더 많아 <strong>추가 납부</strong>해야 합니다.'}
       </div>
+      ${new Date() < new Date(2026, 6, 1) ? `
+      <div class="notice-box warning" style="margin-top:8px">
+        <strong>2026.7.1 변경 예정:</strong> 국민연금 기준소득월액 상한 637만원 → 659만원 인상. 국민연금 공제 추정액이 변동될 수 있습니다.
+      </div>` : ''}
     `;
   }
 
