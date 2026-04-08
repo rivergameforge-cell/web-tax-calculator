@@ -14,7 +14,7 @@ const CalcVehicleAcq = (() => {
   // 친환경차 감면 (2026년 기준)
   const ECO_DISCOUNT = {
     'none':            { rate: 0,    max: 0,       label: '해당 없음' },
-    'hybrid':          { rate: 1.00, max: 400_000, label: '하이브리드 (최대 40만원)' },
+    'hybrid':          { rate: 0,    max: 0,       label: '하이브리드 (2026년 폐지)' },
     'electric':        { rate: 1.00, max: 1_400_000, label: '전기차 (최대 140만원)' },
     'hydrogen':        { rate: 1.00, max: 1_400_000, label: '수소차 (최대 140만원)' },
   };

@@ -16,8 +16,9 @@ const CalcSalary = (() => {
     // 인적공제: 1인당 150만원
     const personalDeduction = familyCount * 1_500_000;
 
-    // 연금보험료공제 (국민연금 연간)
-    const pensionDeduction = Math.min(taxableAnnual / 12, 5_900_000) * 0.045 * 12;
+    // 연금보험료공제 (국민연금 연간, 2026년 7월부터 상한 659만)
+    const pensionCap = new Date() >= new Date(2026, 6, 1) ? 6_590_000 : 6_370_000;
+    const pensionDeduction = Math.min(taxableAnnual / 12, pensionCap) * 0.0475 * 12;
 
     // 과세표준
     const taxBase = Math.max(0, earnedIncome - personalDeduction - pensionDeduction);
@@ -43,11 +44,11 @@ const CalcSalary = (() => {
     else if (taxableAnnual <= 70_000_000) taxCredit = Math.min(taxCredit, 660_000);
     else taxCredit = Math.min(taxCredit, 500_000);
 
-    // 자녀세액공제
+    // 자녀세액공제 (2026년 개정)
     let childCredit = 0;
-    if (childCount === 1) childCredit = 150_000;
-    else if (childCount === 2) childCredit = 350_000;
-    else if (childCount >= 3) childCredit = 350_000 + (childCount - 2) * 300_000;
+    if (childCount === 1) childCredit = 250_000;
+    else if (childCount === 2) childCredit = 550_000;
+    else if (childCount >= 3) childCredit = 550_000 + (childCount - 2) * 400_000;
 
     const annualTax = Math.max(0, calcTax - taxCredit - childCredit);
     return Math.floor(annualTax / 12);
@@ -73,9 +74,10 @@ const CalcSalary = (() => {
     const taxableMonthly = Math.max(0, monthlySalary - nonTaxAmount);
 
     // Step 3: 4대보험
-    const pension = Math.floor(Math.min(taxableMonthly, 5_900_000) * 0.045);
-    const health = Math.floor(taxableMonthly * 0.03545);
-    const longCare = Math.floor(health * 0.1281);
+    const salPensionCap = new Date() >= new Date(2026, 6, 1) ? 6_590_000 : 6_370_000;
+    const pension = Math.floor(Math.min(taxableMonthly, salPensionCap) * 0.0475);
+    const health = Math.floor(taxableMonthly * 0.03595);
+    const longCare = Math.floor(health * 0.1314);
     const employment = Math.floor(taxableMonthly * 0.009);
     const totalInsurance = pension + health + longCare + employment;
 
@@ -138,11 +140,11 @@ const CalcSalary = (() => {
       <div class="breakdown-divider"></div>
 
       <div class="breakdown-row" style="color:var(--success)">
-        <span class="br-label">국민연금 (4.5%)</span>
+        <span class="br-label">국민연금 (4.75%)</span>
         <span class="br-value">- ${UI.fmtWon(r.pension)}</span>
       </div>
       <div class="breakdown-row" style="color:var(--success)">
-        <span class="br-label">건강보험 (3.545%)</span>
+        <span class="br-label">건강보험 (3.595%)</span>
         <span class="br-value">- ${UI.fmtWon(r.health)}</span>
       </div>
       <div class="breakdown-row" style="color:var(--success)">

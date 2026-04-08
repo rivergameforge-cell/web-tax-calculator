@@ -2,13 +2,13 @@
 const CalcVehicleExcise = (() => {
 
   const EXCISE_RATE = 0.05;          // 개별소비세 5%
-  const EDUCATION_TAX_RATE = 0.30;   // 교육세 = 개소세의 30%
+  const EDUCATION_TAX_RATE = 0.20;   // 교육세 = 개소세의 20%
   const VAT_RATE = 0.10;             // 부가가치세 10%
 
   // 친환경차 개별소비세 감면
   const ECO_DISCOUNT = {
     'none':      { rate: 0,    max: 0,         label: '해당 없음' },
-    'hybrid':    { rate: 1.00, max: 1_000_000, label: '하이브리드 (최대 100만원)' },
+    'hybrid':    { rate: 1.00, max: 700_000,   label: '하이브리드 (최대 70만원)' },
     'electric':  { rate: 1.00, max: 3_000_000, label: '전기차 (최대 300만원)' },
     'hydrogen':  { rate: 1.00, max: 4_000_000, label: '수소차 (최대 400만원)' },
   };
@@ -99,7 +99,7 @@ const CalcVehicleExcise = (() => {
         <span class="br-value">${UI.fmtWon(r.exciseAfter)}</span>
       </div>` : ''}
       <div class="breakdown-row">
-        <span class="br-label">교육세 (개소세의 30%)</span>
+        <span class="br-label">교육세 (개소세의 20%)</span>
         <span class="br-value">${UI.fmtWon(r.educationTax)}</span>
       </div>
       <div class="breakdown-row">

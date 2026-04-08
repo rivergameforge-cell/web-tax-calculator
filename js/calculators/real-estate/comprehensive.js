@@ -83,8 +83,9 @@ const CalcComprehensive = (() => {
     }
 
     const ratio    = assetType === 'house' ? FAIR_MARKET_RATIO_HOUSE : FAIR_MARKET_RATIO_LAND;
-    const adjusted = Math.floor(publicPrice * ratio); // 공정시장가액
-    const taxBase  = Math.max(0, adjusted - basicDeduction);
+    // 과세표준 = (공시가격 - 기본공제) × 공정시장가액비율
+    const adjusted = Math.floor(publicPrice * ratio); // 공정시장가액 (표시용)
+    const taxBase  = Math.max(0, Math.floor((publicPrice - basicDeduction) * ratio));
 
     if (taxBase === 0) {
       return { publicPrice, basicDeduction, adjusted, taxBase, comprehensiveTax: 0, ruralTax: 0, totalTax: 0, ageDiscount: 0, holdDiscount: 0, params };

@@ -84,11 +84,11 @@ const CalcEmployment = (() => {
     else if (annualPay <= 70_000_000) earnedTaxCredit = Math.min(earnedTaxCredit, 660_000);
     else earnedTaxCredit = Math.min(earnedTaxCredit, 500_000);
 
-    // 자녀세액공제 (7세 이상 자녀)
+    // 자녀세액공제 (7세 이상 자녀, 2026년 개정)
     let childCredit = 0;
-    if (childCount === 1) childCredit = 150_000;
-    else if (childCount === 2) childCredit = 350_000;
-    else if (childCount >= 3) childCredit = 350_000 + (childCount - 2) * 300_000;
+    if (childCount === 1) childCredit = 250_000;
+    else if (childCount === 2) childCredit = 550_000;
+    else if (childCount >= 3) childCredit = 550_000 + (childCount - 2) * 400_000;
 
     // 특별세액공제 (의료비, 교육비, 기부금)
     // 의료비: (지출액 - 총급여 3%) × 15%

@@ -8,11 +8,13 @@ const CalcCommission = (() => {
    */
   const HOUSING_RATES = {
     매매: [
-      { limit:  50_000_000, rate: 0.006, maxFee:  250_000 },
-      { limit: 200_000_000, rate: 0.005, maxFee:  800_000 },
-      { limit: 600_000_000, rate: 0.004, maxFee: null },
-      { limit: 900_000_000, rate: 0.005, maxFee: null },
-      { limit: Infinity,    rate: 0.007, maxFee: null },   // 9억 초과: 0.7% 이내 협의
+      { limit:  50_000_000,   rate: 0.006, maxFee:  250_000 },
+      { limit: 200_000_000,   rate: 0.005, maxFee:  800_000 },
+      { limit: 600_000_000,   rate: 0.004, maxFee: null },
+      { limit: 900_000_000,   rate: 0.004, maxFee: null },  // 6~9억: 0.4%
+      { limit: 1_200_000_000, rate: 0.005, maxFee: null },  // 9~12억: 0.5%
+      { limit: 1_500_000_000, rate: 0.006, maxFee: null },  // 12~15억: 0.6%
+      { limit: Infinity,      rate: 0.007, maxFee: null },  // 15억 초과: 0.7% 이내 협의
     ],
     전세: [
       { limit:  50_000_000, rate: 0.005, maxFee:  200_000 },

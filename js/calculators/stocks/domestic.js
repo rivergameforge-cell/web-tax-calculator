@@ -1,8 +1,8 @@
 /* ===== 국내주식 양도소득세 계산기 (2026년 기준) ===== */
 const CalcStockDomestic = (() => {
 
-  // 대주주 기준: 종목당 10억원 이상 보유
-  const MAJOR_THRESHOLD = 1_000_000_000;
+  // 대주주 기준: 종목당 50억원 이상 보유 (2024년~ 완화)
+  const MAJOR_THRESHOLD = 5_000_000_000;
   const BASIC_DEDUCTION = 2_500_000; // 기본공제 250만원
 
   // 세율

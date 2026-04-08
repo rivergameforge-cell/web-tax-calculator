@@ -3,14 +3,14 @@ const CalcInsurance = (() => {
 
   // 2026 기준 요율
   const RATES = {
-    nationalPension:  0.09,    // 국민연금 전체 9%
-    healthInsurance:  0.0709,  // 건강보험 전체 7.09%
-    longTermCare:     0.1281,  // 장기요양: 건강보험료의 12.81%
+    nationalPension:  0.095,   // 국민연금 전체 9.5%
+    healthInsurance:  0.0719,  // 건강보험 전체 7.19%
+    longTermCare:     0.1314,  // 장기요양: 건강보험료의 13.14%
     employment:       0.018,   // 고용보험 전체 1.8%
   };
 
-  // 국민연금 상한 보수월액
-  const PENSION_CAP = 5_900_000;
+  // 국민연금 상한 보수월액 (2026년 7월부터 659만원)
+  const PENSION_CAP = new Date() >= new Date(2026, 6, 1) ? 6_590_000 : 6_370_000;
 
   // 건강보험 상한 보수월액
   const HEALTH_CAP = 100_000_000;
@@ -45,43 +45,43 @@ const CalcInsurance = (() => {
 
     if (insType === 'employee') {
       // 직장가입자 근로자 부담분
-      const pension  = Math.floor(pensionBase * 0.045);
-      const health   = Math.floor(healthBase * 0.03545);
+      const pension  = Math.floor(pensionBase * 0.0475);
+      const health   = Math.floor(healthBase * 0.03595);
       const longTerm = Math.floor(health * RATES.longTermCare);
       const employ   = Math.floor(salary * 0.009);
 
       items = [
-        { label: '국민연금 (4.5%)',       amount: pension },
-        { label: '건강보험 (3.545%)',     amount: health },
-        { label: '장기요양보험 (12.81%)', amount: longTerm },
+        { label: '국민연금 (4.75%)',      amount: pension },
+        { label: '건강보험 (3.595%)',     amount: health },
+        { label: '장기요양보험 (13.14%)', amount: longTerm },
         { label: '고용보험 (0.9%)',       amount: employ },
       ];
     } else if (insType === 'employer') {
       // 사업주 부담분
-      const pension   = Math.floor(pensionBase * 0.045);
-      const health    = Math.floor(healthBase * 0.03545);
+      const pension   = Math.floor(pensionBase * 0.0475);
+      const health    = Math.floor(healthBase * 0.03595);
       const longTerm  = Math.floor(health * RATES.longTermCare);
       const employ    = Math.floor(salary * 0.009);
       const indRate   = INDUSTRIAL_RATES[industry] || 0.010;
       const indAmount = Math.floor(salary * indRate);
 
       items = [
-        { label: '국민연금 (4.5%)',            amount: pension },
-        { label: '건강보험 (3.545%)',          amount: health },
-        { label: '장기요양보험 (12.81%)',      amount: longTerm },
+        { label: '국민연금 (4.75%)',           amount: pension },
+        { label: '건강보험 (3.595%)',          amount: health },
+        { label: '장기요양보험 (13.14%)',      amount: longTerm },
         { label: '고용보험 (0.9%)',            amount: employ },
         { label: `산재보험 (${INDUSTRIAL_LABELS[industry] || industry})`, amount: indAmount },
       ];
     } else {
       // 지역가입자 전체 부담
-      const pension  = Math.floor(pensionBase * 0.09);
-      const health   = Math.floor(healthBase * 0.0709);
+      const pension  = Math.floor(pensionBase * 0.095);
+      const health   = Math.floor(healthBase * 0.0719);
       const longTerm = Math.floor(health * RATES.longTermCare);
 
       items = [
-        { label: '국민연금 (9%)',          amount: pension },
-        { label: '건강보험 (7.09%)',       amount: health },
-        { label: '장기요양보험 (12.81%)',  amount: longTerm },
+        { label: '국민연금 (9.5%)',        amount: pension },
+        { label: '건강보험 (7.19%)',       amount: health },
+        { label: '장기요양보험 (13.14%)',  amount: longTerm },
       ];
     }
 

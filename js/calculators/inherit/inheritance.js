@@ -2,12 +2,12 @@
 const CalcInheritance = (() => {
 
   // 상속세 누진세율표
+  // 2026년 개정 세율표 (4단계)
   const TAX_BRACKETS = [
-    { limit: 100_000_000,  rate: 0.10, deduction:          0 },
-    { limit: 500_000_000,  rate: 0.20, deduction: 10_000_000 },
-    { limit: 1_000_000_000, rate: 0.30, deduction: 60_000_000 },
-    { limit: 3_000_000_000, rate: 0.40, deduction: 160_000_000 },
-    { limit: Infinity,     rate: 0.50, deduction: 460_000_000 },
+    { limit: 200_000_000,    rate: 0.10, deduction:          0 },
+    { limit: 500_000_000,    rate: 0.20, deduction: 20_000_000 },
+    { limit: 1_000_000_000,  rate: 0.30, deduction: 70_000_000 },
+    { limit: Infinity,       rate: 0.40, deduction: 170_000_000 },
   ];
 
   function calcProgressiveTax(taxBase) {
@@ -47,8 +47,8 @@ const CalcInheritance = (() => {
     const basicDeduction = 200_000_000;
     deductions.push({ label: '기초공제', amount: basicDeduction });
 
-    // 자녀공제: 1인당 5천만원
-    const childDeduction = childCount * 50_000_000;
+    // 자녀공제: 1인당 5억원 (2026년 개정)
+    const childDeduction = childCount * 500_000_000;
     if (childDeduction > 0) deductions.push({ label: `자녀공제 (${childCount}명)`, amount: childDeduction });
 
     // 직계존속 공제: 65세 이상 1인당 5천만원 (단순 처리)

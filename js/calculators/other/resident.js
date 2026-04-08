@@ -8,8 +8,7 @@ const CalcResident = (() => {
   const BUSINESS_BASE = {
     'small':  50_000,    // 자본금 1억 이하 또는 개인사업자
     'medium': 100_000,   // 자본금 1억 초과 ~ 10억 이하
-    'large':  200_000,   // 자본금 10억 초과 ~ 50억 이하
-    'xlarge': 500_000,   // 자본금 50억 초과
+    'large':  200_000,   // 자본금 10억 초과
   };
 
   // 사업소분 연면적분 (330㎡ 초과 시)
@@ -18,7 +17,8 @@ const CalcResident = (() => {
 
   // 종업원분 세율
   const EMPLOYEE_RATE = 0.005;        // 급여총액의 0.5%
-  const EMPLOYEE_EXEMPT_COUNT = 50;   // 종업원 50명 이하 면제
+  // 종업원분 면제: 최근 1년간 월평균 급여총액 1.5억원 이하
+  const EMPLOYEE_EXEMPT_SALARY = 150_000_000;
 
   function calculate(params) {
     const {
@@ -36,7 +36,7 @@ const CalcResident = (() => {
     if (taxSubType === 'individual') {
       const count = Math.max(1, householdCount || 1);
       const tax = INDIVIDUAL_TAX * count;
-      const localEdu = Math.floor(tax * 0.10); // 지방교육세 10%
+      const localEdu = Math.floor(tax * 0.25); // 지방교육세 25%
       return {
         taxSubType, householdCount: count,
         baseTax: INDIVIDUAL_TAX, tax, localEdu,
@@ -53,7 +53,7 @@ const CalcResident = (() => {
         : 0;
       // 오염물질 배출 사업소는 별도 (여기서는 미반영)
       const tax = baseTax + areaTax;
-      const localEdu = Math.floor(tax * 0.10);
+      const localEdu = Math.floor(tax * 0.25);
       return {
         taxSubType, bizScale, floorArea: area,
         baseTax, areaTax, tax, localEdu,
@@ -65,7 +65,8 @@ const CalcResident = (() => {
     if (taxSubType === 'employee') {
       if (!totalSalary || totalSalary <= 0) return null;
       const count = employeeCount || 0;
-      const isExempt = count > 0 && count <= EMPLOYEE_EXEMPT_COUNT;
+      // 월평균 급여총액 1.5억원 이하 면제
+      const isExempt = totalSalary <= EMPLOYEE_EXEMPT_SALARY;
       const tax = isExempt ? 0 : Math.floor(totalSalary * EMPLOYEE_RATE);
       return {
         taxSubType, totalSalary, employeeCount: count,
@@ -106,7 +107,7 @@ const CalcResident = (() => {
           <span class="br-value">${UI.fmtWon(r.tax)}</span>
         </div>
         <div class="breakdown-row">
-          <span class="br-label">지방교육세 (10%)</span>
+          <span class="br-label">지방교육세 (25%)</span>
           <span class="br-value">${UI.fmtWon(r.localEdu)}</span>
         </div>
         <div class="breakdown-row total">
@@ -138,7 +139,7 @@ const CalcResident = (() => {
           <span class="br-value">${UI.fmtWon(r.tax)}</span>
         </div>
         <div class="breakdown-row">
-          <span class="br-label">지방교육세 (10%)</span>
+          <span class="br-label">지방교육세 (25%)</span>
           <span class="br-value">${UI.fmtWon(r.localEdu)}</span>
         </div>
         <div class="breakdown-row total">
@@ -164,7 +165,7 @@ const CalcResident = (() => {
       <div style="padding:16px;text-align:center">
         <div class="exempt-badge">✅ 납부 면제</div>
         <p style="margin-top:12px;font-size:13px;color:var(--text-secondary)">
-          종업원 50명 이하 사업장은 종업원분 주민세가 <strong>면제</strong>됩니다.
+          월평균 급여총액 1억 5천만원 이하 사업장은 종업원분 주민세가 <strong>면제</strong>됩니다.
         </p>
       </div>` : `
       <div class="breakdown-row">

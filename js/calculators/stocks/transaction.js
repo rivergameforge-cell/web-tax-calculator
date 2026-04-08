@@ -3,8 +3,8 @@ const CalcTransaction = (() => {
 
   // 2026년 세율 (단일화)
   const RATES = {
-    kospi:    { rate: 0.0018, label: '코스피 (거래세 0.03% + 농특세 0.15%)' },
-    kosdaq:   { rate: 0.0018, label: '코스닥' },
+    kospi:    { rate: 0.0020, label: '코스피 (거래세 0.05% + 농특세 0.15%)' },
+    kosdaq:   { rate: 0.0018, label: '코스닥 (0.18%)' },
     konex:    { rate: 0.0010, label: '코넥스' },
     unlisted: { rate: 0.0035, label: '비상장' },
   };

@@ -2,7 +2,7 @@
 const CalcHourlyWage = (() => {
 
   // 2026년 최저시급
-  const MIN_WAGE_2026 = 10030;
+  const MIN_WAGE_2026 = 10_320;
 
   function calculate(params) {
     const {

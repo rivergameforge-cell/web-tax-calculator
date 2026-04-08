@@ -11,13 +11,13 @@ const CalcLTV = (() => {
       multi:     { bank: 70, nonbank: 70 },
     },
     'regulated': {
-      homeless:  { bank: 70, nonbank: 70 },
-      '1house':  { bank: 50, nonbank: 50 },
+      homeless:  { bank: 40, nonbank: 40 },
+      '1house':  { bank: 0,  nonbank: 0  },
       multi:     { bank: 0,  nonbank: 0  },
     },
     'speculative': {
-      homeless:  { bank: 70, nonbank: 70 },
-      '1house':  { bank: 50, nonbank: 50 },
+      homeless:  { bank: 40, nonbank: 40 },
+      '1house':  { bank: 0,  nonbank: 0  },
       multi:     { bank: 0,  nonbank: 0  },
     },
   };

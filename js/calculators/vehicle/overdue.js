@@ -3,8 +3,8 @@ const CalcVehicleOverdue = (() => {
 
   // 가산금: 납부기한 경과 즉시 3%
   const BASE_SURCHARGE_RATE = 0.03;
-  // 중가산금: 매월 0.75%, 최대 60개월
-  const MONTHLY_RATE = 0.0075;
+  // 중가산금: 매월 0.66%, 최대 60개월 (2024년~ 인하)
+  const MONTHLY_RATE = 0.0066;
   const MAX_MONTHS = 60;
 
   function calcMonthsDiff(dueDate, today) {
@@ -126,7 +126,7 @@ const CalcVehicleOverdue = (() => {
         <span class="br-value">${UI.fmtWon(baseSurcharge)}</span>
       </div>
       <div class="breakdown-row">
-        <span class="br-label">중가산금 (${additionalMonths}개월 x 0.75%)</span>
+        <span class="br-label">중가산금 (${additionalMonths}개월 x 0.66%)</span>
         <span class="br-value">${UI.fmtWon(additionalSurcharge)}</span>
       </div>
       ${additionalMonths >= MAX_MONTHS ? `
@@ -191,7 +191,7 @@ const CalcVehicleOverdue = (() => {
         if (result.overdue) {
           rows.push({ label: '체납기간', value: formatPeriod(result.months) });
           rows.push({ label: '가산금 (3%)', value: UI.fmtWon(result.baseSurcharge) });
-          rows.push({ label: `중가산금 (${result.additionalMonths}개월 x 0.75%)`, value: UI.fmtWon(result.additionalSurcharge) });
+          rows.push({ label: `중가산금 (${result.additionalMonths}개월 x 0.66%)`, value: UI.fmtWon(result.additionalSurcharge) });
           rows.push({ label: '총 가산금', value: UI.fmtWon(result.totalSurcharge) });
         }
         rows.push({ label: '총 납부액', value: UI.fmtWon(result.grandTotal) });
