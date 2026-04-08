@@ -15,7 +15,7 @@ const CalcPensionIncome = (() => {
     if (annualPension <= 3500000) return annualPension; // 350만원 이하 전액
     if (annualPension <= 7000000) return 3500000 + (annualPension - 3500000) * 0.4;
     if (annualPension <= 14000000) return 4900000 + (annualPension - 7000000) * 0.2;
-    return 6300000 + (annualPension - 14000000) * 0.1; // 최대 900만원 한도 없음(2024 이후)
+    return Math.min(6300000 + (annualPension - 14000000) * 0.1, 9000000); // 최대 900만원 한도
   }
 
   // 종합소득세 세율표 (간이)

@@ -11,6 +11,7 @@ const CalcOtherIncome = (() => {
   };
 
   // 복권 당첨금 세율
+  const LOTTERY_EXEMPT = 2000000;     // 200만원 이하 비과세 (2023년~)
   const LOTTERY_THRESHOLD = 300000000; // 3억원
   const LOTTERY_RATE_LOW = 0.20;   // 3억 이하 20%
   const LOTTERY_RATE_HIGH = 0.30;  // 3억 초과 30%
@@ -21,13 +22,16 @@ const CalcOtherIncome = (() => {
     if (!grossIncome || grossIncome <= 0) return null;
 
     if (isLottery) {
-      // 복권·당첨금 계산
+      // 복권·당첨금 계산 (200만원 이하 비과세)
+      const taxableAmount = Math.max(0, grossIncome - LOTTERY_EXEMPT);
       let incomeTax = 0;
-      if (grossIncome <= LOTTERY_THRESHOLD) {
-        incomeTax = Math.floor(grossIncome * LOTTERY_RATE_LOW);
-      } else {
-        incomeTax = Math.floor(LOTTERY_THRESHOLD * LOTTERY_RATE_LOW)
-                  + Math.floor((grossIncome - LOTTERY_THRESHOLD) * LOTTERY_RATE_HIGH);
+      if (taxableAmount > 0) {
+        if (taxableAmount <= LOTTERY_THRESHOLD) {
+          incomeTax = Math.floor(taxableAmount * LOTTERY_RATE_LOW);
+        } else {
+          incomeTax = Math.floor(LOTTERY_THRESHOLD * LOTTERY_RATE_LOW)
+                    + Math.floor((taxableAmount - LOTTERY_THRESHOLD) * LOTTERY_RATE_HIGH);
+        }
       }
       const localTax = Math.floor(incomeTax * 0.1);
       const totalTax = incomeTax + localTax;
@@ -38,12 +42,13 @@ const CalcOtherIncome = (() => {
         grossIncome,
         expense: 0,
         expenseRate: 0,
-        taxableIncome: grossIncome,
+        taxableIncome: taxableAmount,
+        exemptAmount: Math.min(grossIncome, LOTTERY_EXEMPT),
         incomeTax,
         localTax,
         totalTax,
         takeHome,
-        effectiveRate: (totalTax / grossIncome * 100),
+        effectiveRate: grossIncome > 0 ? (totalTax / grossIncome * 100) : 0,
       };
     }
 
@@ -147,7 +152,7 @@ const CalcOtherIncome = (() => {
       ${isLottery ? `
       <div class="notice-box info" style="margin-top:12px">
         <strong>복권 당첨금 과세:</strong><br>
-        • 5만원 이하: 비과세<br>
+        • 200만원 이하: 비과세<br>
         • 3억원 이하: 20% (+ 지방세 2% = 22%)<br>
         • 3억원 초과분: 30% (+ 지방세 3% = 33%)
       </div>` : ''}
