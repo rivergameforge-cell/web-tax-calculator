@@ -8,8 +8,8 @@ const CalcDSR = (() => {
     stress: 0.40,     // 스트레스 DSR (은행) 40%
   };
 
-  // 스트레스 금리 가산 (2026년 기준)
-  const STRESS_RATE_ADD = 0.75; // 0.75%p
+  // 스트레스 금리 가산 (2026년 3단계 기준)
+  const STRESS_RATE_ADD = 1.50; // 1.50%p
 
   function calculate(params) {
     const {
@@ -144,7 +144,7 @@ const CalcDSR = (() => {
         ${isOver
           ? `<strong>DSR 한도 초과!</strong> ${lenderLabel} 기준 DSR ${dsrLimitPercent}%를 초과하여 대출이 어려울 수 있습니다.`
           : `<strong>DSR 여유 있음</strong> ${lenderLabel} 기준 DSR ${dsrLimitPercent}% 이내입니다.`}
-        ${useStressDSR ? '<br>스트레스 DSR 적용 (+0.75%p)' : ''}
+        ${useStressDSR ? '<br>스트레스 DSR 적용 (+1.50%p)' : ''}
       </div>
       <div class="breakdown-row" style="margin-top:12px;font-weight:600;font-size:15px">
         <span class="br-label">💡 동일 조건 최대 대출가능액</span>

@@ -77,7 +77,7 @@ const CalcComprehensive = (() => {
       brackets       = LAND_BRACKETS_GENERAL;
       ruralTaxRate   = 0.20;
     } else {
-      basicDeduction = 800_000_000;
+      basicDeduction = 8_000_000_000;
       brackets       = LAND_BRACKETS_SPECIAL;
       ruralTaxRate   = 0.20;
     }

@@ -7,8 +7,8 @@ const CalcAcquisition = (() => {
     if (houseCount === 1) {
       if (price <= 600_000_000) return 0.01;
       if (price <= 900_000_000) {
-        // 6억~9억: 선형 보간 1% → 3%
-        return (price / 100_000_000 * 2 - 11) / 100;
+        // 6억~9억: 선형 보간 1% → 3% (공식: 취득가액(억) × 2/3 - 3)
+        return (price / 100_000_000 * 2 / 3 - 3) / 100;
       }
       return 0.03;
     }
@@ -17,7 +17,7 @@ const CalcAcquisition = (() => {
       if (isAdjusted) return 0.08;
       // 비조정: 6억 이하 1%, 6~9억 1~3%, 9억 초과 3%
       if (price <= 600_000_000) return 0.01;
-      if (price <= 900_000_000) return (price / 100_000_000 * 2 - 11) / 100;
+      if (price <= 900_000_000) return (price / 100_000_000 * 2 / 3 - 3) / 100;
       return 0.03;
     }
     // 3주택
@@ -28,10 +28,9 @@ const CalcAcquisition = (() => {
     return 0.12;
   }
 
-  // 지방교육세율 (취득세율에 따라 다름)
-  function getEducationTaxRate(acqRate) {
-    if (acqRate <= 0.02) return 0.1;  // 취득세율 2% 이하: 10%
-    return 0.2; // 초과: 20%
+  // 지방교육세율 (취득세의 20%)
+  function getEducationTaxRate() {
+    return 0.2;
   }
 
   // 계산 메인
@@ -71,14 +70,14 @@ const CalcAcquisition = (() => {
     }
 
     // 지방교육세
-    const eduRate = getEducationTaxRate(acqRate);
+    const eduRate = getEducationTaxRate();
     const eduTax = Math.floor(acqTax * eduRate);
 
     let total = acqTax + ruralTax + eduTax;
 
-    // 생애최초 감면: 최대 200만원
+    // 생애최초 감면: 최대 200만원, 12억 이하
     let firstHomeDiscount = 0;
-    if (isFirstHome && type === 'housing' && houseCount === 1) {
+    if (isFirstHome && type === 'housing' && houseCount === 1 && price <= 1_200_000_000) {
       firstHomeDiscount = Math.min(acqTax, 2_000_000);
     }
 

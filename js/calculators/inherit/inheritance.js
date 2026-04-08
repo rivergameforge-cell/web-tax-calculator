@@ -79,7 +79,10 @@ const CalcInheritance = (() => {
     let spouseDeduction = 0;
     if (spouseExists) {
       // 최소 5억, 최대 30억 / 법정상속분 한도
-      const legalShare       = Math.floor(taxableAsset * 3 / 7); // 법정상속분 (자녀1명 기준 3/7)
+      // 배우자 법정상속분: 1.5/(1.5+자녀수) (자녀 없으면 배우자 전액)
+      const totalShares      = childCount > 0 ? 1.5 + childCount : 1;
+      const spouseShare      = childCount > 0 ? 1.5 / totalShares : 1;
+      const legalShare       = Math.floor(taxableAsset * spouseShare);
       const actualInherit    = spouseInherit > 0 ? spouseInherit : legalShare;
       spouseDeduction        = Math.min(Math.max(actualInherit, 500_000_000), 3_000_000_000);
       deductions.push({ label: '배우자공제', amount: spouseDeduction });

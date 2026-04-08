@@ -86,7 +86,9 @@ const CalcEmployment = (() => {
 
     // 자녀세액공제 (7세 이상 자녀)
     let childCredit = 0;
-    if (childCount >= 1) childCredit = childCount <= 2 ? childCount * 150_000 : 300_000 + (childCount - 2) * 300_000;
+    if (childCount === 1) childCredit = 150_000;
+    else if (childCount === 2) childCredit = 350_000;
+    else if (childCount >= 3) childCredit = 350_000 + (childCount - 2) * 300_000;
 
     // 특별세액공제 (의료비, 교육비, 기부금)
     // 의료비: (지출액 - 총급여 3%) × 15%

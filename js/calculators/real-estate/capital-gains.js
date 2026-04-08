@@ -1,7 +1,7 @@
 /* ===== 양도소득세 계산기 ===== */
 const CalcCapitalGains = (() => {
 
-  // 누진세율표 (2024년 기준, 과세표준 구간, 세율, 누진공제)
+  // 누진세율표 (2026년 기준, 과세표준 구간, 세율, 누진공제)
   const TAX_BRACKETS = [
     { limit: 14_000_000,  rate: 0.06,  deduction: 0 },
     { limit: 50_000_000,  rate: 0.15,  deduction: 1_260_000 },
@@ -31,9 +31,9 @@ const CalcCapitalGains = (() => {
       const holdRates = [0, 0, 0, 0.12, 0.16, 0.20, 0.24, 0.28, 0.32, 0.36, 0.40, 0.40, 0.40, 0.40, 0.40, 0.40];
       const holdRate = holdRates[Math.min(Math.floor(holdYears), 15)] || 0;
 
-      // 거주기간 공제 (2년 미만이면 0)
-      const residRates = [0, 0, 0.08, 0.16, 0.24, 0.32, 0.40, 0.40, 0.40, 0.40, 0.40];
-      const residRate = residRates[Math.min(Math.floor(residYears), 10)] || 0;
+      // 거주기간 공제 (2년 이상, 연 4%, 최대 40%)
+      const residYearsInt = Math.min(Math.floor(residYears), 10);
+      const residRate = residYearsInt >= 2 ? Math.min(residYearsInt * 0.04, 0.40) : 0;
 
       return Math.min(holdRate + residRate, 0.80);
     }
@@ -80,7 +80,12 @@ const CalcCapitalGains = (() => {
 
     // 장기보유특별공제
     const ltcRate = getLtcRate(totalHoldYears, residYears || 0, isOneHousehold && houseCount === 1);
-    const ltcAmount = Math.floor(gain * ltcRate);
+    // 고가주택(12억 초과) 1세대1주택: 양도차익 × (양도가액-12억)/양도가액 부분에만 적용
+    let ltcApplyGain = gain;
+    if (isOneHousehold && isHighPrice && houseCount === 1) {
+      ltcApplyGain = Math.floor(gain * (salePrice - 1_200_000_000) / salePrice);
+    }
+    const ltcAmount = Math.floor(ltcApplyGain * ltcRate);
     const netGain = gain - ltcAmount;
 
     // 기본공제

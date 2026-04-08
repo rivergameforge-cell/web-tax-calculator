@@ -65,7 +65,7 @@ const CalcFreelancer = (() => {
 
     // 소득공제
     const personalDeduction = Math.max(1, familyCount) * 1_500_000; // 인적공제
-    const pensionDeduction = Math.floor(Math.min(income / 12, 5_900_000) * 0.045 * 12); // 국민연금 (추정)
+    const pensionDeduction = Math.floor(Math.min(income / 12, 5_900_000) * 0.09 * 12); // 국민연금 (자영업자 9% 전액)
     const standardDeduction = 70_000; // 표준세액공제
 
     // 과세표준

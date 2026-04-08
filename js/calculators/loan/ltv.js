@@ -3,20 +3,21 @@ const CalcLTV = (() => {
 
   // LTV 한도 테이블 (2026년 기준)
   // [규제지역][주택보유수][대출유형] = LTV%
+  // 2024년 9월~ 완화 기준 반영
   const LTV_TABLE = {
     'non-regulated': {
       homeless:  { bank: 70, nonbank: 70 },
-      '1house':  { bank: 60, nonbank: 60 },
-      multi:     { bank: 50, nonbank: 50 },
+      '1house':  { bank: 70, nonbank: 70 },
+      multi:     { bank: 70, nonbank: 70 },
     },
     'regulated': {
-      homeless:  { bank: 50, nonbank: 50 },
-      '1house':  { bank: 30, nonbank: 30 },
+      homeless:  { bank: 70, nonbank: 70 },
+      '1house':  { bank: 50, nonbank: 50 },
       multi:     { bank: 0,  nonbank: 0  },
     },
     'speculative': {
-      homeless:  { bank: 40, nonbank: 40 },
-      '1house':  { bank: 20, nonbank: 20 },
+      homeless:  { bank: 70, nonbank: 70 },
+      '1house':  { bank: 50, nonbank: 50 },
       multi:     { bank: 0,  nonbank: 0  },
     },
   };

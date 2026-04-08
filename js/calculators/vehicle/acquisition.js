@@ -11,13 +11,16 @@ const CalcVehicleAcq = (() => {
     'van10':           0.05,   // 승합(11인 이상) 5%
   };
 
-  // 친환경차 감면
+  // 친환경차 감면 (2026년 기준)
   const ECO_DISCOUNT = {
-    'none':            { rate: 0,    max: 0,         label: '해당 없음' },
-    'hybrid':          { rate: 0.40, max: 1_400_000, label: '하이브리드 (최대 140만원)' },
-    'electric':        { rate: 1.00, max: 1_400_000, label: '전기차 (최대 140만원)' },   // 2026년 기준
+    'none':            { rate: 0,    max: 0,       label: '해당 없음' },
+    'hybrid':          { rate: 1.00, max: 400_000, label: '하이브리드 (최대 40만원)' },
+    'electric':        { rate: 1.00, max: 1_400_000, label: '전기차 (최대 140만원)' },
     'hydrogen':        { rate: 1.00, max: 1_400_000, label: '수소차 (최대 140만원)' },
   };
+
+  // 경차 취득세 감면 (75만원 한도)
+  const LIGHT_VEHICLE_DISCOUNT_MAX = 750_000;
 
   function calculate(params) {
     const {
@@ -31,14 +34,21 @@ const CalcVehicleAcq = (() => {
     const rate    = RATES[vehicleType] || 0.07;
     const acqTax  = Math.floor(price * rate);
 
+    // 경차 감면 (75만원 한도)
+    const isLight    = vehicleType === 'light';
+    let lightDiscount = 0;
+    if (isLight) {
+      lightDiscount = Math.min(acqTax, LIGHT_VEHICLE_DISCOUNT_MAX);
+    }
+
     // 친환경차 감면
     const eco        = ECO_DISCOUNT[ecoType] || ECO_DISCOUNT['none'];
     const ecoDiscount = Math.min(Math.floor(acqTax * eco.rate), eco.max);
-    const afterDiscount = Math.max(0, acqTax - ecoDiscount);
+    const totalDiscount = Math.max(lightDiscount, ecoDiscount); // 큰 감면 적용
+    const afterDiscount = Math.max(0, acqTax - totalDiscount);
 
-    // 지방교육세 (취득세의 30%, 경차 면제)
-    const isLight    = vehicleType === 'light';
-    const eduTax     = isLight ? 0 : Math.floor(afterDiscount * 0.30);
+    // 지방교육세 (취득세의 20%, 경차 면제)
+    const eduTax     = isLight ? 0 : Math.floor(afterDiscount * 0.20);
 
     // 농어촌특별세 (취득세의 10%, 경차·영업용 면제)
     const isExemptRural = isLight || vehicleType === 'passenger-biz';
@@ -90,7 +100,7 @@ const CalcVehicleAcq = (() => {
         <span class="br-value">${UI.fmtWon(r.afterDiscount)}</span>
       </div>` : ''}
       <div class="breakdown-row">
-        <span class="br-label">지방교육세 (30%)</span>
+        <span class="br-label">지방교육세 (20%)</span>
         <span class="br-value">${UI.fmtWon(r.eduTax)}</span>
       </div>
       <div class="breakdown-row">
