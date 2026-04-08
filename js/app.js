@@ -10,7 +10,7 @@ const NAV_CONFIG = [
     items: [
       { id: 'loan/calculator', label: '대출금 계산기', badge: null },
       { id: 'loan/dsr', label: 'DSR 계산기', badge: null },
-      { id: 'loan/ltv', label: 'LTV 계산기', badge: 'NEW' },
+      { id: 'loan/ltv', label: 'LTV 계산기', badge: null },
     ]
   },
   {
@@ -74,10 +74,10 @@ const NAV_CONFIG = [
       { id: 'income/retirement', label: '퇴직소득세', badge: null },
       { id: 'income/vat', label: '부가가치세', badge: null },
       { id: 'income/customs', label: '해외 구매 관세', badge: '인기' },
-      { id: 'income/hourly-wage', label: '시급 계산기', badge: 'NEW' },
-      { id: 'income/daily-worker', label: '일용직 소득세', badge: 'NEW' },
-      { id: 'income/other-income', label: '기타소득세', badge: 'NEW' },
-      { id: 'income/pension-income', label: '연금소득세', badge: 'NEW' },
+      { id: 'income/hourly-wage', label: '시급 계산기', badge: null },
+      { id: 'income/daily-worker', label: '일용직 소득세', badge: null },
+      { id: 'income/other-income', label: '기타소득세', badge: null },
+      { id: 'income/pension-income', label: '연금소득세', badge: null },
     ]
   },
   {
@@ -117,7 +117,7 @@ const NAV_CONFIG = [
       { id: 'other/tobacco', label: '담배소비세', badge: 'ℹ️' },
       { id: 'other/leisure', label: '레저세', badge: 'ℹ️' },
       { id: 'other/progressive-tax', label: '누진세 속산표', badge: 'ℹ️' },
-      { id: 'other/no-son-day', label: '손 없는 날', badge: 'NEW' },
+      { id: 'other/no-son-day', label: '손 없는 날', badge: null },
     ]
   },
 ];
