@@ -4660,13 +4660,16 @@
     CalcNoSonDay.init();
 
     // Show page title bar when a calculator is active
-    const observer = new MutationObserver(() => {
+    function syncTitleBar() {
       const hasActive = document.querySelector('.calculator-view.active:not(#view-welcome)');
       const titleBar = document.getElementById('page-title-bar');
       if (titleBar) titleBar.style.display = hasActive ? '' : 'none';
-    });
+    }
+    const observer = new MutationObserver(syncTitleBar);
     const area = document.querySelector('.calculator-area');
     if (area) observer.observe(area, { subtree: true, attributes: true, attributeFilter: ['class'] });
+    // 초기 로드 시 해시 라우팅으로 이미 활성화된 뷰 반영
+    syncTitleBar();
 
     // Responsive: show correct anchor ad based on viewport
     function resizeAds() {
