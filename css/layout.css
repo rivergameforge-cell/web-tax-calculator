@@ -156,6 +156,18 @@ body {
   color: var(--text-primary);
 }
 
+.btn-share-kakao {
+  color: #3C1E1E;
+  background: #FEE500;
+}
+.btn-share-kakao:hover {
+  background: #FDD835;
+  color: #3C1E1E;
+}
+.btn-share-kakao svg {
+  display: block;
+}
+
 .btn-share-line {
   color: #06C755;
 }

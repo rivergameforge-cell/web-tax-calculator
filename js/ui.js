@@ -184,6 +184,50 @@ const UI = (() => {
     toast('링크가 복사되었습니다', 'success');
   }
 
+  // 카카오 SDK 초기화
+  const KAKAO_APP_KEY = '6daf757d5f62978679f812c72089120b';
+  function initKakao() {
+    if (window.Kakao && !window.Kakao.isInitialized()) {
+      try { window.Kakao.init(KAKAO_APP_KEY); } catch (e) { /* noop */ }
+    }
+  }
+  if (typeof window !== 'undefined') {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initKakao);
+    } else {
+      initKakao();
+    }
+  }
+
+  // 카카오톡 공유
+  function shareToKakao() {
+    initKakao();
+    if (!window.Kakao || !window.Kakao.Share) {
+      toast('카카오 SDK 로딩 실패', 'error');
+      return;
+    }
+    const url = location.href;
+    const title = getCurrentCalcTitle();
+    try {
+      window.Kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+          title,
+          description: '2026년 기준 한국 세금 계산기 — 무료로 간편하게 계산하세요',
+          imageUrl: 'https://taxcalc.co.kr/og-image.png',
+          link: { mobileWebUrl: url, webUrl: url },
+        },
+        buttons: [{
+          title: '계산기 열기',
+          link: { mobileWebUrl: url, webUrl: url },
+        }],
+      });
+    } catch (e) {
+      console.error('Kakao share error:', e);
+      toast('카카오톡 공유 실패', 'error');
+    }
+  }
+
   // 라인 공유
   function shareToLine() {
     const url = location.href;
@@ -210,7 +254,7 @@ const UI = (() => {
     show, hide, setText,
     copyText, formatResultForCopy, toast,
     buildShareUrl, getUrlParams, shareCurrentPage,
-    shareToLine, shareCopyLink, getCurrentCalcTitle,
+    shareToLine, shareToKakao, shareCopyLink, getCurrentCalcTitle,
     debounce, printCalc,
   };
 })();
