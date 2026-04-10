@@ -156,6 +156,17 @@ body {
   color: var(--text-primary);
 }
 
+.btn-share-line {
+  color: #06C755;
+}
+.btn-share-line:hover {
+  background: rgba(6, 199, 85, 0.12);
+  color: #06C755;
+}
+.btn-share-line svg {
+  display: block;
+}
+
 #btn-hamburger {
   display: none;
 }

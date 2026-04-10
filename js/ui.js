@@ -163,10 +163,17 @@ const UI = (() => {
     };
   }
 
-  // Share current page
+  // 현재 보고 있는 계산기 제목 가져오기
+  function getCurrentCalcTitle() {
+    const titleText = document.getElementById('page-title-text')?.textContent?.trim();
+    if (titleText) return `${titleText} - 세금계산기`;
+    return document.title || '세금계산기';
+  }
+
+  // Share current page (Web Share API / 링크 복사 폴백)
   async function shareCurrentPage() {
     const url = location.href;
-    const title = document.title;
+    const title = getCurrentCalcTitle();
     if (navigator.share) {
       try {
         await navigator.share({ title, url });
@@ -175,6 +182,21 @@ const UI = (() => {
     }
     await copyText(url);
     toast('링크가 복사되었습니다', 'success');
+  }
+
+  // 라인 공유
+  function shareToLine() {
+    const url = location.href;
+    const title = getCurrentCalcTitle();
+    const shareUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`;
+    window.open(shareUrl, '_blank', 'width=600,height=600');
+  }
+
+  // 링크 복사
+  async function shareCopyLink() {
+    const url = location.href;
+    const ok = await copyText(url);
+    toast(ok ? '링크가 복사되었습니다' : '복사에 실패했습니다', ok ? 'success' : 'error');
   }
 
   // Print current calculator
@@ -188,6 +210,7 @@ const UI = (() => {
     show, hide, setText,
     copyText, formatResultForCopy, toast,
     buildShareUrl, getUrlParams, shareCurrentPage,
+    shareToLine, shareCopyLink, getCurrentCalcTitle,
     debounce, printCalc,
   };
 })();
