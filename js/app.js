@@ -51,6 +51,7 @@ const NAV_CONFIG = [
       { id: 'vehicle/acquisition', label: '자동차 취득세', badge: null },
       { id: 'vehicle/excise', label: '자동차 개별소비세', badge: null },
       { id: 'vehicle/buying', label: '자동차 살 때', badge: '종합' },
+      { id: 'vehicle/installment', label: '자동차 할부 계산기', badge: null },
     ]
   },
   {
@@ -224,7 +225,7 @@ const App = (() => {
     'real-estate/stamp': '📝', 'real-estate/registration': '📋', 'real-estate/total-cost': '🧾',
     'inherit/inheritance': '📜', 'inherit/gift': '🎁',
     'vehicle/vehicle-tax': '🚗', 'vehicle/overdue': '⚠️', 'vehicle/acquisition': '🚙',
-    'vehicle/excise': '⛽', 'vehicle/buying': '🧾',
+    'vehicle/excise': '⛽', 'vehicle/buying': '🧾', 'vehicle/installment': '💳',
     'income/salary': '💰', 'income/employment': '💼', 'income/pension-saving': '🏦',
     'income/business': '🏪', 'income/comprehensive': '📑', 'income/penalty': '⚠️',
     'income/corporate': '🏢', 'income/insurance': '❤️', 'income/freelancer': '💻',

@@ -2023,6 +2023,137 @@
             </div>
           </div>
 
+          <!-- ===== 자동차: 할부 계산기 ===== -->
+          <div id="view-vehicle-installment" class="calculator-view">
+            <div class="calc-grid">
+              <!-- 입력 패널 -->
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>💳</span>
+                  <div>
+                    <div class="card-title">자동차 할부 계산기</div>
+                    <div class="card-subtitle">할부 조건별 월 납입금·총 이자 계산</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <!-- 차량 가격 -->
+                  <div class="form-group">
+                    <label class="form-label" for="vinst-price">차량 가격 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="vinst-price" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">차량 판매가격 (부가세 포함가)</div>
+                  </div>
+
+                  <!-- 선수금(계약금) -->
+                  <div class="form-group">
+                    <label class="form-label" for="vinst-down">선수금 (계약금)</label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="vinst-down" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">계약금 + 인도금 등 선납 금액</div>
+                  </div>
+
+                  <!-- 할부 기간 -->
+                  <div class="form-group">
+                    <label class="form-label" for="vinst-months">할부 기간 <span class="required">*</span></label>
+                    <select id="vinst-months" class="select">
+                      <option value="12">12개월 (1년)</option>
+                      <option value="24">24개월 (2년)</option>
+                      <option value="36" selected>36개월 (3년)</option>
+                      <option value="48">48개월 (4년)</option>
+                      <option value="60">60개월 (5년)</option>
+                      <option value="72">72개월 (6년)</option>
+                      <option value="84">84개월 (7년)</option>
+                    </select>
+                  </div>
+
+                  <!-- 할부 이자율 -->
+                  <div class="form-group">
+                    <label class="form-label" for="vinst-rate">할부 이자율 <span class="required">*</span></label>
+                    <div class="num-input-wrap">
+                      <input type="number" id="vinst-rate" class="input" placeholder="예: 5.9" min="0" max="30" step="0.1" value="5.9">
+                      <span class="num-input-unit">%</span>
+                    </div>
+                    <div class="form-hint">연 이자율 (캐피탈 평균 5~8%, 은행 3~5%)</div>
+                  </div>
+
+                  <div class="section-divider"><span>옵션</span></div>
+
+                  <!-- 취득세·등록비 포함 -->
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="vinst-include-tax">
+                        <div>
+                          <div class="cb-label">취득세·등록비 할부 포함</div>
+                          <div class="cb-desc">취득세(7%)+등록비(약2%)를 할부 원금에 포함</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- 상환 방식 -->
+                  <div class="form-group">
+                    <label class="form-label">상환 방식</label>
+                    <div class="radio-group" style="flex-direction:column;gap:10px">
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="vinst-method" value="equal-payment" checked>
+                        <span class="radio-label" style="width:100%;justify-content:flex-start;gap:10px;padding:10px 14px">
+                          <span style="font-size:18px">📅</span>
+                          <span>
+                            <strong>원리금균등</strong>
+                            <span style="display:block;font-size:11px;font-weight:400;color:var(--text-secondary);margin-top:2px">매월 동일 금액 납부 (가장 일반적)</span>
+                          </span>
+                        </span>
+                      </label>
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="vinst-method" value="equal-principal">
+                        <span class="radio-label" style="width:100%;justify-content:flex-start;gap:10px;padding:10px 14px">
+                          <span style="font-size:18px">📉</span>
+                          <span>
+                            <strong>원금균등</strong>
+                            <span style="display:block;font-size:11px;font-weight:400;color:var(--text-secondary);margin-top:2px">매월 동일 원금, 이자는 점점 감소</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="vinst-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="vinst-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="vinst-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 결과 패널 -->
+              <div class="card">
+                <div class="result-breakdown" id="vinst-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">💳</div>
+                    차량 가격과 할부 조건을 입력해주세요
+                  </div>
+                </div>
+                <div id="vinst-schedule"></div>
+              </div>
+            </div>
+            <details class="tax-tip-box">
+              <summary>💡 자동차 할부 절약 팁</summary>
+              <div class="tip-content">
+                <ul>
+                  <li><strong>선수금 늘리기</strong> — 선수금이 클수록 할부 원금이 줄어 총 이자가 대폭 절감됩니다</li>
+                  <li><strong>할부 기간 줄이기</strong> — 36개월 vs 60개월 비교 시 이자 차이가 수백만원에 달합니다</li>
+                  <li><strong>은행 자동차론 비교</strong> — 딜러 캐피탈(5~8%) 대비 은행 오토론(3~5%)이 저렴할 수 있습니다</li>
+                  <li><strong>원금균등 고려</strong> — 초반 부담은 크지만 총 이자가 원리금균등보다 적습니다</li>
+                  <li><strong>중도상환</strong> — 여유 자금 생기면 중도상환으로 이자 절감 가능 (수수료 확인 필수)</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
           <!-- ===== 소득 준비 중 ===== -->
           <!-- ===== 소득: 연봉 계산기 ===== -->
           <div id="view-income-salary" class="calculator-view">
@@ -4580,6 +4711,7 @@
 <script src="js/calculators/real-estate/registration.js?v=1"></script>
 <script src="js/calculators/real-estate/total-cost.js?v=2"></script>
 <script src="js/calculators/vehicle/buying.js?v=4"></script>
+<script src="js/calculators/vehicle/installment.js?v=1"></script>
 <script src="js/calculators/vehicle/overdue.js?v=2"></script>
 <script src="js/calculators/income/salary.js?v=3"></script>
 <script src="js/calculators/income/employment.js?v=3"></script>
@@ -4609,7 +4741,7 @@
 <script src="js/calculators/stocks/dividend.js?v=1"></script>
 <script src="js/calculators/other/resident.js?v=3"></script>
 <script src="js/calculators/other/no-son-day.js?v=2"></script>
-<script src="js/app.js?v=19"></script>
+<script src="js/app.js?v=20"></script>
 
 <script>
   // Initialize calculators after DOM ready
@@ -4642,6 +4774,7 @@
     CalcResident.init();
     CalcTotalCost.init();
     CalcVehicleBuying.init();
+    CalcVehicleInstallment.init();
     CalcVehicleOverdue.init();
     CalcPenalty.init();
     CalcCorporate.init();
