@@ -163,8 +163,52 @@ body {
   background: rgba(6, 199, 85, 0.12);
   color: #06C755;
 }
-.btn-share-line svg {
+.btn-share-line svg,
+#btn-share svg {
   display: block;
+}
+
+/* ===== 공유 버튼 그룹 ===== */
+.share-group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 6px 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-secondary);
+  transition: border-color var(--transition), background var(--transition);
+}
+.share-group:hover {
+  border-color: var(--accent);
+  background: var(--bg-primary);
+}
+.share-group-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  user-select: none;
+  padding-right: 4px;
+  letter-spacing: 0.2px;
+}
+.share-group .btn-icon {
+  width: 32px;
+  height: 32px;
+  font-size: 15px;
+  border-radius: 50%;
+}
+@media (max-width: 640px) {
+  .share-group {
+    padding: 3px 4px 3px 8px;
+    gap: 0;
+  }
+  .share-group-label {
+    display: none;
+  }
+  .share-group .btn-icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 #btn-hamburger {
