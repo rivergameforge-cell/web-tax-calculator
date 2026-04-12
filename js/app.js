@@ -19,14 +19,18 @@ const NAV_CONFIG = [
     icon: '🏠',
     color: 'var(--cat-realestate)',
     items: [
+      // 살 때
       { id: 'real-estate/acquisition', label: '취득세', badge: null },
-      { id: 'real-estate/capital-gains', label: '양도소득세', badge: null },
-      { id: 'real-estate/commission', label: '부동산 복비', badge: null },
-      { id: 'real-estate/comprehensive', label: '종합부동산세', badge: null },
-      { id: 'real-estate/property-tax', label: '재산세', badge: null },
-      { id: 'real-estate/rental-income', label: '임대소득세', badge: null },
-      { id: 'real-estate/stamp', label: '인지세', badge: null },
       { id: 'real-estate/registration', label: '등록면허세', badge: null },
+      { id: 'real-estate/stamp', label: '인지세', badge: null },
+      { id: 'real-estate/commission', label: '부동산 복비', badge: null },
+      // 보유
+      { id: 'real-estate/property-tax', label: '재산세', badge: null },
+      { id: 'real-estate/comprehensive', label: '종합부동산세', badge: null },
+      { id: 'real-estate/rental-income', label: '임대소득세', badge: null },
+      // 팔 때
+      { id: 'real-estate/capital-gains', label: '양도소득세', badge: null },
+      // 종합
       { id: 'real-estate/total-cost', label: '집 살 때 / 팔 때', badge: '종합' },
     ]
   },
@@ -46,12 +50,14 @@ const NAV_CONFIG = [
     icon: '🚗',
     color: 'var(--cat-vehicle)',
     items: [
-      { id: 'vehicle/vehicle-tax', label: '자동차세', badge: null },
-      { id: 'vehicle/overdue', label: '자동차세 미납', badge: null },
-      { id: 'vehicle/acquisition', label: '자동차 취득세', badge: null },
+      // 살 때
       { id: 'vehicle/excise', label: '자동차 개별소비세', badge: null },
+      { id: 'vehicle/acquisition', label: '자동차 취득세', badge: null },
       { id: 'vehicle/buying', label: '자동차 살 때', badge: '종합' },
       { id: 'vehicle/installment', label: '자동차 할부 계산기', badge: null },
+      // 보유
+      { id: 'vehicle/vehicle-tax', label: '자동차세', badge: null },
+      { id: 'vehicle/overdue', label: '자동차세 미납', badge: null },
     ]
   },
   {
@@ -60,25 +66,30 @@ const NAV_CONFIG = [
     icon: '💼',
     color: 'var(--cat-income)',
     items: [
+      // 근로소득
       { id: 'income/salary', label: '연봉 계산기', badge: '인기' },
       { id: 'income/employment', label: '근로소득세·연말정산', badge: null },
-      { id: 'income/pension-saving', label: '연금저축·IRP 공제', badge: null },
-      { id: 'income/business', label: '사업소득세', badge: null },
-      { id: 'income/comprehensive', label: '종합소득세', badge: null },
-      { id: 'income/penalty', label: '종합소득세 가산세', badge: null },
-      { id: 'income/corporate', label: '법인세', badge: null },
       { id: 'income/insurance', label: '4대보험', badge: '인기' },
-      { id: 'income/freelancer', label: '프리랜서 3.3%', badge: '인기' },
-      { id: 'income/severance', label: '퇴직금 계산기', badge: null },
       { id: 'income/rent-credit', label: '월세 세액공제', badge: null },
-      { id: 'income/interest-dividend', label: '이자·배당소득세', badge: null },
-      { id: 'income/retirement', label: '퇴직소득세', badge: null },
-      { id: 'income/vat', label: '부가가치세', badge: null },
-      { id: 'income/customs', label: '해외 구매 관세', badge: '인기' },
       { id: 'income/hourly-wage', label: '시급 계산기', badge: null },
       { id: 'income/daily-worker', label: '일용직 소득세', badge: null },
+      // 사업·프리랜서
+      { id: 'income/freelancer', label: '프리랜서 3.3%', badge: '인기' },
+      { id: 'income/business', label: '사업소득세', badge: null },
+      { id: 'income/vat', label: '부가가치세', badge: null },
+      { id: 'income/corporate', label: '법인세', badge: null },
+      // 투자·기타소득
+      { id: 'income/interest-dividend', label: '이자·배당소득세', badge: null },
       { id: 'income/other-income', label: '기타소득세', badge: null },
       { id: 'income/pension-income', label: '연금소득세', badge: null },
+      { id: 'income/pension-saving', label: '연금저축·IRP 공제', badge: null },
+      // 퇴직
+      { id: 'income/severance', label: '퇴직금 계산기', badge: null },
+      { id: 'income/retirement', label: '퇴직소득세', badge: null },
+      // 세금 신고
+      { id: 'income/comprehensive', label: '종합소득세', badge: null },
+      { id: 'income/penalty', label: '종합소득세 가산세', badge: null },
+      { id: 'income/customs', label: '해외 구매 관세', badge: '인기' },
     ]
   },
   {
