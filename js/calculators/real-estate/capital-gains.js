@@ -38,7 +38,7 @@ const CalcCapitalGains = (() => {
       return Math.min(holdRate + residRate, 0.80);
     }
 
-    // 일반 장기보유특별공제 (3년 이상, 연 6% ~ 최대 30%)
+    // 일반 장기보유특별공제 (3년 이상, 연 2% ~ 최대 30%)
     if (holdYears < 3) return 0;
     const rate = Math.min(Math.floor(holdYears) * 0.02, 0.30);
     return rate;
@@ -73,13 +73,26 @@ const CalcCapitalGains = (() => {
       return { gain, taxBase: 0, taxAmount: 0, localTax: 0, total: 0, isExempt: true, params };
     }
 
-    // 단기 양도세율
+    // 다주택자 중과 판단 (2025.05.10~ 재시행)
+    // - 3주택 이상: +30%p, 조정지역 2주택: +20%p
+    // - 중과 시 장기보유특별공제 배제
+    let surchargeRate = 0;
+    let isHeavy = false;
+    if (houseCount >= 3) {
+      surchargeRate = 0.30;
+      isHeavy = true;
+    } else if (houseCount === 2 && isAdjusted) {
+      surchargeRate = 0.20;
+      isHeavy = true;
+    }
+
+    // 단기 양도세율 (중과보다 우선)
     let specialRate = null;
     if (totalHoldYears < 1) specialRate = 0.70;
     else if (totalHoldYears < 2) specialRate = 0.60;
 
-    // 장기보유특별공제
-    const ltcRate = getLtcRate(totalHoldYears, residYears || 0, isOneHousehold && houseCount === 1);
+    // 장기보유특별공제 (중과 시 배제)
+    const ltcRate = isHeavy ? 0 : getLtcRate(totalHoldYears, residYears || 0, isOneHousehold && houseCount === 1);
     // 고가주택(12억 초과) 1세대1주택: 양도차익 × (양도가액-12억)/양도가액 부분에만 적용
     let ltcApplyGain = gain;
     if (isOneHousehold && isHighPrice && houseCount === 1) {
@@ -93,8 +106,15 @@ const CalcCapitalGains = (() => {
     const taxBase = Math.max(0, netGain - basicDeduction);
 
     let taxAmount;
+    let surchargeAmount = 0;
     if (specialRate !== null) {
+      // 단기양도: 단기세율 우선 적용
       taxAmount = Math.floor(taxBase * specialRate);
+    } else if (isHeavy) {
+      // 중과: 누진세액 + 과세표준 × 가산세율
+      const baseTax = calcProgressiveTax(taxBase);
+      surchargeAmount = Math.floor(taxBase * surchargeRate);
+      taxAmount = baseTax + surchargeAmount;
     } else {
       taxAmount = calcProgressiveTax(taxBase);
     }
@@ -111,6 +131,9 @@ const CalcCapitalGains = (() => {
       basicDeduction,
       taxBase,
       taxAmount,
+      surchargeRate,
+      surchargeAmount,
+      isHeavy,
       localTax,
       total,
       specialRate,
@@ -135,10 +158,21 @@ const CalcCapitalGains = (() => {
       return;
     }
 
-    const { gain, ltcRate, ltcAmount, netGain, basicDeduction, taxBase, taxAmount, localTax, total, specialRate } = result;
+    const { gain, ltcRate, ltcAmount, netGain, basicDeduction, taxBase, taxAmount, surchargeRate, surchargeAmount, isHeavy, localTax, total, specialRate } = result;
+
+    // 세율 표시 문자열
+    let rateLabel;
+    if (specialRate) {
+      rateLabel = `${(specialRate * 100).toFixed(0)}% 단기양도세율`;
+    } else if (isHeavy) {
+      rateLabel = `누진세율 + ${(surchargeRate * 100).toFixed(0)}%p 중과`;
+    } else {
+      rateLabel = '누진세율';
+    }
 
     container.innerHTML = `
       <div class="breakdown-title">양도소득세 계산 결과</div>
+      ${isHeavy ? `<div class="notice-box warning" style="margin-bottom:8px;font-size:12px">⚠️ 다주택자 중과세율 적용 — 기본세율 +${(surchargeRate*100).toFixed(0)}%p, 장기보유특별공제 배제</div>` : ''}
       <div class="breakdown-row">
         <span class="br-label">양도차익</span>
         <span class="br-value">${UI.fmtWon(gain)}</span>
@@ -147,6 +181,11 @@ const CalcCapitalGains = (() => {
       <div class="breakdown-row">
         <span class="br-label">장기보유특별공제 (${(ltcRate*100).toFixed(0)}%)</span>
         <span class="br-value" style="color:var(--success)">- ${UI.fmtWon(ltcAmount)}</span>
+      </div>` : ''}
+      ${isHeavy ? `
+      <div class="breakdown-row">
+        <span class="br-label">장기보유특별공제</span>
+        <span class="br-value" style="color:var(--text-muted)">중과 적용으로 배제</span>
       </div>` : ''}
       <div class="breakdown-row">
         <span class="br-label">양도소득금액</span>
@@ -161,9 +200,14 @@ const CalcCapitalGains = (() => {
         <span class="br-value">${UI.fmtWon(taxBase)}</span>
       </div>
       <div class="breakdown-row">
-        <span class="br-label">양도소득세${specialRate ? ` (${(specialRate*100).toFixed(0)}% 단기)` : ' (누진세율)'}</span>
+        <span class="br-label">양도소득세 (${rateLabel})</span>
         <span class="br-value">${UI.fmtWon(taxAmount)}</span>
       </div>
+      ${isHeavy && surchargeAmount > 0 ? `
+      <div class="breakdown-row" style="padding-left:16px;font-size:12px">
+        <span class="br-label" style="color:var(--text-muted)">└ 중과 가산세 (${(surchargeRate*100).toFixed(0)}%p)</span>
+        <span class="br-value" style="color:var(--danger)">${UI.fmtWon(surchargeAmount)}</span>
+      </div>` : ''}
       <div class="breakdown-row">
         <span class="br-label">지방소득세 (10%)</span>
         <span class="br-value">${UI.fmtWon(localTax)}</span>
