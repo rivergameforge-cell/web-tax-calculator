@@ -28,9 +28,26 @@ const CalcAcquisition = (() => {
     return 0.12;
   }
 
-  // 지방교육세율 (취득세의 20%)
-  function getEducationTaxRate() {
-    return 0.2;
+  // 농어촌특별세 정보: { rate: 취득가액 대비 비율, applyArea: 85㎡ 조건 여부 }
+  function getRuralTaxInfo(type, houseCount, isAdjusted) {
+    if (type !== 'housing') {
+      return { rate: 0.002, applyArea: false }; // 비주택: 0.2% 고정
+    }
+    // 주택 중과세율 구간: 면적 조건 없이 고정율
+    if (houseCount === 2 && isAdjusted)  return { rate: 0.006, applyArea: false }; // 0.6%
+    if (houseCount === 3 && isAdjusted)  return { rate: 0.010, applyArea: false }; // 1%
+    if (houseCount === 3 && !isAdjusted) return { rate: 0.006, applyArea: false }; // 0.6%
+    if (houseCount >= 4)                 return { rate: 0.010, applyArea: false }; // 1%
+    // 1주택 / 2주택 비조정: 0.2%, 전용면적 85㎡ 초과만
+    return { rate: 0.002, applyArea: true };
+  }
+
+  // 지방교육세
+  // - 일반세율(1~3%): 취득세액의 10%
+  // - 중과세율(8%, 12%): 취득가액의 0.4% 고정 (표준세율 2% × 20%)
+  function calcEduTax(price, acqTax, acqRate) {
+    if (acqRate >= 0.08) return Math.floor(price * 0.004);
+    return Math.floor(acqTax * 0.1);
   }
 
   // 계산 메인
@@ -52,26 +69,21 @@ const CalcAcquisition = (() => {
     if (type === 'housing') {
       acqRate = getHousingRate(price, houseCount, isAdjusted);
     } else if (type === 'non-housing') {
-      acqRate = 0.04; // 건물 기본 4%
+      acqRate = 0.04;
     } else if (type === 'land') {
-      acqRate = 0.04; // 농지 3%, 기타 4%
+      acqRate = 0.04;
     }
 
     const acqTax = Math.floor(price * acqRate);
 
-    // 농어촌특별세: 85㎡ 초과 주택 또는 비주택
-    let ruralTax = 0;
-    if (type === 'housing') {
-      if (area > 85) {
-        ruralTax = Math.floor(acqTax * 0.1);
-      }
-    } else {
-      ruralTax = Math.floor(acqTax * 0.1);
-    }
+    // 농어촌특별세
+    const ruralInfo = getRuralTaxInfo(type, houseCount, isAdjusted);
+    const ruralTax = (ruralInfo.applyArea && area <= 85)
+      ? 0
+      : Math.floor(price * ruralInfo.rate);
 
     // 지방교육세
-    const eduRate = getEducationTaxRate();
-    const eduTax = Math.floor(acqTax * eduRate);
+    const eduTax = calcEduTax(price, acqTax, acqRate);
 
     let total = acqTax + ruralTax + eduTax;
 
@@ -94,6 +106,7 @@ const CalcAcquisition = (() => {
       acqRate,
       acqTax,
       ruralTax,
+      ruralRate: ruralInfo.rate,
       eduTax,
       subtotal: total,
       discount,
@@ -112,7 +125,14 @@ const CalcAcquisition = (() => {
       return;
     }
 
-    const { acqRate, acqTax, ruralTax, eduTax, subtotal, discount, total } = result;
+    const { acqRate, acqTax, ruralTax, ruralRate, eduTax, subtotal, discount, total, params } = result;
+    const isHeavy = acqRate >= 0.08;
+    const eduLabel = isHeavy
+      ? `지방교육세 <span style="font-size:11px;color:var(--text-muted)">(취득가액 × 0.4%)</span>`
+      : `지방교육세 <span style="font-size:11px;color:var(--text-muted)">(취득세 × 10%)</span>`;
+    const ruralLabel = ruralTax === 0
+      ? `농어촌특별세 <span style="font-size:11px;color:var(--text-muted)">(85㎡ 이하 비과세)</span>`
+      : `농어촌특별세 <span style="font-size:11px;color:var(--text-muted)">(취득가액 × ${(ruralRate * 100).toFixed(1)}%)</span>`;
 
     container.innerHTML = `
       <div class="breakdown-title">취득세 계산 결과</div>
@@ -125,11 +145,11 @@ const CalcAcquisition = (() => {
         <span class="br-value">${UI.fmtWon(acqTax)}</span>
       </div>
       <div class="breakdown-row">
-        <span class="br-label">지방교육세</span>
+        <span class="br-label">${eduLabel}</span>
         <span class="br-value">${UI.fmtWon(eduTax)}</span>
       </div>
       <div class="breakdown-row">
-        <span class="br-label">농어촌특별세</span>
+        <span class="br-label">${ruralLabel}</span>
         <span class="br-value">${UI.fmtWon(ruralTax)}</span>
       </div>
       ${discount > 0 ? `
