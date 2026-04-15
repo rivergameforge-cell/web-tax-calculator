@@ -30,15 +30,52 @@ const UI = (() => {
     return n * 10000;
   }
 
+  // Format number to Korean units: 600000000 → "6억", 150000000 → "1억 5천만"
+  function fmtKorean(n) {
+    if (!n || n <= 0) return '';
+    const jo  = Math.floor(n / 1_000_000_000_000);
+    const eok = Math.floor((n % 1_000_000_000_000) / 100_000_000);
+    const man = Math.floor((n % 100_000_000) / 10_000);
+    let parts = [];
+    if (jo  > 0) parts.push(jo  + '조');
+    if (eok > 0) parts.push(eok + '억');
+    if (man > 0) {
+      // 1000만 단위는 "N천만"으로 표시 (예: 5000만 → 5천만)
+      if (man % 1000 === 0) parts.push((man / 1000) + '천만');
+      else parts.push(man + '만');
+    }
+    return parts.join(' ');
+  }
+
   // Bind comma-auto-format to an input
+  // If input has data-korean attribute, auto-injects a hint span showing Korean units
   function bindNumInput(input, onchange) {
     let rawValue = 0;
     let unit = 'won'; // 'won' or 'man'
+
+    // Auto-inject Korean unit hint span if data-korean attribute present
+    // Injected after num-input-wrap (or after input) as a subtle hint line
+    let koreanHint = null;
+    if (input.hasAttribute('data-korean')) {
+      koreanHint = document.createElement('div');
+      koreanHint.className = 'num-input-korean';
+      const wrap = input.closest('.num-input-wrap');
+      if (wrap) wrap.after(koreanHint);
+      else input.after(koreanHint);
+    }
+
+    function updateKorean(val) {
+      if (!koreanHint) return;
+      const realVal = unit === 'man' ? val * 10000 : val;
+      const hint = fmtKorean(realVal);
+      koreanHint.textContent = hint ? hint : '';
+    }
 
     input.addEventListener('input', (e) => {
       const raw = e.target.value.replace(/[^0-9]/g, '');
       rawValue = parseInt(raw) || 0;
       e.target.value = rawValue ? rawValue.toLocaleString('ko-KR') : '';
+      updateKorean(rawValue);
       if (onchange) onchange(unit === 'man' ? rawValue * 10000 : rawValue);
     });
 
@@ -52,6 +89,7 @@ const UI = (() => {
     input.setValue = (n) => {
       rawValue = unit === 'man' ? Math.round(n / 10000) : n;
       input.value = rawValue ? rawValue.toLocaleString('ko-KR') : '';
+      updateKorean(rawValue);
     };
     input.setUnit = (u) => { unit = u; };
     input.getUnit = () => unit;
@@ -249,7 +287,7 @@ const UI = (() => {
   }
 
   return {
-    fmtNum, fmtWon, fmtManWon, parseNum, manToWon,
+    fmtNum, fmtWon, fmtManWon, fmtKorean, parseNum, manToWon,
     bindNumInput, makeResultRow,
     show, hide, setText,
     copyText, formatResultForCopy, toast,
