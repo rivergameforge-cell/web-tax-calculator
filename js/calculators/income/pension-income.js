@@ -276,20 +276,8 @@ const CalcPensionIncome = (() => {
     view.querySelectorAll('input, select').forEach(el => el.addEventListener('change', doCalc));
     view.querySelectorAll('input[type="number"], input[type="text"]').forEach(el => el.addEventListener('input', doCalc));
 
-    // 금액 포맷팅
     const amountInput = view.querySelector('#pincome-amount');
-    if (amountInput) {
-      amountInput.addEventListener('input', () => {
-        const raw = amountInput.value.replace(/,/g, '').replace(/[^0-9]/g, '');
-        if (raw) {
-          const cursor = amountInput.selectionStart;
-          const oldLen = amountInput.value.length;
-          amountInput.value = Number(raw).toLocaleString();
-          const newLen = amountInput.value.length;
-          amountInput.setSelectionRange(cursor + (newLen - oldLen), cursor + (newLen - oldLen));
-        }
-      });
-    }
+    if (amountInput) UI.bindNumInput(amountInput);
 
     const btnCopy = view.querySelector('#pincome-copy');
     const btnReset = view.querySelector('#pincome-reset');
