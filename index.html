@@ -736,7 +736,7 @@
                   <div class="form-group">
                     <label class="form-label" for="cg-expenses">필요경비 <span style="font-weight:400;color:var(--text-muted)">(중개수수료, 취득세 등)</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="cg-expenses" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="cg-expenses" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
@@ -1117,12 +1117,11 @@
 
                   <!-- 공시가격 -->
                   <div class="form-group">
-                    <label class="form-label" for="ptax-price">공시가격 <span class="required">*</span></label>
+                    <label class="form-label" for="ptax-price">공시가격 <span class="required">*</span> <span style="font-size:11px;font-weight:400;color:var(--text-muted)">주택공시가격 / 개별공시지가 기준</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="ptax-price" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="ptax-price" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">주택공시가격 / 개별공시지가 기준</div>
                     <a href="https://www.realtyprice.kr/notice/gsindividual/search.htm" target="_blank" class="external-help-link" onclick="Ads.markExternalClick()">📋 내 부동산 공시가격 확인하기 →</a>
                   </div>
 
@@ -1179,12 +1178,11 @@
 
                   <!-- 연간 임대수입 -->
                   <div class="form-group">
-                    <label class="form-label" for="rental-income">연간 임대수입금액 <span class="required">*</span></label>
+                    <label class="form-label" for="rental-income">연간 임대수입금액 <span class="required">*</span> <span style="font-weight:400;color:var(--text-muted)">(월세×12 또는 전세 간주임대료)</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="rental-income" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="rental-income" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">연간 총 임대수입 (월세×12 또는 전세 간주임대료)</div>
                   </div>
 
                   <!-- 과세 방식 -->
@@ -1290,19 +1288,18 @@
                   <div class="form-group">
                     <label class="form-label" for="inh-total-asset">상속재산 총액 <span class="required">*</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="inh-total-asset" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="inh-total-asset" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
 
                   <!-- 채무·장례비 -->
                   <div class="form-group">
-                    <label class="form-label" for="inh-debt">채무·장례비용 등</label>
+                    <label class="form-label" for="inh-debt">채무·장례비용 등 <span style="font-weight:400;color:var(--text-muted)">(채무, 장례비 최대 500만원, 공과금)</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="inh-debt" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="inh-debt" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">피상속인의 채무, 장례비(최대 500만원), 공과금</div>
                   </div>
 
                   <div class="section-divider"><span>인적 공제</span></div>
@@ -1351,12 +1348,11 @@
 
                   <!-- 금융재산 -->
                   <div class="form-group">
-                    <label class="form-label" for="inh-financial">순 금융재산 가액</label>
+                    <label class="form-label" for="inh-financial">순 금융재산 가액 <span style="font-weight:400;color:var(--text-muted)">(금융재산 20% 공제, 최대 2억)</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="inh-financial" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="inh-financial" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">금융재산의 20% 공제 (최대 2억)</div>
                   </div>
 
                   <!-- 동거주택 -->
@@ -1453,7 +1449,7 @@
                   <div class="form-group">
                     <label class="form-label" for="gift-amount">이번 증여가액 <span class="required">*</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="gift-amount" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="gift-amount" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
@@ -1486,12 +1482,11 @@
 
                   <!-- 10년 내 기증여액 -->
                   <div class="form-group">
-                    <label class="form-label" for="gift-prior">10년 내 동일인 기증여액</label>
+                    <label class="form-label" for="gift-prior">10년 내 동일인 기증여액 <span style="font-weight:400;color:var(--text-muted)">(동일인으로부터 10년 내 증여 합산)</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="gift-prior" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="gift-prior" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">동일인으로부터 10년 내 받은 증여 합산</div>
                   </div>
 
                   <!-- 자진신고 세액공제 -->
@@ -1584,7 +1579,7 @@
                   <div class="form-group">
                     <label class="form-label" for="stamp-amount">거래(계약)금액 <span class="required">*</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="stamp-amount" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="stamp-amount" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                     <div class="form-hint">부동산: 매매가액 / 대출: 대출금액</div>
@@ -1658,7 +1653,7 @@
                   <div class="form-group">
                     <label class="form-label" for="reg-value">부동산 가액 (채권금액) <span class="required">*</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="reg-value" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="reg-value" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                     <div class="form-hint">소유권: 실거래가 / 저당·전세권: 채권(전세)금액</div>
@@ -1768,7 +1763,7 @@
                   <div class="form-group">
                     <label class="form-label" id="comm-price-label" for="comm-price">거래금액 <span class="required">*</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="comm-price" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="comm-price" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
