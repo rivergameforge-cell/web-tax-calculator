@@ -232,7 +232,7 @@ body {
   display: flex;
   flex: 1;
   position: relative;
-  padding-bottom: var(--ad-anchor-height);
+  padding-bottom: calc(var(--ad-anchor-height) * 0.3);
   overflow: hidden;
   min-height: 0;
 }
