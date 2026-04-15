@@ -196,16 +196,7 @@ const CalcDSR = (() => {
 
     [incomeInput, loanAmountInput, existingInput].forEach(input => {
       if (!input) return;
-      input.addEventListener('input', () => {
-        const raw = input.value.replace(/,/g, '').replace(/[^0-9]/g, '');
-        if (raw) {
-          const cursor = input.selectionStart;
-          const oldLen = input.value.length;
-          input.value = Number(raw).toLocaleString();
-          const newLen = input.value.length;
-          input.setSelectionRange(cursor + (newLen - oldLen), cursor + (newLen - oldLen));
-        }
-      });
+      UI.bindNumInput(input);
     });
 
     const btnCopy = view.querySelector('#dsr-copy');

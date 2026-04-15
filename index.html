@@ -4635,12 +4635,11 @@
                 <div class="card-body">
 
                   <div class="form-group">
-                    <label class="form-label" for="dsr-income">연 소득 (세전) <span class="required">*</span></label>
+                    <label class="form-label" for="dsr-income">연 소득 (세전) <span class="required">*</span> <span style="font-size:11px;font-weight:400;color:var(--text-muted)">근로소득·사업소득 등 연간 총소득</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="dsr-income" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="dsr-income" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">근로소득, 사업소득 등 연간 총소득</div>
                   </div>
 
                   <div class="section-divider"><span>신규 대출 정보</span></div>
@@ -4648,7 +4647,7 @@
                   <div class="form-group">
                     <label class="form-label" for="dsr-loan-amount">신규 대출금액 <span class="required">*</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="dsr-loan-amount" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="dsr-loan-amount" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
@@ -4690,12 +4689,11 @@
                   <div class="section-divider"><span>기존 대출</span></div>
 
                   <div class="form-group">
-                    <label class="form-label" for="dsr-existing-repay">기존 대출 연간 원리금 상환액</label>
+                    <label class="form-label" for="dsr-existing-repay">기존 대출 연간 원리금 상환액 <span style="font-size:11px;font-weight:400;color:var(--text-muted)">현재 모든 대출의 연간 원리금 합계</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="dsr-existing-repay" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="dsr-existing-repay" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">현재 갚고 있는 모든 대출의 연간 원리금 합계</div>
                   </div>
 
                   <div class="section-divider"><span>규제 기준</span></div>
@@ -4754,21 +4752,19 @@
                 <div class="card-body">
 
                   <div class="form-group">
-                    <label class="form-label" for="ltv-property-value">주택 가격 (시가) <span class="required">*</span></label>
+                    <label class="form-label" for="ltv-property-value">주택 가격 (시가) <span class="required">*</span> <span style="font-size:11px;font-weight:400;color:var(--text-muted)">KB시세·감정가 등 담보 평가 기준</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="ltv-property-value" class="input" placeholder="예: 500,000,000" inputmode="numeric">
+                      <input type="text" id="ltv-property-value" class="input" placeholder="예: 500,000,000" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">KB시세, 감정가 등 담보 평가 기준 금액</div>
                   </div>
 
                   <div class="form-group">
-                    <label class="form-label" for="ltv-loan-amount">대출 희망 금액</label>
+                    <label class="form-label" for="ltv-loan-amount">대출 희망 금액 <span style="font-size:11px;font-weight:400;color:var(--text-muted)">비워두면 최대 대출가능액만 계산</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="ltv-loan-amount" class="input" placeholder="예: 300,000,000" inputmode="numeric">
+                      <input type="text" id="ltv-loan-amount" class="input" placeholder="예: 300,000,000" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">비워두면 최대 대출가능액만 계산합니다</div>
                   </div>
 
                   <div class="section-divider"><span>규제 지역 · 주택 수</span></div>
@@ -4824,12 +4820,11 @@
                   </div>
 
                   <div class="form-group">
-                    <label class="form-label" for="ltv-existing-loan">기존 담보대출 잔액</label>
+                    <label class="form-label" for="ltv-existing-loan">기존 담보대출 잔액 <span style="font-size:11px;font-weight:400;color:var(--text-muted)">같은 주택에 이미 설정된 대출 잔액</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="ltv-existing-loan" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="ltv-existing-loan" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">같은 주택에 이미 설정된 대출 잔액</div>
                   </div>
 
                 </div>
@@ -5024,8 +5019,8 @@
 <script src="js/router.js?v=2"></script>
 <script src="js/ads.js"></script>
 <script src="js/calculators/loan/loan.js?v=2"></script>
-<script src="js/calculators/loan/dsr.js?v=2"></script>
-<script src="js/calculators/loan/ltv.js?v=3"></script>
+<script src="js/calculators/loan/dsr.js?v=3"></script>
+<script src="js/calculators/loan/ltv.js?v=4"></script>
 <script src="js/calculators/real-estate/acquisition.js?v=5"></script>
 <script src="js/calculators/real-estate/officetel-acquisition.js?v=1"></script>
 <script src="js/calculators/real-estate/commission.js?v=4"></script>
