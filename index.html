@@ -3931,35 +3931,34 @@
                   </div>
                 </div>
                 <div class="card-body">
+                  <div id="foreign-exchange-info" style="background:var(--bg-secondary);border-radius:var(--radius-sm);padding:10px 12px;margin-bottom:12px"></div>
                   <div class="form-group">
-                    <label class="form-label" for="foreign-sale">매도가액 (합계) <span class="required">*</span></label>
+                    <label class="form-label" for="foreign-sale">매도가액 (합계) <span class="required">*</span> <span style="font-weight:400;color:var(--text-muted)">(원화 환산 기준)</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="foreign-sale" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="foreign-sale" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">원화 환산 기준</div>
                   </div>
                   <div class="form-group">
-                    <label class="form-label" for="foreign-buy">취득가액 (합계) <span class="required">*</span></label>
+                    <label class="form-label" for="foreign-buy">취득가액 (합계) <span class="required">*</span> <span style="font-weight:400;color:var(--text-muted)">(원화 환산 기준)</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="foreign-buy" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="foreign-buy" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="form-label" for="foreign-fees">매매수수료</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="foreign-fees" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="foreign-fees" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="form-label" for="foreign-other">동일 연도 다른 해외주식 손익 합산</label>
+                    <label class="form-label" for="foreign-other">동일 연도 다른 해외주식 손익 합산 <span style="font-weight:400;color:var(--text-muted)">(손실 시 음수 입력)</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="foreign-other" class="input" placeholder="0 (음수 입력 가능)" inputmode="numeric">
+                      <input type="text" id="foreign-other" class="input" placeholder="0" inputmode="numeric">
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">손실 발생 시 음수로 입력 (예: -500000)</div>
                   </div>
                   <div class="calc-action-bar">
                     <button class="btn btn-reset btn-sm" id="foreign-reset">초기화</button>
@@ -4034,21 +4033,21 @@
                   <div class="form-group">
                     <label class="form-label">양도가액 (매도금액)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="sdom-sell" class="input" inputmode="numeric" placeholder="예: 100,000,000">
+                      <input type="text" id="sdom-sell" class="input" inputmode="numeric" placeholder="예: 100,000,000" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="form-label">취득가액 (매수금액)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="sdom-buy" class="input" inputmode="numeric" placeholder="예: 80,000,000">
+                      <input type="text" id="sdom-buy" class="input" inputmode="numeric" placeholder="예: 80,000,000" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="form-label">필요경비 (수수료·세금 등)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="sdom-expense" class="input" inputmode="numeric" placeholder="예: 500,000">
+                      <input type="text" id="sdom-expense" class="input" inputmode="numeric" placeholder="예: 500,000" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
@@ -4094,14 +4093,14 @@
                   <div class="form-group">
                     <label class="form-label">배당금 총액 (연간)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="sdiv-amount" class="input" inputmode="numeric" placeholder="예: 25,000,000">
+                      <input type="text" id="sdiv-amount" class="input" inputmode="numeric" placeholder="예: 25,000,000" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="form-label">기타 종합소득 (종합과세 시)</label>
                     <div class="num-input-wrap">
-                      <input type="text" id="sdiv-other-income" class="input" inputmode="numeric" placeholder="예: 50,000,000">
+                      <input type="text" id="sdiv-other-income" class="input" inputmode="numeric" placeholder="예: 50,000,000" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
@@ -4109,7 +4108,7 @@
                     <div class="form-group">
                       <label class="form-label">외국납부세액 (원)</label>
                       <div class="num-input-wrap">
-                        <input type="text" id="sdiv-foreign-tax" class="input" inputmode="numeric" placeholder="예: 3,750,000">
+                        <input type="text" id="sdiv-foreign-tax" class="input" inputmode="numeric" placeholder="예: 3,750,000" data-korean>
                         <span class="num-input-unit">원</span>
                       </div>
                     </div>
@@ -4172,7 +4171,7 @@
                   <div class="form-group">
                     <label class="form-label" for="txn-amount">매도금액 <span class="required">*</span></label>
                     <div class="num-input-wrap">
-                      <input type="text" id="txn-amount" class="input" placeholder="0" inputmode="numeric">
+                      <input type="text" id="txn-amount" class="input" placeholder="0" inputmode="numeric" data-korean>
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
@@ -5036,7 +5035,7 @@
 <script src="js/calculators/income/daily-worker.js?v=1"></script>
 <script src="js/calculators/income/other-income.js?v=3"></script>
 <script src="js/calculators/income/pension-income.js?v=3"></script>
-<script src="js/calculators/stocks/foreign.js?v=2"></script>
+<script src="js/calculators/stocks/foreign.js?v=3"></script>
 <script src="js/calculators/stocks/transaction.js?v=5"></script>
 <script src="js/calculators/vehicle/vehicle-tax.js?v=3"></script>
 <script src="js/calculators/vehicle/acquisition.js?v=4"></script>

@@ -1,6 +1,54 @@
 /* ===== 해외주식 양도소득세 계산기 ===== */
 const CalcForeignStocks = (() => {
 
+  const RATES_CACHE_KEY = 'foreign-exrate-v1';
+
+  async function fetchExchangeRates() {
+    try {
+      const cached = sessionStorage.getItem(RATES_CACHE_KEY);
+      if (cached) {
+        const { data, ts } = JSON.parse(cached);
+        if (Date.now() - ts < 3_600_000) return data; // 1시간 캐시
+      }
+    } catch {}
+
+    try {
+      const [usdRes, eurRes, jpyRes] = await Promise.all([
+        fetch('https://api.frankfurter.app/latest?from=USD&to=KRW'),
+        fetch('https://api.frankfurter.app/latest?from=EUR&to=KRW'),
+        fetch('https://api.frankfurter.app/latest?from=JPY&to=KRW'),
+      ]);
+      const [usd, eur, jpy] = await Promise.all([usdRes.json(), eurRes.json(), jpyRes.json()]);
+      const data = {
+        date: usd.date,
+        USD: Math.round(usd.rates.KRW),
+        EUR: Math.round(eur.rates.KRW),
+        JPY100: Math.round(jpy.rates.KRW * 100),
+      };
+      sessionStorage.setItem(RATES_CACHE_KEY, JSON.stringify({ data, ts: Date.now() }));
+      return data;
+    } catch {
+      return null;
+    }
+  }
+
+  async function renderExchangeRates(container) {
+    container.innerHTML = '<span style="font-size:12px;color:var(--text-muted)">환율 불러오는 중...</span>';
+    const rates = await fetchExchangeRates();
+    if (!rates) {
+      container.innerHTML = '<span style="font-size:12px;color:var(--text-muted)">환율 정보를 불러올 수 없습니다</span>';
+      return;
+    }
+    container.innerHTML = `
+      <div style="font-size:11px;color:var(--text-muted);margin-bottom:5px">오늘 환율 (${rates.date}) · 프랑크푸르트 기준</div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <span style="font-size:13px"><span style="color:var(--text-secondary);font-size:11px">USD</span> <strong>${rates.USD.toLocaleString('ko-KR')}원</strong></span>
+        <span style="font-size:13px"><span style="color:var(--text-secondary);font-size:11px">EUR</span> <strong>${rates.EUR.toLocaleString('ko-KR')}원</strong></span>
+        <span style="font-size:13px"><span style="color:var(--text-secondary);font-size:11px">JPY 100엔</span> <strong>${rates.JPY100.toLocaleString('ko-KR')}원</strong></span>
+      </div>
+    `;
+  }
+
   function calculate(params) {
     const { salePrice, buyPrice, fees, otherGains } = params;
     if (!salePrice || !buyPrice) return null;
@@ -79,7 +127,14 @@ const CalcForeignStocks = (() => {
     const view = document.getElementById('view-stocks-foreign');
     if (!view) return;
 
-    view.querySelectorAll('input[type="text"]').forEach(el => UI.bindNumInput(el));
+    // foreign-other는 음수 입력을 위해 bindNumInput 제외
+    ['foreign-sale', 'foreign-buy', 'foreign-fees'].forEach(id => {
+      const el = view.querySelector(`#${id}`);
+      if (el) UI.bindNumInput(el);
+    });
+
+    const rateBox = view.querySelector('#foreign-exchange-info');
+    if (rateBox) renderExchangeRates(rateBox);
 
     const resultContainer = view.querySelector('#foreign-result');
 
