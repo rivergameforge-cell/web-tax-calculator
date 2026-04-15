@@ -635,6 +635,78 @@
             </details>
           </div>
 
+          <!-- ===== 부동산: 오피스텔 취득세 ===== -->
+          <div id="view-real-estate-officetel-acquisition" class="calculator-view">
+            <div class="calc-grid">
+              <!-- 입력 패널 -->
+              <div class="card input-panel">
+                <div class="card-header">
+                  <span>🏢</span>
+                  <div>
+                    <div class="card-title">오피스텔 취득세 계산</div>
+                    <div class="card-subtitle">오피스텔 취득 시 납부하는 지방세</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <!-- 취득가액 -->
+                  <div class="form-group">
+                    <div class="unit-row">
+                      <label class="form-label" for="otel-price">취득가액 <span class="required">*</span></label>
+                    </div>
+                    <div class="num-input-wrap">
+                      <input type="text" id="otel-price" class="input" placeholder="0" inputmode="numeric">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                    <div class="form-hint">VAT(부가가치세) 제외 금액 기준</div>
+                  </div>
+
+                  <!-- 안내 -->
+                  <div class="notice-box info" style="margin-top:8px;font-size:12.5px">
+                    오피스텔은 주택이 아닌 <strong>건물(비주택)</strong>로 분류되어 취득세율 <strong>4%</strong>가 적용됩니다.<br>
+                    단, 주거용으로 사용 시 다주택자 취득세 중과 판단 시 주택 수에 포함될 수 있습니다.
+                  </div>
+
+                  <div class="calc-action-bar">
+                    <button class="btn btn-reset btn-sm" id="otel-reset">초기화</button>
+                    <button class="btn btn-secondary btn-sm" id="otel-copy">📋 복사</button>
+                    <button class="btn btn-secondary btn-sm" id="otel-print">🖨️ 인쇄</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 결과 패널 -->
+              <div class="card">
+                <div class="card-header">
+                  <span>📊</span>
+                  <div class="card-title">계산 결과</div>
+                </div>
+                <div class="result-breakdown" id="otel-result">
+                  <div class="result-empty">
+                    <div class="result-empty-icon">🏢</div>
+                    취득가액을 입력하면 세금이 계산됩니다
+                  </div>
+                </div>
+                <div class="notice-box info" style="margin:16px">
+                  <strong>세율 구성</strong><br>
+                  취득세 4% + 지방교육세 0.4% + 농어촌특별세 0.2% = <strong>합계 4.6%</strong><br>
+                  취득세는 취득일로부터 60일 이내에 신고·납부해야 합니다.
+                </div>
+              </div>
+            </div>
+
+            <details class="tax-tip-box">
+              <summary>💡 오피스텔 취득세 참고사항</summary>
+              <div class="tip-content">
+                <ul>
+                  <li><strong>취득세율 고정</strong> — 오피스텔은 주택 수·조정지역과 무관하게 항상 <span class="tip-highlight">4% 단일세율</span></li>
+                  <li><strong>주거용 오피스텔</strong> — 취득 시 4%이지만, 이후 재산세·종부세 산정 시 주택 수에 포함될 수 있음</li>
+                  <li><strong>업무용 오피스텔</strong> — 임대사업자 등록 후 부가가치세 환급 가능 (별도 검토 필요)</li>
+                  <li><strong>생애최초·출산 감면 불가</strong> — 오피스텔은 주택이 아니므로 감면 혜택 미적용</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
           <!-- ===== 부동산: 양도소득세 ===== -->
           <div id="view-real-estate-capital-gains" class="calculator-view">
             <div class="calc-grid">
@@ -4959,7 +5031,8 @@
 <script src="js/calculators/loan/loan.js?v=2"></script>
 <script src="js/calculators/loan/dsr.js?v=2"></script>
 <script src="js/calculators/loan/ltv.js?v=3"></script>
-<script src="js/calculators/real-estate/acquisition.js?v=4"></script>
+<script src="js/calculators/real-estate/acquisition.js?v=5"></script>
+<script src="js/calculators/real-estate/officetel-acquisition.js?v=1"></script>
 <script src="js/calculators/real-estate/commission.js?v=4"></script>
 <script src="js/calculators/real-estate/capital-gains.js?v=4"></script>
 <script src="js/calculators/real-estate/comprehensive.js?v=3"></script>
@@ -5008,6 +5081,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     CalcLoan.init();
     CalcAcquisition.init();
+    CalcOfficetelAcquisition.init();
     CalcCommission.init();
     CalcCapitalGains.init();
     CalcComprehensive.init();

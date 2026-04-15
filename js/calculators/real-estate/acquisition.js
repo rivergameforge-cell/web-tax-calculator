@@ -110,6 +110,8 @@ const CalcAcquisition = (() => {
       eduTax,
       subtotal: total,
       discount,
+      firstHomeDiscount,
+      birthDiscount,
       total: finalTotal,
       params,
     };
@@ -125,7 +127,7 @@ const CalcAcquisition = (() => {
       return;
     }
 
-    const { acqRate, acqTax, ruralTax, ruralRate, eduTax, subtotal, discount, total, params } = result;
+    const { acqRate, acqTax, ruralTax, ruralRate, eduTax, subtotal, discount, firstHomeDiscount, birthDiscount, total, params } = result;
     const isHeavy = acqRate >= 0.08;
     const eduLabel = isHeavy
       ? `지방교육세 <span style="font-size:11px;color:var(--text-muted)">(취득가액 × 0.4%)</span>`
@@ -133,6 +135,22 @@ const CalcAcquisition = (() => {
     const ruralLabel = ruralTax === 0
       ? `농어촌특별세 <span style="font-size:11px;color:var(--text-muted)">(85㎡ 이하 비과세)</span>`
       : `농어촌특별세 <span style="font-size:11px;color:var(--text-muted)">(취득가액 × ${(ruralRate * 100).toFixed(1)}%)</span>`;
+
+    // 생애최초/출산 감면 미적용 사유
+    let discountNotice = '';
+    if (params.isFirstHome && discount === 0) {
+      let reason = '';
+      if (params.type !== 'housing') reason = '주택 취득에만 적용됩니다';
+      else if (params.houseCount !== 1) reason = '1주택자만 적용됩니다';
+      else if (params.price > 1_200_000_000) reason = '취득가 12억 이하만 적용됩니다';
+      if (reason) discountNotice += `<div class="notice-box warning" style="margin:12px 0 0;font-size:12px">⚠️ 생애최초 감면 미적용 — ${reason}</div>`;
+    }
+    if (params.isBirth && discount === 0) {
+      let reason = '';
+      if (params.type !== 'housing') reason = '주택 취득에만 적용됩니다';
+      else if (params.price > 1_200_000_000) reason = '취득가 12억 이하만 적용됩니다';
+      if (reason) discountNotice += `<div class="notice-box warning" style="margin:12px 0 0;font-size:12px">⚠️ 출산·양육 감면 미적용 — ${reason}</div>`;
+    }
 
     container.innerHTML = `
       <div class="breakdown-title">취득세 계산 결과</div>
@@ -153,14 +171,19 @@ const CalcAcquisition = (() => {
         <span class="br-value">${UI.fmtWon(ruralTax)}</span>
       </div>
       ${discount > 0 ? `
+      <div class="breakdown-row" style="border-top:1px solid var(--border);padding-top:8px;margin-top:4px">
+        <span class="br-label">세금 소계</span>
+        <span class="br-value">${UI.fmtWon(subtotal)}</span>
+      </div>
       <div class="breakdown-row">
-        <span class="br-label" style="color:var(--success)">감면액</span>
+        <span class="br-label" style="color:var(--success)">감면액 <span style="font-size:11px">(${params.isBirth && birthDiscount >= firstHomeDiscount ? '출산·양육' : '생애최초'})</span></span>
         <span class="br-value" style="color:var(--success)">- ${UI.fmtWon(discount)}</span>
       </div>` : ''}
       <div class="breakdown-row total">
         <span class="br-label">최종 납부세액</span>
         <span class="br-value">${UI.fmtWon(total)}</span>
       </div>
+      ${discountNotice}
     `;
   }
 

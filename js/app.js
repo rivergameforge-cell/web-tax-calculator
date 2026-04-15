@@ -21,6 +21,7 @@ const NAV_CONFIG = [
     items: [
       // 살 때
       { id: 'real-estate/acquisition', label: '취득세', badge: null },
+      { id: 'real-estate/officetel-acquisition', label: '오피스텔 취득세', badge: null },
       { id: 'real-estate/registration', label: '등록면허세', badge: null },
       { id: 'real-estate/stamp', label: '인지세', badge: null },
       { id: 'real-estate/commission', label: '부동산 복비', badge: null },
@@ -231,7 +232,7 @@ const App = (() => {
   // 개별 계산기 아이콘 맵
   const ITEM_ICONS = {
     'loan/calculator': '🏦', 'loan/dsr': '📊', 'loan/ltv': '🏠',
-    'real-estate/acquisition': '🏠', 'real-estate/capital-gains': '📈', 'real-estate/commission': '🔑',
+    'real-estate/acquisition': '🏠', 'real-estate/officetel-acquisition': '🏢', 'real-estate/capital-gains': '📈', 'real-estate/commission': '🔑',
     'real-estate/comprehensive': '🏘️', 'real-estate/property-tax': '🏡', 'real-estate/rental-income': '💵',
     'real-estate/stamp': '📝', 'real-estate/registration': '📋', 'real-estate/total-cost': '🧾',
     'inherit/inheritance': '📜', 'inherit/gift': '🎁',
