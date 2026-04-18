@@ -1,0 +1,70 @@
+---
+{
+  "id": "income/vat",
+  "title": "부가가치세 계산기",
+  "metaTitle": "부가가치세 계산기 2026 | 일반·간이과세 부가세 | 세금계산기",
+  "metaDescription": "매출세액 10%에서 매입세액을 차감한 부가가치세 납부액을 계산. 일반과세자·간이과세자 부가율·공제 차이를 반영합니다.",
+  "keywords": ["부가가치세 계산기", "부가세", "간이과세", "일반과세", "VAT"],
+  "lead": "매출세액에서 매입세액을 차감한 부가가치세 납부액을 일반·간이과세 방식별로 계산합니다.",
+  "related": ["income/business", "income/corporate", "income/comprehensive", "income/freelancer"],
+  "priority": "0.9"
+}
+---
+<h2>부가가치세란?</h2>
+<p>부가가치세(VAT)는 <strong>재화·용역 거래의 최종 소비자에게 부과되는 간접세</strong>로, 세율은 <strong>10%</strong>입니다. 사업자는 고객에게 받은 매출세액에서 매입 시 낸 매입세액을 차감한 금액을 납부합니다. 연 매출 8,000만원 미만은 간이과세자, 이상은 일반과세자로 구분됩니다.</p>
+
+<h2>일반과세자 계산</h2>
+<p><strong>납부세액 = 매출세액 − 매입세액</strong></p>
+<ol>
+  <li>매출세액 = 총매출 × 10%</li>
+  <li>매입세액 = 세금계산서 받은 매입의 10% (공제 불가 항목 제외)</li>
+  <li>차액이 플러스면 납부, 마이너스면 환급</li>
+</ol>
+
+<h2>간이과세자 계산</h2>
+<p><strong>납부세액 = 매출 × 10% × 업종별 부가율 − 세액공제</strong></p>
+<table>
+  <thead>
+    <tr><th>업종</th><th>부가율</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>소매업·음식점업</td><td>15%</td></tr>
+    <tr><td>제조업·숙박업</td><td>20%</td></tr>
+    <tr><td>건설업</td><td>25%</td></tr>
+    <tr><td>금융·보험·부동산임대·전문서비스</td><td>30%</td></tr>
+    <tr><td>그 외</td><td>40%</td></tr>
+  </tbody>
+</table>
+<p>간이과세자는 연 매출 <strong>4,800만원 미만 시 부가세 납부 면제</strong>(신고는 의무).</p>
+
+<h2>부가세 신고 기간</h2>
+<table>
+  <thead><tr><th>유형</th><th>1기 예정</th><th>1기 확정</th><th>2기 예정</th><th>2기 확정</th></tr></thead>
+  <tbody>
+    <tr><td>일반과세 법인</td><td>4월</td><td>7월</td><td>10월</td><td>1월</td></tr>
+    <tr><td>일반과세 개인</td><td>-</td><td>7월</td><td>-</td><td>1월</td></tr>
+    <tr><td>간이과세</td><td>-</td><td>-</td><td>-</td><td>1월 (연 1회)</td></tr>
+  </tbody>
+</table>
+
+<h2>자주 묻는 질문</h2>
+<details open>
+  <summary>간이과세자 vs 일반과세자 무엇이 유리한가요?</summary>
+  <p>매출이 적고 매입세금계산서가 적으면 간이과세 유리. 매입세금계산서가 많고 환급 여지가 있으면 일반과세가 유리. 연 매출 8,000만원 돌파 시 <strong>다음 해 7월부터 자동 일반과세 전환</strong>.</p>
+</details>
+<details open>
+  <summary>세금계산서를 안 받으면 불이익이 있나요?</summary>
+  <p>매입세액공제를 못 받아 <strong>납부세액이 커집니다</strong>. 그 밖에도 공급가액의 <strong>1~2% 가산세</strong>. 세금계산서 대신 현금영수증·카드매출전표도 매입공제 가능(일부 업종 제외).</p>
+</details>
+<details open>
+  <summary>면세사업자는 부가세 신고 안 하나요?</summary>
+  <p>면세(학원·병원·농축수산물 등)는 부가세 없으나 <strong>사업장현황신고</strong>(2월 10일까지)를 해야 합니다. 과세·면세 겸영사업자는 과세 부분만 부가세 신고.</p>
+</details>
+<details open>
+  <summary>부가세 환급은 언제 받나요?</summary>
+  <p>일반환급은 확정신고 기한 경과 후 30일 이내 입금. <strong>수출·영세율·시설투자</strong>로 인한 조기환급은 매월 신고 가능(신고일 다음달 말까지). 부가세 환급은 사업 초기 시설투자에서 많이 발생.</p>
+</details>
+<details open>
+  <summary>부가세 미신고·미납 시 가산세는?</summary>
+  <p>무신고 20%(부정 40%), 과소신고 10%, 납부지연 연 8%. 세금계산서 관련 가산세(미발급 2%, 지연발급 1%)도 누적되니 반드시 기한 내 신고·납부.</p>
+</details>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="종합소득세 무신고·과소신고·납부지연 가산세(20%·10%·연 8%)를 체납 기간별로 자동 계산합니다.">
+  <meta name="keywords" content="종합소득세 가산세,무신고 가산세,납부지연 가산세,세금 가산세">
+  <meta name="author" content="세금계산기">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google-site-verification" content="P8tDYFJdnkxR9H7wtE8aIgt5k73jOIznzpjfMdtTGow">
+  <meta name="naver-site-verification" content="3c9c022f6d31b5719399c426919f0ac2082de03a">
+  <meta name="google-adsense-account" content="ca-pub-2792604427181547">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2792604427181547" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/og-image.png">
+  <link rel="canonical" href="https://taxcalc.co.kr/income/penalty.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="세금계산기">
+  <meta property="og:title" content="종합소득세 가산세 계산기 2026 | 무신고·납부지연 | 세금계산기">
+  <meta property="og:description" content="종합소득세 무신고·과소신고·납부지연 가산세(20%·10%·연 8%)를 체납 기간별로 자동 계산합니다.">
+  <meta property="og:url" content="https://taxcalc.co.kr/income/penalty.html">
+  <meta property="og:image" content="https://taxcalc.co.kr/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="종합소득세 가산세 계산기 2026 | 무신고·납부지연 | 세금계산기">
+  <meta name="twitter:description" content="종합소득세 무신고·과소신고·납부지연 가산세(20%·10%·연 8%)를 체납 기간별로 자동 계산합니다.">
+  <meta name="twitter:image" content="https://taxcalc.co.kr/og-image.png">
+
+  <title>종합소득세 가산세 계산기 2026 | 무신고·납부지연 | 세금계산기</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+  <!-- 구조화 데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "종합소득세 가산세 계산기 - 2026년 최신 세율 안내",
+    "description": "종합소득세 무신고·과소신고·납부지연 가산세(20%·10%·연 8%)를 체납 기간별로 자동 계산합니다.",
+    "author": { "@type": "Organization", "name": "세금계산기" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "세금계산기",
+      "logo": { "@type": "ImageObject", "url": "https://taxcalc.co.kr/og-image.png" }
+    },
+    "datePublished": "2026-01-01",
+    "dateModified": "2026-04-18",
+    "mainEntityOfPage": "https://taxcalc.co.kr/income/penalty.html",
+    "inLanguage": "ko"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "세금계산기", "item": "https://taxcalc.co.kr/" },
+      { "@type": "ListItem", "position": 2, "name": "소득", "item": "https://taxcalc.co.kr/#income" },
+      { "@type": "ListItem", "position": 3, "name": "종합소득세 가산세 계산기", "item": "https://taxcalc.co.kr/income/penalty.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Pretendard', -apple-system, sans-serif;
+      background: #f8f9fa;
+      color: #1f2937;
+      line-height: 1.8;
+    }
+    .top-bar {
+      background: #2563EB;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .top-bar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .top-bar .logo-mark {
+      width: 34px; height: 34px;
+      background: white;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 900;
+      color: #2563EB;
+    }
+    .breadcrumb {
+      background: #eef2ff;
+      padding: 10px 24px;
+      font-size: 13px;
+      color: #4338ca;
+    }
+    .breadcrumb a { color: #4338ca; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 20px 80px;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    .lead {
+      font-size: 16px;
+      color: #4b5563;
+      margin-bottom: 24px;
+    }
+    .cta-box {
+      background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+      color: white;
+      padding: 28px 24px;
+      border-radius: 14px;
+      text-align: center;
+      margin: 20px 0 36px;
+      box-shadow: 0 8px 24px rgba(37,99,235,0.25);
+    }
+    .cta-box h2 {
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      border: none;
+      margin: 0 0 8px 0;
+      padding: 0;
+    }
+    .cta-box p {
+      font-size: 14px;
+      opacity: 0.95;
+      margin-bottom: 18px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: white;
+      color: #2563EB;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      transition: transform 0.15s;
+    }
+    .cta-btn:hover { transform: translateY(-2px); }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1e40af;
+      margin-top: 44px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #dbeafe;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1f2937;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+    p { margin-bottom: 14px; font-size: 15px; }
+    ul, ol { margin: 8px 0 16px 22px; font-size: 15px; }
+    li { margin-bottom: 6px; }
+    strong { color: #111827; font-weight: 700; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 10px 14px;
+      text-align: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      background: #eef2ff;
+      color: #1e40af;
+      font-weight: 700;
+    }
+    tr:last-child td { border-bottom: none; }
+    details {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    details summary {
+      font-weight: 600;
+      color: #111827;
+      list-style: none;
+      position: relative;
+      padding-right: 24px;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::after {
+      content: "▼";
+      position: absolute;
+      right: 0;
+      font-size: 11px;
+      color: #6b7280;
+      transition: transform 0.2s;
+    }
+    details[open] summary::after { transform: rotate(180deg); }
+    details[open] summary { margin-bottom: 10px; }
+    details p { margin: 0; font-size: 14px; color: #4b5563; line-height: 1.7; }
+    .notice {
+      background: #fffbeb;
+      border: 1px solid #fcd34d;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .notice strong { color: #92400e; }
+    .related {
+      margin-top: 40px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .related h2 {
+      margin-top: 0;
+      font-size: 18px;
+      border: none;
+      padding: 0;
+      margin-bottom: 12px;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+    .related-grid a {
+      display: block;
+      padding: 12px 14px;
+      background: #f3f4f6;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #1f2937;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.15s;
+    }
+    .related-grid a:hover { background: #dbeafe; color: #1e40af; }
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 13px;
+      margin-top: 60px;
+    }
+    footer a { color: #d1d5db; text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: white; }
+    .ad-slot {
+      margin: 28px 0;
+      text-align: center;
+      min-height: 90px;
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 24px; }
+      h2 { font-size: 19px; }
+      .container { padding: 24px 16px 60px; }
+      .cta-box { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="/">
+      <div class="logo-mark">₩</div>
+      세금계산기
+    </a>
+  </div>
+
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="/">홈</a> &rsaquo;
+    <a href="/#income">소득</a> &rsaquo;
+    <span>종합소득세 가산세 계산기</span>
+  </nav>
+
+  <div class="container">
+    <h1>💼 종합소득세 가산세 계산기</h1>
+    <p class="lead">종합소득세 무신고·과소신고·납부지연 가산세를 기간별로 계산해 연체 시 총 부담액을 확인합니다.</p>
+
+    <div class="cta-box">
+      <h2>종합소득세 가산세 계산기 바로 계산하기</h2>
+      <p>세율·공제를 자동 반영합니다. 입력만 하면 즉시 결과 확인.</p>
+      <a href="/#income/penalty" class="cta-btn">계산기 실행 →</a>
+    </div>
+
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2792604427181547"
+        data-ad-slot="auto"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <h2>가산세란?</h2>
+<p>가산세는 <strong>신고·납부 의무를 위반했을 때 본세 외에 추가로 부과되는 행정벌 성격의 세금</strong>입니다. 종합소득세는 무신고·과소신고·납부지연 세 가지 가산세가 누적 부과되어 본세의 <strong>30% 이상</strong>까지 늘어날 수 있습니다.</p>
+
+<h2>2026년 가산세 종류</h2>
+<table>
+  <thead>
+    <tr><th>종류</th><th>율</th><th>기준</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>무신고가산세 (일반)</td><td>20%</td><td>무신고 본세의 20%</td></tr>
+    <tr><td>무신고가산세 (부정)</td><td>40%</td><td>허위기재·이중장부 등 부정행위</td></tr>
+    <tr><td>과소신고가산세 (일반)</td><td>10%</td><td>과소 신고분의 10%</td></tr>
+    <tr><td>과소신고가산세 (부정)</td><td>40%</td><td>부정행위로 과소신고</td></tr>
+    <tr><td>납부지연가산세</td><td>연 8.03%</td><td>1일 0.022% × 경과일수</td></tr>
+    <tr><td>영수증 미수취</td><td>2%</td><td>3만원 초과 거래 증빙 없음</td></tr>
+    <tr><td>현금영수증 미발급</td><td>20%</td><td>의무발행업종 10만원 이상 거래</td></tr>
+  </tbody>
+</table>
+
+<h2>가산세 감면</h2>
+<ul>
+  <li><strong>수정신고</strong>: 법정신고기한 후 1개월 이내 90% 감면, 3개월 75%, 6개월 50%, 1년 30%, 2년 20%, 2년 이상 10%</li>
+  <li><strong>기한후신고</strong>: 1개월 이내 50%, 3개월 이내 30%, 6개월 이내 20%</li>
+  <li><strong>세무공무원 과세 전 신고</strong>: 동일 감면율 적용</li>
+  <li><strong>납부지연 이자상당액</strong>: 감면 대상 아님</li>
+</ul>
+
+<h2>계산 예시 (본세 1,000만원 미신고 → 6개월 후 자진신고)</h2>
+<table>
+  <thead>
+    <tr><th>항목</th><th>계산</th><th>금액</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>본세</td><td>-</td><td>1,000만원</td></tr>
+    <tr><td>무신고가산세 (20% × 감면 50%)</td><td>1,000만 × 20% × 50%</td><td>100만원</td></tr>
+    <tr><td>납부지연가산세 (6개월)</td><td>1,000만 × 0.022% × 180일</td><td>약 39.6만원</td></tr>
+    <tr><td><strong>총 납부액</strong></td><td>-</td><td><strong>1,139.6만원</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>자주 묻는 질문</h2>
+<details open>
+  <summary>신고는 했는데 세금을 덜 냈다면?</summary>
+  <p>과소신고가산세 10% + 납부지연가산세 적용. 자진 수정신고 시 기간별 감면. 부정한 방법이 아닌 단순 계산 실수라면 일반 가산세 10% 적용되어 피해 최소화.</p>
+</details>
+<details open>
+  <summary>신고는 했는데 납부를 못 했다면?</summary>
+  <p>무신고·과소신고 가산세는 없고 <strong>납부지연가산세만</strong> 매일 0.022% 부과. 5개월 이후부터는 체납처분 절차(압류 등) 진행. 분납·징수유예 신청이 가능합니다.</p>
+</details>
+<details open>
+  <summary>부정행위와 일반 과소신고 차이는?</summary>
+  <p>부정행위는 이중장부·차명계좌·허위세금계산서 등 <strong>고의적 포탈</strong>. 적발 시 40% 가산세 + 형사고발. 단순 실수·해석 차이는 일반 10%. 부정 여부는 국세청 조사관의 판단.</p>
+</details>
+<details open>
+  <summary>가산세도 분납할 수 있나요?</summary>
+  <p>네. 본세와 함께 분납 대상(1천만 초과 시 2개월). 납부지연 가산세는 분납 기간에도 계속 발생하므로 빠른 완납이 유리.</p>
+</details>
+<details open>
+  <summary>국세청 조사 전 자진신고가 유리한가요?</summary>
+  <p>매우 유리합니다. 과세 전 자진 수정신고 시 <strong>최대 90% 감면</strong>. 조사 통지 이후에는 감면 대상에서 제외되며 부정행위 인정 시 40% 가산세가 확정됩니다.</p>
+</details>
+
+    <div class="notice">
+      <strong>⚠️ 참고 안내</strong>
+      <p style="margin-top:6px;margin-bottom:0">본 페이지의 계산 결과는 참고용이며 법적 효력이 없습니다. 실제 세금 신고·납부 시에는 반드시 국세청 홈택스 또는 세무 전문가를 통해 확인하시기 바랍니다. 세율은 2026년 기준이며, 개정 시 반영될 수 있습니다.</p>
+    </div>
+
+    <div class="related">
+      <h2>🔗 관련 계산기</h2>
+      <div class="related-grid">
+        <a href="/income/comprehensive.html">종합소득세 계산기</a>
+        <a href="/income/business.html">사업소득세 계산기</a>
+        <a href="/income/freelancer.html">프리랜서 3.3% 계산기</a>
+        <a href="/income/vat.html">부가가치세 계산기</a>
+      </div>
+    </div>
+
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2792604427181547"
+        data-ad-slot="auto"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div>
+
+  <footer>
+    <div>© 2026 세금계산기 (taxcalc.co.kr) · 모든 계산은 참고용입니다</div>
+    <div style="margin-top:10px">
+      <a href="/">홈</a> ·
+      <a href="/about.html">사이트 소개</a> ·
+      <a href="/privacy.html">개인정보처리방침</a>
+    </div>
+  </footer>
+</body>
+</html>

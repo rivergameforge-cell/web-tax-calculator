@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="매출세액 10%에서 매입세액을 차감한 부가가치세 납부액을 계산. 일반과세자·간이과세자 부가율·공제 차이를 반영합니다.">
+  <meta name="keywords" content="부가가치세 계산기,부가세,간이과세,일반과세,VAT">
+  <meta name="author" content="세금계산기">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google-site-verification" content="P8tDYFJdnkxR9H7wtE8aIgt5k73jOIznzpjfMdtTGow">
+  <meta name="naver-site-verification" content="3c9c022f6d31b5719399c426919f0ac2082de03a">
+  <meta name="google-adsense-account" content="ca-pub-2792604427181547">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2792604427181547" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/og-image.png">
+  <link rel="canonical" href="https://taxcalc.co.kr/income/vat.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="세금계산기">
+  <meta property="og:title" content="부가가치세 계산기 2026 | 일반·간이과세 부가세 | 세금계산기">
+  <meta property="og:description" content="매출세액 10%에서 매입세액을 차감한 부가가치세 납부액을 계산. 일반과세자·간이과세자 부가율·공제 차이를 반영합니다.">
+  <meta property="og:url" content="https://taxcalc.co.kr/income/vat.html">
+  <meta property="og:image" content="https://taxcalc.co.kr/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="부가가치세 계산기 2026 | 일반·간이과세 부가세 | 세금계산기">
+  <meta name="twitter:description" content="매출세액 10%에서 매입세액을 차감한 부가가치세 납부액을 계산. 일반과세자·간이과세자 부가율·공제 차이를 반영합니다.">
+  <meta name="twitter:image" content="https://taxcalc.co.kr/og-image.png">
+
+  <title>부가가치세 계산기 2026 | 일반·간이과세 부가세 | 세금계산기</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+  <!-- 구조화 데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "부가가치세 계산기 - 2026년 최신 세율 안내",
+    "description": "매출세액 10%에서 매입세액을 차감한 부가가치세 납부액을 계산. 일반과세자·간이과세자 부가율·공제 차이를 반영합니다.",
+    "author": { "@type": "Organization", "name": "세금계산기" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "세금계산기",
+      "logo": { "@type": "ImageObject", "url": "https://taxcalc.co.kr/og-image.png" }
+    },
+    "datePublished": "2026-01-01",
+    "dateModified": "2026-04-18",
+    "mainEntityOfPage": "https://taxcalc.co.kr/income/vat.html",
+    "inLanguage": "ko"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "세금계산기", "item": "https://taxcalc.co.kr/" },
+      { "@type": "ListItem", "position": 2, "name": "소득", "item": "https://taxcalc.co.kr/#income" },
+      { "@type": "ListItem", "position": 3, "name": "부가가치세 계산기", "item": "https://taxcalc.co.kr/income/vat.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Pretendard', -apple-system, sans-serif;
+      background: #f8f9fa;
+      color: #1f2937;
+      line-height: 1.8;
+    }
+    .top-bar {
+      background: #2563EB;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .top-bar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .top-bar .logo-mark {
+      width: 34px; height: 34px;
+      background: white;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 900;
+      color: #2563EB;
+    }
+    .breadcrumb {
+      background: #eef2ff;
+      padding: 10px 24px;
+      font-size: 13px;
+      color: #4338ca;
+    }
+    .breadcrumb a { color: #4338ca; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 20px 80px;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    .lead {
+      font-size: 16px;
+      color: #4b5563;
+      margin-bottom: 24px;
+    }
+    .cta-box {
+      background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+      color: white;
+      padding: 28px 24px;
+      border-radius: 14px;
+      text-align: center;
+      margin: 20px 0 36px;
+      box-shadow: 0 8px 24px rgba(37,99,235,0.25);
+    }
+    .cta-box h2 {
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      border: none;
+      margin: 0 0 8px 0;
+      padding: 0;
+    }
+    .cta-box p {
+      font-size: 14px;
+      opacity: 0.95;
+      margin-bottom: 18px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: white;
+      color: #2563EB;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      transition: transform 0.15s;
+    }
+    .cta-btn:hover { transform: translateY(-2px); }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1e40af;
+      margin-top: 44px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #dbeafe;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1f2937;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+    p { margin-bottom: 14px; font-size: 15px; }
+    ul, ol { margin: 8px 0 16px 22px; font-size: 15px; }
+    li { margin-bottom: 6px; }
+    strong { color: #111827; font-weight: 700; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 10px 14px;
+      text-align: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      background: #eef2ff;
+      color: #1e40af;
+      font-weight: 700;
+    }
+    tr:last-child td { border-bottom: none; }
+    details {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    details summary {
+      font-weight: 600;
+      color: #111827;
+      list-style: none;
+      position: relative;
+      padding-right: 24px;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::after {
+      content: "▼";
+      position: absolute;
+      right: 0;
+      font-size: 11px;
+      color: #6b7280;
+      transition: transform 0.2s;
+    }
+    details[open] summary::after { transform: rotate(180deg); }
+    details[open] summary { margin-bottom: 10px; }
+    details p { margin: 0; font-size: 14px; color: #4b5563; line-height: 1.7; }
+    .notice {
+      background: #fffbeb;
+      border: 1px solid #fcd34d;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .notice strong { color: #92400e; }
+    .related {
+      margin-top: 40px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .related h2 {
+      margin-top: 0;
+      font-size: 18px;
+      border: none;
+      padding: 0;
+      margin-bottom: 12px;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+    .related-grid a {
+      display: block;
+      padding: 12px 14px;
+      background: #f3f4f6;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #1f2937;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.15s;
+    }
+    .related-grid a:hover { background: #dbeafe; color: #1e40af; }
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 13px;
+      margin-top: 60px;
+    }
+    footer a { color: #d1d5db; text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: white; }
+    .ad-slot {
+      margin: 28px 0;
+      text-align: center;
+      min-height: 90px;
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 24px; }
+      h2 { font-size: 19px; }
+      .container { padding: 24px 16px 60px; }
+      .cta-box { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="/">
+      <div class="logo-mark">₩</div>
+      세금계산기
+    </a>
+  </div>
+
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="/">홈</a> &rsaquo;
+    <a href="/#income">소득</a> &rsaquo;
+    <span>부가가치세 계산기</span>
+  </nav>
+
+  <div class="container">
+    <h1>💼 부가가치세 계산기</h1>
+    <p class="lead">매출세액에서 매입세액을 차감한 부가가치세 납부액을 일반·간이과세 방식별로 계산합니다.</p>
+
+    <div class="cta-box">
+      <h2>부가가치세 계산기 바로 계산하기</h2>
+      <p>세율·공제를 자동 반영합니다. 입력만 하면 즉시 결과 확인.</p>
+      <a href="/#income/vat" class="cta-btn">계산기 실행 →</a>
+    </div>
+
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2792604427181547"
+        data-ad-slot="auto"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <h2>부가가치세란?</h2>
+<p>부가가치세(VAT)는 <strong>재화·용역 거래의 최종 소비자에게 부과되는 간접세</strong>로, 세율은 <strong>10%</strong>입니다. 사업자는 고객에게 받은 매출세액에서 매입 시 낸 매입세액을 차감한 금액을 납부합니다. 연 매출 8,000만원 미만은 간이과세자, 이상은 일반과세자로 구분됩니다.</p>
+
+<h2>일반과세자 계산</h2>
+<p><strong>납부세액 = 매출세액 − 매입세액</strong></p>
+<ol>
+  <li>매출세액 = 총매출 × 10%</li>
+  <li>매입세액 = 세금계산서 받은 매입의 10% (공제 불가 항목 제외)</li>
+  <li>차액이 플러스면 납부, 마이너스면 환급</li>
+</ol>
+
+<h2>간이과세자 계산</h2>
+<p><strong>납부세액 = 매출 × 10% × 업종별 부가율 − 세액공제</strong></p>
+<table>
+  <thead>
+    <tr><th>업종</th><th>부가율</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>소매업·음식점업</td><td>15%</td></tr>
+    <tr><td>제조업·숙박업</td><td>20%</td></tr>
+    <tr><td>건설업</td><td>25%</td></tr>
+    <tr><td>금융·보험·부동산임대·전문서비스</td><td>30%</td></tr>
+    <tr><td>그 외</td><td>40%</td></tr>
+  </tbody>
+</table>
+<p>간이과세자는 연 매출 <strong>4,800만원 미만 시 부가세 납부 면제</strong>(신고는 의무).</p>
+
+<h2>부가세 신고 기간</h2>
+<table>
+  <thead><tr><th>유형</th><th>1기 예정</th><th>1기 확정</th><th>2기 예정</th><th>2기 확정</th></tr></thead>
+  <tbody>
+    <tr><td>일반과세 법인</td><td>4월</td><td>7월</td><td>10월</td><td>1월</td></tr>
+    <tr><td>일반과세 개인</td><td>-</td><td>7월</td><td>-</td><td>1월</td></tr>
+    <tr><td>간이과세</td><td>-</td><td>-</td><td>-</td><td>1월 (연 1회)</td></tr>
+  </tbody>
+</table>
+
+<h2>자주 묻는 질문</h2>
+<details open>
+  <summary>간이과세자 vs 일반과세자 무엇이 유리한가요?</summary>
+  <p>매출이 적고 매입세금계산서가 적으면 간이과세 유리. 매입세금계산서가 많고 환급 여지가 있으면 일반과세가 유리. 연 매출 8,000만원 돌파 시 <strong>다음 해 7월부터 자동 일반과세 전환</strong>.</p>
+</details>
+<details open>
+  <summary>세금계산서를 안 받으면 불이익이 있나요?</summary>
+  <p>매입세액공제를 못 받아 <strong>납부세액이 커집니다</strong>. 그 밖에도 공급가액의 <strong>1~2% 가산세</strong>. 세금계산서 대신 현금영수증·카드매출전표도 매입공제 가능(일부 업종 제외).</p>
+</details>
+<details open>
+  <summary>면세사업자는 부가세 신고 안 하나요?</summary>
+  <p>면세(학원·병원·농축수산물 등)는 부가세 없으나 <strong>사업장현황신고</strong>(2월 10일까지)를 해야 합니다. 과세·면세 겸영사업자는 과세 부분만 부가세 신고.</p>
+</details>
+<details open>
+  <summary>부가세 환급은 언제 받나요?</summary>
+  <p>일반환급은 확정신고 기한 경과 후 30일 이내 입금. <strong>수출·영세율·시설투자</strong>로 인한 조기환급은 매월 신고 가능(신고일 다음달 말까지). 부가세 환급은 사업 초기 시설투자에서 많이 발생.</p>
+</details>
+<details open>
+  <summary>부가세 미신고·미납 시 가산세는?</summary>
+  <p>무신고 20%(부정 40%), 과소신고 10%, 납부지연 연 8%. 세금계산서 관련 가산세(미발급 2%, 지연발급 1%)도 누적되니 반드시 기한 내 신고·납부.</p>
+</details>
+
+    <div class="notice">
+      <strong>⚠️ 참고 안내</strong>
+      <p style="margin-top:6px;margin-bottom:0">본 페이지의 계산 결과는 참고용이며 법적 효력이 없습니다. 실제 세금 신고·납부 시에는 반드시 국세청 홈택스 또는 세무 전문가를 통해 확인하시기 바랍니다. 세율은 2026년 기준이며, 개정 시 반영될 수 있습니다.</p>
+    </div>
+
+    <div class="related">
+      <h2>🔗 관련 계산기</h2>
+      <div class="related-grid">
+        <a href="/income/business.html">사업소득세 계산기</a>
+        <a href="/income/corporate.html">법인세 계산기</a>
+        <a href="/income/comprehensive.html">종합소득세 계산기</a>
+        <a href="/income/freelancer.html">프리랜서 3.3% 계산기</a>
+      </div>
+    </div>
+
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2792604427181547"
+        data-ad-slot="auto"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div>
+
+  <footer>
+    <div>© 2026 세금계산기 (taxcalc.co.kr) · 모든 계산은 참고용입니다</div>
+    <div style="margin-top:10px">
+      <a href="/">홈</a> ·
+      <a href="/about.html">사이트 소개</a> ·
+      <a href="/privacy.html">개인정보처리방침</a>
+    </div>
+  </footer>
+</body>
+</html>

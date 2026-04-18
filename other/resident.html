@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="주민세 개인분·사업소분·종업원분을 구분해 자동 계산. 지자체별 정액 기준과 종업원 급여 기준을 반영합니다.">
+  <meta name="keywords" content="주민세,주민세 개인분,사업소분 주민세,종업원분">
+  <meta name="author" content="세금계산기">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google-site-verification" content="P8tDYFJdnkxR9H7wtE8aIgt5k73jOIznzpjfMdtTGow">
+  <meta name="naver-site-verification" content="3c9c022f6d31b5719399c426919f0ac2082de03a">
+  <meta name="google-adsense-account" content="ca-pub-2792604427181547">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2792604427181547" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/og-image.png">
+  <link rel="canonical" href="https://taxcalc.co.kr/other/resident.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="세금계산기">
+  <meta property="og:title" content="주민세 계산기 2026 | 개인분·사업소분·종업원분 | 세금계산기">
+  <meta property="og:description" content="주민세 개인분·사업소분·종업원분을 구분해 자동 계산. 지자체별 정액 기준과 종업원 급여 기준을 반영합니다.">
+  <meta property="og:url" content="https://taxcalc.co.kr/other/resident.html">
+  <meta property="og:image" content="https://taxcalc.co.kr/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="주민세 계산기 2026 | 개인분·사업소분·종업원분 | 세금계산기">
+  <meta name="twitter:description" content="주민세 개인분·사업소분·종업원분을 구분해 자동 계산. 지자체별 정액 기준과 종업원 급여 기준을 반영합니다.">
+  <meta name="twitter:image" content="https://taxcalc.co.kr/og-image.png">
+
+  <title>주민세 계산기 2026 | 개인분·사업소분·종업원분 | 세금계산기</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+  <!-- 구조화 데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "주민세 계산기 - 2026년 최신 세율 안내",
+    "description": "주민세 개인분·사업소분·종업원분을 구분해 자동 계산. 지자체별 정액 기준과 종업원 급여 기준을 반영합니다.",
+    "author": { "@type": "Organization", "name": "세금계산기" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "세금계산기",
+      "logo": { "@type": "ImageObject", "url": "https://taxcalc.co.kr/og-image.png" }
+    },
+    "datePublished": "2026-01-01",
+    "dateModified": "2026-04-18",
+    "mainEntityOfPage": "https://taxcalc.co.kr/other/resident.html",
+    "inLanguage": "ko"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "세금계산기", "item": "https://taxcalc.co.kr/" },
+      { "@type": "ListItem", "position": 2, "name": "기타", "item": "https://taxcalc.co.kr/#other" },
+      { "@type": "ListItem", "position": 3, "name": "주민세 계산기", "item": "https://taxcalc.co.kr/other/resident.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Pretendard', -apple-system, sans-serif;
+      background: #f8f9fa;
+      color: #1f2937;
+      line-height: 1.8;
+    }
+    .top-bar {
+      background: #2563EB;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .top-bar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .top-bar .logo-mark {
+      width: 34px; height: 34px;
+      background: white;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 900;
+      color: #2563EB;
+    }
+    .breadcrumb {
+      background: #eef2ff;
+      padding: 10px 24px;
+      font-size: 13px;
+      color: #4338ca;
+    }
+    .breadcrumb a { color: #4338ca; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 20px 80px;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    .lead {
+      font-size: 16px;
+      color: #4b5563;
+      margin-bottom: 24px;
+    }
+    .cta-box {
+      background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+      color: white;
+      padding: 28px 24px;
+      border-radius: 14px;
+      text-align: center;
+      margin: 20px 0 36px;
+      box-shadow: 0 8px 24px rgba(37,99,235,0.25);
+    }
+    .cta-box h2 {
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      border: none;
+      margin: 0 0 8px 0;
+      padding: 0;
+    }
+    .cta-box p {
+      font-size: 14px;
+      opacity: 0.95;
+      margin-bottom: 18px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: white;
+      color: #2563EB;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      transition: transform 0.15s;
+    }
+    .cta-btn:hover { transform: translateY(-2px); }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1e40af;
+      margin-top: 44px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #dbeafe;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1f2937;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+    p { margin-bottom: 14px; font-size: 15px; }
+    ul, ol { margin: 8px 0 16px 22px; font-size: 15px; }
+    li { margin-bottom: 6px; }
+    strong { color: #111827; font-weight: 700; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 10px 14px;
+      text-align: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      background: #eef2ff;
+      color: #1e40af;
+      font-weight: 700;
+    }
+    tr:last-child td { border-bottom: none; }
+    details {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    details summary {
+      font-weight: 600;
+      color: #111827;
+      list-style: none;
+      position: relative;
+      padding-right: 24px;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::after {
+      content: "▼";
+      position: absolute;
+      right: 0;
+      font-size: 11px;
+      color: #6b7280;
+      transition: transform 0.2s;
+    }
+    details[open] summary::after { transform: rotate(180deg); }
+    details[open] summary { margin-bottom: 10px; }
+    details p { margin: 0; font-size: 14px; color: #4b5563; line-height: 1.7; }
+    .notice {
+      background: #fffbeb;
+      border: 1px solid #fcd34d;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .notice strong { color: #92400e; }
+    .related {
+      margin-top: 40px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .related h2 {
+      margin-top: 0;
+      font-size: 18px;
+      border: none;
+      padding: 0;
+      margin-bottom: 12px;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+    .related-grid a {
+      display: block;
+      padding: 12px 14px;
+      background: #f3f4f6;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #1f2937;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.15s;
+    }
+    .related-grid a:hover { background: #dbeafe; color: #1e40af; }
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 13px;
+      margin-top: 60px;
+    }
+    footer a { color: #d1d5db; text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: white; }
+    .ad-slot {
+      margin: 28px 0;
+      text-align: center;
+      min-height: 90px;
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 24px; }
+      h2 { font-size: 19px; }
+      .container { padding: 24px 16px 60px; }
+      .cta-box { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="/">
+      <div class="logo-mark">₩</div>
+      세금계산기
+    </a>
+  </div>
+
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="/">홈</a> &rsaquo;
+    <a href="/#other">기타</a> &rsaquo;
+    <span>주민세 계산기</span>
+  </nav>
+
+  <div class="container">
+    <h1>📋 주민세 계산기</h1>
+    <p class="lead">주민세 개인분(1만원 내외)·사업소분(면적별)·종업원분(급여 0.5%)을 구분해 계산합니다.</p>
+
+    <div class="cta-box">
+      <h2>주민세 계산기 바로 계산하기</h2>
+      <p>세율·공제를 자동 반영합니다. 입력만 하면 즉시 결과 확인.</p>
+      <a href="/#other/resident" class="cta-btn">계산기 실행 →</a>
+    </div>
+
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2792604427181547"
+        data-ad-slot="auto"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <h2>주민세란?</h2>
+<p>주민세는 <strong>지방자치단체에 거주하거나 사업장을 둔 개인·법인에게 부과되는 지방세</strong>입니다. 매년 8월에 부과되며 크게 <strong>개인분·사업소분·종업원분</strong>으로 나뉩니다. 금액이 크지 않지만 미납 시 가산금이 붙고 재산세·자동차세와 함께 지자체 재정의 기초 재원이 됩니다.</p>
+
+<h2>주민세 유형</h2>
+<table>
+  <thead>
+    <tr><th>구분</th><th>대상</th><th>세액</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>개인분</td><td>세대주 (8월 1일 기준)</td><td>지자체별 10,000원 내외 + 지방교육세 25%</td></tr>
+    <tr><td>사업소분 (개인사업자·법인)</td><td>연매출 4,800만 이상 사업장</td><td>기본 5만원 + 연면적 330㎡ 초과분 × 250원/㎡</td></tr>
+    <tr><td>종업원분</td><td>월 평균 급여총액 1.5억 초과 사업장</td><td>종업원 급여 총액의 0.5%</td></tr>
+  </tbody>
+</table>
+
+<h2>지자체별 주민세 개인분 예시</h2>
+<table>
+  <thead>
+    <tr><th>지역</th><th>개인분 본세</th><th>지방교육세 (25%)</th><th>합계</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>서울특별시</td><td>6,000원</td><td>1,500원</td><td>7,500원</td></tr>
+    <tr><td>부산·대구 등 광역시</td><td>7,500~10,000원</td><td>1,875~2,500원</td><td>9,375~12,500원</td></tr>
+    <tr><td>경기·도 지역</td><td>10,000원</td><td>2,500원</td><td>12,500원</td></tr>
+  </tbody>
+</table>
+
+<h2>납부 기간</h2>
+<ul>
+  <li><strong>개인분</strong>: 매년 8월 16일~8월 31일</li>
+  <li><strong>사업소분</strong>: 매년 8월 16일~8월 31일 (개인분과 동일)</li>
+  <li><strong>종업원분</strong>: 매월 10일까지 전월분 신고·납부</li>
+</ul>
+
+<h2>감면 대상</h2>
+<ul>
+  <li>기초생활수급자</li>
+  <li>장애인 (1~3급)</li>
+  <li>외국인 (영주권 없음)</li>
+  <li>미성년자 (1인 세대원 아님)</li>
+  <li>2자녀 이상 다자녀 가구 (일부 지자체 자율 감면)</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+<details open>
+  <summary>세대원도 주민세 내나요?</summary>
+  <p>아니요. 주민세 개인분은 <strong>세대주에게만 부과</strong>. 세대원은 별도 납부 의무 없음. 1인 가구는 본인이 세대주로 납부.</p>
+</details>
+<details open>
+  <summary>이사 중간에 주민세는 누가 내나요?</summary>
+  <p>매년 <strong>7월 1일 기준 주민등록</strong>상 주소지 지자체에 납부. 8월 이사해도 7월 1일 주소지 기준으로 부과됩니다. 중복 부과되지 않음.</p>
+</details>
+<details open>
+  <summary>사업소분 주민세는 누가 내나요?</summary>
+  <p>연매출 4,800만원 이상 개인사업자·모든 법인. 사업장 <strong>면적 330㎡ 초과</strong> 시 추가. 간이과세자·영세 개인사업자는 대상 아님.</p>
+</details>
+<details open>
+  <summary>주민세 미납 시 불이익은?</summary>
+  <p>가산금 3% + 매월 1.2% 중가산금. 금액은 작지만 압류 가능. 지방세 체납자 명단은 지방세청에서 관리되며 신용에 영향.</p>
+</details>
+<details open>
+  <summary>주민세 카드 납부 가능한가요?</summary>
+  <p>네. 위택스·이택스·ARS·은행 ATM에서 신용카드·체크카드 납부 가능. 포인트 적립·무이자 할부 혜택 이용 가능하며 수수료 고객 부담.</p>
+</details>
+
+    <div class="notice">
+      <strong>⚠️ 참고 안내</strong>
+      <p style="margin-top:6px;margin-bottom:0">본 페이지의 계산 결과는 참고용이며 법적 효력이 없습니다. 실제 세금 신고·납부 시에는 반드시 국세청 홈택스 또는 세무 전문가를 통해 확인하시기 바랍니다. 세율은 2026년 기준이며, 개정 시 반영될 수 있습니다.</p>
+    </div>
+
+    <div class="related">
+      <h2>🔗 관련 계산기</h2>
+      <div class="related-grid">
+        <a href="/income/comprehensive.html">종합소득세 계산기</a>
+        <a href="/income/business.html">사업소득세 계산기</a>
+        <a href="/income/corporate.html">법인세 계산기</a>
+        <a href="/real-estate/property-tax.html">재산세 계산기</a>
+      </div>
+    </div>
+
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2792604427181547"
+        data-ad-slot="auto"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div>
+
+  <footer>
+    <div>© 2026 세금계산기 (taxcalc.co.kr) · 모든 계산은 참고용입니다</div>
+    <div style="margin-top:10px">
+      <a href="/">홈</a> ·
+      <a href="/about.html">사이트 소개</a> ·
+      <a href="/privacy.html">개인정보처리방침</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="퇴직금에 부과되는 퇴직소득세를 근속연수공제·환산급여공제·12배수 방식으로 자동 계산. IRP 이전 시 절세효과까지 비교합니다.">
+  <meta name="keywords" content="퇴직소득세,퇴직금 세금,근속연수공제,환산급여공제">
+  <meta name="author" content="세금계산기">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google-site-verification" content="P8tDYFJdnkxR9H7wtE8aIgt5k73jOIznzpjfMdtTGow">
+  <meta name="naver-site-verification" content="3c9c022f6d31b5719399c426919f0ac2082de03a">
+  <meta name="google-adsense-account" content="ca-pub-2792604427181547">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2792604427181547" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/og-image.png">
+  <link rel="canonical" href="https://taxcalc.co.kr/income/retirement.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="세금계산기">
+  <meta property="og:title" content="퇴직소득세 계산기 2026 | 근속연수공제·환산급여 | 세금계산기">
+  <meta property="og:description" content="퇴직금에 부과되는 퇴직소득세를 근속연수공제·환산급여공제·12배수 방식으로 자동 계산. IRP 이전 시 절세효과까지 비교합니다.">
+  <meta property="og:url" content="https://taxcalc.co.kr/income/retirement.html">
+  <meta property="og:image" content="https://taxcalc.co.kr/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="퇴직소득세 계산기 2026 | 근속연수공제·환산급여 | 세금계산기">
+  <meta name="twitter:description" content="퇴직금에 부과되는 퇴직소득세를 근속연수공제·환산급여공제·12배수 방식으로 자동 계산. IRP 이전 시 절세효과까지 비교합니다.">
+  <meta name="twitter:image" content="https://taxcalc.co.kr/og-image.png">
+
+  <title>퇴직소득세 계산기 2026 | 근속연수공제·환산급여 | 세금계산기</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+  <!-- 구조화 데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "퇴직소득세 계산기 - 2026년 최신 세율 안내",
+    "description": "퇴직금에 부과되는 퇴직소득세를 근속연수공제·환산급여공제·12배수 방식으로 자동 계산. IRP 이전 시 절세효과까지 비교합니다.",
+    "author": { "@type": "Organization", "name": "세금계산기" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "세금계산기",
+      "logo": { "@type": "ImageObject", "url": "https://taxcalc.co.kr/og-image.png" }
+    },
+    "datePublished": "2026-01-01",
+    "dateModified": "2026-04-18",
+    "mainEntityOfPage": "https://taxcalc.co.kr/income/retirement.html",
+    "inLanguage": "ko"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "세금계산기", "item": "https://taxcalc.co.kr/" },
+      { "@type": "ListItem", "position": 2, "name": "소득", "item": "https://taxcalc.co.kr/#income" },
+      { "@type": "ListItem", "position": 3, "name": "퇴직소득세 계산기", "item": "https://taxcalc.co.kr/income/retirement.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Pretendard', -apple-system, sans-serif;
+      background: #f8f9fa;
+      color: #1f2937;
+      line-height: 1.8;
+    }
+    .top-bar {
+      background: #2563EB;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .top-bar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .top-bar .logo-mark {
+      width: 34px; height: 34px;
+      background: white;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 900;
+      color: #2563EB;
+    }
+    .breadcrumb {
+      background: #eef2ff;
+      padding: 10px 24px;
+      font-size: 13px;
+      color: #4338ca;
+    }
+    .breadcrumb a { color: #4338ca; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 20px 80px;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    .lead {
+      font-size: 16px;
+      color: #4b5563;
+      margin-bottom: 24px;
+    }
+    .cta-box {
+      background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+      color: white;
+      padding: 28px 24px;
+      border-radius: 14px;
+      text-align: center;
+      margin: 20px 0 36px;
+      box-shadow: 0 8px 24px rgba(37,99,235,0.25);
+    }
+    .cta-box h2 {
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      border: none;
+      margin: 0 0 8px 0;
+      padding: 0;
+    }
+    .cta-box p {
+      font-size: 14px;
+      opacity: 0.95;
+      margin-bottom: 18px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: white;
+      color: #2563EB;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      transition: transform 0.15s;
+    }
+    .cta-btn:hover { transform: translateY(-2px); }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1e40af;
+      margin-top: 44px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #dbeafe;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1f2937;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+    p { margin-bottom: 14px; font-size: 15px; }
+    ul, ol { margin: 8px 0 16px 22px; font-size: 15px; }
+    li { margin-bottom: 6px; }
+    strong { color: #111827; font-weight: 700; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 10px 14px;
+      text-align: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      background: #eef2ff;
+      color: #1e40af;
+      font-weight: 700;
+    }
+    tr:last-child td { border-bottom: none; }
+    details {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    details summary {
+      font-weight: 600;
+      color: #111827;
+      list-style: none;
+      position: relative;
+      padding-right: 24px;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::after {
+      content: "▼";
+      position: absolute;
+      right: 0;
+      font-size: 11px;
+      color: #6b7280;
+      transition: transform 0.2s;
+    }
+    details[open] summary::after { transform: rotate(180deg); }
+    details[open] summary { margin-bottom: 10px; }
+    details p { margin: 0; font-size: 14px; color: #4b5563; line-height: 1.7; }
+    .notice {
+      background: #fffbeb;
+      border: 1px solid #fcd34d;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .notice strong { color: #92400e; }
+    .related {
+      margin-top: 40px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .related h2 {
+      margin-top: 0;
+      font-size: 18px;
+      border: none;
+      padding: 0;
+      margin-bottom: 12px;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+    .related-grid a {
+      display: block;
+      padding: 12px 14px;
+      background: #f3f4f6;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #1f2937;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.15s;
+    }
+    .related-grid a:hover { background: #dbeafe; color: #1e40af; }
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 13px;
+      margin-top: 60px;
+    }
+    footer a { color: #d1d5db; text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: white; }
+    .ad-slot {
+      margin: 28px 0;
+      text-align: center;
+      min-height: 90px;
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 24px; }
+      h2 { font-size: 19px; }
+      .container { padding: 24px 16px 60px; }
+      .cta-box { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="/">
+      <div class="logo-mark">₩</div>
+      세금계산기
+    </a>
+  </div>
+
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="/">홈</a> &rsaquo;
+    <a href="/#income">소득</a> &rsaquo;
+    <span>퇴직소득세 계산기</span>
+  </nav>
+
+  <div class="container">
+    <h1>💼 퇴직소득세 계산기</h1>
+    <p class="lead">퇴직금 일시 수령 시 부과되는 퇴직소득세를 근속연수·급여 기준으로 계산하고 IRP 이연 절세를 비교합니다.</p>
+
+    <div class="cta-box">
+      <h2>퇴직소득세 계산기 바로 계산하기</h2>
+      <p>세율·공제를 자동 반영합니다. 입력만 하면 즉시 결과 확인.</p>
+      <a href="/#income/retirement" class="cta-btn">계산기 실행 →</a>
+    </div>
+
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2792604427181547"
+        data-ad-slot="auto"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <h2>퇴직소득세란?</h2>
+<p>퇴직소득세는 <strong>퇴직금 일시 수령 시 부과되는 국세</strong>입니다. 오랜 기간 쌓인 퇴직소득을 1회에 과세하면 고세율이 적용되므로, <strong>근속연수공제 + 12배수 환산 + 환산급여공제</strong>라는 특수한 방식으로 누진 부담을 완화합니다. IRP 계좌로 이전해 연금으로 수령하면 세액이 30~40% 감소해 절세효과가 큽니다.</p>
+
+<h2>계산 흐름</h2>
+<ol>
+  <li>퇴직금 − 근속연수공제 = 환산급여</li>
+  <li>환산급여 × (12 ÷ 근속연수) = 과세표준</li>
+  <li>과세표준 − 환산급여공제 = 최종 과세표준</li>
+  <li>기본세율(6~45%) 적용 → 산출세액</li>
+  <li>산출세액 × (근속연수 ÷ 12) = 퇴직소득세</li>
+</ol>
+
+<h2>근속연수공제</h2>
+<table>
+  <thead>
+    <tr><th>근속연수</th><th>공제액</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>5년 이하</td><td>100만원 × 근속연수</td></tr>
+    <tr><td>5~10년</td><td>500만원 + 200만원 × (근속 − 5)</td></tr>
+    <tr><td>10~20년</td><td>1,500만원 + 250만원 × (근속 − 10)</td></tr>
+    <tr><td>20년 초과</td><td>4,000만원 + 300만원 × (근속 − 20)</td></tr>
+  </tbody>
+</table>
+
+<h2>환산급여공제</h2>
+<table>
+  <thead>
+    <tr><th>환산급여</th><th>공제액</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>800만 이하</td><td>전액</td></tr>
+    <tr><td>800~7,000만</td><td>800만 + 초과분 60%</td></tr>
+    <tr><td>7,000만~1억</td><td>4,520만 + 초과분 55%</td></tr>
+    <tr><td>1억~3억</td><td>6,170만 + 초과분 45%</td></tr>
+    <tr><td>3억 초과</td><td>1억 5,170만 + 초과분 35%</td></tr>
+  </tbody>
+</table>
+
+<h2>IRP 이전 절세효과</h2>
+<p>퇴직금을 IRP에 이전 후 연금으로 수령하면 퇴직소득세의 <strong>60~70%만</strong> 납부. 30~40% 절세 가능. 55세 이후 10년 이상 연금 수령이 조건. 일반 근로자는 대부분 IRP 이전이 유리합니다.</p>
+
+<h2>자주 묻는 질문</h2>
+<details open>
+  <summary>퇴직금 1억 받으면 세금 얼마인가요?</summary>
+  <p>근속 10년 기준 약 <strong>370만원</strong> 퇴직소득세(일시금 수령). 근속 20년이면 약 290만원. 근속이 길수록 공제가 커져 세부담이 낮아집니다. IRP 이전 시 약 220~260만원으로 감소.</p>
+</details>
+<details open>
+  <summary>퇴직금과 급여를 합산 과세하나요?</summary>
+  <p>아니요. 퇴직소득은 <strong>분류과세</strong>로 근로소득·사업소득과 합산되지 않습니다. 퇴직소득세 원천징수 후 별도로 신고 종결. 종합소득세 대상 아님.</p>
+</details>
+<details open>
+  <summary>IRP 이전 후 해지하면?</summary>
+  <p>IRP 해지 시 <strong>기타소득세 16.5%</strong> 과세. 퇴직소득세보다 높을 수 있으므로 가급적 연금 수령까지 유지가 유리. 특별한 사유(천재지변·의료비 등)는 저율 유지 가능.</p>
+</details>
+<details open>
+  <summary>임원 퇴직금도 같은 세율인가요?</summary>
+  <p>임원은 한도 초과액이 <strong>근로소득</strong>으로 전환 과세(임원퇴직금 한도초과액). 일반 직원보다 불리. 정관·주총결의로 한도 설정해야 하며, 과다 지급은 상여 간주.</p>
+</details>
+<details open>
+  <summary>중간정산 받으면 퇴직소득세는?</summary>
+  <p>중간정산 시점마다 퇴직소득세 부과. 근속연수가 짧게 계산되어 <strong>세부담이 커집니다</strong>. 또한 최종 퇴직 시 합산 정산되므로 중간정산은 꼭 필요한 경우에만 권장.</p>
+</details>
+
+    <div class="notice">
+      <strong>⚠️ 참고 안내</strong>
+      <p style="margin-top:6px;margin-bottom:0">본 페이지의 계산 결과는 참고용이며 법적 효력이 없습니다. 실제 세금 신고·납부 시에는 반드시 국세청 홈택스 또는 세무 전문가를 통해 확인하시기 바랍니다. 세율은 2026년 기준이며, 개정 시 반영될 수 있습니다.</p>
+    </div>
+
+    <div class="related">
+      <h2>🔗 관련 계산기</h2>
+      <div class="related-grid">
+        <a href="/income/severance.html">퇴직금 계산기</a>
+        <a href="/income/pension-income.html">연금소득세 계산기</a>
+        <a href="/income/comprehensive.html">종합소득세 계산기</a>
+        <a href="/income/pension-saving.html">연금저축·IRP 공제 계산기</a>
+      </div>
+    </div>
+
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2792604427181547"
+        data-ad-slot="auto"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div>
+
+  <footer>
+    <div>© 2026 세금계산기 (taxcalc.co.kr) · 모든 계산은 참고용입니다</div>
+    <div style="margin-top:10px">
+      <a href="/">홈</a> ·
+      <a href="/about.html">사이트 소개</a> ·
+      <a href="/privacy.html">개인정보처리방침</a>
+    </div>
+  </footer>
+</body>
+</html>
