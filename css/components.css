@@ -560,6 +560,9 @@
   color: var(--text-secondary);
   background: var(--bg-card);
 }
+.tax-tip-box .tip-content p {
+  margin-bottom: 10px;
+}
 .tax-tip-box .tip-content li {
   margin-bottom: 6px;
   padding-left: 4px;
