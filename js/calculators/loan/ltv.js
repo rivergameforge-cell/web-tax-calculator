@@ -12,12 +12,12 @@ const CalcLTV = (() => {
     },
     'regulated': {
       homeless:  { bank: 40, nonbank: 40 },
-      '1house':  { bank: 0,  nonbank: 0  },
+      '1house':  { bank: 40, nonbank: 40 },  // 처분 조건부 시 40% 허용 (2024.9~ 완화)
       multi:     { bank: 0,  nonbank: 0  },
     },
     'speculative': {
       homeless:  { bank: 40, nonbank: 40 },
-      '1house':  { bank: 0,  nonbank: 0  },
+      '1house':  { bank: 0,  nonbank: 0  },  // 투기과열지구는 원칙적 불가
       multi:     { bank: 0,  nonbank: 0  },
     },
   };
@@ -140,7 +140,11 @@ const CalcLTV = (() => {
       ${currentLTVSection}
       ${r.ltvLimit === 0 ? `
       <div class="notice-box danger" style="margin-top:12px">
-        <strong>대출 불가</strong> ${r.regionLabel}에서 ${r.housingLabel}자는 주택담보대출이 제한됩니다.
+        <strong>대출 원칙적 불가</strong> ${r.regionLabel}에서 ${r.housingLabel}자는 주택담보대출이 제한됩니다.
+      </div>` : ''}
+      ${r.region === 'regulated' && r.housing === '1house' ? `
+      <div class="notice-box info" style="margin-top:12px">
+        <strong>처분 조건부 허용</strong> 조정대상지역 1주택자는 기존 주택을 일정 기간 내 처분하는 조건으로 LTV 40% 대출이 가능합니다. 실제 실행 시 금융기관에서 처분 이행 확약서를 요구합니다.
       </div>` : ''}
       <div style="font-size:11px;color:var(--text-muted);margin-top:12px">
         * 실제 LTV 한도는 금융기관, 주택 가격대, 생애최초 여부 등에 따라 달라질 수 있습니다
