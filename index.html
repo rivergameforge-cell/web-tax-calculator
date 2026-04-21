@@ -5116,6 +5116,10 @@
                         <input type="radio" name="ltv-region" value="speculative">
                         <span class="radio-label" style="width:100%;padding:8px 12px;font-size:13px">투기과열지구</span>
                       </label>
+                      <label class="radio-option" style="width:100%">
+                        <input type="radio" name="ltv-region" value="permit">
+                        <span class="radio-label" style="width:100%;padding:8px 12px;font-size:13px">토허제 <small style="color:var(--text-muted)">(토지거래허가구역)</small></span>
+                      </label>
                     </div>
                   </div>
 
@@ -5179,11 +5183,12 @@
               <p>LTV는 주택 가격 대비 대출 가능 금액의 비율입니다. 규제지역과 주택 보유 수에 따라 한도가 달라지며, DSR 규제와 함께 대출 가능 금액을 제한합니다.</p>
               <ul>
                 <li><strong>비규제지역</strong> — 주택보유 수 무관하게 최대 70%</li>
-                <li><strong>규제지역 무주택자</strong> — 조정대상지역·투기과열지구 40%</li>
-                <li><strong>조정대상지역 1주택 처분 조건부</strong> — LTV 40% 허용 (기존 주택 처분 이행 확약 필요)</li>
-                <li><strong>투기과열지구 1주택 이상 / 조정대상지역 2주택 이상</strong> — 대출 원칙적 불가</li>
-                <li><strong>생애최초 주택구입</strong> — 지역·가격 관계없이 LTV 80% 우대 적용</li>
-                <li><strong>실제 대출 가능액</strong> — 주택가격 × LTV - 기존 담보대출 잔액</li>
+                <li><strong>조정대상지역 무주택·처분조건부 1주택</strong> — 9억 이하 50% / 9억 초과분 30%</li>
+                <li><strong>투기과열지구 / 토허제 무주택</strong> — 9억 이하 40% / 9억 초과분 20%</li>
+                <li><strong>투기과열지구·토허제 1주택 이상 / 조정대상지역 2주택 이상</strong> — 대출 원칙적 불가</li>
+                <li><strong>시가 상한 (수도권·규제지역)</strong> — 15억 이하 최대 6억 / 15억 초과~25억 4억 / 25억 초과 2억</li>
+                <li><strong>토허제</strong> — 실거주 목적에 한해 허가 필요. 투기·임대 목적 구입 불가</li>
+                <li><strong>생애최초 주택구입</strong> — 지역·가격 관계없이 LTV 80% 우대 적용 (별도 신청)</li>
                 <li><strong>LTV + DSR</strong> — 두 규제를 모두 충족해야 대출 실행 가능. 더 낮은 쪽이 실제 한도</li>
               </ul>
             </div>
