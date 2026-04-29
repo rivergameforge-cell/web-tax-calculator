@@ -50,6 +50,51 @@ STATIC_SITEMAP_URLS = [
 # ---------------------------------------------------------------------------
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n(.*)$", re.DOTALL)
+DETAILS_RE = re.compile(
+    r"<details[^>]*>\s*<summary>(.*?)</summary>\s*(.*?)\s*</details>",
+    re.DOTALL,
+)
+TAG_RE = re.compile(r"<[^>]+>")
+
+
+def strip_tags(s: str) -> str:
+    """간단 태그 제거 (FAQ 질문 텍스트용)."""
+    return TAG_RE.sub("", s).strip()
+
+
+def extract_faqs(body: str) -> list[dict]:
+    """본문에서 <details><summary>...</summary>...</details> 블록을 찾아 Q&A 추출."""
+    faqs = []
+    for m in DETAILS_RE.finditer(body):
+        question = strip_tags(m.group(1))
+        answer_html = m.group(2).strip()
+        if not question or not answer_html:
+            continue
+        faqs.append({"q": question, "a": answer_html})
+    return faqs
+
+
+def render_faq_jsonld(faqs: list[dict]) -> str:
+    """FAQ 리스트를 Schema.org FAQPage JSON-LD 스크립트로 렌더링."""
+    if not faqs:
+        return ""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": faq["q"],
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq["a"],
+                },
+            }
+            for faq in faqs
+        ],
+    }
+    body = json.dumps(data, ensure_ascii=False, indent=2)
+    return '  <script type="application/ld+json">\n' + body + "\n  </script>"
 
 
 def parse_content_file(path: Path) -> dict:
@@ -127,6 +172,9 @@ def render_page(meta: dict, template: str, all_pages: dict) -> str:
 
     # route-id 의 깊이에 따른 루트 경로 (출력은 항상 루트 바로 아래 서브폴더 1단계 가정)
     # 예: real-estate/acquisition.html → "../" 이 아닌 "/"로 고정해 절대 경로 사용
+    faqs = extract_faqs(meta["body"])
+    faq_jsonld = render_faq_jsonld(faqs)
+
     replacements = {
         "{{META_TITLE}}":       meta["metaTitle"],
         "{{META_DESCRIPTION}}": meta["metaDescription"],
@@ -140,7 +188,10 @@ def render_page(meta: dict, template: str, all_pages: dict) -> str:
         "{{ROOT}}":             "/",
         "{{BODY}}":             meta["body"],
         "{{RELATED_LINKS}}":    render_related(meta, all_pages),
+        "{{FAQ_JSONLD}}":       faq_jsonld,
     }
+
+    meta["_faq_count"] = len(faqs)
 
     out = template
     for key, val in replacements.items():
@@ -212,15 +263,24 @@ def main() -> int:
 
     print(f"▶ 총 {len(pages)}개 페이지 빌드 시작")
     written = []
+    no_faq = []
     for meta in pages.values():
         html = render_page(meta, template, pages)
         out_path = write_output(meta, html)
         written.append(out_path.relative_to(ROOT))
-        print(f"  ✓ {out_path.relative_to(ROOT)}")
+        faq_count = meta.get("_faq_count", 0)
+        marker = f"FAQ {faq_count}" if faq_count else "FAQ 없음"
+        print(f"  ✓ {out_path.relative_to(ROOT)}  ({marker})")
+        if faq_count == 0:
+            no_faq.append(meta["id"])
 
     build_sitemap(pages)
     print(f"\n▶ sitemap.xml 갱신 완료 ({len(pages) + len(STATIC_SITEMAP_URLS)} URL)")
     print(f"▶ 빌드 완료: {len(written)}개 파일")
+    if no_faq:
+        print(f"\n[!] FAQ 누락 페이지 {len(no_faq)}개 (FAQPage 스키마 미생성):")
+        for rid in no_faq:
+            print(f"    - {rid}")
     return 0
 
 

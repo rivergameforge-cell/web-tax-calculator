@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /build/
+Disallow: /blog_post/
 
 Sitemap: https://taxcalc.co.kr/sitemap.xml
