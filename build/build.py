@@ -42,6 +42,7 @@ CATEGORIES = {
 STATIC_SITEMAP_URLS = [
     ("https://taxcalc.co.kr/",            "monthly", "1.0"),
     ("https://taxcalc.co.kr/about.html",  "yearly",  "0.5"),
+    ("https://taxcalc.co.kr/contact.html","yearly",  "0.5"),
     ("https://taxcalc.co.kr/privacy.html","yearly",  "0.3"),
 ]
 
