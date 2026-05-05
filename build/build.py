@@ -44,6 +44,7 @@ STATIC_SITEMAP_URLS = [
     ("https://taxcalc.co.kr/blog/",                                 "weekly",  "0.8"),
     ("https://taxcalc.co.kr/blog/officetel-acquisition.html",       "monthly", "0.7"),
     ("https://taxcalc.co.kr/blog/dividend-tax-saving.html",         "monthly", "0.7"),
+    ("https://taxcalc.co.kr/blog/severance-pay-guide.html",         "monthly", "0.7"),
     ("https://taxcalc.co.kr/about.html",                            "yearly",  "0.5"),
     ("https://taxcalc.co.kr/contact.html",                          "yearly",  "0.5"),
     ("https://taxcalc.co.kr/privacy.html",                          "yearly",  "0.3"),
