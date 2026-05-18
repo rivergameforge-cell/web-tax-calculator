@@ -42,13 +42,23 @@ CATEGORIES = {
 STATIC_SITEMAP_URLS = [
     ("https://taxcalc.co.kr/",                                      "monthly", "1.0"),
     ("https://taxcalc.co.kr/blog/",                                 "weekly",  "0.8"),
-    ("https://taxcalc.co.kr/blog/officetel-acquisition.html",       "monthly", "0.7"),
-    ("https://taxcalc.co.kr/blog/dividend-tax-saving.html",         "monthly", "0.7"),
-    ("https://taxcalc.co.kr/blog/severance-pay-guide.html",         "monthly", "0.7"),
     ("https://taxcalc.co.kr/about.html",                            "yearly",  "0.5"),
     ("https://taxcalc.co.kr/contact.html",                          "yearly",  "0.5"),
     ("https://taxcalc.co.kr/privacy.html",                          "yearly",  "0.3"),
 ]
+
+
+def discover_blog_urls() -> list:
+    """blog/*.html 파일을 스캔해 sitemap 항목 자동 생성 (index.html 제외)."""
+    blog_dir = ROOT / "blog"
+    if not blog_dir.exists():
+        return []
+    urls = []
+    for path in sorted(blog_dir.glob("*.html")):
+        if path.name == "index.html":
+            continue
+        urls.append((f"https://taxcalc.co.kr/blog/{path.name}", "monthly", "0.7"))
+    return urls
 
 # ---------------------------------------------------------------------------
 # 유틸
@@ -227,6 +237,18 @@ def build_sitemap(pages: dict) -> None:
         lines.append(f"    <priority>{priority}</priority>")
         lines.append("  </url>")
 
+    # 블로그 페이지 (blog/*.html 자동 스캔)
+    blog_urls = discover_blog_urls()
+    if blog_urls:
+        lines.append("  <!-- 블로그 -->")
+        for loc, changefreq, priority in blog_urls:
+            lines.append("  <url>")
+            lines.append(f"    <loc>{loc}</loc>")
+            lines.append(f"    <lastmod>{today}</lastmod>")
+            lines.append(f"    <changefreq>{changefreq}</changefreq>")
+            lines.append(f"    <priority>{priority}</priority>")
+            lines.append("  </url>")
+
     # 생성된 계산기 페이지 (카테고리 그룹별 정렬)
     by_cat: dict[str, list] = {}
     for page in pages.values():
@@ -280,7 +302,8 @@ def main() -> int:
             no_faq.append(meta["id"])
 
     build_sitemap(pages)
-    print(f"\n▶ sitemap.xml 갱신 완료 ({len(pages) + len(STATIC_SITEMAP_URLS)} URL)")
+    total_urls = len(pages) + len(STATIC_SITEMAP_URLS) + len(discover_blog_urls())
+    print(f"\n▶ sitemap.xml 갱신 완료 ({total_urls} URL)")
     print(f"▶ 빌드 완료: {len(written)}개 파일")
     if no_faq:
         print(f"\n[!] FAQ 누락 페이지 {len(no_faq)}개 (FAQPage 스키마 미생성):")
