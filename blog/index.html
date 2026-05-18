@@ -123,7 +123,87 @@
       opacity: 0.95;
       margin: 0;
     }
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      padding: 14px 16px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+    }
+    .filter-chip {
+      background: #f3f4f6;
+      color: #4b5563;
+      border: 1px solid transparent;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: inherit;
+    }
+    .filter-chip:hover { background: #e5e7eb; }
+    .filter-chip.active {
+      background: #2563EB;
+      color: white;
+      border-color: #2563EB;
+    }
+    .filter-count {
+      margin-left: auto;
+      align-self: center;
+      font-size: 12.5px;
+      color: #6b7280;
+    }
     .post-list { display: grid; gap: 16px; }
+    .post-card.is-hidden { display: none; }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .pagination button {
+      background: white;
+      border: 1px solid #e5e7eb;
+      color: #4b5563;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      min-width: 38px;
+      font-family: inherit;
+    }
+    .pagination button:hover:not(:disabled) {
+      background: #eef2ff;
+      color: #2563EB;
+      border-color: #c7d2fe;
+    }
+    .pagination button.active {
+      background: #2563EB;
+      color: white;
+      border-color: #2563EB;
+    }
+    .pagination button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .pagination.is-hidden { display: none; }
+    .empty-filter {
+      background: white;
+      border: 1px dashed #d1d5db;
+      border-radius: 12px;
+      padding: 36px 24px;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+    .empty-filter.is-hidden { display: none; }
     .post-card {
       background: white;
       border: 1px solid #e5e7eb;
@@ -227,8 +307,16 @@
       <p>부동산·자동차·소득·상속 세금에 대한 실전 가이드와 절세 팁을 정리합니다. 2026년 최신 세율 기준.</p>
     </div>
 
-    <div class="post-list">
-      <article class="post-card">
+    <div class="filter-bar" role="tablist" aria-label="블로그 카테고리 필터">
+      <button class="filter-chip active" data-filter="all" type="button" role="tab" aria-selected="true">전체</button>
+      <button class="filter-chip" data-filter="real-estate" type="button" role="tab" aria-selected="false">부동산 세금</button>
+      <button class="filter-chip" data-filter="finance" type="button" role="tab" aria-selected="false">금융 세금</button>
+      <button class="filter-chip" data-filter="labor" type="button" role="tab" aria-selected="false">근로 세금</button>
+      <span class="filter-count" id="filter-count">전체 3개</span>
+    </div>
+
+    <div class="post-list" id="post-list">
+      <article class="post-card" data-category="labor">
         <div class="post-meta">
           <span class="tag">근로 세금</span>
           <span>2026년 5월 5일</span>
@@ -238,7 +326,7 @@
         <p class="excerpt">회사가 계산해주는 퇴직금, 정말 맞을까요? 평균임금 누락 검증부터 통상임금 비교, IRP 이전으로 퇴직소득세 30% 감면까지. 30~40대 직장인이 평균 800만 원 더 받는 검증 가이드.</p>
       </article>
 
-      <article class="post-card">
+      <article class="post-card" data-category="finance">
         <div class="post-meta">
           <span class="tag">금융 세금</span>
           <span>2026년 5월 5일</span>
@@ -248,7 +336,7 @@
         <p class="excerpt">적금 이자도 주식 배당도 자동으로 15.4%가 빠져나갑니다. ISA·연금저축·증여 분산까지, 30대 직장인이 합법적으로 연 200만 원을 지키는 6단계 절세 가이드. 2026년 최신 기준.</p>
       </article>
 
-      <article class="post-card">
+      <article class="post-card" data-category="real-estate">
         <div class="post-meta">
           <span class="tag">부동산 세금</span>
           <span>2026년 5월 5일</span>
@@ -259,7 +347,105 @@
       </article>
     </div>
 
+    <div class="empty-filter is-hidden" id="empty-filter">
+      해당 카테고리의 글이 아직 없습니다. 다른 카테고리를 선택해보세요.
+    </div>
+
+    <nav class="pagination is-hidden" id="pagination" aria-label="블로그 페이지 이동"></nav>
+
     <a href="/" class="back-link">← 세금계산기로 돌아가기</a>
+
+  <script>
+    (function () {
+      var POSTS_PER_PAGE = 6;
+      var listEl = document.getElementById('post-list');
+      var chips = document.querySelectorAll('.filter-chip');
+      var countEl = document.getElementById('filter-count');
+      var emptyEl = document.getElementById('empty-filter');
+      var pagerEl = document.getElementById('pagination');
+      var allCards = Array.prototype.slice.call(listEl.querySelectorAll('.post-card'));
+      var currentFilter = 'all';
+      var currentPage = 1;
+
+      function visibleCards() {
+        return allCards.filter(function (c) {
+          return currentFilter === 'all' || c.dataset.category === currentFilter;
+        });
+      }
+
+      function render() {
+        var visible = visibleCards();
+        var totalPages = Math.max(1, Math.ceil(visible.length / POSTS_PER_PAGE));
+        if (currentPage > totalPages) currentPage = totalPages;
+        var start = (currentPage - 1) * POSTS_PER_PAGE;
+        var end = start + POSTS_PER_PAGE;
+
+        // 카드 표시 제어
+        allCards.forEach(function (card) {
+          var inFilter = currentFilter === 'all' || card.dataset.category === currentFilter;
+          var idxInFiltered = visible.indexOf(card);
+          var inPage = inFilter && idxInFiltered >= start && idxInFiltered < end;
+          card.classList.toggle('is-hidden', !inPage);
+        });
+
+        // 카운트·empty
+        countEl.textContent = currentFilter === 'all'
+          ? '전체 ' + visible.length + '개'
+          : visible.length + '개 글';
+        emptyEl.classList.toggle('is-hidden', visible.length > 0);
+
+        // 페이지네이션
+        if (visible.length <= POSTS_PER_PAGE) {
+          pagerEl.classList.add('is-hidden');
+          pagerEl.innerHTML = '';
+          return;
+        }
+        pagerEl.classList.remove('is-hidden');
+        pagerEl.innerHTML = '';
+
+        var prev = document.createElement('button');
+        prev.type = 'button';
+        prev.textContent = '←';
+        prev.disabled = currentPage === 1;
+        prev.addEventListener('click', function () { currentPage--; render(); window.scrollTo({top:0,behavior:'smooth'}); });
+        pagerEl.appendChild(prev);
+
+        for (var i = 1; i <= totalPages; i++) {
+          (function (page) {
+            var btn = document.createElement('button');
+            btn.type = 'button';
+            btn.textContent = String(page);
+            if (page === currentPage) btn.classList.add('active');
+            btn.addEventListener('click', function () { currentPage = page; render(); window.scrollTo({top:0,behavior:'smooth'}); });
+            pagerEl.appendChild(btn);
+          })(i);
+        }
+
+        var next = document.createElement('button');
+        next.type = 'button';
+        next.textContent = '→';
+        next.disabled = currentPage === totalPages;
+        next.addEventListener('click', function () { currentPage++; render(); window.scrollTo({top:0,behavior:'smooth'}); });
+        pagerEl.appendChild(next);
+      }
+
+      chips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          chips.forEach(function (c) {
+            c.classList.remove('active');
+            c.setAttribute('aria-selected', 'false');
+          });
+          chip.classList.add('active');
+          chip.setAttribute('aria-selected', 'true');
+          currentFilter = chip.dataset.filter;
+          currentPage = 1;
+          render();
+        });
+      });
+
+      render();
+    })();
+  </script>
   </div>
 
   <footer>
