@@ -1,0 +1,50 @@
+<p data-ke-size="size16">신혼집으로 12억짜리 아파트를 계약한 이 대리는 잔금일에 처음으로 진짜 충격을 받았습니다. 공인중개사가 내민 청구서에는 중개수수료 720만 원이 적혀 있었고, 거기에 부가세 72만 원이 별도로 붙어 총 792만 원이었습니다. "복비는 보통 200~300만 원 아닌가요?"라고 묻자 중개사는 익숙한 듯 설명했습니다. "12억은 매매 기준으로 상한 요율 0.6%가 적용되는 구간입니다. 그게 법으로 정해진 최대치예요." 이미 잔금 자금을 빠듯하게 맞춰둔 이 대리는 그 800만 원을 메우느라 신혼여행 예산까지 헐어야 했습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이건 이 대리만의 이야기가 아닙니다. 매년 수십만 건의 부동산 거래에서 복비 분쟁이 발생하고, 그중 상당수가 "0.5%면 600만 원 정도겠지"라고 어림짐작했던 사람들이 9억&middot;12억&middot;15억 임계값을 모르고 계약에 들어간 경우입니다. "부동산 복비는 0.4%"라는 단순한 정보만 믿고 자금 계획을 세우다가, 잔금일에 두 배 이상이 적힌 청구서를 받아드는 일이 매주 어딘가에서 벌어집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">부동산 복비는 왜 같은 가격대에서도 차이가 큰가?</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">부동산 중개수수료는 거래금액과 거래 유형(매매&middot;전세)에 따라 6단계로 갈립니다. 주택 <b>매매</b> 기준으로 5천만 원 미만은 0.6%(한도 25만 원), 5천~2억은 0.5%(한도 80만 원), 2억~9억은 0.4% 상한, <b>9억~12억은 0.5%</b>, <b>12억~15억은 0.6%</b>, <b>15억 이상은 0.7%</b>가 적용됩니다. 같은 아파트라도 8억 9천에 거래되면 356만 원이지만, 9억 1천에 거래되면 455만 원으로 100만 원 가까이 뛰는 임계값 효과가 발생합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>전세 거래</b>는 별도 요율표가 적용됩니다. 5천 미만 0.5%, 5천~1억 0.4%, 1억~6억 0.3%, 6억~12억 0.4%, 12억~15억 0.5%, 15억 이상 0.6%. 매매보다 한 단계씩 낮은 구조지만, 보증금 자체가 크기 때문에 절대 금액은 결코 작지 않습니다. 게다가 명시된 요율은 모두 <b>상한선</b>입니다. 즉 협의를 통해 더 낮출 수 있는 여지가 있는데, 이 사실을 모르고 상한 그대로 지불하는 거래가 부지기수입니다. 오피스텔(주거용 85㎡ 이하는 매매 0.5%&middot;전세 0.4%, 그 외는 0.9% 협의), 상가&middot;토지&middot;공장(0.9% 협의)는 또 다른 체계라 동일한 가격대라도 부담이 달라집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">계산기 한 번이 협의 카드와 정확한 자금을 동시에 준다</h2>
+<p data-ke-size="size16">[taxcalc.co.kr](http://taxcalc.co.kr)의 부동산 중개수수료 계산기는 이 다층 요율표를 한 화면에서 처리합니다. 거래 유형(매매/전세/월세), 부동산 종류(주택/오피스텔/상가/토지), 거래금액, 부가세 적용 여부만 입력하면 30초 안에 상한 요율, 상한 금액, 부가세 포함 총액, 협의 시 절감 가능액까지 모두 표시됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">화면에 표시되는 정보는 단순 수수료 숫자에 그치지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>구간별 상한 요율 자동 매칭</b> : 9억&middot;12억&middot;15억 임계값을 자동 비교해 어느 구간에 속하는지 즉시 표시</p>
+<p data-ke-size="size16">- <b>매매 vs 전세 vs 월세 동시 비교</b> : 같은 부동산을 매매할 때와 전세로 들어갈 때의 복비 차이를 한눈에 확인</p>
+<p data-ke-size="size16">- <b>부가세 10% 포함액 표시</b> : 중개사가 일반과세자인 경우 부가세 별도 안내, 간이과세자라면 미포함 처리</p>
+<p data-ke-size="size16">- <b>오피스텔 주거용 판정</b> : 전용 85㎡ 이하 주거용 여부에 따라 0.5% vs 0.9% 자동 분기</p>
+<p data-ke-size="size16">- <b>협의 시뮬레이션</b> : 0.1%p, 0.2%p 인하 협상 시 절감액을 즉시 계산해 협상 카드 제공</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">직접 손으로 계산하면 거래 유형별 요율표를 뒤져가며 평균 10~15분이 걸리고, 부가세나 임계값 구간을 놓치는 실수가 잦습니다. 계산기를 쓰면 30초 안에 끝납니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">자주 묻는 질문</h2>
+<p data-ke-size="size16"><b>Q. 명시된 요율보다 낮게 협의할 수 있나요?</b></p>
+<p data-ke-size="size16">A. 가능합니다. 법으로 정해진 요율은 모두 "상한"이므로 그 안에서 자유롭게 협상할 수 있습니다. 다만 계약 체결 전에 명시적으로 합의해 계약서에 적어두어야 하고, 잔금일에 갑자기 깎아달라고 하면 분쟁 사유가 됩니다. 계약 직전 단계에서 "0.5%를 0.4%로 해주실 수 있나요?"라고 정중히 제안하는 것이 일반적입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q. 부가세 10%는 무조건 내야 하나요?</b></p>
+<p data-ke-size="size16">A. 중개사 사업자 유형에 따라 다릅니다. <b>일반과세자</b>라면 부가세 별도 청구가 원칙이고, 연 매출 8천만 원 미만 <b>간이과세자</b>라면 부가세를 별도로 받을 수 없습니다. 계약 전 중개사에게 사업자 유형을 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q. 잔금일에 적힌 금액이 예상보다 많으면 어떻게 하나요?</b></p>
+<p data-ke-size="size16">A. 우선 거래금액 구간별 상한 요율을 계산기로 검증하고, 상한을 초과한 부분이 있다면 명백한 위법입니다. 한국공인중개사협회나 관할 시&middot;군&middot;구청에 신고할 수 있고, 초과 수령액 환급 청구도 가능합니다. 잔금 지급 전 영수증을 꼼꼼히 확인하는 게 가장 안전합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<center><a href="https://taxcalc.co.kr/#real-estate/commission" target="_blank" rel="noopener" aria-label="부동산 중개수수료 계산기 바로가기"> <button class="arenabt star1"> 부동산 복비 계산기 바로가기 </button> </a></center>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">결론: 계약서 도장 찍기 전 30초</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">이 대리처럼 단순 어림짐작으로 자금 계획을 세운 사람은 잔금일에 800만 원의 자금 공백에 맞닥뜨립니다. 반대로 같은 매물을 본 박 과장은 [taxcalc.co.kr](http://taxcalc.co.kr)에서 미리 30초 시뮬레이션을 돌려 720만 원 + 부가세 72만 원을 정확히 인지하고, 거기에 0.5%를 0.45%로 협의해 60만 원을 추가로 아끼며 계약을 마무리했습니다. 두 사람의 잔금일 분위기는 완전히 달랐습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">매매든 전세든 계약서에 도장 찍기 전, 반드시 계산기부터 두드려야 합니다. 거래 유형, 거래금액, 부동산 종류, 부가세, 협의 여지까지 한 번에 반영된 정확한 결과가 30초 안에 손에 들어옵니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">지금 [taxcalc.co.kr](http://taxcalc.co.kr) 부동산 중개수수료 계산기에서 <b>내 복비 30초 만에 확인하기</b>. 계약 전 5분이 800만 원 자금 공백과 협상 카드를 동시에 손에 쥐여줍니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<!-- 해시태그 (티스토리 태그 입력란에 붙여넣기) -->
+<!-- 부동산복비, 중개수수료, 중개보수계산기, 공인중개사수수료, 매매중개수수료, 전세중개수수료, 복비부가세, 오피스텔복비, 부동산거래, taxcalc -->

@@ -1,0 +1,50 @@
+<p data-ke-size="size16">서울에서 출퇴근하는 박 과장은 어느 화요일 아침, 우편함에서 한 통의 통지서를 발견하고 멈칫했습니다. "어린이보호구역 속도위반, 과태료 16만 원." 분명 평소 다니던 길이었고 시속 50km 정도로 달렸을 뿐인데, 제한속도 30km 구간에서 22km 초과로 단속에 걸린 것이었습니다. "20km 좀 넘은 건데 7만 원 정도 아닌가?" 하며 인터넷을 뒤졌지만, 알고 보니 어린이보호구역은 일반 도로의 두 배가 적용된다는 사실을 그제야 알았습니다. 게다가 이번이 두 번째 위반이라 자동차 보험료 할증까지 다음 갱신 때 기다리고 있었습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이건 박 과장만의 이야기가 아닙니다. 매년 수백만 건의 속도위반 통지서가 발송되며, 그중 상당수가 어린이보호구역과 일반도로의 차등을 모른 채 "그래도 몇 만 원이겠지" 하고 안일하게 생각하던 운전자들입니다. "20km 초과 = 7만 원"이라는 단순 정보만 믿고 있다가, 실제 통지서에 찍힌 두 자릿수 만 원에 깜짝 놀라는 일이 흔합니다. 거기에 벌점&middot;면허정지&middot;보험료 할증까지 연쇄적으로 따라오면, 한 번의 부주의가 1년 단위로 부담을 키웁니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">속도위반은 왜 과태료와 범칙금으로 나뉘는가?</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">속도위반 처분은 단속 방식에 따라 두 갈래로 갈립니다. 무인 카메라(과속 단속 카메라)에 찍히면 차량 소유주에게 <b>과태료</b>가 부과되고, 경찰이 직접 정차시켜 단속하면 운전자에게 <b>범칙금</b>과 <b>벌점</b>이 함께 부과됩니다. 두 처분의 가장 큰 차이는 벌점입니다. 과태료는 벌점이 없지만 범칙금은 위반 정도에 따라 15~60점이 누적되어 면허정지&middot;취소로 직결됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">금액 자체도 구간별로 천차만별입니다. 일반도로 기준으로 20km/h 이하 초과는 4만 원, 20~40km/h는 7만 원, 40~60km/h는 10만 원, 60km/h 초과는 13만 원이 적용되고, 80km/h를 넘기면 형사처벌(30만 원 이하 벌금 또는 구류) 대상이 됩니다. 그런데 같은 속도라도 <b>어린이보호구역</b>이라면 모든 금액이 두 배로 가산됩니다. 박 과장처럼 22km 초과가 16만 원이 되는 건 이 가산 규정 때문입니다. 게다가 자동차 보험은 1년 내 두 번 이상 위반 시 갱신 보험료가 5~10% 할증되니, 통지서 한 장이 끝이 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">계산기 한 번이 진짜 부담액을 정확히 알려준다</h2>
+<p data-ke-size="size16">[taxcalc.co.kr](http://taxcalc.co.kr)의 속도위반 과태료 계산기는 이 모든 변수를 한 화면에서 처리합니다. 도로 종류(일반/어린이보호구역/노인보호구역), 차량 종류(승용/승합/이륜), 초과 속도, 단속 방식(무인/현장)만 입력하면 30초 안에 정확한 부담액과 벌점, 사전납부 시 감경액까지 모두 표시됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">화면에 표시되는 정보는 단순 금액에 그치지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>구간별 자동 매칭</b> : 20km 이하&middot;20~40km&middot;40~60km&middot;60km 초과 각 구간의 금액을 즉시 비교</p>
+<p data-ke-size="size16">- <b>어린이&middot;노인보호구역 자동 가산</b> : 일반도로 대비 2배 적용을 자동 처리해 누락 방지</p>
+<p data-ke-size="size16">- <b>과태료 vs 범칙금 비교</b> : 같은 위반에 대한 두 처분의 금액&middot;벌점 차이를 한눈에 확인</p>
+<p data-ke-size="size16">- <b>사전납부 20% 감경 안내</b> : 의견제출 기간 내 자진납부 시 자동 할인 금액 표시</p>
+<p data-ke-size="size16">- <b>벌점 누적 경고</b> : 1년 누적 40점&middot;1회 60점 등 면허정지 임계값 도달 여부 안내</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">직접 손으로 계산하면 도로교통법 시행령 표를 뒤져가며 평균 10~15분이 걸리고, 보호구역 가산이나 사전납부 감경을 빠뜨리는 실수가 잦습니다. 계산기를 쓰면 30초 안에 끝납니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">자주 묻는 질문</h2>
+<p data-ke-size="size16"><b>Q. 사전납부하면 정말 20% 감경되나요?</b></p>
+<p data-ke-size="size16">A. 네, 의견제출 기간(통지서 발송 후 약 20일 이내) 내에 자진 납부하면 과태료의 20%가 자동 감경됩니다. 단, 이의제기를 했다가 패소하면 정상가로 부과되니 감경 효과를 노린다면 빠른 결정이 유리합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q. 과태료를 내면 보험료도 할증되나요?</b></p>
+<p data-ke-size="size16">A. 과태료(무인단속)는 보험료 할증 사유에 포함되지 않습니다. 다만 같은 위반을 현장 단속에서 적발돼 범칙금 처분을 받았다면 1년 내 2회 이상부터 갱신 시 5~10% 할증 대상이 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q. 통지서에 적힌 금액과 계산기 결과가 다르면 어느 쪽이 맞나요?</b></p>
+<p data-ke-size="size16">A. 통지서 금액이 우선이지만, 계산기는 도로교통법 기준 표준액을 보여주므로 큰 차이가 없어야 합니다. 차이가 크다면 단속 위치(보호구역 여부)나 누적 위반 가산이 적용된 경우일 수 있으니 통지서 상세 내역을 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<center><a href="https://taxcalc.co.kr/#fines/traffic" target="_blank" rel="noopener" aria-label="속도위반 과태료 계산기 바로가기"> <button class="arenabt star1"> 속도위반 과태료 계산기 바로가기 </button> </a></center>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">결론: 운전대 잡기 전 30초</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">박 과장처럼 일반도로 기준으로만 생각하다 어린이보호구역 단속에 걸린 운전자는 예상의 두 배를 부담하게 됩니다. 반대로 같은 길을 다니던 김 대리는 [taxcalc.co.kr](http://taxcalc.co.kr)에서 미리 시뮬레이션을 돌려보고 어린이보호구역에서는 GPS 알림에 더 신경을 썼고, 결과적으로 1년간 무사고를 유지해 보험 갱신 때 무사고 할인까지 챙겼습니다. 두 사람의 운전 습관 차이는 결국 통장 잔고로 갈렸습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이미 통지서를 받았다면 사전납부 감경부터, 아직 단속 전이라면 위반 시 진짜 부담액 시뮬레이션부터 먼저 확인해야 합니다. 도로 종류, 초과 속도, 사전납부 감경, 벌점 임계값까지 한 번에 반영된 정확한 결과가 30초 안에 손에 들어옵니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">지금 [taxcalc.co.kr](http://taxcalc.co.kr) 속도위반 과태료 계산기에서 <b>내 위반 부담액 30초 만에 확인하기</b>. 통지서 받기 전 5분이 16만 원과 보험할증을 막아줍니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<!-- 해시태그 (티스토리 태그 입력란에 붙여넣기) -->
+<!-- 속도위반과태료, 속도위반범칙금, 어린이보호구역과태료, 민식이법, 과태료계산기, 범칙금벌점, 사전납부감경, 자동차보험할증, 교통위반, taxcalc -->

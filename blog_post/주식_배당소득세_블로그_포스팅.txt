@@ -1,0 +1,49 @@
+<p data-ke-size="size16">대기업에 다니는 이 차장은 매년 봄마다 들어오는 배당금이 큰 즐거움이었습니다. 5년간 꾸준히 모아온 우량주 포트폴리오에서 작년 한 해에만 배당금 2,400만 원이 통장에 꽂혔습니다. 이미 15.4% 원천징수가 끝났으니 추가 부담은 없을 거라 믿으며 그 돈으로 가족 해외여행을 다녀왔습니다. 그런데 이듬해 5월, 종합소득세 신고 안내문을 받아든 순간 등에서 식은땀이 흘렀습니다. 추가로 내야 할 세금이 무려 1,200만 원이었습니다. "원천징수로 끝난 거 아니었어요?" 세무사 사무실에 황급히 전화를 걸었지만 돌아온 답은 단호했습니다. "금융소득이 2,000만 원을 넘으면 종합과세 대상입니다. 다른 근로소득과 합산해서 다시 계산해야 해요."</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이건 이 차장만의 이야기가 아닙니다. 매년 5월이면 수만 명의 직장인 투자자가 똑같은 폭탄을 맞습니다. 배당금을 받을 때 이미 세금이 빠져나갔다는 사실에 안심하고 있다가, 1년 뒤 종합과세 통보를 받고 나서야 자신이 누진세율 38~45% 구간에 속해 있었다는 걸 깨닫는 것입니다. "주식 배당세 15.4%"라는 단순한 정보만 믿고 자금 계획을 세우는 순간, 예상하지 못한 천만 원 단위의 추가 세금이 현실이 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">배당소득세는 왜 두 갈래로 갈리는가?</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">한국의 배당소득세는 두 단계로 작동합니다. 첫 번째는 배당금이 입금될 때 자동으로 떼이는 <b>원천징수 15.4%</b>(소득세 14% + 지방소득세 1.4%)이고, 두 번째는 연말 정산 후 결정되는 <b>금융소득 종합과세</b>입니다. 연간 이자소득과 배당소득을 합한 금액이 2,000만 원을 넘는 순간, 초과분이 다른 근로소득&middot;사업소득과 합산되어 누진세율(6~45%)이 다시 적용됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">문제는 이 누진세율이 생각보다 빠르게 올라간다는 점입니다. 연봉 8,800만 원 직장인이 배당 2,400만 원을 받으면 초과분 400만 원에 35% 구간이 적용되고, 연봉 1억 5천 이상이면 38% 구간에 진입합니다. 이미 떼인 원천징수 15.4%보다 훨씬 무거운 세금이 추가로 부과되는 구조입니다. 게다가 종합과세 대상자가 되면 건강보험 피부양자 자격 박탈, 건보료 추가 부과까지 연쇄적으로 따라옵니다. 단순히 세금 1,200만 원이 아니라 건보료 부담까지 더하면 실제 충격은 그 이상입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">계산기 한 번이 종합과세 폭탄을 막는다</h2>
+<p data-ke-size="size16">[taxcalc.co.kr](http://taxcalc.co.kr)의 배당소득세 계산기는 이 두 단계를 한 화면에서 시뮬레이션합니다. 연간 예상 배당금, 이자소득, 다른 근로&middot;사업소득만 입력하면 30초 안에 분리과세로 끝나는지, 종합과세 대상인지, 추가 세금이 얼마인지가 명확하게 표시됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">화면에 표시되는 정보는 단순한 세액 숫자에 그치지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>분리과세 vs 종합과세 자동 판정</b> : 2,000만 원 임계값을 자동 비교해 어느 쪽이 적용되는지 즉시 표시</p>
+<p data-ke-size="size16">- <b>누진세율 구간 표시</b> : 본인 종합소득이 어느 구간(6%&middot;15%&middot;24%&middot;35%&middot;38%&middot;40%&middot;42%&middot;45%)에 속하는지 시각적으로 안내</p>
+<p data-ke-size="size16">- <b>원천징수 기납부세액 차감</b> : 이미 떼인 15.4%를 자동 반영해 5월에 추가로 낼 세금만 정확히 계산</p>
+<p data-ke-size="size16">- <b>ISA&middot;연금계좌 시뮬레이션</b> : 같은 배당을 ISA 계좌에서 받았을 때 절세 효과 비교</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">직접 손으로 계산하면 누진세율 표 조회부터 기납부세액 차감까지 평균 20~30분이 걸리고, 지방소득세 10% 가산을 빠뜨리는 실수가 빈번합니다. 계산기를 쓰면 그 모든 과정이 30초로 압축됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">자주 묻는 질문</h2>
+<p data-ke-size="size16"><b>Q. 해외주식 배당도 똑같이 종합과세 대상인가요?</b></p>
+<p data-ke-size="size16">A. 네, 국내&middot;해외 모두 합산됩니다. 미국 주식은 현지 15% 원천징수 후 국내 추가 과세는 없지만, 종합과세 2,000만 원 한도에는 포함됩니다. 중국&middot;홍콩 등 일부 국가는 현지 세율이 다르니 별도 확인이 필요합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q. ISA 계좌에서 받은 배당도 과세되나요?</b></p>
+<p data-ke-size="size16">A. ISA는 연 200만 원(서민형 400만 원)까지 비과세이며, 초과분은 9.9% 분리과세로 끝납니다. 종합과세 합산 대상에서도 제외되어 고소득자에게 특히 유리합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q. 부부가 나눠서 받으면 절세할 수 있나요?</b></p>
+<p data-ke-size="size16">A. 가능합니다. 배당주를 배우자에게 사전 증여(10년 합산 6억 원까지 비과세)한 뒤 배당을 분산 수령하면 두 사람 모두 2,000만 원 한도 내에 머물러 종합과세를 회피할 수 있습니다. 다만 명의신탁으로 의심받지 않도록 실질 증여가 이루어져야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<center><a href="https://taxcalc.co.kr/#stocks/dividend" target="_blank" rel="noopener" aria-label="배당소득세 계산기 바로가기"> <button class="arenabt star1"> 배당소득세 계산기 바로가기 </button> </a></center>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">결론: 5월 폭탄 막는 30초</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">이 차장처럼 원천징수 15.4%만 믿고 있던 투자자는 5월에 추가 세금 1,200만 원과 건보료 인상 통보를 함께 받습니다. 반대로 같은 포트폴리오를 가진 김 부장은 [taxcalc.co.kr](http://taxcalc.co.kr)에서 미리 30초 시뮬레이션을 돌려 종합과세 대상임을 미리 알고, 일부 배당주를 ISA 계좌로 옮겨 추가 세금을 350만 원으로 줄였습니다. 두 사람의 5월 표정은 정반대였습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">배당주에 투자 중이거나 신규 매수를 고민하고 있다면, 한 해가 끝나기 전에 반드시 계산기부터 두드려야 합니다. 분리과세&middot;종합과세 판정, 누진세율 구간, 추가 세금까지 한 번에 반영된 정확한 시뮬레이션이 30초 안에 손에 들어옵니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">지금 [taxcalc.co.kr](http://taxcalc.co.kr) 배당소득세 계산기에서 <b>내 5월 추가 세금 30초 만에 확인하기</b>. 12월 마감 전 5분이 1,200만 원의 폭탄을 막아줍니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<!-- 해시태그 (티스토리 태그 입력란에 붙여넣기) -->
+<!-- 배당소득세, 배당소득세계산기, 금융소득종합과세, 배당금세금, 주식세금, ISA비과세, 해외주식배당, 원천징수, 종합소득세신고, taxcalc -->
