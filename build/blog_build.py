@@ -518,16 +518,6 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 
     <p class="lead">{description}</p>
 
-    <div class="ad-slot">
-      <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-2792604427181547"
-        data-ad-slot="auto"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
-    </div>
-
     {body_html}
 
     <div class="ad-slot">

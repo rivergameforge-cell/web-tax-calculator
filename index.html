@@ -348,11 +348,100 @@
           <div id="view-welcome" class="calculator-view active">
             <div class="welcome-screen">
               <div class="welcome-icon">₩</div>
-              <h1 class="welcome-title">대한민국 세금 계산기</h1>
-              <p class="welcome-desc">부동산, 자동차, 주식, 소득 등 대한민국의 모든 세금을 한 곳에서 정확하게 계산하세요.<br>2026년 최신 세율 기준으로 계산됩니다.</p>
+              <h1 class="welcome-title">대한민국 세금 계산기 — 2026년 최신 세율</h1>
+              <p class="welcome-desc">부동산, 자동차, 주식, 소득 등 대한민국의 모든 세금을 한 곳에서 정확하게 계산하세요.<br>2026년 최신 세율 기준, 회원가입 없이 무료로 이용할 수 있습니다.</p>
 
-              <!-- 카테고리별 개별 계산기 카드 -->
+              <!-- 카테고리별 개별 계산기 카드 (JS 렌더링) -->
               <div class="welcome-catalog" id="welcome-catalog"></div>
+
+              <!-- 정적 도입 콘텐츠 (검색엔진 봇이 JS 없이도 사이트 가치를 평가할 수 있도록) -->
+              <section class="welcome-intro">
+                <h2>세금계산기 소개</h2>
+                <p>taxcalc.co.kr은 2026년 최신 세율을 기준으로 한국 주요 세금을 누구나 빠르게 계산할 수 있는 무료 온라인 도구입니다. 부동산 취득세부터 자동차세, 종합소득세, 상속·증여세, 주식 양도소득세까지 <strong>56종 이상의 계산기</strong>를 한 곳에서 제공합니다. 모든 계산은 이용자 브라우저 내부에서 처리되며, 입력값이 서버로 전송되거나 저장되지 않습니다.</p>
+                <p>세율과 공식은 <strong>국세청, 행정안전부, 국토교통부, 금융감독원</strong> 등 공식 자료를 기반으로 작성되며, 세법 개정 시점에 맞춰 정기적으로 업데이트됩니다. 단순한 세율표가 아니라 다주택 중과·일시적 2주택 특례·생애최초 감면 등 실제 적용되는 예외 규정까지 자동 반영합니다. <a href="/about.html">사이트 운영 원칙과 데이터 출처</a>를 확인하실 수 있습니다.</p>
+
+                <h2>카테고리별 주요 계산기</h2>
+                <div class="welcome-static-grid">
+                  <div class="welcome-static-cat">
+                    <h3>🏠 부동산 세금</h3>
+                    <ul>
+                      <li><a href="/real-estate/acquisition.html">취득세 계산기</a></li>
+                      <li><a href="/real-estate/capital-gains.html">양도소득세 계산기</a></li>
+                      <li><a href="/real-estate/property-tax.html">재산세 계산기</a></li>
+                      <li><a href="/real-estate/comprehensive.html">종합부동산세 계산기</a></li>
+                      <li><a href="/real-estate/rental-income.html">임대소득세 계산기</a></li>
+                      <li><a href="/real-estate/commission.html">부동산 중개수수료 계산기</a></li>
+                      <li><a href="/real-estate/officetel-acquisition.html">오피스텔 취득세 계산기</a></li>
+                      <li><a href="/real-estate/total-cost.html">부동산 매매 총비용 계산기</a></li>
+                    </ul>
+                  </div>
+                  <div class="welcome-static-cat">
+                    <h3>💼 소득세</h3>
+                    <ul>
+                      <li><a href="/income/salary.html">연봉 실수령액 계산기</a></li>
+                      <li><a href="/income/comprehensive.html">종합소득세 계산기</a></li>
+                      <li><a href="/income/business.html">사업소득세 계산기</a></li>
+                      <li><a href="/income/freelancer.html">프리랜서 3.3% 세금 계산기</a></li>
+                      <li><a href="/income/retirement.html">퇴직소득세 계산기</a></li>
+                      <li><a href="/income/severance.html">퇴직금 계산기</a></li>
+                      <li><a href="/income/vat.html">부가가치세 계산기</a></li>
+                      <li><a href="/income/corporate.html">법인세 계산기</a></li>
+                    </ul>
+                  </div>
+                  <div class="welcome-static-cat">
+                    <h3>🚗 자동차·교통</h3>
+                    <ul>
+                      <li><a href="/vehicle/vehicle-tax.html">자동차세 계산기</a></li>
+                      <li><a href="/vehicle/acquisition.html">자동차 취득세 계산기</a></li>
+                      <li><a href="/vehicle/buying.html">자동차 구매 총비용 계산기</a></li>
+                      <li><a href="/vehicle/installment.html">자동차 할부금 계산기</a></li>
+                      <li><a href="/fines/traffic.html">교통 과태료 계산기</a></li>
+                      <li><a href="/fines/parking.html">주정차 위반 과태료 계산기</a></li>
+                    </ul>
+                  </div>
+                  <div class="welcome-static-cat">
+                    <h3>📈 주식·금융</h3>
+                    <ul>
+                      <li><a href="/stocks/domestic.html">국내주식 양도소득세 계산기</a></li>
+                      <li><a href="/stocks/foreign.html">해외주식 양도소득세 계산기</a></li>
+                      <li><a href="/stocks/dividend.html">배당소득세 계산기</a></li>
+                      <li><a href="/income/interest-dividend.html">이자·배당소득세 계산기</a></li>
+                      <li><a href="/loan/calculator.html">대출금 계산기</a></li>
+                      <li><a href="/loan/ltv.html">LTV 계산기</a></li>
+                      <li><a href="/loan/dsr.html">DSR 계산기</a></li>
+                    </ul>
+                  </div>
+                  <div class="welcome-static-cat">
+                    <h3>📜 상속·증여</h3>
+                    <ul>
+                      <li><a href="/inherit/inheritance.html">상속세 계산기</a></li>
+                      <li><a href="/inherit/gift.html">증여세 계산기</a></li>
+                    </ul>
+                  </div>
+                  <div class="welcome-static-cat">
+                    <h3>📝 실전 가이드 (블로그)</h3>
+                    <ul>
+                      <li><a href="/blog/property-tax-guide.html">재산세 7·9월 분할 납부와 1주택 특례</a></li>
+                      <li><a href="/blog/vehicle-acquisition-tax-guide.html">신차 자동차 취득세 7%·5%·4% 차이</a></li>
+                      <li><a href="/blog/severance-pay-guide.html">퇴직금·평균임금·IRP 절세 가이드</a></li>
+                      <li><a href="/blog/dividend-tax-saving.html">이자·배당소득세 절세 6단계</a></li>
+                      <li><a href="/blog/officetel-acquisition.html">오피스텔 취득세 4.6% 함정</a></li>
+                      <li><a href="/blog/">블로그 전체 보기 →</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h2>왜 taxcalc.co.kr인가?</h2>
+                <ul class="welcome-points">
+                  <li><strong>2026년 최신 세율 즉시 반영</strong> — 매년 1월·7월 정기 업데이트 + 긴급 개정 시 24시간 내 패치</li>
+                  <li><strong>실전 예외 규정 자동 적용</strong> — 다주택 중과, 일시적 2주택, 생애최초 감면, 1억 이하 오피스텔 예외 등</li>
+                  <li><strong>완전 무료, 회원가입 불필요</strong> — 광고 수익만으로 운영되며 모든 계산기 영구 무료</li>
+                  <li><strong>개인정보 비수집</strong> — 모든 계산은 브라우저 내부 처리, 입력값 서버 전송 없음</li>
+                  <li><strong>교차 검증된 결과</strong> — 국세청 홈택스·위택스 공식 시뮬레이터와 샘플 케이스 비교 검증</li>
+                </ul>
+
+                <p class="welcome-cta-text">왼쪽 카테고리에서 원하는 계산기를 선택하거나, 위 목록에서 직접 이동하실 수 있습니다. 세금 신고 시즌(5월 종합소득세, 7·9월 재산세, 12월 자동차세)이 다가올수록 사이트 방문이 증가하니 즐겨찾기 추가를 권장합니다.</p>
+              </section>
             </div>
           </div>
 
