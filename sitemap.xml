@@ -32,6 +32,12 @@
   </url>
   <!-- 블로그 -->
   <url>
+    <loc>https://taxcalc.co.kr/blog/pension-saving-irp-credit.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://taxcalc.co.kr/blog/monthly-rent-tax-credit.html</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>monthly</changefreq>
