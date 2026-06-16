@@ -74,6 +74,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "부동산_복비_계산방법",
+        "slug": "commission-calculation-method",
+        "category": "real-estate",
+        "categoryLabel": "부동산 세금",
+        "date": "2026-06-16",
+        "readMin": 5,
+        "ctaHref": "/real-estate/commission.html",
+        "ctaLabel": "부동산 중개수수료 계산기",
+        "related": [
+            ("/real-estate/commission.html", "부동산 중개수수료 계산기"),
+            ("/real-estate/total-cost.html", "부동산 매매 총비용 계산기"),
+            ("/real-estate/acquisition.html", "취득세 계산기"),
+            ("/real-estate/officetel-acquisition.html", "오피스텔 취득세 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "속도위반_과태료_블로그_포스팅",
         "slug": "speeding-fine-guide",
         "category": "fines",

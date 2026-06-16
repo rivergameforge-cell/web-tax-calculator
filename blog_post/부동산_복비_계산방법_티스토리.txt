@@ -1,0 +1,76 @@
+<p data-ke-size="size16">"복비요? 그냥 부동산에서 달라는 대로 드렸죠."</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">전세 보증금 4억 원으로 신혼집을 구한 이서연 씨는 잔금일에 중개사가 부른 <b>160만 원</b>을 그대로 계좌이체했습니다. 그런데 몇 달 뒤 친구와 얘기하다 알게 됐죠. 같은 4억 전세인데 친구는 <b>64만 원</b>만 냈다는 겁니다. 이서연 씨는 96만 원을 더 낸 셈이었습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이런 일이 생각보다 흔합니다. 한국공인중개사협회에 접수되는 분쟁 중 상위권이 바로 <b>중개수수료 과다 청구</b>입니다. 상한 요율을 모르면 부르는 대로 낼 수밖에 없고, 그 차액은 고스란히 손해로 남습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">오늘은 복비를 더 내고 후회하지 않도록, <b>실제 분쟁 사례</b>와 <b>현장에서 통하는 협상 타이밍</b>을 정리해 보겠습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">복비 과다 청구, 실제로 이렇게 당한다</h2>
+
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>사례 1. 전세 상한 요율 착각</b> : 4억 전세는 상한 요율 0.3%(법정 한도 내 협의)가 적용되어 최대 120만 원, 실제 협의로는 64만~80만 원 선. 그런데 매매 요율 0.4%를 적용해 160만 원을 청구당하는 경우가 많습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>사례 2. 상한이 '정가'인 줄 안다</b> : 상한 요율은 말 그대로 '최대치'이지 정해진 금액이 아닙니다. 그런데 대부분 상한이 곧 청구액이라 생각하고 협상 한 번 안 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>사례 3. 부가세 슬쩍 추가</b> : 간이과세자인데도 부가세 10%를 별도로 붙이거나, 일반과세자가 부가세를 고지 없이 합산해 부르는 경우. 사업자 유형은 반드시 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>사례 4. 월세 환산보증금 부풀리기</b> : 월세는 '보증금 + 월세&times;100'으로 환산해 요율을 매기는데, 이 환산식을 유리하게 적용해 더 높은 구간으로 끌어올리는 경우가 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">복비 깎는 협상, 타이밍이 전부다</h2>
+
+<p data-ke-size="size16">복비는 법적으로 <b>상한 내에서 협의</b>하게 되어 있습니다. 즉 깎는 게 정당한 권리입니다. 문제는 타이밍입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>최악의 타이밍</b> : 잔금일 당일. 이미 거래가 끝나 협상 카드가 없습니다. 부르는 대로 낼 수밖에 없죠.</p>
+<p data-ke-size="size16">- <b>최고의 타이밍</b> : <b>가계약금 넣기 직전</b>. "복비는 얼마로 해주실 수 있나요?"를 이때 물어야 합니다. 중개사 입장에서 거래를 성사시키고 싶은 시점이라 조정 여지가 큽니다.</p>
+<p data-ke-size="size16">- <b>실전 멘트</b> : "상한이 0.4%인 건 아는데, 0.3%로 부탁드려도 될까요?" 구체적 숫자를 제시하면 성공률이 올라갑니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">협상 전에 <b>정확한 상한액을 먼저 계산</b>해 두는 게 핵심입니다. 근거 숫자를 쥐고 있어야 "그건 상한을 넘는데요"라고 말할 수 있으니까요. [taxcalc.co.kr](http://taxcalc.co.kr)의 부동산 중개수수료 계산기로 매매&middot;전세&middot;월세별 상한을 30초면 확인할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">이미 더 냈다면? 환급받는 법</h2>
+
+<p data-ke-size="size16">상한을 초과해 냈다면 돌려받을 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>1단계</b> : 영수증&middot;계좌이체 내역 확보 (현금영수증 발급 요청은 필수)</p>
+<p data-ke-size="size16">- <b>2단계</b> : 관할 시&middot;군&middot;구청 부동산중개업 담당 부서 또는 한국공인중개사협회에 신고</p>
+<p data-ke-size="size16">- <b>3단계</b> : 초과분 반환 요청. 중개사가 거부하면 지자체가 행정지도 또는 과태료 처분</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">초과 청구는 공인중개사법 위반으로, 중개사에게 과태료가 부과될 수 있습니다. 그래서 대부분 신고 단계에서 순순히 반환합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">자주 묻는 질문</h2>
+
+<p data-ke-size="size16"><b>Q1. 복비도 현금영수증 되나요?</b></p>
+<p data-ke-size="size16">됩니다. 중개수수료는 현금영수증 의무발행 대상입니다. 발급을 거부하면 그 자체가 위반이며, 연말정산 소득공제도 받을 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q2. 매도자와 매수자 둘 다 복비를 내나요?</b></p>
+<p data-ke-size="size16">네, 중개사는 양쪽(매도인&middot;매수인) 각각에게 수수료를 받습니다. 본인이 내는 건 본인 몫 한쪽뿐입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q3. 계약이 깨지면 복비를 내야 하나요?</b></p>
+<p data-ke-size="size16">중개사 과실이 아닌 단순 변심으로 깨졌다면 중개 행위가 완료되지 않아 원칙적으로 지급 의무가 없습니다. 다만 분쟁 소지가 있으니 계약 전 특약으로 명시해 두는 게 좋습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<center><a href="https://taxcalc.co.kr/#real-estate/commission" target="_blank" rel="noopener" aria-label="부동산 중개수수료 계산기 바로가기"> <button class="arenabt star1"> 부동산 중개수수료 계산기 바로가기 </button> </a></center>
+
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">결론: 알고 가면 깎이고, 모르고 가면 더 낸다</h2>
+
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이서연 씨가 가계약 전에 상한액을 알고 "0.3%로 해주세요" 한마디만 했어도 96만 원을 아꼈을 겁니다. 복비는 부르는 대로 내는 돈이 아니라 <b>협의하는 돈</b>입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">부동산에 가기 전, 먼저 [taxcalc.co.kr](http://taxcalc.co.kr)에서 내 거래의 상한액부터 확인하세요. 숫자를 쥐고 가는 사람과 빈손으로 가는 사람의 복비는 100만 원 가까이 차이 납니다.</p>
+
+<!-- 해시태그 (티스토리 태그 입력란에 붙여넣기) -->
+<!-- 부동산복비, 중개수수료, 복비협상, 복비환급, 전세복비, 부동산수수료계산, 공인중개사, 현금영수증, taxcalc, 부동산거래 -->
