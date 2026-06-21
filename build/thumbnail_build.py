@@ -81,7 +81,8 @@ CARD_TEMPLATE = """<!DOCTYPE html>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <style>
     * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-    body {{ font-family: 'Pretendard', -apple-system, sans-serif; background: #e5e7eb; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }}
+    body {{ font-family: 'Pretendard', -apple-system, sans-serif; background: #e5e7eb; margin: 0; padding: 0; }}
+    /* 캡처용: 뷰포트 1200x630 풀스크린 스크린샷 시 카드가 정확히 꽉 참 */
     .thumb {{
       width: 1200px; height: 630px;
       background: linear-gradient(135deg, {grad0} 0%, {grad1} 100%);
@@ -183,12 +184,24 @@ def render_card(meta, parsed):
 
 def main():
     if "--shots" in sys.argv:
-        print("# playwright 일괄 캡처 명령 (npx playwright install chromium 필요):")
+        print("#!/bin/bash")
+        print("# 썸네일 일괄 생성: 1200x630 PNG 캡처(playwright) → WebP 변환(Pillow) → PNG 삭제")
+        print("# 사전 준비(최초 1회): npx playwright install chromium")
+        print("# 실행: python3 build/thumbnail_build.py --shots | bash")
+        print("set -e")
         for meta in POSTS:
+            s = meta["slug"]
             print(
-                f'npx playwright screenshot --element=".thumb" '
-                f'"thumbnails/{meta["slug"]}.html" "thumbnails/{meta["slug"]}.png"'
+                f'npx playwright screenshot --viewport-size=1200,630 '
+                f'"thumbnails/{s}.html" "thumbnails/{s}.png"'
             )
+        # PNG → WebP 일괄 변환 (Pillow)
+        print(
+            "python3 -c \"from PIL import Image; import glob, os; "
+            "[ (Image.open(p).save(p[:-4]+'.webp','WEBP',quality=88), os.remove(p)) "
+            "for p in glob.glob('thumbnails/*.png') ]\""
+        )
+        print('echo "✅ thumbnails/*.webp 생성 완료"')
         return 0
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
