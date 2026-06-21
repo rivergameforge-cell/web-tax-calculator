@@ -182,40 +182,20 @@ def render_card(meta, parsed):
     )
 
 
-def main():
-    if "--shots" in sys.argv:
-        print("#!/bin/bash")
-        print("# 썸네일 일괄 생성: 1200x630 PNG 캡처(playwright) → WebP 변환(Pillow) → PNG 삭제")
-        print("# 사전 준비(최초 1회): npx playwright install chromium")
-        print("# 실행: python3 build/thumbnail_build.py --shots | bash")
-        print("set -e")
-        for meta in POSTS:
-            s = meta["slug"]
-            print(
-                f'npx playwright screenshot --viewport-size=1200,630 '
-                f'"thumbnails/{s}.html" "thumbnails/{s}.png"'
-            )
-        # PNG → WebP 일괄 변환 (Pillow)
-        print(
-            "python3 -c \"from PIL import Image; import glob, os; "
-            "[ (Image.open(p).save(p[:-4]+'.webp','WEBP',quality=88), os.remove(p)) "
-            "for p in glob.glob('thumbnails/*.png') ]\""
-        )
-        print('echo "✅ thumbnails/*.webp 생성 완료"')
-        return 0
-
+def generate_html(log=sys.stdout):
+    """모든 썸네일 HTML + 미리보기 인덱스 생성. 생성된 (meta, parsed) 목록 반환."""
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     cards = []
     for meta in POSTS:
         md = POST_DIR / f"{meta['file']}.md"
         if not md.exists():
-            print(f"[!] 원고 누락: {md.name}")
+            print(f"[!] 원고 누락: {md.name}", file=log)
             continue
         parsed = parse_post(md)
         html = render_card(meta, parsed)
         (OUT_DIR / f"{meta['slug']}.html").write_text(html, encoding="utf-8")
         cards.append((meta, parsed))
-        print(f"  ✓ thumbnails/{meta['slug']}.html  ({thumb_headline(parsed['title'])})")
+        print(f"  ✓ thumbnails/{meta['slug']}.html  ({thumb_headline(parsed['title'])})", file=log)
 
     # 미리보기 인덱스
     parts = [INDEX_HEAD.format(count=len(cards))]
@@ -229,8 +209,39 @@ def main():
         )
     parts.append("\n  </div>\n</body>\n</html>\n")
     (OUT_DIR / "index.html").write_text("\n".join(parts), encoding="utf-8")
-    print(f"\n▶ thumbnails/index.html 생성 — 총 {len(cards)}개 미리보기")
-    print("▶ 완료. thumbnails/index.html 을 브라우저로 열어 확인하세요.")
+    print(f"▶ thumbnails/index.html 생성 — 총 {len(cards)}개", file=log)
+    return cards
+
+
+def main():
+    if "--shots" in sys.argv:
+        # HTML을 먼저 생성(로그는 stderr로 → stdout 파이프 오염 방지)
+        print("# (썸네일 HTML 자동 재생성 중...)", file=sys.stderr)
+        generate_html(log=sys.stderr)
+        # 캡처+변환 bash 스크립트를 stdout으로 출력
+        print("#!/bin/bash")
+        print("# 썸네일 일괄 생성: 1200x630 PNG 캡처(playwright) → WebP 변환(Pillow) → PNG 삭제")
+        print("# 사전 준비(최초 1회): npx playwright install chromium")
+        print("# 실행: python3 build/thumbnail_build.py --shots | bash")
+        print("set -e")
+        print('DIR="$(pwd)/thumbnails"')
+        for meta in POSTS:
+            s = meta["slug"]
+            print(
+                f'npx playwright screenshot --viewport-size=1200,630 '
+                f'"file://$DIR/{s}.html" "thumbnails/{s}.png"'
+            )
+        # PNG → WebP 일괄 변환 (Pillow)
+        print(
+            "python3 -c \"from PIL import Image; import glob, os; "
+            "[ (Image.open(p).save(p[:-4]+'.webp','WEBP',quality=88), os.remove(p)) "
+            "for p in glob.glob('thumbnails/*.png') ]\""
+        )
+        print('echo \"✅ thumbnails/*.webp 생성 완료\"')
+        return 0
+
+    generate_html()
+    print("▶ 완료. PNG/WebP로 만들려면: python3 build/thumbnail_build.py --shots | bash")
     return 0
 
 
