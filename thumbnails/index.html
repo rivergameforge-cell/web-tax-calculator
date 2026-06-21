@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>블로그 썸네일 목록</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Pretendard',sans-serif; background:#f8f9fa; color:#1f2937; padding:32px; }
+    h1 { font-size:24px; margin-bottom:8px; }
+    .desc { color:#6b7280; font-size:14px; margin-bottom:24px; line-height:1.7; }
+    .desc code { background:#eef2ff; padding:2px 7px; border-radius:5px; font-size:13px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(380px,1fr)); gap:20px; }
+    .item { background:white; border:1px solid #e5e7eb; border-radius:12px; overflow:hidden; }
+    .item .frame { width:100%; aspect-ratio:1200/630; border:0; display:block; transform-origin:top left; }
+    .item .cap { padding:12px 16px; font-size:13px; }
+    .item .cap b { display:block; color:#111827; margin-bottom:4px; font-size:13.5px; }
+    .item .cap a { color:#2563EB; text-decoration:none; font-size:12.5px; }
+  </style>
+</head>
+<body>
+  <h1>📸 블로그 썸네일 목록 (20개)</h1>
+  <div class="desc">
+    각 카드를 PNG로 만드는 법:<br>
+    <b>방법 1 (개별)</b> — 썸네일 HTML 파일을 브라우저로 열고 개발자도구(F12) → <code>&lt;div class="thumb"&gt;</code> 우클릭 → "Capture node screenshot"<br>
+    <b>방법 2 (일괄, playwright)</b> — 터미널에서 <code>python3 build/thumbnail_build.py --shots</code> 실행하면 캡처 명령 목록을 출력합니다.<br>
+    파일명은 각 글 .md의 <code>썸네일 파일명</code>과 맞추면 좋습니다.
+  </div>
+  <div class="grid">
+
+    <div class="item">
+      <iframe class="frame" src="severance-pay-guide.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>퇴직금 5천만 원이 통장엔 4,200만 원? 회사가 절대 안 알려주는 평균임금·퇴직소득세 진실</b>
+        <a href="severance-pay-guide.html" target="_blank">severance-pay-guide.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="dividend-tax-saving.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>이자·배당소득세 15.4% 그냥 떼이고 있나요? 30대 직장인이 연 200만 원 지키는 절세 6단계</b>
+        <a href="dividend-tax-saving.html" target="_blank">dividend-tax-saving.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="officetel-acquisition.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>오피스텔 취득세 4.6%의 함정, 사회초년생 98%가 모르는 &#x27;주택수&#x27; 폭탄 피하는 법</b>
+        <a href="officetel-acquisition.html" target="_blank">officetel-acquisition.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="gift-vs-inheritance-tax.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>&quot;10년에 한 번씩 리셋되는 마법 — 상속세 vs 증여세, 어느 쪽이 1억 더 아끼나&quot; 자산·나이별 선택 가</b>
+        <a href="gift-vs-inheritance-tax.html" target="_blank">gift-vs-inheritance-tax.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="inheritance-tax-guide.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>&quot;15억 상속에 1억 6천? 공제만 잘 챙겨도 0원&quot; 상속세 계산법 + 6가지 절세 팁 (2026년 최신)</b>
+        <a href="inheritance-tax-guide.html" target="_blank">inheritance-tax-guide.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="inheritance-taxable-scope.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>상속세 과세 대상, 어디까지가 상속재산일까? 보험금·10년 전 증여까지 합산되는 범위 총정리</b>
+        <a href="inheritance-taxable-scope.html" target="_blank">inheritance-taxable-scope.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="four-major-insurance-guide.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>&quot;첫 월급 400만 원인데 통장엔 340만 원? 사라진 60만 원의 정체&quot; 4대보험 30초 계산법 (2026</b>
+        <a href="four-major-insurance-guide.html" target="_blank">four-major-insurance-guide.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="monthly-rent-tax-credit.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>월세 1년 720만 원 내고 환급 0원? 사회초년생이 놓치는 월세 세액공제 122만 원 환급법</b>
+        <a href="monthly-rent-tax-credit.html" target="_blank">monthly-rent-tax-credit.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="pension-saving-irp-credit.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>매년 148만 원 환급에 노후 자금까지 — 사회초년생 연금저축·IRP 세액공제 완벽 가이드</b>
+        <a href="pension-saving-irp-credit.html" target="_blank">pension-saving-irp-credit.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="irp-why-start-young.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>국민연금만 믿다간 노후 月 100만 원 — 사회초년생이 IRP 지금 시작해야 하는 5가지 이유</b>
+        <a href="irp-why-start-young.html" target="_blank">irp-why-start-young.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="real-estate-commission.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>12억 아파트 복비가 720만 원? 부가세 포함 800만 원 — 부동산 중개수수료 구간별 상한 완벽 정리</b>
+        <a href="real-estate-commission.html" target="_blank">real-estate-commission.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="commission-calculation-method.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>부동산 복비 계산 방법, 매매·전세·월세 3가지 공식만 알면 끝 (2026년 거래금액 구간표)</b>
+        <a href="commission-calculation-method.html" target="_blank">commission-calculation-method.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="speeding-fine-guide.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>어린이보호구역 16만 원, 벌점에 보험료까지 — 속도위반 과태료 실전 정리</b>
+        <a href="speeding-fine-guide.html" target="_blank">speeding-fine-guide.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="vehicle-acquisition-tax-guide.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>신차 출고 다음 날 200만 원 빠져나갔다 — 자동차 취득세 7%·5%·4% 차이</b>
+        <a href="vehicle-acquisition-tax-guide.html" target="_blank">vehicle-acquisition-tax-guide.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="vehicle-installment-calculation.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>자동차 할부금 계산 방법, 원리금균등 공식부터 선수금·잔금유예까지 직접 계산하기 (2026년 기준)</b>
+        <a href="vehicle-installment-calculation.html" target="_blank">vehicle-installment-calculation.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="vehicle-installment-guide.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>월 60만 원 5년 할부에 숨은 800만 원 이자 폭탄 — 자동차 할부 함정 분석</b>
+        <a href="vehicle-installment-guide.html" target="_blank">vehicle-installment-guide.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="property-tax-guide.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>7월 우편함 폭탄 280만 원, 7·9월 분할 납부와 1주택 특례 완벽 가이드</b>
+        <a href="property-tax-guide.html" target="_blank">property-tax-guide.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="stock-dividend-tax-guide.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>배당금 받고 좋아했더니 5월에 추가 세금 1,200만 원 — 금융소득종합과세 회피법</b>
+        <a href="stock-dividend-tax-guide.html" target="_blank">stock-dividend-tax-guide.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="parking-violation-fine.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>잠깐 세웠는데 12만 원, 어린이보호구역 주정차 폭탄 막는 실전 매뉴얼</b>
+        <a href="parking-violation-fine.html" target="_blank">parking-violation-fine.html 열기 →</a></div>
+    </div>
+    <div class="item">
+      <iframe class="frame" src="speculative-zone-ltv.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>투기과열지구 LTV 한도, 9억·15억·25억 구간별 대출금액 완벽 가이드</b>
+        <a href="speculative-zone-ltv.html" target="_blank">speculative-zone-ltv.html 열기 →</a></div>
+    </div>
+
+  </div>
+</body>
+</html>
