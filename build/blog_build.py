@@ -196,6 +196,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "자동차_할부금_계산방법",
+        "slug": "vehicle-installment-calculation",
+        "category": "loan",
+        "categoryLabel": "대출",
+        "date": "2026-06-21",
+        "readMin": 5,
+        "ctaHref": "/vehicle/installment.html",
+        "ctaLabel": "자동차 할부금 계산기",
+        "related": [
+            ("/vehicle/installment.html", "자동차 할부금 계산기"),
+            ("/vehicle/buying.html", "자동차 구매 총비용 계산기"),
+            ("/vehicle/acquisition.html", "자동차 취득세 계산기"),
+            ("/loan/calculator.html", "대출금 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "자동차_할부금_블로그_포스팅",
         "slug": "vehicle-installment-guide",
         "category": "loan",

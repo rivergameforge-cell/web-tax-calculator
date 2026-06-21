@@ -1,0 +1,110 @@
+<!-- 티스토리 제목 (제목 입력란에 붙여넣기) -->
+<!-- 자동차 할부 vs 리스 vs 장기렌트 vs 현금, 진짜 이득인 선택은? 총비용 완전 비교 -->
+
+<p data-ke-size="size16">"할부로 할까, 리스로 할까, 아니면 그냥 현금?"</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">신차 계약을 앞둔 사람이라면 누구나 한 번쯤 이 고민에 빠집니다. 영업사원은 "요즘 다 리스로 하세요"라고 하고, 부모님은 "빚지지 말고 현금으로 사라"고 합니다. 그런데 정작 어느 쪽이 돈이 덜 드는지는 아무도 정확히 알려주지 않죠.</p>
+<p data-ke-size="size16">&nbsp;</p>
+정답은 사람마다 다릅니다. 같은 3,000만 원짜리 차라도 직업, 자금 사정, 차를 얼마나 오래 탈지에 따라 가장 유리한 방법이 달라지기 때문입니다. 누군가에게는 현금이 정답이지만, 사업자에게는 리스가 수백만 원을 아껴주기도 합니다. 막연히 "남들 하는 대로" 정하면 모르는 사이에 큰돈을 더 쓰게 됩니다. 오늘은 할부&middot;리스&middot;장기렌트&middot;현금 네 가지를 <b>총비용과 상황별 기준</b>으로 완전히 비교해 드리겠습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">네 가지 구매 방식, 핵심부터 정리</h2>
+
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>현금 구매</b> : 이자가 0원이라 총비용이 가장 낮습니다. 대신 목돈이 한 번에 빠지고, 그 돈을 다른 곳에 투자했을 때의 기회비용은 포기해야 합니다. 차는 100% 내 소유.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>할부</b> : 차값을 나눠 내며 이자를 부담합니다. 차는 처음부터 내 명의(소유권 유보부라도 결국 내 차). 이자만큼 더 내지만 목돈 부담이 없고, 다 갚으면 온전히 내 자산이 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>리스</b> : 차를 빌려 타고 매달 리스료를 냅니다. 차는 리스사 소유. 사업자라면 리스료를 <b>비용 처리</b>해 절세할 수 있어 인기가 많습니다. 만기에 인수&middot;반납&middot;재리스를 선택합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>장기렌트</b> : 리스와 비슷하지만 <b>보험&middot;정비&middot;세금이 렌트료에 포함</b>되는 경우가 많습니다. 번호판이 '하/허/호' 렌터카 번호일 수 있다는 점이 차이. 관리가 편하지만 총비용은 높은 편.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">정리하면 <b>현금과 할부는 '내 차를 갖는' 방식</b>이고, <b>리스와 장기렌트는 '빌려 타는' 방식</b>입니다. 소유권을 갖느냐, 비용처리와 편의를 택하느냐가 첫 번째 갈림길입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">사업자라면 비용처리가 게임을 바꾼다</h2>
+
+<p data-ke-size="size16">개인사업자나 법인이라면 단순 총비용 순위가 뒤집힐 수 있습니다. 업무용으로 쓰는 차량의 리스료&middot;렌트료는 일정 한도 내에서 <b>경비로 인정</b>되어 소득세&middot;법인세를 줄여주기 때문입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>업무용 승용차 비용</b> : 연간 한도(감가상각비 포함) 내에서 리스료&middot;유류비&middot;보험료 등을 경비 처리</p>
+<p data-ke-size="size16">- <b>운행기록부 작성</b> : 업무 사용 비율을 입증하면 더 많은 비용 인정. 미작성 시 한도가 제한됩니다</p>
+<p data-ke-size="size16">- <b>부가세 공제</b> : 경차&middot;화물차 등 일부 차종은 부가세 매입세액 공제도 가능</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">그래서 사업자에게는 '이자를 더 내더라도 비용처리로 돌려받는' 리스&middot;렌트가 현금&middot;할부보다 실질적으로 저렴해지는 경우가 생깁니다. 본인의 소득 구간과 업무 사용 비율을 따져 세무사와 상담해 보는 것이 좋습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">총비용으로 따지면 순서는 이렇다</h2>
+
+<p data-ke-size="size16">순수하게 '차 한 대에 쓰는 총 돈'만 보면 일반적으로 다음 순서입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>1위 (가장 저렴) 현금</b> : 이자 0원</p>
+<p data-ke-size="size16">- <b>2위 할부</b> : 이자만큼 추가 (3,000만 원 기준 보통 200~400만 원)</p>
+<p data-ke-size="size16">- <b>3위 리스</b> : 이자 + 리스사 마진. 단 사업자 비용처리 시 실질 부담은 내려감</p>
+<p data-ke-size="size16">- <b>4위 (가장 비쌈) 장기렌트</b> : 이자 + 마진 + 보험&middot;정비 포함 프리미엄</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">하지만 이 순서가 절대적이지 않습니다. <b>사업자</b>는 리스&middot;렌트의 비용처리 절세 효과로 순위가 뒤집힐 수 있고, <b>차를 2~3년마다 바꾸는 사람</b>은 감가상각 부담이 적은 리스가 유리할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">내 상황엔 어떤 게 맞을까?</h2>
+
+<p data-ke-size="size16">- <b>여윳돈이 충분하고 오래 탈 사람</b> : 현금 또는 할부. 이자 부담만 비교해 결정하세요.</p>
+<p data-ke-size="size16">- <b>목돈은 없지만 내 차를 갖고 싶은 직장인</b> : 할부. 다 갚으면 자산이 됩니다.</p>
+<p data-ke-size="size16">- <b>개인사업자&middot;법인</b> : 리스 또는 장기렌트. 비용처리 절세 효과가 이자보다 클 수 있습니다.</p>
+<p data-ke-size="size16">- <b>차를 자주 바꾸고 관리가 귀찮은 사람</b> : 장기렌트. 보험&middot;정비 신경 안 써도 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">한 가지 더 고려할 점은 <b>차의 감가상각</b>입니다. 새 차는 출고 직후부터 가치가 빠르게 떨어집니다. 현금이나 할부로 사면 이 감가를 내가 떠안지만, 리스&middot;렌트는 만기 반납 시 감가 부담을 넘길 수 있습니다. 반대로 차를 10년 이상 오래 타는 사람은 한 번 산 차를 끝까지 쓰는 현금&middot;할부가 가장 경제적입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">할부를 택했다면, 이자율부터 낮춰라</h2>
+
+<p data-ke-size="size16">할부로 결정했다면 같은 차라도 이자율에 따라 총비용이 크게 갈립니다. 3,000만 원을 48개월 할부할 때 이자율이 4%면 총 이자가 약 200만 원, 8%면 약 430만 원으로 두 배 넘게 벌어집니다. 이자율을 낮추는 현실적인 방법은 다음과 같습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>제조사 캐피탈 프로모션</b> : 신차는 제조사 계열 캐피탈의 무이자&middot;저리 행사를 활용하면 일반 카드 할부보다 훨씬 유리합니다.</p>
+<p data-ke-size="size16">- <b>신용점수 관리</b> : 캐피탈 할부 이자율은 신용점수에 좌우됩니다. 계약 직전 현금서비스&middot;연체는 피하세요.</p>
+<p data-ke-size="size16">- <b>선수금 높이기</b> : 선수금을 올리면 할부 원금이 줄어 총 이자가 함께 감소합니다.</p>
+<p data-ke-size="size16">- <b>여러 곳 비교</b> : 캐피탈사마다 수수료율이 다르니 최소 2~3곳 견적을 비교하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">할부를 택했다면, 계약 전에 반드시 월 납입금과 총 이자를 직접 계산해 봐야 합니다. [taxcalc.co.kr](http://taxcalc.co.kr)의 자동차 할부금 계산기에 차값&middot;선수금&middot;이자율&middot;기간을 넣으면 총비용이 30초 만에 나옵니다. 선수금이나 기간을 바꿔가며 비교하면 영업점 설명에 휘둘리지 않고 내 조건을 스스로 정할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">자주 묻는 질문</h2>
+
+<p data-ke-size="size16"><b>Q1. 리스와 장기렌트, 신용점수에 영향이 있나요?</b></p>
+<p data-ke-size="size16">리스는 부채로 잡혀 신용평가에 반영될 수 있고, 장기렌트는 상대적으로 영향이 적은 편입니다. 향후 주택담보대출 등을 앞두고 있다면 이 차이를 고려하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q2. 리스 차도 내가 산 것처럼 탈 수 있나요?</b></p>
+<p data-ke-size="size16">네, 운행에는 제약이 없습니다. 다만 약정 주행거리를 초과하면 추가 비용이 발생하고, 차는 리스사 소유라 마음대로 처분할 수 없습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q3. 무이자 할부면 무조건 할부가 이득 아닌가요?</b></p>
+<p data-ke-size="size16">꼭 그렇지 않습니다. 무이자 조건에서는 현금 할인이 빠지는 경우가 많아, '현금가 할인 + 일반 할부'가 총비용으로는 더 쌀 수 있습니다. 반드시 두 경우를 다 계산해 비교하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q4. 중간에 차를 팔거나 바꾸고 싶으면요?</b></p>
+<p data-ke-size="size16">할부는 남은 원금을 갚으면 바로 처분할 수 있어 가장 자유롭습니다. 리스&middot;렌트는 약정 기간 중 해지하면 위약금이 발생하니, 차를 오래 안 탈 계획이면 계약 전 중도해지 조건을 꼭 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q5. 선수금은 많이 낼수록 좋은가요?</b></p>
+<p data-ke-size="size16">할부 이자를 줄이는 데는 선수금이 많을수록 유리합니다. 다만 보험료&middot;취득세 같은 부대비용과 비상 자금을 남겨둬야 하므로, 보통 차값의 20~30% 선이 적정합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<center><a href="https://taxcalc.co.kr/#vehicle/installment" target="_blank" rel="noopener" aria-label="자동차 할부금 계산기 바로가기"> <button class="arenabt star1"> 자동차 할부금 계산기 바로가기 </button> </a></center>
+
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">결론: 정답은 '내 상황'에 있다</h2>
+
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">할부냐 리스냐 현금이냐는 '무엇이 절대적으로 좋은가'의 문제가 아니라 <b>'내 자금 사정과 사용 방식에 무엇이 맞는가'</b>의 문제입니다. 직장인이 오래 탈 차라면 할부나 현금이, 사업자가 자주 바꿀 차라면 리스나 렌트가 답일 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+가장 중요한 건 <b>총비용을 숫자로 비교</b>하는 것입니다. 막연한 인상이 아니라 실제 금액을 놓고 따져야 후회가 없습니다. 영업점에서 "월 OO만 원"이라는 말만 듣고 결정하면, 기간이 길어 총 이자가 불어난 걸 놓치기 쉽습니다. 월 납입금이 아니라 <b>선수금까지 더한 총 지출액</b>으로 봐야 진짜 비용이 보입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">할부를 고려 중이라면 [taxcalc.co.kr](http://taxcalc.co.kr)에서 먼저 총 이자부터 확인하고 다른 방식과 비교해 보세요. 차는 인생에서 손꼽히는 큰 지출입니다. 계약서에 서명하기 전 단 몇 분의 계산이, 수백만 원의 차이를 만듭니다.</p>
+
+<!-- 해시태그 (티스토리 태그 입력란에 붙여넣기) -->
+<!-- 자동차할부, 자동차리스, 장기렌트, 자동차할부계산기, 할부vs리스, 신차구매, 리스비용처리, 자동차구매방법, taxcalc, 차량구입 -->
