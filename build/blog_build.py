@@ -506,7 +506,9 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <meta property="og:title" content="{og_title}">
   <meta property="og:description" content="{description}">
   <meta property="og:url" content="https://taxcalc.co.kr/blog/{slug}.html">
-  <meta property="og:image" content="https://taxcalc.co.kr/og-image.png">
+  <meta property="og:image" content="https://taxcalc.co.kr/thumbnails/{slug}.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="ko_KR">
   <meta property="article:published_time" content="{date}">
   <meta property="article:modified_time" content="{date}">
@@ -515,7 +517,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{og_title}">
   <meta name="twitter:description" content="{description}">
-  <meta name="twitter:image" content="https://taxcalc.co.kr/og-image.png">
+  <meta name="twitter:image" content="https://taxcalc.co.kr/thumbnails/{slug}.webp">
 
   <title>{title} | 세금계산기 블로그</title>
 
@@ -528,7 +530,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     "@type": "BlogPosting",
     "headline": {headline_json},
     "description": {description_json},
-    "image": "https://taxcalc.co.kr/og-image.png",
+    "image": "https://taxcalc.co.kr/thumbnails/{slug}.webp",
     "author": {{ "@type": "Organization", "name": "세금계산기", "url": "https://taxcalc.co.kr/" }},
     "publisher": {{
       "@type": "Organization",
@@ -747,10 +749,13 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     .filter-chip:hover {{ background: #e5e7eb; }}
     .filter-chip.active {{ background: #2563EB; color: white; border-color: #2563EB; }}
     .filter-count {{ margin-left: auto; align-self: center; font-size: 12.5px; color: #6b7280; }}
-    .post-list {{ display: grid; gap: 16px; }}
-    .post-card {{ background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px 26px; transition: transform 0.15s, box-shadow 0.15s; }}
+    .post-list {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }}
+    .post-card {{ background: white; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; transition: transform 0.15s, box-shadow 0.15s; display: flex; flex-direction: column; }}
     .post-card:hover {{ transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.06); }}
     .post-card.is-hidden {{ display: none; }}
+    .post-thumb {{ display: block; aspect-ratio: 1200/630; overflow: hidden; background: #eef2ff; }}
+    .post-thumb img {{ width: 100%; height: 100%; object-fit: cover; display: block; }}
+    .post-body {{ padding: 18px 22px 22px; }}
     .post-meta {{ display: flex; gap: 12px; align-items: center; flex-wrap: wrap; font-size: 12.5px; color: #6b7280; margin-bottom: 10px; }}
     .post-meta .tag {{ background: #eef2ff; color: #4338ca; padding: 2px 9px; border-radius: 6px; font-weight: 600; }}
     .post-card h2 {{ margin: 0 0 8px; }}
@@ -950,13 +955,18 @@ def render_index(posts: list[dict]) -> str:
         parsed = p["parsed"]
         excerpt = make_excerpt(parsed["description"])
         cards_html.append(f'''      <article class="post-card" data-category="{meta['category']}">
-        <div class="post-meta">
-          <span class="tag">{html_escape(meta['categoryLabel'])}</span>
-          <span>{meta['date'].replace('-', '년 ', 1).replace('-', '월 ') + '일'}</span>
-          <span>&middot; {meta['readMin']}분</span>
+        <a class="post-thumb" href="/blog/{meta['slug']}.html">
+          <img src="/thumbnails/{meta['slug']}.webp" alt="{html_escape(parsed['title'][:60])}" width="1200" height="630" loading="lazy">
+        </a>
+        <div class="post-body">
+          <div class="post-meta">
+            <span class="tag">{html_escape(meta['categoryLabel'])}</span>
+            <span>{meta['date'].replace('-', '년 ', 1).replace('-', '월 ') + '일'}</span>
+            <span>&middot; {meta['readMin']}분</span>
+          </div>
+          <h2><a href="/blog/{meta['slug']}.html">{html_escape(parsed['title'])}</a></h2>
+          <p class="excerpt">{html_escape(excerpt)}</p>
         </div>
-        <h2><a href="/blog/{meta['slug']}.html">{html_escape(parsed['title'])}</a></h2>
-        <p class="excerpt">{html_escape(excerpt)}</p>
       </article>''')
 
     # JSON-LD blog 스키마
