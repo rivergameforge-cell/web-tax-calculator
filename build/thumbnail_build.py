@@ -28,6 +28,26 @@ from blog_build import POSTS, parse_post, POST_DIR  # noqa: E402
 
 OUT_DIR = ROOT / "thumbnails"
 
+# 티스토리 글 썸네일 (사이트 글과 제목·각도가 달라 별도 생성)
+# file=blog_post/<file>.txt, slug=출력 파일명(-tistory), category=색상 테마
+# 제목은 .txt 맨 위 "<!-- 티스토리 제목 --> <!-- 실제 제목 -->" 주석에서 자동 추출
+TISTORY = [
+    {"file": "부동산_복비_계산방법_티스토리", "slug": "commission-calculation-method-tistory", "category": "real-estate"},
+    {"file": "상속세_신고절차_티스토리", "slug": "inheritance-filing-tistory", "category": "inherit"},
+    {"file": "자동차_할부금_계산방법_티스토리", "slug": "vehicle-installment-compare-tistory", "category": "loan"},
+    {"file": "자동차세_미납_티스토리", "slug": "vehicle-tax-overdue-tistory", "category": "vehicle"},
+]
+
+
+def parse_tistory_title(txt_path: Path) -> str:
+    """티스토리 .txt 맨 위 제목 주석에서 제목 추출."""
+    raw = txt_path.read_text(encoding="utf-8")
+    # <!-- 티스토리 제목 ... --> 다음의 <!-- 실제 제목 --> 추출
+    m = re.search(r"티스토리 제목[^>]*-->\s*<!--\s*(.+?)\s*-->", raw, re.DOTALL)
+    if m:
+        return m.group(1).strip()
+    return ""
+
 # 카테고리별 색상 테마 (배경 그라데이션 + 강조색)
 THEMES = {
     "real-estate": {"grad": ("#2563EB", "#1E3A8A"), "accent": "#FCD34D", "icon": "🏠", "label": "부동산"},
@@ -182,10 +202,21 @@ def render_card(meta, parsed):
     )
 
 
+def all_slugs():
+    """캡처 대상 전체 슬러그 (사이트 POSTS + 티스토리)."""
+    slugs = [m["slug"] for m in POSTS]
+    for t in TISTORY:
+        if (POST_DIR / f"{t['file']}.txt").exists():
+            slugs.append(t["slug"])
+    return slugs
+
+
 def generate_html(log=sys.stdout):
-    """모든 썸네일 HTML + 미리보기 인덱스 생성. 생성된 (meta, parsed) 목록 반환."""
+    """모든 썸네일 HTML(사이트+티스토리) + 미리보기 인덱스 생성."""
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    cards = []
+    cards = []  # (slug, title, kind)
+
+    # 1) 사이트 글 (POSTS, .md H1 제목)
     for meta in POSTS:
         md = POST_DIR / f"{meta['file']}.md"
         if not md.exists():
@@ -194,17 +225,33 @@ def generate_html(log=sys.stdout):
         parsed = parse_post(md)
         html = render_card(meta, parsed)
         (OUT_DIR / f"{meta['slug']}.html").write_text(html, encoding="utf-8")
-        cards.append((meta, parsed))
+        cards.append((meta["slug"], parsed["title"], "사이트"))
         print(f"  ✓ thumbnails/{meta['slug']}.html  ({thumb_headline(parsed['title'])})", file=log)
+
+    # 2) 티스토리 글 (TISTORY, .txt 제목 주석)
+    for t in TISTORY:
+        txt = POST_DIR / f"{t['file']}.txt"
+        if not txt.exists():
+            print(f"[!] 티스토리 원고 누락: {txt.name}", file=log)
+            continue
+        title = parse_tistory_title(txt)
+        if not title:
+            print(f"[!] 티스토리 제목 주석 없음: {txt.name}", file=log)
+            continue
+        meta = {"slug": t["slug"], "category": t["category"]}
+        html = render_card(meta, {"title": title})
+        (OUT_DIR / f"{t['slug']}.html").write_text(html, encoding="utf-8")
+        cards.append((t["slug"], title, "티스토리"))
+        print(f"  ✓ thumbnails/{t['slug']}.html  [티스토리] ({thumb_headline(title)})", file=log)
 
     # 미리보기 인덱스
     parts = [INDEX_HEAD.format(count=len(cards))]
-    for meta, parsed in cards:
+    for slug, title, kind in cards:
         parts.append(
             f'''    <div class="item">
-      <iframe class="frame" src="{meta['slug']}.html" loading="lazy" scrolling="no"></iframe>
-      <div class="cap"><b>{html_escape(parsed['title'][:60])}</b>
-        <a href="{meta['slug']}.html" target="_blank">{meta['slug']}.html 열기 →</a></div>
+      <iframe class="frame" src="{slug}.html" loading="lazy" scrolling="no"></iframe>
+      <div class="cap"><b>[{kind}] {html_escape(title[:55])}</b>
+        <a href="{slug}.html" target="_blank">{slug}.html 열기 →</a></div>
     </div>'''
         )
     parts.append("\n  </div>\n</body>\n</html>\n")
@@ -225,8 +272,7 @@ def main():
         print("# 실행: python3 build/thumbnail_build.py --shots | bash")
         print("set -e")
         print('DIR="$(pwd)/thumbnails"')
-        for meta in POSTS:
-            s = meta["slug"]
+        for s in all_slugs():
             print(
                 f'npx playwright screenshot --viewport-size=1200,630 '
                 f'"file://$DIR/{s}.html" "thumbnails/{s}.png"'
