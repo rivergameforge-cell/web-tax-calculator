@@ -163,6 +163,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "자동차세_미납",
+        "slug": "vehicle-tax-overdue",
+        "category": "vehicle",
+        "categoryLabel": "자동차",
+        "date": "2026-06-22",
+        "readMin": 5,
+        "ctaHref": "/vehicle/overdue.html",
+        "ctaLabel": "자동차세 체납 가산금 계산기",
+        "related": [
+            ("/vehicle/overdue.html", "자동차세 체납 가산금 계산기"),
+            ("/vehicle/vehicle-tax.html", "자동차세 계산기"),
+            ("/vehicle/acquisition.html", "자동차 취득세 계산기"),
+            ("/fines/traffic.html", "교통 과태료 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "속도위반_과태료_블로그_포스팅",
         "slug": "speeding-fine-guide",
         "category": "fines",

@@ -1,0 +1,99 @@
+<!-- 티스토리 제목 (제목 입력란에 붙여넣기) -->
+<!-- 밀린 자동차세, 어떻게 해결할까? 조회부터 분할납부·연납 할인까지 실전 가이드 -->
+
+<p data-ke-size="size16">"자동차세 고지서를 어디다 뒀더라..." 하고 미루다 보면, 어느새 두 번 세 번 밀려 있곤 합니다. 다행히 자동차세 미납은 마음먹고 처리하면 생각보다 빠르게 정리할 수 있습니다. 조회도 납부도 대부분 온라인으로 5분이면 끝나거든요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+오늘은 밀린 자동차세를 <b>조회하고, 납부하고, 형편이 안 되면 나눠 내고, 다시는 안 밀리게 예방</b>하는 방법까지 실전 순서로 정리해 드리겠습니다. 가산금이 더 붙기 전에 지금 바로 따라 해보세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">자동차세는 매년 6월과 12월, 두 번에 나눠 부과되는 지방세입니다. 배기량과 차령에 따라 금액이 정해지고, 기한을 넘기면 그 즉시 미납으로 잡혀 가산금이 붙기 시작합니다. "조금 늦어도 괜찮겠지" 하는 순간부터 돈이 새는 셈이죠. 다행히 해결 절차는 단순하니, 아래 순서대로만 따라오시면 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">1. 내 밀린 자동차세부터 조회하기</h2>
+
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">가장 먼저 할 일은 정확히 얼마가 밀렸는지 확인하는 것입니다. 고지서가 없어도 온라인으로 조회됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>위택스(wetax.go.kr)</b> : 전국 지방세 통합 조회·납부 사이트. 공동인증서나 간편인증으로 로그인하면 미납 내역이 한눈에 뜹니다.</p>
+<p data-ke-size="size16">- <b>스마트 위택스 앱</b> : 모바일에서 같은 기능을 더 간편하게. 푸시 알림도 설정 가능합니다.</p>
+<p data-ke-size="size16">- <b>자동차 민원 대국민포털(이파인)·정부24</b> : 차량 관련 미납도 함께 확인할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+조회하면 본세 외에 가산금이 얼마나 붙었는지도 함께 표시됩니다. 미납 세액과 경과 기간을 알았다면, [taxcalc.co.kr](http://taxcalc.co.kr)의 자동차세 체납 가산금 계산기로 총 납부액을 미리 가늠해볼 수도 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">위택스 조회 순서는 이렇습니다. ① 위택스 접속 후 간편인증&middot;공동인증서로 로그인 → ② 상단 '납부하기' 또는 '나의 위택스 → 미납내역' 메뉴 선택 → ③ 자동차세 미납 건 확인. 모바일이라면 '스마트 위택스' 앱에서 같은 메뉴를 더 빠르게 볼 수 있습니다. 로그인만 되면 전국 어느 지자체의 미납이든 한 화면에 모여 보이니, 이사를 자주 다녀 어느 구청에 밀렸는지 헷갈리는 경우에도 걱정할 필요가 없습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">2. 납부하기 — 5분이면 끝</h2>
+
+<p data-ke-size="size16">조회한 화면에서 바로 납부로 이어집니다. 방법도 다양합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>계좌이체·카드 납부</b> : 위택스에서 즉시 결제. 카드 무이자 할부가 되는 경우도 있습니다.</p>
+<p data-ke-size="size16">- <b>간편결제</b> : 카카오페이&middot;네이버페이 등으로도 지방세 납부가 가능합니다.</p>
+<p data-ke-size="size16">- <b>가상계좌&middot;ATM</b> : 고지서의 전자납부번호로 은행 ATM이나 인터넷뱅킹에서도 납부할 수 있습니다.</p>
+<p data-ke-size="size16">- <b>은행 방문</b> : 온라인이 불편하다면 고지서를 들고 은행 창구에서 바로 낼 수도 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">여러 건이 밀려 있다면 오래된 것부터 차례로 납부하면 됩니다. 한꺼번에 결제하기 부담스러울 땐 카드 무이자 할부를 활용하는 것도 방법입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">납부가 완료되면 가산금 누적이 그 시점에서 멈춥니다. 번호판이 영치된 상태였다면, 납부 후 관할 구청에 번호판 반환을 신청하면 됩니다. 미루면 가산금이 매달 0.75%씩 계속 쌓이지만, 내는 순간 더 이상 늘지 않는다는 점만 기억해도 "오늘 내자"는 결심이 쉬워집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">참고로 자동차세를 안 냈을 때의 불이익은 단계적으로 커집니다. 기한 직후 3% 가산금 → 매달 0.75% 중가산금 → 번호판 영치 → 예금&middot;차량 압류 순입니다. 지금 어느 단계인지 모르겠다면, 위택스 조회 화면의 '압류' 또는 '영치' 표시를 확인해보세요. 아직 가산금 단계라면 부담이 크지 않을 때 바로 정리하는 것이 가장 이득입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">3. 한 번에 못 내겠다면 — 분할납부</h2>
+
+<p data-ke-size="size16">금액이 부담스럽다면 무작정 미루지 말고 분할납부를 알아보세요. 지자체에 따라 운영 방식이 다르지만, 공통적으로 다음을 기억하면 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>관할 시&middot;군&middot;구청 세무과에 상담</b> : 분할납부나 납부 기한 연장이 가능한지 문의합니다.</p>
+<p data-ke-size="size16">- <b>형편을 증빙</b> : 실직&middot;질병 등 사정이 있으면 징수 유예가 적용될 수 있습니다.</p>
+<p data-ke-size="size16">- <b>연락을 피하지 말 것</b> : 방치하면 압류로 직행하지만, 먼저 상담하면 길이 열리는 경우가 많습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">실직, 질병, 사업 부진 등으로 일시적으로 납부가 어려운 상황이라면 '징수 유예'나 '체납 처분 유예' 제도를 활용할 수 있습니다. 가만히 두면 가산금과 압류만 늘어나지만, 지자체에 사정을 설명하고 증빙을 내면 일정 기간 압류를 미루거나 나눠 낼 여지가 생깁니다. 핵심은 '먼저 연락하는 것'입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">4. 다시는 안 밀리게 — 예방 2가지</h2>
+
+<p data-ke-size="size16">한 번 정리했다면, 같은 일이 반복되지 않게 장치를 걸어두세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>자동납부 신청</b> : 위택스나 카드사&middot;은행에 등록해두면 매년 6월&middot;12월에 자동으로 빠져나가 깜빡할 일이 없습니다.</p>
+<p data-ke-size="size16">- <b>연납(1월 일시납) 활용</b> : 1월에 1년치를 한 번에 내면 일정 비율을 할인받습니다. 미납 위험을 없애면서 세금도 줄이는 가장 똑똑한 방법입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">가산금으로 돈을 더 내는 대신, 연납으로 오히려 깎으세요. 방향만 바꿔도 매년 나가는 돈이 달라집니다. 연납은 매년 1월에 신청을 받고, 시기를 놓치면 3월&middot;6월&middot;9월에도 남은 기간만큼 신청할 수 있습니다. 한 번 자동납부나 연납을 설정해두면 그다음부터는 신경 쓸 일이 거의 없어집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">정리하면, 미납을 해결하는 순서는 '조회 → 납부 → (필요 시) 분할 상담'이고, 재발을 막는 장치는 '자동납부 + 연납'입니다. 이 두 축만 기억하면 자동차세 때문에 스트레스받을 일이 사라집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">자주 묻는 질문</h2>
+
+<p data-ke-size="size16"><b>Q1. 고지서를 잃어버렸는데 납부할 수 있나요?</b></p>
+<p data-ke-size="size16">네. 위택스에 로그인하면 고지서 없이도 미납 내역 조회와 납부가 모두 됩니다. 전자납부번호도 화면에서 확인할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q2. 안 타는 차인데 계속 세금이 나와요.</b></p>
+<p data-ke-size="size16">자동차세는 소유 사실에 부과되므로 운행 여부와 무관합니다. 더 이상 안 탈 차라면 폐차나 말소 등록을 해야 세금이 멈춥니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q3. 카드로 내면 수수료가 붙나요?</b></p>
+<p data-ke-size="size16">지방세는 신용카드 납부 수수료가 없습니다. 오히려 카드사 무이자 할부나 실적 혜택을 활용하면 이득일 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q4. 가족 명의 차의 세금을 대신 낼 수 있나요?</b></p>
+<p data-ke-size="size16">네. 위택스에서는 전자납부번호만 있으면 명의자가 아니어도 대납이 가능합니다. 부모님 차의 밀린 세금을 자녀가 정리해주는 경우에도 문제없이 납부됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<center><a href="https://taxcalc.co.kr/#vehicle/overdue" target="_blank" rel="noopener" aria-label="자동차세 체납 가산금 계산기 바로가기"> <button class="arenabt star1"> 자동차세 체납 가산금 계산기 바로가기 </button> </a></center>
+
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">결론: 미루지 말고, 5분이면 끝난다</h2>
+
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">밀린 자동차세는 어렵게 생각할수록 손해입니다. 위택스에서 조회하고, 그 자리에서 납부하고, 형편이 안 되면 분할납부를 상담하면 됩니다. 그리고 자동납부나 연납을 걸어두면 다시는 같은 고민을 하지 않아도 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">지금 밀린 세금이 있다면, 가산금이 더 붙기 전에 [taxcalc.co.kr](http://taxcalc.co.kr)에서 총액부터 확인하고 바로 정리하세요. 미루는 하루하루가 곧 돈입니다.</p>
+
+<!-- 해시태그 (티스토리 태그 입력란에 붙여넣기) -->
+<!-- 자동차세, 자동차세미납, 자동차세체납, 위택스, 자동차세납부, 자동차세분할납부, 자동차세연납, 체납가산금, taxcalc, 지방세 -->
