@@ -36,6 +36,7 @@ TISTORY = [
     {"file": "상속세_신고절차_티스토리", "slug": "inheritance-filing-tistory", "category": "inherit"},
     {"file": "자동차_할부금_계산방법_티스토리", "slug": "vehicle-installment-compare-tistory", "category": "loan"},
     {"file": "자동차세_미납_티스토리", "slug": "vehicle-tax-overdue-tistory", "category": "vehicle"},
+    {"file": "연봉_실수령액_티스토리", "slug": "salary-take-home-tistory", "category": "labor"},
 ]
 
 
