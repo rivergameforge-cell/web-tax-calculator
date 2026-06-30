@@ -163,6 +163,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "연봉_5천_실수령액",
+        "slug": "salary-50m-take-home",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-06-24",
+        "readMin": 5,
+        "ctaHref": "/income/salary.html",
+        "ctaLabel": "연봉 실수령액 계산기",
+        "related": [
+            ("/income/salary.html", "연봉 실수령액 계산기"),
+            ("/income/insurance.html", "4대보험 계산기"),
+            ("/income/pension-saving.html", "연금저축 세액공제 계산기"),
+            ("/income/rent-credit.html", "월세 세액공제 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "연봉_실수령액",
         "slug": "salary-take-home",
         "category": "labor",

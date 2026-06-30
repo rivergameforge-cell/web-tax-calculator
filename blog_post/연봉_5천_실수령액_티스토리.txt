@@ -1,0 +1,82 @@
+<!-- 티스토리 제목 (제목 입력란에 붙여넣기) -->
+<!-- 연봉 5천인데 왜 이렇게 빠듯하지? 월 357만 원의 현실과 이 구간 절세법 -->
+
+<p data-ke-size="size16">연봉 5,000만 원. 사회초년생 때는 '꿈의 숫자'처럼 느껴지지만, 막상 도달하고 나면 "생각보다 통장이 가볍다"고 느끼는 분이 많습니다. 세전 5,000만 원을 12로 나누면 417만 원인데, 실제 손에 쥐는 건 月 357만 원 정도이기 때문입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">오늘은 연봉 5천 구간의 '현실적인 실수령'과, 이 구간 직장인이 꼭 챙겨야 할 절세&middot;재테크 포인트를 짚어보겠습니다. 같은 5천이라도 챙기는 사람과 아닌 사람의 1년은 꽤 다릅니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">월 357만 원, 어디로 사라지나</h2>
+
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">연봉 5,000만 원에서 매달 빠지는 돈을 정리하면 이렇습니다(식대 20만 원 비과세, 부양가족 본인 1명 기준).</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>국민연금</b> : 약 18만 원</p>
+<p data-ke-size="size16">- <b>건강보험 + 장기요양</b> : 약 16만 원</p>
+<p data-ke-size="size16">- <b>고용보험</b> : 약 3만 6천 원</p>
+<p data-ke-size="size16">- <b>소득세 + 지방소득세</b> : 약 19만 원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">합치면 月 약 56만 원, 1년이면 약 710만 원이 세전에서 빠져나갑니다. 흥미로운 건 이 중 순수 세금은 약 220만 원뿐이고, 나머지 490만 원은 4대보험이라는 점입니다. 국민연금&middot;건강보험은 노후와 의료로 돌아오니, 전부 '날아가는 돈'이라고 볼 수는 없습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">그런데도 빠듯하게 느껴지는 이유는 따로 있습니다. 357만 원에서 월세나 주거비, 통신비, 보험료, 교통비 같은 고정지출이 먼저 빠지면 실제 '쓸 수 있는 돈'은 더 줄어들기 때문입니다. 그래서 연봉 5천 구간에서는 '얼마 버느냐'만큼 '얼마를 돌려받고 덜 떼이느냐'가 중요해집니다. 바로 여기서 절세가 힘을 발휘합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">연봉 5천 구간, 절세 효율이 가장 좋다</h2>
+
+<p data-ke-size="size16">사실 연봉 5,000만 원 안팎은 <b>절세 효율이 가장 빛나는 구간</b>입니다. 총급여 5,500만 원을 기준으로 일부 공제율이 갈리기 때문입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">- <b>연금저축&middot;IRP 세액공제</b> : 총급여 5,500만 원 이하면 공제율이 <b>16.5%</b>(초과 시 13.2%). 연 900만 원 납입하면 최대 약 148만 원을 돌려받습니다. 5천 구간이 딱 이 높은 공제율을 받는 자리입니다.</p>
+<p data-ke-size="size16">- <b>월세 세액공제</b> : 총급여 5,500만 원 이하 무주택 세대주는 공제율 <b>17%</b>(초과 시 15%). 연 750만 원 한도로 최대 약 127만 원 환급.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">즉 연봉이 5,500만 원을 살짝 넘으면 이 우대 공제율을 놓치게 됩니다. 5천 초반 구간이라면 연금저축&middot;IRP를 적극 활용해 높은 공제율을 누리는 것이 핵심 전략입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">예를 들어 연봉 5,000만 원인 직장인이 연금저축에 600만 원, IRP에 300만 원을 넣으면 총 900만 원의 16.5%인 약 148만 원을 연말정산에서 환급받습니다. 月 357만 원 실수령에 더해, 1년에 한 번 148만 원이 들어오는 셈이죠. 게다가 그 900만 원은 사라지는 돈이 아니라 노후 자금으로 쌓입니다. 같은 5천 연봉이라도 이 제도를 쓰는 사람과 안 쓰는 사람의 격차가 매년 벌어지는 이유입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">5천 직장인이 챙겨야 할 3가지</h2>
+
+<p data-ke-size="size16">- <b>① 연금저축 + IRP 납입</b> : 환급(16.5%)과 노후 준비를 한 번에. 5천 구간의 가장 확실한 절세 카드.</p>
+<p data-ke-size="size16">- <b>② 비과세 항목 점검</b> : 식대&middot;자가운전보조금이 급여에 잡혀 있는지 확인. 없다면 회사에 요청해볼 만합니다.</p>
+<p data-ke-size="size16">- <b>③ 체크카드&middot;현금영수증</b> : 총급여 25%(연 1,250만 원) 넘는 지출은 공제율 높은 체크카드&middot;현금영수증으로.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이 세 가지만 챙겨도 연말정산 환급이 수십만 원 단위로 달라집니다. 반대로 아무것도 안 하면 매년 돌려받을 수 있는 돈을 그대로 흘려보내는 셈입니다. 연봉 5천은 '버는 단계'에서 '관리하는 단계'로 넘어가는 분기점이라고 보면 됩니다. 이 시점부터 절세 습관을 들이면 10년, 20년 뒤 자산 격차가 분명해집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">내 연봉의 정확한 실수령은 [taxcalc.co.kr](http://taxcalc.co.kr) 연봉 실수령액 계산기로 먼저 확인해보세요. 부양가족 수와 비과세액만 넣으면 月 실수령이 바로 나옵니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">자주 묻는 질문</h2>
+
+<p data-ke-size="size16"><b>Q1. 연봉 5천이면 상위 몇 %인가요?</b></p>
+<p data-ke-size="size16">근로소득 통계상 대략 상위 30% 안팎입니다. 다만 기준연도에 따라 달라지니 참고용으로 보세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q2. 5,500만 원을 넘기면 손해인가요?</b></p>
+<p data-ke-size="size16">소득세 자체는 누진세라 손해가 아니지만, 연금저축&middot;월세 세액공제의 우대 공제율(16.5%&middot;17%) 기준이 5,500만 원이라 이 선을 넘으면 공제율이 낮아집니다. 그만큼 연금저축 납입의 절세 효과가 살짝 줄어듭니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q3. 실수령을 가장 빠르게 늘리는 방법은?</b></p>
+<p data-ke-size="size16">단기적으로는 비과세 항목 점검, 장기적으로는 연말정산 공제(연금저축&middot;IRP) 활용입니다. 둘 다 연봉 인상 없이 손에 쥐는 돈을 늘려줍니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Q4. 부양가족이 있으면 실수령이 얼마나 늘어나나요?</b></p>
+<p data-ke-size="size16">부양가족이 1명 늘 때마다 月 5~6만 원, 연 60~70만 원가량 실수령이 늘어납니다. 매달 떼는 소득세 원천징수액이 줄기 때문입니다. 맞벌이라면 공제를 한 명에게 몰아주는 전략도 고려해보세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<center><a href="https://taxcalc.co.kr/#income/salary" target="_blank" rel="noopener" aria-label="연봉 실수령액 계산기 바로가기"> <button class="arenabt star1"> 연봉 실수령액 계산기 바로가기 </button> </a></center>
+
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">결론: 5천의 진짜 가치는 '관리'에서 갈린다</h2>
+
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">연봉 5,000만 원의 월 실수령은 약 357만 원. 세전 숫자만 보면 아쉽지만, 이 구간은 연금저축&middot;월세 세액공제의 우대 공제율을 받는 '절세 황금 구간'이기도 합니다. 같은 5천이라도 비과세를 챙기고 연말정산 공제를 활용하는 사람은 연 수백만 원을 더 가져갑니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">먼저 내 정확한 실수령부터 확인하세요. [taxcalc.co.kr](http://taxcalc.co.kr) 연봉 실수령액 계산기에 연봉 5,000만 원과 부양가족&middot;비과세를 넣으면 30초 만에 月 실수령이 나옵니다. 숫자를 알아야 어디서 더 챙길지 보입니다.</p>
+
+<!-- 해시태그 (티스토리 태그 입력란에 붙여넣기) -->
+<!-- 연봉5000실수령액, 연봉5천, 실수령액, 연금저축세액공제, 월세세액공제, 연말정산, 4대보험, 직장인절세, taxcalc, 연봉협상 -->
