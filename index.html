@@ -48,26 +48,7 @@
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
-    "inLanguage": "ko",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "120"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "세금계산기",
-    "url": "https://taxcalc.co.kr/",
-    "inLanguage": "ko",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://taxcalc.co.kr/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "inLanguage": "ko"
   }
   </script>
   <script type="application/ld+json">
@@ -5425,29 +5406,6 @@
   <!-- ===== MOBILE SIDEBAR OVERLAY ===== -->
   <div id="sidebar-overlay"></div>
 
-  <!-- ===== BOTTOM ANCHOR AD ===== -->
-  <div id="ad-anchor">
-    <button class="anchor-close" title="닫기">✕</button>
-    <div class="ad-slot ad-728x90" id="ad-anchor-desktop">
-      <!-- Google AdSense 728x90 -->
-    </div>
-    <div class="ad-slot ad-320x50" id="ad-anchor-mobile" style="display:none">
-      <!-- Google AdSense 320x50 Mobile -->
-    </div>
-  </div>
-
-  <!-- ===== INTERSTITIAL AD OVERLAY ===== -->
-  <div id="interstitial-overlay">
-    <div class="interstitial-box">
-      <button class="interstitial-close" disabled>✕</button>
-      <div class="interstitial-label">광고</div>
-      <div class="ad-slot" style="width:320px;height:250px;border-radius:8px" id="ad-interstitial">
-        <!-- Google AdSense Interstitial -->
-      </div>
-      <div class="interstitial-countdown"></div>
-    </div>
-  </div>
-
 </div><!-- /#app -->
 
 <!-- ===== SITE SITEMAP (below-the-fold, SEO internal links) ===== -->
@@ -5717,18 +5675,14 @@
     // 초기 로드 시 해시 라우팅으로 이미 활성화된 뷰 반영
     syncTitleBar();
 
-    // Responsive: show correct anchor ad based on viewport
+    // Responsive: show correct banner placeholder based on viewport
     function resizeAds() {
       const isMobile = window.innerWidth < 640;
       const desktopBanner = document.getElementById('ad-banner-top');
       const mobileBanner = document.getElementById('ad-banner-top-mobile');
-      const anchorDesktop = document.getElementById('ad-anchor-desktop');
-      const anchorMobile = document.getElementById('ad-anchor-mobile');
 
       if (desktopBanner) desktopBanner.style.display = isMobile ? 'none' : '';
       if (mobileBanner) mobileBanner.style.display = isMobile ? '' : 'none';
-      if (anchorDesktop) anchorDesktop.style.display = isMobile ? 'none' : '';
-      if (anchorMobile) anchorMobile.style.display = isMobile ? '' : 'none';
     }
     resizeAds();
     window.addEventListener('resize', resizeAds);

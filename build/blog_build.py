@@ -632,7 +632,8 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     article code {{ background: #f3f4f6; padding: 1px 6px; border-radius: 4px; font-size: 14px; }}
     .quote {{ background: #fffbeb; border-left: 4px solid #f59e0b; padding: 16px 22px; margin: 22px 0; border-radius: 0 10px 10px 0; font-size: 15px; color: #78350f; line-height: 1.7; }}
     .quote strong {{ color: #92400e; }}
-    .ad-slot {{ margin: 28px 0; text-align: center; min-height: 90px; }}
+    .source-note {{ background: #f8fafc; border: 1px solid #dbeafe; border-radius: 10px; padding: 16px 20px; margin: 32px 0 20px; font-size: 14px; color: #475569; }}
+    .source-note strong {{ display: block; color: #1e40af; margin-bottom: 6px; }}
     .cta-box {{ background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%); color: white; padding: 32px 28px; border-radius: 14px; text-align: center; margin: 40px 0 24px; box-shadow: 0 8px 24px rgba(37,99,235,0.25); }}
     .cta-box h3 {{ color: white; font-size: 22px; font-weight: 700; margin: 0 0 10px; border: none; padding: 0; }}
     .cta-box p {{ font-size: 15px; opacity: 0.95; margin-bottom: 20px; }}
@@ -679,14 +680,9 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 
     {body_html}
 
-    <div class="ad-slot">
-      <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-2792604427181547"
-        data-ad-slot="auto"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+    <div class="source-note">
+      <strong>자료 기준 및 검토 안내</strong>
+      <p style="margin:0">세금계산기 운영팀이 국세청, 행정안전부, 위택스, 법제처 국가법령정보센터 등 공개 자료를 기준으로 작성했습니다. 한시 감면·지역별 조례·개별 예외는 바뀔 수 있으므로 실제 신고 전 공식 기관에서 최종 확인하세요.</p>
     </div>
 
     <div class="cta-box">

@@ -431,7 +431,6 @@ const App = (() => {
     buildWelcomeCatalog();
     initHamburger();
     Theme.init();
-    Ads.init();
 
     // 로고 클릭 → 홈
     const logoBtn = document.getElementById('logo-home');
