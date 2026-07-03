@@ -30,6 +30,9 @@ ROOT = Path(__file__).resolve().parent.parent
 POST_DIR = ROOT / "blog_post"
 THUMB_DIR = ROOT / "thumbnails"
 OUT_ROOT = ROOT / "tistory_upload"
+ADSENSE_BLOCK = """<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>"""
 
 TITLE_RE = re.compile(
     r"<!--\s*티스토리 제목.*?-->\s*<!--\s*(?P<title>.+?)\s*-->",
@@ -40,6 +43,11 @@ TAGS_RE = re.compile(
     re.DOTALL,
 )
 P_TAG_TEXT_RE = re.compile(r"<[^>]+>")
+H2_RE = re.compile(r"(<h2\b[^>]*>.*?</h2>)", re.DOTALL | re.IGNORECASE)
+CONCLUSION_RE = re.compile(
+    r"(<h2\b[^>]*>\s*(?:결론|마무리|정리).*?</h2>)",
+    re.DOTALL | re.IGNORECASE,
+)
 
 
 def slugify(path: Path) -> str:
@@ -76,7 +84,26 @@ def parse_tistory_post(path: Path) -> dict[str, str]:
     if not body:
         raise ValueError(f"{path.name}: 본문이 비어 있습니다.")
 
-    return {"title": title, "body": body, "tags": tags}
+    return {"title": title, "body": ensure_adsense(body), "tags": tags}
+
+
+def ensure_adsense(body: str) -> str:
+    if "adsbygoogle" in body:
+        return body
+
+    first_h2 = H2_RE.search(body)
+    if first_h2:
+        insert_at = first_h2.end()
+        body = body[:insert_at] + "\n\n" + ADSENSE_BLOCK + "\n\n" + body[insert_at:].lstrip()
+    else:
+        body = ADSENSE_BLOCK + "\n\n" + body
+
+    conclusion = CONCLUSION_RE.search(body)
+    if conclusion:
+        insert_at = conclusion.end()
+        body = body[:insert_at] + "\n\n" + ADSENSE_BLOCK + "\n\n" + body[insert_at:].lstrip()
+
+    return body
 
 
 def infer_image_path(source_path: Path, explicit: str | None) -> Path | None:

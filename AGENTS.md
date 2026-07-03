@@ -1,0 +1,188 @@
+# 한국 세금 계산기 — Codex 작업 가이드
+
+## 프로젝트 개요
+한국 주요 세금을 계산할 수 있는 **Vanilla HTML/CSS/JS SPA**입니다.
+빌드 도구 없이 `python3 -m http.server 8080`으로 바로 실행됩니다.
+
+---
+
+## 기술 스택 & 제약사항
+
+| 항목 | 내용 |
+|------|------|
+| 언어 | HTML5 / CSS3 / JavaScript ES6+ |
+| 프레임워크 | **없음** (Vanilla만 사용) |
+| 빌드 도구 | **없음** — `<script src="...?v=N">` 캐시버스팅만 사용 |
+| 폰트 | Pretendard CDN + 시스템 폰트 fallback |
+| 로컬 서버 | `python3 -m http.server 8080` |
+
+---
+
+## 디렉터리 구조
+
+```
+web_tex_calculator/
+├── index.html                          # 단일 SPA 진입점, 모든 뷰 포함
+├── css/
+│   ├── reset.css                       # 브라우저 reset
+│   ├── variables.css                   # CSS Custom Properties (라이트/다크)
+│   ├── layout.css                      # 앱 셸, 헤더, 사이드바, 탭바
+│   ├── components.css                  # 카드, 폼, 인풋, 버튼, 배지
+│   ├── calculator.css                  # 계산기 전용 스타일
+│   └── responsive.css                  # 반응형 브레이크포인트
+├── js/
+│   ├── theme.js                        # 라이트/다크 모드 토글
+│   ├── ui.js                           # fmtWon, toast, debounce 등 유틸
+│   ├── router.js                       # 해시 기반 라우터
+│   ├── ads.js                          # 전면광고(Page Visibility), 앵커광고
+│   ├── app.js                          # NAV_CONFIG, TAB_CONFIG, 사이드바 빌드
+│   └── calculators/
+│       ├── loan/
+│       │   └── loan.js
+│       ├── real-estate/
+│       │   ├── acquisition.js
+│       │   ├── capital-gains.js
+│       │   └── commission.js
+│       ├── vehicle/
+│       │   └── vehicle-tax.js
+│       └── stocks/
+│           ├── foreign.js
+│           └── transaction.js
+└── .Codex/
+    └── launch.json                     # 로컬 서버 자동 실행 설정
+```
+
+---
+
+## 새 계산기 추가 시 체크리스트
+
+> **⚠️ 중요: 모든 변경 파일을 한 커밋에 포함할 것!**
+> `js/app.js` (NAV_CONFIG/TAB_CONFIG), 계산기 JS 파일, `index.html` 변경을 **반드시 같은 커밋**에 넣어야 한다.
+> 파일을 나눠서 커밋하면 배포 시 사이드바/탭에 항목이 안 나오는 버그 발생.
+> 커밋 전 `git status`로 수정된 파일이 모두 staged 되었는지 반드시 확인!
+
+> **⚠️ 중요: 작업 완료 후 반드시 커밋 & 푸시할 것!**
+> 사용자는 배포된 GitHub Pages 사이트(`https://taxcalc.co.kr/`)에서 테스트한다.
+> 로컬 파일만 수정하고 커밋/푸시하지 않으면 사용자 화면에는 변경사항이 **전혀 반영되지 않는다**.
+> 파일 수정 → `git add` → `git commit` → `git push`까지 **한 세트**로 묶어 진행할 것.
+> "수정했다"고 답하기 전에 `git status`로 working tree가 clean한지, `git log`로 푸시된 커밋이 최신인지 확인 필수!
+
+1. **`js/app.js`** — `NAV_CONFIG`와 `TAB_CONFIG`에 항목 추가
+2. **`js/calculators/<category>/<name>.js`** — 계산기 모듈 생성
+   - 파일 맨 아래 `const Calc<Name> = (() => { ... return { init }; })();` 패턴 사용
+3. **`index.html`** — 세 곳 수정
+   - `<div id="view-<category>-<name>" class="calculator-view">` 뷰 HTML 추가
+   - `<script src="js/calculators/<category>/<name>.js?v=N">` 스크립트 태그 추가
+   - `DOMContentLoaded` 블록에 `Calc<Name>.init();` 추가
+4. **캐시버스팅** — 스크립트 수정 시 `?v=N` 숫자 올리기
+5. **커밋 전 검증** — `git diff --name-only`로 위 1~4의 파일이 모두 포함되었는지 확인
+
+---
+
+## 블로그 글 작성 요청 시 고정 순서
+
+사용자가 "글 써줘", "포스팅 만들어줘"처럼 세금 계산기 콘텐츠 작성을 요청하면
+항상 아래 순서대로 진행한다.
+
+1. **세금 계산기용 포스팅 작성**
+   - `blog_post/*.md` 원고를 작성한다.
+   - 세금 계산기 사이트에 맞는 SEO 제목, 설명, FAQ, CTA를 포함한다.
+   - 계산기 링크는 `https://taxcalc.co.kr/#<category>/<item>` 형식으로 연결한다.
+2. **세금 계산기용 포스팅 배포**
+   - 정적 블로그 HTML을 생성하고 `blog/index.html`, `sitemap.xml` 등 필요한 파일을 갱신한다.
+   - 썸네일이 필요하면 함께 생성한다.
+   - 로컬 검증 후 커밋하고 `main`에 푸시한다.
+3. **티스토리용 포스팅 작성**
+   - `blog_post/*_티스토리.txt` 파일을 별도로 작성한다.
+   - 티스토리 HTML 모드에 바로 붙여넣을 수 있는 `<p data-ke-size="size16">` 형식을 사용한다.
+   - 본문 상단부와 중간/하단부에 애드센스 광고 블록을 넣는다.
+   - CTA 버튼으로 `taxcalc.co.kr` 계산기 링크를 넣는다.
+   - 태그는 파일 맨 아래 `<!-- 해시태그 ... -->` 주석으로 분리한다.
+4. **티스토리용 포스팅 임시저장**
+   - `python3 build/tistory_prepare.py blog_post/<파일명>_티스토리.txt`를 실행해 업로드 패키지를 만든다.
+   - `tistory_upload/<글이름>/upload-helper.html` 기준으로 제목, 본문, 태그, 대표 이미지를 준비한다.
+   - 사용자가 티스토리에 로그인한 Chrome/브라우저 화면을 제공하면 글쓰기 화면에 입력하고 임시저장까지 진행한다.
+   - 최종 발행은 사용자 확인 후 진행한다.
+
+### 티스토리 애드센스 광고 블록
+
+티스토리 원고에는 아래 광고 블록을 기본으로 사용한다. 사이트 본문에는 애드센스 심사 상태를
+고려하되, 티스토리는 사용자가 허용했으므로 원고에 광고 코드를 포함한다.
+
+```html
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+```
+
+---
+
+## 계산기 모듈 템플릿
+
+```js
+const CalcExample = (() => {
+  function calculate() {
+    // 세금 계산 로직
+  }
+
+  function render(result) {
+    // DOM 업데이트
+  }
+
+  function init() {
+    const btn = document.getElementById('btn-example-calc');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      const result = calculate();
+      render(result);
+    });
+  }
+
+  return { init };
+})();
+```
+
+---
+
+## 라우팅 규칙
+
+- URL 해시 형식: `#<category>/<item>` (예: `#real-estate/acquisition`)
+- 카테고리 ID: `loan` / `real-estate` / `vehicle` / `income` / `stocks` / `other`
+- 뷰 요소 ID: `view-<category>-<item>` (슬래시 → 하이픈, 예: `view-real-estate-acquisition`)
+
+---
+
+## 세율 기준년도
+
+**모든 세율은 2026년 기준**입니다. 세율 변경 시 해당 계산기 파일의 상수만 수정하면 됩니다.
+
+---
+
+## 광고 슬롯 구조
+
+| 슬롯 | 위치 | 크기 | 비고 |
+|------|------|------|------|
+| 좌측 사이드 | 사이드바 하단 sticky | 160×600 | 1440px+ 표시 |
+| 우측 사이드 | 메인 우측 sticky | 160×600 | 1440px+ 표시 |
+| 배너 | 탭바와 계산기 패널 사이 | 728×90 | 데스크톱 |
+| 앵커 | 화면 하단 고정 | 320×50 | 모바일 |
+| 전면 | 외부링크 복귀 시 오버레이 | — | Page Visibility API |
+
+---
+
+## 반응형 브레이크포인트
+
+| 범위 | 설명 |
+|------|------|
+| < 640px | 모바일 — 햄버거 메뉴, 하단 앵커광고 |
+| 640–1023px | 태블릿 |
+| 1024px+ | 데스크톱 — 사이드바 고정 표시 |
+| 1440px+ | 사이드 광고 표시 |
+
+---
+
+## 주의사항
+
+- `position: fixed`는 카카오/라인 인앱 브라우저에서 버그 발생 → `position: sticky` 사용
+- CSS 변수는 `variables.css`에서만 정의, 다크모드는 `[data-theme="dark"]` 셀렉터로 override
+- 계산 결과에 사용되는 숫자는 반드시 `UI.fmtWon()` 또는 `UI.fmtNum()`으로 포맷팅

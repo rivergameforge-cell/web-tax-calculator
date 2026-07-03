@@ -10,6 +10,11 @@
 
 <h2 data-ke-size="size26">해외주식 양도소득세 계산 순서</h2>
 
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">&nbsp;</p>
 <p data-ke-size="size16">해외주식 양도소득세는 단순히 "수익 × 22%"로 끝나지 않습니다. 보통 다음 순서로 계산합니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
 <p data-ke-size="size16">- <b>1단계. 종목별 양도차익 계산</b> : 매도가액에서 취득가액과 수수료를 뺍니다.</p>
@@ -100,6 +105,11 @@
 
 <h2 data-ke-size="size26">결론: 250만 원은 수익 관리선이다</h2>
 
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">&nbsp;</p>
 <p data-ke-size="size16">해외주식 250만 원 기본공제는 단순한 면세 한도가 아니라, 연말 매도 계획을 세울 때 기준선입니다. 올해 순이익이 250만 원 근처라면 일부 매도를 다음 해로 미루거나, 손실 종목을 함께 정리해 과세표준을 줄일 수 있습니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
 <p data-ke-size="size16">반대로 이미 큰 수익을 실현했다면 "세금이 얼마나 나올지"를 먼저 계산해야 합니다. 해외주식 양도소득세는 원천징수로 자동 종료되지 않기 때문에, 5월에 예상하지 못한 납부세액이 나올 수 있습니다.</p>
