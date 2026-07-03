@@ -313,6 +313,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "해외주식_양도소득세_250만원_공제",
+        "slug": "foreign-stock-capital-gains-deduction",
+        "category": "finance",
+        "categoryLabel": "금융 세금",
+        "date": "2026-07-03",
+        "readMin": 5,
+        "ctaHref": "/stocks/foreign.html",
+        "ctaLabel": "해외주식 양도소득세 계산기",
+        "related": [
+            ("/stocks/foreign.html", "해외주식 양도소득세 계산기"),
+            ("/stocks/domestic.html", "국내주식 양도소득세 계산기"),
+            ("/stocks/dividend.html", "배당소득세 계산기"),
+            ("/income/interest-dividend.html", "이자·배당소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "주정차_위반_과태료_블로그_포스팅",
         "slug": "parking-violation-fine",
         "category": "fines",
