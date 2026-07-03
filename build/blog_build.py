@@ -280,6 +280,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "DSR_계산",
+        "slug": "dsr-calculation-guide",
+        "category": "loan",
+        "categoryLabel": "대출",
+        "date": "2026-07-03",
+        "readMin": 5,
+        "ctaHref": "/loan/dsr.html",
+        "ctaLabel": "DSR 계산기",
+        "related": [
+            ("/loan/dsr.html", "DSR 계산기"),
+            ("/loan/calculator.html", "대출금 계산기"),
+            ("/loan/ltv.html", "LTV 계산기"),
+            ("/vehicle/installment.html", "자동차 할부금 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "재산세_계산_블로그_포스팅",
         "slug": "property-tax-guide",
         "category": "real-estate",
