@@ -79,3 +79,23 @@ python3 build/build.py
 - `https://taxcalc.co.kr/real-estate/acquisition.html` 등
 - SPA 계산기는 `/#real-estate/acquisition` 로 이전처럼 동작
 - 정적 페이지에 "계산기 실행" 버튼 → SPA로 연결
+
+## 티스토리 업로드 준비
+
+티스토리 Open API 종료로 자동 API 발행 대신, `blog_post/*_티스토리.txt` 원고를
+제목/본문/태그/대표 이미지로 분리하는 로컬 업로드 도우미를 사용합니다.
+
+```bash
+python3 build/tistory_prepare.py blog_post/해외주식_양도소득세_250만원_공제_티스토리.txt
+```
+
+실행 시 `tistory_upload/<글이름>/` 아래에 다음 파일이 생성됩니다.
+
+- `title.txt`: 티스토리 제목 입력란용
+- `body.html`: HTML 모드 본문 붙여넣기용
+- `tags.txt`: 태그 입력란용
+- `image-path.txt`: 대표 이미지 로컬 경로
+- `upload-helper.html`: 브라우저에서 열어 복사 버튼으로 업로드 준비
+
+대표 이미지는 `thumbnails/*.webp`에서 자동 추정하며, 다른 이미지를 쓰려면
+`--image <경로>`를 지정합니다.
