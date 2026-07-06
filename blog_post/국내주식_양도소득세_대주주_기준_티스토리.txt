@@ -1,0 +1,126 @@
+<!-- 티스토리 제목 -->
+<!-- 국내주식 양도소득세 계산, 대주주 기준 50억원 넘으면 세금 얼마나 낼까 -->
+
+<p data-ke-size="size16">국내주식이 크게 오르면 수익률만 보게 되지만, 매도 전에 한 번 더 확인해야 할 것이 있습니다. 바로 <b>국내주식 양도소득세 대상인지</b>입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">국내주식 양도소득세는 해외주식처럼 모든 개인투자자에게 똑같이 붙는 구조가 아닙니다. 일반적인 상장주식 소액주주의 장내 매도 차익은 양도소득세가 과세되지 않는 경우가 많고, 세금 이슈는 주로 <b>대주주 여부, 비상장주식, 장외거래</b>에서 발생합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">주식시장이 강하게 오르는 시기에는 특정 종목 평가액이 빠르게 커질 수 있습니다. 그래서 오늘은 2026년 기준으로 국내주식 양도소득세가 언제 문제 되는지, 대주주 기준은 어떻게 보는지, 세금은 어떤 순서로 계산하는지 정리해 보겠습니다.</p>
+
+<h2 data-ke-size="size26">국내주식 양도소득세는 누가 내나</h2>
+
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">국내주식 양도소득세를 볼 때는 먼저 상장주식인지, 비상장주식인지부터 나눠야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일반적으로 많이 나오는 경우는 다음 네 가지입니다.</p>
+<p data-ke-size="size16">- 코스피·코스닥 등 상장주식을 장내에서 매도한 일반 소액주주</p>
+<p data-ke-size="size16">- 상장주식이지만 대주주에 해당하는 투자자</p>
+<p data-ke-size="size16">- 비상장주식을 양도한 투자자</p>
+<p data-ke-size="size16">- 상장주식이라도 장외거래 등 별도 과세 대상 거래를 한 투자자</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">대부분의 개인투자자가 관심을 갖는 것은 첫 번째와 두 번째입니다. 즉, <b>내가 소액주주인지 대주주인지</b>가 핵심입니다.</p>
+
+<h2 data-ke-size="size26">대주주 기준은 계좌 전체가 아니라 종목별로 본다</h2>
+
+<p data-ke-size="size16">국내주식 대주주 기준에서 가장 많이 헷갈리는 부분은 계좌 전체 평가액이 아니라 <b>종목별 보유액</b>을 본다는 점입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">예를 들어 A주식 30억원, B주식 30억원을 보유했다면 전체 국내주식 평가액은 60억원입니다. 하지만 대주주 기준은 일반적으로 종목별로 판단합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">반대로 한 종목만 50억원 이상 보유했다면 그 종목은 대주주 여부를 반드시 확인해야 합니다. 계산기에서는 2026년 기준으로 <b>종목당 50억원 이상 보유</b>를 주요 대주주 판단 기준으로 반영하고 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">다만 실제 판단은 본인 보유분만 보는 것이 아니라 특수관계인 보유분, 지분율 요건, 직전 사업연도 말 보유 상태 등 세부 조건을 함께 봐야 합니다.</p>
+
+<h2 data-ke-size="size26">국내주식 양도소득세 계산 순서</h2>
+
+<p data-ke-size="size16">국내주식 양도소득세는 다음 순서로 계산합니다.</p>
+<p data-ke-size="size16">- 양도가액 확인</p>
+<p data-ke-size="size16">- 취득가액 확인</p>
+<p data-ke-size="size16">- 증권사 수수료 등 필요경비 차감</p>
+<p data-ke-size="size16">- 양도차익 계산</p>
+<p data-ke-size="size16">- 기본공제 250만원 차감</p>
+<p data-ke-size="size16">- 세율 적용</p>
+<p data-ke-size="size16">- 지방소득세 10% 추가</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">식으로 보면 다음과 같습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>양도차익 = 양도가액 - 취득가액 - 필요경비</b></p>
+<p data-ke-size="size16"><b>과세표준 = 양도차익 - 기본공제 250만원</b></p>
+<p data-ke-size="size16"><b>최종 세금 = 양도소득세 + 지방소득세</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">기본공제 250만원은 거래 한 건마다 따로 적용하는 개념이 아닙니다. 해당 과세기간의 과세 대상 주식 양도소득을 합산한 뒤 적용하는 방식입니다.</p>
+
+<h2 data-ke-size="size26">예시 1. 대주주가 아닌 상장주식 장내거래</h2>
+
+<p data-ke-size="size16">국내 상장주식을 3,000만원에 사서 5,000만원에 팔았다고 가정해 보겠습니다. 양도차익은 2,000만원입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">하지만 이 투자자가 상장주식 소액주주이고 일반적인 장내거래로 매도했다면, 양도차익이 있어도 양도소득세를 내지 않는 경우가 많습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이때 실제로 체감하는 세금은 보통 양도소득세가 아니라 매도 시 부과되는 증권거래세 쪽입니다. 그래서 일반 개인투자자는 국내주식 매매에서 “수익이 났으니 무조건 양도세를 낸다”고 이해하면 안 됩니다.</p>
+
+<h2 data-ke-size="size26">예시 2. 대주주에 해당하는 경우</h2>
+
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">대주주에 해당하는 투자자가 국내주식을 매도해 양도차익 1억원을 얻었다고 가정해 보겠습니다.</p>
+<p data-ke-size="size16">- 양도차익: 1억원</p>
+<p data-ke-size="size16">- 기본공제: 250만원</p>
+<p data-ke-size="size16">- 과세표준: 9,750만원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">대주주 과세표준이 3억원 이하인 구간이라면 양도소득세 20%를 적용합니다.</p>
+<p data-ke-size="size16">- 양도소득세: 9,750만원 × 20% = 1,950만원</p>
+<p data-ke-size="size16">- 지방소득세: 1,950만원 × 10% = 195만원</p>
+<p data-ke-size="size16">- 세금 합계: 2,145만원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">양도차익 1억원이 전부 내 수익으로 남는 것이 아니라, 세후 기준으로는 약 7,855만원이 남는 구조입니다.</p>
+
+<h2 data-ke-size="size26">예시 3. 과세표준이 3억원을 넘는 경우</h2>
+
+<p data-ke-size="size16">대주주의 국내주식 양도소득세는 과세표준이 커지면 세율 구간이 나뉩니다. 계산기에서는 과세표준 3억원까지 20%, 3억원 초과분은 25% 구조로 계산합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">예를 들어 양도차익이 5억원이고 기본공제 250만원을 차감하면 과세표준은 4억 9,750만원입니다.</p>
+<p data-ke-size="size16">- 3억원 이하 구간: 3억원 × 20% = 6,000만원</p>
+<p data-ke-size="size16">- 3억원 초과 구간: 1억 9,750만원 × 25% = 4,937만 5천원</p>
+<p data-ke-size="size16">- 양도소득세: 1억 937만 5천원</p>
+<p data-ke-size="size16">- 지방소득세: 1,093만 7,500원</p>
+<p data-ke-size="size16">- 세금 합계: 1억 2,031만 2,500원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">수익 규모가 커질수록 세금 차이가 커집니다. 특히 한 종목이 크게 올라 대주주 기준에 가까워진 투자자라면 매도 시점과 보유 기준일을 함께 확인해야 합니다.</p>
+
+<h2 data-ke-size="size26">매도 전 체크리스트</h2>
+
+<p data-ke-size="size16">국내주식을 매도하기 전에는 다음 항목을 순서대로 확인해 보세요.</p>
+<p data-ke-size="size16">- 상장주식인지 비상장주식인지</p>
+<p data-ke-size="size16">- 장내거래인지 장외거래인지</p>
+<p data-ke-size="size16">- 해당 종목의 대주주 기준에 해당하는지</p>
+<p data-ke-size="size16">- 본인 외 특수관계인 보유분을 합산해야 하는지</p>
+<p data-ke-size="size16">- 취득가액과 매도 수수료를 정확히 확인했는지</p>
+<p data-ke-size="size16">- 같은 과세기간의 다른 주식 손익과 합산해야 하는지</p>
+<p data-ke-size="size16">- 기본공제 250만원을 이미 다른 주식 양도소득에서 사용했는지</p>
+
+<h2 data-ke-size="size26">국내주식 양도소득세 계산기 바로가기</h2>
+
+<p data-ke-size="size16">taxcalc.co.kr의 국내주식 양도소득세 계산기는 양도가액, 취득가액, 필요경비, 대주주 여부를 입력하면 예상 양도소득세와 지방소득세를 계산합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<center><a href="https://taxcalc.co.kr/#stocks/domestic" target="_blank" rel="noopener" aria-label="국내주식 양도소득세 계산기 바로가기"> <button class="arenabt star1"> 국내주식 양도소득세 계산기 바로가기 </button> </a></center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">계산 결과는 신고서를 대신하지는 않지만, 매도 전에 세후 수익을 가늠하는 용도로 유용합니다. 수익이 큰 종목을 보유하고 있거나 대주주 기준에 가까운 경우에는 먼저 예상 세금을 계산해 보는 것이 좋습니다.</p>
+
+<h2 data-ke-size="size26">결론: 급등장에서는 세후 수익까지 봐야 한다</h2>
+
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+
+<p data-ke-size="size16">주식시장이 강하게 오를 때는 수익률만 보기 쉽습니다. 하지만 보유 종목의 평가액이 커지고 특정 종목 집중도가 높아지면 국내주식 양도소득세 이슈가 생길 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일반 소액주주의 상장주식 장내거래라면 양도소득세 부담이 없을 수 있지만, 대주주 기준에 해당하거나 비상장·장외거래가 섞이면 계산이 달라집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">매도 전에는 양도차익, 기본공제 250만원, 대주주 여부, 지방소득세까지 함께 계산해 보세요. 세전 수익과 세후 수익의 차이를 알고 있어야 실제 투자 성과를 정확히 판단할 수 있습니다.</p>
+
+<!-- 해시태그 -->
+<!-- 국내주식양도소득세, 대주주기준, 주식세금, 양도소득세, 국내주식세금, 주식양도세, 대주주양도세, 증권세금, 주식투자세금, taxcalc -->

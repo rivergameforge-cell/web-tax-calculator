@@ -347,6 +347,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "국내주식_양도소득세_대주주_기준",
+        "slug": "domestic-stock-capital-gains-major-shareholder",
+        "category": "finance",
+        "categoryLabel": "금융 세금",
+        "date": "2026-07-06",
+        "readMin": 6,
+        "ctaHref": "/stocks/domestic.html",
+        "ctaLabel": "국내주식 양도소득세 계산기",
+        "related": [
+            ("/stocks/domestic.html", "국내주식 양도소득세 계산기"),
+            ("/stocks/foreign.html", "해외주식 양도소득세 계산기"),
+            ("/stocks/transaction.html", "증권거래세 계산기"),
+            ("/stocks/dividend.html", "배당소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "주정차_위반_과태료_블로그_포스팅",
         "slug": "parking-violation-fine",
         "category": "fines",

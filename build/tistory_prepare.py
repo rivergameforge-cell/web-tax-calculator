@@ -120,6 +120,7 @@ def infer_image_path(source_path: Path, explicit: str | None) -> Path | None:
     # 1) 같은 주제로 만든 사이트 글 slug가 있는 경우를 우선 매칭
     known = {
         "해외주식_양도소득세_250만원_공제": "foreign-stock-capital-gains-deduction",
+        "국내주식_양도소득세_대주주_기준": "domestic-stock-capital-gains-major-shareholder",
     }
     candidates = []
     if base in known:
