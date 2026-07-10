@@ -38,6 +38,7 @@ TISTORY = [
     {"file": "자동차세_미납_티스토리", "slug": "vehicle-tax-overdue-tistory", "category": "vehicle"},
     {"file": "연봉_실수령액_티스토리", "slug": "salary-take-home-tistory", "category": "labor"},
     {"file": "연봉_5천_실수령액_티스토리", "slug": "salary-50m-take-home-tistory", "category": "labor"},
+    {"file": "기타소득세_8.8_강연료_원고료_상금_티스토리", "slug": "other-income-tax-8-8-guide-tistory", "category": "business"},
 ]
 
 
@@ -55,6 +56,7 @@ THEMES = {
     "real-estate": {"grad": ("#2563EB", "#1E3A8A"), "accent": "#FCD34D", "icon": "🏠", "label": "부동산"},
     "finance":     {"grad": ("#059669", "#065F46"), "accent": "#FDE047", "icon": "📈", "label": "금융"},
     "labor":       {"grad": ("#7C3AED", "#4C1D95"), "accent": "#FDE047", "icon": "💼", "label": "근로"},
+    "business":    {"grad": ("#4F46E5", "#312E81"), "accent": "#FDE047", "icon": "🧾", "label": "사업 세금"},
     "inherit":     {"grad": ("#B45309", "#78350F"), "accent": "#FEF08A", "icon": "📜", "label": "상속·증여"},
     "vehicle":     {"grad": ("#DC2626", "#7F1D1D"), "accent": "#FDE047", "icon": "🚗", "label": "자동차"},
     "loan":        {"grad": ("#0891B2", "#155E75"), "accent": "#FDE047", "icon": "🏦", "label": "대출"},
