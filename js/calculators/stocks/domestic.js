@@ -1,4 +1,4 @@
-/* ===== 국내주식 양도소득세 계산기 (2026년 기준) ===== */
+/* ===== 국내주식 양도소득세 계산기 (2026년 7월 기준) ===== */
 const CalcStockDomestic = (() => {
 
   // 대주주 기준: 종목당 50억원 이상 보유 (2024년~ 완화)
@@ -28,6 +28,7 @@ const CalcStockDomestic = (() => {
       sellAmount,        // 양도가액 (원)
       buyAmount,         // 취득가액 (원)
       expenses,          // 필요경비 (수수료 등)
+      otherGains,        // 동일 연도 국내·국외 주식 손익 합산
     } = params;
 
     if (!sellAmount || sellAmount <= 0 || !buyAmount) return null;
@@ -42,8 +43,9 @@ const CalcStockDomestic = (() => {
       };
     }
 
-    // 기본공제 (연간 합산, 여기서는 단일 거래 기준)
-    const taxableGain = Math.max(0, gain - BASIC_DEDUCTION);
+    // 국내·국외 주식 손익통산 후 기본공제 250만원(연간 합산)
+    const combinedGain = gain + (otherGains || 0);
+    const taxableGain = Math.max(0, combinedGain - BASIC_DEDUCTION);
 
     const rateSet = RATES[companyType] || RATES['general'];
     let incomeTax = 0;
@@ -69,7 +71,7 @@ const CalcStockDomestic = (() => {
 
     return {
       sellAmount, buyAmount, expenses: expenses || 0,
-      gain, taxableGain,
+      gain, otherGains: otherGains || 0, combinedGain, taxableGain,
       incomeTax, localTax, totalTax,
       effectiveRate, netProfit,
       params,
@@ -121,6 +123,15 @@ const CalcStockDomestic = (() => {
         <span class="br-label">양도차익</span>
         <span class="br-value">${UI.fmtWon(r.gain)}</span>
       </div>
+      ${r.otherGains !== 0 ? `
+      <div class="breakdown-row">
+        <span class="br-label">다른 국내·국외 주식 손익</span>
+        <span class="br-value ${r.otherGains >= 0 ? 'positive' : 'negative'}">${r.otherGains >= 0 ? '+' : ''}${UI.fmtWon(r.otherGains)}</span>
+      </div>
+      <div class="breakdown-row">
+        <span class="br-label">연간 손익통산 금액</span>
+        <span class="br-value">${UI.fmtWon(r.combinedGain)}</span>
+      </div>` : ''}
       <div class="breakdown-row">
         <span class="br-label">기본공제</span>
         <span class="br-value" style="color:var(--success)">- ${UI.fmtWon(2500000)}</span>
@@ -161,7 +172,9 @@ const CalcStockDomestic = (() => {
     const btnPrint = view.querySelector('#sdom-print');
     const btnReset = view.querySelector('#sdom-reset');
 
-    view.querySelectorAll('input[type="text"]').forEach(el => UI.bindNumInput(el));
+    view.querySelectorAll('input[type="text"]').forEach(el => {
+      if (el.id !== 'sdom-other') UI.bindNumInput(el);
+    });
 
     function getParams() {
       const getVal = id => UI.parseNum((view.querySelector(`#${id}`)?.value || '').replace(/,/g, ''));
@@ -171,6 +184,7 @@ const CalcStockDomestic = (() => {
         sellAmount:  getVal('sdom-sell'),
         buyAmount:   getVal('sdom-buy'),
         expenses:    getVal('sdom-expense'),
+        otherGains:  getVal('sdom-other'),
       };
     }
 

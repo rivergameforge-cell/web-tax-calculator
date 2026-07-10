@@ -1,12 +1,13 @@
-/* ===== 증여세 계산기 (2026년 기준) ===== */
+/* ===== 증여세 계산기 (2026년 7월 기준) ===== */
 const CalcGift = (() => {
 
-  // 2026년 개정 증여세 세율표 (상속세와 동일, 4단계)
+  // 상속·증여세 기본세율표 (국세청 현행 안내 기준)
   const TAX_BRACKETS = [
-    { limit: 200_000_000,    rate: 0.10, deduction:          0 },
-    { limit: 500_000_000,    rate: 0.20, deduction: 20_000_000 },
-    { limit: 1_000_000_000,  rate: 0.30, deduction: 70_000_000 },
-    { limit: Infinity,       rate: 0.40, deduction: 170_000_000 },
+    { limit: 100_000_000,    rate: 0.10, deduction:          0 },
+    { limit: 500_000_000,    rate: 0.20, deduction: 10_000_000 },
+    { limit: 1_000_000_000,  rate: 0.30, deduction: 60_000_000 },
+    { limit: 3_000_000_000,  rate: 0.40, deduction: 160_000_000 },
+    { limit: Infinity,       rate: 0.50, deduction: 460_000_000 },
   ];
 
   // 증여재산공제 한도 (10년 합산)
@@ -14,7 +15,7 @@ const CalcGift = (() => {
     'spouse':    600_000_000,  // 배우자
     'lineal':     50_000_000,  // 직계존비속 (성인)
     'lineal-minor': 20_000_000, // 직계존비속 (미성년자)
-    'relative':   10_000_000,  // 기타 친족 (6촌 이내 혈족, 4촌 이내 인척)
+    'relative':   10_000_000,  // 기타 친족 (4촌 이내 혈족, 3촌 이내 인척)
     'other':             0,   // 타인
   };
 

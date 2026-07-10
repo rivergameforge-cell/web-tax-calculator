@@ -120,7 +120,7 @@
       <div class="logo-icon">₩</div>
       <div>
         <div class="logo-text">세금계산기</div>
-        <div class="logo-sub">2026년 기준</div>
+        <div class="logo-sub">2026년 7월 기준</div>
       </div>
     </a>
     <div class="header-spacer"></div>
@@ -185,7 +185,7 @@
         <div class="page-title-bar" id="page-title-bar" style="display:none">
           <span class="page-title-icon" id="page-title-icon">🏠</span>
           <span class="page-title" id="page-title-text"></span>
-          <span class="page-year-badge">2026년 기준</span>
+          <span class="page-year-badge">2026년 7월 기준</span>
         </div>
 
         <!-- Calculator Views -->
@@ -517,7 +517,14 @@
                         <input type="checkbox" id="acq-first-home">
                         <div>
                           <div class="cb-label">생애최초 주택 구입</div>
-                          <div class="cb-desc">최대 200만원 감면</div>
+                          <div class="cb-desc">최대 200만원 감면 (인구감소지역 300만원)</div>
+                        </div>
+                      </label>
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="acq-decline-area">
+                        <div>
+                          <div class="cb-label">인구감소지역 주택</div>
+                          <div class="cb-desc">생애최초 감면 한도 300만원 적용</div>
                         </div>
                       </label>
                       <label class="checkbox-item">
@@ -561,7 +568,7 @@
               <summary>💡 취득세 절세 팁</summary>
               <div class="tip-content">
                 <ul>
-                  <li><strong>생애최초 주택 구매</strong> — 취득가 12억 이하 시 취득세 <span class="tip-highlight">최대 200만원 감면</span></li>
+                  <li><strong>생애최초 주택 구매</strong> — 취득가 12억 이하 시 취득세 <span class="tip-highlight">최대 200만원 감면</span>, 인구감소지역 주택은 최대 300만원</li>
                   <li><strong>출산·양육 감면</strong> — 2자녀 이상 가정, 취득가 12억 이하 시 <span class="tip-highlight">최대 500만원 감면</span></li>
                   <li><strong>85㎡ 이하 주택</strong> — 농어촌특별세 면제로 부가세 절감</li>
                   <li><strong>다주택자 주의</strong> — 조정대상지역 2주택 8%, 3주택 12% 중과. 주택 수 정리 후 매수하면 세율 절감</li>
@@ -995,13 +1002,6 @@
                             <div class="cb-desc">기본공제 12억 적용</div>
                           </div>
                         </label>
-                        <label class="checkbox-item">
-                          <input type="checkbox" id="comp-adjusted2">
-                          <div>
-                            <div class="cb-label">조정대상지역 2주택</div>
-                            <div class="cb-desc">중과세율 적용</div>
-                          </div>
-                        </label>
                       </div>
                     </div>
 
@@ -1055,7 +1055,7 @@
               <div class="tip-content">
                 <ul>
                   <li><strong>1세대 1주택자</strong> — 공시가격 <span class="tip-highlight">12억까지 비과세</span> (일반 9억)</li>
-                  <li><strong>고령자·장기보유 세액공제</strong> — 60세 이상 최대 30%, 5년 이상 보유 최대 50%, 합산 최대 80% 공제</li>
+                  <li><strong>고령자·장기보유 세액공제</strong> — 60세 이상 최대 40%, 5년 이상 보유 최대 50%, 합산 최대 80% 공제</li>
                   <li><strong>부부 공동명의</strong> — 각각 9억씩 총 18억 공제 vs 1주택자 12억+고령자공제 → 비교 필요</li>
                   <li><strong>임대사업 등록</strong> — 합산배제 혜택으로 종부세 부담 완화 (요건 확인 필수)</li>
                 </ul>
@@ -1073,38 +1073,43 @@
                         <th style="padding:7px 10px;text-align:center;white-space:nowrap">구분</th>
                         <th style="padding:7px 10px;text-align:center;white-space:nowrap">과세표준</th>
                         <th style="padding:7px 10px;text-align:center;white-space:nowrap">일반<br><span style="font-weight:400">(2주택 이하)</span></th>
-                        <th style="padding:7px 10px;text-align:center;white-space:nowrap">중과<br><span style="font-weight:400">(3주택↑·조정2주택)</span></th>
+                        <th style="padding:7px 10px;text-align:center;white-space:nowrap">3주택 이상</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr style="border-top:1px solid var(--border)">
-                        <td style="padding:6px 10px;text-align:center;color:var(--text-secondary)" rowspan="6">주택</td>
+                        <td style="padding:6px 10px;text-align:center;color:var(--text-secondary)" rowspan="7">주택</td>
                         <td style="padding:6px 10px;text-align:center">3억 이하</td>
                         <td style="padding:6px 10px;text-align:center">0.5%</td>
-                        <td style="padding:6px 10px;text-align:center;color:var(--danger)">1.2%</td>
+                        <td style="padding:6px 10px;text-align:center;color:var(--danger)">0.5%</td>
                       </tr>
                       <tr style="border-top:1px solid var(--border)">
                         <td style="padding:6px 10px;text-align:center">3억 ~ 6억</td>
                         <td style="padding:6px 10px;text-align:center">0.7%</td>
-                        <td style="padding:6px 10px;text-align:center;color:var(--danger)">1.6%</td>
+                        <td style="padding:6px 10px;text-align:center;color:var(--danger)">0.7%</td>
                       </tr>
                       <tr style="border-top:1px solid var(--border)">
                         <td style="padding:6px 10px;text-align:center">6억 ~ 12억</td>
                         <td style="padding:6px 10px;text-align:center">1.0%</td>
-                        <td style="padding:6px 10px;text-align:center;color:var(--danger)">2.2%</td>
+                        <td style="padding:6px 10px;text-align:center;color:var(--danger)">1.0%</td>
                       </tr>
                       <tr style="border-top:1px solid var(--border)">
                         <td style="padding:6px 10px;text-align:center">12억 ~ 25억</td>
-                        <td style="padding:6px 10px;text-align:center">1.4%</td>
-                        <td style="padding:6px 10px;text-align:center;color:var(--danger)">3.6%</td>
+                        <td style="padding:6px 10px;text-align:center">1.3%</td>
+                        <td style="padding:6px 10px;text-align:center;color:var(--danger)">2.0%</td>
                       </tr>
                       <tr style="border-top:1px solid var(--border)">
                         <td style="padding:6px 10px;text-align:center">25억 ~ 50억</td>
-                        <td style="padding:6px 10px;text-align:center">2.0%</td>
-                        <td style="padding:6px 10px;text-align:center;color:var(--danger)">5.0%</td>
+                        <td style="padding:6px 10px;text-align:center">1.5%</td>
+                        <td style="padding:6px 10px;text-align:center;color:var(--danger)">3.0%</td>
                       </tr>
                       <tr style="border-top:1px solid var(--border)">
-                        <td style="padding:6px 10px;text-align:center">50억 초과</td>
+                        <td style="padding:6px 10px;text-align:center">50억 ~ 94억</td>
+                        <td style="padding:6px 10px;text-align:center">2.0%</td>
+                        <td style="padding:6px 10px;text-align:center;color:var(--danger)">4.0%</td>
+                      </tr>
+                      <tr style="border-top:1px solid var(--border)">
+                        <td style="padding:6px 10px;text-align:center">94억 초과</td>
                         <td style="padding:6px 10px;text-align:center">2.7%</td>
                         <td style="padding:6px 10px;text-align:center;color:var(--danger)">5.0%</td>
                       </tr>
@@ -1155,7 +1160,7 @@
 
                 <div style="padding:10px 16px;font-size:11px;color:var(--text-muted);border-top:1px solid var(--border);margin-top:4px">
                   과세표준 = (공시가격 합산 − 기본공제) × 공정시장가액비율(주택 60%, 토지 100%) ·
-                  농어촌특별세 20% 추가 · 기본공제: 1주택 12억, 일반 9억, 종합합산 토지 5억, 별도합산 토지 80억 · 2026년 기준
+                  농어촌특별세 20% 추가 · 기본공제: 1주택 12억, 일반 9억, 종합합산 토지 5억, 별도합산 토지 80억 · 2026년 7월 기준
                 </div>
               </div>
             </details>
@@ -1206,6 +1211,19 @@
                     <a href="https://www.realtyprice.kr/notice/gsindividual/search.htm" target="_blank" class="external-help-link" onclick="Ads.markExternalClick()">📋 내 부동산 공시가격 확인하기 →</a>
                   </div>
 
+                  <!-- 1세대1주택 특례 -->
+                  <div class="form-group">
+                    <div class="checkbox-group">
+                      <label class="checkbox-item">
+                        <input type="checkbox" id="ptax-one-house">
+                        <div>
+                          <div class="cb-label">1세대1주택 특례</div>
+                          <div class="cb-desc">공시가격별 공정시장가액비율 43~45% 적용</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
                   <!-- 도시지역 여부 -->
                   <div class="form-group">
                     <div class="checkbox-group">
@@ -1239,7 +1257,7 @@
                   </div>
                 </div>
                 <div class="notice-box info" style="margin:16px">
-                  재산세는 <strong>7월 (1/2)</strong>과 <strong>9월 (1/2)</strong> 두 차례 납부합니다. 주택의 공정시장가액비율은 2026년 기준 <strong>43%</strong>입니다.
+                  재산세는 <strong>7월 (1/2)</strong>과 <strong>9월 (1/2)</strong> 두 차례 납부합니다. 주택 공정시장가액비율은 일반 <strong>60%</strong>, 1세대1주택 특례 <strong>43~45%</strong>입니다.
                 </div>
               </div>
             </div>
@@ -1556,7 +1574,7 @@
                       <option value="spouse">배우자 (공제 6억)</option>
                       <option value="lineal" selected>직계존비속 - 성인 (공제 5천만원)</option>
                       <option value="lineal-minor">직계존비속 - 미성년자 (공제 2천만원)</option>
-                      <option value="relative">기타 친족 (공제 500만원)</option>
+                      <option value="relative">기타 친족 (공제 1천만원)</option>
                       <option value="other">타인 (공제 없음)</option>
                     </select>
                     <div class="form-hint">공제한도는 10년 합산 기준입니다</div>
@@ -1624,7 +1642,7 @@
                       <tr><td>배우자</td><td>6억원</td></tr>
                       <tr><td>직계존비속 (성인)</td><td>5천만원</td></tr>
                       <tr><td>직계존비속 (미성년자)</td><td>2천만원</td></tr>
-                      <tr><td>기타 친족 (6촌 이내)</td><td>500만원</td></tr>
+                      <tr><td>기타 친족 (4촌 이내 혈족·3촌 이내 인척)</td><td>1천만원</td></tr>
                       <tr><td>타인</td><td>없음</td></tr>
                     </tbody>
                   </table>
@@ -2763,7 +2781,7 @@
                   <li><strong>비과세 수당 활용</strong> — 식대(20만원), 자가운전보조금(20만원) 등 <span class="tip-highlight">비과세 항목이 많을수록 실수령액 증가</span></li>
                   <li><strong>연금저축·IRP</strong> — 연말정산 시 세액공제로 환급받을 수 있어 실질 수령액 상승</li>
                   <li><strong>부양가족 등록</strong> — 부양가족이 많을수록 원천징수 세금이 줄어 월 실수령액 증가</li>
-                  <li><strong>2026년 최저시급</strong> — 10,030원 (주 40시간 기준 월 2,096,270원, 연 25,155,240원)</li>
+                  <li><strong>2026년 최저시급</strong> — 10,320원 (주 40시간 기준 월 2,156,880원, 연 25,882,560원)</li>
                 </ul>
               </div>
             </details>
@@ -2894,7 +2912,7 @@
                 <ul>
                   <li><strong>연금저축·IRP</strong> — 연간 최대 900만원 납입 시 <span class="tip-highlight">세액공제 최대 148.5만원</span> (총급여 5,500만원 이하 16.5%)</li>
                   <li><strong>신용카드 vs 체크카드</strong> — 총급여 25% 초과분부터 공제. 체크카드·현금영수증(30%)이 신용카드(15%)보다 공제율 2배</li>
-                  <li><strong>월세 세액공제</strong> — 무주택 근로자, 총급여 7천만원 이하 → 월세의 17% 세액공제 (최대 750만원)</li>
+                  <li><strong>월세 세액공제</strong> — 무주택 근로자, 총급여 8천만원 이하 → 월세의 15~17% 세액공제 (연 월세 1,000만원 한도)</li>
                   <li><strong>의료비·교육비</strong> — 본인 의료비는 한도 없이 공제. 대학원 교육비도 본인분 전액 공제</li>
                   <li><strong>기부금</strong> — 종교단체 소득 10%, 지정기부금 소득 30% 한도. 이월 가능(10년)</li>
                 </ul>
@@ -3978,7 +3996,7 @@
                       <span class="num-input-unit">원</span>
                     </div>
                     <div style="margin-top:6px">
-                      <button class="btn btn-outline btn-sm" id="hwage-min-wage-btn">2026 최저시급 (10,030원) 적용</button>
+                      <button class="btn btn-outline btn-sm" id="hwage-min-wage-btn">2026 최저시급 (10,320원) 적용</button>
                     </div>
                   </div>
                   <div class="form-group">
@@ -4023,7 +4041,7 @@
             <div class="tip-content">
               <p>시급 계산기는 시간당 임금과 근무 시간을 입력하면 주급, 월급, 세후 실수령액을 자동 계산합니다. 최저임금 미달 여부도 함께 확인할 수 있습니다.</p>
               <ul>
-                <li><strong>2026년 최저임금</strong> — 시간당 10,030원 (월 환산 2,096,270원, 주 40시간 기준)</li>
+                <li><strong>2026년 최저임금</strong> — 시간당 10,320원 (월 환산 2,156,880원, 주 40시간 기준)</li>
                 <li><strong>주휴수당</strong> — 주 15시간 이상 근무 시 1일분 유급휴일 수당 발생 (주급에 포함)</li>
                 <li><strong>연장·야간·휴일 가산</strong> — 5인 이상 사업장: 1.5배 임금 지급 의무</li>
                 <li><strong>4대 보험</strong> — 주 15시간, 월 60시간 이상 근무 시 4대 보험 의무 가입</li>
@@ -4270,7 +4288,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="form-label" for="foreign-other">동일 연도 다른 해외주식 손익 합산 <span style="font-weight:400;color:var(--text-muted)">(손실 시 음수 입력)</span></label>
+                    <label class="form-label" for="foreign-other">동일 연도 다른 국내·국외 주식 손익 합산 <span style="font-weight:400;color:var(--text-muted)">(손실 시 음수 입력)</span></label>
                     <div class="num-input-wrap">
                       <input type="text" id="foreign-other" class="input" placeholder="0" inputmode="numeric">
                       <span class="num-input-unit">원</span>
@@ -4341,7 +4359,7 @@
                         <input type="checkbox" id="sdom-major">
                         <div>
                           <div class="cb-label">대주주</div>
-                          <div class="cb-desc">종목당 10억원 이상 보유</div>
+                          <div class="cb-desc">종목당 50억원 이상 보유</div>
                         </div>
                       </label>
                     </div>
@@ -4367,6 +4385,13 @@
                       <span class="num-input-unit">원</span>
                     </div>
                   </div>
+                  <div class="form-group">
+                    <label class="form-label">동일 연도 다른 국내·국외 주식 손익 합산 <span style="font-weight:400;color:var(--text-muted)">(손실 시 음수 입력)</span></label>
+                    <div class="num-input-wrap">
+                      <input type="text" id="sdom-other" class="input" inputmode="numeric" placeholder="예: -3,000,000">
+                      <span class="num-input-unit">원</span>
+                    </div>
+                  </div>
                   <div class="calc-action-bar">
                     <button class="btn btn-reset btn-sm" id="sdom-reset">초기화</button>
                     <button class="btn btn-secondary btn-sm" id="sdom-copy">📋 복사</button>
@@ -4380,7 +4405,7 @@
                   <div class="result-empty"><div class="result-empty-icon">📈</div>양도가액과 취득가액을 입력해주세요</div>
                 </div>
                 <div class="notice-box info" style="margin:16px">
-                  <strong>대주주 기준:</strong> 종목당 10억원 이상 보유 시 대주주<br>
+                  <strong>대주주 기준:</strong> 종목당 50억원 이상 보유 시 대주주<br>
                   <strong>세율:</strong> 중소기업 10%, 일반기업 20% (3억 초과 25%)<br>
                   <strong>기본공제:</strong> 연간 250만원<br>
                   <strong>신고 기한:</strong> 양도일이 속하는 반기의 말일부터 2개월 이내
@@ -4393,7 +4418,7 @@
             <div class="tip-content">
               <p>국내 상장주식은 소액주주가 일반 거래소를 통해 양도하는 경우 양도소득세가 비과세입니다. 단, 대주주 해당자나 비상장주식 거래는 양도소득세 납부 의무가 있습니다.</p>
               <ul>
-                <li><strong>대주주 기준</strong> — 종목당 10억원 이상 보유 또는 지분율 1% 이상(코스피)/2% 이상(코스닥)</li>
+                <li><strong>대주주 기준</strong> — 종목당 50억원 이상 보유 또는 지분율 1% 이상(코스피)/2% 이상(코스닥)</li>
                 <li><strong>세율</strong> — 중소기업 10%, 일반기업 20% (과세표준 3억원 초과분 25%)</li>
                 <li><strong>기본공제</strong> — 연간 250만원 (국내·해외 양도소득 합산)</li>
                 <li><strong>예정신고</strong> — 양도일이 속한 반기 말일부터 2개월 이내</li>
@@ -4429,7 +4454,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="form-label">기타 종합소득 (종합과세 시)</label>
+                    <label class="form-label">이자소득 등 다른 금융소득 (종합과세 판단)</label>
                     <div class="num-input-wrap">
                       <input type="text" id="sdiv-other-income" class="input" inputmode="numeric" placeholder="예: 50,000,000" data-korean>
                       <span class="num-input-unit">원</span>
@@ -4457,8 +4482,8 @@
                   <div class="result-empty"><div class="result-empty-icon">💰</div>배당금 총액을 입력해주세요</div>
                 </div>
                 <div class="notice-box info" style="margin:16px">
-                  <strong>분리과세:</strong> 연간 2,000만원 이하 → 14% 원천징수로 종결<br>
-                  <strong>종합과세:</strong> 연간 2,000만원 초과 → 다른 소득과 합산 과세<br>
+                  <strong>분리과세:</strong> 연간 금융소득(이자+배당) 2,000만원 이하 → 14% 원천징수로 종결<br>
+                  <strong>종합과세:</strong> 연간 금융소득 2,000만원 초과 → 종합과세 대상<br>
                   <strong>Gross-up:</strong> 국내 배당은 11% 가산 후 세액공제 적용<br>
                   <strong>해외 배당:</strong> 외국납부세액공제로 이중과세 방지
                 </div>
@@ -5568,18 +5593,18 @@
 <script src="js/calculators/loan/loan.js?v=2"></script>
 <script src="js/calculators/loan/dsr.js?v=3"></script>
 <script src="js/calculators/loan/ltv.js?v=4"></script>
-<script src="js/calculators/real-estate/acquisition.js?v=5"></script>
+<script src="js/calculators/real-estate/acquisition.js?v=6"></script>
 <script src="js/calculators/real-estate/officetel-acquisition.js?v=1"></script>
 <script src="js/calculators/real-estate/commission.js?v=4"></script>
-<script src="js/calculators/real-estate/capital-gains.js?v=4"></script>
-<script src="js/calculators/real-estate/comprehensive.js?v=3"></script>
-<script src="js/calculators/real-estate/property-tax.js?v=1"></script>
+<script src="js/calculators/real-estate/capital-gains.js?v=5"></script>
+<script src="js/calculators/real-estate/comprehensive.js?v=4"></script>
+<script src="js/calculators/real-estate/property-tax.js?v=2"></script>
 <script src="js/calculators/real-estate/rental-income.js?v=1"></script>
-<script src="js/calculators/inherit/inheritance.js?v=4"></script>
-<script src="js/calculators/inherit/gift.js?v=4"></script>
+<script src="js/calculators/inherit/inheritance.js?v=5"></script>
+<script src="js/calculators/inherit/gift.js?v=5"></script>
 <script src="js/calculators/real-estate/stamp.js?v=2"></script>
 <script src="js/calculators/real-estate/registration.js?v=1"></script>
-<script src="js/calculators/real-estate/total-cost.js?v=2"></script>
+<script src="js/calculators/real-estate/total-cost.js?v=3"></script>
 <script src="js/calculators/vehicle/buying.js?v=4"></script>
 <script src="js/calculators/vehicle/installment.js?v=1"></script>
 <script src="js/calculators/vehicle/overdue.js?v=2"></script>
@@ -5602,13 +5627,13 @@
 <script src="js/calculators/income/daily-worker.js?v=1"></script>
 <script src="js/calculators/income/other-income.js?v=3"></script>
 <script src="js/calculators/income/pension-income.js?v=3"></script>
-<script src="js/calculators/stocks/foreign.js?v=3"></script>
+<script src="js/calculators/stocks/foreign.js?v=4"></script>
 <script src="js/calculators/stocks/transaction.js?v=5"></script>
 <script src="js/calculators/vehicle/vehicle-tax.js?v=3"></script>
 <script src="js/calculators/vehicle/acquisition.js?v=4"></script>
 <script src="js/calculators/vehicle/excise.js?v=4"></script>
-<script src="js/calculators/stocks/domestic.js?v=2"></script>
-<script src="js/calculators/stocks/dividend.js?v=1"></script>
+<script src="js/calculators/stocks/domestic.js?v=3"></script>
+<script src="js/calculators/stocks/dividend.js?v=2"></script>
 <script src="js/calculators/other/resident.js?v=3"></script>
 <script src="js/calculators/other/no-son-day.js?v=2"></script>
 <script src="js/app.js?v=21"></script>

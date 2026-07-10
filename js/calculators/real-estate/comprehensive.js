@@ -1,22 +1,24 @@
-/* ===== 종합부동산세 계산기 (2026년 기준) ===== */
+/* ===== 종합부동산세 계산기 (2026년 7월 기준) ===== */
 const CalcComprehensive = (() => {
 
-  // 주택 종부세 세율표 (2주택 이하 / 3주택 이상·조정2주택)
+  // 주택 종부세 세율표 (2주택 이하 / 3주택 이상)
   const HOUSE_BRACKETS_GENERAL = [
     { limit:  300_000_000, rate: 0.005 },
     { limit:  600_000_000, rate: 0.007 },
     { limit: 1_200_000_000, rate: 0.010 },
-    { limit: 2_500_000_000, rate: 0.014 },
-    { limit: 5_000_000_000, rate: 0.020 },
+    { limit: 2_500_000_000, rate: 0.013 },
+    { limit: 5_000_000_000, rate: 0.015 },
+    { limit: 9_400_000_000, rate: 0.020 },
     { limit: Infinity,      rate: 0.027 },
   ];
 
   const HOUSE_BRACKETS_HEAVY = [
-    { limit:  300_000_000, rate: 0.012 },
-    { limit:  600_000_000, rate: 0.016 },
-    { limit: 1_200_000_000, rate: 0.022 },
-    { limit: 2_500_000_000, rate: 0.036 },
-    { limit: 5_000_000_000, rate: 0.050 },
+    { limit:  300_000_000, rate: 0.005 },
+    { limit:  600_000_000, rate: 0.007 },
+    { limit: 1_200_000_000, rate: 0.010 },
+    { limit: 2_500_000_000, rate: 0.020 },
+    { limit: 5_000_000_000, rate: 0.030 },
+    { limit: 9_400_000_000, rate: 0.040 },
     { limit: Infinity,      rate: 0.050 },
   ];
 
@@ -56,7 +58,6 @@ const CalcComprehensive = (() => {
       publicPrice,    // 공시가격 합산 (원)
       houseCount,     // 주택 수
       isOneHouse,     // 1세대1주택자
-      isAdjusted2,    // 조정지역 2주택 여부 (중과)
       age,            // 연령 (고령자 세액공제)
       holdYears,      // 보유기간 (장기보유 세액공제)
     } = params;
@@ -69,7 +70,7 @@ const CalcComprehensive = (() => {
 
     if (assetType === 'house') {
       basicDeduction = isOneHouse ? 1_200_000_000 : 900_000_000;
-      const isHeavy  = houseCount >= 3 || (houseCount === 2 && isAdjusted2);
+      const isHeavy  = houseCount >= 3;
       brackets       = isHeavy ? HOUSE_BRACKETS_HEAVY : HOUSE_BRACKETS_GENERAL;
       ruralTaxRate   = 0.20;
     } else if (assetType === 'land-general') {
@@ -209,7 +210,6 @@ const CalcComprehensive = (() => {
         publicPrice: getVal('comp-price'),
         houseCount: parseInt([...view.querySelectorAll('input[name="comp-count"]')].find(r => r.checked)?.value || '1'),
         isOneHouse:  view.querySelector('#comp-one-house')?.checked || false,
-        isAdjusted2: view.querySelector('#comp-adjusted2')?.checked || false,
         age:         getNum('comp-age'),
         holdYears:   getNum('comp-hold-years'),
       };

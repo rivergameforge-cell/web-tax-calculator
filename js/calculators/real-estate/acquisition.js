@@ -58,6 +58,7 @@ const CalcAcquisition = (() => {
       houseCount,  // 주택 수 (1,2,3,4)
       isAdjusted,  // 조정대상지역 여부
       isFirstHome, // 생애최초 여부
+      isDeclineArea, // 인구감소지역 주택 여부
       isBirth,     // 출산·양육 여부
       area,        // 면적 (㎡)
     } = params;
@@ -87,10 +88,11 @@ const CalcAcquisition = (() => {
 
     let total = acqTax + ruralTax + eduTax;
 
-    // 생애최초 감면: 최대 200만원, 12억 이하
+    // 생애최초 감면: 최대 200만원, 인구감소지역은 300만원, 12억 이하
     let firstHomeDiscount = 0;
     if (isFirstHome && type === 'housing' && houseCount === 1 && price <= 1_200_000_000) {
-      firstHomeDiscount = Math.min(acqTax, 2_000_000);
+      const firstHomeLimit = isDeclineArea ? 3_000_000 : 2_000_000;
+      firstHomeDiscount = Math.min(acqTax, firstHomeLimit);
     }
 
     // 출산·양육 감면: 최대 500만원 (2028년까지, 12억 이하)
@@ -197,6 +199,7 @@ const CalcAcquisition = (() => {
       houseCount: view.querySelectorAll('input[name="acq-house-count"]'),
       isAdjusted: view.querySelector('#acq-adjusted'),
       isFirstHome: view.querySelector('#acq-first-home'),
+      isDeclineArea: view.querySelector('#acq-decline-area'),
       isBirth: view.querySelector('#acq-birth'),
       area: view.querySelector('#acq-area'),
     };
@@ -216,6 +219,7 @@ const CalcAcquisition = (() => {
         houseCount: parseInt([...inputs.houseCount].find(r => r.checked)?.value || '1'),
         isAdjusted: inputs.isAdjusted?.checked || false,
         isFirstHome: inputs.isFirstHome?.checked || false,
+        isDeclineArea: inputs.isDeclineArea?.checked || false,
         isBirth: inputs.isBirth?.checked || false,
         area: inputs.area ? UI.parseNum(inputs.area.value.replace(/,/g, '')) : 0,
       };

@@ -93,11 +93,11 @@ const CalcForeignStocks = (() => {
       </div>
       ${otherGains !== 0 ? `
       <div class="breakdown-row">
-        <span class="br-label">기타 해외주식 손익 합산</span>
+        <span class="br-label">다른 국내·국외 주식 손익</span>
         <span class="br-value ${otherGains >= 0 ? 'positive' : 'negative'}">${otherGains >= 0 ? '+' : ''}${UI.fmtWon(otherGains)}</span>
       </div>` : ''}
       <div class="breakdown-row">
-        <span class="br-label">연간 합산 차익</span>
+        <span class="br-label">연간 손익통산 금액</span>
         <span class="br-value">${UI.fmtWon(totalGain)}</span>
       </div>
       <div class="breakdown-row">

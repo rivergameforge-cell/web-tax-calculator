@@ -1,4 +1,4 @@
-/* ===== 배당소득세 계산기 (2026년 기준) ===== */
+/* ===== 배당소득세 계산기 (2026년 7월 기준) ===== */
 const CalcStockDividend = (() => {
 
   const WITHHOLDING_RATE = 0.14;       // 원천징수세율 14%
@@ -34,7 +34,7 @@ const CalcStockDividend = (() => {
     const {
       source,            // 'domestic' | 'foreign'
       dividendAmount,    // 배당금 총액 (원)
-      otherIncome,       // 기타 종합소득 (원, 종합과세 시뮬레이션용)
+      otherIncome,       // 이자소득 등 다른 금융소득 (원, 종합과세 판단용)
       foreignTaxPaid,    // 외국납부세액 (원, 해외배당 시)
     } = params;
 
@@ -42,8 +42,10 @@ const CalcStockDividend = (() => {
 
     const isDomestic = source === 'domestic';
 
-    // 분리과세 (2천만원 이하)
-    if (dividendAmount <= COMPREHENSIVE_THRESHOLD) {
+    const financialTotal = dividendAmount + (otherIncome || 0);
+
+    // 금융소득 2천만원 이하: 원천징수로 과세 종결
+    if (financialTotal <= COMPREHENSIVE_THRESHOLD) {
       const withholdingTax = Math.floor(dividendAmount * WITHHOLDING_RATE);
       const localTax = Math.floor(withholdingTax * LOCAL_TAX_ON_WH);
       const totalTax = withholdingTax + localTax;
@@ -164,7 +166,7 @@ const CalcStockDividend = (() => {
       </div>
       ${r.otherIncome > 0 ? `
       <div class="breakdown-row">
-        <span class="br-label">기타 종합소득</span>
+        <span class="br-label">이자소득 등 다른 금융소득</span>
         <span class="br-value">${UI.fmtWon(r.otherIncome)}</span>
       </div>` : ''}
       <div class="breakdown-row">

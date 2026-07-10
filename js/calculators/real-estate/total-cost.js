@@ -14,6 +14,19 @@ const CalcTotalCost = (() => {
     return 0.03;
   }
 
+  function getRuralTaxInfo(houseCount, isAdjusted) {
+    if (houseCount === 2 && isAdjusted)  return { rate: 0.006, applyArea: false };
+    if (houseCount === 3 && isAdjusted)  return { rate: 0.010, applyArea: false };
+    if (houseCount === 3 && !isAdjusted) return { rate: 0.006, applyArea: false };
+    if (houseCount >= 4)                 return { rate: 0.010, applyArea: false };
+    return { rate: 0.002, applyArea: true };
+  }
+
+  function calcAcqEduTax(price, acqTax, acqRate) {
+    if (acqRate >= 0.08) return Math.floor(price * 0.004);
+    return Math.floor(acqTax * 0.1);
+  }
+
   // ── 중개보수율 (매매) ──
   const COMM_RATES = [
     { limit:  50_000_000, rate: 0.006, max:  250_000 },
@@ -81,12 +94,12 @@ const CalcTotalCost = (() => {
     const acqRate = getAcqRate(price, houseCount, isAdjusted);
     const acqTax = Math.floor(price * acqRate);
 
-    // 지방교육세: 취득세율 2% 이하 → 10%, 초과 → 20%
-    const eduRate = acqRate <= 0.02 ? 0.1 : 0.2;
-    const eduTax = Math.floor(acqTax * eduRate);
+    const eduTax = calcAcqEduTax(price, acqTax, acqRate);
 
-    // 농어촌특별세: 85㎡ 초과 시 취득세의 10%
-    const ruralTax = (area > 85) ? Math.floor(acqTax * 0.1) : 0;
+    const ruralInfo = getRuralTaxInfo(houseCount, isAdjusted);
+    const ruralTax = (ruralInfo.applyArea && area <= 85)
+      ? 0
+      : Math.floor(price * ruralInfo.rate);
 
     const stampTax = getStampTax(price);
     const commission = getCommission(price);
@@ -135,10 +148,14 @@ const CalcTotalCost = (() => {
     }
 
     const isOneHouse = houseCount === 1;
+    const isHighPriceOneHouse = isOneHouse && holdYears >= 2 && sellPrice > 1_200_000_000;
+    const taxableGainBeforeLtc = isHighPriceOneHouse
+      ? Math.floor(gain * (sellPrice - 1_200_000_000) / sellPrice)
+      : gain;
     const longTermRate = getLongTermDeduction(holdYears, isOneHouse);
-    const longTermAmount = Math.floor(gain * longTermRate);
+    const longTermAmount = Math.floor(taxableGainBeforeLtc * longTermRate);
     const basicDeduction = 2_500_000;
-    const taxBase = Math.max(0, gain - longTermAmount - basicDeduction);
+    const taxBase = Math.max(0, taxableGainBeforeLtc - longTermAmount - basicDeduction);
 
     // 1주택 비과세 (보유 2년+, 매도가 12억 이하)
     let incomeTax = 0;
@@ -159,7 +176,7 @@ const CalcTotalCost = (() => {
 
     return {
       sellPrice, buyPrice, gain, holdYears, expenses: expenses || 0,
-      longTermDed: longTermRate, longTermAmount,
+      taxableGainBeforeLtc, longTermDed: longTermRate, longTermAmount,
       basicDeduction, taxBase,
       incomeTax, localTax,
       commission, commVat,

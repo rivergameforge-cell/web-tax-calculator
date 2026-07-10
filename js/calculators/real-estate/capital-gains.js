@@ -23,7 +23,7 @@ const CalcCapitalGains = (() => {
     return 0;
   }
 
-  // 장기보유특별공제율 (1세대1주택 고가주택 기준)
+  // 장기보유특별공제율
   function getLtcRate(holdYears, residYears, isOneHousehold) {
     // 1세대1주택 고가주택: 보유+거주 각 최대 40%, 합계 최대 80%
     if (isOneHousehold) {
@@ -68,20 +68,24 @@ const CalcCapitalGains = (() => {
       return { gain, taxBase: 0, taxAmount: 0, localTax: 0, total: 0, isExempt: false, params };
     }
 
-    // 1세대1주택 비과세: 12억 이하
-    if (isOneHousehold && !isHighPrice && salePrice <= 1_200_000_000 && houseCount === 1) {
+    const isOneHouseExemptionEligible =
+      isOneHousehold && houseCount === 1 && totalHoldYears >= 2 &&
+      (!isAdjusted || (residYears || 0) >= 2);
+
+    // 1세대1주택 비과세: 12억 이하, 2년 이상 보유(취득 당시 조정대상지역은 2년 거주)
+    if (isOneHouseExemptionEligible && !isHighPrice && salePrice <= 1_200_000_000) {
       return { gain, taxBase: 0, taxAmount: 0, localTax: 0, total: 0, isExempt: true, params };
     }
 
-    // 다주택자 중과 판단 (2025.05.10~ 재시행)
-    // - 3주택 이상: +30%p, 조정지역 2주택: +20%p
+    // 다주택자 중과 판단 (2026.5.10. 이후 조정대상지역 주택)
+    // - 조정지역 3주택 이상: +30%p, 조정지역 2주택: +20%p
     // - 중과 시 장기보유특별공제 배제
     let surchargeRate = 0;
     let isHeavy = false;
-    if (houseCount >= 3) {
+    if (isAdjusted && houseCount >= 3) {
       surchargeRate = 0.30;
       isHeavy = true;
-    } else if (houseCount === 2 && isAdjusted) {
+    } else if (isAdjusted && houseCount === 2) {
       surchargeRate = 0.20;
       isHeavy = true;
     }
@@ -93,13 +97,12 @@ const CalcCapitalGains = (() => {
 
     // 장기보유특별공제 (중과 시 배제)
     const ltcRate = isHeavy ? 0 : getLtcRate(totalHoldYears, residYears || 0, isOneHousehold && houseCount === 1);
-    // 고가주택(12억 초과) 1세대1주택: 양도차익 × (양도가액-12억)/양도가액 부분에만 적용
-    let ltcApplyGain = gain;
-    if (isOneHousehold && isHighPrice && houseCount === 1) {
-      ltcApplyGain = Math.floor(gain * (salePrice - 1_200_000_000) / salePrice);
-    }
-    const ltcAmount = Math.floor(ltcApplyGain * ltcRate);
-    const netGain = gain - ltcAmount;
+    // 고가주택(12억 초과) 1세대1주택은 12억 초과 비율만 과세
+    const taxableGainBeforeLtc = (isOneHouseExemptionEligible && isHighPrice)
+      ? Math.floor(gain * (salePrice - 1_200_000_000) / salePrice)
+      : gain;
+    const ltcAmount = Math.floor(taxableGainBeforeLtc * ltcRate);
+    const netGain = taxableGainBeforeLtc - ltcAmount;
 
     // 기본공제
     const basicDeduction = 2_500_000;
@@ -125,6 +128,7 @@ const CalcCapitalGains = (() => {
 
     return {
       gain,
+      taxableGainBeforeLtc,
       ltcRate,
       ltcAmount,
       netGain,

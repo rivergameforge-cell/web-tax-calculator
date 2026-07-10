@@ -1,4 +1,4 @@
-/* ===== 재산세 계산기 (2026년 기준) ===== */
+/* ===== 재산세 계산기 (2026년 7월 기준) ===== */
 const CalcPropertyTax = (() => {
 
   // 주택 재산세 누진세율 (과세표준 기준)
@@ -46,20 +46,27 @@ const CalcPropertyTax = (() => {
     const {
       assetType,    // 'house' | 'land-general' | 'land-special' | 'building'
       publicPrice,  // 공시가격 (원)
+      isOneHouse,   // 1세대1주택 특례 여부
       isUrban,      // 도시지역 여부 (도시지역분 가산)
     } = params;
 
     if (!publicPrice || publicPrice <= 0) return null;
 
-    // 공정시장가액비율
+    // 공정시장가액비율: 일반 주택 60%, 1세대1주택 특례 43~45%
+    function getHouseRatio(price) {
+      if (!isOneHouse) return 0.60;
+      if (price <= 300_000_000) return 0.43;
+      if (price <= 600_000_000) return 0.44;
+      return 0.45;
+    }
+
     const ratioMap = {
-      'house':        0.43,  // 주택 43% (2026년 기준)
       'land-general': 0.70,
       'land-special': 0.70,
       'building':     0.70,
     };
 
-    const ratio   = ratioMap[assetType] || 0.70;
+    const ratio   = assetType === 'house' ? getHouseRatio(publicPrice) : (ratioMap[assetType] || 0.70);
     const taxBase = Math.floor(publicPrice * ratio);
 
     let propertyTax = 0;
@@ -87,7 +94,7 @@ const CalcPropertyTax = (() => {
     return {
       publicPrice, ratio, taxBase,
       propertyTax, eduTax, urbanTax,
-      totalTax, isUrban,
+      totalTax, isUrban, isOneHouse,
       params,
     };
   }
@@ -157,6 +164,7 @@ const CalcPropertyTax = (() => {
       return {
         assetType:   [...view.querySelectorAll('input[name="ptax-type"]')].find(r => r.checked)?.value || 'house',
         publicPrice: UI.parseNum((view.querySelector('#ptax-price')?.value || '').replace(/,/g, '')),
+        isOneHouse:  view.querySelector('#ptax-one-house')?.checked || false,
         isUrban:     view.querySelector('#ptax-urban')?.checked || false,
       };
     }
