@@ -381,6 +381,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "종합소득세_가산세_신고_늦으면_얼마",
+        "slug": "income-tax-penalty-late-filing",
+        "category": "business",
+        "categoryLabel": "사업 세금",
+        "date": "2026-07-12",
+        "readMin": 5,
+        "ctaHref": "/income/penalty.html",
+        "ctaLabel": "종합소득세 가산세 계산기",
+        "related": [
+            ("/income/penalty.html", "종합소득세 가산세 계산기"),
+            ("/income/comprehensive.html", "종합소득세 계산기"),
+            ("/income/freelancer.html", "프리랜서 3.3% 계산기"),
+            ("/income/business.html", "사업소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "주정차_위반_과태료_블로그_포스팅",
         "slug": "parking-violation-fine",
         "category": "fines",

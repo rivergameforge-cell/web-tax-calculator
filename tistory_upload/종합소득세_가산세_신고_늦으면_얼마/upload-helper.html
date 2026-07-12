@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티스토리 업로드 도우미 - 종합소득세 가산세 계산, 신고 늦으면 얼마 더 내나</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 24px;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 20px;
+    }
+    section {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 0 0 12px; }
+    label { display: block; font-size: 13px; color: #6b7280; margin-bottom: 8px; }
+    textarea, input {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      background: #f9fafb;
+    }
+    textarea { min-height: 320px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+    button, a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #2563eb;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 8px 8px 0 0;
+    }
+    button.secondary { background: #475569; }
+    .hint { color: #64748b; font-size: 13px; margin: 8px 0 0; }
+    .side img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      display: block;
+    }
+    .no-image {
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 28px 12px;
+      text-align: center;
+      color: #64748b;
+    }
+    .checklist li { margin-bottom: 8px; }
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>티스토리 업로드 도우미</h1>
+    <div>종합소득세 신고 기간을 놓치면 “나중에 신고하면 되겠지”라고 생각하기 쉽습니다. 하지만 세금은 늦게 신고하는 순간부터 가산세가 붙기 시작합니다.   특히 종합소득세는 신고를 안 한 것에 대한 무신고가산세 와 세금을 늦게 낸 것에 대한 납부지연가산세 가 따로 계산됩니다. 즉, 신고도 늦…</div>
+  </header>
+  <main>
+    <div>
+      <section>
+        <h2>1. 제목</h2>
+        <label>티스토리 제목 입력란에 붙여넣기</label>
+        <input id="title" value="종합소득세 가산세 계산, 신고 늦으면 얼마 더 내나">
+        <button onclick="copyValue('title')">제목 복사</button>
+      </section>
+
+      <section>
+        <h2>2. 본문 HTML</h2>
+        <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
+        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;종합소득세 신고 기간을 놓치면 “나중에 신고하면 되겠지”라고 생각하기 쉽습니다. 하지만 세금은 늦게 신고하는 순간부터 가산세가 붙기 시작합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;특히 종합소득세는 신고를 안 한 것에 대한 &lt;b&gt;무신고가산세&lt;/b&gt;와 세금을 늦게 낸 것에 대한 &lt;b&gt;납부지연가산세&lt;/b&gt;가 따로 계산됩니다. 즉, 신고도 늦고 납부도 늦으면 두 가지가 동시에 붙을 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;오늘은 2026년 기준으로 종합소득세 신고를 늦게 했을 때 얼마를 더 내는지, 무신고가산세와 납부지연가산세가 어떻게 계산되는지, 기한 후 신고를 빨리 하면 얼마나 줄일 수 있는지 정리해 보겠습니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;종합소득세 신고 기한을 놓치면 붙는 가산세&lt;/h2&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;종합소득세 신고를 늦게 했을 때 주로 확인해야 할 가산세는 두 가지입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 무신고가산세&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 납부지연가산세&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;무신고가산세는 신고 자체를 기한 내 하지 않았을 때 붙는 가산세입니다. 일반적인 무신고는 무신고납부세액의 20%입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;납부지연가산세는 납부해야 할 세금을 기한 내 내지 않았을 때 붙는 가산세입니다. 미납세액에 지연 일수와 1일 0.022%를 곱해 계산합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;무신고가산세 = 무신고납부세액 × 20%&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;납부지연가산세 = 미납세액 × 지연일수 × 0.022%&lt;/b&gt;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;예시 1. 낼 세금 100만원을 30일 늦게 신고한 경우&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;종합소득세로 원래 100만원을 내야 했는데 신고와 납부를 모두 30일 늦게 했다고 가정해 보겠습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 본세: 1,000,000원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 무신고가산세: 1,000,000원 × 20% = 200,000원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 납부지연가산세: 1,000,000원 × 30일 × 0.022% = 6,600원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 가산세 합계: 206,600원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 본세와 가산세 합계: 1,206,600원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;30일만 늦어도 납부지연가산세보다 무신고가산세가 훨씬 큽니다. 그래서 신고 기한을 놓쳤다면 최대한 빨리 기한 후 신고를 하는 것이 중요합니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;예시 2. 낼 세금 300만원을 90일 늦게 신고한 경우&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;이번에는 낼 세금이 300만원이고 90일 늦었다고 보겠습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 본세: 3,000,000원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 무신고가산세: 3,000,000원 × 20% = 600,000원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 납부지연가산세: 3,000,000원 × 90일 × 0.022% = 59,400원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 가산세 합계: 659,400원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 본세와 가산세 합계: 3,659,400원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;본세가 커질수록 무신고가산세도 크게 늘어납니다. 납부지연가산세는 하루 단위로 쌓이기 때문에 시간이 길어질수록 부담이 계속 증가합니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;과소신고도 가산세가 붙는다&lt;/h2&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;신고를 아예 안 한 경우만 문제가 되는 것은 아닙니다. 신고는 했지만 소득을 누락했거나 공제를 과하게 넣어 세금을 적게 신고한 경우에는 과소신고가산세가 붙을 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반적인 과소신고는 과소신고납부세액의 10%입니다. 부정한 방법으로 과소신고한 경우에는 40%까지 올라갈 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;예를 들어 실제로 200만원을 더 내야 하는데 신고에서 빠뜨렸다면, 일반 과소신고 기준으로 20만원의 과소신고가산세가 붙을 수 있습니다. 여기에 납부지연가산세도 별도로 계산될 수 있습니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;기한 후 신고를 빨리 하면 감면될 수 있다&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;종합소득세 신고 기한을 놓쳤더라도 포기할 필요는 없습니다. 기한 후 신고를 빨리 하면 무신고가산세 일부가 감면될 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반적으로 법정신고기한이 지난 뒤 다음 기간 안에 기한 후 신고를 하면 무신고가산세 감면을 받을 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 1개월 이내 신고: 무신고가산세 50% 감면&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 1개월 초과 3개월 이내 신고: 무신고가산세 30% 감면&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 3개월 초과 6개월 이내 신고: 무신고가산세 20% 감면&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;다만 납부지연가산세는 미납 기간에 따라 별도로 계산됩니다. 그래서 신고는 빨리 할수록 좋고, 납부도 가능한 한 빨리 처리해야 총 부담을 줄일 수 있습니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;예시 3. 1개월 이내 감면을 받는 경우&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;낼 세금이 100만원이고 20일 늦게 기한 후 신고를 했다고 가정해 보겠습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;원래 무신고가산세는 20만원입니다. 하지만 1개월 이내 기한 후 신고로 50% 감면을 받는다면 무신고가산세는 10만원이 됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 본세: 1,000,000원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 감면 후 무신고가산세: 100,000원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 납부지연가산세: 1,000,000원 × 20일 × 0.022% = 4,400원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 가산세 합계: 104,400원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 본세와 가산세 합계: 1,104,400원&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;납부할 돈이 없어도 신고는 먼저 해야 한다&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;세금을 낼 돈이 부족해서 신고까지 미루는 경우가 있습니다. 하지만 신고와 납부는 분리해서 생각하는 것이 좋습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;신고를 하지 않으면 무신고가산세가 붙고, 납부를 늦게 하면 납부지연가산세가 붙습니다. 돈이 부족해도 신고를 먼저 해두면 적어도 무신고 리스크를 줄일 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;납부가 어렵다면 분납, 납부기한 연장, 카드 납부 등 가능한 방법을 확인하는 것이 좋습니다. 무작정 미루면 시간이 지날수록 납부지연가산세가 계속 쌓입니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;종합소득세 가산세 계산기 바로가기&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;taxcalc.co.kr의 종합소득세 가산세 계산기는 본세, 신고 유형, 납부지연일수, 미납세액을 입력하면 예상 가산세를 계산합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;center&gt;&lt;a href=&quot;https://taxcalc.co.kr/#income/penalty&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; aria-label=&quot;종합소득세 가산세 계산기 바로가기&quot;&gt; &lt;button class=&quot;arenabt star1&quot;&gt; 종합소득세 가산세 계산기 바로가기 &lt;/button&gt; &lt;/a&gt;&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;계산 결과는 실제 고지 세액을 대신하지는 않지만, 신고를 늦게 했을 때 대략 어느 정도 더 부담해야 하는지 빠르게 파악하는 데 유용합니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;자주 묻는 질문&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;Q1. 종합소득세 신고를 하루만 늦어도 가산세가 붙나요?&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;신고 기한을 넘기면 원칙적으로 무신고가산세 대상이 될 수 있습니다. 납부도 늦었다면 납부지연가산세가 하루 단위로 계산될 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;Q2. 신고는 했는데 세금을 늦게 내면 어떻게 되나요?&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;신고는 했지만 납부를 늦게 했다면 무신고가산세는 문제가 되지 않을 수 있지만, 미납세액에 대해 납부지연가산세가 붙을 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;Q3. 기한 후 신고를 하면 무조건 감면되나요?&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;법정 기간 안에 기한 후 신고를 하면 무신고가산세 일부 감면을 받을 수 있습니다. 다만 감면율은 신고 시점에 따라 달라지고, 납부지연가산세는 별도로 계산됩니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;결론: 늦었다면 더 늦기 전에 신고해야 한다&lt;/h2&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;종합소득세 신고를 늦게 하면 무신고가산세와 납부지연가산세가 함께 붙을 수 있습니다. 일반 무신고는 납부세액의 20%, 납부지연은 하루 0.022%씩 계산됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;하지만 기한 후 신고를 빨리 하면 무신고가산세 일부 감면을 받을 수 있습니다. 특히 1개월 이내 신고는 감면 폭이 크기 때문에, 신고 기한을 놓쳤다면 바로 신고하는 것이 가장 중요합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;세금을 낼 돈이 부족하더라도 신고부터 먼저 하고 납부 방법을 찾는 편이 낫습니다. 하루하루 미루는 동안 가산세는 계속 쌓입니다.&lt;/p&gt;</textarea>
+        <button onclick="copyValue('body')">본문 복사</button>
+        <p class="hint">이미지는 티스토리에서 직접 업로드한 뒤 본문 상단에 배치하는 방식을 권장합니다.</p>
+      </section>
+
+      <section>
+        <h2>3. 태그</h2>
+        <label>티스토리 태그 입력란에 붙여넣기</label>
+        <input id="tags" value="종합소득세가산세, 무신고가산세, 납부지연가산세, 기한후신고, 종합소득세신고, 5월종합소득세, 프리랜서세금, 사업자세금, 세금계산기, taxcalc">
+        <button onclick="copyValue('tags')">태그 복사</button>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>썸네일</h2>
+        <img src="file:///Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/income-tax-penalty-late-filing.webp" alt="thumbnail preview">
+        <label style="margin-top:12px">로컬 이미지 경로</label>
+        <input id="imagePath" value="/Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/income-tax-penalty-late-filing.webp">
+        <button onclick="copyValue('imagePath')">이미지 경로 복사</button>
+        <p class="hint">income-tax-penalty-late-filing.webp</p>
+      </section>
+
+      <section>
+        <h2>업로드 순서</h2>
+        <ol class="checklist">
+          <li>티스토리 글쓰기 화면을 연다.</li>
+          <li>제목을 복사해 입력한다.</li>
+          <li>썸네일 이미지를 업로드하고 대표 이미지로 지정한다.</li>
+          <li>에디터를 HTML 모드로 전환한다.</li>
+          <li>본문 HTML을 붙여넣는다.</li>
+          <li>태그를 붙여넣고 임시저장한다.</li>
+        </ol>
+        <a class="button" href="https://www.tistory.com/" target="_blank" rel="noopener">티스토리 열기</a>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    async function copyValue(id) {
+      const el = document.getElementById(id);
+      await navigator.clipboard.writeText(el.value);
+      const old = document.title;
+      document.title = '복사 완료';
+      setTimeout(() => document.title = old, 900);
+    }
+  </script>
+</body>
+</html>
