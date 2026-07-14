@@ -1,125 +1,126 @@
 <!-- 티스토리 제목 -->
-<!-- 금융소득 종합과세 계산, 이자·배당 2천만원 넘으면 세금 얼마나 늘까 -->
+<!-- 금융소득 종합과세 계산, 이자·배당 2천만원 넘으면 추가세금 얼마일까 -->
 
-<p data-ke-size="size16">예금 금리가 높아지고 배당주 투자를 늘리다 보면 어느 순간 확인해야 할 기준이 있습니다. 바로 <b>금융소득 연 2천만원</b>입니다.</p>
+<p data-ke-size="size16">예금 이자와 주식 배당이 늘어난 분들이 가장 많이 검색하는 기준이 있습니다. 바로 <b>금융소득 2천만원</b>입니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">이자와 배당을 합친 금융소득이 연 2천만원 이하라면 보통 금융회사에서 15.4%를 원천징수하고 끝납니다. 하지만 2천만원을 초과하면 초과분이 다른 종합소득과 합산되어 종합소득세 신고 대상이 될 수 있습니다.</p>
+<p data-ke-size="size16">금융소득이 2천만원 이하라면 대부분 이자나 배당을 받을 때 이미 15.4%가 원천징수되고 끝납니다. 하지만 이자와 배당을 합친 금액이 연 2천만원을 넘으면 이야기가 달라집니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">오늘은 2026년 기준으로 금융소득 종합과세가 언제 적용되는지, 이자·배당이 2천만원을 넘으면 세금이 얼마나 늘어나는지 예시로 정리해 보겠습니다.</p>
+<p data-ke-size="size16">2천만원 초과분이 다른 종합소득과 합산되면서 추가 납부세액이 생길 수 있기 때문입니다. 그래서 오늘은 금융소득 종합과세 기준과 계산 방법을 예시 중심으로 정리해 보겠습니다.</p>
 
-<h2 data-ke-size="size26">금융소득 종합과세란?</h2>
+<h2 data-ke-size="size26">금융소득 종합과세 기준은 2천만원</h2>
 
 <center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </center>
 
-<p data-ke-size="size16">금융소득 종합과세는 개인의 이자소득과 배당소득을 합산한 금액이 연 2천만원을 초과할 때 적용됩니다.</p>
+<p data-ke-size="size16">금융소득 종합과세는 이자소득과 배당소득을 합친 금액이 연 2천만원을 초과할 때 적용됩니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">금융소득에는 예금·적금 이자, 채권 이자, 국내 주식 배당금, 해외 주식 배당금, ETF·펀드 분배금 중 과세 대상 금융소득 등이 포함될 수 있습니다.</p>
+<p data-ke-size="size16">여기서 중요한 점은 <b>이자와 배당을 따로 보는 것이 아니라 합산해서 본다</b>는 것입니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">일반적으로 금융소득이 연 2천만원 이하이면 금융기관에서 소득세 14%와 지방소득세 1.4%, 합계 15.4%를 원천징수하고 과세가 끝납니다.</p>
+<p data-ke-size="size16">예를 들어 예금이자 1,300만원, 주식 배당금 900만원을 받았다면 각각은 2천만원 이하입니다. 하지만 합산 금융소득은 2,200만원이므로 종합과세 대상이 될 수 있습니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">반대로 연 금융소득이 2천만원을 초과하면, 2천만원까지는 원천징수세율로 계산하고 2천만원 초과분은 다른 종합소득과 합산해 누진세율을 적용합니다.</p>
+<p data-ke-size="size16">금융소득에는 예금·적금 이자, 채권 이자, 국내외 주식 배당금, ETF·펀드 분배금 중 과세 대상 금액 등이 포함될 수 있습니다.</p>
 
-<h2 data-ke-size="size26">기준은 이자와 배당을 합산해서 본다</h2>
+<h2 data-ke-size="size26">2천만원 이하는 15.4% 원천징수로 끝나는 경우가 많다</h2>
 
-<p data-ke-size="size16">금융소득 종합과세 기준은 이자 따로, 배당 따로 보는 것이 아닙니다. <b>이자소득과 배당소득을 합산한 연간 금액</b>으로 판단합니다.</p>
+<p data-ke-size="size16">일반적인 이자와 배당은 지급될 때 소득세 14%와 지방소득세 1.4%가 원천징수됩니다. 합치면 15.4%입니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">예를 들어 예금이자 1,200만원, 주식 배당금 900만원을 받았다면 각각은 2천만원 이하입니다. 하지만 합산 금융소득은 2,100만원입니다.</p>
+<p data-ke-size="size16">금융소득이 연 2천만원 이하라면 대부분 이 원천징수로 과세가 종결됩니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">이 경우 금융소득 2천만원을 초과했으므로 금융소득 종합과세 대상이 될 수 있습니다.</p>
-
-<h2 data-ke-size="size26">2천만원까지는 어떻게 과세될까</h2>
-
-<p data-ke-size="size16">금융소득이 2천만원을 넘더라도 전체 금융소득이 전부 누진세율로 새로 과세되는 것은 아닙니다.</p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">일반적인 구조는 다음과 같습니다.</p>
-<p data-ke-size="size16">- 금융소득 2천만원 이하분: 원천징수세율 14% 적용</p>
-<p data-ke-size="size16">- 지방소득세: 소득세의 10%</p>
-<p data-ke-size="size16">- 2천만원 초과분: 다른 종합소득과 합산해 종합소득세율 적용</p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">이미 금융기관에서 15.4%를 원천징수했기 때문에 종합소득세 신고 때는 기납부세액으로 차감됩니다.</p>
-
-<h2 data-ke-size="size26">예시 1. 금융소득 1,800만원이면?</h2>
-
-<p data-ke-size="size16">예금이자와 배당금을 합쳐 연 1,800만원을 받았다고 가정해 보겠습니다.</p>
+<p data-ke-size="size16">예를 들어 금융소득이 1,800만원이라면 원천징수세액은 다음과 같습니다.</p>
 <p data-ke-size="size16">- 금융소득 합계: 18,000,000원</p>
-<p data-ke-size="size16">- 종합과세 기준: 20,000,000원 이하</p>
-<p data-ke-size="size16">- 원천징수세율: 15.4%</p>
+<p data-ke-size="size16">- 원천징수율: 15.4%</p>
 <p data-ke-size="size16">- 원천징수세액: 2,772,000원</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">이 경우 금융소득이 2천만원 이하이므로 일반적으로 원천징수로 과세가 끝납니다.</p>
+<p data-ke-size="size16">이 경우 일반적으로 금융소득 종합과세 추가 신고 부담은 없습니다.</p>
 
-<h2 data-ke-size="size26">예시 2. 금융소득 2,500만원, 다른 소득이 없는 경우</h2>
+<h2 data-ke-size="size26">2천만원을 넘으면 전체가 아니라 초과분이 핵심</h2>
+
+<p data-ke-size="size16">금융소득 종합과세에서 가장 많이 오해하는 부분이 있습니다. 2천만원을 넘으면 전체 금융소득이 전부 높은 세율로 다시 과세된다고 생각하는 것입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">하지만 일반적인 구조는 다릅니다.</p>
+<p data-ke-size="size16">- 2천만원 이하분: 원천징수세율 적용</p>
+<p data-ke-size="size16">- 2천만원 초과분: 다른 종합소득과 합산</p>
+<p data-ke-size="size16">- 이미 낸 원천징수세액: 기납부세액으로 차감</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">따라서 실제 추가 세금은 본인의 다른 소득 규모와 종합소득세율에 따라 달라집니다.</p>
+
+<h2 data-ke-size="size26">예시 1. 금융소득 2,500만원이면?</h2>
 
 <center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </center>
 
-<p data-ke-size="size16">이자와 배당을 합쳐 금융소득이 2,500만원이라고 가정해 보겠습니다.</p>
+<p data-ke-size="size16">금융소득이 2,500만원이라고 가정해 보겠습니다.</p>
 <p data-ke-size="size16">- 금융소득 합계: 25,000,000원</p>
 <p data-ke-size="size16">- 기준금액: 20,000,000원</p>
 <p data-ke-size="size16">- 초과 금융소득: 5,000,000원</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">다른 종합소득이 없다면 초과분 500만원에 대한 누진세율 부담이 크지 않을 수 있습니다. 이미 전체 금융소득에 대해 15.4% 원천징수가 되어 있기 때문입니다.</p>
+<p data-ke-size="size16">다른 종합소득이 거의 없다면 추가 납부세액이 생각보다 크지 않을 수 있습니다. 이미 15.4%가 원천징수되어 있기 때문입니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">금융소득 2천만원을 넘었다고 해서 무조건 세금이 크게 늘어나는 것은 아닙니다. 추가 세금은 다른 소득 규모와 세율 구간에 따라 달라집니다.</p>
+<p data-ke-size="size16">즉, 금융소득 2천만원을 조금 넘었다고 해서 무조건 세금 폭탄이 되는 것은 아닙니다.</p>
 
-<h2 data-ke-size="size26">예시 3. 금융소득 3,000만원, 근로소득이 8,000만원인 경우</h2>
+<h2 data-ke-size="size26">예시 2. 금융소득 3,000만원에 근로소득이 많다면?</h2>
 
-<p data-ke-size="size16">문제는 다른 종합소득이 이미 큰 경우입니다.</p>
-<p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">예를 들어 금융소득이 3,000만원이고, 근로소득 등 다른 종합소득이 8,000만원이라고 가정해 보겠습니다.</p>
+<p data-ke-size="size16">이번에는 금융소득 3,000만원에 다른 종합소득 8,000만원이 있다고 가정해 보겠습니다.</p>
 <p data-ke-size="size16">- 금융소득 합계: 30,000,000원</p>
 <p data-ke-size="size16">- 2천만원 초과분: 10,000,000원</p>
 <p data-ke-size="size16">- 다른 종합소득: 80,000,000원</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">이 경우 초과 금융소득 1천만원은 다른 소득과 합산되어 높은 누진세율 구간의 영향을 받을 수 있습니다.</p>
+<p data-ke-size="size16">이 경우 초과분 1천만원이 다른 소득과 합산되면서 더 높은 세율 구간의 영향을 받을 수 있습니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">이미 금융기관에서 15.4%를 원천징수했더라도, 본인의 종합소득세 한계세율이 높다면 차액만큼 추가 납부가 생길 수 있습니다.</p>
+<p data-ke-size="size16">금융기관에서 이미 15.4%를 원천징수했더라도 본인의 한계세율이 더 높다면 차액만큼 추가 납부가 발생할 수 있습니다.</p>
 
-<h2 data-ke-size="size26">금융소득 2천만원을 넘기 전 체크리스트</h2>
+<h2 data-ke-size="size26">배당금이 많으면 Gross-up도 확인해야 한다</h2>
 
-<p data-ke-size="size16">금융소득 종합과세가 걱정된다면 연말 전에 다음 항목을 확인해 보세요.</p>
-<p data-ke-size="size16">- 올해 받은 예금·적금 이자 합계</p>
+<p data-ke-size="size16">이자소득은 비교적 단순하지만, 배당소득은 계산이 조금 복잡할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">국내 배당소득은 일정 요건에서 배당가산액을 더하고 배당세액공제를 적용하는 구조가 들어갈 수 있습니다. 흔히 Gross-up이라고 부르는 방식입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">다만 국내주식 배당, 해외주식 배당, ETF 분배금은 세부 구분이 다를 수 있으므로 실제 신고할 때는 증권사 지급명세서와 홈택스 자료를 같이 확인하는 것이 좋습니다.</p>
+
+<h2 data-ke-size="size26">금융소득 2천만원 전 체크리스트</h2>
+
+<p data-ke-size="size16">연말 전에 다음 항목을 확인해 보세요.</p>
+<p data-ke-size="size16">- 예금·적금 이자 합계</p>
 <p data-ke-size="size16">- 국내 주식 배당금</p>
 <p data-ke-size="size16">- 해외 주식 배당금</p>
 <p data-ke-size="size16">- ETF·펀드 분배금</p>
 <p data-ke-size="size16">- 채권 이자</p>
 <p data-ke-size="size16">- 다른 근로소득·사업소득 규모</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">금융소득 종합과세는 개인별로 판단합니다. 부부라고 해서 자동으로 합산하는 구조는 아니지만, 실제 자금 출처와 증여 이슈는 별도로 확인해야 합니다.</p>
+<p data-ke-size="size16">금융소득 종합과세는 개인별로 판단합니다. 부부라고 해서 자동 합산되는 것은 아니지만, 자금 출처나 증여 문제는 별도로 확인해야 합니다.</p>
 
 <h2 data-ke-size="size26">금융소득 종합과세 계산기 바로가기</h2>
 
-<p data-ke-size="size16">taxcalc.co.kr의 이자·배당소득세 계산기는 이자소득, 배당소득, 다른 종합소득을 입력하면 금융소득 2천만원 초과 여부와 예상 추가 납부세액을 계산합니다.</p>
+<p data-ke-size="size16">이자소득, 배당소득, 다른 종합소득을 입력하면 금융소득 2천만원 초과 여부와 예상 추가 납부세액을 계산할 수 있습니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
 <center><a href="https://taxcalc.co.kr/#income/interest-dividend" target="_blank" rel="noopener" aria-label="이자·배당소득세 계산기 바로가기"> <button class="arenabt star1"> 이자·배당소득세 계산기 바로가기 </button> </a></center>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">올해 금융소득이 2천만원에 가까운지, 초과하면 추가 세금이 어느 정도인지 미리 확인하는 데 유용합니다.</p>
+<p data-ke-size="size16">금융소득이 2천만원 근처라면 실제 신고 전에 예상 세액을 먼저 계산해 보는 것이 좋습니다.</p>
 
 <h2 data-ke-size="size26">자주 묻는 질문</h2>
 
-<p data-ke-size="size16"><b>Q1. 금융소득 2천만원 기준은 세전인가요, 세후인가요?</b></p>
-<p data-ke-size="size16">일반적으로 원천징수 전 금융소득 금액을 기준으로 봅니다. 통장에 실제 입금된 세후 금액이 아니라 이자·배당 지급명세서상 총수입금액을 확인해야 합니다.</p>
+<p data-ke-size="size16"><b>Q1. 금융소득 2천만원은 세전 기준인가요?</b></p>
+<p data-ke-size="size16">일반적으로 원천징수 전 금융소득 금액을 기준으로 봅니다. 통장에 들어온 세후 입금액이 아니라 지급명세서상 총수입금액을 확인해야 합니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><b>Q2. 이자 1,500만원, 배당 700만원이면 종합과세인가요?</b></p>
-<p data-ke-size="size16">이자와 배당을 합치면 2,200만원이므로 금융소득 종합과세 대상이 될 수 있습니다. 기준은 이자와 배당을 합산한 연간 금융소득입니다.</p>
+<p data-ke-size="size16"><b>Q2. 해외주식 배당도 포함되나요?</b></p>
+<p data-ke-size="size16">해외주식 배당도 금융소득에 포함될 수 있습니다. 국내 원천징수 여부와 외국납부세액공제 등은 별도로 확인해야 합니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16"><b>Q3. 해외주식 배당도 포함되나요?</b></p>
-<p data-ke-size="size16">해외주식 배당도 금융소득에 포함될 수 있습니다. 국내에서 원천징수되지 않은 국외 금융소득 등은 별도 신고 이슈가 생길 수 있습니다.</p>
+<p data-ke-size="size16"><b>Q3. 금융소득 2천만원을 넘으면 무조건 손해인가요?</b></p>
+<p data-ke-size="size16">그렇지는 않습니다. 추가 세금은 다른 소득과 한계세율에 따라 달라집니다. 세금보다 세후 수익이 더 중요하므로 무조건 금융소득을 줄이는 것이 정답은 아닙니다.</p>
 
-<h2 data-ke-size="size26">결론: 2천만원 초과보다 중요한 것은 내 한계세율이다</h2>
+<h2 data-ke-size="size26">결론: 2천만원보다 중요한 것은 다른 소득과 한계세율</h2>
 
 <center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
 </center>
 
-<p data-ke-size="size16">금융소득 종합과세는 단순히 “2천만원 넘으면 큰일”이라는 식으로 볼 문제는 아닙니다.</p>
+<p data-ke-size="size16">금융소득 종합과세는 이자와 배당을 합쳐 연 2천만원을 넘는지부터 확인해야 합니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">금융소득이 2천만원을 넘는지 확인하는 것은 출발점이고, 실제 추가 세금은 다른 종합소득과 한계세율에 따라 달라집니다.</p>
+<p data-ke-size="size16">하지만 실제 추가 세금은 2천만원 초과 여부만으로 결정되지 않습니다. 다른 근로소득, 사업소득, 배당 구성, 한계세율이 함께 영향을 줍니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<p data-ke-size="size16">올해 이자와 배당이 늘었다면 연말 전에 금융소득 합계를 확인해 보세요. 2천만원 근처라면 예상 세금을 계산해 보고, 세후 수익 기준으로 투자와 절세 전략을 함께 판단하는 것이 좋습니다.</p>
+<p data-ke-size="size16">올해 이자와 배당이 크게 늘었다면 연말 전에 금융소득 합계를 계산해 보고, 종합과세 대상 여부와 추가세금을 미리 확인해 보세요.</p>
 
 <!-- 해시태그 -->
-<!-- 금융소득종합과세, 이자소득세, 배당소득세, 배당금세금, 예금이자세금, 종합소득세, 금융소득2천만원, 종합과세, 투자세금, taxcalc -->
+<!-- 금융소득종합과세, 금융소득2천만원, 이자소득세, 배당소득세, 배당금세금, 예금이자세금, 종합소득세, 종합과세, 투자세금, taxcalc -->
