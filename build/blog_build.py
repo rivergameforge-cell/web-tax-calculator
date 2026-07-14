@@ -364,6 +364,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "금융소득_종합과세_2천만원_초과_계산",
+        "slug": "financial-income-comprehensive-tax-20m",
+        "category": "finance",
+        "categoryLabel": "금융 세금",
+        "date": "2026-07-14",
+        "readMin": 5,
+        "ctaHref": "/income/interest-dividend.html",
+        "ctaLabel": "이자·배당소득세 계산기",
+        "related": [
+            ("/income/interest-dividend.html", "이자·배당소득세 계산기"),
+            ("/stocks/dividend.html", "배당소득세 계산기"),
+            ("/income/comprehensive.html", "종합소득세 계산기"),
+            ("/stocks/foreign.html", "해외주식 양도소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "기타소득세_8.8_강연료_원고료_상금",
         "slug": "other-income-tax-8-8-guide",
         "category": "business",

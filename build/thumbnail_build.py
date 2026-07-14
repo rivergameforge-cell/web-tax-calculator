@@ -40,6 +40,7 @@ TISTORY = [
     {"file": "연봉_5천_실수령액_티스토리", "slug": "salary-50m-take-home-tistory", "category": "labor"},
     {"file": "기타소득세_8.8_강연료_원고료_상금_티스토리", "slug": "other-income-tax-8-8-guide-tistory", "category": "business"},
     {"file": "종합소득세_가산세_신고_늦으면_얼마_티스토리", "slug": "income-tax-penalty-late-filing-tistory", "category": "business"},
+    {"file": "금융소득_종합과세_2천만원_초과_계산_티스토리", "slug": "financial-income-comprehensive-tax-20m-tistory", "category": "finance"},
 ]
 
 
