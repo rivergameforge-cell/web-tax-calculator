@@ -381,6 +381,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "월세_세액공제_총급여_8천만원_환급액",
+        "slug": "monthly-rent-tax-credit-8m-refund",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-07-16",
+        "readMin": 5,
+        "ctaHref": "/income/rent-credit.html",
+        "ctaLabel": "월세 세액공제 계산기",
+        "related": [
+            ("/income/rent-credit.html", "월세 세액공제 계산기"),
+            ("/income/salary.html", "연봉 실수령액 계산기"),
+            ("/income/pension-saving.html", "연금저축 세액공제 계산기"),
+            ("/income/comprehensive.html", "종합소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "기타소득세_8.8_강연료_원고료_상금",
         "slug": "other-income-tax-8-8-guide",
         "category": "business",

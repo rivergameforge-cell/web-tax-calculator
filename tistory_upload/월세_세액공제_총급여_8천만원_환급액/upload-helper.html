@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티스토리 업로드 도우미 - 월세 80만원 내면 연말정산 때 얼마 돌려받을까? 세액공제 계산법</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 24px;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 20px;
+    }
+    section {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 0 0 12px; }
+    label { display: block; font-size: 13px; color: #6b7280; margin-bottom: 8px; }
+    textarea, input {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      background: #f9fafb;
+    }
+    textarea { min-height: 320px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+    button, a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #2563eb;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 8px 8px 0 0;
+    }
+    button.secondary { background: #475569; }
+    .hint { color: #64748b; font-size: 13px; margin: 8px 0 0; }
+    .side img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      display: block;
+    }
+    .no-image {
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 28px 12px;
+      text-align: center;
+      color: #64748b;
+    }
+    .checklist li { margin-bottom: 8px; }
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>티스토리 업로드 도우미</h1>
+    <div>월세를 매달 내고 있다면 연말정산에서 그냥 지나치면 아까운 항목이 있습니다. 바로 월세 세액공제 입니다.   특히 월세 60만원, 70만원, 80만원을 내는 분들은 공제액이 100만원을 넘을 수 있습니다. 월세 80만원을 1년 동안 냈고 17% 공제율이 적용되면 계산상 공제액은 163…</div>
+  </header>
+  <main>
+    <div>
+      <section>
+        <h2>1. 제목</h2>
+        <label>티스토리 제목 입력란에 붙여넣기</label>
+        <input id="title" value="월세 80만원 내면 연말정산 때 얼마 돌려받을까? 세액공제 계산법">
+        <button onclick="copyValue('title')">제목 복사</button>
+      </section>
+
+      <section>
+        <h2>2. 본문 HTML</h2>
+        <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
+        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;월세를 매달 내고 있다면 연말정산에서 그냥 지나치면 아까운 항목이 있습니다. 바로 &lt;b&gt;월세 세액공제&lt;/b&gt;입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;특히 월세 60만원, 70만원, 80만원을 내는 분들은 공제액이 100만원을 넘을 수 있습니다. 월세 80만원을 1년 동안 냈고 17% 공제율이 적용되면 계산상 공제액은 &lt;b&gt;163만2천원&lt;/b&gt;까지 나옵니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;다만 누구나 받을 수 있는 것은 아닙니다. 총급여, 무주택 여부, 전입신고, 주택 기준, 월세 이체 증빙을 같이 봐야 합니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;월세 세액공제 핵심 기준&lt;/h2&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;2026년 기준으로 월세 세액공제는 총급여 8,000만원 이하 근로자가 확인해야 하는 연말정산 항목입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;기본 요건은 다음과 같습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 총급여 8,000만원 이하&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 종합소득금액 7,000만원 이하&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 무주택 세대의 세대주 또는 요건을 충족한 세대원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 임대차계약서 주소와 주민등록등본 주소가 동일&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 국민주택규모 85㎡ 이하 또는 기준시가 4억원 이하 주택&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 주거용 오피스텔, 고시원도 요건 충족 시 가능&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;여기서 가장 많이 놓치는 것이 &lt;b&gt;전입신고&lt;/b&gt;입니다. 실제로 살고 있어도 주민등록 주소가 계약서 주소와 다르면 공제받기 어려울 수 있습니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;월세 공제율은 15% 또는 17%&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;월세 세액공제율은 총급여에 따라 달라집니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 총급여 5,500만원 이하: 월세액의 17%&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 총급여 5,500만원 초과~8,000만원 이하: 월세액의 15%&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 공제 대상 월세액 한도: 연 1,000만원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그래서 계산상 최대 공제액은 17% 구간 170만원, 15% 구간 150만원입니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;월세 80만원이면 공제액은?&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;가장 많이 궁금해하는 월세 80만원 기준으로 계산해 보겠습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;월세 80만원을 12개월 냈다면 연간 월세는 960만원입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 5,500만원 이하라면:&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;960만원 × 17% = &lt;b&gt;163만2천원&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 5,500만원 초과 8,000만원 이하라면:&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;960만원 × 15% = &lt;b&gt;144만원&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;다만 이 금액이 무조건 통장으로 그대로 들어온다는 뜻은 아닙니다. 세액공제는 내가 낼 세금에서 빼주는 방식이기 때문에 결정세액과 원천징수세액에 따라 실제 환급액은 달라집니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;월세 50만원, 70만원 예시&lt;/h2&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;월세 50만원을 1년 동안 냈다면 연간 월세는 600만원입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 17% 구간: 102만원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 15% 구간: 90만원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;월세 70만원을 1년 동안 냈다면 연간 월세는 840만원입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 17% 구간: 142만8천원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 15% 구간: 126만원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;월세가 90만원이라면 연간 납부액은 1,080만원이지만, 공제 계산은 1,000만원까지만 적용됩니다. 그래서 17% 구간은 170만원, 15% 구간은 150만원이 한도입니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;준비 서류 3가지는 꼭 챙기기&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;월세 세액공제를 받으려면 서류가 필요합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;1. 주민등록표등본&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;2. 임대차계약서 사본&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;3. 계좌이체 영수증, 무통장입금증 등 월세 지급 증빙&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;월세를 현금으로 주고 별도 증빙이 없다면 나중에 곤란할 수 있습니다. 가능하면 계좌이체로 남기는 것이 안전합니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;공제 못 받는 경우도 있다&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;아래에 해당하면 월세를 냈더라도 공제 대상에서 빠질 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 총급여가 8,000만원을 초과한 경우&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 무주택 요건을 충족하지 못한 경우&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 전입신고를 하지 않은 경우&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 계약서 주소와 주민등록등본 주소가 다른 경우&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;- 월세 지급 증빙이 부족한 경우&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;연말정산 시즌이 되기 전에 계약서와 등본 주소부터 먼저 맞는지 확인하는 것이 좋습니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;월세 세액공제 계산기&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;내 월세와 총급여 구간을 넣어 예상 공제액을 바로 계산해 볼 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;center&gt;&lt;a href=&quot;https://taxcalc.co.kr/#income/rent-credit&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; aria-label=&quot;월세 세액공제 계산기 바로가기&quot;&gt; &lt;button class=&quot;arenabt star1&quot;&gt; 월세 세액공제 계산기 바로가기 &lt;/button&gt; &lt;/a&gt;&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;월세가 50만원 이상이라면 연말정산 전에 한 번 계산해 보는 것이 좋습니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;자주 묻는 질문&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;Q. 월세 세액공제는 집주인 동의가 필요한가요?&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반적으로 신청 자체에 집주인 동의가 필요한 것은 아닙니다. 본인이 요건과 서류를 갖추는 것이 중요합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;Q. 오피스텔도 가능한가요?&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;주거용 오피스텔은 요건을 충족하면 가능합니다. 고시원도 공제 대상에 포함될 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;Q. 월세를 많이 내면 전부 공제되나요?&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;아닙니다. 공제 대상 월세액은 연 1,000만원까지만 인정됩니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;정리&lt;/h2&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;월세 세액공제는 총급여 8,000만원 이하 무주택 근로자라면 꼭 확인해야 하는 항목입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;공제율은 15% 또는 17%, 한도는 연 월세 1,000만원입니다. 월세 80만원을 내는 사람이라면 계산상 144만원 또는 163만2천원까지 공제액이 나올 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;핵심은 전입신고, 계약서, 이체 증빙입니다. 이 세 가지가 흔들리면 공제도 흔들릴 수 있으니 미리 확인해 두세요.&lt;/p&gt;</textarea>
+        <button onclick="copyValue('body')">본문 복사</button>
+        <p class="hint">이미지는 티스토리에서 직접 업로드한 뒤 본문 상단에 배치하는 방식을 권장합니다.</p>
+      </section>
+
+      <section>
+        <h2>3. 태그</h2>
+        <label>티스토리 태그 입력란에 붙여넣기</label>
+        <input id="tags" value="월세세액공제, 연말정산월세, 월세환급, 월세공제, 월세80만원, 총급여8천만원, 무주택세대주, 세액공제, 연말정산, taxcalc">
+        <button onclick="copyValue('tags')">태그 복사</button>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>썸네일</h2>
+        <img src="file:///Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/monthly-rent-tax-credit-8m-refund-tistory.webp" alt="thumbnail preview">
+        <label style="margin-top:12px">로컬 이미지 경로</label>
+        <input id="imagePath" value="/Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/monthly-rent-tax-credit-8m-refund-tistory.webp">
+        <button onclick="copyValue('imagePath')">이미지 경로 복사</button>
+        <p class="hint">monthly-rent-tax-credit-8m-refund-tistory.webp</p>
+      </section>
+
+      <section>
+        <h2>업로드 순서</h2>
+        <ol class="checklist">
+          <li>티스토리 글쓰기 화면을 연다.</li>
+          <li>제목을 복사해 입력한다.</li>
+          <li>썸네일 이미지를 업로드하고 대표 이미지로 지정한다.</li>
+          <li>에디터를 HTML 모드로 전환한다.</li>
+          <li>본문 HTML을 붙여넣는다.</li>
+          <li>태그를 붙여넣고 임시저장한다.</li>
+        </ol>
+        <a class="button" href="https://www.tistory.com/" target="_blank" rel="noopener">티스토리 열기</a>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    async function copyValue(id) {
+      const el = document.getElementById(id);
+      await navigator.clipboard.writeText(el.value);
+      const old = document.title;
+      document.title = '복사 완료';
+      setTimeout(() => document.title = old, 900);
+    }
+  </script>
+</body>
+</html>
