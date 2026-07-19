@@ -522,7 +522,7 @@ def md_to_html(md: str) -> str:
     lines = md.split("\n")
     out = []
     i = 0
-    in_list = False
+    in_list = None
     para_buf = []
 
     def flush_para():
@@ -536,8 +536,8 @@ def md_to_html(md: str) -> str:
     def close_list():
         nonlocal in_list
         if in_list:
-            out.append("</ul>")
-            in_list = False
+            out.append(f"</{in_list}>")
+            in_list = None
 
     while i < len(lines):
         line = lines[i]
@@ -583,10 +583,26 @@ def md_to_html(md: str) -> str:
         # 리스트 (- )
         if stripped.startswith("- "):
             flush_para()
+            if in_list and in_list != "ul":
+                close_list()
             if not in_list:
                 out.append("<ul>")
-                in_list = True
+                in_list = "ul"
             item_text = inline_format(html_escape(stripped[2:].strip()))
+            out.append(f"<li>{item_text}</li>")
+            i += 1
+            continue
+
+        # 번호 리스트 (1. )
+        ordered_match = re.match(r"^\d+\.\s+(.*)$", stripped)
+        if ordered_match:
+            flush_para()
+            if in_list and in_list != "ol":
+                close_list()
+            if not in_list:
+                out.append("<ol>")
+                in_list = "ol"
+            item_text = inline_format(html_escape(ordered_match.group(1).strip()))
             out.append(f"<li>{item_text}</li>")
             i += 1
             continue
