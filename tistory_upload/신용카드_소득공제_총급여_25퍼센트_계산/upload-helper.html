@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>티스토리 업로드 도우미 - 신용카드 소득공제 25% 계산, 카드값 많이 써도 공제 안 되는 이유</title>
+  <title>티스토리 업로드 도우미 - 연봉 5천 카드값 2천만원, 신용카드 소득공제는 얼마일까?</title>
   <style>
     * { box-sizing: border-box; }
     body {
@@ -84,117 +84,93 @@
 <body>
   <header>
     <h1>티스토리 업로드 도우미</h1>
-    <div>연말정산에서 카드 공제를 기대했는데 막상 금액을 보면 생각보다 작게 나올 때가 있습니다.   이유는 간단합니다. 신용카드 소득공제는 카드 사용액 전체 가 아니라 총급여의 25%를 넘긴 금액 부터 계산되기 때문입니다.   즉, 카드값이 많아 보여도 내 총급여 기준선을 넘기지 못하면 공제…</div>
+    <div>카드값으로 2,000만원을 썼다면 연말정산에서 얼마나 돌려받을까요?   많은 분이 2,000만원에 신용카드 공제율 15%를 곱해 300만원을 생각합니다. 하지만 실제 계산은 그렇게 되지 않습니다.   연봉 5,000만원이라면 처음 1,250만원은 공제 계산에서 빠지기 때문입니다. (a…</div>
   </header>
   <main>
     <div>
       <section>
         <h2>1. 제목</h2>
         <label>티스토리 제목 입력란에 붙여넣기</label>
-        <input id="title" value="신용카드 소득공제 25% 계산, 카드값 많이 써도 공제 안 되는 이유">
+        <input id="title" value="연봉 5천 카드값 2천만원, 신용카드 소득공제는 얼마일까?">
         <button onclick="copyValue('title')">제목 복사</button>
       </section>
 
       <section>
         <h2>2. 본문 HTML</h2>
         <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
-        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;연말정산에서 카드 공제를 기대했는데 막상 금액을 보면 생각보다 작게 나올 때가 있습니다.&lt;/p&gt;
+        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;카드값으로 2,000만원을 썼다면 연말정산에서 얼마나 돌려받을까요?&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;이유는 간단합니다. 신용카드 소득공제는 &lt;b&gt;카드 사용액 전체&lt;/b&gt;가 아니라 &lt;b&gt;총급여의 25%를 넘긴 금액&lt;/b&gt;부터 계산되기 때문입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;많은 분이 2,000만원에 신용카드 공제율 15%를 곱해 300만원을 생각합니다. 하지만 실제 계산은 그렇게 되지 않습니다.&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;즉, 카드값이 많아 보여도 내 총급여 기준선을 넘기지 못하면 공제액은 0원이 될 수 있습니다.&lt;/p&gt;
-
-&lt;h2 data-ke-size=&quot;size26&quot;&gt;총급여 25%가 먼저입니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;연봉 5,000만원이라면 처음 1,250만원은 공제 계산에서 빠지기 때문입니다.&lt;/b&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
 &lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
 &lt;/center&gt;
 
-&lt;p data-ke-size=&quot;size16&quot;&gt;신용카드 소득공제의 시작선은 아래 공식입니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;총급여 × 25% = 공제 시작 기준금액&lt;/b&gt;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;예를 들어 총급여가 4,000만원이면 25%는 1,000만원입니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;카드와 현금영수증을 합쳐 900만원을 썼다면 공제는 없습니다. 1,500만원을 썼다면 1,000만원을 넘긴 500만원 구간부터 공제 계산을 보게 됩니다.&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;내 카드 공제 시작점부터 계산하기&lt;/h2&gt;
 
-&lt;h2 data-ke-size=&quot;size26&quot;&gt;총급여별 25% 기준금액&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;신용카드 소득공제에는 최저사용금액이 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;총급여 × 25% = 공제에서 빠지는 기준금액&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 3,600만원이면 900만원, 5,000만원이면 1,250만원, 7,000만원이면 1,750만원입니다. 이 선을 넘지 못하면 카드 공제는 0원입니다.&lt;/p&gt;
 
-&lt;p data-ke-size=&quot;size16&quot;&gt;내 기준금액을 빠르게 보려면 아래처럼 계산하면 됩니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 3,000만원 → 750만원&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 4,000만원 → 1,000만원&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 5,000만원 → 1,250만원&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 6,000만원 → 1,500만원&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 7,000만원 → 1,750만원&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;연말정산 전에 가장 먼저 확인할 숫자는 이 기준금액입니다.&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;연봉 5천만원 사례를 직접 계산하면&lt;/h2&gt;
 
-&lt;h2 data-ke-size=&quot;size26&quot;&gt;신용카드 15%, 체크카드 30%&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 5,000만원인 직장인이 신용카드 1,300만원, 체크카드 700만원을 썼다고 해보겠습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;25% 기준은 1,250만원입니다. 신용카드 사용액 중 1,250만원이 기준을 채우고, 공제 대상에는 신용카드 50만원과 체크카드 700만원이 남습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;신용카드 50만원 × 15% = 7만5천원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;체크카드 700만원 × 30% = 210만원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;계산상 소득공제액 = &lt;b&gt;217만5천원&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;여기서 217만5천원이 그대로 환급되는 것은 아닙니다. 세금을 매기는 소득에서 217만5천원을 빼주는 것이고, 실제 절세액은 본인의 세율에 따라 달라집니다.&lt;/p&gt;
 
-&lt;p data-ke-size=&quot;size16&quot;&gt;25% 기준을 넘긴 뒤에는 결제수단별 공제율 차이가 중요합니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;신용카드는 15%입니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;체크카드와 현금영수증은 30%입니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;전통시장과 대중교통은 40%입니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;그래서 흔히 &lt;b&gt;25%까지는 신용카드, 그 이후는 체크카드나 현금영수증&lt;/b&gt;이라는 말이 나옵니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;다만 카드 할인, 포인트, 무이자 혜택이 크다면 공제율만 보고 무조건 체크카드로 바꾸는 것은 맞지 않습니다.&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;체크카드가 유리해지는 시점&lt;/h2&gt;
 
-&lt;h2 data-ke-size=&quot;size26&quot;&gt;예시로 계산해보기&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반 신용카드 공제율은 15%, 체크카드와 현금영수증은 30%입니다. 전통시장과 대중교통은 40%입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그래서 25% 기준을 이미 넘긴 뒤라면 체크카드의 공제 속도가 신용카드보다 빠릅니다. 반대로 아직 25%에 한참 못 미쳤다면 체크카드로 바꿔도 당장 공제가 생기지는 않습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;카드 앱의 연간 이용액과 회사에서 예상한 총급여를 비교해보면 바꿀 시점을 판단하기 쉽습니다.&lt;/p&gt;
 
 &lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
 &lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
 &lt;/center&gt;
 
-&lt;p data-ke-size=&quot;size16&quot;&gt;총급여가 5,000만원인 직장인을 예로 들어보겠습니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 5,000만원의 25%는 1,250만원입니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;신용카드로 1,250만원을 쓰고, 그 이후 체크카드로 500만원을 썼다면 체크카드 500만원이 초과 구간으로 남는 구조로 이해할 수 있습니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;500만원 × 30% = 150만원&lt;/b&gt;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;여기서 150만원은 환급액이 아닙니다. 세금을 계산하기 전 과세표준을 줄여주는 소득공제액입니다.&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;카드값 2천만원이 모두 잡히지 않는 이유&lt;/h2&gt;
 
-&lt;h2 data-ke-size=&quot;size26&quot;&gt;카드로 냈는데 공제 안 되는 항목&lt;/h2&gt;
-
-&lt;p data-ke-size=&quot;size16&quot;&gt;카드 명세서에 찍힌 금액이 전부 연말정산 공제 대상은 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;관리비, 세금, 공과금, 보험료, 학교 수업료, 상품권 구입비, 해외 결제액 등은 카드로 냈어도 신용카드 소득공제 대상에서 빠질 수 있습니다.&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;대표적으로 세금, 공과금, 아파트관리비, 보험료, 학교 수업료, 상품권 구입비, 해외 사용금액, 현금서비스, 카드론은 공제 대상에서 빠질 수 있습니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;특히 관리비와 보험료는 카드 자동납부를 많이 해두기 때문에 실제 카드값과 연말정산 공제 대상 금액이 다르게 느껴질 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;따라서 카드사 앱의 총결제액과 홈택스 간소화 자료의 사용액은 서로 다를 수 있습니다. 연말정산 계산에는 카드 명세서 총액이 아니라 간소화 자료에 구분된 금액을 사용하는 편이 정확합니다.&lt;/p&gt;
 
-&lt;h2 data-ke-size=&quot;size26&quot;&gt;공제 한도도 있습니다&lt;/h2&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;2026년 공제 한도도 확인하세요&lt;/h2&gt;
 
-&lt;p data-ke-size=&quot;size16&quot;&gt;계산상 공제액이 커져도 한도가 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;기본 한도는 총급여 7,000만원 이하 300만원, 7,000만원 초과 250만원입니다.&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 7,000만원 이하는 기본 한도 300만원입니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 7,000만원 초과~1억2,000만원 이하는 250만원입니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;총급여 1억2,000만원 초과는 200만원입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;2026년에는 법에서 정한 자녀·손자녀 등 부양가족이 있으면 기본 한도가 늘어납니다. 총급여 7,000만원 이하 기준으로 1명은 350만원, 2명 이상은 400만원입니다.&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;2026년부터 2028년까지는 자녀 수에 따라 기본한도가 한시적으로 늘어날 수 있으니 자녀가 있다면 이 부분도 함께 확인하는 것이 좋습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;전통시장·대중교통·문화체육 사용분은 기본 한도를 넘긴 경우 추가 한도가 적용될 수 있습니다.&lt;/p&gt;
 
-&lt;h2 data-ke-size=&quot;size26&quot;&gt;실제 세금은 얼마나 줄어들까?&lt;/h2&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;환급액과 소득공제액은 다릅니다&lt;/h2&gt;
 
-&lt;p data-ke-size=&quot;size16&quot;&gt;신용카드 소득공제는 세액공제가 아니라 소득공제입니다. 그래서 실제 세금 감소액은 내 소득세율, 다른 공제 항목, 결정세액에 따라 달라집니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;카드 공제만 보고 실제 환급액을 단정하기는 어렵습니다. 연금저축, 월세, 의료비, 보험료 같은 다른 항목과 이미 낸 세금까지 함께 봐야 하기 때문입니다.&lt;/p&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;center&gt;&lt;a href=&quot;https://taxcalc.co.kr/#income/comprehensive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; aria-label=&quot;종합소득세 계산기 바로가기&quot;&gt; &lt;button class=&quot;arenabt star1&quot;&gt; 종합소득세 계산기 바로가기 &lt;/button&gt; &lt;/a&gt;&lt;/center&gt;
+&lt;center&gt;&lt;a href=&quot;https://taxcalc.co.kr/#income/comprehensive&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; aria-label=&quot;세금 계산기 바로가기&quot;&gt;&lt;button class=&quot;arenabt star1&quot;&gt;내 소득 기준으로 세금 계산해보기&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;
 &lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;카드 공제 하나만 따로 보기보다 연금저축, 월세, 의료비, 보험료, 기부금 공제와 함께 전체 세금 흐름을 보는 편이 정확합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;공제를 받으려고 필요 없는 소비를 늘리는 것은 손해입니다. 어차피 쓸 생활비라면 25%를 넘긴 시점부터 결제수단을 조정하는 정도가 현실적인 방법입니다.&lt;/p&gt;
 
-&lt;h2 data-ke-size=&quot;size26&quot;&gt;정리&lt;/h2&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;세 줄 요약&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;첫째, 카드 사용액이 총급여의 25%를 넘어야 공제가 시작됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;둘째, 초과 구간은 신용카드 15%, 체크카드·현금영수증 30%가 적용됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;셋째, 계산된 공제액은 환급액이 아니라 과세표준에서 빠지는 금액입니다.&lt;/p&gt;
 
 &lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
 &lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
-&lt;/center&gt;
-
-&lt;p data-ke-size=&quot;size16&quot;&gt;신용카드 소득공제는 총급여 25%를 넘겨야 시작됩니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;25%를 넘긴 뒤에는 신용카드 15%, 체크카드·현금영수증 30%, 전통시장·대중교통 40%처럼 공제율 차이가 생깁니다.&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p data-ke-size=&quot;size16&quot;&gt;연말정산 전에 내 총급여의 25%가 얼마인지, 올해 사용액이 그 기준을 넘겼는지 먼저 확인해 보세요.&lt;/p&gt;</textarea>
+&lt;/center&gt;</textarea>
         <button onclick="copyValue('body')">본문 복사</button>
         <p class="hint">이미지는 티스토리에서 직접 업로드한 뒤 본문 상단에 배치하는 방식을 권장합니다.</p>
       </section>
@@ -202,7 +178,7 @@
       <section>
         <h2>3. 태그</h2>
         <label>티스토리 태그 입력란에 붙여넣기</label>
-        <input id="tags" value="신용카드소득공제, 카드소득공제, 카드공제25퍼센트, 연말정산신용카드, 체크카드소득공제, 현금영수증공제, 전통시장공제, 대중교통공제, 직장인연말정산, 연말정산환급">
+        <input id="tags" value="신용카드소득공제, 연봉5000연말정산, 카드값2000만원, 총급여25퍼센트, 체크카드공제, 현금영수증공제, 연말정산환급, 2026연말정산, 카드공제계산, 직장인연말정산">
         <button onclick="copyValue('tags')">태그 복사</button>
       </section>
     </div>
