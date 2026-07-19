@@ -415,6 +415,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "신용카드_소득공제_총급여_25퍼센트_계산",
+        "slug": "credit-card-deduction-25-percent",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-07-19",
+        "readMin": 6,
+        "ctaHref": "/income/comprehensive.html",
+        "ctaLabel": "종합소득세 계산기",
+        "related": [
+            ("/income/comprehensive.html", "종합소득세 계산기"),
+            ("/income/salary.html", "연봉 실수령액 계산기"),
+            ("/income/rent-credit.html", "월세 세액공제 계산기"),
+            ("/income/pension-saving.html", "연금저축 세액공제 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "기타소득세_8.8_강연료_원고료_상금",
         "slug": "other-income-tax-8-8-guide",
         "category": "business",
