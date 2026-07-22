@@ -1,0 +1,4 @@
+interface:
+  display_name: "한국 세금 플랫폼 글쓰기"
+  short_description: "세금 플랫폼별 정확한 전문 콘텐츠 작성 및 차별화"
+  default_prompt: "Use $korean-tax-blog-writer to create accurate and differentiated Korean tax posts for the website, Tistory, and Naver Blog."
