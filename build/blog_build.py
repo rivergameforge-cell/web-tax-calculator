@@ -432,6 +432,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "부가가치세_환급_매출세액_매입세액_계산",
+        "slug": "vat-refund-output-input-tax",
+        "category": "business",
+        "categoryLabel": "사업 세금",
+        "date": "2026-07-22",
+        "readMin": 6,
+        "ctaHref": "/income/vat.html",
+        "ctaLabel": "부가가치세 계산기",
+        "related": [
+            ("/income/vat.html", "부가가치세 계산기"),
+            ("/income/business.html", "사업소득세 계산기"),
+            ("/income/penalty.html", "종합소득세 가산세 계산기"),
+            ("/income/comprehensive.html", "종합소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "기타소득세_8.8_강연료_원고료_상금",
         "slug": "other-income-tax-8-8-guide",
         "category": "business",

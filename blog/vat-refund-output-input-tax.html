@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="일반과세자의 부가가치세 환급액을 매출세액과 공제 가능한 매입세액으로 계산하는 방법을 설명합니다. 일반환급·조기환급 시기, 환급 대상과 불공제 항목을 2026년 기준으로 확인하세요.">
+  <meta name="keywords" content="부가가치세환급,부가세환급계산,매입세액,매출세액,부가세신고,일반과세자,조기환급,개인사업자,2026부가세,taxcalc">
+  <meta name="author" content="세금계산기">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google-adsense-account" content="ca-pub-2792604427181547">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2792604427181547" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/og-image.png">
+  <link rel="canonical" href="https://taxcalc.co.kr/blog/vat-refund-output-input-tax.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="세금계산기">
+  <meta property="og:title" content="부가가치세 환급 계산: 매입세액이 매출세액보다 크면 얼마 받을까">
+  <meta property="og:description" content="일반과세자의 부가가치세 환급액을 매출세액과 공제 가능한 매입세액으로 계산하는 방법을 설명합니다. 일반환급·조기환급 시기, 환급 대상과 불공제 항목을 2026년 기준으로 확인하세요.">
+  <meta property="og:url" content="https://taxcalc.co.kr/blog/vat-refund-output-input-tax.html">
+  <meta property="og:image" content="https://taxcalc.co.kr/thumbnails/vat-refund-output-input-tax.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="article:published_time" content="2026-07-22">
+  <meta property="article:modified_time" content="2026-07-22">
+  <meta property="article:section" content="사업 세금">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="부가가치세 환급 계산: 매입세액이 매출세액보다 크면 얼마 받을까">
+  <meta name="twitter:description" content="일반과세자의 부가가치세 환급액을 매출세액과 공제 가능한 매입세액으로 계산하는 방법을 설명합니다. 일반환급·조기환급 시기, 환급 대상과 불공제 항목을 2026년 기준으로 확인하세요.">
+  <meta name="twitter:image" content="https://taxcalc.co.kr/thumbnails/vat-refund-output-input-tax.webp">
+
+  <title>부가가치세 환급 계산: 매입세액이 매출세액보다 크면 얼마 받을까 | 세금계산기 블로그</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "부가가치세 환급 계산: 매입세액이 매출세액보다 크면 얼마 받을까",
+    "description": "일반과세자의 부가가치세 환급액을 매출세액과 공제 가능한 매입세액으로 계산하는 방법을 설명합니다. 일반환급·조기환급 시기, 환급 대상과 불공제 항목을 2026년 기준으로 확인하세요.",
+    "image": "https://taxcalc.co.kr/thumbnails/vat-refund-output-input-tax.webp",
+    "author": { "@type": "Organization", "name": "세금계산기", "url": "https://taxcalc.co.kr/" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "세금계산기",
+      "logo": { "@type": "ImageObject", "url": "https://taxcalc.co.kr/og-image.png" }
+    },
+    "datePublished": "2026-07-22",
+    "dateModified": "2026-07-22",
+    "mainEntityOfPage": "https://taxcalc.co.kr/blog/vat-refund-output-input-tax.html",
+    "articleSection": "사업 세금",
+    "inLanguage": "ko"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "세금계산기", "item": "https://taxcalc.co.kr/" },
+      { "@type": "ListItem", "position": 2, "name": "블로그", "item": "https://taxcalc.co.kr/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "부가가치세 환급 계산: 매입세액이 매출세액보다 크면 얼마 받을까", "item": "https://taxcalc.co.kr/blog/vat-refund-output-input-tax.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Pretendard', -apple-system, sans-serif; background: #f8f9fa; color: #1f2937; line-height: 1.85; }
+    .top-bar { background: #2563EB; padding: 14px 24px; display: flex; align-items: center; gap: 12px; }
+    .top-bar a { color: white; text-decoration: none; font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+    .top-bar .logo-mark { width: 34px; height: 34px; background: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 900; color: #2563EB; }
+    .breadcrumb { background: #eef2ff; padding: 10px 24px; font-size: 13px; color: #4338ca; }
+    .breadcrumb a { color: #4338ca; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .container { max-width: 760px; margin: 0 auto; padding: 36px 20px 80px; }
+    .meta-line { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; font-size: 13px; color: #6b7280; margin-bottom: 14px; }
+    .meta-line .tag { background: #eef2ff; color: #4338ca; padding: 3px 10px; border-radius: 6px; font-weight: 600; }
+    article h1 { font-size: 28px; font-weight: 800; color: #111827; margin: 0 0 14px; letter-spacing: -0.5px; line-height: 1.4; }
+    .lead { font-size: 17px; color: #4b5563; margin: 0 0 28px; padding: 18px 22px; background: white; border-left: 4px solid #2563EB; border-radius: 0 10px 10px 0; }
+    article h2 { font-size: 22px; font-weight: 700; color: #1e40af; margin: 44px 0 14px; padding-bottom: 10px; border-bottom: 2px solid #dbeafe; line-height: 1.4; }
+    article h3 { font-size: 17px; font-weight: 700; color: #1f2937; margin: 24px 0 10px; }
+    article p { margin-bottom: 16px; font-size: 16px; }
+    article ul { margin: 10px 0 20px 22px; font-size: 15.5px; }
+    article ul li { margin-bottom: 8px; line-height: 1.7; }
+    article strong { color: #111827; font-weight: 700; }
+    article a { color: #2563EB; }
+    article code { background: #f3f4f6; padding: 1px 6px; border-radius: 4px; font-size: 14px; }
+    .quote { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 16px 22px; margin: 22px 0; border-radius: 0 10px 10px 0; font-size: 15px; color: #78350f; line-height: 1.7; }
+    .quote strong { color: #92400e; }
+    .source-note { background: #f8fafc; border: 1px solid #dbeafe; border-radius: 10px; padding: 16px 20px; margin: 32px 0 20px; font-size: 14px; color: #475569; }
+    .source-note strong { display: block; color: #1e40af; margin-bottom: 6px; }
+    .cta-box { background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%); color: white; padding: 32px 28px; border-radius: 14px; text-align: center; margin: 40px 0 24px; box-shadow: 0 8px 24px rgba(37,99,235,0.25); }
+    .cta-box h3 { color: white; font-size: 22px; font-weight: 700; margin: 0 0 10px; border: none; padding: 0; }
+    .cta-box p { font-size: 15px; opacity: 0.95; margin-bottom: 20px; }
+    .cta-btn { display: inline-block; background: white; color: #2563EB; padding: 14px 32px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 16px; transition: transform 0.15s; }
+    .cta-btn:hover { transform: translateY(-2px); }
+    .related-articles { margin-top: 48px; background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; }
+    .related-articles h2 { margin: 0 0 14px; font-size: 17px; border: none; padding: 0; color: #1f2937; }
+    .related-articles a { display: block; padding: 12px 14px; background: #f3f4f6; border-radius: 8px; text-decoration: none; color: #1f2937; font-size: 14px; font-weight: 500; margin-top: 8px; }
+    .related-articles a:hover { background: #dbeafe; color: #1e40af; }
+    footer { background: #111827; color: #9ca3af; padding: 32px 24px; text-align: center; font-size: 13px; margin-top: 60px; }
+    footer a { color: #d1d5db; text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: white; }
+    @media (max-width: 640px) {
+      article h1 { font-size: 22px; }
+      article h2 { font-size: 19px; }
+      .container { padding: 24px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="/">
+      <div class="logo-mark">₩</div>
+      세금계산기
+    </a>
+  </div>
+
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="/">홈</a> &rsaquo;
+    <a href="/blog/">블로그</a> &rsaquo;
+    <span>부가가치세 환급 계산: 매입세액이 매출세액보다 크면 얼마 받을까</span>
+  </nav>
+
+  <article class="container">
+    <div class="meta-line">
+      <span class="tag">사업 세금</span>
+      <span>2026.07.22.</span>
+      <span>&middot; 읽는 시간 약 6분</span>
+    </div>
+
+    <h1>부가가치세 환급 계산: 매입세액이 매출세액보다 크면 얼마 받을까</h1>
+
+    <p class="lead">일반과세자의 부가가치세 환급액을 매출세액과 공제 가능한 매입세액으로 계산하는 방법을 설명합니다. 일반환급·조기환급 시기, 환급 대상과 불공제 항목을 2026년 기준으로 확인하세요.</p>
+
+    <p>사업을 시작한 뒤 인테리어, 장비, 재고 구입에 돈을 많이 썼다면 부가가치세 신고서에 납부할 세금이 아니라 환급받을 세금이 표시될 수 있습니다. 일반과세자는 원칙적으로 매출에서 받은 부가가치세보다 사업을 위해 지출하면서 부담한 공제 가능 부가가치세가 더 크면 그 차액을 환급받습니다.</p>
+<p>핵심 공식은 다음과 같습니다.</p>
+<p><strong>부가가치세 납부·환급세액 = 매출세액 - 공제 가능한 매입세액</strong></p>
+<p>계산 결과가 양수이면 납부할 세액, 음수이면 환급 예상액입니다. 다만 모든 매입세액이 공제되는 것은 아니며, 간이과세자는 계산 방식과 환급 여부가 다릅니다.</p>
+<h2>부가가치세 환급은 누가 받을 수 있나요?</h2>
+<p>일반적인 부가가치세 환급 계산은 <strong>일반과세자</strong>를 기준으로 합니다. 과세사업을 하는 일반과세자가 적격 증빙을 갖춘 사업 관련 매입세액을 신고했을 때, 공제 가능한 매입세액이 매출세액보다 크면 환급세액이 발생할 수 있습니다.</p>
+<p>다음과 같은 시기에 자주 발생합니다.</p>
+<ul>
+<li>개업하면서 인테리어와 집기·장비를 대량 구입한 경우</li>
+<li>판매할 재고를 먼저 확보했지만 아직 매출이 크지 않은 경우</li>
+<li>수출 등 영세율 매출이 많은 경우</li>
+<li>기계장치나 사업용 건물 등 사업설비를 취득한 경우</li>
+</ul>
+<p>반면 간이과세자는 업종별 부가가치율을 적용한 매출세액에서 매입세금계산서 등 공급대가의 0.5%를 공제하는 방식입니다. 국세청 안내에 따르면 공제세액이 매출세액보다 크더라도 간이과세자에게 환급세액은 발생하지 않습니다.</p>
+<p>면세사업만 하는 사업자는 매출에 부가가치세를 붙이지 않는 대신 관련 매입세액도 일반적인 방식으로 공제·환급받을 수 없습니다.</p>
+<h2>환급액 계산 예시</h2>
+<p>일반과세자인 온라인 판매자가 6개월 동안 다음과 같은 거래를 했다고 가정해 보겠습니다. 금액은 부가가치세를 제외한 공급가액 기준입니다.</p>
+<ul>
+<li>과세 매출 공급가액: 4,000만원</li>
+<li>공제 가능한 매입 공급가액: 5,500만원</li>
+<li>매출세액: 4,000만원 × 10% = 400만원</li>
+<li>매입세액: 5,500만원 × 10% = 550만원</li>
+</ul>
+<p>계산 결과는 다음과 같습니다.</p>
+<p><strong>400만원 - 550만원 = -150만원</strong></p>
+<p>다른 공제·가산세·기납부세액이 없다고 단순화하면 예상 환급액은 150만원입니다.</p>
+<p>영수증에 부가가치세가 포함된 합계금액만 표시돼 있다면 일반적인 10% 과세 거래의 세액은 <code>합계금액 × 10 ÷ 110</code>으로 구할 수 있습니다. 예를 들어 부가세 포함 1,100만원의 사업용 장비라면 공급가액 1,000만원, 매입세액 100만원으로 나뉩니다.</p>
+<p><a href="https://taxcalc.co.kr/#income/vat">부가가치세 계산기로 예상 환급액 확인하기</a></p>
+<h2>매입이 많아도 환급되지 않을 수 있는 이유</h2>
+<p>환급 계산에는 전체 지출이 아니라 <strong>공제 가능한 매입세액</strong>만 들어갑니다. 사업용 카드로 결제했거나 비용으로 처리할 수 있다는 이유만으로 부가가치세까지 모두 공제되는 것은 아닙니다.</p>
+<p>대표적으로 다음 매입세액은 공제가 제한되거나 제외될 수 있습니다.</p>
+<ul>
+<li>사업과 직접 관련 없는 개인적인 지출</li>
+<li>접대비와 관련된 매입세액</li>
+<li>비영업용 소형승용차의 구입·임차·유지 관련 매입세액</li>
+<li>면세사업과 관련된 매입세액</li>
+<li>토지 관련 매입세액</li>
+<li>세금계산서 미수취 또는 필수사항이 사실과 다른 증빙</li>
+<li>사업자등록 전 매입 중 법정 요건을 충족하지 못한 금액</li>
+</ul>
+<p>과세사업과 면세사업을 함께 한다면 공통으로 사용한 비용의 매입세액을 안분해야 할 수도 있습니다. 그래서 단순히 카드 사용액의 10%를 전부 더한 금액과 실제 신고서의 공제 매입세액은 달라질 수 있습니다.</p>
+<h2>일반환급과 조기환급의 차이</h2>
+<h3>일반환급</h3>
+<p>확정신고 결과 환급세액이 발생하는 일반적인 경우입니다. 부가가치세법상 관할 세무서장은 확정신고기한이 지난 후 <strong>30일 이내</strong>에 환급해야 합니다.</p>
+<p>2026년 제1기 확정 부가가치세 신고·납부기한은 7월 27일입니다. 일반환급은 신고한 날짜로부터 무조건 30일을 세는 것이 아니라 확정신고기한을 기준으로 본다는 점에 유의해야 합니다.</p>
+<h3>조기환급</h3>
+<p>아래와 같은 법정 사유가 있으면 조기환급을 신청할 수 있습니다.</p>
+<ul>
+<li>수출 등 영세율을 적용받는 경우</li>
+<li>기계장치·사업용 건물 등 감가상각 대상 사업설비를 신설·취득·확장·증축한 경우</li>
+<li>법에서 정한 재무구조개선계획을 이행 중인 경우</li>
+</ul>
+<p>조기환급의 법정 환급기한은 신고기한이 지난 후 <strong>15일 이내</strong>입니다. 단순히 자금이 급하다는 이유만으로 조기환급 대상이 되는 것은 아니며, 영세율 첨부서류나 건물 등 감가상각자산 취득명세서와 같은 증빙을 갖춰야 합니다.</p>
+<h2>환급 신고 전에 확인할 증빙</h2>
+<p>환급세액이 크면 세무서에서 거래 사실과 사업 관련성을 확인할 수 있습니다. 다음 자료를 신고 전에 점검하는 것이 좋습니다.</p>
+<ol>
+<li>전자세금계산서가 사업자등록번호로 정상 발급됐는지 확인합니다.</li>
+<li>사업용 신용카드와 지출증빙용 현금영수증 내역을 확인합니다.</li>
+<li>고정자산 매입은 일반매입과 구분해 신고합니다.</li>
+<li>개인 지출과 매입세액 불공제 항목을 제외합니다.</li>
+<li>환급받을 계좌 정보가 정확한지 확인합니다.</li>
+<li>조기환급이라면 사유별 첨부서류를 준비합니다.</li>
+</ol>
+<p>환급세액이 예상보다 줄거나 지급이 늦어지는 대표적인 원인은 증빙 누락, 거래처 신고 내용과의 불일치, 공제받을 수 없는 매입세액 포함입니다.</p>
+<h2>2026년 1기 확정신고 일정</h2>
+<p>국세청은 2026년 제1기 확정 부가가치세 신고·납부기한을 <strong>2026년 7월 27일 월요일</strong>로 안내했습니다. 이번 신고는 일반적으로 2026년 1월부터 6월까지의 실적을 대상으로 합니다.</p>
+<p>환급이 예상되더라도 신고서를 제출하지 않으면 자동으로 돈이 입금되는 것은 아닙니다. 홈택스 또는 손택스에서 신고하면서 매출·매입 자료와 환급계좌를 확인해야 합니다.</p>
+<h2>자주 묻는 질문</h2>
+<h3>매입세액이 매출세액보다 크면 무조건 환급되나요?</h3>
+<p>일반과세자라도 매입세액이 공제 요건을 충족해야 합니다. 개인 지출, 접대비 관련 지출, 비영업용 소형승용차 관련 지출 등 불공제 항목을 제외한 뒤에도 매입세액이 더 커야 환급세액이 발생합니다.</p>
+<h3>간이과세자도 인테리어 비용을 환급받을 수 있나요?</h3>
+<p>간이과세자는 일반과세자와 계산 방식이 다르며, 공제세액이 매출세액보다 커도 환급세액이 발생하지 않습니다. 초기 시설투자가 큰 사업이라면 사업자등록 단계에서 과세유형에 따른 차이를 충분히 검토해야 합니다.</p>
+<h3>조기환급은 모든 신규 사업자가 신청할 수 있나요?</h3>
+<p>신규 사업자라는 이유만으로 자동 적용되지는 않습니다. 영세율 적용, 사업설비의 신설·취득·확장·증축 등 법정 사유를 충족해야 합니다.</p>
+<h3>환급신고를 하면 세무조사가 나오나요?</h3>
+<p>환급신고 자체가 곧 세무조사를 의미하지는 않습니다. 다만 신고 내용 검토 과정에서 거래 사실과 증빙, 사업 관련성에 관한 확인 요청을 받을 수 있으므로 실제 거래 자료를 보관해야 합니다.</p>
+<h3>부가세 포함 금액에서 세액은 어떻게 구하나요?</h3>
+<p>일반적인 10% 과세 거래라면 공급대가는 공급가액과 부가가치세를 합친 금액입니다. 포함된 세액은 <code>공급대가 × 10 ÷ 110</code>으로 계산할 수 있습니다.</p>
+<h2>정리</h2>
+<p>부가가치세 환급은 매입금액 자체가 아니라 매출세액보다 큰 <strong>공제 가능한 매입세액</strong>을 돌려받는 구조입니다. 일반과세자는 <code>매출세액 - 매입세액</code> 결과가 음수이면 환급 가능성이 있지만, 간이과세자는 매입 관련 공제가 더 커도 환급세액이 생기지 않습니다.</p>
+<p>일반환급은 확정신고기한 후 30일 이내, 법정 요건을 갖춘 조기환급은 15일 이내가 기준입니다. 계산기로 예상액을 먼저 확인한 뒤 실제 신고에서는 불공제 항목과 증빙, 환급계좌를 다시 점검하세요.</p>
+<p>자료 기준: <a href="https://nts.go.kr/nts/na/ntt/selectNttInfo.do?bbsId=1028&amp;mi=2201&amp;nttSn=1352987">국세청 2026년 제1기 부가가치세 확정신고 안내</a>, <a href="https://i.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7806&amp;mi=2486">국세청 세액계산 방법</a>, <a href="https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1017629513">국가법령정보센터 부가가치세법 제59조</a></p>
+
+    <div class="source-note">
+      <strong>자료 기준 및 검토 안내</strong>
+      <p style="margin:0">세금계산기 운영팀이 국세청, 행정안전부, 위택스, 법제처 국가법령정보센터 등 공개 자료를 기준으로 작성했습니다. 한시 감면·지역별 조례·개별 예외는 바뀔 수 있으므로 실제 신고 전 공식 기관에서 최종 확인하세요.</p>
+    </div>
+
+    <div class="cta-box">
+      <h3>👉 지금 바로 계산해보기</h3>
+      <p>입력만 하면 즉시 결과 확인. 회원가입 없이 무료로 이용 가능합니다.</p>
+      <a href="/income/vat.html" class="cta-btn">부가가치세 계산기 →</a>
+    </div>
+
+    <div class="related-articles">
+      <h2>🔗 관련 계산기</h2>
+      <a href="/income/vat.html">부가가치세 계산기</a>
+      <a href="/income/business.html">사업소득세 계산기</a>
+      <a href="/income/penalty.html">종합소득세 가산세 계산기</a>
+      <a href="/income/comprehensive.html">종합소득세 계산기</a>
+    </div>
+  </article>
+
+  <footer>
+    <div>© 2026 세금계산기 (taxcalc.co.kr) · 모든 계산은 참고용입니다</div>
+    <div style="margin-top:10px">
+      <a href="/">홈</a> &middot;
+      <a href="/blog/">블로그</a> &middot;
+      <a href="/about.html">사이트 소개</a> &middot;
+      <a href="/privacy.html">개인정보처리방침</a> &middot;
+      <a href="/contact.html">문의하기</a>
+    </div>
+  </footer>
+</body>
+</html>

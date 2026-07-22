@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티스토리 업로드 도우미 - 부가세가 마이너스로 나왔다면? 환급받는 금액과 입금 시기</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 24px;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 20px;
+    }
+    section {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 0 0 12px; }
+    label { display: block; font-size: 13px; color: #6b7280; margin-bottom: 8px; }
+    textarea, input {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      background: #f9fafb;
+    }
+    textarea { min-height: 320px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+    button, a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #2563eb;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 8px 8px 0 0;
+    }
+    button.secondary { background: #475569; }
+    .hint { color: #64748b; font-size: 13px; margin: 8px 0 0; }
+    .side img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      display: block;
+    }
+    .no-image {
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 28px 12px;
+      text-align: center;
+      color: #64748b;
+    }
+    .checklist li { margin-bottom: 8px; }
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>티스토리 업로드 도우미</h1>
+    <div>부가세 계산 결과 앞에 마이너스가 붙었다면 세금을 더 내는 것이 아니라 돌려받을 가능성 이 있다는 뜻입니다.   특히 가게를 막 열어 인테리어와 장비에 큰돈을 썼거나, 재고는 많이 샀는데 아직 매출이 적은 사장님에게 자주 나타납니다.   하지만 계산기에 마이너스가 나왔다고 그 금액이…</div>
+  </header>
+  <main>
+    <div>
+      <section>
+        <h2>1. 제목</h2>
+        <label>티스토리 제목 입력란에 붙여넣기</label>
+        <input id="title" value="부가세가 마이너스로 나왔다면? 환급받는 금액과 입금 시기">
+        <button onclick="copyValue('title')">제목 복사</button>
+      </section>
+
+      <section>
+        <h2>2. 본문 HTML</h2>
+        <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
+        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;부가세 계산 결과 앞에 마이너스가 붙었다면 세금을 더 내는 것이 아니라 &lt;b&gt;돌려받을 가능성&lt;/b&gt;이 있다는 뜻입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;특히 가게를 막 열어 인테리어와 장비에 큰돈을 썼거나, 재고는 많이 샀는데 아직 매출이 적은 사장님에게 자주 나타납니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;하지만 계산기에 마이너스가 나왔다고 그 금액이 그대로 입금되는 것은 아닙니다. &lt;b&gt;일반과세자인지, 매입세액을 공제받을 증빙이 있는지&lt;/b&gt;부터 확인해야 합니다.&lt;/p&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;마이너스 150만원은 이렇게 나옵니다&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반과세자의 기본 계산식은 어렵지 않습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;매출세액 - 공제 가능한 매입세액 = 납부 또는 환급세액&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;부가세를 뺀 매출이 4,000만원이면 매출세액은 400만원입니다. 사업용 재고와 장비 등 공제 가능한 매입이 5,500만원이면 매입세액은 550만원입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;400만원 - 550만원 = -150만원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;다른 공제나 가산세가 없다고 단순화하면 150만원이 예상 환급액입니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;카드값 10%를 전부 돌려받는 건 아닙니다&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;사업에 쓴 돈이라도 부가세 공제가 안 되는 항목이 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;개인적인 지출, 거래처 접대비, 비영업용 소형승용차 구입·주유·수리비, 면세사업 관련 비용, 토지 관련 매입세액은 대표적인 불공제 항목입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;세금계산서나 사업용 카드전표, 지출증빙용 현금영수증처럼 적격 증빙도 필요합니다. 그래서 통장에서 실제로 나간 돈과 신고서에 들어가는 공제 매입액은 달라질 수 있습니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;간이과세자는 꼭 구분하세요&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;여기서 가장 많이 헷갈리는 부분입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반과세자는 매출세액에서 매입세액을 빼서 환급액을 계산합니다. 하지만 간이과세자는 업종별 부가가치율을 적용하고, 매입세금계산서 등의 공급대가에 0.5%를 곱한 금액을 공제합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;간이과세자는 공제세액이 매출세액보다 커도 환급세액이 생기지 않습니다.&lt;/b&gt; 처음 사업자등록을 할 때 과세유형이 중요한 이유입니다.&lt;/p&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;환급금은 언제 입금될까요?&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반환급은 확정신고기한이 지난 후 30일 이내가 법정 기준입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;2026년 제1기 확정신고 마감은 7월 27일입니다. 신고를 일찍 했다고 신고일부터 바로 30일을 세는 방식은 아니고, 확정신고기한을 기준으로 봅니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;수출처럼 영세율이 적용되거나 기계장치·사업용 건물 등 사업설비를 취득한 경우에는 조기환급 대상이 될 수 있습니다. 조기환급은 신고기한이 지난 후 15일 이내가 법정 기준입니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;신고 전에 이 다섯 가지만 확인하세요&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;1. 나는 일반과세자인가?&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;2. 세금계산서가 사업자등록번호로 발급됐는가?&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;3. 사업용 카드와 지출증빙용 현금영수증이 빠지지 않았는가?&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;4. 개인 지출과 불공제 항목을 제외했는가?&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;5. 환급계좌와 조기환급 첨부서류를 확인했는가?&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;환급액이 큰 경우에는 세무서에서 실제 거래와 사업 관련성을 확인할 수 있습니다. 계약서, 이체내역, 세금계산서처럼 거래를 설명할 자료를 함께 보관해두는 편이 좋습니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;예상 환급액부터 계산해보기&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;신고서 작성 전에 매출 공급가액과 공제 가능한 매입 공급가액을 넣어보면 납부인지 환급인지 빠르게 가늠할 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;center&gt;&lt;a href=&quot;https://taxcalc.co.kr/#income/vat&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; aria-label=&quot;부가가치세 계산기 바로가기&quot;&gt;&lt;button class=&quot;arenabt star1&quot;&gt;부가가치세 환급액 계산해보기&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;계산 결과는 예상치입니다. 실제 신고에서는 매입세액 불공제, 예정고지세액, 각종 공제와 가산세가 반영돼 금액이 달라질 수 있습니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;마지막으로 정리하면&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;부가세 마이너스는 일반과세자의 공제 가능한 매입세액이 매출세액보다 클 때 발생합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반환급은 확정신고기한 후 30일 이내, 법정 요건을 갖춘 조기환급은 15일 이내가 기준입니다. 다만 간이과세자는 같은 방식의 환급이 생기지 않는다는 점을 꼭 구분하세요.&lt;/p&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;</textarea>
+        <button onclick="copyValue('body')">본문 복사</button>
+        <p class="hint">이미지는 티스토리에서 직접 업로드한 뒤 본문 상단에 배치하는 방식을 권장합니다.</p>
+      </section>
+
+      <section>
+        <h2>3. 태그</h2>
+        <label>티스토리 태그 입력란에 붙여넣기</label>
+        <input id="tags" value="부가세마이너스, 부가세환급, 부가가치세환급, 매입세액, 매출세액, 부가세신고, 일반과세자, 조기환급, 개인사업자세금, 2026부가세">
+        <button onclick="copyValue('tags')">태그 복사</button>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>썸네일</h2>
+        <img src="file:///Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/vat-refund-output-input-tax-tistory.webp" alt="thumbnail preview">
+        <label style="margin-top:12px">로컬 이미지 경로</label>
+        <input id="imagePath" value="/Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/vat-refund-output-input-tax-tistory.webp">
+        <button onclick="copyValue('imagePath')">이미지 경로 복사</button>
+        <p class="hint">vat-refund-output-input-tax-tistory.webp</p>
+      </section>
+
+      <section>
+        <h2>업로드 순서</h2>
+        <ol class="checklist">
+          <li>티스토리 글쓰기 화면을 연다.</li>
+          <li>제목을 복사해 입력한다.</li>
+          <li>썸네일 이미지를 업로드하고 대표 이미지로 지정한다.</li>
+          <li>에디터를 HTML 모드로 전환한다.</li>
+          <li>본문 HTML을 붙여넣는다.</li>
+          <li>태그를 붙여넣고 임시저장한다.</li>
+        </ol>
+        <a class="button" href="https://www.tistory.com/" target="_blank" rel="noopener">티스토리 열기</a>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    async function copyValue(id) {
+      const el = document.getElementById(id);
+      await navigator.clipboard.writeText(el.value);
+      const old = document.title;
+      document.title = '복사 완료';
+      setTimeout(() => document.title = old, 900);
+    }
+  </script>
+</body>
+</html>
