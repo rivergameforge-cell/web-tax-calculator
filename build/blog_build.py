@@ -301,8 +301,8 @@ POSTS = [
         "slug": "property-tax-guide",
         "category": "real-estate",
         "categoryLabel": "부동산 세금",
-        "date": "2026-05-12",
-        "readMin": 5,
+        "date": "2026-07-23",
+        "readMin": 7,
         "ctaHref": "/real-estate/property-tax.html",
         "ctaLabel": "재산세 계산기",
         "related": [

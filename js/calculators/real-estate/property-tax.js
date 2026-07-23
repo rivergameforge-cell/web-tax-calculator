@@ -9,6 +9,14 @@ const CalcPropertyTax = (() => {
     { limit: Infinity,    rate: 0.004  },
   ];
 
+  // 공시가격 9억원 이하 1세대1주택 특례세율
+  const HOUSE_SPECIAL_BRACKETS = [
+    { limit:  60_000_000, rate: 0.0005 },
+    { limit: 150_000_000, rate: 0.0010 },
+    { limit: 300_000_000, rate: 0.0020 },
+    { limit: Infinity,    rate: 0.0035 },
+  ];
+
   // 토지 종합합산과세 (나대지 등)
   const LAND_GENERAL_BRACKETS = [
     { limit:  50_000_000, rate: 0.002 },
@@ -73,7 +81,8 @@ const CalcPropertyTax = (() => {
     let brackets;
 
     if (assetType === 'house') {
-      brackets    = HOUSE_BRACKETS;
+      const useSpecialRate = isOneHouse && publicPrice <= 900_000_000;
+      brackets    = useSpecialRate ? HOUSE_SPECIAL_BRACKETS : HOUSE_BRACKETS;
       propertyTax = calcBracketTax(taxBase, brackets);
     } else if (assetType === 'land-general') {
       propertyTax = calcBracketTax(taxBase, LAND_GENERAL_BRACKETS);
