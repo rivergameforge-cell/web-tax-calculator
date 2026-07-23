@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://taxcalc.co.kr/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -166,6 +166,12 @@
   <url>
     <loc>https://taxcalc.co.kr/blog/real-estate-commission.html</loc>
     <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://taxcalc.co.kr/blog/resident-tax-august-guide.html</loc>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -563,7 +569,7 @@
   </url>
   <url>
     <loc>https://taxcalc.co.kr/other/resident.html</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

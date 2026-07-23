@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티스토리 업로드 도우미 - 8월 주민세 고지서 얼마? 6천원·1만2500원 차이와 사업자 신고</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 24px;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 20px;
+    }
+    section {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 0 0 12px; }
+    label { display: block; font-size: 13px; color: #6b7280; margin-bottom: 8px; }
+    textarea, input {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      background: #f9fafb;
+    }
+    textarea { min-height: 320px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+    button, a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #2563eb;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 8px 8px 0 0;
+    }
+    button.secondary { background: #475569; }
+    .hint { color: #64748b; font-size: 13px; margin: 8px 0 0; }
+    .side img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      display: block;
+    }
+    .no-image {
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 28px 12px;
+      text-align: center;
+      color: #64748b;
+    }
+    .checklist li { margin-bottom: 8px; }
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>티스토리 업로드 도우미</h1>
+    <div>8월 주민세는 누구에게나 똑같이 1만2500원이 나오는 세금이 아닙니다.   서울 개인분은 주민세 4,800원과 지방교육세 1,200원을 합쳐 6,000원 입니다. 반면 주민세 본세가 1만원이고 지방교육세율이 25%인 지역은 12,500원 이 될 수 있습니다.   금액 차이보다 더 중…</div>
+  </header>
+  <main>
+    <div>
+      <section>
+        <h2>1. 제목</h2>
+        <label>티스토리 제목 입력란에 붙여넣기</label>
+        <input id="title" value="8월 주민세 고지서 얼마? 6천원·1만2500원 차이와 사업자 신고">
+        <button onclick="copyValue('title')">제목 복사</button>
+      </section>
+
+      <section>
+        <h2>2. 본문 HTML</h2>
+        <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
+        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;8월 주민세는 누구에게나 똑같이 1만2500원이 나오는 세금이 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;서울 개인분은 주민세 4,800원과 지방교육세 1,200원을 합쳐 &lt;b&gt;6,000원&lt;/b&gt;입니다. 반면 주민세 본세가 1만원이고 지방교육세율이 25%인 지역은 &lt;b&gt;12,500원&lt;/b&gt;이 될 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;금액 차이보다 더 중요한 것은 고지서가 &lt;b&gt;개인분인지 사업소분인지&lt;/b&gt; 구분하는 일입니다. 개인분은 고지된 금액을 내지만, 사업소분은 사업자가 신고 내용까지 확인해야 합니다.&lt;/p&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;개인분은 7월 1일 주소를 봅니다&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;주민세 개인분의 과세기준일은 7월 1일입니다. 이날 지방자치단체에 주소를 둔 개인이 원칙적인 대상이며, 세대원과 기초생활수급자 등 법정 제외 대상은 빠집니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;7월 2일 이후 이사했다면 8월 현재 주소가 아니라 7월 1일 주소지를 기준으로 고지될 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;개인분 납부기간은 2026년 8월 16일부터 8월 31일까지&lt;/b&gt;입니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;주민세가 6천원, 1만1천원, 1만2500원으로 다른 이유&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;개인분 본세는 지방자치단체 조례로 정합니다. 일반적인 법정 기준은 1만원 이하이며, 주민 청구로 읍·면·동별 세율을 달리 정하는 경우 1만5천원 이하의 예외가 있을 수 있습니다. 여기에 지방교육세 10% 또는 인구 50만 이상 시의 25%가 붙습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;서울:&lt;/b&gt; 4,800원 + 지방교육세 1,200원 = 6,000원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;본세 1만원·교육세 10% 지역:&lt;/b&gt; 10,000원 + 1,000원 = 11,000원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;본세 1만원·교육세 25% 지역:&lt;/b&gt; 10,000원 + 2,500원 = 12,500원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;고지서에서 주민세와 지방교육세가 각각 얼마인지 확인하면 내 금액이 왜 다른지 바로 알 수 있습니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;사업자라면 8천만원 기준을 확인하세요&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;사업소분 대상은 7월 1일 현재 사업소를 둔 법인과, 직전 연도 부가가치세 과세표준액이 8천만원 이상인 개인사업자입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;면세사업자는 소득세법상 총수입금액 8천만원을 기준으로 봅니다. 담배소매인, 연탄·양곡소매인, 노점상인, 유치원·어린이집 경영자 등은 대통령령상 예외가 있으므로 업종도 함께 확인해야 합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;사업소분 신고·납부기간은 8월 1일부터 8월 31일까지&lt;/b&gt;입니다. 개인분처럼 고지된 금액만 확인하고 끝내기보다 사업장 정보가 정확한지 살펴야 합니다.&lt;/p&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;330㎡를 넘으면 초과 면적만 계산하는 게 아닙니다&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;사업소분은 기본세액에 연면적 세액과 지방교육세를 더합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;과세대상 연면적이 330㎡ 이하라면 연면적 세액은 없습니다. 하지만 330㎡를 초과하면 &lt;b&gt;초과한 면적만이 아니라 과세대상 전체 면적 × 250원&lt;/b&gt;으로 계산합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;예를 들어 개인사업자의 과세대상 사업장 면적이 400㎡이고 지방교육세율이 25%라면 다음과 같습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;기본세액 50,000원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;연면적 세액 400㎡ × 250원 = 100,000원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;지방교육세 50,000원 × 25% = 12,500원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;합계 162,500원&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;지방교육세는 연면적 세액까지 합친 금액이 아니라 기본세액에만 적용한다는 점도 자주 틀리는 부분입니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;집과 가게에서 각각 나오면 중복일까요?&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;세대주이면서 사업소분 요건을 충족한 개인사업자라면 개인분과 사업소분을 모두 낼 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;개인분은 주소를 둔 개인에게 부과되고, 사업소분은 사업소를 운영하는 사업주에게 부과되므로 과세 근거가 다릅니다. 고지서의 세목과 납세지를 먼저 비교해보세요.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;8월 31일 전 확인할 다섯 가지&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;1. 개인분인지 사업소분인지 확인합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;2. 개인분은 7월 1일 주소지를 확인합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;3. 고지서의 주민세 본세와 지방교육세를 나누어 봅니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;4. 개인사업자는 직전 연도 부가가치세 과세표준 8천만원 여부를 확인합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;5. 사업소 면적이 330㎡를 넘으면 전체 과세면적을 다시 확인합니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;예상 주민세 계산하기&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;지역의 개인분 본세와 지방교육세율, 사업장 면적을 입력하면 예상 금액을 구분해서 볼 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;center&gt;&lt;a href=&quot;https://taxcalc.co.kr/#other/resident&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; aria-label=&quot;주민세 계산기 바로가기&quot;&gt;&lt;button class=&quot;arenabt star1&quot;&gt;8월 주민세 예상액 계산하기&lt;/button&gt;&lt;/a&gt;&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;계산 결과는 표준세율 기준 예상치입니다. 지방자치단체 조례, 과세제외 면적, 감면과 개별 사업장 사정에 따라 실제 금액이 달라질 수 있습니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;공식 자료&lt;/h2&gt;
+
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.law.go.kr/lsLinkProc.do?ancYd=20160318&amp;amp;joNo=007500000%5E007600000%5E007700000%5E007800000%5E007900000&amp;amp;lsClsCd=L&amp;amp;lsId=2130787&amp;amp;lsNm=%EC%A7%80%EB%B0%A9%EC%84%B8%EB%B2%95&amp;amp;mode=4&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;국가법령정보센터 지방세법 제75조부터 제79조&lt;/a&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&amp;amp;joBrNo=00&amp;amp;joNo=0079&amp;amp;lsiSeq=287223&amp;amp;urlMode=lsScJoRltInfoR&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;국가법령정보센터 지방세법 시행령 제79조&lt;/a&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://news.seoul.go.kr/gov/archives/200227&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;서울특별시 주민세 안내&lt;/a&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;</textarea>
+        <button onclick="copyValue('body')">본문 복사</button>
+        <p class="hint">이미지는 티스토리에서 직접 업로드한 뒤 본문 상단에 배치하는 방식을 권장합니다.</p>
+      </section>
+
+      <section>
+        <h2>3. 태그</h2>
+        <label>티스토리 태그 입력란에 붙여넣기</label>
+        <input id="tags" value="주민세, 8월주민세, 주민세납부, 주민세개인분, 주민세사업소분, 주민세금액, 주민세납부대상, 주민세납부기간, 개인사업자주민세, 지방교육세">
+        <button onclick="copyValue('tags')">태그 복사</button>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>썸네일</h2>
+        <img src="file:///Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/resident-tax-august-guide-tistory.webp" alt="thumbnail preview">
+        <label style="margin-top:12px">로컬 이미지 경로</label>
+        <input id="imagePath" value="/Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/resident-tax-august-guide-tistory.webp">
+        <button onclick="copyValue('imagePath')">이미지 경로 복사</button>
+        <p class="hint">resident-tax-august-guide-tistory.webp</p>
+      </section>
+
+      <section>
+        <h2>업로드 순서</h2>
+        <ol class="checklist">
+          <li>티스토리 글쓰기 화면을 연다.</li>
+          <li>제목을 복사해 입력한다.</li>
+          <li>썸네일 이미지를 업로드하고 대표 이미지로 지정한다.</li>
+          <li>에디터를 HTML 모드로 전환한다.</li>
+          <li>본문 HTML을 붙여넣는다.</li>
+          <li>태그를 붙여넣고 임시저장한다.</li>
+        </ol>
+        <a class="button" href="https://www.tistory.com/" target="_blank" rel="noopener">티스토리 열기</a>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    async function copyValue(id) {
+      const el = document.getElementById(id);
+      await navigator.clipboard.writeText(el.value);
+      const old = document.title;
+      document.title = '복사 완료';
+      setTimeout(() => document.title = old, 900);
+    }
+  </script>
+</body>
+</html>

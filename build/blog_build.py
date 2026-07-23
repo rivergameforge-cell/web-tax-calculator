@@ -514,6 +514,23 @@ POSTS = [
         ],
         "customHtml": False,
     },
+    {
+        "file": "주민세_8월_납부대상_금액_계산",
+        "slug": "resident-tax-august-guide",
+        "category": "other",
+        "categoryLabel": "생활 세금",
+        "date": "2026-07-24",
+        "readMin": 7,
+        "ctaHref": "/other/resident.html",
+        "ctaLabel": "주민세 계산기",
+        "related": [
+            ("/other/resident.html", "주민세 계산기"),
+            ("/income/business.html", "사업소득세 계산기"),
+            ("/income/corporate.html", "법인세 계산기"),
+            ("/real-estate/property-tax.html", "재산세 계산기"),
+        ],
+        "customHtml": False,
+    },
 ]
 
 # ---------------------------------------------------------------------------
@@ -1169,6 +1186,7 @@ def render_index(posts: list[dict]) -> str:
         ("vehicle", "자동차"),
         ("loan", "대출"),
         ("fines", "과태료"),
+        ("other", "생활 세금"),
     ]
     present = {p["meta"]["category"] for p in posts}
     chips_html = []

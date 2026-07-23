@@ -4838,22 +4838,37 @@
                   <span>🏛️</span>
                   <div>
                     <div class="card-title">주민세 계산</div>
-                    <div class="card-subtitle">개인균등분·사업소분·종업원분을 계산합니다</div>
+                    <div class="card-subtitle">개인분·사업소분·종업원분을 계산합니다</div>
                   </div>
                 </div>
                 <div class="card-body">
                   <div class="form-group">
                     <label class="form-label">주민세 유형</label>
                     <div class="radio-group">
-                      <label class="radio-label"><input type="radio" name="resident-type" value="individual" checked> 개인균등분</label>
+                      <label class="radio-label"><input type="radio" name="resident-type" value="individual" checked> 개인분</label>
                       <label class="radio-label"><input type="radio" name="resident-type" value="business"> 사업소분</label>
                       <label class="radio-label"><input type="radio" name="resident-type" value="employee"> 종업원분</label>
                     </div>
                   </div>
-                  <!-- 개인균등분 -->
+                  <!-- 개인분 -->
                   <div data-section="individual">
                     <div class="form-group">
-                      <label class="form-label">세대 수</label>
+                      <label class="form-label">개인분 본세</label>
+                      <div class="num-input-wrap">
+                        <input type="text" id="resident-individual-base" class="input" inputmode="numeric" value="10,000">
+                        <span class="num-input-unit">원</span>
+                      </div>
+                      <span style="font-size:12px;color:var(--text-secondary)">조례에 따라 다름 (서울 4,800원)</span>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">지방교육세율</label>
+                      <select id="resident-individual-edu-rate" class="select">
+                        <option value="0.25">25% (인구 50만 이상 시)</option>
+                        <option value="0.10">10% (그 밖의 지역)</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">납세 대상 인원</label>
                       <input type="number" id="resident-household" class="input" value="1" min="1" style="max-width:120px">
                     </div>
                   </div>
@@ -4862,16 +4877,23 @@
                     <div class="form-group">
                       <label class="form-label">사업장 규모</label>
                       <select id="resident-biz-scale" class="select">
-                        <option value="small">개인 / 자본금 1억 이하 (5만원)</option>
-                        <option value="medium">자본금 1억 초과 ~ 10억 이하 (10만원)</option>
-                        <option value="large">자본금 10억 초과 ~ 50억 이하 (20만원)</option>
-                        <option value="xlarge">자본금 50억 초과 (50만원)</option>
+                        <option value="small">개인 / 자본금 30억원 이하 법인 (5만원)</option>
+                        <option value="medium">자본금 30억원 초과 ~ 50억원 이하 법인 (10만원)</option>
+                        <option value="large">자본금 50억원 초과 법인 (20만원)</option>
                       </select>
                     </div>
                     <div class="form-group">
                       <label class="form-label">사업장 연면적 (㎡)</label>
                       <input type="number" id="resident-area" class="input" placeholder="예: 500" style="max-width:200px">
-                      <span style="font-size:12px;color:var(--text-secondary)">330㎡ 초과 시 ㎡당 250원 부과</span>
+                      <span style="font-size:12px;color:var(--text-secondary)">330㎡ 초과 시 과세대상 전체 면적 × 250원</span>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">지방교육세율</label>
+                      <select id="resident-business-edu-rate" class="select">
+                        <option value="0.25">25% (인구 50만 이상 시)</option>
+                        <option value="0.10">10% (그 밖의 지역)</option>
+                      </select>
+                      <span style="font-size:12px;color:var(--text-secondary)">사업소분 기본세액에만 적용</span>
                     </div>
                   </div>
                   <!-- 종업원분 -->
@@ -4886,7 +4908,7 @@
                     <div class="form-group">
                       <label class="form-label">종업원 수</label>
                       <input type="number" id="resident-emp-count" class="input" placeholder="예: 100" style="max-width:150px">
-                      <span style="font-size:12px;color:var(--text-secondary)">50명 이하 면제</span>
+                      <span style="font-size:12px;color:var(--text-secondary)">최근 1년 월평균 급여총액 1억8천만원 이하 면세</span>
                     </div>
                   </div>
                   <div class="calc-action-bar">
@@ -4902,9 +4924,9 @@
                   <div class="result-empty"><div class="result-empty-icon">🏛️</div>항목을 선택하고 정보를 입력해주세요</div>
                 </div>
                 <div class="notice-box info" style="margin:16px">
-                  <strong>개인균등분:</strong> 세대당 연 1만원 (8월 부과)<br>
-                  <strong>사업소분:</strong> 기본세액 + 연면적분 (7월 부과)<br>
-                  <strong>종업원분:</strong> 급여총액 × 0.5% (50명 이하 면제)
+                  <strong>개인분:</strong> 조례상 본세 + 지방교육세 (8월 16~31일)<br>
+                  <strong>사업소분:</strong> 기본세액 + 연면적분 + 지방교육세 (8월 1~31일)<br>
+                  <strong>종업원분:</strong> 급여총액 × 0.5% (월평균 급여 1억8천만원 이하 면세)
                 </div>
               </div>
             </div>
@@ -5637,7 +5659,7 @@
 <script src="js/calculators/vehicle/excise.js?v=4"></script>
 <script src="js/calculators/stocks/domestic.js?v=3"></script>
 <script src="js/calculators/stocks/dividend.js?v=2"></script>
-<script src="js/calculators/other/resident.js?v=3"></script>
+<script src="js/calculators/other/resident.js?v=4"></script>
 <script src="js/calculators/other/no-son-day.js?v=2"></script>
 <script src="js/app.js?v=21"></script>
 
