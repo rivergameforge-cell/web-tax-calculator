@@ -12,12 +12,15 @@ const CalcGift = (() => {
 
   // 증여재산공제 한도 (10년 합산)
   const GIFT_DEDUCTIONS = {
-    'spouse':    600_000_000,  // 배우자
-    'lineal':     50_000_000,  // 직계존비속 (성인)
-    'lineal-minor': 20_000_000, // 직계존비속 (미성년자)
-    'relative':   10_000_000,  // 기타 친족 (4촌 이내 혈족, 3촌 이내 인척)
-    'other':             0,   // 타인
+    'spouse':           600_000_000, // 배우자
+    'lineal':            50_000_000, // 직계존속 -> 성년 수증자
+    'lineal-minor':      20_000_000, // 직계존속 -> 미성년 수증자
+    'lineal-descendant': 50_000_000, // 직계비속 -> 직계존속
+    'relative':          10_000_000, // 기타 친족 (4촌 이내 혈족, 3촌 이내 인척)
+    'other':                     0, // 타인
   };
+
+  const MARRIAGE_BIRTH_DEDUCTION = 100_000_000;
 
   function calcProgressiveTax(taxBase) {
     if (taxBase <= 0) return 0;
@@ -35,6 +38,9 @@ const CalcGift = (() => {
       donorType,        // 증여자 관계
       isMinor,          // 미성년자 여부
       priorGift,        // 10년 내 동일인 기증여액 (원)
+      specialEligible,  // 이번 증여의 혼인·출산 공제 적용 여부
+      priorSpecialDeduction, // 과거에 사용한 혼인·출산 공제액 (평생 합산)
+      priorSpecialInTenYears, // 10년 내 기증여액에 포함된 혼인·출산 공제액
       reportDiscount,   // 자진신고 세액공제 (기본 3%)
     } = params;
 
@@ -44,18 +50,31 @@ const CalcGift = (() => {
     let dedKey = donorType;
     if (donorType === 'lineal' && isMinor) dedKey = 'lineal-minor';
     const maxDeduction  = GIFT_DEDUCTIONS[dedKey] ?? 0;
-    // 기증여액이 이미 공제를 소진했는지 확인
-    const usedDeduction = Math.min(priorGift || 0, maxDeduction);
-    const remainDed     = Math.max(0, maxDeduction - usedDeduction);
-    const deduction     = Math.min(giftAmount, remainDed);
+    const totalGift     = giftAmount + (priorGift || 0);
+    const deduction     = Math.min(totalGift, maxDeduction);
 
-    // 과세표준 = 증여가액 - 증여재산공제 + 10년 내 합산
-    const totalGift = giftAmount + (priorGift || 0);
-    const taxBase   = Math.max(0, totalGift - maxDeduction);
+    // 혼인·출산 공제는 직계존속으로부터 받은 적격 증여에 한해 평생 1억원 한도다.
+    const canUseSpecial = donorType === 'lineal' || donorType === 'lineal-minor';
+    const usedSpecialLifetime = Math.min(
+      Math.max(0, priorSpecialDeduction || 0),
+      MARRIAGE_BIRTH_DEDUCTION,
+    );
+    const usedSpecialInAggregation = Math.min(
+      Math.max(0, priorSpecialInTenYears || 0),
+      Math.min(priorGift || 0, usedSpecialLifetime),
+    );
+    const remainSpecial = Math.max(0, MARRIAGE_BIRTH_DEDUCTION - usedSpecialLifetime);
+    const specialDeduction = specialEligible && canUseSpecial
+      ? Math.min(giftAmount, remainSpecial)
+      : 0;
+    const totalSpecialDeduction = usedSpecialInAggregation + specialDeduction;
+
+    // 과세표준 = 10년 합산 증여가액 - 일반 공제 - 혼인·출산 공제
+    const taxBase = Math.max(0, totalGift - maxDeduction - totalSpecialDeduction);
 
     // 합산증여에 대한 산출세액 계산 후 기증여분 세금 차감
     const totalTax     = calcProgressiveTax(taxBase);
-    const priorTaxBase = Math.max(0, (priorGift || 0) - maxDeduction);
+    const priorTaxBase = Math.max(0, (priorGift || 0) - maxDeduction - usedSpecialInAggregation);
     const priorTax     = calcProgressiveTax(priorTaxBase);
     const giftTax      = Math.max(0, totalTax - priorTax);
 
@@ -67,6 +86,7 @@ const CalcGift = (() => {
     return {
       giftAmount, donorType, deduction, maxDeduction,
       priorGift: priorGift || 0,
+      specialDeduction, usedSpecialLifetime, usedSpecialInAggregation, totalSpecialDeduction,
       totalGift, taxBase, giftTax, discountAmount, finalTax,
       params,
     };
@@ -82,15 +102,11 @@ const CalcGift = (() => {
       return;
     }
 
-    const { giftAmount, deduction, maxDeduction, priorGift, totalGift, taxBase, giftTax, discountAmount, finalTax } = result;
-
-    const donorLabels = {
-      'spouse':        '배우자',
-      'lineal':        '직계존비속 (성인)',
-      'lineal-minor':  '직계존비속 (미성년자)',
-      'relative':      '기타 친족',
-      'other':         '타인',
-    };
+    const {
+      giftAmount, deduction, maxDeduction, priorGift, totalGift,
+      specialDeduction, usedSpecialLifetime, usedSpecialInAggregation,
+      taxBase, giftTax, discountAmount, finalTax,
+    } = result;
 
     container.innerHTML = `
       <div class="breakdown-title">증여세 계산 결과</div>
@@ -108,9 +124,24 @@ const CalcGift = (() => {
         <span class="br-value">${UI.fmtWon(totalGift)}</span>
       </div>` : ''}
       <div class="breakdown-row">
-        <span class="br-label">증여재산공제 (한도 ${UI.fmtWon(maxDeduction)})</span>
-        <span class="br-value" style="color:var(--success)">- ${UI.fmtWon(maxDeduction)}</span>
+        <span class="br-label">일반 증여재산공제 (한도 ${UI.fmtWon(maxDeduction)})</span>
+        <span class="br-value" style="color:var(--success)">- ${UI.fmtWon(deduction)}</span>
       </div>
+      ${usedSpecialLifetime > 0 ? `
+      <div class="breakdown-row">
+        <span class="br-label">평생 추가공제 사용액</span>
+        <span class="br-value">${UI.fmtWon(usedSpecialLifetime)}</span>
+      </div>` : ''}
+      ${usedSpecialInAggregation > 0 ? `
+      <div class="breakdown-row">
+        <span class="br-label">10년 합산액에 반영된 과거 추가공제</span>
+        <span class="br-value" style="color:var(--success)">- ${UI.fmtWon(usedSpecialInAggregation)}</span>
+      </div>` : ''}
+      ${specialDeduction > 0 ? `
+      <div class="breakdown-row">
+        <span class="br-label">이번 혼인·출산 증여재산공제</span>
+        <span class="br-value" style="color:var(--success)">- ${UI.fmtWon(specialDeduction)}</span>
+      </div>` : ''}
       <div class="breakdown-row">
         <span class="br-label">과세표준</span>
         <span class="br-value">${UI.fmtWon(taxBase)}</span>
@@ -147,8 +178,11 @@ const CalcGift = (() => {
       return {
         giftAmount:     getVal('gift-amount'),
         donorType:      view.querySelector('#gift-donor-type')?.value || 'lineal',
-        isMinor:        view.querySelector('#gift-minor')?.checked || false,
+        isMinor:        false,
         priorGift:      getVal('gift-prior'),
+        specialEligible: view.querySelector('#gift-special')?.checked || false,
+        priorSpecialDeduction: getVal('gift-special-prior'),
+        priorSpecialInTenYears: getVal('gift-special-prior-10yr'),
         reportDiscount: view.querySelector('#gift-report-disc')?.checked !== false,
       };
     }
@@ -167,6 +201,7 @@ const CalcGift = (() => {
         if (!result) return;
         const rows = [
           { label: '증여가액',     value: UI.fmtWon(result.giftAmount) },
+          { label: '혼인·출산 공제', value: UI.fmtWon(result.specialDeduction) },
           { label: '과세표준',     value: UI.fmtWon(result.taxBase) },
           { label: '증여세 산출세액', value: UI.fmtWon(result.giftTax) },
           { label: '최종 납부세액', value: UI.fmtWon(result.finalTax) },
@@ -180,6 +215,8 @@ const CalcGift = (() => {
       btnReset.addEventListener('click', () => {
         view.querySelectorAll('input[type="text"]').forEach(el => el.value = '');
         view.querySelectorAll('input[type="checkbox"]').forEach(el => el.checked = false);
+        const reportDisc = view.querySelector('#gift-report-disc');
+        if (reportDisc) reportDisc.checked = true;
         const sel = view.querySelector('#gift-donor-type');
         if (sel) sel.value = 'lineal';
         renderResult(null, resultContainer);

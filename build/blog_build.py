@@ -531,6 +531,23 @@ POSTS = [
         ],
         "customHtml": False,
     },
+    {
+        "file": "혼인_출산_증여세_공제_1억5천만원_계산",
+        "slug": "marriage-birth-gift-tax-deduction",
+        "category": "inherit",
+        "categoryLabel": "상속·증여",
+        "date": "2026-07-28",
+        "readMin": 8,
+        "ctaHref": "/inherit/gift.html",
+        "ctaLabel": "증여세 계산기",
+        "related": [
+            ("/inherit/gift.html", "증여세 계산기"),
+            ("/blog/gift-vs-inheritance-tax.html", "증여와 상속 세금 비교"),
+            ("/blog/marriage-tax-credit-100m-guide.html", "결혼세액공제 계산"),
+            ("/inherit/inheritance.html", "상속세 계산기"),
+        ],
+        "customHtml": False,
+    },
 ]
 
 # ---------------------------------------------------------------------------
