@@ -548,6 +548,23 @@ POSTS = [
         ],
         "customHtml": False,
     },
+    {
+        "file": "근로장려금_2026_지급일_지급액_계산",
+        "slug": "earned-income-tax-credit-2026-payment",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-08-11",
+        "readMin": 8,
+        "ctaHref": "/income/employment.html",
+        "ctaLabel": "근로소득세 계산기",
+        "related": [
+            ("/income/employment.html", "근로소득세 계산기"),
+            ("/income/salary.html", "연봉 실수령액 계산기"),
+            ("/income/insurance.html", "4대보험 계산기"),
+            ("/income/comprehensive.html", "종합소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
 ]
 
 # ---------------------------------------------------------------------------
