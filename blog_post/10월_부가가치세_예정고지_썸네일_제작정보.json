@@ -1,0 +1,33 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-01",
+  "assets": [
+    {
+      "file": "october-vat-preliminary-notice.webp",
+      "dimensions": [
+        1200,
+        630
+      ],
+      "source": "exec-b28786a3-651f-4b01-9066-c94d1b0ae490.png",
+      "prompt": "Use case: scientific-educational. Create a polished Korean tax editorial thumbnail, landscape aspect 1200:630, no borders. Crisp tactile 3D paper sculpture: a folded calendar marked 10 beside a transparent acrylic half-circle marked 50%, orderly tax documents and small calculator on pale cool gray background with forest green and red accents. Sophisticated financial magazine design, very clear hierarchy, not a generic template. Korean text verbatim large within central 85%: '10월 부가세 예정고지'; smaller secondary line '직전 납부세액의 50%'. Only these text lines and 10 and 50%. Accurate Hangul, clean bold typesetting. No platform labels, no logos, no people, no decorative coins or floating orbs."
+    },
+    {
+      "file": "october-vat-preliminary-notice-tistory.webp",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "source": "exec-7e448989-385e-4d28-a604-2bedbbd6af15.png",
+      "prompt": "Use case: ads-marketing. Korean tax blog thumbnail square 1:1. Inventive premium surreal 3D editorial scene: an oversized red tax notice envelope standing on charcoal black floor, a descending chart line behind it and a small shop storefront miniature in foreground, high contrast vermilion, white and golden yellow. Professional bold Korean headline verbatim '매출은 줄었는데' on first line, '부가세는 왜?' on second line. Subline '10월 예정고지 확인'. Central 85% safe zone, all text completely legible, headline dominant with polished typographic composition. No guarantee of saving or refund, no platform labels, no random fine print, no coins, no generic calculator desk scene. Different from sober financial infographic, dramatic sharp well-lit 3D illustration."
+    },
+    {
+      "file": "october-vat-preliminary-notice-naver.webp",
+      "dimensions": [
+        1200,
+        720
+      ],
+      "source": "exec-87a0c2c0-76bd-41a4-985d-79f91779bca9.png",
+      "prompt": "Use case: photorealistic-natural. Create Korean blog link-card thumbnail landscape 5:3, target 1200x720. Fresh relatable editorial photograph in a small bright independent shop: anonymous shop owner's hands opening a white envelope next to a receipt printer and POS register, soft natural daylight, teal shop details, neutral white and light wood, lived-in but organized. Add excellent professionally designed Korean headline, central 90% safe zone: '7월에 냈는데' first line and '10월에 또 부가세?' second line; small secondary caption '예정고지, 쉽게 정리'. Use restrained dark green bold typography on clear top background, image subject in lower half. Warm approachable magazine photograph, no cartoon, no red envelope, no giant percentage, no fake government logos, no platform labels, no watermark, no extra garbled receipt text. All essential text and subjects fit safely within frame."
+    }
+  ]
+}

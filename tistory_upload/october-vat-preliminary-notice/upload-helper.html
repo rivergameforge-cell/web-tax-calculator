@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티스토리 업로드 도우미 - 부가세 예정고지 150만원, 매출 줄었을 때 취소하고 예정신고할 수 있을까?</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 24px;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 20px;
+    }
+    section {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 0 0 12px; }
+    label { display: block; font-size: 13px; color: #6b7280; margin-bottom: 8px; }
+    textarea, input {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      background: #f9fafb;
+    }
+    textarea { min-height: 320px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+    button, a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #2563eb;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 8px 8px 0 0;
+    }
+    button.secondary { background: #475569; }
+    .hint { color: #64748b; font-size: 13px; margin: 8px 0 0; }
+    .side img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      display: block;
+    }
+    .no-image {
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 28px 12px;
+      text-align: center;
+      color: #64748b;
+    }
+    .checklist li { margin-bottom: 8px; }
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>티스토리 업로드 도우미</h1>
+    <div>상반기 납부세액이 300만원이었다면, 다른 조정 사유가 없다는 가정에서 10월 예정고지는 150만원으로 계산됩니다. 그런데 최근 매출은 줄었습니다. 이때 필요한 질문은 “왜 이렇게 많이 나왔지?”보다 “고지대로 낼지, 요건을 갖춰 예정신고할지” 입니다. 고지서를 그냥 두는 것과 적법하…</div>
+  </header>
+  <main>
+    <div>
+      <section>
+        <h2>1. 제목</h2>
+        <label>티스토리 제목 입력란에 붙여넣기</label>
+        <input id="title" value="부가세 예정고지 150만원, 매출 줄었을 때 취소하고 예정신고할 수 있을까?">
+        <button onclick="copyValue('title')">제목 복사</button>
+      </section>
+
+      <section>
+        <h2>2. 본문 HTML</h2>
+        <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
+        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;상반기 납부세액이 300만원이었다면, 다른 조정 사유가 없다는 가정에서 10월 예정고지는 150만원으로 계산됩니다. 그런데 최근 매출은 줄었습니다. 이때 필요한 질문은 &lt;b&gt;“왜 이렇게 많이 나왔지?”보다 “고지대로 낼지, 요건을 갖춰 예정신고할지”&lt;/b&gt;입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;고지서를 그냥 두는 것과 적법하게 예정신고로 바꾸는 것은 전혀 다릅니다. 사업이 부진했다면 먼저 비교할 기간과 금액을 확인하세요. 조건을 잘못 읽으면 신고 전환도, 납부 준비도 어긋날 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;아래 내용은 2026년 10월 1일 확인한 일반 규정입니다. 개별 연장·유예 여부와 최종 납부기한은 실제 고지서 및 홈택스 안내가 기준입니다.&lt;/p&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;고지서를 받았다면 이 세 가지부터 확인하세요&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;첫째, 사업자 유형.&lt;/b&gt; 개인 일반과세자와 직전 6개월 공급가액 합계가 1억5천만원 미만인 소규모 법인은 예정고지 대상에 해당할 수 있습니다. 간이과세자·면세사업자에게 같은 공식을 적용하지는 않습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;둘째, 금액의 출처.&lt;/b&gt; 10월 고지는 원칙적으로 올해 1~6월 납부세액의 50%를 기준으로 합니다. 올해 7~9월 매출액이나 작년 연간 매출을 그대로 계산한 금액이 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;셋째, 고지 제외와 납부기한.&lt;/b&gt; 징수할 예정고지액이 50만원 미만이면 고지하지 않습니다. 정확히 50만원은 이 금액 기준에 따른 제외 대상이 아닙니다. 과세기간 시작일 현재 간이과세자에서 일반과세자로 전환된 경우 등 다른 제외 사유도 확인할 필요가 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;7월에 통장에서 빠져나간 금액만 보지 말고 신고서를 함께 확인하세요. 가산세나 법정 조정 요소가 있을 수 있어, 통장 출금액의 절반이 반드시 고지서 금액과 같지는 않습니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;매출 감소만으로는 취소되지 않습니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;예정고지는 현재 실적을 자동 반영하는 제도가 아닙니다. 매출이 줄었다고 전화 한 통이나 임의 감액으로 끝나는 것도 아닙니다. 사업 부진에 따른 예정신고 전환 요건을 확인하고 실제 신고 절차를 진행해야 합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;시행령상 기준은 &lt;b&gt;7~9월 공급가액 또는 납부세액이 직전 과세기간인 1~6월 해당 금액의 3분의 1에 미달하는지&lt;/b&gt;입니다. 두 기준 중 하나에 해당하는지 검토하며, 조기환급을 받으려는 경우도 별도 사유가 됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;“전 분기보다 매출이 30% 줄었다”는 설명만으로는 판정할 수 없습니다. 비교하는 기간부터 다르고, 공급가액은 부가세를 제외한 금액으로 맞춰야 하기 때문입니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;숫자로 확인: 상반기 1억2천만원, 이번 분기 3천만원&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반과세자의 1~6월 공급가액이 1억2천만원이고, 사업 부진으로 7~9월 공급가액이 3천만원이 됐다고 가정하겠습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;비교 기준: 1억2천만원 ÷ 3 = 4천만원&lt;br /&gt;이번 실적: 3천만원 &amp;lt; 4천만원&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이 사례는 공급가액 기준을 충족합니다. 반면 이번 분기 공급가액이 정확히 4천만원이면 ‘미달’이 아니므로 이 기준을 충족하지 않습니다. 납부세액 기준이나 조기환급 사유는 별도로 확인할 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;여기서 놓치기 쉬운 부분은 &lt;b&gt;6개월 합계와 3개월 합계를 비교한다는 점&lt;/b&gt;입니다. “매출이 3분의 1만큼 감소해야 한다”는 뜻으로 바꾸어 해석하지 마세요.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;150만원 고지가 0원이 된다는 뜻은 아닙니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;요건에 맞게 예정신고하면 기존 예정고지 결정은 없었던 것으로 봅니다. 하지만 세금 자체가 사라지는 것은 아닙니다. 실제 분기 자료로 계산한 신고세액을 납부하거나 적법한 환급 절차를 진행합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;예를 들어 고지액은 150만원이고 실제 예정신고 납부세액이 60만원이라고 가정하면, 두 금액을 더한 210만원을 내는 구조는 아닙니다. 신고에 따른 납부와 고지 취소 처리 상태를 함께 확인해야 합니다. 이 60만원은 설명용 가정이지, 매출 감소만으로 보장되는 금액이 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;매출세액이 줄어도 매입세액 공제가 더 크게 줄면 납부세액은 기대만큼 내려가지 않을 수 있습니다. 영수증·세금계산서·카드 매입 자료를 빠뜨리지 않고, 공제 가능한 매입인지 구분하는 것이 중요합니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;예정신고를 검토할 때 챙길 자료&lt;/h2&gt;
+&lt;ul style=&quot;list-style-type: disc;&quot; data-ke-list-type=&quot;disc&quot;&gt;
+&lt;li&gt;2026년 1~6월 부가세 신고서와 납부세액 내역&lt;/li&gt;
+&lt;li&gt;2026년 7~9월 매출·매입 세금계산서와 카드·현금영수증 자료&lt;/li&gt;
+&lt;li&gt;불공제 매입, 누락 거래, 수정세금계산서 등 조정 항목&lt;/li&gt;
+&lt;li&gt;예정고지서의 세액·기한 및 조기환급 검토에 필요한 증빙&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;홈택스에서 고지 내역을 확인한 뒤 자료를 비교하고, 신고 전환 요건에 해당한다면 예정신고를 진행하는 순서가 좋습니다. 이미 고지액을 납부했다면 임의로 다시 납부하지 말고 기존 납부금의 처리도 확인하세요.&lt;/p&gt;
+
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;2026년 일반 기한은 10월 26일, 고지서는 별도 확인&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반 법정 일정상 2026년 10월 25일이 일요일이므로 기한은 다음 날인 &lt;b&gt;10월 26일 월요일&lt;/b&gt;입니다. 국세청 세무일정의 2기 예정신고 납부일도 이날입니다. 다만 예정고지 납부는 본인의 고지서에 적힌 날짜와 별도 연장 여부를 확인하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;과거의 특별 연장일이 검색 결과에 나오더라도 올해 모든 사업자에게 그대로 적용되는 것은 아닙니다. 자금 사정이 어렵다면 납부기한 연장 등 지원 가능 여부를 문의할 수 있지만, 신청만으로 승인된 것으로 생각해서는 안 됩니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;고지대로 납부했다면 다음 확정신고에서 정산합니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;예정고지 방식으로 150만원을 납부하고, 다른 조정 항목 없이 하반기 전체 세액이 210만원으로 계산됐다면 추가 납부액은 단순 계산상 60만원입니다. 반기 세액이 더 작으면 환급으로 이어질 수도 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;예정신고나 조기환급을 했다면 해당 내역도 반영해야 하므로 고지 납부 사례와 같은 방식으로 중복 차감하면 안 됩니다. &lt;b&gt;이번에 어떤 방식으로 처리했는지 기록해 두는 것&lt;/b&gt;이 다음 신고의 실수를 줄입니다.&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;납부 전에 숫자를 확인하는 것이 먼저입니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;예정고지를 무조건 납부하거나 무조건 취소하려고 하기보다, 직전 신고서와 이번 분기 자료를 나란히 놓고 확인하세요. 적법한 신고 전환은 현금흐름을 조정할 수 있는 절차이지, 최종 세금을 무조건 줄여 주는 비법이 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;거래 금액에 포함된 부가세와 공급가액은 아래 계산기로 먼저 정리할 수 있습니다. 다만 이 도구는 예정고지액 산정이나 전환 요건 자동 판정 기능이 아니므로 신고서·고지서를 함께 확인해야 합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot; style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;https://taxcalc.co.kr/#income/vat&quot; style=&quot;display: inline-block; padding: 14px 22px; background-color: #176044; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold;&quot;&gt;거래 금액의 부가세부터 확인하기&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 data-ke-size=&quot;size23&quot;&gt;공식 자료&lt;/h3&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7693&amp;amp;mi=2272&quot;&gt;국세청 부가가치세 개요&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7694&amp;amp;mi=2273&quot;&gt;국세청 신고납부기한&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://www.law.go.kr/법령/부가가치세법/제48조&quot;&gt;부가가치세법 제48조&lt;/a&gt; · &lt;a href=&quot;https://www.law.go.kr/법령/부가가치세법시행령/제90조&quot;&gt;시행령 제90조&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://www.nts.go.kr/nts/ad/taxSchdul/selectList.do?mi=135747&amp;amp;taxYear=2026&amp;amp;taxMonth=10&quot;&gt;국세청 2026년 10월 세무일정&lt;/a&gt;&lt;/p&gt;</textarea>
+        <button onclick="copyValue('body')">본문 복사</button>
+        <p class="hint">이미지는 티스토리에서 직접 업로드한 뒤 본문 상단에 배치하는 방식을 권장합니다.</p>
+      </section>
+
+      <section>
+        <h2>3. 태그</h2>
+        <label>티스토리 태그 입력란에 붙여넣기</label>
+        <input id="tags" value="부가세예정고지, 10월부가세, 예정고지취소, 부가세예정신고, 매출감소부가세, 사업부진, 개인사업자부가세, 일반과세자, 홈택스, 부가세계산">
+        <button onclick="copyValue('tags')">태그 복사</button>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>썸네일</h2>
+        <img src="file:///Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/october-vat-preliminary-notice-tistory.webp" alt="thumbnail preview">
+        <label style="margin-top:12px">로컬 이미지 경로</label>
+        <input id="imagePath" value="/Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/october-vat-preliminary-notice-tistory.webp">
+        <button onclick="copyValue('imagePath')">이미지 경로 복사</button>
+        <p class="hint">october-vat-preliminary-notice-tistory.webp</p>
+      </section>
+
+      <section>
+        <h2>업로드 순서</h2>
+        <ol class="checklist">
+          <li>티스토리 글쓰기 화면을 연다.</li>
+          <li>제목을 복사해 입력한다.</li>
+          <li>썸네일 이미지를 업로드하고 대표 이미지로 지정한다.</li>
+          <li>에디터를 HTML 모드로 전환한다.</li>
+          <li>본문 HTML을 붙여넣는다.</li>
+          <li>태그를 붙여넣고 임시저장한다.</li>
+        </ol>
+        <a class="button" href="https://www.tistory.com/" target="_blank" rel="noopener">티스토리 열기</a>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    async function copyValue(id) {
+      const el = document.getElementById(id);
+      await navigator.clipboard.writeText(el.value);
+      const old = document.title;
+      document.title = '복사 완료';
+      setTimeout(() => document.title = old, 900);
+    }
+  </script>
+</body>
+</html>

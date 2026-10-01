@@ -565,6 +565,22 @@ POSTS = [
         ],
         "customHtml": False,
     },
+    {
+        "file": "10월_부가가치세_예정고지_계산",
+        "slug": "october-vat-preliminary-notice",
+        "category": "income",
+        "categoryLabel": "소득 세금",
+        "date": "2026-10-01",
+        "readMin": 7,
+        "ctaHref": "https://taxcalc.co.kr/#income/vat",
+        "ctaLabel": "부가가치세 계산기",
+        "related": [
+            ("/blog/vat-refund-output-input-tax.html", "부가세 환급 계산"),
+            ("/income/vat.html", "부가가치세 계산기"),
+            ("/income/comprehensive.html", "종합소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
 ]
 
 # ---------------------------------------------------------------------------
