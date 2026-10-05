@@ -17,7 +17,7 @@
 
 <h2 data-ke-size="size26">매출 감소만으로는 취소되지 않습니다</h2>
 <p data-ke-size="size16">예정고지는 현재 실적을 자동 반영하는 제도가 아닙니다. 매출이 줄었다고 전화 한 통이나 임의 감액으로 끝나는 것도 아닙니다. 사업 부진에 따른 예정신고 전환 요건을 확인하고 실제 신고 절차를 진행해야 합니다.</p>
-<p data-ke-size="size16">시행령상 기준은 <b>7~9월 공급가액 또는 납부세액이 직전 과세기간인 1~6월 해당 금액의 3분의 1에 미달하는지</b>입니다. 두 기준 중 하나에 해당하는지 검토하며, 조기환급을 받으려는 경우도 별도 사유가 됩니다.</p>
+<p data-ke-size="size16">시행령상 기준은 <b>7~9월 공급가액 또는 납부세액이 직전 과세기간인 1~6월 해당 금액의 3분의 1에 미달하는지</b>입니다. 두 기준 중 하나에 해당하는지 검토하며, 조기환급을 받으려는 경우도 별도 사유가 됩니다. <small>(근거: <a href="https://www.law.go.kr/법령/부가가치세법시행령/제90조">시행령 제90조</a>)</small></p>
 <p data-ke-size="size16">“전 분기보다 매출이 30% 줄었다”는 설명만으로는 판정할 수 없습니다. 비교하는 기간부터 다르고, 공급가액은 부가세를 제외한 금액으로 맞춰야 하기 때문입니다.</p>
 
 <h2 data-ke-size="size26">숫자로 확인: 상반기 1억2천만원, 이번 분기 3천만원</h2>
@@ -45,7 +45,7 @@
 </center>
 
 <h2 data-ke-size="size26">2026년 일반 기한은 10월 26일, 고지서는 별도 확인</h2>
-<p data-ke-size="size16">일반 법정 일정상 2026년 10월 25일이 일요일이므로 기한은 다음 날인 <b>10월 26일 월요일</b>입니다. 국세청 세무일정의 2기 예정신고 납부일도 이날입니다. 다만 예정고지 납부는 본인의 고지서에 적힌 날짜와 별도 연장 여부를 확인하세요.</p>
+<p data-ke-size="size16">일반 법정 일정상 2026년 10월 25일이 일요일이므로 기한은 다음 날인 <b>10월 26일 월요일</b>입니다. 국세청 세무일정의 2기 예정신고 납부일도 이날입니다. 다만 예정고지 납부는 본인의 고지서에 적힌 날짜와 별도 연장 여부를 확인하세요. <small>(<a href="https://www.nts.go.kr/nts/ad/taxSchdul/selectList.do?mi=135747&amp;taxYear=2026&amp;taxMonth=10">국세청 10월 세무일정</a>)</small></p>
 <p data-ke-size="size16">과거의 특별 연장일이 검색 결과에 나오더라도 올해 모든 사업자에게 그대로 적용되는 것은 아닙니다. 자금 사정이 어렵다면 납부기한 연장 등 지원 가능 여부를 문의할 수 있지만, 신청만으로 승인된 것으로 생각해서는 안 됩니다.</p>
 
 <h2 data-ke-size="size26">고지대로 납부했다면 다음 확정신고에서 정산합니다</h2>
@@ -57,8 +57,9 @@
 <p data-ke-size="size16">거래 금액에 포함된 부가세와 공급가액은 아래 계산기로 먼저 정리할 수 있습니다. 다만 이 도구는 예정고지액 산정이나 전환 요건 자동 판정 기능이 아니므로 신고서·고지서를 함께 확인해야 합니다.</p>
 <p data-ke-size="size16" style="text-align: center;"><a href="https://taxcalc.co.kr/#income/vat" style="display: inline-block; padding: 14px 22px; background-color: #176044; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold;">거래 금액의 부가세부터 확인하기</a></p>
 
-<h3 data-ke-size="size23">공식 자료</h3>
-<p data-ke-size="size16"><a href="https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7693&amp;mi=2272">국세청 부가가치세 개요</a><br /><a href="https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7694&amp;mi=2273">국세청 신고납부기한</a><br /><a href="https://www.law.go.kr/법령/부가가치세법/제48조">부가가치세법 제48조</a> · <a href="https://www.law.go.kr/법령/부가가치세법시행령/제90조">시행령 제90조</a><br /><a href="https://www.nts.go.kr/nts/ad/taxSchdul/selectList.do?mi=135747&amp;taxYear=2026&amp;taxMonth=10">국세청 2026년 10월 세무일정</a></p>
+<h3 data-ke-size="size23">함께 읽으면 좋은 글</h3>
+<p data-ke-size="size16">이번 분기 자료를 정리했는데 납부세액이 마이너스라면, 환급 요건과 입금 시기도 함께 확인해 보세요. 일반환급과 조기환급의 차이, 공제받을 수 없는 매입을 아래 글에서 정리했습니다.</p>
+<p data-ke-size="size16"><a href="https://kwonriver-carstroy.tistory.com/entry/부가세가-마이너스로-나왔다면-환급받는-금액과-입금-시기">부가세가 마이너스로 나왔다면? 환급받는 금액과 입금 시기 | 2026 부가세</a></p>
 
 <!-- 해시태그 -->
 <!-- 부가세예정고지, 10월부가세, 예정고지취소, 부가세예정신고, 매출감소부가세, 사업부진, 개인사업자부가세, 일반과세자, 홈택스, 부가세계산 -->
