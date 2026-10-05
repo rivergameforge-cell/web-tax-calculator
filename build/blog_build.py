@@ -581,6 +581,22 @@ POSTS = [
         ],
         "customHtml": False,
     },
+    {
+        "file": "중도퇴사자_연말정산_재취업_환급",
+        "slug": "mid-year-resignation-tax-settlement",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-05",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "근로소득세 계산기",
+        "related": [
+            ("/blog/credit-card-deduction-25-percent.html", "신용카드 소득공제 계산"),
+            ("/income/employment.html", "근로소득세 계산기"),
+            ("/income/comprehensive.html", "종합소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
 ]
 
 # ---------------------------------------------------------------------------

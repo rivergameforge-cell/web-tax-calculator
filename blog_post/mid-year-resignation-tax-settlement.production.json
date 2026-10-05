@@ -1,0 +1,50 @@
+{
+  "topic": "중도퇴사자 연말정산",
+  "verifiedAt": "2026-10-05",
+  "incomeYear": 2026,
+  "ordinaryFilingPeriod": "2027-05-01/2027-05-31; later special extensions must be checked when filing",
+  "sources": [
+    {"url": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1032883741", "supports": "소득세법 제134조: 퇴직하는 달의 급여 지급 시 정산"},
+    {"url": "https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1032883555", "supports": "소득세법 제138조: 같은 과세기간 재취직자의 종전 근무지 소득 합산"},
+    {"url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7664&mi=2224", "supports": "다음 해 5월 정기신고, 신고 제외와 소득 미합산 예외, 개인지방소득세 별도 신고"},
+    {"url": "https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874&mi=6595", "supports": "중도취업·퇴사자의 특별세액공제 근로제공기간 지출 제한, 기부금 제외"},
+    {"url": "https://b.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7871&mi=6435", "supports": "총급여는 해당 과세기간 근로소득에서 비과세소득 차감"},
+    {"url": "https://b.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7867&mi=6588", "supports": "고용보험 실업급여 비과세"},
+    {"url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=8165&mi=6769", "supports": "근로소득·사업소득·퇴직소득 구분"}
+  ],
+  "examples": {
+    "websiteAndTistory": {"withheld": 1200000, "initialTax": 700000, "employerRefund": 500000, "finalTax": 500000, "additionalRefund": 200000},
+    "naver": {"initialTax": 300000, "finalTax": 180000, "additionalRefund": 120000},
+    "scope": "Fictional explanatory income-tax examples only; local income tax excluded; no refund guarantee"
+  },
+  "relatedTistory": {
+    "title": "연봉 5천 카드값 2천만원, 신용카드 소득공제는 얼마일까?",
+    "url": "https://kwonriver-carstroy.tistory.com/entry/연봉-5천-카드값-2천만원-신용카드-소득공제",
+    "verification": "Published public post in logged-in management list on 2026-10-05; exact link href checked"
+  },
+  "imageGeneration": {
+    "tool": "built-in image_gen",
+    "initialPromptBriefs": {
+      "website": "Premium 3D economics editorial; mint and coral office desk, resignation badge, withholding document and May timeline; text 중도퇴사 연말정산 / 재취업 · 5월 신고 · 환급",
+      "tistory": "Square cinematic red resignation stamp, departing worker and teal magnifier; hook 퇴사했는데 환급은 끝? / 원천징수영수증 확인; no invented refund amounts or dated salary records",
+      "naver": "Friendly clay woman at bright desk with envelopes and May calendar; 퇴사 후 쉬는 중… / 연말정산은 누가 해요? / 재취업 여부부터 확인; no platform labels"
+    },
+    "finalEditPrompts": {
+      "website": "Edit this exact Korean tax article thumbnail. Preserve all typography, colors, composition, desk, documents and visual style. ONLY change the calendar on the right: remove every numbered day, red circle and grid; keep the large Korean month heading '5월', and below it use a clean blank pale ivory calendar sheet. No highlighted day or deadline date. Preserve wide approximately 1200:630 composition. Do not change any other objects or text.",
+      "naver": "Polish this existing thumbnail, keeping its 5:3 width-to-height composition. Keep EXACT headline text and its current centered position, green/coral clay styling, light sunny room and desk. Fix the two cut-off subjects: show the complete woman's head and torso inside the image, moving her slightly inward and scaling her modestly smaller; show the entire '5월' desk calendar inside the right side, moving it inward and modestly smaller so the month text is never clipped. Keep all headline glyphs and both main subjects in the central90% safe area. Full-bleed image, absolutely no bars or added borders. Output landscape5:3, not a panoramic2:1 image."
+    },
+    "finalFiles": [
+      {"path": "thumbnails/mid-year-resignation-tax-settlement.webp", "width": 1200, "height": 630, "generatedSource": "exec-86f796d2-e4fa-4504-98b2-8cb836e528cc.png"},
+      {"path": "thumbnails/mid-year-resignation-tax-settlement-tistory.webp", "width": 1080, "height": 1080, "generatedSource": "exec-32e1966b-1845-4390-80c7-880d0caa3e7b.png"},
+      {"path": "thumbnails/mid-year-resignation-tax-settlement-naver.webp", "width": 1200, "height": 720, "generatedSource": "exec-ccb1e29d-b0eb-48a8-837c-728cf5a67ad0.png"}
+    ],
+    "postProcessing": "Pillow proportional resize/crop and WebP conversion only; creative corrections through image_gen"
+  },
+  "editorialChecks": [
+    "Distinct titles, first paragraphs, section orders and CTA wording; separate Naver numerical example",
+    "Tistory introduction before image; two ad blocks immediately after headings; visible non-stacked blank paragraphs",
+    "Naver three title candidates and 25 relevant hashtags",
+    "No invented professional credentials, mandatory-filing blanket statement or refund guarantee",
+    "Other pre-existing working-tree changes not included in this publication"
+  ]
+}
