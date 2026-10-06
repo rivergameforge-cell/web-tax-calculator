@@ -11,9 +11,10 @@ const CalcInsurance = (() => {
 
   // 국민연금 상한 보수월액 (2026년 7월부터 659만원)
   const PENSION_CAP = new Date() >= new Date(2026, 6, 1) ? 6_590_000 : 6_370_000;
+  const PENSION_MIN = new Date() >= new Date(2026, 6, 1) ? 410_000 : 400_000;
 
-  // 건강보험 상한 보수월액
-  const HEALTH_CAP = 100_000_000;
+  // 2026 보수월액보험료 전체 상한; 근로자와 사업주 각 절반 부담.
+  const HEALTH_PREMIUM_CAP = 9_183_480;
 
   // 산재보험 업종별 요율
   const INDUSTRIAL_RATES = {
@@ -36,19 +37,20 @@ const CalcInsurance = (() => {
 
   function calculate(params) {
     const { salary, insType, industry } = params;
-    if (!salary || salary <= 0) return null;
+    if (!Number.isFinite(salary) || salary <= 0) return null;
 
-    const pensionBase = Math.min(salary, PENSION_CAP);
-    const healthBase  = Math.min(salary, HEALTH_CAP);
+    if (!['employee', 'employer'].includes(insType)) return null;
+    const pensionBase = Math.min(Math.max(Math.floor(salary / 1000) * 1000, PENSION_MIN), PENSION_CAP);
+    const workerHealth = Math.min(Math.floor(salary * 3595 / 100000), HEALTH_PREMIUM_CAP / 2);
 
     let items = [];
 
     if (insType === 'employee') {
       // 직장가입자 근로자 부담분
-      const pension  = Math.floor(pensionBase * 0.0475);
-      const health   = Math.floor(healthBase * 0.03595);
-      const longTerm = Math.floor(health * RATES.longTermCare);
-      const employ   = Math.floor(salary * 0.009);
+      const pension  = Math.floor(pensionBase * 475 / 10000);
+      const health   = workerHealth;
+      const longTerm = Math.floor(health * 1314 / 10000);
+      const employ   = Math.floor(salary * 9 / 1000);
 
       items = [
         { label: '국민연금 (4.75%)',      amount: pension },
@@ -58,10 +60,10 @@ const CalcInsurance = (() => {
       ];
     } else if (insType === 'employer') {
       // 사업주 부담분
-      const pension   = Math.floor(pensionBase * 0.0475);
-      const health    = Math.floor(healthBase * 0.03595);
-      const longTerm  = Math.floor(health * RATES.longTermCare);
-      const employ    = Math.floor(salary * 0.009);
+      const pension   = Math.floor(pensionBase * 475 / 10000);
+      const health    = workerHealth;
+      const longTerm  = Math.floor(health * 1314 / 10000);
+      const employ    = Math.floor(salary * 9 / 1000);
       const indRate   = INDUSTRIAL_RATES[industry] || 0.010;
       const indAmount = Math.floor(salary * indRate);
 
@@ -69,19 +71,8 @@ const CalcInsurance = (() => {
         { label: '국민연금 (4.75%)',           amount: pension },
         { label: '건강보험 (3.595%)',          amount: health },
         { label: '장기요양보험 (13.14%)',      amount: longTerm },
-        { label: '고용보험 (0.9%)',            amount: employ },
-        { label: `산재보험 (${INDUSTRIAL_LABELS[industry] || industry})`, amount: indAmount },
-      ];
-    } else {
-      // 지역가입자 전체 부담
-      const pension  = Math.floor(pensionBase * 0.095);
-      const health   = Math.floor(healthBase * 0.0719);
-      const longTerm = Math.floor(health * RATES.longTermCare);
-
-      items = [
-        { label: '국민연금 (9.5%)',        amount: pension },
-        { label: '건강보험 (7.19%)',       amount: health },
-        { label: '장기요양보험 (13.14%)',  amount: longTerm },
+        { label: '고용보험 실업급여분 (0.9%, 추가 사업주 요율 별도)', amount: employ },
+        { label: `산재보험 예시 (${INDUSTRIAL_LABELS[industry] || industry})`, amount: indAmount },
       ];
     }
 
@@ -104,7 +95,6 @@ const CalcInsurance = (() => {
     const typeLabels = {
       employee: '직장가입자 (근로자 부담분)',
       employer: '사업주 부담분',
-      self:     '지역가입자 (전체 부담)',
     };
 
     const rows = result.items.map(item => `
@@ -192,6 +182,8 @@ const CalcInsurance = (() => {
         view.querySelectorAll('input[type="text"]').forEach(el => el.value = '');
         if (elType) elType.selectedIndex = 0;
         if (elIndustry) elIndustry.selectedIndex = 0;
+        const industryGroup = view.querySelector('#ins-industry-group');
+        if (industryGroup) industryGroup.style.display = 'none';
         renderResult(null, resultContainer);
       });
     }

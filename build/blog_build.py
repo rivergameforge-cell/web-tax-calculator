@@ -15,6 +15,7 @@ blog_build.py — 블로그 정적 페이지 빌더
 
 import re
 import sys
+import json
 from html import escape as html_escape
 from pathlib import Path
 
@@ -22,6 +23,12 @@ ROOT = Path(__file__).resolve().parent.parent
 POST_DIR = ROOT / "blog_post"
 OUT_DIR = ROOT / "blog"
 INDEX_PATH = OUT_DIR / "index.html"
+
+
+def canonical_calculator_links(text):
+    # Legacy links in old drafts continue to point to usable, indexable pages.
+    return re.sub(r'(https://taxcalc\.co\.kr/|/)?#([a-z-]+/[a-z-]+)(?=["\)\s<]|$)',
+                  lambda m: (m[1] or '/') + m[2] + '.html', text)
 
 # ---------------------------------------------------------------------------
 # 글 매핑 — 새 .md 추가 시 여기에만 항목 추가하면 됨
@@ -165,6 +172,7 @@ POSTS = [
     {
         "file": "연봉_5천_실수령액",
         "slug": "salary-50m-take-home",
+        "modified": "2026-10-06",
         "category": "labor",
         "categoryLabel": "근로 세금",
         "date": "2026-06-24",
@@ -182,6 +190,7 @@ POSTS = [
     {
         "file": "연봉_실수령액",
         "slug": "salary-take-home",
+        "modified": "2026-10-06",
         "category": "labor",
         "categoryLabel": "근로 세금",
         "date": "2026-06-23",
@@ -199,6 +208,7 @@ POSTS = [
     {
         "file": "자동차세_미납",
         "slug": "vehicle-tax-overdue",
+        "modified": "2026-10-06",
         "category": "vehicle",
         "categoryLabel": "자동차",
         "date": "2026-06-22",
@@ -282,6 +292,7 @@ POSTS = [
     {
         "file": "DSR_계산",
         "slug": "dsr-calculation-guide",
+        "modified": "2026-10-06",
         "category": "loan",
         "categoryLabel": "대출",
         "date": "2026-07-03",
@@ -501,6 +512,7 @@ POSTS = [
     {
         "file": "투기과열지구_대출계산_블로그_포스팅",
         "slug": "speculative-zone-ltv",
+        "modified": "2026-10-06",
         "category": "loan",
         "categoryLabel": "대출",
         "date": "2026-05-12",
@@ -642,6 +654,20 @@ def md_to_html(md: str) -> str:
     while i < len(lines):
         line = lines[i]
         stripped = line.strip()
+
+        if stripped.startswith('|') and i + 1 < len(lines) and re.fullmatch(r'\s*\|?\s*:?-+:?\s*(\|\s*:?-+:?\s*)+\|?\s*', lines[i + 1]):
+            flush_para()
+            close_list()
+            cells = lambda row: [inline_format(html_escape(cell.strip())) for cell in row.strip().strip('|').split('|')]
+            headers = cells(stripped)
+            out.append('<div class="table-scroll"><table><thead><tr>' + ''.join(f'<th>{cell}</th>' for cell in headers) + '</tr></thead><tbody>')
+            i += 2
+            while i < len(lines) and lines[i].strip().startswith('|'):
+                row = cells(lines[i])
+                out.append('<tr>' + ''.join(f'<td>{cell}</td>' for cell in row) + '</tr>')
+                i += 1
+            out.append('</tbody></table></div>')
+            continue
 
         # 수평선
         if stripped == "---":
@@ -831,7 +857,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="ko_KR">
   <meta property="article:published_time" content="{date}">
-  <meta property="article:modified_time" content="{date}">
+  <meta property="article:modified_time" content="{modified}">
   <meta property="article:section" content="{category_label}">
 
   <meta name="twitter:card" content="summary_large_image">
@@ -843,6 +869,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>.table-scroll{{overflow-x:auto;margin:24px 0}}.table-scroll table{{width:100%;border-collapse:collapse;min-width:320px}}.table-scroll th,.table-scroll td{{padding:10px 12px;border:1px solid #ddd;text-align:left}}.table-scroll th{{background:#f3f4f6}}</style>
 
   <script type="application/ld+json">
   {{
@@ -858,7 +885,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
       "logo": {{ "@type": "ImageObject", "url": "https://taxcalc.co.kr/og-image.png" }}
     }},
     "datePublished": "{date}",
-    "dateModified": "{date}",
+    "dateModified": "{modified}",
     "mainEntityOfPage": "https://taxcalc.co.kr/blog/{slug}.html",
     "articleSection": {category_label_json},
     "inLanguage": "ko"
@@ -985,7 +1012,13 @@ def render_post(meta: dict, parsed: dict) -> str:
     """단일 글 HTML 생성."""
     import json
 
-    body_html = md_to_html(parsed["body_md"])
+    body_html = canonical_calculator_links(md_to_html(parsed["body_md"]))
+    modified = meta.get('modified', meta['date'])
+    existing = OUT_DIR / (meta['slug'] + '.html')
+    if existing.exists():
+        match = re.search(r'"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"', existing.read_text(encoding='utf-8'))
+        if match:
+            modified = max(modified, match[1])
 
     related_html = "\n      ".join(
         f'<a href="{h}">{l}</a>' for h, l in meta.get("related", [])
@@ -1002,9 +1035,10 @@ def render_post(meta: dict, parsed: dict) -> str:
         slug=meta["slug"],
         category_label=html_escape(meta["categoryLabel"]),
         date=meta["date"],
+        modified=modified,
         date_display=meta["date"].replace("-", ".") + ".",
         read_min=meta["readMin"],
-        cta_href=meta["ctaHref"],
+        cta_href=canonical_calculator_links(meta["ctaHref"]),
         cta_label=html_escape(meta["ctaLabel"]),
         body_html=body_html,
         related_html=related_html,
@@ -1324,6 +1358,27 @@ def render_index(posts: list[dict]) -> str:
 # 메인
 # ---------------------------------------------------------------------------
 
+def update_homepage_latest(posts):
+    from site_html import SiteHTML
+
+    path = ROOT / 'index.html'
+    source = path.read_text(encoding='utf-8')
+    old = SiteHTML(source).elements['site-latest-posts']
+    cards = []
+    for post in sorted(posts, key=lambda p: p['meta']['date'], reverse=True)[:3]:
+        meta, parsed = post['meta'], post['parsed']
+        if not (OUT_DIR / (meta['slug'] + '.html')).exists():
+            continue
+        cards.append(f'''<article class="site-blog-card">
+        <a class="site-blog-thumb" href="/blog/{meta['slug']}.html"><img src="/thumbnails/{meta['slug']}.webp" alt="{html_escape(parsed['title'])}" width="1200" height="630" loading="lazy"></a>
+        <h3><a href="/blog/{meta['slug']}.html">{html_escape(parsed['title'])}</a></h3>
+        <p>{html_escape(make_excerpt(parsed['description']))}</p>
+        <span class="site-blog-meta">{meta['date'].replace('-', '.')} · {meta['readMin']}분</span>
+      </article>''')
+    new = '<div class="site-blog-grid" id="site-latest-posts">\n' + '\n'.join(cards) + '\n    </div>'
+    path.write_text(source.replace(old, new, 1), encoding='utf-8')
+
+
 def main() -> int:
     if not POST_DIR.exists():
         print(f"[!] 원고 디렉터리 없음: {POST_DIR}")
@@ -1332,6 +1387,7 @@ def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     processed = []
+    only = set(sys.argv[sys.argv.index('--only') + 1].split(',')) if '--only' in sys.argv else None
     for meta in POSTS:
         md_path = POST_DIR / f"{meta['file']}.md"
         if not md_path.exists():
@@ -1345,6 +1401,9 @@ def main() -> int:
 
         processed.append({"meta": meta, "parsed": parsed})
 
+        if '--index-only' in sys.argv or (only is not None and meta['slug'] not in only):
+            continue
+
         if meta.get("customHtml"):
             print(f"  · {meta['slug']:30s} (custom HTML, 본문 빌드 스킵)")
             continue
@@ -1357,6 +1416,7 @@ def main() -> int:
     # 인덱스 재생성
     index_html = render_index(processed)
     INDEX_PATH.write_text(index_html, encoding="utf-8")
+    update_homepage_latest(processed)
     print(f"\n▶ blog/index.html 재생성 — 총 {len(processed)}편")
     print(f"▶ 빌드 완료")
     return 0

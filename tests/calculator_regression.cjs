@@ -1,0 +1,73 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const path = require('node:path');
+const root = path.resolve(__dirname, '..');
+let count = 0;
+function moduleCalc(file, symbol) {
+  const context = vm.createContext({ Date });
+  vm.runInContext(fs.readFileSync(path.join(root, file), 'utf8') + `;globalThis.calc = ${symbol}.calculate;`, context);
+  return context.calc;
+}
+function eq(actual, expected) { assert.equal(actual, expected); count++; }
+const corporate = moduleCalc('js/calculators/income/corporate.js', 'CalcCorporate');
+eq(corporate({ income: 500000000 }).totalTax, 88000000);
+eq(corporate({ income: 200000000 }).corpTax, 20000000);
+eq(corporate({ income: 20000000000 }).corpTax, 3980000000);
+eq(corporate({ income: 300000000000 }).corpTax, 65580000000);
+const insurance = moduleCalc('js/calculators/income/insurance.js', 'CalcInsurance');
+eq(insurance({ salary: 3000000, insType: 'employee' }).monthlyTotal, 291521);
+eq(insurance({ salary: 100000, insType: 'employee' }).items[0].amount, 19475);
+eq(insurance({ salary: 10000000, insType: 'employee' }).items[0].amount, 313025);
+eq(insurance({ salary: 200000000, insType: 'employee' }).items[1].amount, 4591740);
+eq(insurance({ salary: 3000000, insType: 'self' }), null);
+const salary = moduleCalc('js/calculators/income/salary.js', 'CalcSalary');
+eq(salary({ mode: 'annual', amount: 50000000, nonTaxAmount: 200000, familyCount: 1, childCount: 0, weeklyHours: 40 }).monthlyNet, 3521240);
+eq(salary({ mode: 'monthly', amount: 3000000, nonTaxAmount: 0, familyCount: 1, childCount: 0, weeklyHours: 40 }).pension, 142500);
+const acquisition = moduleCalc('js/calculators/real-estate/acquisition.js', 'CalcAcquisition');
+for (const houseCount of [2, 3, 4]) {
+  const base = { type: 'housing', price: 500000000, houseCount, isAdjusted: true, area: 85 };
+  eq(acquisition(base).ruralTax, 0);
+  eq(acquisition({ ...base, area: 86 }).ruralTax, houseCount === 2 ? 3000000 : 5000000);
+}
+eq(acquisition({ type: 'housing', price: 600000000, houseCount: 1, area: 85 }).total, 6600000);
+const vat = moduleCalc('js/calculators/income/vat.js', 'CalcVat');
+eq(vat({ taxType: 'general', salesAmount: 10000000, purchaseAmount: 15000000 }).vatPayable, -500000);
+eq(vat({ taxType: 'general', salesAmount: 0, purchaseAmount: 15000000 }).vatPayable, -1500000);
+eq(vat({ taxType: 'simplified', salesAmount: 47000000, purchaseAmount: 0, industryType: 'retail' }).vatPayable, 0);
+eq(vat({ taxType: 'simplified', salesAmount: 60000000, purchaseAmount: 20000000, industryType: 'retail' }).vatPayable, 800000);
+eq(vat({ taxType: 'simplified', salesAmount: 60000000, purchaseAmount: 0, industryType: 'accommodation' }).vatPayable, 1500000);
+eq(vat({ taxType: 'simplified', salesAmount: 60000000, purchaseAmount: 0, industryType: 'specialService' }).vatPayable, 2400000);
+eq(vat({ taxType: 'general', salesAmount: -1, purchaseAmount: 0 }), null);
+eq(vat({ taxType: 'general', salesAmount: 10000000, purchaseAmount: NaN }), null);
+const overdue = moduleCalc('js/calculators/vehicle/overdue.js', 'CalcVehicleOverdue');
+eq(overdue({ tax: 449999, dueDate: '2026-01-31', today: '2026-10-06' }).additionalMonths, 0);
+eq(overdue({ tax: 450000, dueDate: '2026-01-31', today: '2026-02-27' }).additionalMonths, 0);
+eq(overdue({ tax: 450000, dueDate: '2026-01-31', today: '2026-02-28' }).additionalMonths, 1);
+eq(overdue({ tax: 1000000, dueDate: '2025-01-01', today: '2026-01-01' }).grandTotal, 1109200);
+eq(overdue({ tax: 1000000, dueDate: '2024-01-01', today: '2030-01-01' }).grandTotal, 1426000);
+eq(overdue({ tax: 1000000, dueDate: '2026-01-01', today: '2026-01-01' }).grandTotal, 1000000);
+eq(overdue({ tax: 1000000, dueDate: '2023-01-01', today: '2026-01-01' }), null);
+eq(overdue({ tax: 1000000, dueDate: 'bad', today: '2026-01-01' }), null);
+eq(overdue({ tax: 1000000, dueDate: '2026-02-30', today: '2026-03-01' }), null);
+const ltv = moduleCalc('js/calculators/loan/ltv.js', 'CalcLTV');
+const ltvBase = { propertyValue: 1200000000, region: 'speculative', housing: 'homeless', loanType: 'bank' };
+eq(ltv(ltvBase).maxLoanTotal, 480000000);
+eq(ltv({ ...ltvBase, propertyValue: 1800000000 }).maxLoanTotal, 400000000);
+eq(ltv({ ...ltvBase, propertyValue: 2600000000 }).maxLoanTotal, 200000000);
+eq(ltv({ ...ltvBase, region: 'non-regulated', isCapitalArea: true }).maxLoanTotal, 600000000);
+eq(ltv({ ...ltvBase, region: 'non-regulated', isCapitalArea: true, housing: 'multi' }).maxLoanTotal, 0);
+eq(ltv({ ...ltvBase, region: 'non-regulated', housing: 'multi' }).maxLoanTotal, 840000000);
+eq(ltv({ ...ltvBase, existingLoan: -1 }), null);
+const dsr = moduleCalc('js/calculators/loan/dsr.js', 'CalcDSR');
+const dsrBase = { annualIncome: 50000000, newLoanAmount: 100000000, newLoanRate: 4,
+  newLoanPeriodYears: 10, newLoanType: 'bullet', existingAnnualRepay: 0, lenderType: 'bank', useStressDSR: false };
+eq(dsr(dsrBase).newAnnualRepay, 14000000);
+eq(Math.round(dsr(dsrBase).dsrPercent), 28);
+eq(dsr({ ...dsrBase, useStressDSR: true, stressRateAdd: 3 }).newAnnualRepay, 17000000);
+eq(dsr({ ...dsrBase, useStressDSR: true, stressRateAdd: 1.5 }).newAnnualRepay, 15500000);
+eq(dsr({ ...dsrBase, newLoanPeriodYears: 0 }), null);
+eq(dsr({ ...dsrBase, stressRateAdd: NaN }), null);
+eq(dsr({ ...dsrBase, newLoanAmount: -1 }), null);
+eq(dsr({ ...dsrBase, existingAnnualRepay: NaN }), null);
+console.log(`${count} calculator regression assertions passed`);

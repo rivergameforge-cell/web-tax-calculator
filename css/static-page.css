@@ -1,0 +1,60 @@
+/* Reuse the legacy calculator's form and result styles. */
+.static-page { color: var(--text-primary); background: var(--bg-primary); line-height: 1.65; }
+.static-page * { letter-spacing: 0; }
+.static-header { display: flex; align-items: center; gap: 24px; padding: 16px max(16px, calc((100% - 1080px) / 2)); border-bottom: 1px solid var(--border); background: var(--bg-card); }
+.static-brand { font-size: 20px; font-weight: 800; text-decoration: none; }
+.static-brand small { display: block; font-size: 12px; font-weight: 400; color: var(--text-muted); }
+.static-header nav { margin-left: auto; display: flex; gap: 18px; font-size: 14px; }
+.static-page a { color: var(--accent); text-underline-offset: 3px; }
+.static-main { max-width: 1080px; margin: auto; padding: 22px 20px 48px; }
+.static-breadcrumb, .static-dates { color: var(--text-muted); font-size: 12px; }
+.static-main > h1 { font-size: 28px; line-height: 1.3; margin: 18px 0 8px; overflow-wrap: anywhere; }
+.static-lead { max-width: 860px; margin-bottom: 8px; color: var(--text-secondary); }
+.static-dates { margin-bottom: 24px; }
+.static-calculator { margin-bottom: 24px; min-width: 0; }
+.static-page .calculator-view { display: block; }
+.static-page .calc-grid { align-items: start; }
+.static-page .calc-grid > * { min-width: 0; }
+.static-page .card { border-radius: 8px; }
+.static-page .tax-tip-box { margin-top: 16px; }
+.static-page .info-table { display: block; overflow-x: auto; }
+.static-page .breakdown-row { flex-wrap: wrap; gap: 4px 12px; }
+.static-page .br-value { margin-left: auto; overflow-wrap: anywhere; max-width: 100%; }
+.static-page .form-row { min-width: 0; }
+.static-page .form-row > * { min-width: 0; }
+.static-limit { padding: 16px 0 16px 16px; border-left: 3px solid var(--warning); margin: 24px 0; color: var(--text-secondary); font-size: 14px; }
+.static-limit h2 { color: var(--text-primary); font-size: 16px; margin-bottom: 6px; }
+.static-prose { max-width: 860px; margin: 0 auto; overflow-wrap: anywhere; }
+.static-prose h2 { font-size: 21px; line-height: 1.4; margin: 36px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.static-prose h3 { font-size: 17px; margin: 22px 0 10px; }
+.static-prose p { margin: 0 0 14px; }
+.static-prose ul, .static-prose ol { padding-left: 22px; margin: 12px 0 18px; }
+.static-prose li { margin-bottom: 8px; }
+.static-prose table { display: block; max-width: 100%; width: max-content; overflow-x: auto; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+.static-prose th, .static-prose td { padding: 10px 14px; border: 1px solid var(--border); text-align: left; }
+.static-prose th { background: var(--bg-secondary); }
+.static-prose details { border-bottom: 1px solid var(--border); padding: 14px 0; }
+.static-prose summary { cursor: pointer; font-weight: 600; }
+.static-prose details p { margin: 10px 0 0; color: var(--text-secondary); }
+.static-sources { font-size: 14px; }
+.static-related, .static-directory { max-width: 860px; margin: 32px auto; border-top: 1px solid var(--border); padding-top: 20px; }
+.static-related h2, .static-directory h3 { font-size: 17px; margin-bottom: 12px; }
+.static-related > div { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.static-directory summary { cursor: pointer; font-weight: 600; }
+.static-directory section { margin-top: 18px; }
+.static-directory ul { display: flex; flex-wrap: wrap; gap: 8px 20px; list-style: none; }
+.static-footer { padding: 24px 20px; border-top: 1px solid var(--border); font-size: 13px; text-align: center; color: var(--text-secondary); }
+.static-footer nav { display: flex; flex-wrap: wrap; gap: 10px 20px; justify-content: center; margin-top: 12px; }
+.static-page :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 640px) {
+  .static-header { gap: 12px; flex-wrap: wrap; }
+  .static-header nav { margin-left: 0; }
+  .static-header .btn-icon { margin-left: auto; }
+  .static-main { padding: 18px 16px 36px; }
+  .static-main > h1 { font-size: 24px; }
+  .static-prose h2 { font-size: 19px; }
+  .static-page .calc-grid { grid-template-columns: minmax(0, 1fr); }
+  .static-page .radio-group { flex-wrap: wrap; }
+  .static-page .radio-option { flex: 1 1 auto; }
+}
+@media print { .static-header, .static-directory, .static-footer { display: none; } }

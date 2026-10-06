@@ -8,8 +8,8 @@ const CalcDSR = (() => {
     stress: 0.40,     // 스트레스 DSR (은행) 40%
   };
 
-  // 스트레스 금리 가산 (2026년 3단계 기준)
-  const STRESS_RATE_ADD = 1.50; // 1.50%p
+  // 입력 초기값일 뿐, 지역·상품별 규제 가산금리를 자동 판정하지 않는다.
+  const STRESS_RATE_ADD = 1.50;
 
   function calculate(params) {
     const {
@@ -18,24 +18,29 @@ const CalcDSR = (() => {
       newLoanRate,
       newLoanPeriodYears,
       newLoanType,        // 'equal-payment' | 'equal-principal' | 'bullet'
-      existingAnnualRepay, // 기존 대출 연간 원리금 상환액
+      existingAnnualRepay = 0, // 기존 대출 연간 원리금 상환액
       lenderType,          // 'bank' | 'nonbank'
       useStressDSR,        // 스트레스 DSR 적용 여부
+      stressRateAdd = STRESS_RATE_ADD,
     } = params;
 
-    if (!annualIncome || annualIncome <= 0) return null;
+    if (!Number.isFinite(annualIncome) || annualIncome <= 0) return null;
+    if (![newLoanAmount, newLoanRate, newLoanPeriodYears, existingAnnualRepay].every(Number.isFinite)) return null;
+    if (newLoanAmount < 0 || newLoanRate < 0 || newLoanRate > 30 || newLoanPeriodYears <= 0 || newLoanPeriodYears > 50 || existingAnnualRepay < 0) return null;
+    if (!['equal-payment', 'equal-principal', 'bullet'].includes(newLoanType) || !['bank', 'nonbank'].includes(lenderType)) return null;
 
     // 신규 대출 연간 원리금 상환액 계산
     const rate = newLoanRate / 100;
-    const stressRate = useStressDSR ? (newLoanRate + STRESS_RATE_ADD) / 100 : rate;
+    if (!Number.isFinite(stressRateAdd) || stressRateAdd < 0 || stressRateAdd > 10) return null;
+    const stressRate = useStressDSR ? (newLoanRate + stressRateAdd) / 100 : rate;
     const monthlyRate = stressRate / 12;
     const totalMonths = newLoanPeriodYears * 12;
     let newAnnualRepay = 0;
 
     if (newLoanAmount > 0 && totalMonths > 0) {
       if (newLoanType === 'bullet') {
-        // 만기일시상환: 매월 이자만
-        newAnnualRepay = newLoanAmount * stressRate;
+        // 단순 연환산 모형; 금융권 상품별 원금 산정만기와 다를 수 있다.
+        newAnnualRepay = newLoanAmount / newLoanPeriodYears + newLoanAmount * stressRate;
       } else if (newLoanType === 'equal-principal') {
         // 원금균등: 첫해 기준 (보수적)
         const monthlyPrincipal = newLoanAmount / totalMonths;
@@ -88,6 +93,7 @@ const CalcDSR = (() => {
       isOver,
       lenderType,
       useStressDSR,
+      stressRateAdd,
       params,
     };
   }
@@ -144,7 +150,7 @@ const CalcDSR = (() => {
         ${isOver
           ? `<strong>DSR 한도 초과!</strong> ${lenderLabel} 기준 DSR ${dsrLimitPercent}%를 초과하여 대출이 어려울 수 있습니다.`
           : `<strong>DSR 여유 있음</strong> ${lenderLabel} 기준 DSR ${dsrLimitPercent}% 이내입니다.`}
-        ${useStressDSR ? '<br>스트레스 DSR 적용 (+1.50%p)' : ''}
+        ${useStressDSR ? `<br>입력 스트레스 가산금리 (+${result.stressRateAdd.toFixed(2)}%p)` : ''}
       </div>
       <div class="breakdown-row" style="margin-top:12px;font-weight:600;font-size:15px">
         <span class="br-label">💡 동일 조건 최대 대출가능액</span>
@@ -179,6 +185,7 @@ const CalcDSR = (() => {
         existingAnnualRepay: getNum('dsr-existing-repay'),
         lenderType: view.querySelector('input[name="dsr-lender"]:checked')?.value || 'bank',
         useStressDSR: getCheck('dsr-stress'),
+        stressRateAdd: parseFloat(view.querySelector('#dsr-stress-rate')?.value || '1.5'),
       };
     }
 
@@ -223,6 +230,7 @@ const CalcDSR = (() => {
           else el.value = '';
         });
         view.querySelectorAll('input[type="checkbox"]').forEach(el => el.checked = false);
+        view.querySelector('#dsr-stress-rate').value = String(STRESS_RATE_ADD);
         const bankRadio = view.querySelector('input[name="dsr-lender"][value="bank"]');
         if (bankRadio) bankRadio.checked = true;
         const equalRadio = view.querySelector('input[name="dsr-repay-type"][value="equal-payment"]');

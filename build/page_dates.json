@@ -1,0 +1,497 @@
+{
+  "about.html": {
+    "digest": "63d87d036adb33545d62388698b1513dc495ebf13b3f568184cfa91373d38df4",
+    "modified": "2026-10-06",
+    "published": "2026-04-07"
+  },
+  "blog/commission-calculation-method.html": {
+    "digest": "bdc14ce9f169b1df9dc7883b0022581eb8f2dee6075318c48da7b9e529e2a1dd",
+    "modified": "2026-07-19",
+    "published": "2026-06-16"
+  },
+  "blog/credit-card-deduction-25-percent.html": {
+    "digest": "179226d67774ae5f7532ad45209b772daaeba9a93cccab1269aaf028ae5547f2",
+    "modified": "2026-10-06",
+    "published": "2026-07-19"
+  },
+  "blog/dividend-tax-saving.html": {
+    "digest": "a20027ed556fd81c9e83adaa636b6416081bfeb41fe94170cc5eea38789497fe",
+    "modified": "2026-07-03",
+    "published": "2026-05-05"
+  },
+  "blog/domestic-stock-capital-gains-major-shareholder.html": {
+    "digest": "5b89835cb77f9a21d0019b84fcdbdff5d9e39dd246aeb8a7bc53a0de3849241a",
+    "modified": "2026-10-06",
+    "published": "2026-07-06"
+  },
+  "blog/dsr-calculation-guide.html": {
+    "digest": "8bbece9f930716ba904dd53b373614b6f5a6a82a2da9a621cba3b3d4d8e551b0",
+    "modified": "2026-10-06",
+    "published": "2026-07-03"
+  },
+  "blog/earned-income-tax-credit-2026-payment.html": {
+    "digest": "8d083dbad4c19efd484d5177f3aad7d848c933167ebede76d2f39171644e3d1d",
+    "modified": "2026-10-06",
+    "published": "2026-08-11"
+  },
+  "blog/financial-income-comprehensive-tax-20m.html": {
+    "digest": "f6b2ff363d5580701d744abfe33932445879fe3dcbefa6f2a5c4b0d1170b0548",
+    "modified": "2026-10-06",
+    "published": "2026-07-14"
+  },
+  "blog/foreign-stock-capital-gains-deduction.html": {
+    "digest": "18d146186a580781226864d8575ad857c162be61ef82b2b89f851d03b8bb0f00",
+    "modified": "2026-07-03",
+    "published": "2026-07-03"
+  },
+  "blog/four-major-insurance-guide.html": {
+    "digest": "3904462ce7f1342cff8423da3aea0d379c3ade61c5e384a1d84b1c5c03a02ef8",
+    "modified": "2026-07-03",
+    "published": "2026-05-22"
+  },
+  "blog/gift-vs-inheritance-tax.html": {
+    "digest": "6d707c60f080dee75a6d6c510a1bd463c8ca5b230466ee0a42fd50e5723dc96a",
+    "modified": "2026-07-03",
+    "published": "2026-05-20"
+  },
+  "blog/income-tax-penalty-late-filing.html": {
+    "digest": "571292bde9957401991d6e8f69f40775827e55308f0d7029cfa976c38fd73be7",
+    "modified": "2026-10-06",
+    "published": "2026-07-12"
+  },
+  "blog/index.html": {
+    "digest": "62decec4e862590861854ffd67406e9eef695954bfbcc8354bb38f0bfe2f2d97",
+    "modified": "2026-10-06",
+    "published": "2026-05-05"
+  },
+  "blog/inheritance-tax-guide.html": {
+    "digest": "47fbbec1708a6cc9069464e42b469f3d2ac7e0c7b62b431a1e1776099702bb85",
+    "modified": "2026-07-03",
+    "published": "2026-05-20"
+  },
+  "blog/inheritance-taxable-scope.html": {
+    "digest": "1e51d5dc3c1af7e719fbc695453e7275f57e42c1797d8ad26b8e85b0c167a016",
+    "modified": "2026-07-19",
+    "published": "2026-06-20"
+  },
+  "blog/irp-why-start-young.html": {
+    "digest": "ccff82cfb569999cc0869d75699a571abbb3234a92280d23b856dfc79295da52",
+    "modified": "2026-07-03",
+    "published": "2026-06-09"
+  },
+  "blog/marriage-birth-gift-tax-deduction.html": {
+    "digest": "079a504ddeb4f715577b887629582a9194fceccfe5d13201a83bfdd9ce444e82",
+    "modified": "2026-10-06",
+    "published": "2026-07-28"
+  },
+  "blog/marriage-tax-credit-100m-guide.html": {
+    "digest": "74a06c1281ccee8b11c0135da2a234537f216522a30f6c38560884914022632e",
+    "modified": "2026-10-06",
+    "published": "2026-07-17"
+  },
+  "blog/mid-year-resignation-tax-settlement.html": {
+    "digest": "e6ae3f4ea79582ab2d563ae9b1f14a96e13f06d9199418b3cdf4238787347792",
+    "modified": "2026-10-06",
+    "published": "2026-10-05"
+  },
+  "blog/monthly-rent-tax-credit-8m-refund.html": {
+    "digest": "2f6ae350a9a5385a576eabf80f2b930ba3ffe40015cc86043fa763206fb87e91",
+    "modified": "2026-10-06",
+    "published": "2026-07-16"
+  },
+  "blog/monthly-rent-tax-credit.html": {
+    "digest": "00aeaf7eae15277bb2b57bb724458fe155727c33609c51a4134476aafcf941f5",
+    "modified": "2026-07-03",
+    "published": "2026-05-28"
+  },
+  "blog/october-vat-preliminary-notice.html": {
+    "digest": "bf3b2b1d5795b6a5c490922289007965a818c46a624054c9f739f74805f5fc0b",
+    "modified": "2026-10-06",
+    "published": "2026-10-01"
+  },
+  "blog/officetel-acquisition.html": {
+    "digest": "e9f3f4d4ca2b6c8d110e547ad4917953d2df18a8643b9369eb33b8d8ff0b3849",
+    "modified": "2026-07-03",
+    "published": "2026-05-05"
+  },
+  "blog/other-income-tax-8-8-guide.html": {
+    "digest": "6de343feba761fe4f5489ffd349642c2f3d29a12af725971f26c454434294990",
+    "modified": "2026-10-06",
+    "published": "2026-07-10"
+  },
+  "blog/parking-violation-fine.html": {
+    "digest": "ebef4fdba94ed7a1916ad2a485a6caabb657e035c44d327d56da593c3a370436",
+    "modified": "2026-07-03",
+    "published": "2026-05-19"
+  },
+  "blog/pension-saving-irp-credit.html": {
+    "digest": "966bef9ec5f8c38075263bc576f981194c9cf5932ef4e61e848b3266399a049e",
+    "modified": "2026-07-03",
+    "published": "2026-05-31"
+  },
+  "blog/property-tax-guide.html": {
+    "digest": "dc11b75604c5e159f092338d399c7e281783f750fda1ca39924877a5efd6aba7",
+    "modified": "2026-10-06",
+    "published": "2026-05-19"
+  },
+  "blog/real-estate-commission.html": {
+    "digest": "a1ef458fc5a61f1c90bf640e20bc34b41fd187f9dfc40feb33b404c569c96294",
+    "modified": "2026-07-03",
+    "published": "2026-05-19"
+  },
+  "blog/resident-tax-august-guide.html": {
+    "digest": "c878dee01f1c43f95ef655016fd246590eb330d85cb55e3497d9afa4b13eec03",
+    "modified": "2026-10-06",
+    "published": "2026-07-24"
+  },
+  "blog/salary-50m-take-home.html": {
+    "digest": "ae40e1b9982eaf1cbcd3c6bd8f466d804538ae6ecc0ae9efdbe97c7c1adffbb9",
+    "modified": "2026-10-06",
+    "published": "2026-06-30"
+  },
+  "blog/salary-take-home.html": {
+    "digest": "5435d426532237df4f97fddae503267939177d37a9be73e3545f25ce43c60ae0",
+    "modified": "2026-10-06",
+    "published": "2026-06-30"
+  },
+  "blog/severance-pay-guide.html": {
+    "digest": "ab70ca26190814e92b5ceebca92611e77a566297302a96e00d23a86d208d75fd",
+    "modified": "2026-07-03",
+    "published": "2026-05-05"
+  },
+  "blog/speculative-zone-ltv.html": {
+    "digest": "8147b86d9b8829c89550cfab84eaa48c1ffc7b68e0ac4859087ca4757385ac48",
+    "modified": "2026-10-06",
+    "published": "2026-05-19"
+  },
+  "blog/speeding-fine-guide.html": {
+    "digest": "3a66d28b1594b2e784f248e218edd9c51db25a02558b33d5f1a861a0a3059b7f",
+    "modified": "2026-07-03",
+    "published": "2026-05-19"
+  },
+  "blog/stock-dividend-tax-guide.html": {
+    "digest": "c37973aec59e220940b28a5afda7cef4d6ba105c2e73e959140cfbce82460860",
+    "modified": "2026-07-03",
+    "published": "2026-05-19"
+  },
+  "blog/vat-refund-output-input-tax.html": {
+    "digest": "6b4422e2229b0fc2b0fc6909512d714915ae0bd15b57f4f2e9b6ea2307041b88",
+    "modified": "2026-10-06",
+    "published": "2026-07-22"
+  },
+  "blog/vehicle-acquisition-tax-guide.html": {
+    "digest": "398eabe9ccaf3654de44509c809bf58ab3e7c9edc7a776aaa8d61321cd9232d7",
+    "modified": "2026-07-03",
+    "published": "2026-05-19"
+  },
+  "blog/vehicle-installment-calculation.html": {
+    "digest": "ecb8dd3a7f35f689a6a64c35e3dd423a81a5b9868c16cddcb7ce528b11fbb403",
+    "modified": "2026-07-19",
+    "published": "2026-06-21"
+  },
+  "blog/vehicle-installment-guide.html": {
+    "digest": "17d82a85105da03a71979c61cdef306ff2adf0ebbbdcf21a0d1543de275462fa",
+    "modified": "2026-07-03",
+    "published": "2026-05-19"
+  },
+  "blog/vehicle-tax-overdue.html": {
+    "digest": "a9677fe25ff3956feca076dfeb9a90366f48bd27a1f71d75bd8ff0ef3e110c74",
+    "modified": "2026-10-06",
+    "published": "2026-06-23"
+  },
+  "contact.html": {
+    "digest": "9164a5f7fb52d6b54426c562a9bc2a89441f427ab39be8a4302a23f736b202dc",
+    "modified": "2026-10-06",
+    "published": "2026-05-05"
+  },
+  "fines/living.html": {
+    "digest": "e056626d6323045c094945a58fea2463ae8e5a18b9414c75ee615cd0278bd611",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "fines/parking.html": {
+    "digest": "9618507480903fa821d95c2f22dae08a9872b726b1258b5948f44f15d47cdbcb",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "fines/traffic.html": {
+    "digest": "fac84de992253a1411b3d8ec5b294212fdc1295ae4595863a96831733d4d2106",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/business.html": {
+    "digest": "12b1e8333cb6cf819fdc8a5f86fd1e4beab38d1353090486a76a9c27b591b9d7",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/comprehensive.html": {
+    "digest": "5cb96e99e49e9a5d67a735e63c225ab332c39653b82e690bf38c9b32ed748f6a",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/corporate.html": {
+    "digest": "007ea67e5dba0eb0c74fa8fa452dfc3a116f951e98b1e0df6f6ff1834ed57615",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/customs.html": {
+    "digest": "8addcfae739bfe6c1da1fc2dbe6acb4b1424f67e33b21ca3e3af9c84dacfe5e9",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/daily-worker.html": {
+    "digest": "33c44c39709104a7a9bd3c0aabdbb96ea6d6c9ba917063a415a4f389f1b06bf5",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/employment.html": {
+    "digest": "669f41008f6b36efded09ebc3f2e60c5e3161c59cf4141955f0a05ce8233eca8",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/freelancer.html": {
+    "digest": "82534967d81dd3b7133d9c6246bb38962a12db71fa45ba568e95e1205a18bdde",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/hourly-wage.html": {
+    "digest": "bada5811f033b0d2354fee28289f3bb7dbcdfbe508a23898b90950e182e88c04",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/insurance.html": {
+    "digest": "170118d48cae2a25e9d3e28bf064f39fb7653c20acf3be5e8e99f2f12ff1ac67",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/interest-dividend.html": {
+    "digest": "3b368767039e3ca3c405e5c5ec47dd0f0f2927c2e057a49c6349ce0ca9cf9443",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/other-income.html": {
+    "digest": "a1070d9fb4cf284e378f7aa77d54fc41d2ecdd64e9fe75dbbc415ad9aa1322b9",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/penalty.html": {
+    "digest": "74018ae732611ca11a04307fb9c5dd2a725e87d0204fc30ed95e33d86d79e9d0",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/pension-income.html": {
+    "digest": "b845fe689491a541d44d7e8a4d58246f310ad9df257f17b5863c7b8f769d9954",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/pension-saving.html": {
+    "digest": "1517a72214d59d77eeb864a500ca4e05781040a7e214741a8b2adf2620e19264",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/rent-credit.html": {
+    "digest": "50d2a459a464712242e309d60038cdcaac7056223eb9e4e95ea58a8930d0c42c",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/retirement.html": {
+    "digest": "4127d1fbff5ca269ea140840ce4d4a5c5b0dd2135cd392be1e3d93669b629d8d",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/salary.html": {
+    "digest": "f600ea6f442fd1ebeecc3bb324e3b958a0cf7dcee0477c868b91ba2540b75274",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/severance.html": {
+    "digest": "a3cd221bcca5afc5f1e8e4974fe00f4720c8262a34c60e51f0a0e2b9c22f7375",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "income/vat.html": {
+    "digest": "c9861121ca88125fe9ab19256552d3ab614a1e102ff53433ececcbf6ff96056d",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "index.html": {
+    "digest": "ffd36c94bf3eb40cb8e2a7d57d0ee79ff8e2ee02eeb4ebafe9de75abbb88e66a",
+    "modified": "2026-10-06",
+    "published": "2026-04-02"
+  },
+  "inherit/gift.html": {
+    "digest": "0f78cbf8bb1846bf2aa8d661376e27c15519b739cde366e755a7e2a58e325dae",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "inherit/inheritance.html": {
+    "digest": "ba7b8d17daaab42c8e5796f62e56bbe5cf10cd92feb41099039fb6d13e3f30ca",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "loan/calculator.html": {
+    "digest": "3ca4a7fad00fc2f7347ef91707bdf6a910ff89cb55c852060e1343a0e08df267",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "loan/dsr.html": {
+    "digest": "d54d4175a207f85ff8d05f6d8e44e4ed2ddc75f63c9f44e73115eb585d72d2ed",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "loan/ltv.html": {
+    "digest": "8a5e4c97b10d9543eb7c6a54999763e793e716eb9e5f465559f6083432be7c33",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "other/customs-info.html": {
+    "digest": "3cd927d3a004b7c27ca57405a55c1557fa0d0bbaeb817b373f985e7287937de6",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "other/excise-info.html": {
+    "digest": "960ac11aec3bea367828ca7ff9690ada5c88d7f38b9b15ac0cea006aeb17963f",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "other/fuel.html": {
+    "digest": "f30767968e506c51bb9aa0c8aba00fda99b042648f6bcffe018e9d92fd02858a",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "other/leisure.html": {
+    "digest": "e8f61de0c43692a7bdc2021b01715b6824dadeb0a52af09e325b0e93f73b65f0",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "other/liquor.html": {
+    "digest": "cb4d18813f58ca4434f010a8c8b157d92a4ad1094a9f3dfa223ce864c45294f2",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "other/no-son-day.html": {
+    "digest": "8e72b3e9ce7d78510a6a3d5d07637e60d4dfb3b8e138a70e1d306b4128b14429",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "other/progressive-tax.html": {
+    "digest": "821ca03c984888d93dfd60a874bdb710b5b0400104fb6cff7aff113bb68563e1",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "other/resident.html": {
+    "digest": "c10ba5a7b611f6716cde2385d399614f5222ea6e2ba71d9c4bfebd235453127c",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "other/tobacco.html": {
+    "digest": "2a4fdd719d81dca79bfe68948c5413562f159f64576a502a52664d2ce6c0891c",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "privacy.html": {
+    "digest": "3ede90e4dc16935efdac0908289a6669b32506c9b71dec4640c22a4d07d1f002",
+    "modified": "2026-10-06",
+    "published": "2026-04-07"
+  },
+  "real-estate/acquisition.html": {
+    "digest": "0f506a88ba696926f46655d39bdc2e6ae74a1e93ed598a081e58cd94bc88ad7c",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "real-estate/capital-gains.html": {
+    "digest": "5d5dc53b2874a81b7c8eae690dfa7beeacffbe74441a44f168da16788df69726",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "real-estate/commission.html": {
+    "digest": "5d766ee5d7b01a6a0cc5ebab4f8b493cc2a27918c32bf560210fa1f528f84df9",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "real-estate/comprehensive.html": {
+    "digest": "0397bb52478c3dc7e6e6df0da2f148304629c7fc48e4bebfb4843826c885ba86",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "real-estate/officetel-acquisition.html": {
+    "digest": "9b9ae67ef88b0fd7ddddef70441a485ca21f3c2963ad537777e14097d6970852",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "real-estate/property-tax.html": {
+    "digest": "6b400b522df3198409694430a7d2f105470abbeb8fcebe3f3301f70c45e7e582",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "real-estate/registration.html": {
+    "digest": "88c882c592a64f0d643b8e6a11ffb88e9ac3a270aa6ae009f59847397095baec",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "real-estate/rental-income.html": {
+    "digest": "0262fcc0ddb31e703d6b7e781331b3e0def70f285727738317677584cb370a29",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "real-estate/stamp.html": {
+    "digest": "3fd68bb8bd9ae418f05986a294a6e35c010e4c306d2f695990d087d13c6e93c9",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "real-estate/total-cost.html": {
+    "digest": "5d379b31a8c9acf6fe3d32b03402f46ed507a3131f01766fae816d3f2c8b2651",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "stocks/dividend.html": {
+    "digest": "da9b6b8c6ac40f6899150a9b4dc27b8e5f2ae0484d5cc34582d2c2a8c5a422cf",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "stocks/domestic.html": {
+    "digest": "1332b3a221514b2d923e71cad248747b8109104c0b113a9028b1c8594f8b618c",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "stocks/foreign.html": {
+    "digest": "ee5d5f9fc12f3918819e16bd2b14722bc0e5e78307001dc5aacbc620fdc99bdf",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "stocks/transaction.html": {
+    "digest": "00f9f683850687b76a203cc99f59f33d780db63f85e94e673cf97d0a72cfd856",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "vehicle/acquisition.html": {
+    "digest": "921617df77a985516498aac8a054857085cc53cd98984ef5302eef5a81e82c0b",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "vehicle/buying.html": {
+    "digest": "436ca7ceff612505160aa1e7052da0893720b77a5d7c70c990a46ab94bb5f4dc",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "vehicle/excise.html": {
+    "digest": "5d8959541b65be86f217b5aa54087da468bfb59a1ca56c37827d36c0ba18d843",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "vehicle/installment.html": {
+    "digest": "7443f9d1d081d668f236dcc7b2e19688cf600e36577af33f051e7fa772d40fa4",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "vehicle/overdue.html": {
+    "digest": "67f8a8b8f7cc669483e01beaf0812bee4473de7acb8f37cb9552534a161871ce",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  },
+  "vehicle/vehicle-tax.html": {
+    "digest": "6f63650b834c4a6146f959d3f50df5ace9f767f49d1b4e2bbd6a96f3ecf5badb",
+    "modified": "2026-10-06",
+    "published": "2026-04-18"
+  }
+}

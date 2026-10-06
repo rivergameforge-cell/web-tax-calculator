@@ -37,7 +37,7 @@
 
 ## 발견 사항
 
-### F1. P1 / OPEN: 2026년 설명에 과거 요율과 계산 불일치가 남아 있다
+### F1. P1 / RESOLVED_VERIFIED: 2026년 설명에 과거 요율과 계산 불일치가 남아 있다
 
 근거:
 
@@ -54,7 +54,7 @@
 
 공식 근거: [국세청 법인세 세율](https://d.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7746&mi=2372), [국민연금공단 보험료·상하한 안내](https://www.nps.or.kr/eng/ntnlpnsplan/cntb/getOHAI0013M0.do), [보건복지부 건강보험 재원조달](https://www.mohw.go.kr/menu.es?mid=a10705010500).
 
-### F2. P1 / OPEN: 검색용 URL과 실제 계산 기능이 분리되어 있다
+### F2. P1 / RESOLVED_VERIFIED: 검색용 URL과 실제 계산 기능이 분리되어 있다
 
 근거:
 
@@ -72,7 +72,7 @@
 
 공식 근거: [Google JavaScript SEO](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics?hl=ko), [네이버 JavaScript 검색 최적화](https://searchadvisor.naver.com/guide/seo-advanced-javascript).
 
-### F3. P1 / OPEN: 신뢰를 뒷받침하는 페이지별 검증 근거가 부족하다
+### F3. P1 / RESOLVED_VERIFIED: 신뢰를 뒷받침하는 페이지별 검증 근거가 부족하다
 
 근거:
 
@@ -88,7 +88,7 @@
 
 공식 근거: [Google 사용자 중심 콘텐츠 안내](https://developers.google.com/search/docs/fundamentals/creating-helpful-content).
 
-### F4. P2 / OPEN: 주 메뉴가 크롤링 가능한 링크로 구성되지 않았다
+### F4. P2 / RESOLVED_VERIFIED: 주 메뉴가 크롤링 가능한 링크로 구성되지 않았다
 
 근거:
 
@@ -103,7 +103,7 @@
 
 공식 근거: [네이버 리소스와 링크 관리](https://searchadvisor.naver.com/guide/resource-and-link).
 
-### F5. P2 / OPEN: 페이지별 날짜 관리가 실제 수정·검토 이력과 연결되지 않았다
+### F5. P2 / RESOLVED_VERIFIED: 페이지별 날짜 관리가 실제 수정·검토 이력과 연결되지 않았다
 
 근거:
 
@@ -119,7 +119,7 @@
 
 공식 근거: [Google 사이트맵 날짜 안내](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=ko).
 
-### F6. P2 / OPEN: 새 글과 계산기의 문맥상 연결이 약하다
+### F6. P2 / RESOLVED_VERIFIED: 새 글과 계산기의 문맥상 연결이 약하다
 
 근거:
 
@@ -132,7 +132,7 @@
 
 완료 조건: 실제 최신 글 목록을 갱신하고, 계산기에서 관련 사례·가이드로, 가이드에서 해당 계산기 대표 URL로 연결한다. 같은 검색 의도를 가진 글은 각각 어떤 질문을 해결하는지 분명히 한다.
 
-### F7. P3 / OPEN: 개인정보 설명과 구현의 표현을 대조해야 한다
+### F7. P3 / RESOLVED_VERIFIED: 개인정보 설명과 구현의 표현을 대조해야 한다
 
 근거:
 
@@ -185,3 +185,56 @@ Google은 애드센스에 독창적이고 이용자에게 도움이 되는 콘�
 - 실제 구글·네이버 검색: 사이트의 여러 페이지가 검색됨을 확인, 구글 4대보험 설명문의 과거 요율 확인.
 - 공식 자료: Google·네이버의 검색 및 애드센스 안내, 국세청·국민연금공단·보건복지부 요율 자료 대조.
 - 서비스 코드를 변경하지 않았으므로 빌드·계산기 전체 회귀 테스트는 실행하지 않았다. 원인 분석을 완료했으며 F1~F7의 수정 검증은 남아 있다.
+
+## 수정 검증: 2026-10-06
+
+후속 요청: “전부 수정해서 커밋푸시하고 배포하자”. 위의 근거·줄 번호·검증 기록은 수정 전 Pass 1의 기록이다. 아래에서 실제 수정과 후속 검증을 구분한다.
+
+### 범위 매니페스트
+
+- 원래 99개 공개 URL과 `robots.txt`, `ads.txt`, 메타·canonical·JSON-LD·내부 링크·로드 자산.
+- `index.html`, `js/app.js`, `js/router.js`, `js/ui.js`, `js/theme.js`, `js/ads.js` 및 기존 폼·결과 UI의 CSS 6개.
+- 계산기 페이지 56개의 콘텐츠·생성 결과, `build/build.py`, `build/site_html.py`, `build/page_metadata.py`, `build/page_dates.json`, 공통 템플릿과 `css/static-page.css`.
+- 블로그 38개의 연결 구조, `build/blog_build.py`, 수정한 사이트용 원고·HTML 및 홈 최신 글. 급여 2편·체납·LTV·DSR은 본문 예시를 별도 대조.
+- 변경 계산 모듈: 취득세·부동산 종합 비용·보험·급여·부가세·자동차세 체납·LTV·DSR. 법인세 모듈은 일반세율·구간 경계 검증에 포함.
+- 자동 검사: `tests/seo_structure_test.py`, `tests/calculator_regression.cjs`, `tests/navigation_regression.cjs`, `tests/check_http.py`.
+- 제외 유지: 모든 세법 예외·모든 블로그의 법률 감사, 공식 간이세액표 원천징수 재현, 대출 규제 심사 전체 재현, Lighthouse/실측 CWV, 로그인된 AdSense·Search Console·서치어드바이저 보고서. 기존 사용자 변경 파일·미발행 원고·티스토리 패키지는 배포 변경에서 제외.
+
+### Pass 2: 구현과 재검토
+
+F1: 콘텐츠 원본과 메타·FAQ·예시를 수정하고 생성 HTML을 갱신했다. 법인세 일반세율, 보험 상하한·요율, 취득세 지방교육세·농특세, 부가세 유형·환급·간이 납부 면제, 주민세 안내, 체납 추가분, 증권거래세·연금·월세 예시를 정리했다. 미구현 감면·한시 탄력세율·정산은 적용 범위에 명시했다.
+
+F2: 정적 URL에 기존 입력·결과 뷰와 해당 계산 모듈 하나를 직접 포함했다. 실제 입력 도구 46개와 입력이 불필요한 안내 10개를 구분하며 WebApplication 스키마도 실제 도구에만 제공한다. 본문은 JS 없이 읽을 수 있다.
+
+F3: 56개 페이지에 주제별 공식 링크·적용 범위·발행/수정일·편집 주체를 제공했다. '검토일'은 구조·표시 검토임을 명시하며 전 세법 검증으로 위장하지 않는다. 소개에 실제 재현 사례를 공개하고 확인되지 않은 공식 시뮬레이터 교차 검증·즉시 업데이트·응답 보장을 제거했다.
+
+F4/F6: 사이드바·홈 카드·검색 결과·공유·블로그 CTA를 정적 대표 주소로 정리했다. 각 계산기에 관련 가이드를 연결하고 홈의 최근 글은 실제 게시 목록에서 생성한다. 모든 카테고리 앵커가 실제 존재한다.
+
+F5: Git 최초 공개 이력·내용 서명으로 날짜를 관리하고 발행일/수정일/기준일을 분리했다. 내용이 같은 재빌드에서 sitemap·날짜·출력 파일이 바뀌지 않는 회귀 검사를 추가했다. 관련 글 정렬도 커밋 시각 대신 공개 발행일을 사용하여 커밋 후 재빌드가 달라지지 않게 했다.
+
+F7: Analytics 미설치, 테마 localStorage, 외부 자원 요청, 공유 URL·이메일의 정보 전달을 실제 구현에 맞춰 설명했다. 확인되지 않은 일괄 1년 보관·보안 점검 주장을 제거했다. 법률 자문 인증은 하지 않았다.
+
+### Pass 3: 추가 경계값과 호환 결함
+
+- P1 / RESOLVED_VERIFIED: LTV의 과거 9억원 구간별 비율과 관련 글의 잘못된 현재 기준. 일반 40/70%, 수도권 여부·다주택 제한·시가별 상한으로 수정했다. 금융위원회 2026-06-30 및 2025-10-15 자료를 대조하고 12억→4.8억, 18억→4억, 26억→2억을 회귀 검사했다. 생애최초·정책·경과규정은 별도라고 명시했다.
+- P1 / RESOLVED_VERIFIED: DSR 고정 가산금리와 만기일시의 이자만 반영하는 모형. 추가 금리를 입력하도록 하고 단순 연환산 원금도 반영했다. 금융기관 규제 산정만기를 재현한다는 주장은 제거했다. 원리금균등 역산 기준을 명시했다.
+- P2 / RESOLVED_VERIFIED: 보험·급여의 부동소수점 절사로 연금·고용보험이 1원 낮아지는 경계. 정수 분자/분모로 수정하고 급여 표·원고 예시를 갱신했다. 과세 월 300만원 연금 142,500원, 연봉 5천만원 예시 고용보험 35,700원·순액 3,521,240원을 대조했다.
+- P2 / RESOLVED_VERIFIED: 같은 홈페이지 문서에서 기존 해시 URL로 이동하면 초기화가 다시 실행되지 않음. 실제 브라우저에서 발견하여 hashchange 처리·replace 리디렉션·기존 query 보존을 추가했다. 초기 URL과 같은 문서 내 이동을 각각 회귀 검사했다.
+- P3 / RESOLVED_VERIFIED: NaN 입력과 유효하지 않은 날짜가 계산 결과로 이어질 수 있는 변경 모듈 경계. 수정한 모듈의 유효성 검사를 보완했다.
+
+### Pass 4: 전체 범위 최종 재검토
+
+매니페스트 전체의 로드·링크·날짜·스키마·데이터 경계를 다시 추적하고 생성 원본/결과의 일치를 검사했다. 위에서 정의한 기술적 수정 범위에 새로운 미해결 발견 사항은 없다. 제외한 전 세법 예외까지 깨끗하다고 판정하지 않는다.
+
+실행 결과:
+
+- `python3 -m unittest discover -s tests -p '*_test.py' -v`: 6개 통과. 99개 문서의 단일 H1·고유 title·canonical·ID·내부 자원·링크, 46개 도구 스키마, 날짜 일치·빌드 2회 동일 출력, 중첩 HTML 추출, JSON-LD script 종료 방지, 표/링크 변환.
+- Node `tests/calculator_regression.cjs`: 계산식·경계값 단언 50개 통과.
+- Node `tests/navigation_regression.cjs`: 초기 해시·hashchange·query 보존·잘못된 경로 거부 단언 7개 통과.
+- Node `--check`: 전체 JS 51개 구문 검사 통과.
+- `python3 tests/check_http.py http://localhost:8081`: 사이트맵 99개 페이지와 지원 파일 101개의 HTTP 200·차단 헤더 부재·canonical·체크아웃과 동일한 응답 내용 확인.
+- 실제 IAB 브라우저: 데스크톱·390×844·320×720에서 계산기/안내 56개 모두 초기화와 가로 넘침 검사 통과. 좁은 뷰포트의 폼을 스크린샷으로 확인.
+- 실제 입력: 법인세 5억→8,800만, 보험 300만→291,521, 급여 5천만→3,521,240, 취득세·종합비용 85/86㎡, 일반 부가세 환급·간이 면제/숙박 25%, 체납 45만원 경계·월말 기간, LTV 수도권·다주택·40%, DSR 3%p 입력·초기화 확인.
+- 실제 탐색: 모바일 메뉴 aria-expanded·정적 목적지·뒤로가기, 데스크톱 검색 이동, 기존 해시→정적 URL query 보존 확인. 부가세 초기화는 디바운스 완료 후 일반과세 라벨·선택 상태 복귀를 확인했다.
+
+배포는 후속 커밋·푸시 및 Pages 실행과 프로덕션 HTTP 검증에서 확인한다. Search Console/네이버 재수집 제출과 AdSense 재심사 신청은 수행하지 않았으며, 승인·전체 색인·검색 순위를 보장하지 않는다.

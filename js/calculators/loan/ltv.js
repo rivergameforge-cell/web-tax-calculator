@@ -1,8 +1,8 @@
 /* ===== LTV 계산기 (2026년 기준) ===== */
 const CalcLTV = (() => {
 
-  // LTV 한도 테이블 — { lo: 9억 이하 LTV%, hi: 9억 초과 LTV% }
-  // 2026년 현행 기준: 투기과열 40/20%, 조정대상 50/30%, 비규제 70%
+  // 일반 주택구입 LTV 비율 (lo/hi는 기존 결과 표시 계약을 유지).
+  // 일반 주택 구입: 규제지역 40%, 비규제지역 70%; 특례·경과규정 별도.
   // 처분 조건부 1주택 = 무주택자와 동일 적용
   const LTV_TABLE = {
     'non-regulated': {
@@ -11,18 +11,18 @@ const CalcLTV = (() => {
       multi:    { lo: 70, hi: 70 },
     },
     'regulated': {          // 조정대상지역
-      homeless: { lo: 50, hi: 30 },
-      '1house': { lo: 50, hi: 30 },  // 처분 조건부 = 무주택 동일
+      homeless: { lo: 40, hi: 40 },
+      '1house': { lo: 40, hi: 40 },  // 처분 조건부 = 무주택 동일
       multi:    { lo: 0,  hi: 0  },
     },
     'speculative': {        // 투기과열지구
-      homeless: { lo: 40, hi: 20 },
-      '1house': { lo: 0,  hi: 0  },  // 원칙적 불가
+      homeless: { lo: 40, hi: 40 },
+      '1house': { lo: 40, hi: 40 },  // 처분 조건부
       multi:    { lo: 0,  hi: 0  },
     },
-    'permit': {             // 토허제 (토지거래허가구역)
-      homeless: { lo: 40, hi: 20 },  // 투기과열지구와 동일
-      '1house': { lo: 0,  hi: 0  },  // 실거주 외 원칙적 불가
+    'permit': {             // 토지거래허가와 규제지역에 모두 해당하는 경우
+      homeless: { lo: 40, hi: 40 },  // 투기과열지구와 동일
+      '1house': { lo: 40, hi: 40 },  // 처분 조건부·허가 요건 별도
       multi:    { lo: 0,  hi: 0  },
     },
   };
@@ -34,8 +34,8 @@ const CalcLTV = (() => {
     'speculative': true,
     'permit':      true,
   };
-  function getAmountCap(region, propertyValue) {
-    if (!AMOUNT_CAPS[region]) return Infinity;
+  function getAmountCap(region, propertyValue, isCapitalArea) {
+    if (!AMOUNT_CAPS[region] && !isCapitalArea) return Infinity;
     if (propertyValue <= 1_500_000_000) return 600_000_000;
     if (propertyValue <= 2_500_000_000) return 400_000_000;
     return 200_000_000;
@@ -45,7 +45,7 @@ const CalcLTV = (() => {
     'non-regulated': '비규제지역',
     'regulated':     '조정대상지역',
     'speculative':   '투기과열지구',
-    'permit':        '토허제(토지거래허가구역)',
+    'permit':        '토지거래허가·규제지역',
   };
   const HOUSING_LABELS = {
     homeless: '무주택',
@@ -54,25 +54,18 @@ const CalcLTV = (() => {
   };
 
   function calculate(params) {
-    const { propertyValue, loanAmount, region, housing, loanType, existingLoan } = params;
-    if (!propertyValue || propertyValue <= 0) return null;
+    const { propertyValue, loanAmount = 0, region, housing, loanType, existingLoan = 0, isCapitalArea } = params;
+    if (![propertyValue, loanAmount, existingLoan].every(Number.isFinite)) return null;
+    if (propertyValue <= 0 || loanAmount < 0 || existingLoan < 0) return null;
 
-    const rates = LTV_TABLE[region]?.[housing] ?? { lo: 70, hi: 70 };
+    if (!LTV_TABLE[region]?.[housing]) return null;
+    const rates = isCapitalArea && housing === 'multi' ? { lo: 0, hi: 0 } : LTV_TABLE[region][housing];
     const { lo, hi } = rates;
 
-    // 9억 구간별 LTV 적용
-    const TIER = 900_000_000;
-    let maxLoanByLTV;
-    if (lo === 0) {
-      maxLoanByLTV = 0;
-    } else if (propertyValue <= TIER) {
-      maxLoanByLTV = Math.floor(propertyValue * lo / 100);
-    } else {
-      maxLoanByLTV = Math.floor(TIER * lo / 100 + (propertyValue - TIER) * hi / 100);
-    }
+    const maxLoanByLTV = Math.floor(propertyValue * lo / 100);
 
     // 금액 상한 적용
-    const amountCap = getAmountCap(region, propertyValue);
+    const amountCap = getAmountCap(region, propertyValue, isCapitalArea);
     const maxLoanTotal = Math.min(maxLoanByLTV, amountCap);
     const capApplied = amountCap < Infinity && maxLoanByLTV > amountCap;
 
@@ -95,7 +88,7 @@ const CalcLTV = (() => {
       propertyValue,
       loanAmount: loanAmount || 0,
       existingLoan: existingLoan || 0,
-      region, housing, loanType,
+      region, housing, loanType, isCapitalArea,
       ltvLo: lo, ltvHi: hi,
       maxLoanByLTV, amountCap, capApplied,
       maxLoanTotal, maxLoanAvailable,
@@ -144,7 +137,7 @@ const CalcLTV = (() => {
         </div>
         <div class="notice-box ${r.isOver ? 'danger' : 'info'}" style="margin-top:12px">
           ${r.isOver
-            ? `<strong>한도 초과!</strong> 최대 대출가능액(${UI.fmtWon(r.maxLoanAvailable)})을 초과하여 대출이 어려울 수 있습니다.`
+            ? `<strong>한도 초과!</strong> LTV 기준 한도 추정액(${UI.fmtWon(r.maxLoanAvailable)})을 초과하여 대출이 어려울 수 있습니다.`
             : `<strong>LTV 여유 있음</strong> ${r.regionLabel} · ${r.housingLabel} 기준 한도 이내입니다.`}
         </div>`;
     }
@@ -152,7 +145,7 @@ const CalcLTV = (() => {
     // 금액 상한 안내
     const capSection = r.capApplied ? `
       <div class="notice-box warning" style="margin-top:8px">
-        <strong>금액 상한 적용</strong> 주택 시가 ${r.propertyValue > 2_500_000_000 ? '25억 초과 → 최대 2억원' : '15억 초과~25억 → 최대 4억원'} 규제가 적용되었습니다 (LTV 계산액 ${UI.fmtWon(r.maxLoanByLTV)} → ${UI.fmtWon(r.amountCap)}).
+        <strong>금액 상한 적용</strong> 주택 시가 ${r.propertyValue > 2_500_000_000 ? '25억 초과 → 최대 2억원' : r.propertyValue > 1_500_000_000 ? '15억 초과~25억 → 최대 4억원' : '15억 이하 → 최대 6억원'} 규제가 적용되었습니다 (LTV 계산액 ${UI.fmtWon(r.maxLoanByLTV)} → ${UI.fmtWon(r.amountCap)}).
       </div>` : '';
 
     // 특별 안내 메시지
@@ -203,7 +196,7 @@ const CalcLTV = (() => {
         <span class="br-value">- ${UI.fmtWon(r.existingLoan)}</span>
       </div>` : ''}
       <div class="breakdown-row total" style="font-size:15px">
-        <span class="br-label">최대 대출가능액</span>
+        <span class="br-label">LTV 기준 한도 추정액</span>
         <span class="br-value" style="color:var(--accent)">${isBlocked ? '대출 불가' : UI.fmtWon(r.maxLoanAvailable)}</span>
       </div>
       ${r.loanAmount > 0 ? `
@@ -251,6 +244,7 @@ const CalcLTV = (() => {
         housing:       view.querySelector('input[name="ltv-housing"]:checked')?.value || 'homeless',
         loanType:      view.querySelector('input[name="ltv-loantype"]:checked')?.value || 'bank',
         existingLoan:  getNum('ltv-existing-loan'),
+        isCapitalArea: view.querySelector('#ltv-capital-area')?.checked || false,
       };
     }
 
@@ -271,7 +265,7 @@ const CalcLTV = (() => {
         const rows = [
           { label: '주택 가격',     value: UI.fmtWon(r.propertyValue) },
           { label: 'LTV 한도',      value: r.ltvLo === r.ltvHi ? `${r.ltvLo}%` : `${r.ltvLo}% / ${r.ltvHi}%` },
-          { label: '최대 대출가능액', value: UI.fmtWon(r.maxLoanAvailable) },
+          { label: 'LTV 기준 한도 추정액', value: UI.fmtWon(r.maxLoanAvailable) },
         ];
         if (r.currentLTV !== null) rows.push({ label: '현재 LTV', value: r.currentLTV.toFixed(1) + '%' });
         await UI.copyText(UI.formatResultForCopy('LTV 계산', rows));
@@ -282,6 +276,8 @@ const CalcLTV = (() => {
     if (btnReset) {
       btnReset.addEventListener('click', () => {
         view.querySelectorAll('input[type="text"]').forEach(el => el.value = '');
+        const capital = view.querySelector('#ltv-capital-area');
+        if (capital) capital.checked = false;
         const defaultRadios = { 'ltv-region': 'non-regulated', 'ltv-housing': 'homeless', 'ltv-loantype': 'bank' };
         Object.entries(defaultRadios).forEach(([name, value]) => {
           const radio = view.querySelector(`input[name="${name}"][value="${value}"]`);

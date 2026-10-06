@@ -14,13 +14,10 @@ const CalcVehicleOverdue = (() => {
 
     if (now <= due) return 0;
 
-    let months = (now.getFullYear() - due.getFullYear()) * 12
-               + (now.getMonth() - due.getMonth());
-
-    // 일자가 납기일보다 이전이면 1개월 차감
-    if (now.getDate() < due.getDate()) {
-      months -= 1;
-    }
+    let months = (now.getUTCFullYear() - due.getUTCFullYear()) * 12
+               + (now.getUTCMonth() - due.getUTCMonth());
+    const lastDay = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + 1, 0)).getUTCDate();
+    if (now.getUTCDate() < Math.min(due.getUTCDate(), lastDay)) months -= 1;
 
     return Math.max(0, months);
   }
@@ -31,6 +28,8 @@ const CalcVehicleOverdue = (() => {
 
     const due = new Date(dueDate);
     const now = new Date(today);
+    if (!Number.isFinite(tax) || !Number.isFinite(due.getTime()) || !Number.isFinite(now.getTime()) || dueDate < '2024-01-01') return null;
+    if (dueDate !== due.toISOString().slice(0, 10) || today !== now.toISOString().slice(0, 10)) return null;
 
     if (now <= due) {
       return {
@@ -50,8 +49,7 @@ const CalcVehicleOverdue = (() => {
     const months = calcMonthsDiff(dueDate, today);
     const baseSurcharge = Math.floor(tax * BASE_SURCHARGE_RATE);
 
-    // 중가산금: 첫 달은 가산금만, 1개월 초과 시부터 매월 0.75%
-    const additionalMonths = Math.min(Math.max(0, months - 1), MAX_MONTHS);
+    const additionalMonths = tax >= 450000 ? Math.min(months, MAX_MONTHS) : 0;
     const additionalSurcharge = Math.floor(tax * MONTHLY_RATE * additionalMonths);
 
     const totalSurcharge = baseSurcharge + additionalSurcharge;
@@ -72,7 +70,7 @@ const CalcVehicleOverdue = (() => {
   }
 
   function formatPeriod(months) {
-    if (months <= 0) return '미체납';
+    if (months <= 0) return '1개월 미만';
     const y = Math.floor(months / 12);
     const m = months % 12;
     if (y > 0 && m > 0) return `${y}년 ${m}개월`;
@@ -85,7 +83,7 @@ const CalcVehicleOverdue = (() => {
       container.innerHTML = `
         <div class="result-empty">
           <div class="result-empty-icon">🚗</div>
-          자동차세와 납부기한을 입력해주세요
+          자동차세와 2024년 이후 납부기한을 입력해주세요
         </div>`;
       return;
     }
@@ -131,7 +129,7 @@ const CalcVehicleOverdue = (() => {
       </div>
       ${additionalMonths >= MAX_MONTHS ? `
       <div class="breakdown-row sub">
-        <span class="br-label" style="color:var(--danger);font-size:0.85em">중가산금 상한 (60개월, 45%) 도달</span>
+        <span class="br-label" style="color:var(--danger);font-size:0.85em">월별 추가분 상한 (60개월, 39.6%) 도달</span>
         <span class="br-value"></span>
       </div>` : ''}
       <div class="breakdown-row">

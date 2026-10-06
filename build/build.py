@@ -14,8 +14,14 @@ build.py — 정적 계산기 페이지 빌더
 import json
 import re
 import sys
+import hashlib
+import subprocess
+from html import escape
 from datetime import date
 from pathlib import Path
+
+from page_metadata import LIMITS, PAGE_LIMITS, REFERENCES, REVIEW_DATE
+from site_html import SiteHTML
 
 # ---------------------------------------------------------------------------
 # 설정
@@ -26,6 +32,106 @@ CONTENT_DIR = ROOT / "build" / "content"
 TEMPLATE_PATH = ROOT / "build" / "templates" / "calculator-page.html"
 OUTPUT_ROOT = ROOT
 SITEMAP_PATH = ROOT / "sitemap.xml"
+DATES_PATH = ROOT / "build" / "page_dates.json"
+DATES = json.loads(DATES_PATH.read_text()) if DATES_PATH.exists() else {}
+SPA = None
+MODULES = {}
+GUIDES = {}
+
+
+def git_date(path: Path, first=False) -> str:
+    args = ['git', 'log', '-1', '--format=%as']
+    if first:
+        args.append('--diff-filter=A')
+    result = subprocess.run(args + ['--', str(path.relative_to(ROOT))], cwd=ROOT,
+                            capture_output=True, text=True, check=True)
+    return result.stdout.strip() or REVIEW_DATE
+
+
+def document_dates(path: Path, signature=None) -> dict:
+    key = path.relative_to(ROOT).as_posix()
+    content = signature if signature is not None else path.read_text(encoding='utf-8')
+    digest = hashlib.sha256(content.encode()).hexdigest()
+    previous = DATES.get(key)
+    if previous and previous['digest'] == digest:
+        return previous
+    dirty = subprocess.run(['git', 'diff', 'HEAD', '--', key], cwd=ROOT,
+                           capture_output=True, text=True, check=True).stdout
+    dates = {'published': previous['published'] if previous else git_date(path, first=True),
+             'modified': date.today().isoformat() if previous or dirty else git_date(path),
+             'digest': digest}
+    DATES[key] = dates
+    return dates
+
+
+def load_runtime():
+    global SPA
+    SPA = SiteHTML((ROOT / 'index.html').read_text(encoding='utf-8'))
+    for src in SPA.scripts:
+        if not src.startswith('js/calculators/'):
+            continue
+        code = (ROOT / src.split('?')[0]).read_text(encoding='utf-8')
+        view = re.search(r"getElementById\('(?P<id>view-[^']+)'\)", code)
+        symbol = re.search(r'const (Calc\w+) =', code)
+        if not view or not symbol:
+            raise ValueError(f'Module missing view or initializer: {src}')
+        MODULES[view['id']] = (src, symbol[1], code)
+    for path in sorted((ROOT / 'blog').glob('*.html')):
+        if path.name == 'index.html':
+            continue
+        raw = path.read_text(encoding='utf-8')
+        doc = SiteHTML(raw)
+        title_match = re.search(r'<h1[^>]*>(.*?)</h1>', raw, re.DOTALL)
+        if not title_match:
+            raise ValueError(f'Blog missing heading: {path}')
+        title = strip_tags(title_match[1])
+        published = re.search(r'"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})', raw)
+        guide_date = published[1] if published else git_date(path, first=True)
+        for link in set(doc.links):
+            if link.startswith('https://taxcalc.co.kr/'):
+                link = link.removeprefix('https://taxcalc.co.kr')
+            if link.startswith('/#'):
+                route = link[2:]
+            elif link.startswith('/') and not link.startswith('/blog/') and link.endswith('.html'):
+                route = link[1:-5]
+            else:
+                continue
+            GUIDES.setdefault(route, []).append((path, title, guide_date))
+
+
+def render_runtime(route):
+    view_id = 'view-' + route.replace('/', '-')
+    module = MODULES.get(view_id)
+    if not module:
+        return '', '<script src="/js/theme.js"></script><script>Theme.init();</script>', ''
+    if view_id not in SPA.elements:
+        raise ValueError(f'Calculator view missing: {view_id}')
+    src, symbol, code = module
+    view = SPA.elements[view_id]
+    scripts = [src for src in SPA.scripts if src.split('?')[0] in
+               {'js/ui.js', 'js/theme.js', 'js/ads.js'}] + [src]
+    tags = '\n'.join(f'<script src="/{escape(src, quote=True)}"></script>' for src in scripts)
+    tags += (f'\n<script>document.addEventListener("DOMContentLoaded", () => {{'
+             f'Theme.init(); {symbol}.init(); document.body.dataset.calculatorReady = "true";'
+             '});</script>')
+    return f'<section id="calculator" class="static-calculator" aria-label="계산 입력과 결과">{view}</section>', tags, view + code
+
+
+def render_directory(pages):
+    sections = []
+    for category, cat in CATEGORIES.items():
+        links = ''.join(f'<li><a href="/{p["id"]}.html">{escape(p["title"])}</a></li>'
+                        for p in pages.values() if p['id'].startswith(category + '/'))
+        sections.append(f'<section><h3>{cat["label"]}</h3><ul>{links}</ul></section>')
+    return ''.join(sections)
+
+
+def render_guides(route):
+    guides = sorted(GUIDES.get(route, []), key=lambda item: (item[2], item[0].name), reverse=True)[:3]
+    if not guides:
+        return ''
+    links = ''.join(f'<li><a href="/blog/{path.name}">{escape(title)}</a></li>' for path, title, _ in guides)
+    return f'<section class="static-prose"><h2>함께 읽는 세금 가이드</h2><ul>{links}</ul></section>'
 
 CATEGORIES = {
     "loan":        {"label": "대출",       "icon": "🏦"},
@@ -108,7 +214,7 @@ def render_faq_jsonld(faqs: list[dict]) -> str:
             for faq in faqs
         ],
     }
-    body = json.dumps(data, ensure_ascii=False, indent=2)
+    body = json.dumps(data, ensure_ascii=False, indent=2).replace('<', '\\u003c')
     return '  <script type="application/ld+json">\n' + body + "\n  </script>"
 
 
@@ -174,9 +280,7 @@ def render_related(meta: dict, all_pages: dict) -> str:
             # 정적 HTML 링크
             items.append(f'<a href="/{rid}.html">{target["title"]}</a>')
         else:
-            # 아직 정적 페이지 없음 → SPA 해시로 이동
-            label = rid.split("/")[-1].replace("-", " ")
-            items.append(f'<a href="/#{rid}">{label}</a>')
+            raise ValueError(f'{meta["id"]}: unknown related route {rid}')
     return "\n        ".join(items)
 
 
@@ -189,13 +293,43 @@ def render_page(meta: dict, template: str, all_pages: dict) -> str:
     # 예: real-estate/acquisition.html → "../" 이 아닌 "/"로 고정해 절대 경로 사용
     faqs = extract_faqs(meta["body"])
     faq_jsonld = render_faq_jsonld(faqs)
+    calculator, scripts, runtime_signature = render_runtime(meta['id'])
+    sources = REFERENCES[meta['id']]
+    limits = PAGE_LIMITS.get(meta['id'], LIMITS[category_id])
+    guides = render_guides(meta['id'])
+    signature = json.dumps(meta, ensure_ascii=False, sort_keys=True) + template + runtime_signature
+    signature += json.dumps(sources, ensure_ascii=False) + limits + guides
+    signature += ''.join((ROOT / src.split('?')[0]).read_text(encoding='utf-8')
+                         for src in SPA.scripts if src.startswith(('js/ui.js', 'js/theme.js', 'js/ads.js')))
+    signature += ''.join(path.read_text(encoding='utf-8') for path in sorted((ROOT / 'css').glob('*.css')))
+    dates = document_dates(ROOT / f'{meta["id"]}.html', signature)
+    meta['_modified'] = dates['modified']
+    url = f'https://taxcalc.co.kr/{meta["id"]}.html'
+    schema = [{
+        '@context': 'https://schema.org', '@type': 'WebPage', 'name': meta['title'],
+        'url': url, 'description': meta['metaDescription'], 'inLanguage': 'ko',
+        'datePublished': dates['published'], 'dateModified': dates['modified'],
+        'author': {'@type': 'Organization', 'name': 'TaxCalc Korea'},
+    }, {
+        '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+        'itemListElement': [
+            {'@type': 'ListItem', 'position': 1, 'name': 'TaxCalc Korea', 'item': 'https://taxcalc.co.kr/'},
+            {'@type': 'ListItem', 'position': 2, 'name': cat['label'], 'item': f'https://taxcalc.co.kr/#calculators-{category_id}'},
+            {'@type': 'ListItem', 'position': 3, 'name': meta['title'], 'item': url},
+        ],
+    }]
+    if calculator:
+        schema.append({'@context': 'https://schema.org', '@type': 'WebApplication',
+                       'name': meta['title'] + ' | TaxCalc Korea', 'url': url,
+                       'applicationCategory': 'FinanceApplication', 'operatingSystem': 'Web',
+                       'inLanguage': 'ko', 'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'KRW'}})
 
     replacements = {
-        "{{META_TITLE}}":       meta["metaTitle"],
-        "{{META_DESCRIPTION}}": meta["metaDescription"],
+        "{{META_TITLE}}":       escape(meta["metaTitle"].removesuffix(' | 세금계산기'), quote=True),
+        "{{META_DESCRIPTION}}": escape(meta["metaDescription"], quote=True),
         "{{META_KEYWORDS}}":    ",".join(meta["keywords"]),
-        "{{TITLE}}":            meta["title"],
-        "{{LEAD}}":             meta["lead"],
+        "{{TITLE}}":            escape(meta["title"]),
+        "{{LEAD}}":             escape(meta["lead"]),
         "{{ROUTE_ID}}":         meta["id"],
         "{{CATEGORY_ID}}":      category_id,
         "{{CATEGORY_LABEL}}":   cat["label"],
@@ -204,6 +338,16 @@ def render_page(meta: dict, template: str, all_pages: dict) -> str:
         "{{BODY}}":             meta["body"],
         "{{RELATED_LINKS}}":    render_related(meta, all_pages),
         "{{FAQ_JSONLD}}":       faq_jsonld,
+        '{{SCHEMA_JSONLD}}': '<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False).replace('<', '\\u003c') + '</script>',
+        '{{CALCULATOR}}': calculator,
+        '{{RUNTIME_SCRIPTS}}': scripts,
+        '{{PUBLISHED_DATE}}': dates['published'],
+        '{{MODIFIED_DATE}}': dates['modified'],
+        '{{REVIEW_DATE}}': REVIEW_DATE,
+        '{{LIMITS}}': escape(limits),
+        '{{SOURCES}}': ''.join(f'<li><a href="{escape(url, quote=True)}" rel="noopener" target="_blank">{escape(label)}</a></li>' for label, url in sources),
+        '{{GUIDE_LINKS}}': guides,
+        '{{DIRECTORY}}': render_directory(all_pages),
     }
 
     meta["_faq_count"] = len(faqs)
@@ -218,21 +362,23 @@ def write_output(meta: dict, html: str) -> Path:
     """출력 파일 쓰기."""
     out_path = OUTPUT_ROOT / f"{meta['id']}.html"
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(html, encoding="utf-8")
+    out_path.write_text('\n'.join(line.rstrip() for line in html.splitlines()) + '\n', encoding="utf-8")
     return out_path
 
 
 def build_sitemap(pages: dict) -> None:
     """sitemap.xml 재생성."""
-    today = date.today().isoformat()
     lines = ['<?xml version="1.0" encoding="UTF-8"?>']
     lines.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
 
     # 정적 URL
     for loc, changefreq, priority in STATIC_SITEMAP_URLS:
+        relative = loc.removeprefix('https://taxcalc.co.kr/').rstrip('/')
+        path = ROOT / (relative + '/index.html' if relative == 'blog' else relative or 'index.html')
+        modified = document_dates(path)['modified']
         lines.append("  <url>")
         lines.append(f"    <loc>{loc}</loc>")
-        lines.append(f"    <lastmod>{today}</lastmod>")
+        lines.append(f"    <lastmod>{modified}</lastmod>")
         lines.append(f"    <changefreq>{changefreq}</changefreq>")
         lines.append(f"    <priority>{priority}</priority>")
         lines.append("  </url>")
@@ -242,9 +388,10 @@ def build_sitemap(pages: dict) -> None:
     if blog_urls:
         lines.append("  <!-- 블로그 -->")
         for loc, changefreq, priority in blog_urls:
+            modified = document_dates(ROOT / loc.removeprefix('https://taxcalc.co.kr/'))['modified']
             lines.append("  <url>")
             lines.append(f"    <loc>{loc}</loc>")
-            lines.append(f"    <lastmod>{today}</lastmod>")
+            lines.append(f"    <lastmod>{modified}</lastmod>")
             lines.append(f"    <changefreq>{changefreq}</changefreq>")
             lines.append(f"    <priority>{priority}</priority>")
             lines.append("  </url>")
@@ -263,7 +410,7 @@ def build_sitemap(pages: dict) -> None:
         for page in sorted(by_cat[cat_id], key=lambda p: p["id"]):
             lines.append("  <url>")
             lines.append(f"    <loc>https://taxcalc.co.kr/{page['id']}.html</loc>")
-            lines.append(f"    <lastmod>{today}</lastmod>")
+            lines.append(f"    <lastmod>{page['_modified']}</lastmod>")
             lines.append(f"    <changefreq>{page['changefreq']}</changefreq>")
             lines.append(f"    <priority>{page['priority']}</priority>")
             lines.append("  </url>")
@@ -283,6 +430,7 @@ def main() -> int:
 
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
     pages = load_all_content()
+    load_runtime()
 
     if not pages:
         print("[!] content/ 에 페이지가 없습니다.")
@@ -302,6 +450,7 @@ def main() -> int:
             no_faq.append(meta["id"])
 
     build_sitemap(pages)
+    DATES_PATH.write_text(json.dumps(DATES, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
     total_urls = len(pages) + len(STATIC_SITEMAP_URLS) + len(discover_blog_urls())
     print(f"\n▶ sitemap.xml 갱신 완료 ({total_urls} URL)")
     print(f"▶ 빌드 완료: {len(written)}개 파일")

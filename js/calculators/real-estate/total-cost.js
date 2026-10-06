@@ -15,10 +15,10 @@ const CalcTotalCost = (() => {
   }
 
   function getRuralTaxInfo(houseCount, isAdjusted) {
-    if (houseCount === 2 && isAdjusted)  return { rate: 0.006, applyArea: false };
-    if (houseCount === 3 && isAdjusted)  return { rate: 0.010, applyArea: false };
-    if (houseCount === 3 && !isAdjusted) return { rate: 0.006, applyArea: false };
-    if (houseCount >= 4)                 return { rate: 0.010, applyArea: false };
+    if (houseCount === 2 && isAdjusted)  return { rate: 0.006, applyArea: true };
+    if (houseCount === 3 && isAdjusted)  return { rate: 0.010, applyArea: true };
+    if (houseCount === 3 && !isAdjusted) return { rate: 0.006, applyArea: true };
+    if (houseCount >= 4)                 return { rate: 0.010, applyArea: true };
     return { rate: 0.002, applyArea: true };
   }
 

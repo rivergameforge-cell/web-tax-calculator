@@ -33,11 +33,11 @@ const CalcAcquisition = (() => {
     if (type !== 'housing') {
       return { rate: 0.002, applyArea: false }; // 비주택: 0.2% 고정
     }
-    // 주택 중과세율 구간: 면적 조건 없이 고정율
-    if (houseCount === 2 && isAdjusted)  return { rate: 0.006, applyArea: false }; // 0.6%
-    if (houseCount === 3 && isAdjusted)  return { rate: 0.010, applyArea: false }; // 1%
-    if (houseCount === 3 && !isAdjusted) return { rate: 0.006, applyArea: false }; // 0.6%
-    if (houseCount >= 4)                 return { rate: 0.010, applyArea: false }; // 1%
+    // 중과 주택도 국민주택 규모 이하는 농특세 비과세.
+    if (houseCount === 2 && isAdjusted)  return { rate: 0.006, applyArea: true }; // 0.6%
+    if (houseCount === 3 && isAdjusted)  return { rate: 0.010, applyArea: true }; // 1%
+    if (houseCount === 3 && !isAdjusted) return { rate: 0.006, applyArea: true }; // 0.6%
+    if (houseCount >= 4)                 return { rate: 0.010, applyArea: true }; // 1%
     // 1주택 / 2주택 비조정: 0.2%, 전용면적 85㎡ 초과만
     return { rate: 0.002, applyArea: true };
   }
@@ -97,7 +97,7 @@ const CalcAcquisition = (() => {
 
     // 출산·양육 감면: 최대 500만원 (2028년까지, 12억 이하)
     let birthDiscount = 0;
-    if (isBirth && type === 'housing' && price <= 1_200_000_000) {
+    if (isBirth && type === 'housing' && houseCount === 1 && price <= 1_200_000_000) {
       birthDiscount = Math.min(acqTax, 5_000_000);
     }
 
@@ -151,6 +151,7 @@ const CalcAcquisition = (() => {
       let reason = '';
       if (params.type !== 'housing') reason = '주택 취득에만 적용됩니다';
       else if (params.price > 1_200_000_000) reason = '취득가 12억 이하만 적용됩니다';
+      else if (params.houseCount !== 1) reason = '1가구 1주택 등 자격 요건을 별도로 확인하세요';
       if (reason) discountNotice += `<div class="notice-box warning" style="margin:12px 0 0;font-size:12px">⚠️ 출산·양육 감면 미적용 — ${reason}</div>`;
     }
 

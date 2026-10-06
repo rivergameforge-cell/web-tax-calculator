@@ -18,7 +18,9 @@ const CalcSalary = (() => {
 
     // 연금보험료공제 (국민연금 연간, 2026년 7월부터 상한 659만)
     const pensionCap = new Date() >= new Date(2026, 6, 1) ? 6_590_000 : 6_370_000;
-    const pensionDeduction = Math.min(taxableAnnual / 12, pensionCap) * 0.0475 * 12;
+    const pensionMin = new Date() >= new Date(2026, 6, 1) ? 410_000 : 400_000;
+    const pensionDeduction = taxableAnnual > 0
+      ? Math.floor(Math.min(Math.max(Math.floor(taxableAnnual / 12 / 1000) * 1000, pensionMin), pensionCap) * 475 / 10000) * 12 : 0;
 
     // 과세표준
     const taxBase = Math.max(0, earnedIncome - personalDeduction - pensionDeduction);
@@ -75,10 +77,12 @@ const CalcSalary = (() => {
 
     // Step 3: 4대보험
     const salPensionCap = new Date() >= new Date(2026, 6, 1) ? 6_590_000 : 6_370_000;
-    const pension = Math.floor(Math.min(taxableMonthly, salPensionCap) * 0.0475);
-    const health = Math.floor(taxableMonthly * 0.03595);
-    const longCare = Math.floor(health * 0.1314);
-    const employment = Math.floor(taxableMonthly * 0.009);
+    const salPensionMin = new Date() >= new Date(2026, 6, 1) ? 410_000 : 400_000;
+    const pension = taxableMonthly > 0
+      ? Math.floor(Math.min(Math.max(Math.floor(taxableMonthly / 1000) * 1000, salPensionMin), salPensionCap) * 475 / 10000) : 0;
+    const health = Math.min(Math.floor(taxableMonthly * 3595 / 100000), 9_183_480 / 2);
+    const longCare = Math.floor(health * 1314 / 10000);
+    const employment = Math.floor(taxableMonthly * 9 / 1000);
     const totalInsurance = pension + health + longCare + employment;
 
     // Step 4: Income tax
@@ -296,5 +300,5 @@ const CalcSalary = (() => {
     doCalc();
   }
 
-  return { init };
+  return { init, calculate };
 })();

@@ -181,7 +181,8 @@ const UI = (() => {
   // Generate shareable URL with params
   function buildShareUrl(calcId, params) {
     const url = new URL(location.href);
-    url.hash = calcId;
+    url.pathname = `/${calcId}.html`;
+    url.hash = '';
     const sp = new URLSearchParams(params);
     url.search = sp.toString();
     return url.toString();

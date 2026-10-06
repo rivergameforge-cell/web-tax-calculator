@@ -180,7 +180,10 @@ const App = (() => {
       section.className = 'sidebar-section';
       section.id = `section-${cat.id}`;
 
-      const catBtn = document.createElement('div');
+      const catBtn = document.createElement('button');
+      catBtn.type = 'button';
+      catBtn.setAttribute('aria-expanded', 'false');
+      catBtn.setAttribute('aria-controls', `items-${cat.id}`);
       catBtn.className = 'sidebar-category';
       catBtn.id = `cat-${cat.id}`;
       catBtn.innerHTML = `
@@ -194,7 +197,8 @@ const App = (() => {
       itemList.id = `items-${cat.id}`;
 
       cat.items.forEach(item => {
-        const el = document.createElement('div');
+        const el = document.createElement('a');
+        el.href = `/${item.id}.html`;
         el.className = 'sidebar-item';
         el.id = `nav-${item.id.replace(/\//g, '-')}`;
         el.dataset.routeId = item.id;
@@ -202,10 +206,6 @@ const App = (() => {
           ? `${item.label} <span class="item-badge">${item.badge}</span>`
           : item.label;
 
-        el.addEventListener('click', () => {
-          navigateTo(item.id);
-          closeSidebar();
-        });
         itemList.appendChild(el);
       });
 
@@ -214,10 +214,12 @@ const App = (() => {
         // Close all
         document.querySelectorAll('.sidebar-items').forEach(el => el.classList.remove('open'));
         document.querySelectorAll('.sidebar-category').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.sidebar-category').forEach(el => el.setAttribute('aria-expanded', 'false'));
         if (!isOpen) {
           itemList.classList.add('open');
           catBtn.classList.add('open');
           catBtn.classList.add('active');
+          catBtn.setAttribute('aria-expanded', 'true');
         } else {
           catBtn.classList.remove('active');
         }
@@ -261,7 +263,8 @@ const App = (() => {
 
     NAV_CONFIG.forEach(cat => {
       cat.items.forEach(item => {
-        const card = document.createElement('div');
+        const card = document.createElement('a');
+        card.href = `/${item.id}.html`;
         card.className = 'welcome-card';
 
         let badgeHTML = '';
@@ -278,10 +281,6 @@ const App = (() => {
           <div class="wc-label">${item.label}</div>
         `;
 
-        card.addEventListener('click', () => {
-          navigateTo(item.id);
-          closeSidebar();
-        });
         grid.appendChild(card);
       });
     });
@@ -295,29 +294,14 @@ const App = (() => {
     navigateTo(cat.items[0].id);
   }
 
-  function navigateTo(routeId) {
-    Router.navigate(routeId);
-    updateActiveNav(routeId);
-    updatePageTitleBar(routeId);
-    updateMobileChips(routeId);
-
-    // Open sidebar category
-    const catId = getCategoryOfRoute(routeId);
-    if (catId !== currentCategory) {
-      currentCategory = catId;
-      document.querySelectorAll('.sidebar-items').forEach(el => el.classList.remove('open'));
-      document.querySelectorAll('.sidebar-category').forEach(el => {
-        el.classList.remove('open');
-        el.classList.remove('active');
-      });
-      const items = document.getElementById(`items-${catId}`);
-      const catBtn = document.getElementById(`cat-${catId}`);
-      if (items) items.classList.add('open');
-      if (catBtn) {
-        catBtn.classList.add('open');
-        catBtn.classList.add('active');
-      }
-    }
+  function navigateTo(routeId, params = {}, replace = false) {
+    if (!NAV_CONFIG.some(cat => cat.items.some(item => item.id === routeId))) return;
+    const query = new URLSearchParams(location.search);
+    Object.entries(params).forEach(([key, value]) => query.set(key, value));
+    const suffix = query.toString() ? `?${query}` : '';
+    const destination = `/${routeId}.html${suffix}`;
+    if (replace) location.replace(destination);
+    else location.assign(destination);
   }
 
   function updateActiveNav(routeId) {
@@ -364,7 +348,8 @@ const App = (() => {
         searchResults.innerHTML = '<div style="padding:12px 14px;font-size:13px;color:var(--text-muted)">검색 결과가 없습니다</div>';
       } else {
         results.forEach(item => {
-          const el = document.createElement('div');
+          const el = document.createElement('a');
+          el.href = `/${item.id}.html`;
           el.className = 'search-result-item';
           el.innerHTML = `
             <span class="sri-icon">${item.icon}</span>
@@ -372,7 +357,6 @@ const App = (() => {
             <span class="sri-category">${item.category}</span>
           `;
           el.addEventListener('click', () => {
-            navigateTo(item.id);
             searchResults.classList.remove('visible');
             searchInput.value = '';
           });
@@ -441,15 +425,17 @@ const App = (() => {
       });
     }
 
-    // Handle initial route from hash
-    const { path } = Router.parseHash();
-    if (path && NAV_CONFIG.some(c => c.items.some(i => i.id === path))) {
-      navigateTo(path);
-    } else {
-      // Show welcome screen
-      const welcome = document.getElementById('view-welcome');
-      if (welcome) welcome.classList.add('active');
+    function handleLegacyHash() {
+      const { path, params } = Router.parseHash();
+      if (path && NAV_CONFIG.some(c => c.items.some(i => i.id === path))) {
+        navigateTo(path, params, true);
+        return;
+      }
+      document.getElementById('view-welcome')?.classList.add('active');
+      if (path.startsWith('calculators-')) document.getElementById(path)?.scrollIntoView();
     }
+    window.addEventListener('hashchange', handleLegacyHash);
+    handleLegacyHash();
   }
 
   function goHome() {

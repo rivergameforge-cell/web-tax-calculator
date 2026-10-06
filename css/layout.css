@@ -1,4 +1,7 @@
 /* ===== Layout ===== */
+.sidebar-item, .welcome-card, .search-result-item { text-decoration: none; color: inherit; }
+.sidebar-category { width: 100%; text-align: left; font: inherit; }
+.site-sitemap-cat { scroll-margin-top: 80px; }
 body {
   font-family: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: var(--bg-secondary);
