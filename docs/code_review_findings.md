@@ -238,3 +238,11 @@ F7: Analytics 미설치, 테마 localStorage, 외부 자원 요청, 공유 URL·
 - 실제 탐색: 모바일 메뉴 aria-expanded·정적 목적지·뒤로가기, 데스크톱 검색 이동, 기존 해시→정적 URL query 보존 확인. 부가세 초기화는 디바운스 완료 후 일반과세 라벨·선택 상태 복귀를 확인했다.
 
 배포는 후속 커밋·푸시 및 Pages 실행과 프로덕션 HTTP 검증에서 확인한다. Search Console/네이버 재수집 제출과 AdSense 재심사 신청은 수행하지 않았으며, 승인·전체 색인·검색 순위를 보장하지 않는다.
+
+### 프로덕션 확인
+
+- 구현 커밋 `e8840bb9c59eee87a5c01411ddf6467676474110`을 `main`에 푸시했고 원격 ref 일치를 확인했다. 기존 개인 설정·DSR 썸네일 변경·미발행 원고와 패키지는 보존했다.
+- [Pages 실행 37437161580](https://github.com/rivergameforge-cell/web-tax-calculator/actions/runs/37437161580): build·deploy·report-build-status 모두 성공, `gh run watch --exit-status` 종료 코드 0.
+- `python3 tests/check_http.py https://taxcalc.co.kr --revision e8840bb --stamp e8840bb`: 99개 페이지와 101개 지원 파일 모두 HTTP 200, canonical 일치, noindex 헤더 없음, 배포 응답과 커밋된 파일의 SHA-256 일치. 기존 로컬 썸네일 변경은 배포 비교 기준에 섞지 않았다.
+- 배포된 실제 브라우저: 취득세 6억원·85㎡→6,600,000원, 모바일 보험 월 300만원→291,521원, 초기화 완료 표시·가로 넘침 없음. 홈 title의 TaxCalc Korea/taxcalc.co.kr, 표준 링크 카드 56개, 최근 글 10월 5일·10월 1일·8월 11일 표시를 확인했다.
+- 커밋 후 동일 빌드 재검사도 6개 테스트 통과. 요청 변경 경로의 unstaged diff는 없고 사용자 기존 변경만 남아 있다.
