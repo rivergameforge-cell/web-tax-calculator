@@ -5,8 +5,15 @@
   "companySettlementYear": 2027,
   "tistoryBrowserStatus": {
     "checkedAt": "2026-10-07",
-    "state": "login_required_not_saved",
-    "observation": "Inspected manual draft list: only a different marriage-gift post was present, and it was left unchanged. A separate medical editor received its title, category, tags and thumbnail, but HTML mode confirmation blocked browser control before body entry or manual save. Reconnection reached the Kakao login screen; successful medical draft saving has not been verified.",
+    "state": "saved",
+    "observation": "Completed entry in the user's currently focused, signed-in Chrome. Manual save displayed the saved-success message and increased the draft count from one to two. The draft list showed the full medical article title marked just now and the existing marriage-gift draft unchanged. No final publication was performed.",
+    "manualDraftCount": 2,
+    "published": false,
+    "previewValidation": {
+      "desktop": "Full article, calculator CTA and related-post link rendered; uploaded 1080x1080 thumbnail appeared after the introduction.",
+      "mobile": "Pixel 2 preview at 411x731 showed separated paragraphs and a loaded thumbnail constrained to the article width.",
+      "authoredAds": "Both slot 4883327520 blocks were directly after H2 headings and before their first body paragraphs."
+    },
     "localRevision": "Added explicit blank paragraphs between introduction blocks and before first numerical calculation; HTML source and upload package are not evidence of a successful Tistory draft save."
   },
   "sources": [
