@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티스토리 업로드 도우미 - 병원비 200만원 썼는데 공제 0원? 의료비 연말정산 실손보험금 확인법</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 24px;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 20px;
+    }
+    section {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 0 0 12px; }
+    label { display: block; font-size: 13px; color: #6b7280; margin-bottom: 8px; }
+    textarea, input {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      background: #f9fafb;
+    }
+    textarea { min-height: 320px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+    button, a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #2563eb;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 8px 8px 0 0;
+    }
+    button.secondary { background: #475569; }
+    .hint { color: #64748b; font-size: 13px; margin: 8px 0 0; }
+    .side img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      display: block;
+    }
+    .no-image {
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 28px 12px;
+      text-align: center;
+      color: #64748b;
+    }
+    .checklist li { margin-bottom: 8px; }
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>티스토리 업로드 도우미</h1>
+    <div>병원비로 200만 원을 썼는데 연말정산 의료비 공제는 0원. 계산이 틀린 걸까요? 총급여가 5,000만 원이고 그 병원비에 대해 실손보험금 80만 원을 받았다면, 일반 의료비 사례에서는 실제로 이런 결과가 나옵니다. 영수증 금액보다 먼저 볼 숫자가 있습니다. 이 글은 2026년 귀속…</div>
+  </header>
+  <main>
+    <div>
+      <section>
+        <h2>1. 제목</h2>
+        <label>티스토리 제목 입력란에 붙여넣기</label>
+        <input id="title" value="병원비 200만원 썼는데 공제 0원? 의료비 연말정산 실손보험금 확인법">
+        <button onclick="copyValue('title')">제목 복사</button>
+      </section>
+
+      <section>
+        <h2>2. 본문 HTML</h2>
+        <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
+        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;병원비로 200만 원을 썼는데 연말정산 의료비 공제는 0원. 계산이 틀린 걸까요?&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;총급여가 5,000만 원이고 그 병원비에 대해 실손보험금 80만 원을 받았다면, 일반 의료비 사례에서는 실제로 이런 결과가 나옵니다. 영수증 금액보다 먼저 볼 숫자가 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이 글은 &lt;b&gt;2026년 귀속 의료비 세액공제&lt;/b&gt;를 기준으로 보험금 차감, 부모님 병원비, 환급이 늘지 않는 경우를 정리합니다. 계산 예시는 가상 사례이며, 2026년 재직자의 통상적인 회사 연말정산은 2027년에 진행됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;img src=&quot;https://taxcalc.co.kr/thumbnails/medical-expense-tax-credit-3-percent-tistory.webp&quot; alt=&quot;병원비 200만 원이어도 공제가 0원일 수 있는 총급여 3%와 실손보험금 기준&quot; width=&quot;1080&quot; height=&quot;1080&quot; /&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;200만 원 영수증이 있어도 공제 0원이 되는 계산&lt;/h2&gt;
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;의료비 세액공제는 적격 의료비에서 실손보험금 등 보전받은 금액을 제외한 뒤, &lt;b&gt;총급여의 3%를 넘는 부분&lt;/b&gt;부터 계산합니다. 아래는 본인에게 지급한 일반 15% 의료비만 있는 사례입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;병원비 200만 원 - 실손보험금 80만 원 = 실제 부담 의료비 120만 원&lt;br /&gt;총급여 5,000만 원 × 3% = 기준금액 150만 원&lt;br /&gt;120만 원이 150만 원 이하이므로 의료비 세액공제액 = &lt;b&gt;0원&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;병원비가 인정되지 않았다는 뜻과, 인정되는 비용이 3% 기준에 못 미쳤다는 뜻은 다릅니다. 이 사례는 두 번째에 해당합니다. 3%와 한도 규정은 &lt;a href=&quot;https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874&amp;amp;mi=6438&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;국세청 의료비 공제 안내&lt;/a&gt;에서 확인할 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;실손보험금, 간소화 병원비와 함께 대조하세요&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;간소화에 병원비가 조회된다고 그 금액 전부를 공제받을 수 있는 것은 아닙니다. 같은 진료비에 대해 돌려받은 실손보험금, 건강보험공단의 본인부담상한제 사후환급금 등은 공제 계산에서 제외합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;확인 1. 보험사 지급 내역을 진료비와 연결하기&lt;/b&gt;&lt;br /&gt;보험금 총액만 보고 빼지 말고 어느 진료비를 보전한 돈인지 확인하세요. 정액형 진단보험금 등은 실제 병원비를 보전하는 실손보험금과 성격이 다를 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;확인 2. 다음 해에 받은 보험금도 지출 연도 확인하기&lt;/b&gt;&lt;br /&gt;이미 공제받은 의료비를 뒤늦게 보험금으로 보전받았다면, 원래 의료비를 쓴 연도의 정산·신고를 정정할 필요가 생길 수 있습니다. 단순히 입금 연도 병원비에서 빼는 방식은 피하세요. &lt;a href=&quot;https://www.nts.go.kr/webtv/na/ntt/selectNttInfo.do?mi=10718&amp;amp;nttSn=1292854&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;국세청 보험금 수령 안내&lt;/a&gt;도 같은 취지로 설명합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;확인 3. 비급여와 공제 제외를 혼동하지 않기&lt;/b&gt;&lt;br /&gt;비급여 진료비라고 모두 제외되지는 않습니다. 치료 목적과 법정 비용 범위를 봅니다. 미용·성형 목적 비용, 건강증진 의약품 구입비, 해외 의료기관 비용, 별도 간병인 비용 등은 구분해 제외해야 합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;3%를 넘겼다면 15%를 어디에 곱할까?&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이번에는 총급여 4,000만 원인 근로자가 본인의 일반 적격 의료비 300만 원을 내고, 실손보험금 60만 원을 받았다고 가정하겠습니다. 다른 의료비는 없습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;보험금 차감: 300만 원 - 60만 원 = 240만 원&lt;br /&gt;3% 기준: 4,000만 원 × 3% = 120만 원&lt;br /&gt;공제대상금액: 240만 원 - 120만 원 = 120만 원&lt;br /&gt;의료비 세액공제액: 120만 원 × 15% = &lt;b&gt;18만 원&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;300만 원 전체의 15%인 45만 원을 돌려받는 계산이 아닙니다. 위 18만 원도 &lt;b&gt;소득세 세액공제 계산액&lt;/b&gt;이지, 확정 환급 입금액은 아닙니다. 지방소득세와 다른 공제의 영향은 이 예시에서 제외했습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;부모님 병원비, 형제자매끼리 먼저 맞출 사항&lt;/h2&gt;
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;부모님에게 소득이 있어도 의료비 공제 가능성을 확인할 수 있습니다. 의료비는 대상자의 나이·소득 제한을 적용하지 않기 때문입니다. 다만 부양 요건과 내가 실제 부담한 비용인지는 별도로 확인합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;가장 주의할 조합은 기본공제는 형, 병원비 부담은 동생인 경우입니다.&lt;/b&gt; 국세청은 다른 형제자매가 부모님 기본공제를 적용받고 내가 의료비를 부담한 사례에서, 양쪽 모두 그 의료비 공제를 받을 수 없다고 안내합니다. 실제 낸 사람이라는 이유만으로 자동 공제되지 않습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;부모님이 직접 낸 병원비를 총급여가 낮은 자녀에게 옮겨 넣거나, 같은 영수증을 가족이 중복 제출하는 것도 피해야 합니다. 제출 전에 &lt;b&gt;기본공제 적용자 → 실제 부담자 → 보험금 보전 내역&lt;/b&gt;을 한 번에 맞춰보세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;700만 원 한도, 본인·부모님에게 똑같이 적용할까?&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반 부양가족의 공제대상 의료비에는 연 700만 원 한도가 적용됩니다. 이 금액은 돌려받는 세금의 한도가 아니라, 공제율을 곱하기 전 대상금액의 한도입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;본인, 6세 이하, 65세 이상, 장애인 및 법정 중증질환자 등의 적격 의료비는 일반 700만 원 한도 예외에 해당하며 공제율은 15%입니다. 6세 이하는 과세기간 시작일, 65세 이상은 종료일 현재의 나이를 봅니다. &lt;b&gt;한도가 없더라도 총급여 3% 기준은 적용됩니다.&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;법정 미숙아·선천성이상아 의료비는 20%, 난임시술비는 30%가 적용됩니다. 여러 유형이 섞이면 법정 순서에 따라 3% 기준의 미달분을 배분하므로, 항목마다 3%를 반복해서 빼지 마세요. 요건과 배분 구조는 &lt;a href=&quot;https://www.law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&amp;amp;lsJoLnkSeq=900180300&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;소득세법 제59조의4&lt;/a&gt;가 기준입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;공제액이 있는데 환급은 그대로라면?&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;원천징수영수증의 &lt;b&gt;결정세액&lt;/b&gt;부터 확인해보세요. 다른 공제 등을 반영한 소득세가 이미 0원이라면 의료비를 추가하더라도 환급이 더 늘지 않을 수 있습니다. 의료비 공제는 남은 세금을 줄이는 제도이지, 사용한 공제액을 따로 현금으로 지급하는 제도가 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;또한 요건에 따라 근로소득자의 연 13만 원 표준세액공제와 특별공제 적용 결과를 비교해야 합니다. 의료비 공제만 떼어 비교하지 말고 다른 특별소득공제·특별세액공제·월세 세액공제까지 함께 보세요. 표준세액공제에 의료비 공제를 그대로 더하는 방식은 아닙니다. &lt;a href=&quot;https://law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1032955277&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;표준세액공제 법정 기준&lt;/a&gt;을 확인할 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;제출 전, 이 순서로 확인하면 빠릅니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;1. 실제 총급여 확인&lt;/b&gt;&lt;br /&gt;계약서상 연봉이나 실수령액 대신 해당 연도의 비과세 제외 총급여를 사용합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;2. 영수증과 보전 내역 대조&lt;/b&gt;&lt;br /&gt;실손보험금·건강보험 사후환급금 등을 제외하고, 실제 부담자와 적격 비용을 확인합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;3. 가족 공제와 근무기간 확인&lt;/b&gt;&lt;br /&gt;부모님 기본공제와 의료비 부담자가 엇갈리지 않는지 확인하세요. 연중 입사·퇴사했다면 의료비 특별세액공제는 원칙적으로 근로제공기간의 지출을 대상으로 합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;4. 최종 세액과 비교&lt;/b&gt;&lt;br /&gt;유형별 한도·공제율, 표준세액공제 선택 및 결정세액을 확인해야 실제 환급 변화를 알 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;먼저 내 총급여와 일반 의료비의 계산 구조를 확인해보세요. 아래 계산기의 의료비 항목은 보험금 등을 제외한 금액을 입력하는 일반 15% 간이 계산이며, 700만 원 한도·20%와 30% 유형·표준세액공제 비교는 별도 확인이 필요합니다. 결과는 확정 환급액이 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot; style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;https://taxcalc.co.kr/#income/employment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;display: inline-block; padding: 14px 22px; background: #17633f; color: #ffffff; text-decoration: none; border-radius: 6px;&quot;&gt;&lt;b&gt;내 총급여 기준으로 세금 구조 확인하기&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;함께 읽으면 좋은 글&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://kwonriver-carstroy.tistory.com/entry/연봉-5천-카드값-2천만원-신용카드-소득공제&quot;&gt;연봉 5천 카드값 2천만원, 신용카드 소득공제는 얼마일까?&lt;/a&gt;&lt;br /&gt;의료비의 3%와 카드 사용액의 25%는 다른 기준입니다. 연말정산 지출 항목을 구분해 이해할 때 도움이 됩니다.&lt;/p&gt;</textarea>
+        <button onclick="copyValue('body')">본문 복사</button>
+        <p class="hint">이미지는 티스토리에서 직접 업로드한 뒤 본문 상단에 배치하는 방식을 권장합니다.</p>
+      </section>
+
+      <section>
+        <h2>3. 태그</h2>
+        <label>티스토리 태그 입력란에 붙여넣기</label>
+        <input id="tags" value="의료비세액공제, 의료비연말정산, 의료비공제계산, 총급여3퍼센트, 실손보험금연말정산, 부모님의료비공제, 의료비공제한도, 연말정산환급, 표준세액공제, 직장인연말정산">
+        <button onclick="copyValue('tags')">태그 복사</button>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>썸네일</h2>
+        <img src="file:///Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/medical-expense-tax-credit-3-percent-tistory.webp" alt="thumbnail preview">
+        <label style="margin-top:12px">로컬 이미지 경로</label>
+        <input id="imagePath" value="/Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/medical-expense-tax-credit-3-percent-tistory.webp">
+        <button onclick="copyValue('imagePath')">이미지 경로 복사</button>
+        <p class="hint">medical-expense-tax-credit-3-percent-tistory.webp</p>
+      </section>
+
+      <section>
+        <h2>업로드 순서</h2>
+        <ol class="checklist">
+          <li>티스토리 글쓰기 화면을 연다.</li>
+          <li>제목을 복사해 입력한다.</li>
+          <li>썸네일 이미지를 업로드하고 대표 이미지로 지정한다.</li>
+          <li>에디터를 HTML 모드로 전환한다.</li>
+          <li>본문 HTML을 붙여넣는다.</li>
+          <li>태그를 붙여넣고 임시저장한다.</li>
+        </ol>
+        <a class="button" href="https://www.tistory.com/" target="_blank" rel="noopener">티스토리 열기</a>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    async function copyValue(id) {
+      const el = document.getElementById(id);
+      await navigator.clipboard.writeText(el.value);
+      const old = document.title;
+      document.title = '복사 완료';
+      setTimeout(() => document.title = old, 900);
+    }
+  </script>
+</body>
+</html>

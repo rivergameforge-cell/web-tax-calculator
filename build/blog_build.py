@@ -609,6 +609,22 @@ POSTS = [
         ],
         "customHtml": False,
     },
+    {
+        "file": "의료비_세액공제_3퍼센트_실손보험금",
+        "slug": "medical-expense-tax-credit-3-percent",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-07",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "근로소득세 간이 계산기",
+        "related": [
+            ("/blog/mid-year-resignation-tax-settlement.html", "중도퇴사자 연말정산 환급"),
+            ("/blog/credit-card-deduction-25-percent.html", "신용카드 소득공제 계산"),
+            ("/income/employment.html", "근로소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
 ]
 
 # ---------------------------------------------------------------------------

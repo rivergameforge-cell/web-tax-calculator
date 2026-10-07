@@ -127,7 +127,8 @@ def render_directory(pages):
 
 
 def render_guides(route):
-    guides = sorted(GUIDES.get(route, []), key=lambda item: (item[2], item[0].name), reverse=True)[:3]
+    unique = {item[0]: item for item in GUIDES.get(route, [])}
+    guides = sorted(unique.values(), key=lambda item: (item[2], item[0].name), reverse=True)[:3]
     if not guides:
         return ''
     links = ''.join(f'<li><a href="/blog/{path.name}">{escape(title)}</a></li>' for path, title, _ in guides)

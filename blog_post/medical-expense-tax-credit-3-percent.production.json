@@ -1,0 +1,117 @@
+{
+  "topic": "의료비 세액공제 계산",
+  "verifiedAt": "2026-10-07",
+  "incomeYear": 2026,
+  "companySettlementYear": 2027,
+  "sources": [
+    {
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874&mi=6438",
+      "supports": "총급여 3%,15/20/30%,700만원 일반 한도,보전 비용 제외,근로제공기간 지출"
+    },
+    {
+      "url": "https://www.law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=900180300",
+      "supports": "제59조의4 제2항; 6세 과세기간 개시일/65세 종료일; 법정 순서 3% 미달분 배분"
+    },
+    {
+      "url": "https://law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1032955277",
+      "supports": "제59조의4 제9항; 근로소득자13만원 표준세액공제 선택"
+    },
+    {
+      "url": "https://web.silla.ac.kr/sanhak/index.php?idx=1709&mode=fdn&num=8&pCode=MN0000026",
+      "authoredBy": "국세청",
+      "documentYear": 2025,
+      "host": "신라대학교",
+      "pages": "6, 인쇄면44",
+      "supports": "기본공제 적용자와 다른 형제자매의 의료비 부담 사례, 보험금과 사후환급금; 현행2026법 재대조"
+    },
+    {
+      "url": "https://www.nts.go.kr/webtv/na/ntt/selectNttInfo.do?mi=10718&nttSn=1292854",
+      "documentYear": 2021,
+      "supports": "차감 보험금은 보전하는 의료비 지출 연도 기준; 옛 안내의 과거 공제율은 사용하지 않음"
+    },
+    {
+      "url": "https://b.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7871&mi=6435",
+      "supports": "해당 과세기간 근로소득에서 비과세 차감한 총급여"
+    }
+  ],
+  "examples": {
+    "website": {
+      "salary": 50000000,
+      "medical": 4000000,
+      "reimbursement": 1000000,
+      "threshold": 1500000,
+      "eligibleExcess": 1500000,
+      "credit": 225000
+    },
+    "tistoryHook": {
+      "salary": 50000000,
+      "medical": 2000000,
+      "reimbursement": 800000,
+      "threshold": 1500000,
+      "eligibleExcess": 0,
+      "credit": 0
+    },
+    "tistory": {
+      "salary": 40000000,
+      "medical": 3000000,
+      "reimbursement": 600000,
+      "threshold": 1200000,
+      "eligibleExcess": 1200000,
+      "credit": 180000
+    },
+    "naver": {
+      "salary": 40000000,
+      "medical": 2500000,
+      "reimbursement": 700000,
+      "threshold": 1200000,
+      "eligibleExcess": 600000,
+      "credit": 90000
+    },
+    "scope": "Fictional ordinary15% self-medical income-tax examples; other tax-credit choices and local income tax excluded; credit not guaranteed refund"
+  },
+  "calculatorScope": "Existing employment calculator only computes ordinary15% above3%; insurer-adjusted input required, no700만원 cap, special20/30, standard13만원 comparison or final refund guarantee",
+  "relatedTistory": [
+    {
+      "title": "연봉 5천 카드값 2천만원, 신용카드 소득공제는 얼마일까?",
+      "url": "https://kwonriver-carstroy.tistory.com/entry/연봉-5천-카드값-2천만원-신용카드-소득공제",
+      "verified": "Public management list exact href and public page title checked2026-10-07"
+    }
+  ],
+  "imageGeneration": {
+    "tool": "built-in image_gen",
+    "prompts": {
+      "website": "Generate a premium Korean tax blog editorial thumbnail, wide landscape composition about 1200x630. A distinctive miniature paper-engineering financial infographic photographed in a clean studio, not a generic desk photo. Hospital receipts and a prescription unfold into a neat stepped bridge over a clear glass threshold marked '3%'; reimbursement receipt is separated with a coral minus symbol. White, deep emerald, coral and crisp silver palette, tactile embossed papers, restrained trustworthy economics publication look, realistic dimensional shadows. Large expertly typeset Korean headline exactly '의료비 세액공제', and supporting line exactly '3% 기준 · 실손보험금 · 계산 예시'. Keep all meaningful text and main scene centered inside90% safe area, generous margins. No invented refund figures, no money promises, no hospital brands, no platform labels, no tiny legal text, no graph claiming outcomes, no border. Typography has clean accurate Korean glyphs. Make it visually memorable and professionally composed.",
+      "tistory": "Use case: ads-marketing. Create a premium Korean blog thumbnail in an exact square composition, 1080x1080, full bleed. A bold surreal studio photograph of a translucent oversized medical receipt entering a physical subtraction machine: glossy crimson reimbursement tiles peel away, leaving a tiny white receipt beside a huge dimensional zero and question mark. Black ink, vivid crimson, white and small acid-yellow accents, clean hard studio light and believable materials, sophisticated visual advertisement, playful but trustworthy. Main Korean text exactly: '병원비 200만 원' and beneath it '공제는 0원?' Supporting small line exactly: '총급여 3% · 실손보험금 확인'. The zero is a conditional scenario, not a universal refund promise. Keep all text and subject in central90% safety area. Precise readable Hangul, strong hierarchy, generous margins. No platform labels, no hospital logo, no fake dates, no extra monetary numbers, no generic desktop scene, no border.",
+      "tistoryCorrection": "Edit this square thumbnail to fix factual meaning. Preserve exactly the large headline '병원비 200만 원', '공제는 0원?' and the supporting line '총급여 3% · 실손보험금 확인', the black-red-white composition, machine and zero question mark. Remove EVERY small red tile label: particularly '비급여 항목', '총급여 3% 초과분', '본인부담금 외', '공제 제외', '기타 요건' must not appear, because these incorrectly imply exclusions. All red tiles should be blank glossy red except ONE clearly readable tile labelled exactly '실손보험금'. Do not add any other words or labels or deductible/excluded classifications. Keep the receipt 2,000,000 and zero receipt consistent. No other changes. Central 90% safety area.",
+      "naver": "Use case: photorealistic-natural with editorial Korean typography. Generate a full-bleed wide landscape Korean lifestyle blog thumbnail, exact aspect ratio 5:3, intended final size1200x720. An airy modern Korean home seen across a pale mint sofa: a friendly adult woman seated with a neat accordion medical-receipt folder, a reimbursement notification card beside the receipts, soft natural daylight. Authentic relaxed candid gesture, no visible personal identity details or actual insurance branding, photographic realism and subtle editorial charm. Compose a large clean warm-white space in upper-left with accurately typeset Korean text exactly '병원비 썼는데' on first line, '왜 환급이 없죠?' on second line; smaller line exactly '보험금부터 같이 확인해요'. Dark green lettering with a small coral underline, contemporary magazine typography, comfortably readable in a mobile link card. All text and key subject within central90% safe area, ample margins. No extra text, no currency numbers, no platform labels, no fake ID data, no cartoon, no stamp, no calculator infographic, no decorative border. Different from a formal tax website or dramatic black-red ad."
+    },
+    "finalFiles": [
+      {
+        "path": "thumbnails/medical-expense-tax-credit-3-percent.webp",
+        "width": 1200,
+        "height": 630,
+        "generatedSource": "exec-f74bc531-21c4-4588-9e48-71588971385d.png"
+      },
+      {
+        "path": "thumbnails/medical-expense-tax-credit-3-percent-tistory.webp",
+        "width": 1080,
+        "height": 1080,
+        "generatedSource": "exec-e3440844-3cc6-4787-ae5d-c143365a5b93.png"
+      },
+      {
+        "path": "thumbnails/medical-expense-tax-credit-3-percent-naver.webp",
+        "width": 1200,
+        "height": 720,
+        "generatedSource": "exec-dbc72170-96a2-44d4-b2f7-4d9fb1276ca5.png"
+      }
+    ],
+    "postProcessing": "Pillow proportional resize/crop andWebP conversion only; misleading generated exclusion labels removed usingimage_gen edit"
+  },
+  "editorialChecks": [
+    "Distinct three long-tail titles, first paragraphs, section order, numerical examples andCTA wording",
+    "Tistory intro thenimage, two H2-ad-body blocks, real nonstackedblankparagraphs",
+    "Naver3titlecandidates25relevanttags",
+    "No real credential claims, unnecessary spending incentive or refundguarantee",
+    "Japanese version cancelled; unrelated working-tree files notincluded"
+  ]
+}

@@ -60,7 +60,7 @@ class SiteTests(unittest.TestCase):
         tree = ElementTree.parse(ROOT / 'sitemap.xml')
         ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
         entries = tree.findall('s:url', ns)
-        self.assertEqual(len(entries), 99)
+        self.assertEqual(len(entries), 100)
         functional = 0
         titles = set()
         for entry in entries:
@@ -146,6 +146,15 @@ class SiteTests(unittest.TestCase):
         self.assertIn('&lt;x&gt;', html)
         self.assertIn('<strong>2</strong>', html)
         self.assertEqual(blog_build.canonical_calculator_links('/#income/vat'), '/income/vat.html')
+
+    def test_related_guides_are_unique(self):
+        route = 'test/medical-guide'
+        guide = (ROOT / 'blog/medical-expense-tax-credit-3-percent.html', '의료비 공제', '2026-10-07')
+        builder.GUIDES[route] = [guide, guide]
+        try:
+            self.assertEqual(builder.render_guides(route).count('medical-expense-tax-credit-3-percent.html'), 1)
+        finally:
+            del builder.GUIDES[route]
 
 
 if __name__ == '__main__':
