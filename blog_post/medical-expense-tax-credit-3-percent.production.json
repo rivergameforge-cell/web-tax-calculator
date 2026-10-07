@@ -3,6 +3,12 @@
   "verifiedAt": "2026-10-07",
   "incomeYear": 2026,
   "companySettlementYear": 2027,
+  "tistoryBrowserStatus": {
+    "checkedAt": "2026-10-07",
+    "state": "login_required_not_saved",
+    "observation": "Inspected manual draft list: only a different marriage-gift post was present, and it was left unchanged. A separate medical editor received its title, category, tags and thumbnail, but HTML mode confirmation blocked browser control before body entry or manual save. Reconnection reached the Kakao login screen; successful medical draft saving has not been verified.",
+    "localRevision": "Added explicit blank paragraphs between introduction blocks and before first numerical calculation; HTML source and upload package are not evidence of a successful Tistory draft save."
+  },
   "sources": [
     {
       "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874&mi=6438",

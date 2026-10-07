@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'build'))
 import build as builder
 import blog_build
+import tistory_prepare
 from site_html import SiteHTML
 
 
@@ -155,6 +156,27 @@ class SiteTests(unittest.TestCase):
             self.assertEqual(builder.render_guides(route).count('medical-expense-tax-credit-3-percent.html'), 1)
         finally:
             del builder.GUIDES[route]
+
+    def test_medical_tistory_article_layout(self):
+        source = ROOT / 'blog_post/의료비_세액공제_3퍼센트_실손보험금_티스토리.txt'
+        post = tistory_prepare.parse_tistory_post(source)
+        article = ElementTree.fromstring('<article>' + post['body'].replace('&nbsp;', '&#160;') + '</article>')
+        nodes = list(article)
+        blank = lambda node: node.tag == 'p' and not list(node) and not (node.text or '').strip()
+        self.assertTrue(blank(nodes[1]))
+        self.assertTrue(blank(nodes[3]))
+        image_index = next(i for i, node in enumerate(nodes) if node.find('img') is not None)
+        heading_index = next(i for i, node in enumerate(nodes) if node.tag == 'h2')
+        self.assertGreater(image_index, 0)
+        self.assertLess(image_index, heading_index)
+        ads = [i for i, node in enumerate(nodes) if node.tag == 'center' and node.find('ins') is not None]
+        self.assertEqual(len(ads), 2)
+        for i in ads:
+            self.assertEqual(nodes[i - 1].tag, 'h2')
+            self.assertEqual(nodes[i + 1].tag, 'p')
+            self.assertFalse(blank(nodes[i + 1]))
+        self.assertFalse(any(blank(a) and blank(b) for a, b in zip(nodes, nodes[1:])))
+        self.assertEqual(post['body'], (ROOT / 'tistory_upload/medical-expense-tax-credit-3-percent/body.html').read_text().strip())
 
 
 if __name__ == '__main__':
