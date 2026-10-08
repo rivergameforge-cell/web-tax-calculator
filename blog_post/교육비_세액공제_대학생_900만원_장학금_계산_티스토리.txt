@@ -1,0 +1,78 @@
+<!-- 티스토리 제목 -->
+<!-- 대학생 등록금 1천만원, 장학금·학자금대출 빼면 교육비 공제 얼마? -->
+
+<p data-ke-size="size16">대학 등록금으로 1,000만 원을 냈다면, 연말정산에 얼마를 넣어야 할까요? 고지서 총액에 15%를 곱하기 전에 <b>장학금과 자녀의 등록금 학자금대출</b>부터 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">장학금 200만 원, 자녀의 법정 등록금 대출 300만 원이 포함된 아래 사례에서는 교육비 세액공제 계산액이 <b>75만 원</b>입니다. 150만 원도, 대학생 한도를 채운 135만 원도 아닙니다. 어느 금액을 빼느냐가 결과를 바꿉니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이 글은 <b>2026년 귀속 교육비</b>를 회사에 제출하기 전 확인할 내용입니다. 통상적인 재직자 연말정산은 2027년에 진행되며, 계산 사례는 가상 상황입니다. 계산된 세액공제액이 그대로 입금될 환급액이라는 뜻은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><img src="https://taxcalc.co.kr/thumbnails/education-tax-credit-university-900-tistory.webp" alt="등록금 1천만원도 전부 공제되지 않을 수 있어 장학금과 대출을 먼저 확인하라는 안내" width="1080" height="1080" style="max-width: 100%; height: auto;" /></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">등록금 1천만 원에서 공제액 75만 원이 나오는 순서</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">근로자인 부모가 부양하는 대학생 자녀의 등록금을 부담한 사례로 보겠습니다. 연간 적격 등록금 총액은 장학금 차감 전 <b>1,000만 원</b>이고, 학교 장학금 200만 원과 한국장학재단 등의 법정 등록금 대출 300만 원이 서로 겹치지 않게 들어 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">① 등록금 총액: 1,000만 원<br />② 학교 장학금 제외: 1,000 - 200 = 800만 원<br />③ 자녀 등록금 대출 납부분 제외: 800 - 300 = <b>500만 원</b><br />④ 대학생 자녀 연 900만 원 한도 확인: 500만 원 전액이 한도 안<br />⑤ 교육비 세액공제 계산: 500만 원 × 15% = <b>75만 원</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">부모가 직접 부담한 적격 교육비 500만 원이 출발점입니다. 장학금과 대출로 납부된 금액까지 부모의 지출로 올리지 않습니다. 재직기간·부양관계 등 다른 요건도 충족한다는 전제의 계산입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">대학생 자녀는 <b>1명당 연 900만 원, 공제율 15%</b>가 일반 기준입니다. 900만 원은 학기별 한도도, 환급액도 아닙니다. <a href="https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239024" target="_blank" rel="noopener">국세청 교육비 공제 안내</a>에서 자녀 대학원 교육비와 본인 교육비의 차이도 확인할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">납입증명서의 800만 원에서 장학금을 또 빼지 마세요</h2>
+<p data-ke-size="size16">위 사례에서 학교 납입증명서가 <b>장학금 반영 후 800만 원</b>을 표시했다고 해보겠습니다. 이때 장학금 200만 원을 한 번 더 빼고 대출 300만 원도 차감하면, 적격 지출을 300만 원으로 잘못 줄이게 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">확인할 것은 서류 이름보다 <b>표시 금액의 구성</b>입니다. 등록금 총액, 장학금 차감액, 실제 납부액이 각각 어디에 표시돼 있는지 먼저 보세요. 대출 납부분이 이미 제외된 자료라면 대출도 다시 차감하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">학교·간소화 자료와 대출 실행 내역이 다르면 학교나 대출기관에 내역을 확인하는 편이 정확합니다. '올해 남은 대출 잔액'을 해당 연도 등록금 대출 납부액으로 대신 넣지 않습니다. 제외 대상 장학금과 대출 범위는 <a href="https://www.law.go.kr/법령/소득세법시행령/제118조의6" target="_blank" rel="noopener">소득세법 시행령 제118조의6</a>이 기준입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">아르바이트하는 자녀, 2026년 교육비는 다시 확인하세요</h2>
+<p data-ke-size="size16">작년 기준으로 자녀의 소득 때문에 교육비를 제외했다면 올해는 기준을 다시 보세요. <b>2026년 1월 1일 이후 지출분부터 대학생 자녀 교육비 공제의 소득요건이 폐지</b>됐습니다. 현행 교육비 규정은 나이와 소득 제한을 적용하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">그렇다고 자녀 본인이 낸 등록금을 부모가 모두 가져올 수 있는 것은 아닙니다. 법정 가족·실제 부양관계와 <b>부모의 실제 교육비 지출</b>은 확인해야 합니다. 자녀의 기본공제 150만 원은 또 다른 항목이므로 해당 항목의 나이·소득 요건을 따로 봅니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">적용 시점은 <a href="https://www.korea.kr/news/policyNewsView.do?newsId=148958281" target="_blank" rel="noopener">정부의 2026년 변경 안내</a>, 현행 대상 규정은 <a href="https://www.law.go.kr/법령/소득세법/제59조의4" target="_blank" rel="noopener">소득세법 제59조의4</a>에서 확인하세요. 교육비 공제와 인적공제를 한 묶음으로 판단하지 않는 것이 핵심입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">학자금대출을 부모가 갚으면 부모 공제가 될까요?</h2>
+<p data-ke-size="size16">자녀가 법정 학자금대출로 등록금을 납부한 부분은 부모의 교육비에서 제외됩니다. 이후 자녀 본인이 근로소득자로서 적격 원리금을 상환할 때, 본인의 교육비 세액공제를 검토하는 구조입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">부모가 자녀의 대출을 대신 갚았다고 그 상환액을 부모의 본인 교육비로 신청할 수는 없습니다. <b>대출받아 낸 등록금과 나중에 갚는 원리금은 신청 주체와 시점이 다릅니다.</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">또한 등록금 대출과 생활비 대출을 섞지 마세요. 연체료나 지원·면제액까지 적격 상환액에 넣는 것도 피해야 합니다. 대출기관의 해당 연도 상환 증빙과 <a href="https://www.law.go.kr/법령/소득세법시행령/제118조의6" target="_blank" rel="noopener">법정 대출·상환액 범위</a>를 대조하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">회사 제출 전, 이 네 가지를 맞추면 실수가 줄어듭니다</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16"><b>1. 귀속연도와 근로기간</b><br />2026년 교육비 자료인지 확인합니다. 연중 입사·퇴사했다면 원칙적으로 근로 제공기간의 지출인지도 구분합니다. 작년 납입증명서를 올해 자료로 대신 제출하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>2. 학교 증빙과 장학금</b><br />교육비 납입증명서·간소화 자료에 학교 장학금이 이미 반영됐는지 대조합니다. 빠진 자료는 해당 학교의 증빙으로 보완합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>3. 등록금 대출과 실제 부담액</b><br />해당 연도 등록금에 쓰인 자녀의 법정 학자금대출 내역을 확인합니다. 부모의 실제 지출과 일치하는 적격 교육비만 반영합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>4. 가족 중복과 자녀별 한도</b><br />같은 등록금을 부모 양쪽에서 중복 신청하지 않습니다. 각 자녀별로 연 900만 원 한도를 적용합니다. 연봉이 더 높은 사람에게 옮기면 항상 유리하다는 식으로 실제 지출과 공제 요건을 무시하지 마세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">75만 원 공제, 실제 입금액은 따로 봐야 합니다</h2>
+<p data-ke-size="size16">세액공제는 계산된 세금에서 차감하는 항목입니다. 최종 환급은 이미 원천징수된 세금과 정산 후 결정세액의 차이 등으로 정해집니다. 다른 공제로 결정세액이 이미 0원이라면 교육비를 추가해도 환급이 늘지 않을 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">우선 등록금 자료를 <b>총액 → 장학금 → 등록금 대출 → 실제 부담액 → 연간 한도</b> 순서로 정리해보세요. 그다음 내 소득세 계산에 넣어보면, 고지서 총액만 보고 기대했던 금액과 왜 달라지는지 이해하기 쉽습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래 계산기의 교육비 항목에는 위 사례라면 <b>5,000,000원</b>을 입력합니다. 장학금·대출 제외와 자녀별 한도는 직접 적용해야 하며, 자격 판정이나 확정 환급을 자동으로 처리하는 계산기는 아닙니다.</p>
+<p data-ke-size="size16" style="text-align: center;"><a href="https://taxcalc.co.kr/#income/employment" target="_blank" rel="noopener" style="display: inline-block; padding: 14px 22px; background: #087c80; color: #ffffff; text-decoration: none; border-radius: 6px;"><b>내 교육비 공제 영향 비교하기</b></a></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16"><a href="https://kwonriver-carstroy.tistory.com/entry/국민연금-받는-부모님-인적공제-통장-금액">국민연금 받는 부모님 인적공제, 통장 금액만 보면 틀립니다</a><br />가족의 기본공제는 교육비 공제와 다르게 판정합니다. 소득금액과 공제액을 나누어 보는 데 도움이 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><a href="https://kwonriver-carstroy.tistory.com/entry/병원비-200만원-썼는데-공제-0원-의료비-연말정산-실손보험금-확인법">병원비 200만원 썼는데 공제 0원? 의료비 연말정산 실손보험금 확인법</a><br />교육비와 의료비의 계산 기준은 다릅니다. 병원비 자료를 함께 제출할 때 실손보험금과 총급여 3% 기준을 따로 점검해보세요.</p>
+
+<!-- 해시태그 -->
+<!-- 교육비세액공제, 대학생등록금연말정산, 교육비900만원, 등록금장학금공제, 학자금대출교육비공제, 교육비납입증명서, 자녀아르바이트연말정산, 2026교육비공제, 연말정산서류, 근로소득세 -->

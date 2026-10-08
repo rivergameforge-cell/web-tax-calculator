@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티스토리 업로드 도우미 - 대학생 등록금 1천만원, 장학금·학자금대출 빼면 교육비 공제 얼마?</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 24px;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 20px;
+    }
+    section {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 0 0 12px; }
+    label { display: block; font-size: 13px; color: #6b7280; margin-bottom: 8px; }
+    textarea, input {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      background: #f9fafb;
+    }
+    textarea { min-height: 320px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+    button, a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #2563eb;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 8px 8px 0 0;
+    }
+    button.secondary { background: #475569; }
+    .hint { color: #64748b; font-size: 13px; margin: 8px 0 0; }
+    .side img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      display: block;
+    }
+    .no-image {
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 28px 12px;
+      text-align: center;
+      color: #64748b;
+    }
+    .checklist li { margin-bottom: 8px; }
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>티스토리 업로드 도우미</h1>
+    <div>대학 등록금으로 1,000만 원을 냈다면, 연말정산에 얼마를 넣어야 할까요? 고지서 총액에 15%를 곱하기 전에 장학금과 자녀의 등록금 학자금대출 부터 확인해야 합니다.   장학금 200만 원, 자녀의 법정 등록금 대출 300만 원이 포함된 아래 사례에서는 교육비 세액공제 계산액이 7…</div>
+  </header>
+  <main>
+    <div>
+      <section>
+        <h2>1. 제목</h2>
+        <label>티스토리 제목 입력란에 붙여넣기</label>
+        <input id="title" value="대학생 등록금 1천만원, 장학금·학자금대출 빼면 교육비 공제 얼마?">
+        <button onclick="copyValue('title')">제목 복사</button>
+      </section>
+
+      <section>
+        <h2>2. 본문 HTML</h2>
+        <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
+        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;대학 등록금으로 1,000만 원을 냈다면, 연말정산에 얼마를 넣어야 할까요? 고지서 총액에 15%를 곱하기 전에 &lt;b&gt;장학금과 자녀의 등록금 학자금대출&lt;/b&gt;부터 확인해야 합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;장학금 200만 원, 자녀의 법정 등록금 대출 300만 원이 포함된 아래 사례에서는 교육비 세액공제 계산액이 &lt;b&gt;75만 원&lt;/b&gt;입니다. 150만 원도, 대학생 한도를 채운 135만 원도 아닙니다. 어느 금액을 빼느냐가 결과를 바꿉니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이 글은 &lt;b&gt;2026년 귀속 교육비&lt;/b&gt;를 회사에 제출하기 전 확인할 내용입니다. 통상적인 재직자 연말정산은 2027년에 진행되며, 계산 사례는 가상 상황입니다. 계산된 세액공제액이 그대로 입금될 환급액이라는 뜻은 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;img src=&quot;https://taxcalc.co.kr/thumbnails/education-tax-credit-university-900-tistory.webp&quot; alt=&quot;등록금 1천만원도 전부 공제되지 않을 수 있어 장학금과 대출을 먼저 확인하라는 안내&quot; width=&quot;1080&quot; height=&quot;1080&quot; style=&quot;max-width: 100%; height: auto;&quot; /&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;등록금 1천만 원에서 공제액 75만 원이 나오는 순서&lt;/h2&gt;
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;근로자인 부모가 부양하는 대학생 자녀의 등록금을 부담한 사례로 보겠습니다. 연간 적격 등록금 총액은 장학금 차감 전 &lt;b&gt;1,000만 원&lt;/b&gt;이고, 학교 장학금 200만 원과 한국장학재단 등의 법정 등록금 대출 300만 원이 서로 겹치지 않게 들어 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;① 등록금 총액: 1,000만 원&lt;br /&gt;② 학교 장학금 제외: 1,000 - 200 = 800만 원&lt;br /&gt;③ 자녀 등록금 대출 납부분 제외: 800 - 300 = &lt;b&gt;500만 원&lt;/b&gt;&lt;br /&gt;④ 대학생 자녀 연 900만 원 한도 확인: 500만 원 전액이 한도 안&lt;br /&gt;⑤ 교육비 세액공제 계산: 500만 원 × 15% = &lt;b&gt;75만 원&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;부모가 직접 부담한 적격 교육비 500만 원이 출발점입니다. 장학금과 대출로 납부된 금액까지 부모의 지출로 올리지 않습니다. 재직기간·부양관계 등 다른 요건도 충족한다는 전제의 계산입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;대학생 자녀는 &lt;b&gt;1명당 연 900만 원, 공제율 15%&lt;/b&gt;가 일반 기준입니다. 900만 원은 학기별 한도도, 환급액도 아닙니다. &lt;a href=&quot;https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239024&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;국세청 교육비 공제 안내&lt;/a&gt;에서 자녀 대학원 교육비와 본인 교육비의 차이도 확인할 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;납입증명서의 800만 원에서 장학금을 또 빼지 마세요&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;위 사례에서 학교 납입증명서가 &lt;b&gt;장학금 반영 후 800만 원&lt;/b&gt;을 표시했다고 해보겠습니다. 이때 장학금 200만 원을 한 번 더 빼고 대출 300만 원도 차감하면, 적격 지출을 300만 원으로 잘못 줄이게 됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;확인할 것은 서류 이름보다 &lt;b&gt;표시 금액의 구성&lt;/b&gt;입니다. 등록금 총액, 장학금 차감액, 실제 납부액이 각각 어디에 표시돼 있는지 먼저 보세요. 대출 납부분이 이미 제외된 자료라면 대출도 다시 차감하지 않습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;학교·간소화 자료와 대출 실행 내역이 다르면 학교나 대출기관에 내역을 확인하는 편이 정확합니다. &#x27;올해 남은 대출 잔액&#x27;을 해당 연도 등록금 대출 납부액으로 대신 넣지 않습니다. 제외 대상 장학금과 대출 범위는 &lt;a href=&quot;https://www.law.go.kr/법령/소득세법시행령/제118조의6&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;소득세법 시행령 제118조의6&lt;/a&gt;이 기준입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;아르바이트하는 자녀, 2026년 교육비는 다시 확인하세요&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;작년 기준으로 자녀의 소득 때문에 교육비를 제외했다면 올해는 기준을 다시 보세요. &lt;b&gt;2026년 1월 1일 이후 지출분부터 대학생 자녀 교육비 공제의 소득요건이 폐지&lt;/b&gt;됐습니다. 현행 교육비 규정은 나이와 소득 제한을 적용하지 않습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그렇다고 자녀 본인이 낸 등록금을 부모가 모두 가져올 수 있는 것은 아닙니다. 법정 가족·실제 부양관계와 &lt;b&gt;부모의 실제 교육비 지출&lt;/b&gt;은 확인해야 합니다. 자녀의 기본공제 150만 원은 또 다른 항목이므로 해당 항목의 나이·소득 요건을 따로 봅니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;적용 시점은 &lt;a href=&quot;https://www.korea.kr/news/policyNewsView.do?newsId=148958281&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;정부의 2026년 변경 안내&lt;/a&gt;, 현행 대상 규정은 &lt;a href=&quot;https://www.law.go.kr/법령/소득세법/제59조의4&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;소득세법 제59조의4&lt;/a&gt;에서 확인하세요. 교육비 공제와 인적공제를 한 묶음으로 판단하지 않는 것이 핵심입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;학자금대출을 부모가 갚으면 부모 공제가 될까요?&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;자녀가 법정 학자금대출로 등록금을 납부한 부분은 부모의 교육비에서 제외됩니다. 이후 자녀 본인이 근로소득자로서 적격 원리금을 상환할 때, 본인의 교육비 세액공제를 검토하는 구조입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;부모가 자녀의 대출을 대신 갚았다고 그 상환액을 부모의 본인 교육비로 신청할 수는 없습니다. &lt;b&gt;대출받아 낸 등록금과 나중에 갚는 원리금은 신청 주체와 시점이 다릅니다.&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;또한 등록금 대출과 생활비 대출을 섞지 마세요. 연체료나 지원·면제액까지 적격 상환액에 넣는 것도 피해야 합니다. 대출기관의 해당 연도 상환 증빙과 &lt;a href=&quot;https://www.law.go.kr/법령/소득세법시행령/제118조의6&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;법정 대출·상환액 범위&lt;/a&gt;를 대조하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;회사 제출 전, 이 네 가지를 맞추면 실수가 줄어듭니다&lt;/h2&gt;
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;1. 귀속연도와 근로기간&lt;/b&gt;&lt;br /&gt;2026년 교육비 자료인지 확인합니다. 연중 입사·퇴사했다면 원칙적으로 근로 제공기간의 지출인지도 구분합니다. 작년 납입증명서를 올해 자료로 대신 제출하지 않습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;2. 학교 증빙과 장학금&lt;/b&gt;&lt;br /&gt;교육비 납입증명서·간소화 자료에 학교 장학금이 이미 반영됐는지 대조합니다. 빠진 자료는 해당 학교의 증빙으로 보완합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;3. 등록금 대출과 실제 부담액&lt;/b&gt;&lt;br /&gt;해당 연도 등록금에 쓰인 자녀의 법정 학자금대출 내역을 확인합니다. 부모의 실제 지출과 일치하는 적격 교육비만 반영합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;4. 가족 중복과 자녀별 한도&lt;/b&gt;&lt;br /&gt;같은 등록금을 부모 양쪽에서 중복 신청하지 않습니다. 각 자녀별로 연 900만 원 한도를 적용합니다. 연봉이 더 높은 사람에게 옮기면 항상 유리하다는 식으로 실제 지출과 공제 요건을 무시하지 마세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;75만 원 공제, 실제 입금액은 따로 봐야 합니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;세액공제는 계산된 세금에서 차감하는 항목입니다. 최종 환급은 이미 원천징수된 세금과 정산 후 결정세액의 차이 등으로 정해집니다. 다른 공제로 결정세액이 이미 0원이라면 교육비를 추가해도 환급이 늘지 않을 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;우선 등록금 자료를 &lt;b&gt;총액 → 장학금 → 등록금 대출 → 실제 부담액 → 연간 한도&lt;/b&gt; 순서로 정리해보세요. 그다음 내 소득세 계산에 넣어보면, 고지서 총액만 보고 기대했던 금액과 왜 달라지는지 이해하기 쉽습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;아래 계산기의 교육비 항목에는 위 사례라면 &lt;b&gt;5,000,000원&lt;/b&gt;을 입력합니다. 장학금·대출 제외와 자녀별 한도는 직접 적용해야 하며, 자격 판정이나 확정 환급을 자동으로 처리하는 계산기는 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot; style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;https://taxcalc.co.kr/#income/employment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;display: inline-block; padding: 14px 22px; background: #087c80; color: #ffffff; text-decoration: none; border-radius: 6px;&quot;&gt;&lt;b&gt;내 교육비 공제 영향 비교하기&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;함께 읽으면 좋은 글&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://kwonriver-carstroy.tistory.com/entry/국민연금-받는-부모님-인적공제-통장-금액&quot;&gt;국민연금 받는 부모님 인적공제, 통장 금액만 보면 틀립니다&lt;/a&gt;&lt;br /&gt;가족의 기본공제는 교육비 공제와 다르게 판정합니다. 소득금액과 공제액을 나누어 보는 데 도움이 됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://kwonriver-carstroy.tistory.com/entry/병원비-200만원-썼는데-공제-0원-의료비-연말정산-실손보험금-확인법&quot;&gt;병원비 200만원 썼는데 공제 0원? 의료비 연말정산 실손보험금 확인법&lt;/a&gt;&lt;br /&gt;교육비와 의료비의 계산 기준은 다릅니다. 병원비 자료를 함께 제출할 때 실손보험금과 총급여 3% 기준을 따로 점검해보세요.&lt;/p&gt;</textarea>
+        <button onclick="copyValue('body')">본문 복사</button>
+        <p class="hint">이미지는 티스토리에 직접 업로드한 뒤 서론 다음, 첫 소제목 앞에 배치하세요. HTML을 붙여넣을 때도 업로드한 이미지 위치를 유지하세요.</p>
+      </section>
+
+      <section>
+        <h2>3. 태그</h2>
+        <label>티스토리 태그 입력란에 붙여넣기</label>
+        <input id="tags" value="교육비세액공제, 대학생등록금연말정산, 교육비900만원, 등록금장학금공제, 학자금대출교육비공제, 교육비납입증명서, 자녀아르바이트연말정산, 2026교육비공제, 연말정산서류, 근로소득세">
+        <button onclick="copyValue('tags')">태그 복사</button>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>썸네일</h2>
+        <img src="file:///Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/education-tax-credit-university-900-tistory.webp" alt="thumbnail preview">
+        <label style="margin-top:12px">로컬 이미지 경로</label>
+        <input id="imagePath" value="/Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/education-tax-credit-university-900-tistory.webp">
+        <button onclick="copyValue('imagePath')">이미지 경로 복사</button>
+        <p class="hint">education-tax-credit-university-900-tistory.webp</p>
+      </section>
+
+      <section>
+        <h2>업로드 순서</h2>
+        <ol class="checklist">
+          <li>티스토리 글쓰기 화면을 연다.</li>
+          <li>제목을 복사해 입력한다.</li>
+          <li>썸네일 이미지를 업로드하고 대표 이미지로 지정한다.</li>
+          <li>에디터를 HTML 모드로 전환한다.</li>
+          <li>본문 HTML을 붙여넣고 서론 → 업로드한 썸네일 → 첫 소제목 순서를 확인한다.</li>
+          <li>태그를 붙여넣고 임시저장한다.</li>
+        </ol>
+        <a class="button" href="https://www.tistory.com/" target="_blank" rel="noopener">티스토리 열기</a>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    async function copyValue(id) {
+      const el = document.getElementById(id);
+      await navigator.clipboard.writeText(el.value);
+      const old = document.title;
+      document.title = '복사 완료';
+      setTimeout(() => document.title = old, 900);
+    }
+  </script>
+</body>
+</html>

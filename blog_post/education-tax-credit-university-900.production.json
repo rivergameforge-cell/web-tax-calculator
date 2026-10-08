@@ -1,0 +1,185 @@
+{
+  "topic": "대학생 자녀 교육비 세액공제",
+  "applicableYear": 2026,
+  "verifiedOn": "2026-10-08",
+  "scope": "국내 대학 학부생 자녀의 적격 등록금을 근로소득이 있는 부모가 부담한 일반 사례. 일반 교육비 공제만 다루며 장애인 특수교육비 등 별도 규정은 범위 밖.",
+  "sources": [
+    {
+      "url": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=04&joNo=0059&lsiSeq=280405&urlMode=lsScJoRltInfoR",
+      "authority": "국가법령정보센터",
+      "supports": [
+        "2026년 교육비 나이·소득 제한 미적용",
+        "15% 공제율",
+        "대학생 자녀 1명당 연 900만원",
+        "자녀 대학원·법정 학자금대출로 납부한 등록금 제외",
+        "본인 적격 교육비·본인 학자금대출 상환"
+      ],
+      "status": "시행 법령 확인"
+    },
+    {
+      "url": "https://www.law.go.kr/법령/소득세법시행령/제118조의6",
+      "authority": "국가법령정보센터",
+      "supports": [
+        "적격 교육비 항목",
+        "학교 등 비과세 장학금 제외",
+        "등록금 학자금대출 범위",
+        "상환액의 연체·지원·면제액 제외"
+      ],
+      "status": "현행 조문 확인"
+    },
+    {
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148958281",
+      "authority": "문화체육관광부 국민소통실",
+      "published": "2026-01-20",
+      "supports": [
+        "대학생 교육비 소득요건 폐지",
+        "2026년 1월 1일 지출분부터 적용"
+      ],
+      "status": "정부 시행 안내 확인"
+    },
+    {
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239024",
+      "authority": "국세청",
+      "supports": [
+        "공제율·교육비 한도",
+        "본인과 자녀 대학원 구분",
+        "교육비 증빙"
+      ],
+      "caution": "일부 안내 페이지의 소득요건 설명은 개정 반영 여부를 구분. 2026년 자녀 소득요건은 현행 법령·정부 변경 안내 우선."
+    },
+    {
+      "url": "https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874&mi=6595",
+      "authority": "국세청",
+      "supports": [
+        "중도 입사·퇴사자의 교육비는 원칙적으로 근로 제공기간 지출"
+      ],
+      "status": "근로기간 원칙 확인"
+    },
+    {
+      "url": "https://www.nabo.go.kr/board/file/down.do?fid=33319000",
+      "authority": "국회예산정책처",
+      "supports": [
+        "2025년 개정 세법의 교육비 소득요건 폐지와 2026년 적용"
+      ],
+      "status": "개정 세법 자료 교차 확인"
+    }
+  ],
+  "editorial": {
+    "website": {
+      "title": "교육비 세액공제 계산, 대학생 자녀 등록금 900만원 한도와 장학금 차감",
+      "angle": "정의·현행 제도·공식·두 사례 비교표·FAQ",
+      "persona": "객관적인 경제 교수 편집 기준"
+    },
+    "tistory": {
+      "title": "대학생 등록금 1천만원, 장학금·학자금대출 빼면 교육비 공제 얼마?",
+      "angle": "75만원 계산 후 납입증명서 중복 차감·대출 처리·제출 실수 점검",
+      "persona": "세무 실무 중심 정보글",
+      "ads": 2,
+      "layout": "서론 → 썸네일 → 소제목 → 광고(선택된 2곳) → 본문"
+    },
+    "naver": {
+      "title": "대학생 자녀 알바 소득 있어도 등록금 공제될까요? 2026 연말정산",
+      "angle": "알바 소득 공감 → 기본공제와 구분 → 쉬운 780만원 예시 → 부모님 확인 순서",
+      "persona": "친절한 생활 경제 블로거",
+      "tags": 26
+    }
+  },
+  "examples": {
+    "website": [
+      {
+        "tuition": 12000000,
+        "scholarship": 2500000,
+        "eligibleStudentLoan": 0,
+        "parentExpense": 9500000,
+        "base": 9000000,
+        "credit": 1350000
+      },
+      {
+        "tuition": 12000000,
+        "scholarship": 2500000,
+        "eligibleStudentLoan": 3500000,
+        "parentExpense": 6000000,
+        "base": 6000000,
+        "credit": 900000
+      }
+    ],
+    "tistory": {
+      "tuition": 10000000,
+      "scholarship": 2000000,
+      "eligibleStudentLoan": 3000000,
+      "parentExpense": 5000000,
+      "base": 5000000,
+      "credit": 750000
+    },
+    "naver": {
+      "tuition": 7800000,
+      "scholarship": 1800000,
+      "eligibleStudentLoan": 0,
+      "parentExpense": 6000000,
+      "base": 6000000,
+      "credit": 900000
+    },
+    "assumptions": "총액은 적격 등록금만 포함. 법정 제외 학교 장학금과 해당 연도 등록금에 쓰인 법정 자녀 학자금대출은 겹치지 않음. 부모의 실제 지출·부양·근로기간 등 요건을 충족한 가상 사례. 세액공제 계산액은 확정 환급액이 아님."
+  },
+  "calculator": {
+    "url": "https://taxcalc.co.kr/#income/employment",
+    "inspectedFile": "js/calculators/income/employment.js",
+    "field": "emp-education",
+    "unit": "원",
+    "method": "교육비 입력액 × 15%",
+    "exclusionsAndCapAutomatic": false,
+    "instruction": "자격·장학금·법정 등록금 학자금대출 제외·자녀별 연간 한도를 직접 반영한 적격 교육비 합계를 입력. 확정 연말정산 환급 계산기가 아님."
+  },
+  "tistoryRelated": [
+    {
+      "title": "국민연금 받는 부모님 인적공제, 통장 금액만 보면 틀립니다",
+      "url": "https://kwonriver-carstroy.tistory.com/entry/국민연금-받는-부모님-인적공제-통장-금액",
+      "verification": "Chrome 공개 H1 확인 2026-10-08"
+    },
+    {
+      "title": "병원비 200만원 썼는데 공제 0원? 의료비 연말정산 실손보험금 확인법",
+      "url": "https://kwonriver-carstroy.tistory.com/entry/병원비-200만원-썼는데-공제-0원-의료비-연말정산-실손보험금-확인법",
+      "verification": "Chrome 공개 H1 확인 2026-10-08"
+    }
+  ],
+  "images": [
+    {
+      "platform": "website",
+      "file": "thumbnails/education-tax-credit-university-900.webp",
+      "size": [
+        1200,
+        630
+      ],
+      "concept": "에메랄드 학사모·투명 900 구조물, 정보형 CGI",
+      "source": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-c200714c-86b8-4444-98d6-c37998720876.png",
+      "prompt": "Use case: scientific-educational.\nAsset: Korean tax website article cover, horizontal ratio 40:21, intended 1200x630.\nCreate a sophisticated, striking editorial 3D illustration of university tuition tax credits. A sculptural emerald graduation cap rests on a clear acrylic numerical frame marked 900, alongside layered white tuition paper and a single coral subtraction symbol. Bright white studio backdrop with graphite and emerald shapes, precise dimensional surfaces and soft real shadows. Financial publication cover, not a generic calculator screenshot, no desk or magnifier or ledger book. Image content right half, premium bold Korean typography left half.\nText exactly: \"대학생 교육비 공제\" and supporting line \"장학금·대출 빼고 계산\".\nSmall line exactly: \"연 900만원 한도\".\nKeep important type and all primary subject inside central 88% safety area, crisp readable Korean, polished hierarchy, no platform names or working labels, no fake official seals, no refund promise, no tiny fake text, no watermark, no beige or purple-blue gradients. Full-bleed single designed image."
+    },
+    {
+      "platform": "tistory",
+      "file": "thumbnails/education-tax-credit-university-900-tistory.webp",
+      "size": [
+        1080,
+        1080
+      ],
+      "concept": "장학금·대출·부담액을 종이 세 갈래로 나눈 숫자 후킹형 CGI",
+      "source": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-b91375cf-790a-48dd-8896-a8a287584181.png",
+      "prompt": "Use case: conceptual editorial 3D illustration. Asset: square Korean personal finance blog thumbnail, intended 1080x1080. Create a dramatic polished CGI paper sculpture: a single oversized university tuition receipt, its lower portion separating into three clean color-coded vertical paper strips, coral, bright cyan, and graphite, the first two peel away while the third remains. Small sculptural graduation tassel in bottom corner. White and very pale grey studio backdrop, remarkable tactile folded paper, strong real shadows, premium editorial design, high-impact but no generic calculator, no desk, no acrylic 900 sculpture. Typography placed on upper central half and receipt lower half, no overlapping. Text exactly in large bold Korean: \"등록금 1천만원\" and \"전부 공제될까?\". Supporting line exactly: \"장학금·대출 먼저 확인\". No other text on receipt, only minimal graphical rules. Keep type and subject inside central 88 percent safe area, crisp Korean lettering. This should be visibly high-quality AI/CGI editorial art, not a dull flat template. No platform labels, no false refund promise, no official seal, no watermark, no purple or beige theme."
+    },
+    {
+      "platform": "naver",
+      "file": "thumbnails/education-tax-credit-university-900-naver.webp",
+      "size": [
+        1200,
+        720
+      ],
+      "concept": "성인 대학생과 어머니의 등록금 대화, 콜라주형 생활 이미지",
+      "source": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-4dfb66f2-1def-4ae2-b1e6-bc9610e322b6.png",
+      "prompt": "Use case: editorial illustration. Asset: horizontal Korean family finance blog link-card thumbnail, ratio 5:3 intended 1200x720. Create a delightful polished AI digital illustration with tactile painted paper collage and modern dimensional character rendering, not generic photo stock and not flat template. On the right half, an adult Korean college son wearing a vivid red-orange cardigan is chatting kindly with his mother wearing a sea-green blouse, holding a single university tuition paper between them. Show two expressive grown adults, relaxed smile, no child or baby, no cash bundles, no smartphone, no desk, no magnifier. A mint university building shape and two white paper shapes in the background, bright airy off-white/soft pale blue, green, coral, charcoal palette. Rich crafted detail in faces and fabric without uncanny realism. On the left, beautiful oversized crisp Korean title, exactly \"아이 등록금\" on top and \"연말정산에 넣어도 될까요?\" below, smaller supporting line exactly \"알바 소득·장학금 확인\". Balance typography and people carefully, no text over faces. All headline and main subjects inside central 90 percent safe region, wide comfortable edges to survive Naver card crop. Distinct family-conversation scene unlike a receipt tax poster. No platform name, working label, logo, watermark, official seals, tiny fake writing or refund promise. Make it engaging and professionally designed."
+    }
+  ],
+  "verification": {
+    "website": "782386e main push. 실 URL HTTP 200. 로컬 데스크톱1234·모바일390 폭에서 가로 넘침 없음.",
+    "tistory": "새 글 제목·돈 버는 생각 카테고리·1080 썸네일 직접 업로드 완료. HTML 모드 전환 확인창의 브라우저 제어가 막혀 사용자 확인 요청. 아직 본문 임시저장 완료를 주장하지 않음.",
+    "naver": "텍스트와 가로형 WebP 준비. 외부 플랫폼 자동 입력·발행하지 않음."
+  }
+}
