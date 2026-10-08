@@ -625,6 +625,22 @@ POSTS = [
         ],
         "customHtml": False,
     },
+    {
+        "file": "부모님_인적공제_국민연금_소득100만원_계산",
+        "slug": "parent-dependent-deduction-pension",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-08",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "근로소득세 간이 계산기",
+        "related": [
+            ("/blog/medical-expense-tax-credit-3-percent.html", "부모님 의료비 세액공제 기준"),
+            ("/blog/mid-year-resignation-tax-settlement.html", "중도퇴사자 연말정산 환급"),
+            ("/income/employment.html", "근로소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
 ]
 
 # ---------------------------------------------------------------------------

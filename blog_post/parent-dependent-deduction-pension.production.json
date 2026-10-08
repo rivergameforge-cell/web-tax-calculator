@@ -1,0 +1,152 @@
+{
+  "topic": "연말정산 부모님 인적공제, 국민연금 수령자 판정",
+  "verifiedAt": "2026-10-08",
+  "incomeYear": 2026,
+  "companySettlementYear": 2027,
+  "platforms": {
+    "website": {
+      "title": "부모님 인적공제 계산, 국민연금 소득 100만원 기준과 150만원 공제 예시",
+      "angle": "요건 판정표, 연금소득금액 공식과 산출세액 비교",
+      "example": "과세대상 연금500/600만원, 자녀 과세표준4000만원"
+    },
+    "tistory": {
+      "title": "국민연금 받는 부모님 인적공제, 통장 금액만 보면 틀립니다",
+      "angle": "원천징수영수증 대조, 기타 소득과 중복 제출 방지",
+      "example": "실제연금840만원/과세대상480만원, 사업소득30만원 추가"
+    },
+    "naver": {
+      "title": "부모님 국민연금 나오는데, 제 연말정산에 넣어도 될까요?",
+      "angle": "별거 부모님을 부양하는 가족의 생활형 질문, 쉬운 말과 단계별 확인",
+      "example": "과세대상 연금400만원, 72세 어머니 경로우대"
+    }
+  },
+  "tistoryBrowserStatus": {
+    "state": "pending",
+    "published": false
+  },
+  "sources": [
+    {
+      "url": "https://law.go.kr/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=1001060774",
+      "supports": "소득세법50:150만원,60세,연소득금액100만원,근로소득만총급여500만원,장애인나이예외"
+    },
+    {
+      "url": "https://www.law.go.kr/법령/소득세법/제53조",
+      "supports": "부양과 별거직계존속,판정시기; 현재법 조문 검색과 국세청 법령미러 교차대조"
+    },
+    {
+      "url": "https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1033239925",
+      "supports": "소득세법51:기본공제자격 전제70세100만원경로우대"
+    },
+    {
+      "url": "https://www.law.go.kr/법령/소득세법/제55조",
+      "supports": "소득세기본세율15%/누진공제126만원"
+    },
+    {
+      "url": "https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7889&mi=6453",
+      "supports": "과세대상총연금액-연금소득공제,350/700/1400구간과900만원한도"
+    },
+    {
+      "url": "https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0097M0.do",
+      "supports": "2002이후 과세대상구분,공적연금 약516만원/소득100만원,다른소득합산,수급자모의계산과원천징수영수증"
+    },
+    {
+      "url": "https://www.goebc.kr/upload/ojeong-e/na/bbs_826/2025/01/E6F49B16-17E8-DA82-3980-C8584CD1AD42.pdf",
+      "authoredBy": "국세청",
+      "host": "경기도교육청",
+      "documentYear": 2024,
+      "supports": "연소득금액 합산은 종합+퇴직+양도; 비과세/분리과세 제외; 현재 법과 재대조"
+    }
+  ],
+  "examples": {
+    "website": [
+      {
+        "taxablePension": 5000000,
+        "pensionDeduction": 4100000,
+        "pensionIncome": 900000
+      },
+      {
+        "taxablePension": 6000000,
+        "pensionDeduction": 4500000,
+        "pensionIncome": 1500000
+      }
+    ],
+    "taxEffect": {
+      "taxBaseBefore": 40000000,
+      "taxBaseAfter": 38500000,
+      "taxBefore": 4740000,
+      "taxAfter": 4515000,
+      "difference": 225000,
+      "scope": "산출소득세만;세액공제/지방소득세/원천징수 제외,환급 보장 아님"
+    },
+    "tistory": {
+      "actualAnnualPension": 8400000,
+      "taxablePension": 4800000,
+      "pensionDeduction": 4020000,
+      "pensionIncome": 780000,
+      "additionalBusinessIncome": 300000,
+      "combinedIncome": 1080000
+    },
+    "naver": {
+      "taxablePension": 4000000,
+      "pensionDeduction": 3700000,
+      "pensionIncome": 300000,
+      "age": 72,
+      "basicDeduction": 1500000,
+      "elderlyDeduction": 1000000,
+      "totalDeduction": 2500000
+    },
+    "scope": "All examples fictional, other eligibility conditions must be satisfied; no unsupported universal actual-deposit cutoff"
+  },
+  "calculatorScope": "Existing employment calculator supports basic150만원 per eligibledependent only; noautomatic age/income/pension qualification or senior/disabled additionaldeduction, no finalrefund guarantee",
+  "relatedTistory": [
+    {
+      "title": "연봉 5천 카드값 2천만원, 신용카드 소득공제는 얼마일까?",
+      "url": "https://kwonriver-carstroy.tistory.com/entry/연봉-5천-카드값-2천만원-신용카드-소득공제",
+      "verifiedAt": "2026-10-08"
+    },
+    {
+      "title": "퇴사 후 연말정산 환급, 원천징수영수증 결정세액부터 확인하세요",
+      "url": "https://kwonriver-carstroy.tistory.com/entry/퇴사-후-연말정산-환급-원천징수영수증-결정세액",
+      "verifiedAt": "2026-10-08"
+    }
+  ],
+  "imageGeneration": {
+    "tool": "built-in image_gen",
+    "mode": "generate",
+    "prompts": {
+      "website": "Use case: scientific-educational. Asset: Korean tax article thumbnail, horizontal 1200x630, ratio 40:21.\nCreate a polished premium editorial 3D still-life about pension-recipient parent dependent tax deductions. White studio background, a beautifully modeled upright emerald-green tax ledger with crisp embossed paper tabs, a coral-red magnifying glass revealing a pension statement and a small tasteful calendar. Sophisticated actual dimensional materials, realistic soft studio lighting, clean shadows and deliberate asymmetric editorial composition; credible financial publication cover, not a generic dashboard template. Objects occupy right half, left half carries highly legible bold Korean typography as part of the designed image. Main text EXACTLY \"부모님 인적공제\", supporting text EXACTLY \"국민연금 · 소득 · 나이 기준\". Small readable line EXACTLY \"150만원 소득공제\". No refund claims. Keep all text and primary objects inside central 88% safety area with generous margins. White, emerald, graphite, coral accents; no beige, no blue-purple gradients, no coins raining, no excessive tiny fake writing, no work labels, no platform names, no watermark. Text must be impeccably spelled and fitted.",
+      "tistory": "Use case: ads-marketing. Create one premium square Korean financial blog cover, 1080x1080 intended output, exactly 1:1. Distinctive high-end tactile 3D paper-cut editorial design, no photographic desk. An enormous sculptural translucent turquoise question mark rises from a folded white pension slip, with one small coral-red ink stamp and crisp layered paper arcs that visually suggest checking rather than rejection. Fresh white and saturated turquoise background fields with charcoal typography and coral accents, studio light, dimensional crisp shadows, graphic sophistication, expressive and clearly AI-rendered rather than generic cheap template. Bold impeccably spelled Korean headline EXACTLY \"연금 받는 부모님\" on one line or two, then larger EXACTLY \"공제 될까?\". Lower supporting text EXACTLY \"150만원은 환급액이 아닙니다\". Main headline upper half with generous whitespace; physical question-mark/paper scene lower middle. Don't reuse ledger book, magnifying glass or calendar. Do not show a guaranteed yes/no result. All important content within central 85% square; readable at feed thumbnail size, no tiny tax forms, no fake official logos, no platform labels, no watermark, no beige or dark-blue gradient.",
+      "naver": "Use case: illustration-story. Asset: Korean Naver blog link-card thumbnail horizontal ratio 5:3, intended 1200x720.\nCreate a charming sophisticated dimensional clay-animation editorial illustration. A Korean adult daughter with short dark hair warmly talking on a smartphone, with a friendly elderly Korean mother in a rounded speech-bubble vignette on the right, both fictional non-identifiable people. Show a tiny tasteful family photo and a single pension envelope, not a tax ledger, not a magnifying glass, not a huge question-mark sculpture. Friendly pastel jade, coral, butter-yellow accents on mostly bright white, rich tactile knitted clothing and clay textures, authentic relaxed expressions, compelling polished Pixar-like visual quality without branded characters. Upper center clean title space carrying beautifully legible Korean text EXACTLY \"부모님 연금 있어도\" and second line EXACTLY \"공제 가능할까요?\". Small subtitle EXACTLY \"따로 살아도 먼저 확인해요\". Title centered, characters lower center, entire title and important faces within center 90% safe rectangle, at least 6% clear margin from every edge to survive link card crop. No tax refund guarantee, no extra numbers, no platform names, no working labels, no fake UI, no watermark. Compose as one full-bleed image, not a collage of UI cards."
+    },
+    "finalFiles": [
+      {
+        "path": "thumbnails/parent-dependent-deduction-pension.webp",
+        "width": 1200,
+        "height": 630,
+        "source": "exec-56ddb6e8-9e0f-4bf3-b467-2245f391659e.png"
+      },
+      {
+        "path": "thumbnails/parent-dependent-deduction-pension-tistory.webp",
+        "width": 1080,
+        "height": 1080,
+        "source": "exec-6f1dec1a-6804-4e4a-9192-cc4cec47f4cc.png"
+      },
+      {
+        "path": "thumbnails/parent-dependent-deduction-pension-naver.webp",
+        "width": 1200,
+        "height": 720,
+        "source": "exec-866a60ce-a9e1-4a13-85af-783157dbe0b2.png"
+      }
+    ],
+    "postProcessing": "Sharp proportional resizing andWebP conversion only; no redraw or text overlay"
+  },
+  "editorialChecks": {
+    "state": "pending",
+    "required": [
+      "Distinct titles, first3paragraphs, sectionorder,cases,CTAs,thumbnailconcepts",
+      "Tistory intro-image-H2/body;2immediate H2/ad/body,nonstackedrealblankparagraphs",
+      "Naver3titles,20to30hashtags,warm mobileprose",
+      "No impersonated professor/accountantcareers or refund guarantee"
+    ]
+  }
+}
