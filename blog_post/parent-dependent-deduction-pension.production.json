@@ -21,9 +21,20 @@
     }
   },
   "tistoryBrowserStatus": {
-    "state": "waiting_for_html_confirmation",
+    "state": "saved_draft",
+    "verifiedAt": "2026-10-08",
     "published": false,
-    "observation": "Opened a fresh post in the user's signed-in Chrome profile 가람. Existing manual draft count was1. HTML mode confirmation is visible, but both native confirmation and documented dialog control hit browser focus timeouts. Asked the user to press Confirm. Article has not yet been entered or manually saved; the local package is not evidence of a saved draft."
+    "manualDraftCountBefore": 1,
+    "manualDraftCountAfter": 2,
+    "observation": "Entered the complete HTML article, category and 10 tags in the user's signed-in Chrome. Uploaded the square thumbnail directly to Tistory and placed its native image token after the introduction. Closed the shopping-anchor ad covering the save controls, clicked manual Save Draft and verified the new full title marked 방금 in the draft list. Existing draft retained; final publication was not performed.",
+    "previewChecks": {
+      "completeArticle": true,
+      "thumbnailNaturalSize": "1080x1080",
+      "thumbnailAfterIntroduction": true,
+      "manualAdCount": 2,
+      "manualAdPlacement": "Both blocks immediately follow H2 and precede the section paragraph",
+      "desktopAndMobile": "Checked full desktop preview and Pixel 2 mobile preview at 411x731; image renders and fits, title wraps, paragraph spacing retained"
+    }
   },
   "sources": [
     {
