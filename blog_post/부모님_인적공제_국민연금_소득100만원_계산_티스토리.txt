@@ -1,0 +1,78 @@
+<!-- 티스토리 제목 -->
+<!-- 국민연금 받는 부모님 인적공제, 통장 금액만 보면 틀립니다 -->
+
+<p data-ke-size="size16">부모님이 국민연금을 받으신다는 이유로 연말정산 공제 대상에서 먼저 빼셨나요? 반대로 연금에서 세금이 안 떼였으니 무조건 공제된다고 생각하셨나요?</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">두 판단 모두 서류를 한 번 더 봐야 합니다. 요건을 갖춘 부모님은 1명당 <b>150만 원 기본공제</b>를 적용할 수 있지만, 판단 기준은 통장 입금액도 연금 납부세액도 아닌 <b>연간 소득금액</b>입니다. 150만 원이 환급액이라는 뜻도 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래는 <b>2026년 귀속 소득 기준</b>의 제출 전 점검법입니다. 통상적인 회사 연말정산은 2027년에 진행되며, 금액 사례는 설명을 위한 가상 상황입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><img src="https://taxcalc.co.kr/thumbnails/parent-dependent-deduction-pension-tistory.webp" alt="연금을 받는 부모님의 공제 가능 여부와 150만 원이 환급액은 아니라는 안내" width="1080" height="1080" /></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">공제 신청 전, 통장 대신 이 두 항목부터 보세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">국민연금 소득 자료에서 먼저 찾을 항목은 <b>과세대상 연금액</b>과 <b>연금소득금액</b>입니다. 연금소득 원천징수영수증 등에 표시되는 연금소득금액을 확인하면, 실제 수령액만 보고 계산하는 실수를 줄일 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">국민연금 노령연금은 2002년 이후 납입분 등에 대응하는 과세대상 부분을 구분하고, 여기에 연금소득공제를 적용합니다. 그래서 입금된 연금 전액이 기본공제 판정 소득이 되는 것은 아닙니다. <a href="https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0097M0.do" target="_blank" rel="noopener">국민연금공단 연말정산 안내</a>에서도 과세대상 연금액과 다른 소득의 유무를 함께 확인하도록 설명합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>올해 자료가 아직 확정되지 않았다면?</b><br />공단의 수급자 조회·노령연금 연말정산 모의계산으로 먼저 점검하고, 다음 해 발급되는 해당 귀속연도 원천징수영수증 등 최종 자료와 다시 대조하세요. 작년 영수증을 올해 소득의 확정 증빙으로 대신 쓰지는 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">연금 840만 원을 받았어도 소득 기준을 통과할 수 있습니다</h2>
+<p data-ke-size="size16">69세 아버지를 실제로 부양하고 있고, 다른 가족이 아버지를 공제에 넣지 않았다고 가정하겠습니다. 올해 받은 연금은 840만 원이지만, 공단 자료상 <b>과세대상 연금액이 480만 원</b>인 사례입니다. 다른 소득은 없습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">연금소득공제: 350만 원 + (480만 원 - 350만 원) × 40% = <b>402만 원</b><br />연금소득금액: 480만 원 - 402만 원 = <b>78만 원</b><br />연간 소득금액 100만 원 이하이므로 <b>소득 요건 충족</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이 사례는 나이·실제 부양·중복 제한도 충족한다는 전제에서 기본공제를 검토할 수 있습니다. 840만 원에서 과세대상 480만 원을 임의 비율로 계산한 예시는 아닙니다. <b>480만 원은 공단 자료로 확인된 값이라는 가정</b>이며, 실제 수령자의 과세대상 금액은 각자 자료로 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">인터넷에서 보이는 '연금 약 516만 원'도 모든 연금 입금액의 공통 한도가 아닙니다. 일반 공적연금만 있을 때 과세대상 금액에서 연금소득공제를 적용한 설명입니다. 사적연금·다른 소득이 섞이면 같은 숫자로 판정하지 마세요. 계산 구간은 <a href="https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7889&amp;mi=6453" target="_blank" rel="noopener">국세청 연금소득금액 계산방법</a>에서 확인할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">소득 30만 원이 추가되면 결론이 바뀌는 이유</h2>
+<p data-ke-size="size16">위 아버지에게 필요경비를 뺀 <b>사업소득금액 30만 원</b>이 추가로 있다고 바꿔보겠습니다. 매출 30만 원이 아니라 세법상 계산된 사업소득금액이라는 점이 중요합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">연금소득금액 78만 원 + 사업소득금액 30만 원 = <b>108만 원</b><br />100만 원을 초과하므로 부모님 기본공제의 <b>소득 요건 미충족</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">부양가족 판정에서는 종합소득금액과 과세되는 퇴직·양도소득금액도 확인합니다. 비과세·법정 분리과세소득은 제외하지만, 어떤 과세 방식인지 확인하지 않고 입금액을 무조건 빼거나 더해서는 안 됩니다. 퇴직금이나 자산 처분이 있었던 해는 연금 자료만 제출하지 말고 해당 소득 자료까지 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>부모님 소득세가 0원이어도 기본공제는 안 될 수 있습니다.</b> 소득금액에서 부모님 본인의 인적공제 등을 차감한 과세표준이나, 각종 공제를 적용한 결정세액으로 자녀의 공제 자격을 대신 판정하는 것은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">연금만 맞추고 놓치기 쉬운 제출 오류 세 가지</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16"><b>오류 1. 가족이 같은 부모님을 동시에 공제</b><br />형제자매가 각자 회사에 같은 부모님 기본공제를 신청할 수는 없습니다. 실제 부양관계에 맞는 공제 적용자를 확인하고 제출 내용을 맞추세요. '각자 조금씩 용돈을 드렸으니 둘 다 가능'이라는 판단은 안 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>오류 2. 주소가 다르다는 이유만으로 제외</b><br />주거 형편으로 따로 사는 직계존속은 생계를 같이 하는 사람으로 볼 수 있습니다. 다만 실제 부양은 확인해야 합니다. 가족관계 자료와 생활비 부담 내역 등을 준비하되, 법에 정해진 최소 월 송금액이 있는 것처럼 판단하지 마세요. <a href="https://www.law.go.kr/법령/소득세법/제53조" target="_blank" rel="noopener">소득세법 제53조</a>가 기준입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>오류 3. 간소화 자료 제공 동의를 자격 승인으로 이해</b><br />부모님 자료가 조회된다는 뜻이지, 모든 소득과 부양 요건이 검증됐다는 뜻은 아닙니다. 올해 새로 생긴 소득과 연말까지의 변동을 확인한 뒤 공제에 반영하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">60세와 70세, 공제 항목이 달라집니다</h2>
+<p data-ke-size="size16">일반적인 부모님 기본공제는 <b>60세 이상</b>이고 연간 소득금액 합계액이 <b>100만 원 이하</b>여야 합니다. 2026년 귀속은 1966년 12월 31일까지 출생한 부모님의 나이 요건을 확인합니다. 법정 장애인은 기본공제의 나이 제한을 적용하지 않지만 소득 등 나머지 요건은 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">기본공제 대상자가 <b>70세 이상</b>이면 경로우대 추가공제 100만 원을 검토합니다. 기본공제 150만 원에 더하는 소득공제이며, 70세라고 소득 기준이 면제되지는 않습니다. 나이·소득 기준은 <a href="https://law.go.kr/lsLawLinkInfo.do?chrClsCd=010202&amp;lsJoLnkSeq=1001060774" target="_blank" rel="noopener">기본공제 규정</a>, 경로우대는 <a href="https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1033239925" target="_blank" rel="noopener">추가공제 규정</a>을 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일반 근로소득만 있는 부모님은 총급여 500만 원 이하의 별도 소득 기준이 있습니다. 이 숫자를 국민연금이나 근로·연금이 함께 있는 부모님에게 그대로 적용하면 안 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">150만 원 공제, 환급은 따로 계산해야 합니다</h2>
+<p data-ke-size="size16">인적공제는 과세할 소득을 줄이는 제도입니다. 실제 세금 감소와 환급은 자녀의 과세표준, 다른 소득·세액공제, 이미 원천징수된 세금에 따라 달라집니다. 결정세액이 이미 0원이라면 공제 항목을 추가해도 환급이 늘지 않을 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">제출 전에는 <b>연금소득 자료 → 다른 소득 → 나이와 실제 부양 → 가족 중복 여부</b> 순서로 확인하세요. 자격이 맞는지 먼저 정리한 다음, 내 연말정산 계산에 넣는 것이 순서입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래 계산기에서 총급여 등 입력을 고정하고 적격 부양가족 수를 바꿔 기본공제 영향을 비교할 수 있습니다. 부모님의 연금·나이·소득 요건을 자동 판정하거나 경로우대·장애인 추가공제를 자동 반영하지 않는 간이 계산입니다. 확정 환급은 회사 정산 또는 홈택스에서 확인하세요.</p>
+<p data-ke-size="size16" style="text-align: center;"><a href="https://taxcalc.co.kr/#income/employment" target="_blank" rel="noopener" style="display: inline-block; padding: 14px 22px; background: #087c80; color: #ffffff; text-decoration: none; border-radius: 6px;"><b>부양가족 기본공제 영향 비교하기</b></a></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16"><a href="https://kwonriver-carstroy.tistory.com/entry/연봉-5천-카드값-2천만원-신용카드-소득공제">연봉 5천 카드값 2천만원, 신용카드 소득공제는 얼마일까?</a><br />부모님 기본공제와 카드 소득공제는 적용 요건과 계산 방식이 다릅니다. 연말정산 항목을 따로 확인할 때 도움이 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><a href="https://kwonriver-carstroy.tistory.com/entry/퇴사-후-연말정산-환급-원천징수영수증-결정세액">퇴사 후 연말정산 환급, 원천징수영수증 결정세액부터 확인하세요</a><br />중도퇴사했다면 공제 자격뿐 아니라 어느 정산·신고에 반영할지도 확인해야 합니다. 원천징수영수증을 읽는 순서를 정리한 글입니다.</p>
+
+<!-- 해시태그 -->
+<!-- 부모님인적공제, 국민연금인적공제, 부모님연말정산, 연금소득금액, 부양가족소득기준, 기본공제150만원, 연금소득원천징수영수증, 부양가족중복공제, 경로우대공제, 따로사는부모님공제 -->

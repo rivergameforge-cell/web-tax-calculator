@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티스토리 업로드 도우미 - 국민연금 받는 부모님 인적공제, 통장 금액만 보면 틀립니다</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 24px;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 20px;
+    }
+    section {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 0 0 12px; }
+    label { display: block; font-size: 13px; color: #6b7280; margin-bottom: 8px; }
+    textarea, input {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      background: #f9fafb;
+    }
+    textarea { min-height: 320px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+    button, a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #2563eb;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 8px 8px 0 0;
+    }
+    button.secondary { background: #475569; }
+    .hint { color: #64748b; font-size: 13px; margin: 8px 0 0; }
+    .side img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      display: block;
+    }
+    .no-image {
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 28px 12px;
+      text-align: center;
+      color: #64748b;
+    }
+    .checklist li { margin-bottom: 8px; }
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>티스토리 업로드 도우미</h1>
+    <div>부모님이 국민연금을 받으신다는 이유로 연말정산 공제 대상에서 먼저 빼셨나요? 반대로 연금에서 세금이 안 떼였으니 무조건 공제된다고 생각하셨나요?   두 판단 모두 서류를 한 번 더 봐야 합니다. 요건을 갖춘 부모님은 1명당 150만 원 기본공제 를 적용할 수 있지만, 판단 기준은 통장…</div>
+  </header>
+  <main>
+    <div>
+      <section>
+        <h2>1. 제목</h2>
+        <label>티스토리 제목 입력란에 붙여넣기</label>
+        <input id="title" value="국민연금 받는 부모님 인적공제, 통장 금액만 보면 틀립니다">
+        <button onclick="copyValue('title')">제목 복사</button>
+      </section>
+
+      <section>
+        <h2>2. 본문 HTML</h2>
+        <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
+        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;부모님이 국민연금을 받으신다는 이유로 연말정산 공제 대상에서 먼저 빼셨나요? 반대로 연금에서 세금이 안 떼였으니 무조건 공제된다고 생각하셨나요?&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;두 판단 모두 서류를 한 번 더 봐야 합니다. 요건을 갖춘 부모님은 1명당 &lt;b&gt;150만 원 기본공제&lt;/b&gt;를 적용할 수 있지만, 판단 기준은 통장 입금액도 연금 납부세액도 아닌 &lt;b&gt;연간 소득금액&lt;/b&gt;입니다. 150만 원이 환급액이라는 뜻도 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;아래는 &lt;b&gt;2026년 귀속 소득 기준&lt;/b&gt;의 제출 전 점검법입니다. 통상적인 회사 연말정산은 2027년에 진행되며, 금액 사례는 설명을 위한 가상 상황입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;img src=&quot;https://taxcalc.co.kr/thumbnails/parent-dependent-deduction-pension-tistory.webp&quot; alt=&quot;연금을 받는 부모님의 공제 가능 여부와 150만 원이 환급액은 아니라는 안내&quot; width=&quot;1080&quot; height=&quot;1080&quot; /&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;공제 신청 전, 통장 대신 이 두 항목부터 보세요&lt;/h2&gt;
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;국민연금 소득 자료에서 먼저 찾을 항목은 &lt;b&gt;과세대상 연금액&lt;/b&gt;과 &lt;b&gt;연금소득금액&lt;/b&gt;입니다. 연금소득 원천징수영수증 등에 표시되는 연금소득금액을 확인하면, 실제 수령액만 보고 계산하는 실수를 줄일 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;국민연금 노령연금은 2002년 이후 납입분 등에 대응하는 과세대상 부분을 구분하고, 여기에 연금소득공제를 적용합니다. 그래서 입금된 연금 전액이 기본공제 판정 소득이 되는 것은 아닙니다. &lt;a href=&quot;https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0097M0.do&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;국민연금공단 연말정산 안내&lt;/a&gt;에서도 과세대상 연금액과 다른 소득의 유무를 함께 확인하도록 설명합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;올해 자료가 아직 확정되지 않았다면?&lt;/b&gt;&lt;br /&gt;공단의 수급자 조회·노령연금 연말정산 모의계산으로 먼저 점검하고, 다음 해 발급되는 해당 귀속연도 원천징수영수증 등 최종 자료와 다시 대조하세요. 작년 영수증을 올해 소득의 확정 증빙으로 대신 쓰지는 않습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;연금 840만 원을 받았어도 소득 기준을 통과할 수 있습니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;69세 아버지를 실제로 부양하고 있고, 다른 가족이 아버지를 공제에 넣지 않았다고 가정하겠습니다. 올해 받은 연금은 840만 원이지만, 공단 자료상 &lt;b&gt;과세대상 연금액이 480만 원&lt;/b&gt;인 사례입니다. 다른 소득은 없습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;연금소득공제: 350만 원 + (480만 원 - 350만 원) × 40% = &lt;b&gt;402만 원&lt;/b&gt;&lt;br /&gt;연금소득금액: 480만 원 - 402만 원 = &lt;b&gt;78만 원&lt;/b&gt;&lt;br /&gt;연간 소득금액 100만 원 이하이므로 &lt;b&gt;소득 요건 충족&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이 사례는 나이·실제 부양·중복 제한도 충족한다는 전제에서 기본공제를 검토할 수 있습니다. 840만 원에서 과세대상 480만 원을 임의 비율로 계산한 예시는 아닙니다. &lt;b&gt;480만 원은 공단 자료로 확인된 값이라는 가정&lt;/b&gt;이며, 실제 수령자의 과세대상 금액은 각자 자료로 확인해야 합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;인터넷에서 보이는 &#x27;연금 약 516만 원&#x27;도 모든 연금 입금액의 공통 한도가 아닙니다. 일반 공적연금만 있을 때 과세대상 금액에서 연금소득공제를 적용한 설명입니다. 사적연금·다른 소득이 섞이면 같은 숫자로 판정하지 마세요. 계산 구간은 &lt;a href=&quot;https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7889&amp;amp;mi=6453&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;국세청 연금소득금액 계산방법&lt;/a&gt;에서 확인할 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;소득 30만 원이 추가되면 결론이 바뀌는 이유&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;위 아버지에게 필요경비를 뺀 &lt;b&gt;사업소득금액 30만 원&lt;/b&gt;이 추가로 있다고 바꿔보겠습니다. 매출 30만 원이 아니라 세법상 계산된 사업소득금액이라는 점이 중요합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;연금소득금액 78만 원 + 사업소득금액 30만 원 = &lt;b&gt;108만 원&lt;/b&gt;&lt;br /&gt;100만 원을 초과하므로 부모님 기본공제의 &lt;b&gt;소득 요건 미충족&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;부양가족 판정에서는 종합소득금액과 과세되는 퇴직·양도소득금액도 확인합니다. 비과세·법정 분리과세소득은 제외하지만, 어떤 과세 방식인지 확인하지 않고 입금액을 무조건 빼거나 더해서는 안 됩니다. 퇴직금이나 자산 처분이 있었던 해는 연금 자료만 제출하지 말고 해당 소득 자료까지 확인하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;부모님 소득세가 0원이어도 기본공제는 안 될 수 있습니다.&lt;/b&gt; 소득금액에서 부모님 본인의 인적공제 등을 차감한 과세표준이나, 각종 공제를 적용한 결정세액으로 자녀의 공제 자격을 대신 판정하는 것은 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;연금만 맞추고 놓치기 쉬운 제출 오류 세 가지&lt;/h2&gt;
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;오류 1. 가족이 같은 부모님을 동시에 공제&lt;/b&gt;&lt;br /&gt;형제자매가 각자 회사에 같은 부모님 기본공제를 신청할 수는 없습니다. 실제 부양관계에 맞는 공제 적용자를 확인하고 제출 내용을 맞추세요. &#x27;각자 조금씩 용돈을 드렸으니 둘 다 가능&#x27;이라는 판단은 안 됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;오류 2. 주소가 다르다는 이유만으로 제외&lt;/b&gt;&lt;br /&gt;주거 형편으로 따로 사는 직계존속은 생계를 같이 하는 사람으로 볼 수 있습니다. 다만 실제 부양은 확인해야 합니다. 가족관계 자료와 생활비 부담 내역 등을 준비하되, 법에 정해진 최소 월 송금액이 있는 것처럼 판단하지 마세요. &lt;a href=&quot;https://www.law.go.kr/법령/소득세법/제53조&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;소득세법 제53조&lt;/a&gt;가 기준입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;오류 3. 간소화 자료 제공 동의를 자격 승인으로 이해&lt;/b&gt;&lt;br /&gt;부모님 자료가 조회된다는 뜻이지, 모든 소득과 부양 요건이 검증됐다는 뜻은 아닙니다. 올해 새로 생긴 소득과 연말까지의 변동을 확인한 뒤 공제에 반영하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;60세와 70세, 공제 항목이 달라집니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반적인 부모님 기본공제는 &lt;b&gt;60세 이상&lt;/b&gt;이고 연간 소득금액 합계액이 &lt;b&gt;100만 원 이하&lt;/b&gt;여야 합니다. 2026년 귀속은 1966년 12월 31일까지 출생한 부모님의 나이 요건을 확인합니다. 법정 장애인은 기본공제의 나이 제한을 적용하지 않지만 소득 등 나머지 요건은 확인해야 합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;기본공제 대상자가 &lt;b&gt;70세 이상&lt;/b&gt;이면 경로우대 추가공제 100만 원을 검토합니다. 기본공제 150만 원에 더하는 소득공제이며, 70세라고 소득 기준이 면제되지는 않습니다. 나이·소득 기준은 &lt;a href=&quot;https://law.go.kr/lsLawLinkInfo.do?chrClsCd=010202&amp;amp;lsJoLnkSeq=1001060774&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;기본공제 규정&lt;/a&gt;, 경로우대는 &lt;a href=&quot;https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1033239925&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;추가공제 규정&lt;/a&gt;을 확인하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반 근로소득만 있는 부모님은 총급여 500만 원 이하의 별도 소득 기준이 있습니다. 이 숫자를 국민연금이나 근로·연금이 함께 있는 부모님에게 그대로 적용하면 안 됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;150만 원 공제, 환급은 따로 계산해야 합니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;인적공제는 과세할 소득을 줄이는 제도입니다. 실제 세금 감소와 환급은 자녀의 과세표준, 다른 소득·세액공제, 이미 원천징수된 세금에 따라 달라집니다. 결정세액이 이미 0원이라면 공제 항목을 추가해도 환급이 늘지 않을 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;제출 전에는 &lt;b&gt;연금소득 자료 → 다른 소득 → 나이와 실제 부양 → 가족 중복 여부&lt;/b&gt; 순서로 확인하세요. 자격이 맞는지 먼저 정리한 다음, 내 연말정산 계산에 넣는 것이 순서입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;아래 계산기에서 총급여 등 입력을 고정하고 적격 부양가족 수를 바꿔 기본공제 영향을 비교할 수 있습니다. 부모님의 연금·나이·소득 요건을 자동 판정하거나 경로우대·장애인 추가공제를 자동 반영하지 않는 간이 계산입니다. 확정 환급은 회사 정산 또는 홈택스에서 확인하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot; style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;https://taxcalc.co.kr/#income/employment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;display: inline-block; padding: 14px 22px; background: #087c80; color: #ffffff; text-decoration: none; border-radius: 6px;&quot;&gt;&lt;b&gt;부양가족 기본공제 영향 비교하기&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;함께 읽으면 좋은 글&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://kwonriver-carstroy.tistory.com/entry/연봉-5천-카드값-2천만원-신용카드-소득공제&quot;&gt;연봉 5천 카드값 2천만원, 신용카드 소득공제는 얼마일까?&lt;/a&gt;&lt;br /&gt;부모님 기본공제와 카드 소득공제는 적용 요건과 계산 방식이 다릅니다. 연말정산 항목을 따로 확인할 때 도움이 됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://kwonriver-carstroy.tistory.com/entry/퇴사-후-연말정산-환급-원천징수영수증-결정세액&quot;&gt;퇴사 후 연말정산 환급, 원천징수영수증 결정세액부터 확인하세요&lt;/a&gt;&lt;br /&gt;중도퇴사했다면 공제 자격뿐 아니라 어느 정산·신고에 반영할지도 확인해야 합니다. 원천징수영수증을 읽는 순서를 정리한 글입니다.&lt;/p&gt;</textarea>
+        <button onclick="copyValue('body')">본문 복사</button>
+        <p class="hint">이미지는 티스토리에 직접 업로드한 뒤 서론 다음, 첫 소제목 앞에 배치하세요. HTML을 붙여넣을 때도 업로드한 이미지 위치를 유지하세요.</p>
+      </section>
+
+      <section>
+        <h2>3. 태그</h2>
+        <label>티스토리 태그 입력란에 붙여넣기</label>
+        <input id="tags" value="부모님인적공제, 국민연금인적공제, 부모님연말정산, 연금소득금액, 부양가족소득기준, 기본공제150만원, 연금소득원천징수영수증, 부양가족중복공제, 경로우대공제, 따로사는부모님공제">
+        <button onclick="copyValue('tags')">태그 복사</button>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>썸네일</h2>
+        <img src="file:///Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/parent-dependent-deduction-pension-tistory.webp" alt="thumbnail preview">
+        <label style="margin-top:12px">로컬 이미지 경로</label>
+        <input id="imagePath" value="/Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/parent-dependent-deduction-pension-tistory.webp">
+        <button onclick="copyValue('imagePath')">이미지 경로 복사</button>
+        <p class="hint">parent-dependent-deduction-pension-tistory.webp</p>
+      </section>
+
+      <section>
+        <h2>업로드 순서</h2>
+        <ol class="checklist">
+          <li>티스토리 글쓰기 화면을 연다.</li>
+          <li>제목을 복사해 입력한다.</li>
+          <li>썸네일 이미지를 업로드하고 대표 이미지로 지정한다.</li>
+          <li>에디터를 HTML 모드로 전환한다.</li>
+          <li>본문 HTML을 붙여넣고 서론 → 업로드한 썸네일 → 첫 소제목 순서를 확인한다.</li>
+          <li>태그를 붙여넣고 임시저장한다.</li>
+        </ol>
+        <a class="button" href="https://www.tistory.com/" target="_blank" rel="noopener">티스토리 열기</a>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    async function copyValue(id) {
+      const el = document.getElementById(id);
+      await navigator.clipboard.writeText(el.value);
+      const old = document.title;
+      document.title = '복사 완료';
+      setTimeout(() => document.title = old, 900);
+    }
+  </script>
+</body>
+</html>

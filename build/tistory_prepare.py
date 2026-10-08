@@ -258,7 +258,7 @@ def render_helper(title: str, body: str, tags: str, image_path: Path | None) -> 
         <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
         <textarea id="body">{html.escape(body)}</textarea>
         <button onclick="copyValue('body')">본문 복사</button>
-        <p class="hint">이미지는 티스토리에서 직접 업로드한 뒤 본문 상단에 배치하는 방식을 권장합니다.</p>
+        <p class="hint">이미지는 티스토리에 직접 업로드한 뒤 서론 다음, 첫 소제목 앞에 배치하세요. HTML을 붙여넣을 때도 업로드한 이미지 위치를 유지하세요.</p>
       </section>
 
       <section>
@@ -286,7 +286,7 @@ def render_helper(title: str, body: str, tags: str, image_path: Path | None) -> 
           <li>제목을 복사해 입력한다.</li>
           <li>썸네일 이미지를 업로드하고 대표 이미지로 지정한다.</li>
           <li>에디터를 HTML 모드로 전환한다.</li>
-          <li>본문 HTML을 붙여넣는다.</li>
+          <li>본문 HTML을 붙여넣고 서론 → 업로드한 썸네일 → 첫 소제목 순서를 확인한다.</li>
           <li>태그를 붙여넣고 임시저장한다.</li>
         </ol>
         <a class="button" href="https://www.tistory.com/" target="_blank" rel="noopener">티스토리 열기</a>

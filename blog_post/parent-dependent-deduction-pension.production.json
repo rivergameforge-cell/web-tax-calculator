@@ -21,8 +21,9 @@
     }
   },
   "tistoryBrowserStatus": {
-    "state": "pending",
-    "published": false
+    "state": "waiting_for_html_confirmation",
+    "published": false,
+    "observation": "Opened a fresh post in the user's signed-in Chrome profile 가람. Existing manual draft count was1. HTML mode confirmation is visible, but both native confirmation and documented dialog control hit browser focus timeouts. Asked the user to press Confirm. Article has not yet been entered or manually saved; the local package is not evidence of a saved draft."
   },
   "sources": [
     {
@@ -141,7 +142,12 @@
     "postProcessing": "Sharp proportional resizing andWebP conversion only; no redraw or text overlay"
   },
   "editorialChecks": {
-    "state": "pending",
+    "state": "passed_local_checks",
+    "testCount": 11,
+    "naverTagCount": 25,
+    "websiteDeployment": "62192e7 pushed to origin/main; GitHub Pages deployment successful and public URL returned200 with correct title, examples and calculator caveats",
+    "websitePreview": "Desktop and390px mobile screenshots checked; no page-wide overflow, tables fit, heading wraps; thumbnail is used by existing OG and index-card architecture",
+    "thumbnailReview": "All3 imagegen outputs visually checked for Korean headline accuracy and distinctconcepts; Sharp converted to exact1200x630/1080x1080/1200x720WebP",
     "required": [
       "Distinct titles, first3paragraphs, sectionorder,cases,CTAs,thumbnailconcepts",
       "Tistory intro-image-H2/body;2immediate H2/ad/body,nonstackedrealblankparagraphs",
