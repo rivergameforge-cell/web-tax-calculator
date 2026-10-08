@@ -61,7 +61,8 @@ class SiteTests(unittest.TestCase):
         tree = ElementTree.parse(ROOT / 'sitemap.xml')
         ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
         entries = tree.findall('s:url', ns)
-        self.assertEqual(len(entries), 101)
+        expected = len(builder.load_all_content()) + len(builder.STATIC_SITEMAP_URLS) + len(blog_build.POSTS)
+        self.assertEqual(len(entries), expected)
         functional = 0
         titles = set()
         for entry in entries:

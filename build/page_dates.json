@@ -34,6 +34,11 @@
     "modified": "2026-10-06",
     "published": "2026-08-11"
   },
+  "blog/education-tax-credit-university-900.html": {
+    "digest": "bae68b7caf4694cbdecdefc30b083d7400715cc197777eba51f11c52b7b2196e",
+    "modified": "2026-10-08",
+    "published": "2026-10-08"
+  },
   "blog/financial-income-comprehensive-tax-20m.html": {
     "digest": "f6b2ff363d5580701d744abfe33932445879fe3dcbefa6f2a5c4b0d1170b0548",
     "modified": "2026-10-06",
@@ -60,7 +65,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "8448968fe5e07c106cc0810e3267d4d93f0dd1bfcfd51e9633b18c93b6c62b4e",
+    "digest": "3e40b385dc93391a577e92f0534bd2ca90fe65a64213d00defe5dd2405c6dbad",
     "modified": "2026-10-08",
     "published": "2026-05-05"
   },
@@ -255,7 +260,7 @@
     "published": "2026-04-18"
   },
   "income/employment.html": {
-    "digest": "a69696fd92a5c6df918019f3697a708f5dfc2932fa58c7284d302047c57b10a5",
+    "digest": "31ca799c975df0fed63c94311498b7802b6affd7b56b1fc1da53335c4a1d3f72",
     "modified": "2026-10-08",
     "published": "2026-04-18"
   },
@@ -325,7 +330,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "fcfc85e695cc412bb4433b681ca993dc5f7330060385fa5c4da9f6e857f27306",
+    "digest": "43992cab7727e753f6938d0b6da22206bc9656a7b112010f1260989eedd13b6f",
     "modified": "2026-10-08",
     "published": "2026-04-02"
   },

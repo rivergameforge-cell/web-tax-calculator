@@ -641,6 +641,22 @@ POSTS = [
         ],
         "customHtml": False,
     },
+    {
+        "file": "교육비_세액공제_대학생_900만원_장학금_계산",
+        "slug": "education-tax-credit-university-900",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-08",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "교육비 공제 영향 간이 비교",
+        "related": [
+            ("/blog/parent-dependent-deduction-pension.html", "부양가족 기본공제와 소득 기준"),
+            ("/blog/medical-expense-tax-credit-3-percent.html", "의료비 세액공제 계산"),
+            ("/income/employment.html", "근로소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
 ]
 
 # ---------------------------------------------------------------------------
