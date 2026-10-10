@@ -1,0 +1,90 @@
+<!-- 티스토리 제목 -->
+<!-- 청약통장 300만원 납입, 120만원 환급일까? 무주택확인서 신청법 -->
+
+<p data-ke-size="size16">청약통장에 300만 원을 넣으면 연말정산에서 120만 원을 돌려받을까요? <b>120만 원은 최대 소득공제 계산액이지, 통장에 들어올 환급액이 아닙니다.</b> 이 차이를 모르면 공제 신청도, 환급 예상도 엇나갑니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">더 먼저 볼 것은 신청 자격과 은행 등록입니다. 무주택확인서를 회사에만 내거나, 통장 잔액을 올해 납입액으로 적거나, 배우자의 공제를 작년 기억으로 판단하는 실수가 생길 수 있습니다. 금액을 계산하기 전에 이 순서부터 맞춰보세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래는 <b>2026년 귀속 주택청약종합저축 소득공제</b> 안내입니다. 2026년 10월 10일 현행 법령을 확인했고, 통상적인 재직자의 회사 연말정산은 2027년에 진행됩니다. 청약 당첨 조건이나 청년 상품의 이자 비과세와는 별개의 이야기입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><img src="https://taxcalc.co.kr/thumbnails/housing-subscription-income-deduction-tistory.webp" alt="청약통장 소득공제 120만원이 그대로 환급되는지 확인하라는 질문형 이미지" width="1080" height="1080" style="max-width: 100%; height: auto;" /></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">신청 전에 5가지, 하나라도 빠지면 금액부터 계산하지 마세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16"><b>1. 근로소득이 있는가?</b><br />일용근로자를 제외한 근로소득이 있는 거주자가 대상입니다. 사업소득만 있는 사람이 청약통장에 납입했다는 이유로 이 근로자 공제를 신청하는 것은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>2. 총급여가 7,000만 원 이하인가?</b><br />비과세소득을 제외한 해당 연도 총급여를 확인합니다. 7,000만 원까지는 이 소득 요건을 충족하지만, 초과하면 초과분만 빼고 일부 공제하는 방식이 아닙니다. 계약서의 연봉과 총급여를 무조건 같은 숫자로 보지 마세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>3. 그해 세대가 무주택이었는가?</b><br />본인 이름으로 집이 없는지만 확인하지 않습니다. 배우자를 포함한 세법상 세대의 <b>해당 과세연도 중 주택 소유</b>를 봅니다. 연중 집을 소유하다가 팔았다고 연말 상태만으로 그해 공제가 되는 것은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>4. 연말 현재 세대주 또는 세대주의 배우자인가?</b><br />배우자가 아닌 일반 세대원은 무주택이라는 이유만으로 포함되지 않습니다. 연말 지위와 연중 무주택 요건은 서로 다른 확인 항목입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>5. 본인 명의의 적격 저축과 신청 절차를 갖췄는가?</b><br />이 글은 주택청약종합저축을 기준으로 설명합니다. 모든 청약예금·청약부금에 그대로 적용하지 않습니다. 본인 명의 적격 납입액과 은행의 무주택확인서 제출 상태를 확인하세요. 기준은 <a href="https://www.law.go.kr/법령/조세특례제한법/제87조" target="_blank" rel="noopener">조세특례제한법 제87조</a>입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">무주택확인서는 은행에, 납입증명서는 회사에</h2>
+<p data-ke-size="size16">무주택확인서는 <b>청약저축을 취급하는 은행 등 저축 취급기관</b>에 제출하는 자료입니다. 현행 법령상 기한은 공제를 적용받으려는 과세기간의 <b>다음 연도 2월 말까지</b>입니다. 2026년 귀속이라면 2027년 2월 말이라는 월 단위 기한을 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">다만 회사가 자료를 받는 날짜는 그보다 빠를 수 있습니다. 법정 기한까지 기다렸다가 회사 정산 일정을 놓치지 않도록, 은행 등록과 회사 제출을 미리 연결하는 편이 좋습니다. 서류 기한은 <a href="https://www.law.go.kr/법령/조세특례제한법/제87조" target="_blank" rel="noopener">같은 법 제87조 제4항</a>에서 확인할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">회사에는 주택마련저축 납입증명서 또는 필요한 통장 사본 등 공제 증빙을 냅니다. 간소화 자료에서 조회되지 않으면 은행 발급 증빙으로 보완할 수 있습니다. <b>은행 신청 → 납입 자료 확인 → 회사 제출</b>은 역할이 다른 절차입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">간소화 화면에 금액이 떠도 자격까지 자동 승인된 것은 아닙니다. 이미 등록한 통장도 그해 총급여·세대 요건은 다시 확인하고, 상품 전환을 했다면 새 계좌의 소득공제 등록 상태도 은행에 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">매달 20만원 냈다면, 96만원 공제에서 출발합니다</h2>
+<p data-ke-size="size16">1년 내내 근무하며 매월 20만 원씩 적격 납입한 가상 사례입니다. 다른 한도에도 걸리지 않는다고 가정하면 연간 납입액은 <b>240만 원</b>, 소득공제 계산액은 <b>96만 원</b>입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">20만 원 × 12개월 = 240만 원<br />240만 원 × 40% = <b>96만 원 소득공제</b><br />연 300만 원 납입한도 × 40% = <b>최대 120만 원 소득공제</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">300만 원보다 더 넣어도 이 공제의 납입액 한도가 함께 늘지는 않습니다. 과거부터 쌓인 잔액이나 계좌 전환 때 옮겨진 원금을 올해 새 납입액처럼 계산하지 않습니다. 중도 입사·퇴사자는 원칙적으로 근로 제공기간에 납입한 금액인지도 구분합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">그렇다면 96만 원이 환급될까요? 공제 전 과세표준이 2,400만 원이고 공제 후 2,304만 원이라면, 둘 다 같은 15% 세율 구간에 있습니다. 이 단순 사례의 <b>소득세 산출세액 차이</b>는 96만 원 × 15% = <b>14만 4,000원</b>입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이는 지방소득세, 근로소득세액공제 등 다른 세액공제의 변화와 이미 낸 세금을 제외한 비교입니다. 확정 절세액이나 최종 환급액이 아닙니다. 과세표준은 총급여와 다르며, 세율 경계를 넘으면 위처럼 한 세율을 곱할 수도 없습니다. 세율 구조는 <a href="https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7873&amp;mi=6594" target="_blank" rel="noopener">국세청 과세표준·산출세액 안내</a>를 참고하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">배우자도 가능한데, 한 통장을 양쪽에 올리면 안 됩니다</h2>
+<p data-ke-size="size16">세대주의 배우자는 <b>2025년 1월 1일 이후 납입분부터</b> 공제 대상에 포함됐습니다. 따라서 2026년 귀속을 준비하면서 '세대주가 아니면 무조건 안 된다'고 배우자의 청약 자료를 빼지 마세요. <a href="https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239022&amp;mi=40631" target="_blank" rel="noopener">국세청 주택마련저축 안내</a>에도 배우자 확대가 설명돼 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">맞벌이는 각자 근로소득, 총급여 7,000만 원 이하, 자기 명의 저축과 적격 납입액 등 조건을 갖춰야 합니다. 부부 합산 급여에 7,000만 원을 적용하는 방식이 아닙니다. 한쪽 통장의 공제액을 연봉 높은 배우자에게 임의로 옮기거나 같은 납입액을 중복 신청하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">배우자는 주소나 생계를 달리해도 같은 세대로 봅니다. 배우자 소유 주택이 있는데 주소만 분리했다고 무주택 요건을 충족하지는 않습니다. 함께 사는 부모님 등 가족의 주택 소유도 세법상 세대 범위와 함께 확인해야 합니다. 세대 기준은 <a href="https://www.law.go.kr/법령/조세특례제한법시행령/제81조" target="_blank" rel="noopener">시행령 제81조 제10항</a>이 근거입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">전세대출 공제를 이미 받는다면 400만원부터 확인하세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">청약저축과 주택임차차입금 원리금상환액 소득공제는 <b>합계 연 400만 원</b> 한도를 공유합니다. 전세대출 원리금 자체가 아니라, 요건과 계산을 적용한 <b>공제액끼리</b> 더하는 것입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">예를 들어 적격 전세대출 공제 계산액이 360만 원, 청약 공제 계산액이 120만 원이면 합계는 480만 원입니다. 적용 합계는 400만 원으로 제한됩니다. 전세대출 공제 360만 원만 반영한 상태와 비교하면 청약으로 추가되는 소득공제는 <b>40만 원</b>입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">장기주택저당차입금 이자 공제와 함께 해당된다면 별도의 합산 규정도 확인합니다. 청약 공제는 소득공제 종합한도 2,500만 원 적용 대상에도 포함됩니다. '청약에 300만 원 넣었으니 무조건 120만 원을 추가한다'는 계산은 피하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">통장을 해지하기 전, 올해 제외와 과거 추징을 나눠 보세요</h2>
+<p data-ke-size="size16">일반적인 사유로 연중 중도 해지하면 당해연도 납입액이 공제에서 제외될 수 있습니다. 이전에 소득공제를 받은 통장을 <b>가입일부터 5년 이내</b> 해지하면 과거 공제에 대한 추징도 검토합니다. 국민주택규모를 초과하는 주택의 청약 당첨에 따른 해지 역시 추징 규정 확인 대상입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">다만 국민주택규모 주택 당첨 등 법정 예외가 있어 모든 해지 결과가 같지는 않습니다. 가입일, 해지 사유, 과거 공제 기록과 증빙을 은행에 먼저 확인하세요. 해지 시점만 보고 추징이 없다고 단정하거나 무조건 같은 세금을 낸다고 안내할 수는 없습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">입금 전에는 자격, 계산기에는 공제액</h2>
+<p data-ke-size="size16">연말에 추가 납입을 고민한다면 먼저 자격, 해당 연도 적격 납입액, 다른 주택 공제의 한도를 확인해보세요. 소득공제용 연간 실제 납입액과 청약의 회차별 인정금액·인정일은 별개입니다. 추가 입금만으로 이전 회차가 모두 채워지는 것은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래 근로소득세 계산기의 주택자금 칸에는 <b>적용 가능한 소득공제액</b>을 원 단위로 넣습니다. 앞의 240만 원 납입 사례라면 <b>960,000원</b>입니다. 납입액 2,400,000원을 그대로 넣는 칸이 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">계산기는 청약 공제의 40% 계산이나 총급여·무주택·배우자·명의 조건, 400만 원 합산 한도와 종합한도를 자동 판정하지 않습니다. 직접 적용한 공제액을 넣어 다른 입력은 고정한 채 간이 영향을 비교하세요. 최종 환급은 결정세액과 이미 납부한 세액 등으로 정해지며, 확정 정산은 회사·홈택스 자료로 확인합니다.</p>
+<p data-ke-size="size16" style="text-align: center;"><a href="https://taxcalc.co.kr/#income/employment" target="_blank" rel="noopener" style="display: inline-block; padding: 14px 22px; background: #c34224; color: #ffffff; text-decoration: none; border-radius: 6px;"><b>청약 공제액 넣고 세금 영향 비교하기</b></a></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16"><a href="https://kwonriver-carstroy.tistory.com/entry/연봉-5천-카드값-2천만원-신용카드-소득공제">연봉 5천 카드값 2천만원, 신용카드 소득공제는 얼마일까?</a><br />청약과 카드 공제는 계산 기준이 다릅니다. 연말정산 자료를 함께 정리할 때 지출액과 공제액을 나눠 보는 데 도움이 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><a href="https://kwonriver-carstroy.tistory.com/entry/월세-80만-원-연말정산-세액공제-계산법">월세 80만 원 내면 연말정산 때 얼마 돌려받을까? 세액공제 계산법</a><br />청약의 소득공제와 월세의 세액공제는 작동 방식이 다릅니다. 월세 자료도 제출한다면 각각의 자격과 증빙을 따로 확인해보세요.</p>
+
+<!-- 해시태그 -->
+<!-- 주택청약소득공제, 청약통장연말정산, 무주택확인서, 청약300만원, 청약120만원공제, 청약납입증명서, 맞벌이청약공제, 세대주배우자공제, 전세대출공제한도, 2026연말정산 -->

@@ -1,0 +1,247 @@
+{
+  "topic": "주택청약종합저축 소득공제",
+  "applicableYear": 2026,
+  "verifiedOn": "2026-10-10",
+  "scope": "근로소득이 있는 거주자의 일반 주택청약종합저축 공제. 구 청약저축 특례, 이자 비과세, 청약 당첨 자격의 개별 판정은 범위 밖.",
+  "sources": [
+    {
+      "url": "https://www.law.go.kr/법령/조세특례제한법/제87조",
+      "resolvedUrl": "https://www.law.go.kr/LSW//lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0087&lsiSeq=284389&urlMode=lsScJoRltInfoR",
+      "authority": "국가법령정보센터",
+      "effective": "2026-09-18",
+      "supports": [
+        "근로소득·총급여 7천만원 이하·무주택 세대주 및 배우자",
+        "연 적격 납입액 300만원·40%·2028년 말 적용기한",
+        "은행 무주택확인서 다음 연도 2월 말",
+        "주택임차차입금 공제와 합계 400만원",
+        "가입일부터 5년 이내 해지·규모 초과 당첨·납입누계액 6% 추징·실제 감면세액 입증시 한도"
+      ],
+      "status": "2026년 현행 조문 확인"
+    },
+    {
+      "url": "https://www.law.go.kr/법령/조세특례제한법시행령/제81조",
+      "resolvedUrl": "https://www.law.go.kr/LSW//lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0081&lsiSeq=288915&urlMode=lsScJoRltInfoR",
+      "authority": "국가법령정보센터",
+      "effective": "2026-09-18",
+      "supports": [
+        "세대 범위·배우자는 주소 및 생계 분리에도 같은 세대",
+        "법정 해지 추징 예외"
+      ],
+      "status": "현행 시행령 확인"
+    },
+    {
+      "url": "https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239022&mi=40631",
+      "authority": "국세청",
+      "supports": [
+        "본인 명의 적격 청약저축",
+        "세대주 배우자 2025년 1월 1일 이후 납입분 확대",
+        "회사 납입증명서·필요한 통장 사본"
+      ],
+      "caution": "일부 안내의 2025년 표기와 과거 문구를 현행 법령과 대조. 과거 3월 기한을 복사하지 않고 현재 2월 말 적용."
+    },
+    {
+      "url": "https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7873&mi=6594",
+      "authority": "국세청",
+      "supports": [
+        "과세표준별 누진세율·산출세액",
+        "청약 공제 포함 소득공제 종합한도 2500만원"
+      ],
+      "status": "산출세액 예시와 종합한도 대조"
+    },
+    {
+      "url": "https://www.nts.go.kr/webtv/na/ntt/selectNttInfo.do?mi=10718&nttSn=1302228",
+      "authority": "국세청",
+      "supports": [
+        "주택마련저축은 원칙적으로 근로 제공기간 납입액"
+      ],
+      "caution": "과거 안내의 당시 금액은 재사용하지 않고 근로 제공기간 원칙만 참조"
+    },
+    {
+      "url": "https://oland.kbstar.com/quics?page=C029533&prcode=DP01000620",
+      "authority": "KB국민은행",
+      "supports": [
+        "무주택확인서 다음 연도 2월 말·배우자·공제율",
+        "전환 원금 공제 제외·계좌 전환시 등록 확인",
+        "연간 실제 납입액과 청약 인정금액·인정일 구분",
+        "해지 추징 확인"
+      ],
+      "status": "은행 공식 상품 안내 교차 확인"
+    }
+  ],
+  "rules": {
+    "salaryCap": 70000000,
+    "annualPaymentCap": 3000000,
+    "deductionPercent": 40,
+    "maxDeduction": 1200000,
+    "combinedRentalLoanDeductionCap": 4000000,
+    "overallDeductionCap": 25000000,
+    "spouseFrom": "2025-01-01",
+    "bankSubmissionDeadline": "적용 과세기간의 다음 연도 2월 말",
+    "noHouseTest": "과세연도 중 무주택 세대",
+    "householderTest": "과세기간 종료일 현재 세대주 또는 세대주의 배우자",
+    "currentPaymentEnd": "2028-12-31",
+    "recaptureWithinYearsFromSubscription": 5
+  },
+  "editorial": {
+    "website": {
+      "title": "주택청약 소득공제 계산, 300만원 한도와 배우자 조건",
+      "angle": "객관적인 계산 구조·과세표준 세율 경계 비교·조건·FAQ",
+      "persona": "20년차 경제 교수의 편집 기준"
+    },
+    "tistory": {
+      "title": "청약통장 300만원 납입, 120만원 환급일까? 무주택확인서 신청법",
+      "angle": "120만원 환급 오해·신청 전 5가지·은행과 회사 서류·실무 오류",
+      "persona": "30년차 경제 전문 세무사의 편집 기준",
+      "ads": 2,
+      "layout": "서론 → 썸네일 → 소제목 → 광고(선택한 2곳) → 본문"
+    },
+    "naver": {
+      "title": "맞벌이 부부 청약통장, 연말정산에서 둘 다 소득공제 받을까요?",
+      "angle": "부부의 세대주 고민·각자 통장 사례·쉬운 공제 설명·이름별 서류 확인",
+      "persona": "20년차 경제 전문 블로거의 편집 기준",
+      "tags": 26
+    }
+  },
+  "examples": {
+    "websitePayments": [
+      {
+        "payment": 1200000,
+        "deduction": 480000
+      },
+      {
+        "payment": 2400000,
+        "deduction": 960000
+      },
+      {
+        "payment": 3000000,
+        "deduction": 1200000
+      },
+      {
+        "payment": 3600000,
+        "deduction": 1200000
+      }
+    ],
+    "websiteTax": [
+      {
+        "beforeTaxBase": 30000000,
+        "deduction": 1200000,
+        "afterTaxBase": 28800000,
+        "beforeCalculatedIncomeTax": 3240000,
+        "afterCalculatedIncomeTax": 3060000,
+        "difference": 180000
+      },
+      {
+        "beforeTaxBase": 14500000,
+        "deduction": 1200000,
+        "afterTaxBase": 13300000,
+        "beforeCalculatedIncomeTax": 915000,
+        "afterCalculatedIncomeTax": 798000,
+        "difference": 117000
+      }
+    ],
+    "tistory": {
+      "payment": 2400000,
+      "deduction": 960000,
+      "beforeTaxBase": 24000000,
+      "afterTaxBase": 23040000,
+      "beforeCalculatedIncomeTax": 2340000,
+      "afterCalculatedIncomeTax": 2196000,
+      "difference": 144000
+    },
+    "naver": [
+      {
+        "person": "A",
+        "salary": 48000000,
+        "monthlyPayment": 150000,
+        "payment": 1800000,
+        "deduction": 720000
+      },
+      {
+        "person": "B",
+        "salary": 36000000,
+        "monthlyPayment": 200000,
+        "payment": 2400000,
+        "deduction": 960000
+      }
+    ],
+    "combinedCap": [
+      {
+        "platform": "website",
+        "loanDeduction": 3200000,
+        "subscriptionDeduction": 1200000,
+        "appliedCombined": 4000000,
+        "additionalSubscription": 800000
+      },
+      {
+        "platform": "tistory",
+        "loanDeduction": 3600000,
+        "subscriptionDeduction": 1200000,
+        "appliedCombined": 4000000,
+        "additionalSubscription": 400000
+      }
+    ],
+    "assumptions": "가상 사례. 해당 연도 전체 근무·공제 자격·서류 충족. 일반 납입 사례는 다른 한도 미적용. 산출세액 차이는 지방소득세·근로소득세액공제 등 세액공제 변화·기납부세액을 제외한 것으로 확정 절세액 또는 환급액이 아님. 부부는 각자 자격·자기 명의 납입액·본인 연말정산 기준."
+  },
+  "calculator": {
+    "url": "https://taxcalc.co.kr/#income/employment",
+    "inspectedFile": "js/calculators/income/employment.js",
+    "field": "emp-housing",
+    "unit": "원",
+    "method": "입력된 주택자금 공제액을 보험 공제액과 합산해 소득공제에 반영",
+    "eligibilityAndCapsAutomatic": false,
+    "subscriptionPercentAutomatic": false,
+    "instruction": "적용 가능한 소득공제액을 입력. 납입액 그대로 입력하지 않음. 청약 전용 자격·합산한도·확정 환급 자동 계산기가 아님."
+  },
+  "tistoryRelated": [
+    {
+      "title": "연봉 5천 카드값 2천만원, 신용카드 소득공제는 얼마일까?",
+      "url": "https://kwonriver-carstroy.tistory.com/entry/연봉-5천-카드값-2천만원-신용카드-소득공제",
+      "verification": "Chrome 공개 H1·URL 확인 2026-10-10"
+    },
+    {
+      "title": "월세 80만 원 내면 연말정산 때 얼마 돌려받을까? 세액공제 계산법",
+      "url": "https://kwonriver-carstroy.tistory.com/entry/월세-80만-원-연말정산-세액공제-계산법",
+      "verification": "Chrome 공개 H1·URL 확인 2026-10-10"
+    }
+  ],
+  "images": [
+    {
+      "platform": "website",
+      "file": "thumbnails/housing-subscription-income-deduction.webp",
+      "size": [
+        1200,
+        630
+      ],
+      "concept": "건축 아파트 모형·투명 40% 정보형 CGI",
+      "source": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-cf9d9bdc-9c42-45f9-904b-b2d3f013ef36.png",
+      "prompt": "Use case: scientific-educational. Asset: Korean personal tax website editorial cover, wide horizontal ratio 40:21, intended final 1200x630. Generate a premium AI CGI visual of housing subscription savings tax deduction, not a generic calculator or ledger. An elegant cutaway miniature modern apartment building built from matte white architectural layers and vivid emerald window frames. Beside it, a single translucent mint numerical sculpture reading 40% that interlocks with a white bankbook-shaped slab. Architectural financial publication art, precision material lighting and subtle realistic shadows on a cool white background. Headline visually dominant on left, architectural sculpture on right, full-bleed professional magazine composition. Text exactly: \"주택청약 소득공제\" and smaller second line \"연 300만원 한도 · 40%\". Small third line exactly \"공제액과 환급액은 다릅니다\". Korean typography must be crisp and correct, no text on bankbook except simple decorative rules. Keep headline and principal objects in central 88% safety area. Color: white, emerald, graphite and restrained coral accent, no beige, no purple gradient. No platform labels, no logos, no fake official seal, no guarantee of refund, no watermark, no tiny text."
+    },
+    {
+      "platform": "tistory",
+      "file": "thumbnails/housing-subscription-income-deduction-tistory.webp",
+      "size": [
+        1080,
+        1080
+      ],
+      "concept": "청록 통장·주홍 120 구조물·환급 질문형 CGI",
+      "source": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-45835893-3d90-4bba-a00b-01987624fac9.png",
+      "prompt": "Use case: editorial Korean tax blog thumbnail. New square 1:1 artwork, final 1080x1080. Make an exuberant premium surreal AI CGI financial editorial poster, visually bold, NOT a spreadsheet or generic calculator image. A gigantic red-orange three-dimensional numeral 120 protrudes from an opened glossy cyan savings bankbook, a tiny chrome house key suspended above, restrained ivory and graphite paper fragments suggesting a deduction, precise studio reflections and striking perspective. Top half has beautiful bold Korean typography reading exactly \"120만원 공제\". Beneath it, headline exactly \"그대로 환급될까?\" in contrasting graphite. Small bottom supporting line exactly \"청약통장 신청 전 확인\". The question must be unmistakable, not a refund guarantee. Off-white clean backdrop, red-orange, electric cyan, charcoal palette. Full bleed square, balanced center 88% safe area, ample text separation, legible at feed thumbnail size. Do not depict apartment-building sculpture or translucent 40% lettering. No working platform labels, no Tistory or Naver words, no logo, no watermark, no fake government seals, no additional illegible Korean. Clearly stylish AI art, art-directed and polished."
+    },
+    {
+      "platform": "naver",
+      "file": "thumbnails/housing-subscription-income-deduction-naver.webp",
+      "size": [
+        1200,
+        720
+      ],
+      "concept": "부부가 각자 통장을 보는 민트 생활형 일러스트",
+      "source": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-4d459401-b9c7-4ee3-8c05-96e219a01917.png",
+      "prompt": "Use case: warm Korean personal finance blog link-card cover, wide 5:3 aspect, final 1200x720. Create a beautifully polished AI-generated editorial illustration with richly tactile paper-cut and gouache-like forms, playful believable perspective, not flat generic icons, not a CGI numerical poster. Two adult Korean working spouses at a small bright mint kitchen table, both smiling naturally and checking their OWN separate savings bankbook, one coral-red booklet and one emerald-green booklet. Composition angled slightly overhead, clear hand/booklet separation. Simple sunlit white interior, an unframed window showing modest apartment rooftops, a single yellow mug. Place the couple in lower right half with generous white/mint negative space for excellent Korean type in upper left/center. Main exact headline, two lines: \"부부 청약통장\" and \"둘 다 공제될까요?\". Supporting exact text \"각자 조건부터 확인\" below. Black/emerald text with restrained yellow mark, sophisticated warm friendly feed design. All title and main figures inside central 90% safe zone, spacious on every edge, no cropping. Palette mint, emerald, coral, yellow and neutral white, not dominated by beige or blue or brown. No giant 120 or 40% objects, no identical bankbook sculpture, no platform labels, no logos, no watermark, no false refund promise, no tiny invented text in the bankbooks. The two separate books visually explain the subject. Clearly AI illustrated but premium, charming, readable."
+    }
+  ],
+  "verification": {
+    "website": "5e4a4ee main push. 실 URL HTTP 200 및 로컬/배포 HTML SHA256 일치. 로컬 데스크톱 1219·모바일 375 본문 폭에서 가로 넘침 없음. 전체 검사 20개 통과.",
+    "tistory": "HTML 원고·업로드 패키지 완료. Chrome HTML 모드 전환 확인창에서 브라우저 응답이 멈춰 사용자 확인 대기. 최종 발행하지 않음.",
+    "naver": "친절한 복붙용 텍스트·제목 후보 3개·태그 26개·1200×720 WebP 완료. 자동 입력 및 발행하지 않음."
+  }
+}
