@@ -657,6 +657,22 @@ POSTS = [
         ],
         "customHtml": False,
     },
+    {
+        "file": "주택청약_소득공제_300만원_무주택_계산",
+        "slug": "housing-subscription-income-deduction",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-10",
+        "readMin": 9,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "청약 소득공제 영향 간이 비교",
+        "related": [
+            ("/blog/monthly-rent-tax-credit-8m-refund.html", "월세 세액공제의 조건과 계산"),
+            ("/blog/credit-card-deduction-25-percent.html", "신용카드 소득공제 기준"),
+            ("/income/employment.html", "근로소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
 ]
 
 # ---------------------------------------------------------------------------

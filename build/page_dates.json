@@ -59,14 +59,19 @@
     "modified": "2026-07-03",
     "published": "2026-05-20"
   },
+  "blog/housing-subscription-income-deduction.html": {
+    "digest": "7447f3456707b77d4d7ac4ece06c00d1b8d850c41b526d9b6c1fff1160e76ea1",
+    "modified": "2026-10-10",
+    "published": "2026-10-10"
+  },
   "blog/income-tax-penalty-late-filing.html": {
     "digest": "571292bde9957401991d6e8f69f40775827e55308f0d7029cfa976c38fd73be7",
     "modified": "2026-10-06",
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "3e40b385dc93391a577e92f0534bd2ca90fe65a64213d00defe5dd2405c6dbad",
-    "modified": "2026-10-08",
+    "digest": "11637d0a6dd17e8deeea12118aef2ff31f15118dbb5657771e5e9bfca696f209",
+    "modified": "2026-10-10",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -260,8 +265,8 @@
     "published": "2026-04-18"
   },
   "income/employment.html": {
-    "digest": "31ca799c975df0fed63c94311498b7802b6affd7b56b1fc1da53335c4a1d3f72",
-    "modified": "2026-10-08",
+    "digest": "621aca0db61d9d2a588a157491d160f4b63ad3e1bbfb0c541bd639f2d58e574e",
+    "modified": "2026-10-10",
     "published": "2026-04-18"
   },
   "income/freelancer.html": {
@@ -330,8 +335,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "43992cab7727e753f6938d0b6da22206bc9656a7b112010f1260989eedd13b6f",
-    "modified": "2026-10-08",
+    "digest": "d3e251b49e52ecf17b8504391f0176cd3bd1868ddec7092ceaa1bdde37ac52c3",
+    "modified": "2026-10-10",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
