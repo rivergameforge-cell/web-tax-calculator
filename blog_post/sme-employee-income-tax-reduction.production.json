@@ -236,7 +236,35 @@
         343
       ]
     },
-    "tistoryDraft": "Not saved: connected Chrome shows Tistory login page. User asked to log in; HTML TXT, thumbnail and upload package complete.",
+    "tistoryDraft": {
+      "savedAt": "2026-10-11",
+      "status": "Saved and confirmed in Tistory draft list as the newest entry; not published.",
+      "title": "청년 소득세 90% 감면 놓쳤다면? 중소기업 신청서·이직·경정청구 확인법",
+      "category": "돈 버는 생각",
+      "draftCountBefore": 1,
+      "draftCountAfter": 2,
+      "existingDraftPreserved": true,
+      "tagCount": 10,
+      "thumbnail": {
+        "uploadedToTistory": true,
+        "naturalSize": [1080, 1080],
+        "position": "After the three introduction paragraphs, before the first section heading."
+      },
+      "preview": {
+        "headingCount": 8,
+        "manualAdCount": 2,
+        "manualAdPlacement": "Each block follows an H2 and precedes its first content paragraph.",
+        "spacerParagraphCount": 29,
+        "desktopContentWidth": 726,
+        "desktopScrollWidth": 726,
+        "mobileContentWidth": 302,
+        "mobileScrollWidth": 302,
+        "viewportOverrideReset": true
+      },
+      "proof": "/tmp/sme-tistory-draft-saved.png",
+      "desktopPreviewProof": "/tmp/sme-tistory-desktop-preview.png",
+      "mobilePreviewProof": "/tmp/sme-tistory-mobile-preview.png"
+    },
     "naverPublished": false,
     "relatedPublicTitlesVerified": true,
     "websiteLive": {
