@@ -70,7 +70,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "11637d0a6dd17e8deeea12118aef2ff31f15118dbb5657771e5e9bfca696f209",
+    "digest": "0fd17b5fe837baf1038976a48beba77937e13a31bb6bffcfaa7198692aec7a99",
     "modified": "2026-10-10",
     "published": "2026-05-05"
   },
@@ -179,6 +179,11 @@
     "modified": "2026-07-03",
     "published": "2026-05-05"
   },
+  "blog/sme-employee-income-tax-reduction.html": {
+    "digest": "7aa4476ba356c501740f84c9339bf69571d47a05f00669b92a7405c8c6cc5152",
+    "modified": "2026-10-10",
+    "published": "2026-10-10"
+  },
   "blog/speculative-zone-ltv.html": {
     "digest": "8147b86d9b8829c89550cfab84eaa48c1ffc7b68e0ac4859087ca4757385ac48",
     "modified": "2026-10-06",
@@ -265,7 +270,7 @@
     "published": "2026-04-18"
   },
   "income/employment.html": {
-    "digest": "621aca0db61d9d2a588a157491d160f4b63ad3e1bbfb0c541bd639f2d58e574e",
+    "digest": "4f624c9a723af247660c46c4c767610e126dec260b58ff10a5319164b101d1ea",
     "modified": "2026-10-10",
     "published": "2026-04-18"
   },
@@ -335,7 +340,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "d3e251b49e52ecf17b8504391f0176cd3bd1868ddec7092ceaa1bdde37ac52c3",
+    "digest": "14de8bcf265f37365b177af89ab46d1896be4001329b1eee5e04d2ac41414fca",
     "modified": "2026-10-10",
     "published": "2026-04-02"
   },

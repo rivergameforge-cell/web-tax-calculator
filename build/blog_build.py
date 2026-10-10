@@ -658,6 +658,22 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "중소기업_취업자_소득세_감면_90_계산",
+        "slug": "sme-employee-income-tax-reduction",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-10",
+        "readMin": 9,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "감면 전 근로소득세 구조 참고",
+        "related": [
+            ("/blog/mid-year-resignation-tax-settlement.html", "중도퇴사자의 연말정산"),
+            ("/blog/credit-card-deduction-25-percent.html", "신용카드 소득공제 기준"),
+            ("/income/employment.html", "근로소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "주택청약_소득공제_300만원_무주택_계산",
         "slug": "housing-subscription-income-deduction",
         "category": "labor",
