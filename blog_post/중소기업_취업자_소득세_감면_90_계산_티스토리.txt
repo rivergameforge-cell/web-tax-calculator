@@ -1,0 +1,88 @@
+<!-- 티스토리 제목 -->
+<!-- 청년 소득세 90% 감면 놓쳤다면? 중소기업 신청서·이직·경정청구 확인법 -->
+
+<p data-ke-size="size16">'중소기업 청년은 소득세 90% 감면'이라는 말을 들었는데, 내 급여명세서는 그대로인가요? <b>대상 회사에 다닌다는 사실과 감면 신청이 실제 반영됐다는 사실은 다릅니다.</b> 신청서가 빠졌는지, 회사 업종이 제외되는지부터 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">과세기간별 감면 한도는 <b>200만 원</b>입니다. 하지만 누구나 200만 원을 환급받는 것은 아닙니다. 이직한 해에는 대상 급여를 나누어 계산하고, 최종 정산에서는 근로소득세액공제와 이미 낸 세금도 함께 봅니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래는 <b>2026년 귀속 중소기업 취업자 소득세 감면</b>의 청년 신청 실무입니다. 2026년 10월 10일 현행 법령을 확인했습니다. 통상적인 재직자 연말정산은 2027년에 진행되며, 금액 사례는 설명을 위한 가상 상황입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><img src="https://taxcalc.co.kr/thumbnails/sme-employee-income-tax-reduction-tistory.webp" alt="소득세 90퍼센트 감면 신청 여부와 청년·대상 회사 조건을 확인하는 이미지" width="1080" height="1080" style="max-width: 100%; height: auto;" /></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">나이부터 적기 전에, 회사의 두 조건을 확인하세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">회사에 먼저 물을 것은 두 가지입니다. <b>중소기업기본법상 중소기업인지</b>, 그리고 <b>감면 대상 업종을 주된 사업으로 하는지</b>입니다. 중소기업확인서가 있다고 모든 업종의 직원이 자동으로 감면되는 것은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2025년 2월 28일 이후 취업자는 통관업, 가상자산 매매 및 중개업, 수의업, 부동산 임대업이 대상에서 제외된다는 점도 확인하세요. 회사 이름이나 본인의 직무가 아니라 법정 업종 분류가 기준입니다. <a href="https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239023" target="_blank" rel="noopener">국세청 대상 기업 안내</a>와 실제 사업 자료를 대조하면 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">청년은 <b>근로계약 체결일 현재 15세 이상 34세 이하</b>가 기준입니다. 법정 병역 이행기간은 최대 6년까지 연령에서 빼고 판단합니다. 지금 생일이 지나 35세가 됐다는 이유만으로 기존 감면이 끝나는 것은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">임원, 최대주주·최대출자자 또는 개인사업자 대표자와 배우자·법정 친족 등 특수관계인, 일용근로자는 제외 규정을 확인해야 합니다. 국민연금·직장 건강보험 납부 사실 확인 규정도 있으며, 법정 가입 제외자는 예외를 함께 봅니다. 계약직인지 정규직인지라는 명칭만으로 결론 내리지 마세요. 3.3% 사업소득도 이 근로소득 감면과는 구분합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">신청서는 회사에, 명세서 제출 여부까지 확인</h2>
+<p data-ke-size="size16">재직자는 <b>중소기업 취업자 소득세 감면신청서</b>를 회사에 제출합니다. 원칙적인 기한은 <b>취업일이 속하는 달의 다음 달 말일</b>입니다. 병역 차감을 신청한다면 복무기간을 증명하는 자료를 준비하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">회사는 신청을 받은 달의 <b>다음 달 10일까지</b> 감면 대상 명세서를 관할 세무서에 제출합니다. 내가 신청서를 보냈어도 회사의 명세서 제출이나 급여 반영이 끝났는지는 따로 확인해야 합니다. 기한과 절차는 <a href="https://www.law.go.kr/법령/조세특례제한법/제30조" target="_blank" rel="noopener">조세특례제한법 제30조</a>, <a href="https://www.law.go.kr/법령/조세특례제한법시행령/제27조" target="_blank" rel="noopener">시행령 제27조</a>가 근거입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>회사에 확인할 문장</b><br />'제 계약일과 병역기간 기준으로 청년 감면 대상인지, 회사의 중소기업·주된 업종 요건과 감면 명세서 제출 상태를 확인 부탁드립니다.'</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이직했다면 이전 회사의 원천징수영수증과 감면 신청·적용 이력도 준비하세요. 새 회사의 입사일만 적으면 전체 감면기간이나 이전 직장 급여의 적용 여부가 틀어질 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">이직하면 다시 5년? 시작일은 리셋되지 않습니다</h2>
+<p data-ke-size="size16">일반적인 청년 감면기간은 <b>소득세를 감면받은 최초 취업일부터 5년이 되는 날이 속하는 달까지</b>입니다. 적격 중소기업으로 옮겼다고 5년을 새로 받거나, 퇴사 공백만큼 기간이 늘어나는 방식이 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">새 회사에서는 남은 기간과 새 회사의 요건을 확인해 신청합니다. 병역 이행 후 1년 이내에 병역 전 중소기업으로 복직한 청년의 종료일 특례는 일반 이직과 다르므로 별도로 검토하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">현행 취업 적용기한은 <b>2026년 12월 31일</b>입니다. 이것이 모든 기존 신청자의 감면 종료일은 아닙니다. 이미 요건을 갖춰 시작한 개인의 감면기간과 신규 취업 적용기한은 구분하며, 2027년 이후 신규 취업의 연장 여부는 실제 개정 법률을 다시 확인해야 합니다. <a href="https://www.law.go.kr/법령/조세특례제한법/제30조" target="_blank" rel="noopener">제30조 제1항 확인</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">총급여 5천만원 중 2천만원만 대상이면?</h2>
+<p data-ke-size="size16">전 직장의 비대상 급여와 새 대상 회사의 급여가 섞인 가상 사례입니다. 다른 종합소득은 없고, <b>전체 총급여 5,000만 원, 감면 대상 총급여 2,000만 원, 소득세 산출세액 400만 원</b>이라고 가정하겠습니다. 총급여는 비과세소득을 뺀 금액입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">대상 급여 비율: 2,000만 원 ÷ 5,000만 원 = 40%<br />감면 계산: 400만 원 × 40% × 90% = <b>144만 원</b><br />연 200만 원 한도 이내이므로 감면세액: <b>144만 원</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">400만 원 전체에 90%를 곱하지 않습니다. 비대상 직장의 급여나 감면기간 밖 급여는 대상 비율에서 빼야 합니다. 근무 개월 수로 대충 나누기보다 적격 총급여를 정확히 구분하세요. 여러 회사에서 일했다고 200만 원 한도가 회사 수만큼 늘어나는 것도 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이 144만 원은 <b>감면세액</b>이지 확정 환급액이 아닙니다. 근로소득세액공제도 감면 비율을 반영해 조정합니다. 사업소득 등 다른 종합소득이 있으면 근로소득에 대응하는 산출세액부터 나누는 추가 계산이 필요합니다. <a href="https://www.law.go.kr/법령/조세특례제한법시행령/제27조" target="_blank" rel="noopener">시행령 제27조 제8항·제9항</a>의 계산식을 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">신청을 놓쳤다면, 올해와 과거 연도를 나누세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">신청 기한이 지났다고 적격 기간의 감면을 모두 포기할 필요는 없습니다. 다만 '오늘부터 새로 5년'은 아닙니다. 먼저 회사와 현재 연도 반영을 확인하고, 이미 끝난 연말정산은 과거 연도별로 정정 가능성을 검토합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>1. 그해 요건부터 확인</b><br />당시 회사·업종, 청년 연령, 감면기간, 이미 적용된 금액을 확인합니다. 과거 모든 연도에 현재의 200만 원 한도를 일괄 적용하지 않습니다. 귀속연도 당시 규정으로 다시 계산합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>2. 경정청구의 5년은 취업일부터 세지 않기</b><br />연말정산된 근로소득만 있어 확정신고를 하지 않았다면, 일반적으로 <b>연말정산세액의 납부기한이 지난 후 5년 이내</b>를 확인합니다. 종합소득세 확정신고를 했다면 법정신고기한 기준의 규정을 봅니다. 해당 연도의 청구 기산일을 구분하는 내용은 <a href="https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=200000000000006380" target="_blank" rel="noopener">국세청 해석</a>에서 확인할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>3. 서류와 접수 경로 연결</b><br />감면신청서, 감면 대상 명세서 사본, 원천징수영수증, 병역 등 증빙을 준비합니다. 재직자는 회사의 신청·명세서 제출을 먼저 확인하고, 퇴직자는 주소지 관할 세무서에 직접 감면 신청을 할 수 있습니다. 홈택스나 관할 세무서에서 누락 연도와 처리 방법을 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">감면액과 연말 환급액이 다른 이유</h2>
+<p data-ke-size="size16">연말 환급은 이미 낸 소득세와 최종 결정세액을 비교하는 정산입니다. 월별 급여에서 감면이 먼저 반영돼 덜 냈다면, 연말에 같은 감면액을 다시 전액 받는 구조가 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">감면 뒤에는 근로소득세액공제도 조정되므로, 원래 결정세액에 단순히 90%를 곱하거나 감면세액만큼 무조건 환급된다고 계산하면 안 됩니다. 다른 공제와 지방소득세도 구분하세요. <b>월급이나 4대보험료를 90% 줄이는 제도도 아닙니다.</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">원천징수영수증에서는 <b>감면세액 → 근로소득세액공제 → 결정세액 → 기납부세액</b>을 함께 봅니다. '신청했는데 환급이 적다'는 질문은 이 네 항목을 비교해야 풀립니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">오늘 확인할 것은 예상 환급보다 신청 반영 상태</h2>
+<p data-ke-size="size16">회사 조건, 계약 당시 연령, 최초 취업일, 신청·명세서 제출, 실제 정산 반영 순서로 확인해보세요. 소득세가 없거나 이미 충분히 감면됐다면 추가 환급이 없을 수도 있습니다. 자격을 갖추지 못한 감면은 정정 대상이므로 사실과 서류를 먼저 맞추는 편이 좋습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래 계산기는 <b>감면 전의 기본 세금 구조를 참고</b>하는 도구입니다. 중소기업 감면 자격, 90% 감면과 200만 원 한도, 감면 후 근로소득세액공제 조정을 자동 반영하지 않습니다. 급여를 임의로 줄이거나 감면액을 주택자금 공제 칸에 넣지 마세요. 확정 정산은 회사·홈택스와 증빙 자료로 확인합니다.</p>
+<p data-ke-size="size16" style="text-align: center;"><a href="https://taxcalc.co.kr/#income/employment" target="_blank" rel="noopener" style="display: inline-block; padding: 14px 22px; background: #ba252c; color: #ffffff; text-decoration: none; border-radius: 6px;"><b>감면 전 근로소득세 구조 살펴보기</b></a></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16"><a href="https://kwonriver-carstroy.tistory.com/entry/퇴사-후-연말정산-환급-원천징수영수증-결정세액">퇴사 후 연말정산 환급, 원천징수영수증 결정세액부터 확인하세요</a><br />이직·퇴직한 해의 감면을 정리할 때, 전 회사가 어디까지 정산했는지와 이미 돌려받은 세금을 구분하는 데 도움이 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><a href="https://kwonriver-carstroy.tistory.com/entry/청약통장-300만-원-납입-120만-원-환급-무주택확인서-신청법">청약통장 300만 원 납입, 120만 원 환급일까? 무주택확인서 신청법</a><br />청약은 소득을 줄이는 공제, 중소기업 감면은 세금을 줄이는 제도입니다. 다른 연말정산 자료를 함께 준비한다면 작동 방식과 서류를 구분해보세요.</p>
+
+<!-- 해시태그 -->
+<!-- 중소기업취업자소득세감면, 청년소득세감면, 소득세90감면, 중소기업감면신청서, 중소기업감면이직, 소득세감면경정청구, 감면200만원한도, 감면기간5년, 원천징수영수증, 2026연말정산 -->

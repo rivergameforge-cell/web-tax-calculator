@@ -1,0 +1,255 @@
+{
+  "topic": "중소기업 취업자 소득세 감면",
+  "verifiedAt": "2026-10-10",
+  "taxYear": 2026,
+  "skill": "/Users/kwonriver/.codex/skills/korean-tax-blog-writer/SKILL.md",
+  "sources": [
+    {
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239023",
+      "supports": [
+        "청년 연령·병역 차감",
+        "대상 근로자와 기업 요건",
+        "2025-02-28 이후 제외 업종"
+      ]
+    },
+    {
+      "url": "https://www.law.go.kr/법령/조세특례제한법/제30조",
+      "verifiedDocument": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0030&lsiSeq=284389&urlMode=lsScJoRltInfoR",
+      "effective": "2026-09-18",
+      "method": "Official HTML text read by HTTPS; web parser returned error, original pty1_p4 article inspected.",
+      "supports": [
+        "2026-12-31 취업 적용기한",
+        "90%·5년·200만원",
+        "이직 기간 유지·병역 복직 특례",
+        "재직·퇴직 신청과 회사 제출 기한"
+      ]
+    },
+    {
+      "url": "https://www.law.go.kr/법령/조세특례제한법시행령/제27조",
+      "verifiedDocument": "https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0027&lsiSeq=288915&urlMode=lsScJoRltInfoR",
+      "effective": "2026-09-18",
+      "method": "Official HTML text and mathematical image LATEX alt definitions read by HTTPS.",
+      "supports": [
+        "연령·병역·개인 제외·보험 납부와 가입 제외 예외",
+        "감면 업종",
+        "근로자 다음달 말일까지 신청",
+        "제8항 소득 안분과 한도",
+        "제9항 근로소득세액공제 조정"
+      ]
+    },
+    {
+      "url": "https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=200000000000006380",
+      "document": "서면-2023-징세-3929 / 2024-06-14",
+      "supports": [
+        "확정신고하지 않은 연말정산 근로소득자의 청구 기산일은 연말정산세액 납부기한"
+      ]
+    },
+    {
+      "url": "https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1017648171",
+      "effective": "2026-10-02",
+      "supports": [
+        "국세기본법 제45조의2 확정신고자의 일반 5년 경정청구 규정"
+      ]
+    },
+    {
+      "url": "https://johap.kbiz.or.kr/download.do?atcfSqno=1&fleDwnDs=noticeAttachFile&seq=2000058406",
+      "author": "국세청",
+      "document": "2025 중소기업 취업자 소득세 감면제도 안내",
+      "supports": [
+        "기한 후 신청도 적격 취업일부터 적용 가능",
+        "감면 명세서·신청서 사본 증빙"
+      ],
+      "note": "Publisher-authored primary guide hosted by KBIZ. Current cutoffs/rates crosschecked against current law."
+    },
+    {
+      "url": "https://www.korea.kr/multi/visualNewsView.do?newsId=148971826",
+      "author": "국세청",
+      "published": "2026-09-15",
+      "supports": [
+        "2026년 청년 감면 안내",
+        "재직 회사 신청·퇴직 주소지 세무서 신청"
+      ]
+    }
+  ],
+  "rules": {
+    "youthAge": [
+      15,
+      34
+    ],
+    "militaryAgeDeductionMaxYears": 6,
+    "ordinaryPeriodYears": 5,
+    "ratePercent": 90,
+    "taxYearCap": 2000000,
+    "employmentCutoff": "2026-12-31",
+    "excludedIndustriesEffective": "2025-02-28",
+    "workerDeadline": "취업일이 속하는 달의 다음 달 말일",
+    "companyDeadline": "신청받은 달의 다음 달 10일",
+    "employeeOnlyCorrectionClock": "연말정산세액 납부기한이 지난 후 5년",
+    "definiteIncomeReturnCorrectionClock": "법정신고기한이 지난 후 5년",
+    "salaryOnlyFormula": "min(calculatedTax * eligibleGrossSalary / totalGrossSalary * 0.9, 2000000)",
+    "generalFormula": "min(totalCalculatedTax * employmentIncomeAmount / totalIncomeAmount * eligibleGrossSalary / totalGrossSalary * 0.9, 2000000)",
+    "salaryOnlyCreditAdjustment": "ordinaryEmploymentCredit * (1 - relief / calculatedTax)",
+    "militaryReinstatementException": "병역 종료 후 1년 이내 병역 전 중소기업 복직 시 법정 2년/7년 종료일 특례"
+  },
+  "editorial": {
+    "website": {
+      "title": "중소기업 취업자 소득세 감면 계산, 청년 90%와 200만원 한도",
+      "persona": "객관적인 경제 교수 편집 기준",
+      "angle": "자격→기간→소득 안분→감면 한도→근로소득세액공제 조정",
+      "opening": "급여·세액·환급의 개념 구분",
+      "example": "한도 때문에 200만원 감면이 결정세액 차이 156만원으로 연결되는 단계표"
+    },
+    "tistory": {
+      "title": "청년 소득세 90% 감면 놓쳤다면? 중소기업 신청서·이직·경정청구 확인법",
+      "persona": "실무적인 세무사 편집 기준",
+      "angle": "회사 확인→신청서와 명세서→이직·신청 누락→실제 정산 확인",
+      "opening": "신청했는데 급여명세서가 그대로인 독자의 문제",
+      "example": "총급여5000만원 중 대상2000만원, 산출세액400만원에서 감면144만원"
+    },
+    "naver": {
+      "title": "중소기업 다니는 30대, 월급 소득세 감면 나도 받을 수 있을까?",
+      "persona": "친절한 경제 블로거 편집 기준",
+      "angle": "월급명세서 대화→회사에 물어볼 문장→작은 숫자 예시→준비 순서",
+      "opening": "통장 입금 뒤 다양한 급여 공제 항목을 보는 생활 상황",
+      "example": "산출세액120만원에서 감면108만원; 2024-03-11 취업자의 일반 종료는2029-03말",
+      "tagCount": 26
+    }
+  },
+  "examples": {
+    "websiteAll": [
+      {
+        "calculatedTax": 1000000,
+        "eligibleSalary": 1,
+        "totalSalary": 1,
+        "relief": 900000
+      },
+      {
+        "calculatedTax": 1800000,
+        "eligibleSalary": 1,
+        "totalSalary": 1,
+        "relief": 1620000
+      },
+      {
+        "calculatedTax": 3000000,
+        "eligibleSalary": 1,
+        "totalSalary": 1,
+        "relief": 2000000
+      }
+    ],
+    "websiteMixed": {
+      "calculatedTax": 2400000,
+      "eligibleSalary": 30000000,
+      "totalSalary": 40000000,
+      "relief": 1620000
+    },
+    "websiteCredit": {
+      "calculatedTax": 3000000,
+      "ordinaryCredit": 660000,
+      "relief": 2000000,
+      "adjustedCredit": 220000,
+      "determinedBefore": 2340000,
+      "determinedAfter": 780000,
+      "difference": 1560000,
+      "assumptions": "근로소득만, 전부 적격, 다른 세액공제와 지방소득세 없음; 환급액 아님"
+    },
+    "tistory": {
+      "calculatedTax": 4000000,
+      "eligibleSalary": 20000000,
+      "totalSalary": 50000000,
+      "relief": 1440000
+    },
+    "naver": {
+      "calculatedTax": 1200000,
+      "eligibleSalary": 1,
+      "totalSalary": 1,
+      "relief": 1080000
+    }
+  },
+  "calculator": {
+    "file": "js/calculators/income/employment.js",
+    "href": "https://taxcalc.co.kr/#income/employment",
+    "eligibilityAutomatic": false,
+    "reliefAutomatic": false,
+    "creditAdjustmentAutomatic": false,
+    "instruction": "감면 전 간이 세금 구조 참고. 급여를90% 줄이거나 감면세액을 주택자금 소득공제에 넣지 않는다."
+  },
+  "tistoryRelated": [
+    {
+      "title": "퇴사 후 연말정산 환급, 원천징수영수증 결정세액부터 확인하세요",
+      "url": "https://kwonriver-carstroy.tistory.com/entry/퇴사-후-연말정산-환급-원천징수영수증-결정세액",
+      "verifiedAt": "2026-10-10",
+      "verifiedBy": "Chrome public h1"
+    },
+    {
+      "title": "청약통장 300만 원 납입, 120만 원 환급일까? 무주택확인서 신청법",
+      "url": "https://kwonriver-carstroy.tistory.com/entry/청약통장-300만-원-납입-120만-원-환급-무주택확인서-신청법",
+      "verifiedAt": "2026-10-10",
+      "verifiedBy": "Chrome public h1; user published prior housing draft"
+    }
+  ],
+  "images": [
+    {
+      "file": "thumbnails/sme-employee-income-tax-reduction.webp",
+      "size": [
+        1200,
+        630
+      ],
+      "concept": "하얀 종이 건물·세금 문서의 정보형 디오라마",
+      "prompt": "Use case: ads-marketing. Create an original polished Korean economic article cover, wide 1200:630 composition, all artwork and lettering inside 8% safe margins. Topic: SME employee income tax reduction. Premium editorial paper-cut diorama: a small contemporary office building with cyan glass, a tiny employee ID and a crimson tax document whose large 90% portion is elegantly lifted away like a removable paper layer. White studio backdrop, cyan/crimson/charcoal, precise shadows, crisp print typography. Large exact Korean headline '중소기업 취업자' and next line '소득세 감면 계산'. Subline exact '청년 90% · 연 200만원 한도'. Bottom small exact '회사·연령·기간 요건 확인'. This is a conditional tax reduction, NOT guaranteed cash refund. No cash shower, no coin piles, no calculator stock scene, no platform label, no watermarks, no extra illegible microtext.",
+      "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-7d10d10e-4c95-416c-8cd1-a5486543b65f.png"
+    },
+    {
+      "file": "thumbnails/sme-employee-income-tax-reduction-tistory.webp",
+      "size": [
+        1080,
+        1080
+      ],
+      "concept": "대형 노란90%와 신청서를 제출하는 캐릭터",
+      "prompt": "Use case: ads-marketing. Original bold square 1080x1080 Korean tax-blog thumbnail. Punchy sophisticated 3D advertising poster, a gigantic luminous lemon-yellow '90%' hanging like a tax-relief sign over a red application form, expressive young office employee reaching to submit it through a silver document slot. Black graphite background, vivid lemon yellow, coral red and silver, cinematic light, tactile paper and glossy numerals. Top exact Korean title '소득세 90% 감면'. Below number exact Korean hook '신청했나요?'. Short bottom qualification exactly '청년·대상 회사 / 연 200만원 한도'. Strong hierarchy, clear generous margins, readable at phone size, make 90% the main focal point. No promise of refund, no cash stacks, no generic calculator/notebook composition, no platform names, no watermark, no other small text.",
+      "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-278ef262-f541-40a7-a1b8-6b015c85fc73.png"
+    },
+    {
+      "file": "thumbnails/sme-employee-income-tax-reduction-naver.webp",
+      "size": [
+        1200,
+        720
+      ],
+      "concept": "급여명세서를 보는 직장인의 애니메이션형 일상",
+      "prompt": "Use case: illustration-story. Create an original Korean personal-finance blog thumbnail, horizontal 5:3 1200x720 composition, all titles and face within central90% safe area. Warm polished anime-inspired editorial illustration with elegant clean linework, not childish, a relatable young Korean office worker in light blue shirt seated in an airy modern office, tilting a payslip in one hand while looking curious; potted plant and city window softly in background. Muted jade, sky blue, peach, white and ink black. Generous clear top-left lettering area integrated into the scene, precise exact Korean title on 2 lines '월급명세서 속 소득세' / '나도 줄일 수 있을까?'. Small supportive line exact '중소기업 청년 감면 체크'. Payslip has simple minimal blank lines, no fake numbers or government logos. Genuine everyday question mood, visually different from an informational diorama and from bold yellow90% poster. No large90%numerals, no coin piles, no calculator, no platform labels, no watermark, no guarantee.",
+      "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-14901139-4db8-42bf-b39c-627953ce9cfa.png"
+    }
+  ],
+  "imageTool": "built-in image_gen",
+  "verification": {
+    "websiteCommit": "dd71f4f",
+    "websiteDeployment": "GitHub Pages completed success",
+    "localDesktop": {
+      "width": 1219,
+      "scrollWidth": 1219
+    },
+    "localMobile": {
+      "width": 375,
+      "scrollWidth": 375,
+      "tableWidths": [
+        343,
+        343,
+        343
+      ]
+    },
+    "tistoryDraft": "Not saved: connected Chrome shows Tistory login page. User asked to log in; HTML TXT, thumbnail and upload package complete.",
+    "naverPublished": false,
+    "relatedPublicTitlesVerified": true,
+    "websiteLive": {
+      "url": "https://taxcalc.co.kr/blog/sme-employee-income-tax-reduction.html",
+      "httpStatus": 200,
+      "htmlMatchesLocal": true,
+      "siteThumbnailHttpStatus": 200,
+      "siteThumbnailMatchesLocal": true,
+      "proof": "/tmp/sme-taxcalc-live.png"
+    },
+    "tests": {
+      "command": "python3 -m unittest discover -s tests -p '*_test.py'",
+      "passed": 25
+    }
+  }
+}
