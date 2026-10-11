@@ -1,0 +1,193 @@
+{
+  "topic": "주택담보대출 이자 소득공제",
+  "verifiedAt": "2026-10-11",
+  "taxYear": 2026,
+  "skill": "/Users/kwonriver/.codex/skills/korean-tax-blog-writer/SKILL.md",
+  "sources": [
+    {
+      "url": "https://www.law.go.kr/법령/소득세법/제52조",
+      "verifiedDocuments": [
+        "https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1032209325",
+        "https://law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=1001060887"
+      ],
+      "supports": ["근로자·세대·주택 요건", "별도 총급여 상한 없음", "원금 제외", "600·800·1800·2000만원 한도", "주택 공제 합산"]
+    },
+    {
+      "url": "https://law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=126618",
+      "verifiedDocument": "https://www.law.go.kr/LSW/lsSideInfoP.do?lsiSeq=290841&joNo=0112&joBrNo=00&docCls=jo&urlMode=lsScJoRltInfoR",
+      "effective": "2026-10-01",
+      "method": "Current official article text read by HTTPS and crosschecked with web text; iframe wrapper did not expose article directly.",
+      "supports": ["소유·채무 명의", "등기일부터3개월", "고정금리 비중70% 및 주기", "비거치식 법정 정의", "대환 직접상환 또는 즉시상환", "최초차입일부터15년·기존잔액 한도", "제113조 제출자료"]
+    },
+    {
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239033",
+      "supports": ["세대주 거주 요건 없음", "적격 세대원 실제 거주", "세대 전체 주택 수", "공동 소유와 공동 채무의 구분", "공동채무 약정 부재 시 균등 부담", "과거 주택 기준"]
+    },
+    {
+      "url": "https://j.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239020&mi=40630",
+      "supports": ["2024-01-01 이후 취득분 기준시가6억원", "2024-01-01 이후 이자 지급분 확대 한도", "이자상환증명서", "최초 공시가격"],
+      "note": "NTS guide crosschecked against current law; 6억원 acquisition rule is not applied retroactively to all old houses."
+    },
+    {
+      "url": "https://www.nts.go.kr/nts/na/ntt/selectNttInfo.do?mi=5850&nttSn=1348212",
+      "supports": ["공동명의·공동채무 국세청2026 설명", "다른 주택 공제 자격과 혼동 금지"]
+    },
+    {
+      "url": "https://www.nts.go.kr/nts/na/ntt/selectNttInfo.do?mi=2307&nttSn=1348133",
+      "supports": ["주거용 오피스텔 주택구입 이자공제 제외"]
+    },
+    {
+      "url": "https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7873&mi=6594",
+      "supports": ["누진 소득세율·공제액", "소득공제 종합한도2500만원"]
+    },
+    {
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148725717",
+      "author": "국세청",
+      "supports": ["주택자금의 근로 제공기간 지급 원칙"],
+      "note": "Historical primary explanation used only for the employment-period principle, not old thresholds or rates."
+    }
+  ],
+  "rules": {
+    "employeeOnly": true,
+    "dailyWorkersExcluded": true,
+    "separateSalaryCap": null,
+    "yearEndHouseholdHomeMax": 1,
+    "acquisitionThresholdEffective": "2024-01-01",
+    "acquisitionStandardValueMax": 600000000,
+    "ordinaryRegistrationBorrowingMonths": 3,
+    "principalIncluded": false,
+    "ordinaryLoanTableFrom": "2015-01-01",
+    "expandedInterestPaymentFrom": "2024-01-01",
+    "caps": {"10to15OneCondition": 6000000, "15Neither": 8000000, "15OneCondition": 18000000, "15BothConditions": 20000000},
+    "aggregateDeductionCap": 25000000,
+    "ordinaryRefinanceTermYearsFromOriginalLoan": 15,
+    "refinanceMaximum": "Existing eligible outstanding balance; additional living-purpose funds not automatically included."
+  },
+  "editorial": {
+    "website": {
+      "title": "주택담보대출 이자 소득공제 계산, 1주택자 조건과 2000만원 한도",
+      "persona": "정확하고 객관적인 경제 교수 편집 기준",
+      "angle": "공제 정의→자격과 기준시가→한도표→누진세액 영향→예외·FAQ",
+      "example": "원금840만원·이자960만원; 15% 단일 구간과24%→15% 경계 비교"
+    },
+    "tistory": {
+      "title": "주담대 이자 900만원 냈는데 공제 못 받는 이유? 공동명의·대환·서류 확인법",
+      "persona": "신고 실무와 사실 기반 후킹에 강한 세무사 편집 기준",
+      "angle": "명의 실수→공동채무450만원→숫자별 자격→대환 연결서류→신청·CTA",
+      "example": "부부 공동채무 이자900만원의50%인450만원; 산출세액 차이67만5000원"
+    },
+    "naver": {
+      "title": "매달 주담대 150만원 갚는데, 연말정산 이자 공제는 얼마일까요?",
+      "persona": "생활형 질문을 친절하고 가볍게 풀어주는 경제 블로거 편집 기준",
+      "angle": "자동이체 알림→원금·이자 분리→독자 질문→은행 증명서→실행 순서",
+      "example": "월150만원 중 이자50만원 가상 고정액, 연간600만원; 산출세액 차이90만원",
+      "tagCount": 26
+    }
+  },
+  "examples": {
+    "websiteCaps": [
+      {"interest": 9600000, "cap": 20000000, "deduction": 9600000},
+      {"interest": 9600000, "cap": 8000000, "deduction": 8000000},
+      {"interest": 9600000, "cap": 6000000, "deduction": 6000000}
+    ],
+    "websiteTax": [
+      {"baseBefore": 40000000, "deduction": 9600000, "baseAfter": 30400000, "taxBefore": 4740000, "taxAfter": 3300000, "difference": 1440000},
+      {"baseBefore": 54000000, "deduction": 9600000, "baseAfter": 44400000, "taxBefore": 7200000, "taxAfter": 5400000, "difference": 1800000}
+    ],
+    "tistory": {"jointInterest": 9000000, "sharePercent": 50, "baseBefore": 32000000, "deduction": 4500000, "baseAfter": 27500000, "taxBefore": 3540000, "taxAfter": 2865000, "difference": 675000},
+    "naver": {"monthlyPrincipal": 1000000, "monthlyInterest": 500000, "months": 12, "annualInterest": 6000000, "baseBefore": 28000000, "deduction": 6000000, "baseAfter": 22000000, "taxBefore": 2940000, "taxAfter": 2040000, "difference": 900000},
+    "assumptions": "Fictional qualified employees/loans with unchanged other inputs and no aggregate-limit restriction. Calculated national income tax only; credits, local tax and payroll withholding excluded. Not a guaranteed refund. Naver uses constant monthly amounts only for illustration; real annual interest comes from the certificate."
+  },
+  "calculator": {
+    "file": "js/calculators/income/employment.js",
+    "href": "https://taxcalc.co.kr/#income/employment",
+    "eligibilityAutomatic": false,
+    "loanCapAutomatic": false,
+    "aggregateCapAutomatic": false,
+    "instruction": "Put the already-verified eligible deduction in the housing input, not principal-inclusive payments, total joint interest or the maximum statutory cap. Compare only as an estimate."
+  },
+  "tistoryRelated": [
+    {
+      "title": "청약통장 300만 원 납입, 120만 원 환급일까? 무주택확인서 신청법",
+      "url": "https://kwonriver.co.kr/entry/청약통장-300만-원-납입-120만-원-환급-무주택확인서-신청법",
+      "verifiedAt": "2026-10-11",
+      "verifiedBy": "Chrome public H1; existing Tistory custom domain"
+    },
+    {
+      "title": "월세 80만 원 내면 연말정산 때 얼마 돌려받을까? 세액공제 계산법",
+      "url": "https://kwonriver.co.kr/entry/월세-80만-원-연말정산-세액공제-계산법",
+      "verifiedAt": "2026-10-11",
+      "verifiedBy": "Chrome public H1; existing Tistory custom domain"
+    }
+  ],
+  "images": [
+    {
+      "file": "thumbnails/mortgage-interest-income-deduction.webp",
+      "size": [1200, 630],
+      "concept": "백색 아파트 디오라마와 원금에서 분리한 이자 종이 탭",
+      "prompt": "Use case: ads-marketing. Original Korean finance article cover, wide 1200:630 aspect ratio. Premium editorial 3D cut-paper diorama on a clean white studio background: an architecturally detailed miniature Korean apartment building, and a monthly loan payment paper split into two clearly labeled physical tabs '원금' and '이자'; only the teal '이자' tab is lifted and outlined to demonstrate income deduction. Editorial typography in charcoal with teal and coral accents. Exact large Korean headline in two lines: '주택담보대출 이자' / '소득공제 계산'. Small exact subtitle: '자격 · 한도 · 세금 영향'. Photoreal tactile paper and polished small model, precise shadows, sophisticated financial editorial, visually striking but trustworthy. All text and main objects inside central84% safe margin so resized to1200x630 no cropping. No guaranteed refund, no fake bank logo, no coins or money shower, no platform names, no tiny text, no watermarks.",
+      "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-0657f542-eef1-4389-b63e-02c9170b8ca5.png"
+    },
+    {
+      "file": "thumbnails/mortgage-interest-income-deduction-tistory.webp",
+      "size": [1080, 1080],
+      "concept": "검정·노랑의 큰 후킹과 집·대출 명의 연결 구조물",
+      "prompt": "Use case: ads-marketing. Original square1080x1080 Korean tax-blog thumbnail, an eye-catching sophisticated surreal3D poster. A large sculptural white apartment-key silhouette is suspended between two floating embossed document slabs labeled exactly '집 명의' and '대출 명의'; vivid coral cord connects matching signatures, crisp dramatic lighting on rich graphite backdrop, lemon-yellow accent, tactile translucent glass and paper. Main exact Korean headline at top two lines '주담대 이자 공제' / '명의부터 확인!'. Bottom exact concise hook '최대 2,000만원' and clearly readable smaller qualifier '소득공제 한도 · 환급액 아님'. Strong mobile-readable typography, careful Korean accuracy. Central84% safe area for all important objects and lettering, no cramped text. Stylish conceptual financial campaign, very different from white informational apartment diorama. No cash or coins, no fake brands, no platform names, no watermark, no extra microtext.",
+      "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-d7d396f5-52db-445d-8229-fded822d57da.png"
+    },
+    {
+      "file": "thumbnails/mortgage-interest-income-deduction-naver.webp",
+      "size": [1200, 720],
+      "concept": "아파트 식탁에서 은행 앱을 살피는 부부의 생활형 클레이 장면",
+      "prompt": "Use case: ads-marketing. Create a brand-new Korean personal finance blog thumbnail, horizontal 5:3 aspect ratio suitable for 1200x720. A charming premium stylized 3D clay illustration of a young adult couple at their apartment dining table, curiously checking a smartphone loan payment statement together. Cozy everyday setting, clean mint walls, coral ceramic mug and sunny yellow details, bright natural lighting, polished expressive clay characters, inviting playful editorial composition. The phone screen only shows two large readable line labels '원금' and '이자', no invented amounts or bank brand. Large exact Korean headline integrated clearly in the upper open space on two lines: '매달 갚는 주담대' / '이자도 공제될까요?'. Dark charcoal bold type, easy to read on a small mobile link card. Keep all headline letters, people, and main phone inside central 90% safe area, generous edges, uncluttered. Entirely different from an informational white apartment-model diagram or black-and-yellow financial poster. No coins, no money showers, no guaranteed refund, no platform names, no tiny text, no watermarks.",
+      "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-f94f6d90-2e43-424f-bdd4-97456984d6e4.png"
+    }
+  ],
+  "imageTool": "built-in image_gen",
+  "verification": {
+    "websiteCommit": "422f929",
+    "localDesktop": {"width": 1219, "scrollWidth": 1219},
+    "localMobile": {"width": 375, "scrollWidth": 375},
+    "tistoryDraft": {
+      "savedAt": "2026-10-11",
+      "status": "Saved; confirmed in draft list as newest entry. Not published.",
+      "category": "돈 버는 생각",
+      "draftCountBefore": 1,
+      "draftCountAfter": 2,
+      "existingDraftPreserved": true,
+      "tagCount": 10,
+      "thumbnail": {"uploadedToTistory": true, "naturalSize": [1080, 1080], "position": "After three introduction paragraphs and before first section heading."},
+      "preview": {
+        "manualAdCount": 2,
+        "manualAdPlacement": "H2 -> manual ad -> first content paragraph",
+        "spacerParagraphCount": 38,
+        "mobileFrameSize": [411, 731],
+        "mobileBodyWidth": 396,
+        "mobileScrollWidth": 396,
+        "mobileParagraphWidth": 352,
+        "mobileParagraphScrollWidth": 352,
+        "mobileThumbnailWidth": 352.49,
+        "note": "Switching an already-loaded desktop preview left fixed-width ad containers. Reopening and selecting mobile before ad load removed this preview-only overflow.",
+        "viewportOverrideReset": true
+      },
+      "proof": "/tmp/mortgage-tistory-draft-saved.png",
+      "mobilePreviewProof": "/tmp/mortgage-tistory-mobile-preview.png"
+    },
+    "naverPublished": false,
+    "relatedPublicTitlesVerified": true,
+    "websiteLive": {
+      "url": "https://taxcalc.co.kr/blog/mortgage-interest-income-deduction.html",
+      "httpStatus": 200,
+      "htmlMatchesLocal": true,
+      "siteThumbnailHttpStatus": 200,
+      "siteThumbnailMatchesLocal": true,
+      "desktopWidth": 1219,
+      "desktopScrollWidth": 1219,
+      "proof": "/tmp/mortgage-taxcalc-live.png"
+    },
+    "tests": {
+      "command": "python3 -m unittest discover -s tests -p '*_test.py'",
+      "passed": 30
+    }
+  }
+}

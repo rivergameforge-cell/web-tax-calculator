@@ -1,0 +1,105 @@
+<!-- 티스토리 제목 -->
+<!-- 주담대 이자 900만원 냈는데 공제 못 받는 이유? 공동명의·대환·서류 확인법 -->
+
+<p data-ke-size="size16">주택담보대출 이자를 1년에 900만 원 냈어도, 집 소유자와 대출 명의가 맞지 않으면 이 공제를 신청할 수 없습니다. 통장에서 매달 돈이 빠져나갔다는 사실만으로 연말정산 자격이 생기지는 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">반대로 공동명의라는 이유로 무조건 포기할 필요도 없습니다. <b>공동 소유와 공동 대출은 다른 문제</b>이기 때문입니다. 이번 글에서는 환급액부터 예상하기 전에 확인해야 할 명의, 대출 조건, 증빙을 정리합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2026년 귀속 기준이며, 2026년 10월 11일 현행 법령을 확인했습니다. 최대 2,000만 원은 조건별 <b>소득공제 한도이지 환급액이 아닙니다.</b> 일반적인 주택 구입 대출을 설명하며, 오래된 대출의 경과규정과 특수한 대환은 별도 확인이 필요합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><img src="https://taxcalc.co.kr/thumbnails/mortgage-interest-income-deduction-tistory.webp" alt="집 명의와 대출 명의를 연결한 열쇠로 주담대 이자 공제의 명의 확인을 강조한 이미지" width="1080" height="1080" style="width:100%;height:auto;" /></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">1. 부부의 통장보다 집과 대출 명의를 먼저 보세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">장기주택저당차입금 이자상환액 공제는 이름이 길지만, 신청할 때 첫 질문은 간단합니다. <b>공제를 신청할 근로자가 집의 소유자이면서 대출 채무자인가?</b> 이 연결부터 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>집은 본인 명의, 대출은 배우자 명의</b><br />다른 조건이 좋아도 본인이 이 공제를 신청할 수 있는 명의 조합이 아닙니다. 배우자 통장 대신 본인 통장에서 이자를 냈다고 해결되지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>집은 배우자 명의, 대출은 본인 명의</b><br />본인이 대출을 갚고 있어도 주택 소유자 요건과 맞지 않습니다. 배우자의 지출을 가져오는 다른 가족 공제와 같은 방식으로 생각하면 안 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>집은 부부 공동명의, 대출은 본인 단독 명의</b><br />본인도 주택 소유자이므로 나머지 공제 조건을 충족하면 신청을 검토할 수 있습니다. 공동명의라는 이유만으로 이자를 무조건 절반으로 줄이는 것은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>집도 대출도 공동명의</b><br />본인의 채무부담분에 해당하는 이자를 계산합니다. 별도 약정이 없다면 공동차입자의 부담 비율은 균등한 것으로 봅니다. 두 사람이 이자 전액을 각각 신청하는 중복 공제는 피해야 합니다. <a href="https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239033" target="_blank" rel="noopener">국세청 명의별 공제 안내</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">2. 공동대출 이자 900만원, 내 신청액은 얼마일까요?</h2>
+<p data-ke-size="size16">2026년에 적격 주택을 취득한 부부가 집과 대출을 공동명의로 했다고 가정하겠습니다. 연간 적격 이자는 900만 원, 두 사람의 채무부담 비율은 50%씩이며, 각자 신청 자격을 충족하는지 별도로 확인하는 사례입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>근로자 본인의 이자 계산액</b><br />900만 원 × 50% = <b>450만 원</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">본인의 대출 분류별 한도와 다른 공제의 한도에 걸리지 않는다면 450만 원을 소득공제 계산에 넣습니다. 900만 원을 혼자 신청하거나, 450만 원을 곧바로 환급액이라고 부르는 것은 모두 잘못입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">예를 들어 이 공제 전 과세표준이 3,200만 원인 사람은 450만 원 적용 후 2,750만 원이 됩니다. 다른 조건을 고정한 <b>소득세 산출세액</b>은 354만 원에서 286만 5,000원으로 내려가며, 차이는 <b>67만 5,000원</b>입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이는 설명용 가상 사례입니다. 지방소득세, 근로소득세액공제 등 다른 세액공제의 변동과 이미 납부한 세금은 반영하지 않았습니다. 실제 환급은 최종 결정세액과 기납부세액을 비교해야 정해집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">3. 1주택·6억원·3개월, 숫자의 기준이 다릅니다</h2>
+<p data-ke-size="size16"><b>첫째, 1주택은 본인 혼자만의 집 수가 아닙니다.</b><br />근로소득이 있는 거주자 중 연말 무주택 또는 1주택 세대의 세대주가 기본 대상입니다. 일용근로자는 제외되며, 12월 31일 세대 구성원의 집까지 합쳐 2주택 이상이면 공제 대상이 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일반 규정상 연중 잠깐 2주택이었다가 연말에 1주택이 됐다면 무조건 탈락하는 것은 아닙니다. 다만 연말 주택 수만 통과하면 끝나는 것이 아니라, 취득·명의·차입 조건까지 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>둘째, 6억 원은 현재 시세가 아닙니다.</b><br />2024년 1월 1일 이후 취득분은 <b>취득 당시 기준시가 6억 원 이하</b>인지 봅니다. 매매가격이나 대출금 6억 원과 바꾸어 읽지 마세요. 이전 취득분에는 종전 가액 기준과 경과규정이 적용될 수 있습니다. <a href="https://j.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239020&amp;mi=40630" target="_blank" rel="noopener">국세청 가액·한도 안내</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>셋째, 차입은 원칙적으로 등기일부터 3개월 이내입니다.</b><br />해당 집을 취득하려고 그 집에 저당권을 설정한 금융기관 등의 대출이어야 합니다. 이미 보유한 집을 담보로 나중에 받은 생활자금 대출을 같은 공제로 처리하지 않습니다. 채무 승계나 적격 대환의 예외는 별도로 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이 공제에는 월세·청약 공제처럼 별도의 총급여 상한이 없습니다. 세대주가 신청하는 현행 일반 규정에는 실제 거주 요건이 없지만, 세대원은 세대주의 관련 주택 공제 미신청, 본인 소유·채무 등 요건에 더해 해당 주택 실제 거주도 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">주거용 오피스텔 구입 대출은 이 공제 대상이 아닙니다. 전세자금 공제에서 오피스텔이 포함된다는 설명을 주택 구입 이자 공제에 그대로 적용하면 안 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">4. 최대 2000만원은 내 대출 조건부터 확인해야 합니다</h2>
+<p data-ke-size="size16">2015년 이후 차입한 일반적인 적격 대출의 현행 한도를 정리하면 다음과 같습니다. 확대 한도는 2024년 1월 1일 이후 이자 지급분부터 적용하며, 더 오래된 대출은 별도 경과규정을 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">15년 이상, 법정 고정금리·비거치식 둘 다 아님 → <b>800만 원</b><br />10년 이상 15년 미만, 고정금리 또는 비거치식 → <b>600만 원</b><br />15년 이상, 고정금리 또는 비거치식 중 하나 → <b>1,800만 원</b><br />15년 이상, 고정금리와 비거치식 모두 충족 → <b>2,000만 원</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">10년 이상이라고 어떤 대출이든 600만 원을 공제하는 것은 아닙니다. 10년 이상 15년 미만이면 금리·분할상환 요건 중 적어도 하나를 충족해야 하며, 일반적인 10년 미만 대출은 위 대상이 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">‘고정’, ‘분할상환’이라는 상품 설명만으로 판단하지 말고 이자상환증명서의 세법상 분류를 확인하세요. 시행령이 정한 금리 적용 비중·변경 주기와 거치기간·연간 원금상환 조건이 있습니다. <a href="https://law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=126618" target="_blank" rel="noopener">시행령 제112조</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>한도가 남아도 실제 이자보다 더 신청하지 않습니다.</b> 원금은 제외하고, 다른 주택 관련 공제와의 합산 규정 및 소득공제 종합한도 2,500만 원도 확인합니다. 청약·전세대출·월세의 무주택 조건이 다르므로 공제액을 무조건 함께 더하면 안 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">5. 대환했다면 새 증명서만 제출하지 마세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">금리를 낮추려고 대출을 갈아탔다면, 세금 공제에서는 <b>처음 대출과 새 대출의 연결</b>이 중요합니다. 적격 기존 대출을 법정 방식으로 이전한 경우에는 공제가 이어질 수 있지만, 대환이라는 이름만으로 자동 인정되지는 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">시행령 제112조 제10항 제2호의 일반적인 이전 특례는 금융기관이 기존 잔액을 직접 상환하거나, 본인이 신규 대출로 기존 잔액을 즉시 상환하고 주택에 저당권을 설정하는 방식 등을 정합니다. 기간은 최초 차입일부터 계산하는 15년 이상 요건을 확인하고, 적격 범위는 기존 대출 잔액을 한도로 봅니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">대환하면서 추가로 받은 생활자금까지 전부 공제 대상으로 넣지 않습니다. 10년형 대출의 이전, 만기 연장, 증액·용도 혼합은 같은 결론을 복사하지 말고 은행과 회사 담당자에게 자료를 제시해 적용 규정을 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>준비할 연결 자료</b><br />최초 대출 약정 → 대환 직전 잔액 → 기존 대출 상환 내역 → 새 대출 약정 → 이자상환증명서</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">6. 간소화에 보이는 금액과 신청 자격은 별개입니다</h2>
+<p data-ke-size="size16">이자 금액이 간소화 자료에 표시돼도 주택 수와 명의까지 모두 검증됐다는 뜻은 아닙니다. 조회된 금액을 그대로 넣기 전에 다음 자료를 맞춰 보세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>① 이자상환증명서</b><br />본인 적격 이자, 최초 차입일, 기간과 금리·상환 분류를 확인합니다. 조회되지 않으면 금융기관에서 발급받을 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>② 주민등록표등본과 등기사항증명서</b><br />세대 구성과 주택 소유 명의를 확인합니다. 배우자 소유 주택이 있다면 주소가 다르다는 이유만으로 빼지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>③ 취득 당시 가액 자료와 추가 증빙</b><br />기준시가를 확인할 자료를 준비하고, 공동채무는 부담 비율 약정, 대환은 잔액·상환 내역을 함께 확인합니다. 중도 입사·퇴사자는 근로 제공기간 중 지급한 적격 이자를 구분합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2026년 재직자의 통상적인 회사 연말정산은 2027년에 진행됩니다. 은행 자료를 받는 일정과 회사 제출 마감은 다를 수 있으니, 회사가 요청하는 추가 서류와 제출일을 먼저 확인해 두면 누락을 줄일 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">7. 내 공제액을 확인했다면 세금 영향을 비교해 보세요</h2>
+<p data-ke-size="size16">앞선 공동대출 사례에서 본인 적용액이 450만 원으로 확인됐다면 근로소득세 계산기의 ‘주택자금’ 칸에는 <b>4,500,000원</b>을 넣습니다. 부부 전체 이자 900만 원, 원금 포함 상환액, 최대 한도 2,000만 원을 대신 넣지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><a href="https://taxcalc.co.kr/#income/employment" target="_blank" rel="noopener" style="display:inline-block;max-width:100%;box-sizing:border-box;padding:14px 20px;background:#166534;color:#fff;text-decoration:none;border-radius:6px;font-weight:bold;">내 적용 공제액으로 세금 영향 비교하기</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">계산기는 자격·대출별 한도·공동채무 부담분·종합한도를 자동 판정하지 않는 간이 비교 도구입니다. 다른 입력을 고정해 공제 전후를 살펴보고, 최종 환급액은 회사 정산·홈택스와 증빙으로 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16"><a href="https://kwonriver.co.kr/entry/청약통장-300만-원-납입-120만-원-환급-무주택확인서-신청법">청약통장 300만 원 납입, 120만 원 환급일까? 무주택확인서 신청법</a><br />집을 마련하기 전 청약 공제와 취득 후 주담대 이자 공제는 자격이 다릅니다. 납입액·소득공제액·환급액을 구분할 때 도움이 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><a href="https://kwonriver.co.kr/entry/월세-80만-원-연말정산-세액공제-계산법">월세 80만 원 내면 연말정산 때 얼마 돌려받을까? 세액공제 계산법</a><br />월세 공제의 무주택 요건과 소득 기준을 따로 확인할 수 있습니다. 1주택 보유자의 주담대 공제와 월세 공제를 무조건 함께 신청할 수 있다는 뜻은 아닙니다.</p>
+
+<!-- 해시태그 -->
+<!-- 주택담보대출이자소득공제, 주담대연말정산, 장기주택저당차입금, 공동명의소득공제, 공동대출이자공제, 대환대출소득공제, 이자상환증명서, 1주택자연말정산, 주택자금소득공제, 연말정산서류 -->
