@@ -70,8 +70,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "0fd17b5fe837baf1038976a48beba77937e13a31bb6bffcfaa7198692aec7a99",
-    "modified": "2026-10-10",
+    "digest": "7f098f831111dea86c5bc844a5501c1b998e63565a853411a0808e2e82d182d2",
+    "modified": "2026-10-11",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -118,6 +118,11 @@
     "digest": "00aeaf7eae15277bb2b57bb724458fe155727c33609c51a4134476aafcf941f5",
     "modified": "2026-07-03",
     "published": "2026-05-28"
+  },
+  "blog/mortgage-interest-income-deduction.html": {
+    "digest": "0b7a88624106282b9f21a8cf94fd5626b19657df124bcf66ea1c513617e056c3",
+    "modified": "2026-10-11",
+    "published": "2026-10-11"
   },
   "blog/october-vat-preliminary-notice.html": {
     "digest": "bf3b2b1d5795b6a5c490922289007965a818c46a624054c9f739f74805f5fc0b",
@@ -270,8 +275,8 @@
     "published": "2026-04-18"
   },
   "income/employment.html": {
-    "digest": "4f624c9a723af247660c46c4c767610e126dec260b58ff10a5319164b101d1ea",
-    "modified": "2026-10-10",
+    "digest": "76613961a0ca62777f8a2892a162fc2954092e9796d51a5df09d7e063df37d7e",
+    "modified": "2026-10-11",
     "published": "2026-04-18"
   },
   "income/freelancer.html": {
@@ -340,8 +345,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "14de8bcf265f37365b177af89ab46d1896be4001329b1eee5e04d2ac41414fca",
-    "modified": "2026-10-10",
+    "digest": "749961646a09373d8dccf94b067f6a24e5eb69ebe4ea720eb1cb46c0c759f5fb",
+    "modified": "2026-10-11",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
