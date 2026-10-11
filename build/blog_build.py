@@ -658,6 +658,22 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "주택담보대출_이자_소득공제_한도_계산",
+        "slug": "mortgage-interest-income-deduction",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-11",
+        "readMin": 10,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "주담대 이자 공제 영향 간이 비교",
+        "related": [
+            ("/blog/housing-subscription-income-deduction.html", "청약 소득공제의 요건과 계산"),
+            ("/blog/monthly-rent-tax-credit-8m-refund.html", "월세 세액공제와의 차이"),
+            ("/income/employment.html", "근로소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "중소기업_취업자_소득세_감면_90_계산",
         "slug": "sme-employee-income-tax-reduction",
         "category": "labor",
