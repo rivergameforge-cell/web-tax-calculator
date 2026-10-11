@@ -22,7 +22,6 @@ from __future__ import annotations
 import argparse
 import html
 import re
-import shutil
 from pathlib import Path
 
 
@@ -319,9 +318,6 @@ def write_package(source: Path, out_dir: Path, image_path: Path | None) -> Path:
         (str(image_path.resolve()) if image_path else "") + "\n",
         encoding="utf-8",
     )
-
-    if image_path:
-        shutil.copy2(image_path, out_dir / image_path.name)
 
     helper = render_helper(parsed["title"], parsed["body"], parsed["tags"], image_path)
     helper_path = out_dir / "upload-helper.html"
