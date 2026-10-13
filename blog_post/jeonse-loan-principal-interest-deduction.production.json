@@ -45,7 +45,7 @@
   "verification": {
     "tistoryDraft": "pending_browser_connection; asked user to open HTML editor after Chrome connection timeout",
     "naverDraft": "not_requested_for_this_post",
-    "websiteLive": "pending_push",
+    "websiteLive": {"url": "https://taxcalc.co.kr/blog/jeonse-loan-principal-interest-deduction.html", "websiteCommit": "068390b", "pagesBuild": "built", "httpStatus": 200, "htmlMatchesLocal": true, "allThreeThumbnailHttpStatus": 200, "allThreeThumbnailsMatchLocal": true, "proof": "/tmp/jeonse-taxcalc-live.png"},
     "tests": {"command": "python3 -m unittest discover -s tests -p '*_test.py'", "passed": 37},
     "localDesktop": {"clientWidth": 1265, "scrollWidth": 1265, "proof": "/tmp/jeonse-site-desktop.png"},
     "localMobile": {"requestedViewport": [375, 812], "clientWidth": 360, "scrollWidth": 360, "wideTable": "Bounded horizontal scroll inside its 328px wrapper; no document overflow", "proof": "/tmp/jeonse-site-mobile.png", "viewportOverrideReset": true},
