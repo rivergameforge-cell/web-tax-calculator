@@ -44,7 +44,20 @@
   ],
   "verification": {
     "tistoryDraft": "pending_browser_connection; asked user to open HTML editor after Chrome connection timeout",
-    "naverDraft": "not_requested_for_this_post",
+    "naverDraft": {
+      "status": "saved_and_verified_in_draft_list",
+      "blogId": "kwonriver_car",
+      "editorUrl": "https://blog.naver.com/kwonriver_car/postwrite?categoryNo=14",
+      "title": "전세대출 매달 45만원 갚는데, 원금도 연말정산에 넣을까요?",
+      "savedAt": "2026-10-13T15:12:00+09:00",
+      "draftCountBefore": 9,
+      "draftCountAfter": 10,
+      "inputMethod": "One reviewed display line per native paste, with a visible-text check after every line. Soft breaks within paragraphs; blank line only between planned blocks.",
+      "published": false,
+      "thumbnail": {"count": 1, "position": "after introduction", "representative": true, "aiUsageMarked": true, "uploadedDimensions": [936, 562]},
+      "audit": {"bodyCharactersExcludingTitleAndTags": 3827, "standaloneHeadingsIncludingSources": 9, "nonemptyTextLinesIncludingSourcesAndTags": 143, "tagCount": 26, "missingLines": 0, "duplicateLines": 0, "normalStyleErrors": 0, "headingStyleErrors": 0, "internalMarkerLeaks": 0, "ordinaryText": "15pt, nonbold, centered", "headings": "19pt, bold, centered", "lastNonemptyComponent": "text ending with reviewed hashtags", "densityReview": "Eight distinct tax sections plus source references. No repeated lines or filler. Tax-specific thumbnail placement applies; venue map and final summary-card requirements do not apply."},
+      "proof": "/tmp/naver-jeonse-draft-saved.png"
+    },
     "websiteLive": {"url": "https://taxcalc.co.kr/blog/jeonse-loan-principal-interest-deduction.html", "websiteCommit": "068390b", "pagesBuild": "built", "httpStatus": 200, "htmlMatchesLocal": true, "allThreeThumbnailHttpStatus": 200, "allThreeThumbnailsMatchLocal": true, "proof": "/tmp/jeonse-taxcalc-live.png"},
     "tests": {"command": "python3 -m unittest discover -s tests -p '*_test.py'", "passed": 37},
     "localDesktop": {"clientWidth": 1265, "scrollWidth": 1265, "proof": "/tmp/jeonse-site-desktop.png"},
