@@ -43,7 +43,27 @@
     {"file": "thumbnails/jeonse-loan-principal-interest-deduction-naver.webp", "size": [1200, 720], "concept": "이사짐 박스와 계약서·상환 서류의 생활형 사진", "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-5af3f3b5-90b0-4c08-8225-a4b4cc65736a.png", "prompt": "Use case: ads-marketing. Brand-new premium Korean personal-finance blog link-card thumbnail, horizontal 5:3 aspect ratio for 1200x720. Photorealistic editorial still life seen from a slightly overhead angle in a bright recently moved-into apartment: an open red-and-white moving box, a simple apartment key, a large paper folder marked exactly '전세 계약', and a smartphone resting on the box edge showing only two clean large receipt labels '원금' and '이자'. A real adult hand gently places a loan repayment document into the folder, no faces, no bank logos, no invented numbers, no personal data. Sunny window lighting, detailed tactile corrugated cardboard and crisp paper, fresh white walls, warm natural wood as a small accent only, cheerful everyday mood. Integrate a strong legible Korean headline into uncluttered upper-central negative space on exactly two lines '전세대출 갚은 돈' / '연말정산에 넣을까요?'. Large charcoal text with a tasteful red marker emphasis, NOT on an explanatory UI card. Use only those specified text labels and headline, no extra tiny writing. All headline letters, key and primary folder inside central90% safe zone so Naver crops cannot cut them. Visually very different from a red chrome typography poster or teal analytical CGI receipt illustration. No coins, no money rain, no platform labels, no watermark, no cartoon characters or refund promises."}
   ],
   "verification": {
-    "tistoryDraft": "pending_browser_connection; asked user to open HTML editor after Chrome connection timeout",
+    "tistoryDraft": {
+      "status": "saved_and_verified_in_draft_list",
+      "verifiedAt": "2026-10-13",
+      "blogId": "kwonriver-carstroy",
+      "title": "전세대출 800만원 갚아도 320만원 전부 공제될까? 청약 합산·서류 확인법",
+      "category": "돈 버는 생각",
+      "inputMode": "HTML",
+      "draftCountBefore": 1,
+      "draftCountAfter": 2,
+      "existingDraftPreserved": true,
+      "published": false,
+      "bodyMatchesPreparedHtml": true,
+      "bodyComparisonNote": "The external thumbnail paragraph was replaced with the native image markup returned by Tistory's visible upload UI. Whitespace and CodeMirror's zero-width display characters were ignored in the comparison.",
+      "thumbnail": {"uploadedDirectly": true, "count": 1, "position": "after the three introduction paragraphs", "naturalDimensions": [1080, 1080], "mobileRenderedDimensions": [317, 317], "loadedInPreview": true},
+      "manualAdCount": 2,
+      "manualAdPlacement": "Immediately after section headings 1 and 5, before their first body paragraphs",
+      "tagCount": 10,
+      "relatedPostCount": 2,
+      "mobilePreview": {"device": "iPhone X", "viewport": [375, 812], "paragraphSpacingChecked": true, "proof": "/tmp/tistory-jeonse-mobile.png"},
+      "proof": "/tmp/tistory-jeonse-draft-saved.png"
+    },
     "naverDraft": {
       "status": "saved_and_verified_in_draft_list",
       "blogId": "kwonriver_car",
