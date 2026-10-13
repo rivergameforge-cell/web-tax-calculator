@@ -1,0 +1,105 @@
+<!-- 티스토리 제목 -->
+<!-- 전세대출 800만원 갚아도 320만원 전부 공제될까? 청약 합산·서류 확인법 -->
+
+<p data-ke-size="size16">전세대출 원금과 이자를 1년에 800만 원 갚았다면, 40%인 320만 원을 소득공제할 수 있을까요? <b>청약저축 공제 120만 원도 함께 신청하는 적격 사례라면 전세대출 쪽에는 280만 원만 남을 수 있습니다.</b> 두 공제의 합산 한도가 400만 원이기 때문입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">그보다 먼저 확인할 것은 신청 자격입니다. 상환증명서에 금액이 나와도 세대의 주택 보유, 차입일과 입금 경로까지 자동 통과하는 것은 아닙니다. 원금도 계산 대상이지만, 아무 대출이나 전부 인정되는 것은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이 글은 <b>2026년 귀속, 2026년 10월 13일 현행 법령 확인 기준</b>입니다. 통상적인 회사 연말정산은 2027년에 진행됩니다. 아래 사례는 설명용 가정이며, 소득공제액은 현금 환급액이 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><img src="https://taxcalc.co.kr/thumbnails/jeonse-loan-principal-interest-deduction-tistory.webp" alt="원금과 이자 영수증으로 전세대출 상환액의 40퍼센트 소득공제를 강조한 이미지" width="1080" height="1080" style="width:100%;height:auto;" /></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">1. 320만원과 120만원을 더했는데, 왜 400만원일까요?</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">근로자 본인이 적격 원금 600만 원과 이자 200만 원을 상환하고, 적격 청약 납입액 300만 원도 있다는 가상 사례입니다. 각각의 자격·개별 한도를 충족하고 다른 제약은 없다고 가정합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>전세대출 계산액</b><br />(원금 600만 원 + 이자 200만 원) × 40% = 320만 원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>청약저축 계산액</b><br />300만 원 × 40% = 120만 원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">단순 합계는 440만 원입니다. 하지만 <b>주택임차차입금과 주택마련저축의 공제액 합계는 연 400만 원 한도</b>를 적용합니다. 청약 공제 120만 원을 반영했다면 전세대출 공제로 남는 범위는 280만 원입니다. <a href="https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239021&amp;mi=40629" target="_blank" rel="noopener">국세청 합산 한도 안내</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">청약 자격이 없어 공제액이 0원이라면 이 사례의 전세대출 320만 원은 400만 원 이내입니다. 따라서 먼저 <b>실제로 적용할 청약 공제액</b>을 확인해야 합니다. 청약통장 잔액이나 공제 불가능한 납입액을 합산하지 마세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">2. 첫 확인은 ‘전세에 사는가’가 아니라 ‘연말 무주택인가’입니다</h2>
+<p data-ke-size="size16">기본 대상은 일용근로자를 제외한 근로소득이 있는 거주자 중, <b>12월 31일 현재 무주택 세대의 세대주</b>입니다. 세대주가 관련 전세대출·주담대 이자·청약 공제를 받지 않는 등 조건을 갖춘 근로소득 세대원도 검토할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">본인은 전세로 살고 있어도 세대가 주택을 보유하면 무주택 조건에 맞지 않을 수 있습니다. 따로 사는 배우자도 시행령상 같은 세대로 보므로, 배우자와 다른 세대 구성원의 집까지 확인합니다. <a href="https://law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=126618" target="_blank" rel="noopener">시행령 제112조 세대 기준</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">임차한 주택은 국민주택규모여야 합니다. 일반적으로 <b>전용면적 85㎡ 이하</b>, 수도권을 제외한 도시지역이 아닌 읍·면은 100㎡ 이하를 확인합니다. 적격 주거용 오피스텔도 포함되며, 다가구주택은 가구당 전용면적을 봅니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">사업소득만 있는 사람이 전세대출을 갚았다는 이유로 이 근로자 공제를 신청하지는 않습니다. 계약자·차입자·상환자의 연결도 증빙으로 확인하고, 배우자가 갚는 대출을 본인의 공제액으로 임의 이전하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">3. 전입신고 날짜만 보면 차입일을 잘못 판단할 수 있습니다</h2>
+<p data-ke-size="size16">은행 등 법정 대출기관의 일반적인 최초 차입은 <b>계약증서상 입주일과 주민등록표등본의 전입일 중 빠른 날부터 전후 3개월 이내</b>인지 확인합니다. 입주일 6월 5일, 전입일 6월 15일이라면 기준은 6월 5일입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">대출 승인일보다 실제 차입일이 중요합니다. 또 최초 대출금은 원칙적으로 대출기관에서 임대인의 계좌로 직접 입금돼야 합니다. 나중에 받은 일반 신용대출을 ‘보증금 마련에 썼으니 전세대출’이라고 바꿔 신고하지 마세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">계약 갱신 때 받은 대출과 공제를 받던 대출을 유지한 채 이사하는 경우에는 별도의 날짜 규정이 있습니다. 새 전입일만 적지 말고 갱신 계약, 종전 계약과 차입 자료를 같이 준비하세요. <a href="https://law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=126618" target="_blank" rel="noopener">차입 시기·입금 경로 규정</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">4. 이자만 냈어도 검토하지만, 잔액을 상환액으로 쓰지는 않습니다</h2>
+<p data-ke-size="size16">적격 전세대출은 실제 원금과 이자 상환액을 함께 봅니다. 원금을 갚지 않은 해라도 적격 이자 지급액은 40% 계산 대상이 될 수 있습니다. 주택 구입 대출의 이자 공제와 다른 부분입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>넣을 숫자</b><br />해당 연도 근로 제공기간에 지급한 적격 원금상환액 + 적격 이자상환액</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>대신 넣으면 안 되는 숫자</b><br />전세보증금 전체, 처음 받은 대출금 전체, 12월 말 대출 잔액, 이자와 원금으로 확인되지 않은 수수료·보증료</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">상환증명서와 실제 이체 내역으로 숫자를 맞추세요. 중도 입사·퇴사했다면 1년 전체의 상환액을 근로기간 지급액과 구분합니다. 많이 상환했다고 공제액이 같은 금액으로 늘어나는 제도도 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">5. 은행을 갈아탔다면 최초 대출 자료도 챙기세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">현행 규정은 대출기관 간 적격 대환의 차입 시기와 임대인 계좌 직접 입금 요건을 <b>대환 전 최초 차입금</b>을 기준으로 확인하도록 합니다. 갈아탄 날이 입주 후 3개월을 지났다는 이유만으로 바로 포기할 필요는 없습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">처음 대출이 적격해야 하고, 대환 내역이 연결돼야 합니다. 새 은행 증명서만 내지 말고 최초 계약·차입일·임대인 지급 내역과 기존 대출 상환·새 대출 약정을 함께 보관하세요. <a href="https://law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=126618" target="_blank" rel="noopener">시행령 대환 기준</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">은행 간 정산으로 이동한 잔액을 본인이 갚은 연간 원금이라고 임의 합산하지 마세요. 공제 금액은 금융기관이 발급한 상환증명서와 거래별 정산 내역으로 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">6. 개인에게 빌렸다면 5000만원·1개월·이율을 따로 확인합니다</h2>
+<p data-ke-size="size16">대부업 등을 경영하지 않는 거주자에게 빌린 경우는 해당 연도 <b>총급여 5,000만 원 이하</b>, 일반적으로 입주일·전입일 중 빠른 날 전후 <b>1개월</b>, 법정 기준보다 낮지 않은 이율 등의 요건을 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2026년 10월 13일 확인한 현행 기준 이율은 연 <b>3.1%</b>입니다. 과거 차입·다른 귀속연도에는 당시 규정과 적용 시기를 확인합니다. 가족 간 무이자 차입을 은행 전세대출과 같은 조건으로 신청하지 마세요. <a href="https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lspttninfSeq=114654" target="_blank" rel="noopener">시행규칙 제57조</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">반대로 은행 대출에 이 유형의 총급여 상한을 가져와 공제를 포기하는 것도 잘못입니다. 개인 간 차입은 금전소비대차계약과 실제 원리금 이체 증빙을 따로 준비합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">7. 신청 전에 자료 4종과 합산 계산을 맞춰보세요</h2>
+<p data-ke-size="size16"><b>① 금융기관 상환증명서</b><br />적격 대출의 해당 연도 원금과 이자를 확인합니다. 간소화에 없으면 금융기관에서 발급할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>② 주민등록표등본</b><br />전입일과 연말 세대 관계를 확인합니다. 무주택 판단은 실제 세대의 보유 주택도 함께 살핍니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>③ 임대차계약서 사본</b><br />입주일, 임차인, 주택 주소·면적과 갱신 내역을 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>④ 상환·차입 관련 증빙</b><br />이체 내역, 개인 간 금전소비대차계약, 대환 연결 자료 등 사실관계에 맞는 자료를 준비합니다. <a href="https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239021&amp;mi=40629" target="_blank" rel="noopener">국세청 제출 자료 안내</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">그다음 청약의 적격 공제액과 더해 400만 원 한도를 적용합니다. 다른 주택 공제의 합산 규정과 소득공제 종합한도 2,500만 원도 확인하고 회사 마감 일정에 맞춰 제출하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">8. 공제액과 환급액은 마지막까지 구분하세요</h2>
+<p data-ke-size="size16">처음 사례에서 적용되는 합산 소득공제액은 400만 원입니다. 이 금액 전체가 과세표준의 15% 구간에서 줄어드는 가상 상황이라면, 국세 소득세 산출세액 차이는 60만 원입니다. <b>400만 원이 입금된다는 뜻이 아닙니다.</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이는 지방소득세·세액공제 변화·기납부세액을 제외한 단순 비교입니다. 확정 환급은 최종 결정세액과 이미 낸 세금을 비교해야 합니다. 결정세액이 0원이면 공제를 추가해도 환급이 늘지 않을 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">근로소득세 계산기에서는 주택자금 칸에 <b>상환액 800만 원이 아니라 한도 적용 후의 공제액</b>을 넣어 비교합니다. 이 사례의 청약까지 한 번에 반영하면 4,000,000원이며 청약액을 중복 입력하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><a href="https://taxcalc.co.kr/#income/employment" target="_blank" rel="noopener" style="display:inline-block;padding:13px 20px;background:#176b61;color:#fff;text-decoration:none;font-weight:bold;border-radius:6px;">적격 공제액으로 근로소득세 간이 비교하기</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">도구는 전세대출 자격, 40% 계산, 청약의 개별 요건·합산 한도와 종합한도를 자동 확인하지 않습니다. 정리한 적격 공제액을 넣는 참고용이며, 최종 신고는 회사·홈택스와 증빙으로 확인하세요. 공제만 보고 추가 상환을 결정하지 말고 이자·수수료와 생활자금도 함께 살펴보세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16"><a href="https://kwonriver.co.kr/entry/청약통장-300만-원-납입-120만-원-환급-무주택확인서-신청법" target="_blank" rel="noopener"><b>청약통장 300만 원 납입, 120만 원 환급일까? 무주택확인서 신청법</b></a><br />전세대출과 합산할 청약 공제액을 계산하기 전에, 납입액과 신청 자격부터 확인하는 데 도움이 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><a href="https://kwonriver.co.kr/entry/월세-80만-원-연말정산-세액공제-계산법" target="_blank" rel="noopener"><b>월세 80만 원 내면 연말정산 때 얼마 돌려받을까? 세액공제 계산법</b></a><br />반전세에서 보증금 대출과 월세를 각각 검토하거나, 소득공제와 세액공제의 차이를 정리할 때 함께 읽어보세요.</p>
+
+<!-- 해시태그 -->
+<!-- 전세대출소득공제, 주택임차차입금, 원리금상환액, 전세대출원금공제, 연말정산전세대출, 청약합산한도, 무주택세대주, 전입일대출공제, 전세대출대환, 주택자금상환증명서 -->

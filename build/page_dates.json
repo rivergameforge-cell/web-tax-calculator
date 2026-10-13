@@ -70,8 +70,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "7f098f831111dea86c5bc844a5501c1b998e63565a853411a0808e2e82d182d2",
-    "modified": "2026-10-11",
+    "digest": "7f96b17fed5c042b131f9805eefb41230448da996db79e7439e9a40154e37236",
+    "modified": "2026-10-13",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -88,6 +88,11 @@
     "digest": "ccff82cfb569999cc0869d75699a571abbb3234a92280d23b856dfc79295da52",
     "modified": "2026-07-03",
     "published": "2026-06-09"
+  },
+  "blog/jeonse-loan-principal-interest-deduction.html": {
+    "digest": "8bbc6c70a9dd1ecf32b74d207534c4ab45785fa1071ba86900c37a41359a2d34",
+    "modified": "2026-10-13",
+    "published": "2026-10-13"
   },
   "blog/marriage-birth-gift-tax-deduction.html": {
     "digest": "079a504ddeb4f715577b887629582a9194fceccfe5d13201a83bfdd9ce444e82",
@@ -275,8 +280,8 @@
     "published": "2026-04-18"
   },
   "income/employment.html": {
-    "digest": "76613961a0ca62777f8a2892a162fc2954092e9796d51a5df09d7e063df37d7e",
-    "modified": "2026-10-11",
+    "digest": "8cc1d1d316db1dc3dfc2d1025483adc0e12d7eda5e0ab349ba41fd0916b5d923",
+    "modified": "2026-10-13",
     "published": "2026-04-18"
   },
   "income/freelancer.html": {
@@ -345,8 +350,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "749961646a09373d8dccf94b067f6a24e5eb69ebe4ea720eb1cb46c0c759f5fb",
-    "modified": "2026-10-11",
+    "digest": "bb04ed3595b2b5b781dd44177a01367405602c4002fd23a867fe6d195113d32f",
+    "modified": "2026-10-13",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {

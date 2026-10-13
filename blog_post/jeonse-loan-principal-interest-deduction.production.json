@@ -1,0 +1,57 @@
+{
+  "topic": "전세대출 원리금상환액 소득공제",
+  "verifiedAt": "2026-10-13",
+  "taxYear": 2026,
+  "skill": "/Users/kwonriver/.codex/skills/korean-tax-blog-writer/SKILL.md",
+  "sources": [
+    {"url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239033&mi=40681", "supports": ["근로자와 세대원", "원리금40%", "청약 합산400만원", "은행3개월과 직접 입금", "개인 차입5000만원·1개월", "대환 최초 차입금 기준"]},
+    {"url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239021&mi=40629", "supports": ["무주택", "전용면적85·100제곱미터", "주거용 오피스텔", "제출자료"], "note": "안내 기준일과 별개로 현행 시행령을 대조함"},
+    {"url": "https://law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=126618", "effective": "2026-10-01", "supports": ["시행령112조1항 배우자 동일 세대", "112조2항 주택규모", "112조4항 은행·개인 차입 유형", "최초 차입금 기준 대환", "113조 제출"]},
+    {"url": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lspttninfSeq=114654", "effective": "2026-07-01", "supports": ["시행규칙57조 개인 차입 기준이율3.1%"], "note": "과거 차입은 당시 규정과 적용시기를 별도 확인하도록 한정함"},
+    {"url": "https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7873&mi=6594", "supports": ["소득세 누진세율", "종합한도2500만원"]},
+    {"url": "https://www.korea.kr/news/policyNewsView.do?newsId=148725717", "supports": ["근로 제공기간 주택자금 지급 원칙"], "note": "국세청의 과거 설명에서 기간 원칙만 참고. 옛 금액·한도는 사용하지 않음"}
+  ],
+  "rules": {"principalIncluded": true, "ratePercent": 40, "combinedCap": 4000000, "yearEndHouseholdHomeMax": 0, "ordinaryBankBorrowingMonths": 3, "ordinaryResidentBorrowingMonths": 1, "bankSeparateSalaryCap": null, "residentSalaryCap": 50000000, "residentMinimumInterestPercent": 3.1, "generalHomeAreaMax": 85, "nonMetropolitanNonUrbanTownAreaMax": 100, "aggregateDeductionCap": 25000000},
+  "editorial": {
+    "website": {"title": "전세대출 소득공제 계산, 원리금 40%와 청약 합산 400만원 기준", "angle": "정의·요건표→대출 유형 비교→합산 공식→누진세액 표→FAQ", "example": "원금480만원·이자240만원·청약240만원, 합산384만원"},
+    "tistory": {"title": "전세대출 800만원 갚아도 320만원 전부 공제될까? 청약 합산·서류 확인법", "angle": "청약으로 남는 한도→실무 실수→전입·상환증명→대환 연결 자료→신청 CTA", "example": "원리금800만원·청약300만원, 대출공제280만원·합산400만원"},
+    "naver": {"title": "전세대출 매달 45만원 갚는데, 원금도 연말정산에 넣을까요?", "angle": "이사짐 상황→월 자동이체 숫자→청약통장→독자 질문→서류 묶음", "example": "월 원금20만원·이자25만원·청약10만원, 합산264만원", "tagCount": 26}
+  },
+  "examples": {
+    "website": [
+      {"principal": 4800000, "interest": 2400000, "subscriptionPaid": 2400000, "loanUncapped": 2880000, "subscriptionDeduction": 960000, "loanDeduction": 2880000, "combined": 3840000},
+      {"principal": 8000000, "interest": 2000000, "subscriptionPaid": 3000000, "loanUncapped": 4000000, "subscriptionDeduction": 1200000, "loanDeduction": 2800000, "combined": 4000000}
+    ],
+    "tistory": {"principal": 6000000, "interest": 2000000, "subscriptionPaid": 3000000, "loanUncapped": 3200000, "subscriptionDeduction": 1200000, "loanDeduction": 2800000, "combined": 4000000},
+    "naver": {"monthlyPrincipal": 200000, "monthlyInterest": 250000, "monthlySubscription": 100000, "months": 12, "principal": 2400000, "interest": 3000000, "subscriptionPaid": 1200000, "loanUncapped": 2160000, "subscriptionDeduction": 480000, "loanDeduction": 2160000, "combined": 2640000},
+    "tax": [
+      {"baseBefore": 42000000, "deduction": 3840000, "baseAfter": 38160000, "taxBefore": 5040000, "taxAfter": 4464000, "difference": 576000},
+      {"baseBefore": 51000000, "deduction": 3840000, "baseAfter": 47160000, "taxBefore": 6480000, "taxAfter": 5814000, "difference": 666000}
+    ],
+    "flatTaxComparisons": [{"platform": "tistory", "deduction": 4000000, "ratePercent": 15, "difference": 600000}, {"platform": "naver", "deduction": 2640000, "ratePercent": 15, "difference": 396000}],
+    "assumptions": "Fictional qualified employees, homes and borrowings; full-year employment, qualified subscription and no additional aggregate restriction. National calculated income-tax changes only; local tax, changing credits and withholding excluded. Not a refund guarantee. Actual monthly payments may vary."
+  },
+  "calculator": {"href": "https://taxcalc.co.kr/#income/employment", "file": "js/calculators/income/employment.js", "eligibilityAutomatic": false, "rateAutomatic": false, "combinedCapAutomatic": false, "aggregateCapAutomatic": false, "instruction": "Enter the eligible deduction after applying all limits, not total loan payments. Add subscription once only if both deductions are being reflected in the housing input."},
+  "tistoryRelated": [
+    {"title": "청약통장 300만 원 납입, 120만 원 환급일까? 무주택확인서 신청법", "url": "https://kwonriver.co.kr/entry/청약통장-300만-원-납입-120만-원-환급-무주택확인서-신청법", "verifiedAt": "2026-10-13", "verifiedBy": "Public article H1 from web"},
+    {"title": "월세 80만 원 내면 연말정산 때 얼마 돌려받을까? 세액공제 계산법", "url": "https://kwonriver.co.kr/entry/월세-80만-원-연말정산-세액공제-계산법", "verifiedAt": "2026-10-13", "verifiedBy": "Public article title from web"}
+  ],
+  "imageTool": "built-in image_gen",
+  "images": [
+    {"file": "thumbnails/jeonse-loan-principal-interest-deduction.webp", "size": [1200, 630], "concept": "원금·이자 종이 리본과 청록40% 렌즈의 분석형 CGI", "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-87856fd7-405b-4811-99b5-d15fd49d78ee.png", "prompt": "Use case: ads-marketing. Create an original premium Korean financial editorial cover, wide 1200x630 ratio. A vivid realistic 3D paper-engineering installation: two bright folded receipt ribbons labeled exactly '원금' and '이자' converge into a single elegant circular translucent teal lens engraved '40%'. A small silver apartment key anchors the foreground; fine paper grain and precise physical shadows. Clean pale gray-white studio backdrop, teal, vermilion and charcoal palette, sophisticated analytical design, no people, no coins. Large perfect Korean typography, exact main headline '전세대출 소득공제', exact secondary formula '(원금 + 이자) × 40%', exact small readable qualifier '청약저축과 합산 한도 확인'. Composition is a full cover, not a web UI, magazine-caliber graphic with dramatic tactile detail. All important Korean text and objects inside central 84% safe zone with generous edge margins, readable at thumbnail size. Avoid money showers, fake bank logos, platform labels, watermark, microtext and any refund guarantee. Brand new concept, not a house diorama or split app screenshot."},
+    {"file": "thumbnails/jeonse-loan-principal-interest-deduction-tistory.webp", "size": [1080, 1080], "concept": "적색·크롬 포스터와 원금도 공제 질문", "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/jeonse-tistory-generated.png", "prompt": "Use case: ads-marketing. Create a brand-new square 1080x1080 Korean tax blog cover: a punchy high-fashion surreal 3D typography poster with a giant torn chrome-and-white receipt curling upward through a luminous coral-red physical ring. The receipt is stamped exactly '원금', and a smaller translucent ice-blue tab is stamped exactly '이자'. Rich warm red studio backdrop with cream white and silver, crisp directional shadows, premium CGI material quality, no house model, no people and no money shower. Main exact oversized Korean headline in the upper-middle safe area on two lines: '전세대출 갚은 돈' / '원금도 공제?'. Bottom exact prominent number line '상환액의 40%' with exact readable qualifier below it '요건 충족 시 · 환급액 아님'. Do not add ANY other text. Keep the entire headline and these three lines inside central84% of the square, generous readable margin and strong mobile hook. The amount is an income deduction, not a guaranteed refund. No platform labels, no brand logos, no watermark, no extra microtext. Visually very different from a pale white-and-teal informational calculator cover."},
+    {"file": "thumbnails/jeonse-loan-principal-interest-deduction-naver.webp", "size": [1200, 720], "concept": "이사짐 박스와 계약서·상환 서류의 생활형 사진", "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-5af3f3b5-90b0-4c08-8225-a4b4cc65736a.png", "prompt": "Use case: ads-marketing. Brand-new premium Korean personal-finance blog link-card thumbnail, horizontal 5:3 aspect ratio for 1200x720. Photorealistic editorial still life seen from a slightly overhead angle in a bright recently moved-into apartment: an open red-and-white moving box, a simple apartment key, a large paper folder marked exactly '전세 계약', and a smartphone resting on the box edge showing only two clean large receipt labels '원금' and '이자'. A real adult hand gently places a loan repayment document into the folder, no faces, no bank logos, no invented numbers, no personal data. Sunny window lighting, detailed tactile corrugated cardboard and crisp paper, fresh white walls, warm natural wood as a small accent only, cheerful everyday mood. Integrate a strong legible Korean headline into uncluttered upper-central negative space on exactly two lines '전세대출 갚은 돈' / '연말정산에 넣을까요?'. Large charcoal text with a tasteful red marker emphasis, NOT on an explanatory UI card. Use only those specified text labels and headline, no extra tiny writing. All headline letters, key and primary folder inside central90% safe zone so Naver crops cannot cut them. Visually very different from a red chrome typography poster or teal analytical CGI receipt illustration. No coins, no money rain, no platform labels, no watermark, no cartoon characters or refund promises."}
+  ],
+  "verification": {
+    "tistoryDraft": "pending_browser_connection; asked user to open HTML editor after Chrome connection timeout",
+    "naverDraft": "not_requested_for_this_post",
+    "websiteLive": "pending_push",
+    "tests": {"command": "python3 -m unittest discover -s tests -p '*_test.py'", "passed": 37},
+    "localDesktop": {"clientWidth": 1265, "scrollWidth": 1265, "proof": "/tmp/jeonse-site-desktop.png"},
+    "localMobile": {"requestedViewport": [375, 812], "clientWidth": 360, "scrollWidth": 360, "wideTable": "Bounded horizontal scroll inside its 328px wrapper; no document overflow", "proof": "/tmp/jeonse-site-mobile.png", "viewportOverrideReset": true},
+    "manualAdCount": 2,
+    "manualAdPlacement": "H2 -> ad -> first section paragraph",
+    "naverTagCount": 26,
+    "imageDimensionsVerified": true
+  }
+}

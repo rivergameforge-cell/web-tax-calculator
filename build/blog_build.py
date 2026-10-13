@@ -674,6 +674,23 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "전세대출_소득공제_원리금40_청약합산400_계산",
+        "slug": "jeonse-loan-principal-interest-deduction",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-13",
+        "readMin": 9,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "전세대출 공제 영향 간이 비교",
+        "related": [
+            ("/blog/housing-subscription-income-deduction.html", "청약저축 소득공제와 합산 한도"),
+            ("/blog/mortgage-interest-income-deduction.html", "주담대 이자 공제와의 차이"),
+            ("/blog/monthly-rent-tax-credit-8m-refund.html", "월세 세액공제 조건과 계산"),
+            ("/income/employment.html", "근로소득세 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "중소기업_취업자_소득세_감면_90_계산",
         "slug": "sme-employee-income-tax-reduction",
         "category": "labor",
