@@ -228,6 +228,7 @@
     "localDesktop": {"clientWidth": 1219, "scrollWidth": 1219},
     "localMobile": {"requestedViewport": [375, 812], "clientWidth": 360, "scrollWidth": 360, "tableHeadersShortened": true, "proof": "/tmp/insurance-site-mobile.jpg", "viewportOverrideReset": true},
     "imageDimensionsVerified": true,
+    "websiteLive": {"url": "https://taxcalc.co.kr/blog/insurance-premium-tax-credit-100m.html", "websiteCommit": "98fe7cf", "pagesBuild": "built", "httpStatus": 200, "htmlMatchesCommittedFile": true, "sitemapPagesVerified": 107, "supportingFilesVerified": 109, "allThreeThumbnailHttpStatus": 200, "allThreeThumbnailsMatchLocal": true, "proof": "/tmp/insurance-site-live.jpg"},
     "naverDraft": {
       "status": "not_requested_for_this_post",
       "published": false
