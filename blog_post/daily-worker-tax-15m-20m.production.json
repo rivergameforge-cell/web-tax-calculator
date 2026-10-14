@@ -106,6 +106,15 @@
       "local": 670,
       "total": 7420,
       "afterTax": 992580
+    },
+    {
+      "dailyWage": 180000,
+      "days": 3,
+      "paymentMode": "combined",
+      "national": 2430,
+      "local": 240,
+      "total": 2670,
+      "afterTax": 537330
     }
   ],
   "calculator": {
@@ -130,6 +139,16 @@
     "website": {
       "title": "일용직 소득세 계산, 하루 15만원·20만원 공제 기준과 지급 방식별 예시",
       "angle": "분류→공식→일당표→18만원지급단위→국세청5일표→신고·FAQ"
+    },
+    "tistory": {
+      "title": "일당 20만원 세금 1,480원? 일용직 급여명세서·3.3% 확인법",
+      "angle": "3.3%명세서후킹→소득구분→20만원→18만원이틀지급→통장입금→신고→4가지점검",
+      "manualAdCount": 2
+    },
+    "naver": {
+      "title": "알바비 18만원인데 세금이 붙었어요, 일용직은 얼마 떼나요?",
+      "angle": "입금공감→분류→15만원·20만원→18만원사흘지급→18.7만원→3.3→실행순서",
+      "tagCount": 26
     }
   },
   "imageTool": "built-in image_gen",
@@ -143,6 +162,30 @@
       "concept": "네이비 달력·급여명세서, 정보형 편집 이미지",
       "original": "/Users/kwonriver/.codex/generated_images/01a13a97-3a29-7133-b139-606359525cfc/exec-ff0dfe05-7ed8-4d62-9ca5-bfe50ac8547b.png",
       "prompt": "Use case: ads-marketing. Create a premium Korean tax editorial cover, wide 1200x630 aspect ratio. Calm trustworthy design, warm white paper studio, deep navy ink and vivid cobalt accents. A carefully crafted 3D paper payroll slip and sculptural navy calendar block with one cobalt highlighted daily cell, alongside a clean physical measuring marker suggesting a daily deduction. Excellent paper fibers, gentle realistic shadows, contemporary financial magazine composition. Large perfectly spelled Korean typography, exact main headline '일용직 세금 계산', exact prominent subheadline '하루 15만원 공제', exact small supporting line '지급 방식에 따라 달라지는 원천징수'. All important objects and letters fully inside central 84% safe area. Legible mobile hierarchy. No additional numbers or claims, no money shower, no bank logos, no UI, no platform labels, no watermark.",
+      "visuallyInspected": true
+    },
+    {
+      "file": "thumbnails/daily-worker-tax-15m-20m-tistory.webp",
+      "size": [
+        1080,
+        1080
+      ],
+      "concept": "주황 출근기록기·거대한1480원 후킹",
+      "original": "/Users/kwonriver/.codex/generated_images/01a13a97-3a29-7133-b139-606359525cfc/exec-1386ec6e-b3cb-49bb-84ac-e1b716fa9559.png",
+      "prompt": "Use case: ads-marketing. Create a striking original square Korean tax blog thumbnail, 1080x1080 aspect ratio. Premium tactile 3D editorial poster, deep charcoal background, vivid safety orange and warm ivory. A large sculptural orange punch-clock time card with a clean small calendar icon and a huge raised ivory numeral '1,480원' across the lower-middle, beautiful crisp paper edges, cinematic side lighting and controlled shadows. Exact large Korean headline at top in two lines '일당 20만원' / '세금은 1,480원?'. Exact supporting qualifier below the giant numeral '하루치 단독 지급 · 사회보험료 제외'. All text must be perfectly spelled, strong mobile-readable hierarchy and generous margins within central84%. Bold real numerical hook with an industrial workday visual, visually completely different from a navy academic payroll-and-calendar desk cover. No extra claims, no guarantee of refund, no cash rain, no platform labels, no watermark, no brand logos.",
+      "visuallyInspected": true
+    },
+    {
+      "file": "thumbnails/daily-worker-tax-15m-20m-naver.webp",
+      "size": [
+        1200,
+        720
+      ],
+      "concept": "알바비 봉투·달력의 따뜻한 생활형 클레이 이미지",
+      "original": "/Users/kwonriver/.codex/generated_images/01a13a97-3a29-7133-b139-606359525cfc/exec-f3080b33-8efa-4f56-a7df-a3fa1c03df4a.png",
+      "initialPrompt": "Use case: ads-marketing. Create a fresh horizontal Korean personal finance blog cover, exact 5:3 aspect ratio intended for1200x720. Friendly premium miniature clay-and-paper illustration of a young adult part-time worker in a plain cream sweatshirt at a warm sunny kitchen table, pleasantly puzzled, holding a small simple pay envelope; two carefully crafted calendar cards show separate days beside one bundled envelope, communicating daily versus combined pay without a technical chart. Soft sage-green, cream and coral palette, very polished stop-motion texture, adult proportions, natural gentle expression, plant and small cup in background, airy uncluttered upper negative space. Exact large perfectly spelled Korean title in two lines '알바비 18만원' / '왜 세금이 다를까요?'. Optional tiny short line '매일 받기 · 한꺼번에 받기'. Main person, envelopes, cards and all text fully inside central90% safe area so link card cropping never clips the subject. No other text, no platform labels, no bank app screenshots, no wallet logos, no watermark, no guaranteed refund, no money shower. Clearly different from an orange punch clock numerical poster and a navy formal payroll cover.",
+      "correctionPrompt": "Edit this image precisely. Preserve the character, warm sage-and-coral lifestyle composition, kitchen, envelope-and-calendar arrangement, exact headline '알바비 18만원' and '왜 세금이 다를까요?', and subtitle '매일 받기 · 한꺼번에 받기'. Remove ALL other text and numbers from every pay envelope, the bundled envelopes, both calendar cards, and the background wall frame. Specifically remove all '9만원', the extra '18만원' on the bundle, '월 10일', '월 25일' and small wall text. Make these envelopes plain unmarked cream paper, and the two calendar cards simple blank calendars with a small sun pictogram and blank cells only. Do not introduce any new text, amounts or dates. The ONLY readable text in the entire edited image should be the preserved main headline and subtitle. This avoids implying an incorrect comparison of tax for9만원 and18만원. Maintain polished clay stop-motion quality and all core content inside central90% safe area of the5:3 horizontal cover.",
+      "correction": "예시와맞지않는9만원및봉투숫자·날짜제거",
       "visuallyInspected": true
     }
   ],
@@ -169,13 +212,48 @@
       "modeSwitchVerified": true
     },
     "websiteLive": {
-      "status": "pending"
+      "status": "built_and_verified",
+      "url": "https://taxcalc.co.kr/blog/daily-worker-tax-15m-20m.html",
+      "websiteCommit": "d2df4c2",
+      "sitemapPages": 108,
+      "supportingFiles": 110,
+      "htmlMatchesCommitted": true,
+      "proof": "output/daily-worker-post/site-live.png"
     },
     "tistoryDraft": {
-      "status": "pending"
+      "status": "awaiting_browser_recovery",
+      "existingDraftCountObserved": 1,
+      "thumbnailUploaded": true,
+      "bodyEntered": false,
+      "saved": false,
+      "published": false,
+      "error": "HTML 모드 전환 확인 뒤 브라우저의 Emulation.setFocusEmulationEnabled 명령이 시간 초과. 새 탭으로 복구 시도 후 같은 증상. 사용자에게 현재 확인창·HTML 화면 확인 요청.",
+      "source": "blog_post/일용직_소득세_15만원_20만원_계산_티스토리.txt",
+      "package": "tistory_upload/일용직_소득세_15만원_20만원_계산/upload-helper.html"
     },
     "naverDraft": {
       "status": "not_requested"
+    },
+    "content": {
+      "manualAdCount": 2,
+      "allAdsAfterHeadings": true,
+      "introductionBeforeImage": true,
+      "noStackedEmptyParagraphs": true,
+      "naverTagCount": 26
     }
-  }
+  },
+  "tistoryRelated": [
+    {
+      "title": "프리랜서 3.3% 세금 계산, 환급받는 경우와 더 내는 경우 정리",
+      "url": "https://kwonriver.co.kr/entry/프리랜서-세금-계산-환급받는-경우-더-내는-경우",
+      "verifiedAt": "2026-10-14",
+      "reason": "인적용역 사업소득과 일용근로소득의 과세 종료 차이"
+    },
+    {
+      "title": "퇴사 후 연말정산 환급, 원천징수영수증 결정세액부터 확인하세요",
+      "url": "https://kwonriver.co.kr/entry/퇴사-후-연말정산-환급-원천징수영수증-결정세액",
+      "verifiedAt": "2026-10-14",
+      "reason": "별도의 일반 근로소득 정산 확인"
+    }
+  ]
 }
