@@ -240,6 +240,20 @@
       "introductionBeforeImage": true,
       "noStackedEmptyParagraphs": true,
       "naverTagCount": 26
+    },
+    "tistoryLocalPreview": {
+      "paragraphSpacingVisuallyChecked": true,
+      "introductionBeforeImage": true,
+      "imageLoaded": true,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "proof": "output/daily-worker-post/tistory-mobile-preview.png",
+      "note": "Local HTML preview only; actual Tistory draft not saved."
+    },
+    "allThreeThumbnailsLive": {
+      "commit": "d879bb7",
+      "httpStatus": 200,
+      "exactContentMatchesLocal": true
     }
   },
   "tistoryRelated": [
