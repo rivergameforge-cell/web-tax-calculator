@@ -14,6 +14,11 @@
     "modified": "2026-10-06",
     "published": "2026-07-19"
   },
+  "blog/daily-worker-tax-15m-20m.html": {
+    "digest": "683d2deab2aa9123620b674fc3369df9ff33713b111ea7db61e445d99a6bdb81",
+    "modified": "2026-10-14",
+    "published": "2026-10-14"
+  },
   "blog/dividend-tax-saving.html": {
     "digest": "a20027ed556fd81c9e83adaa636b6416081bfeb41fe94170cc5eea38789497fe",
     "modified": "2026-07-03",
@@ -70,7 +75,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "3b71a2f3ceb43f8c58354eb42fc6c2916d0fa2db96a9d5b88999845ab9eded34",
+    "digest": "38191b4423f2fd62e3838f23b1060662646922b1eec3d2188e20f75a994b5009",
     "modified": "2026-10-14",
     "published": "2026-05-05"
   },
@@ -280,8 +285,8 @@
     "published": "2026-04-18"
   },
   "income/daily-worker.html": {
-    "digest": "33c44c39709104a7a9bd3c0aabdbb96ea6d6c9ba917063a415a4f389f1b06bf5",
-    "modified": "2026-10-06",
+    "digest": "2dedae4785b9e63166c97d01066c8e4e7d658b224e6ecab46355ee0973676605",
+    "modified": "2026-10-14",
     "published": "2026-04-18"
   },
   "income/employment.html": {
@@ -290,8 +295,8 @@
     "published": "2026-04-18"
   },
   "income/freelancer.html": {
-    "digest": "82534967d81dd3b7133d9c6246bb38962a12db71fa45ba568e95e1205a18bdde",
-    "modified": "2026-10-06",
+    "digest": "2cc093d130bf8fd5e1b1b75df941aa0459a93ce74e39241b8ad273951989d301",
+    "modified": "2026-10-14",
     "published": "2026-04-18"
   },
   "income/hourly-wage.html": {
@@ -355,7 +360,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "44e5ec21d5ca8ec0488f107d79e50f8989fedbdae8671e8418a72a80a5983b51",
+    "digest": "12c26c3b31becbe4fde1aa24ad47f41cee6273a0b9d231692f9da3aae117790a",
     "modified": "2026-10-14",
     "published": "2026-04-02"
   },

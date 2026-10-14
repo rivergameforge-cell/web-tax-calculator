@@ -4086,20 +4086,28 @@
                 </div>
                 <div class="card-body">
                   <div class="form-group">
-                    <label class="form-label" for="dworker-wage">일당 (1일 급여) <span class="required">*</span></label>
+                    <label class="form-label" for="dworker-wage">일당 (비과세 급여 제외) <span class="required">*</span></label>
                     <div class="num-input-wrap">
                       <input type="text" id="dworker-wage" class="input" placeholder="0" inputmode="numeric">
                       <span class="num-input-unit">원</span>
                     </div>
-                    <div class="form-hint">일 15만원 이하는 비과세</div>
+                    <div class="form-hint">1일 15만원 근로소득공제. 사회보험료는 별도입니다.</div>
                   </div>
                   <div class="form-group">
-                    <label class="form-label" for="dworker-days">월 근무일수</label>
+                    <label class="form-label" for="dworker-days">계산할 근무일수</label>
                     <div class="num-input-wrap">
                       <input type="number" id="dworker-days" class="input" placeholder="1" min="1" max="31" value="1">
                       <span class="num-input-unit">일</span>
                     </div>
-                    <div class="form-hint">여러 날 근무 시 월 실수령액도 함께 계산</div>
+                    <div class="form-hint">동일 고용주에게 같은 일당으로 근무한 1~31일</div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="dworker-payment">지급 방식</label>
+                    <select id="dworker-payment" class="select">
+                      <option value="combined">근무일분 한꺼번에 지급</option>
+                      <option value="daily">매일 따로 지급</option>
+                    </select>
+                    <div class="form-hint">소득세 1,000원 미만 여부는 실제 지급 단위로 판단합니다.</div>
                   </div>
                   <div class="calc-action-bar">
                     <button class="btn btn-reset btn-sm" id="dworker-reset">초기화</button>
@@ -4118,13 +4126,14 @@
           <details class="tax-tip-box" open>
             <summary>💡 일용직 소득세 안내</summary>
             <div class="tip-content">
-              <p>일용직 근로자는 하루 단위로 고용되는 근로자로, 별도의 소득세 계산 방식이 적용됩니다. 일당 15만원까지는 비과세이며, 초과분에 대해 낮은 세율로 원천징수됩니다.</p>
+              <p>세법상 일용근로소득은 1일 15만원 공제 후 세금을 계산합니다. 알바나 일당이라는 이름만으로 일용근로자가 되는 것은 아니며, 고용관계·계약기간·급여 산정 방식을 함께 확인합니다.</p>
               <ul>
-                <li><strong>비과세 한도</strong> — 일당 15만원 (초과분에만 세금 부과)</li>
-                <li><strong>세율</strong> — 과세소득 × 6%, 근로소득공제 55% 적용 후 실효세율 약 2.7%</li>
-                <li><strong>원천징수</strong> — 고용주가 지급 시 원천징수 후 지급하므로 별도 신고 불필요</li>
-                <li><strong>근로자 전환</strong> — 동일 고용주에게 3개월 이상 계속 고용 시 일용직이 아닌 근로자로 분류</li>
-                <li><strong>4대 보험</strong> — 건설업 일용직은 건강보험·고용보험 의무 가입 (1개월 이상 근무 시)</li>
+                <li><strong>근로소득공제</strong> — 1일 15만원, 초과분 × 6% × 45%로 소득세 계산</li>
+                <li><strong>세액공제</strong> — 산출세액의 55%. 2.7%는 일당 전체가 아니라 공제 후 금액에 적용</li>
+                <li><strong>소액부징수</strong> — 지급 단위의 원천징수 소득세가 1,000원 미만이면 징수하지 않음</li>
+                <li><strong>분리과세</strong> — 적법한 일용근로소득은 원천징수로 과세가 끝나며, 다른 소득의 신고 의무는 별도</li>
+                <li><strong>소득 분류</strong> — 일반 업종은 동일 고용주 3개월, 건설공사는 1년 및 특정 업무 제외 규정 확인</li>
+                <li><strong>사회보험료</strong> — 세법상 일용근로자 판단과 보험별 가입 요건은 다르며 계산 결과에 포함하지 않음</li>
               </ul>
             </div>
           </details>
@@ -5496,6 +5505,12 @@
 
     <div class="site-blog-grid" id="site-latest-posts">
 <article class="site-blog-card">
+        <a class="site-blog-thumb" href="/blog/daily-worker-tax-15m-20m.html"><img src="/thumbnails/daily-worker-tax-15m-20m.webp" alt="일용직 소득세 계산, 하루 15만원·20만원 공제 기준과 지급 방식별 예시" width="1200" height="630" loading="lazy"></a>
+        <h3><a href="/blog/daily-worker-tax-15m-20m.html">일용직 소득세 계산, 하루 15만원·20만원 공제 기준과 지급 방식별 예시</a></h3>
+        <p>2026년 일용직 소득세는 1일 15만원 공제 후 6% 세율과 55% 세액공제를 적용합니다. 일당 20만원 계산, 1,000원 미만 소액부징수, 매일 지급과 일괄 지급의 차이를 예시로 확인하세요.</p>
+        <span class="site-blog-meta">2026.10.14 · 7분</span>
+      </article>
+<article class="site-blog-card">
         <a class="site-blog-thumb" href="/blog/insurance-premium-tax-credit-100m.html"><img src="/thumbnails/insurance-premium-tax-credit-100m.webp" alt="보험료 세액공제 계산, 연 100만원 한도와 맞벌이 부부 공제 기준" width="1200" height="630" loading="lazy"></a>
         <h3><a href="/blog/insurance-premium-tax-credit-100m.html">보험료 세액공제 계산, 연 100만원 한도와 맞벌이 부부 공제 기준</a></h3>
         <p>2026년 보장성보험료 세액공제의 연 100만원 한도와 12% 계산법을 설명합니다. 실손·자동차보험 합산, 장애인전용보험 15%, 맞벌이 부부의 실제 납부자·피보험자·자녀 공제 기준을 예시로 확인하세요.</p>
@@ -5506,12 +5521,6 @@
         <h3><a href="/blog/jeonse-loan-principal-interest-deduction.html">전세대출 소득공제 계산, 원리금 40%와 청약 합산 400만원 기준</a></h3>
         <p>2026년 전세대출 원리금상환액 소득공제의 무주택·전용면적·차입 시기 요건과 40% 계산법을 설명합니다. 청약저축과 합산하는 400만원 한도, 대환, 제출 서류와 실제 세금 영향을 예시로 확인하세요.</p>
         <span class="site-blog-meta">2026.10.13 · 9분</span>
-      </article>
-<article class="site-blog-card">
-        <a class="site-blog-thumb" href="/blog/mortgage-interest-income-deduction.html"><img src="/thumbnails/mortgage-interest-income-deduction.webp" alt="주택담보대출 이자 소득공제 계산, 1주택자 조건과 2000만원 한도" width="1200" height="630" loading="lazy"></a>
-        <h3><a href="/blog/mortgage-interest-income-deduction.html">주택담보대출 이자 소득공제 계산, 1주택자 조건과 2000만원 한도</a></h3>
-        <p>2026년 주택담보대출 이자 소득공제의 1주택·명의·취득 당시 기준시가 조건과 600·800·1800·2000만원 한도를 설명합니다. 원금 제외, 공동대출, 대환과 실제 세금 영향도 예시로 계산합니다.</p>
-        <span class="site-blog-meta">2026.10.11 · 10분</span>
       </article>
     </div>
   </div>
@@ -5669,7 +5678,7 @@
 <script src="js/calculators/income/vat.js?v=3"></script>
 <script src="js/calculators/income/customs.js?v=1"></script>
 <script src="js/calculators/income/hourly-wage.js?v=2"></script>
-<script src="js/calculators/income/daily-worker.js?v=1"></script>
+<script src="js/calculators/income/daily-worker.js?v=2"></script>
 <script src="js/calculators/income/other-income.js?v=3"></script>
 <script src="js/calculators/income/pension-income.js?v=3"></script>
 <script src="js/calculators/stocks/foreign.js?v=4"></script>
