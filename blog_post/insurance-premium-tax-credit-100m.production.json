@@ -1,0 +1,236 @@
+{
+  "topic": "보험료 세액공제 계산, 연 100만원 한도와 맞벌이 부부 공제 기준",
+  "taxYear": 2026,
+  "verifiedAt": "2026-10-14",
+  "slug": "insurance-premium-tax-credit-100m",
+  "sources": [
+    {
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874&mi=6425",
+      "supports": [
+        "근로소득 거주자 일용 제외",
+        "보험 유형별100만원 한도",
+        "국세12%·15%",
+        "근로 제공기간",
+        "가족 자격 변동 특례"
+      ]
+    },
+    {
+      "url": "https://www.law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=900180300",
+      "supports": [
+        "소득세법59조의4 보험료 한도·세액공제",
+        "동일 납입액 유형 중복 제외",
+        "제5항 특례",
+        "제9항 표준세액공제"
+      ],
+      "note": "보험료 조항을 현행 NTS 및 2026-10-01 시행령과 대조. 교육비 등 다른 개정 항목은 이 글의 대상이 아님."
+    },
+    {
+      "url": "https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1031480855",
+      "effective": "2026-10-01",
+      "supports": [
+        "시행령118조의4 적격 보험 범위",
+        "장애인전용 계약·영수증 표시"
+      ]
+    },
+    {
+      "url": "https://www.nts.go.kr/nts/na/ntt/selectNttInfo.do?mi=5850&nttSn=1348212",
+      "supports": [
+        "기본공제 소득100만원·급여만500만원",
+        "부양가족 나이 기준",
+        "보험료 가족 자격",
+        "자녀 중복공제"
+      ],
+      "note": "2025년 귀속 사례를 2026년 현행 법령과 대조함"
+    },
+    {
+      "url": "https://b.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=239033&mi=40681",
+      "supports": [
+        "건강·고용·장기요양 특별소득공제 구분"
+      ]
+    },
+    {
+      "url": "https://www.nts.go.kr/webtv/na/ntt/selectNttList.do?bbsId=30145&nttSn=1307283",
+      "supports": [
+        "맞벌이 배우자만 피보험자 및 직접 부담 없는 배우자 공제 제외"
+      ],
+      "note": "2022년 NTS 검색 인덱스 설명을 현재 기본공제·실제 부담 요건과 대조. 원 페이지 운영 중단; 공개 원고에서는 현행 NTS와 법령을 링크함"
+    },
+    {
+      "url": "https://webtv.nts.go.kr/webtv/na/ntt/selectNttInfo.do?mi=10705&nttSn=1318819",
+      "supports": [
+        "지방소득세 포함13.2% 설명",
+        "보험료와 보험금 구분"
+      ],
+      "note": "2022년 NTS 검색 인덱스 설명; 공개 링크는 운영 중단으로 사용하지 않음"
+    }
+  ],
+  "rules": {
+    "ordinaryCap": 1000000,
+    "ordinaryNationalRatePercent": 12,
+    "disabilityCap": 1000000,
+    "disabilityNationalRatePercent": 15,
+    "separateTypeCaps": true,
+    "capPerInsurance": false,
+    "capPerDependent": false,
+    "dependentIncomeMax": 1000000,
+    "dependentSalaryOnlyMax": 5000000,
+    "ordinaryChildAgeMax": 20,
+    "ordinaryParentAgeMin": 60,
+    "standardEmployeeCredit": 130000,
+    "employmentPeriodOnlyGenerally": true
+  },
+  "editorial": {
+    "website": {
+      "title": "보험료 세액공제 계산, 연 100만원 한도와 맞벌이 부부 공제 기준",
+      "angle": "정의→유형별 비교→합산·공식·계산표→가족 사례표→FAQ→계산기 한계"
+    },
+    "tistory": {
+      "title": "보험료 200만원 냈는데 공제는 12만원? 실손·자동차보험 연말정산 누락 점검",
+      "angle": "200만원 실무 후킹→배우자 결제 오류→자녀→보험료·보험금 구분→전용15%→증빙·결정세액"
+    },
+    "naver": {
+      "title": "우리 부부 보험료 한 통장에서 내면, 연말정산 누가 받을까요?",
+      "angle": "생활비통장 공감→세 가지 이름→맞벌이→월4만원과자동차40만원→아이→실손보험금→실행 순서",
+      "tagCount": 26
+    }
+  },
+  "examples": {
+    "website": [
+      {
+        "paid": 400000,
+        "eligible": 400000,
+        "national": 48000,
+        "localIllustration": 4800,
+        "totalIllustration": 52800
+      },
+      {
+        "paid": 800000,
+        "eligible": 800000,
+        "national": 96000,
+        "localIllustration": 9600,
+        "totalIllustration": 105600
+      },
+      {
+        "paid": 1000000,
+        "eligible": 1000000,
+        "national": 120000,
+        "localIllustration": 12000,
+        "totalIllustration": 132000
+      },
+      {
+        "paid": 2400000,
+        "eligible": 1000000,
+        "national": 120000,
+        "localIllustration": 12000,
+        "totalIllustration": 132000
+      }
+    ],
+    "websiteTypes": {
+      "ordinaryPaid": 1000000,
+      "ordinaryNational": 120000,
+      "disabilityPaid": 900000,
+      "disabilityNational": 135000,
+      "nationalTotal": 255000,
+      "totalIllustration": 280500
+    },
+    "tistory": {
+      "premiums": [
+        1200000,
+        800000
+      ],
+      "paid": 2000000,
+      "eligible": 1000000,
+      "national": 120000,
+      "totalIllustration": 132000
+    },
+    "naver": {
+      "monthlyPaid": 40000,
+      "months": 12,
+      "annualCarPaid": 400000,
+      "paid": 880000,
+      "eligible": 880000,
+      "national": 105600,
+      "spouseMonthlyPaid": 60000,
+      "spousePaid": 720000,
+      "spouseNational": 86400,
+      "householdNational": 192000
+    },
+    "assumptions": "Fictional qualified full-year employees. Eligible policy classifications, payment and insured relationships assumed. National credit calculation and optional proportional local-tax illustration only. Sufficient remaining tax and no unfavorable standard-credit choice assumed. Not guaranteed refunds."
+  },
+  "calculator": {
+    "href": "https://taxcalc.co.kr/#income/employment",
+    "file": "js/calculators/income/employment.js",
+    "ordinaryCreditSupported": false,
+    "disabilityCreditSupported": false,
+    "eligibilityAutomatic": false,
+    "standardCreditChoiceAutomatic": false,
+    "insuranceInputIsIncomeDeduction": true,
+    "instruction": "Do not enter private qualifying insurance premiums or their tax-credit amount in the current insurance input. Use the tool for general salary/withholding structure only; final insurance credit through employer/Hometax."
+  },
+  "tistoryRelated": [
+    {
+      "title": "병원비 200만원 썼는데 공제 0원? 의료비 연말정산 실손보험금 확인법",
+      "url": "https://kwonriver.co.kr/entry/병원비-200만원-썼는데-공제-0원-의료비-연말정산-실손보험금-확인법",
+      "verifiedAt": "2026-10-14",
+      "verifiedBy": "Public article title from web",
+      "reason": "낸 보험료와 의료비를 보전받은 실손보험금을 구분"
+    }
+  ],
+  "imageTool": "built-in image_gen",
+  "images": [
+    {
+      "file": "thumbnails/insurance-premium-tax-credit-100m.webp",
+      "size": [
+        1200,
+        630
+      ],
+      "concept": "유리 보험 방패·한도 눈금의 코발트/노랑 정보형 CGI",
+      "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-f554d067-57dc-4d2e-b503-73d86da874ce.png",
+      "prompt": "Use case: ads-marketing. Create a premium Korean economic editorial cover in a wide 1200x630 aspect ratio. An original tactile paper-and-glass sculpture: an upright crystal insurance shield over a meticulously folded white insurance policy with cobalt blue tabs, a precise yellow measuring line with one physical stop at 100. Neutral light gray studio floor, white, vivid cobalt and lemon yellow with black type. Contemporary high-end CGI, sharp transparent edges, beautiful paper fibers, grounded realistic shadows, restrained trustworthy information design, not a UI or a stock desk photo. Large perfect Korean typography exact headline '보험료 세액공제', exact main number statement '100만원 × 12%', exact small qualifier '일반 보장성보험 · 국세 기준'. All text fully legible and within central 84% safe area. No other text, no people, no platform labels, no coins, no money shower, no watermark, no guaranteed refund message. A striking academic financial magazine cover, physically believable materials and polished hierarchy."
+    },
+    {
+      "file": "thumbnails/insurance-premium-tax-credit-100m-tistory.webp",
+      "size": [
+        1080,
+        1080
+      ],
+      "concept": "종이 우산 아래 거대한12만원 입체 숫자, 민트·코랄 후킹",
+      "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-9d467a91-262e-4442-8a63-a713ee10f3a0.png",
+      "prompt": "Use case: ads-marketing. Create an original square Korean insurance-tax editorial poster, 1080x1080 aspect ratio. Bold high-end surreal 3D scene of a huge pristine insurance document folded into a sculptural umbrella, sheltering a giant matte black embossed '12만원' number on a vivid pale mint studio floor. Dramatic but clean warm-white spot lighting, coral accents on the umbrella handle, ink black and mint white palette, extremely detailed paper engineering and premium material finish. The number is a tax credit limit, not a cash payout. Large exact Korean headline at top in two lines: '보험료 200만원 냈는데' / '공제는 12만원?'. On the sculptural number use only '12만원'. Exact legible qualifier at bottom: '일반 보장성보험 · 국세 최대 · 환급 보장 아님'. Generous margins, all letters fully within central84% of square, oversized mobile-readable typography. No other text, no UI cards, no money rain, no bank logos, no platform labels, no watermark. Very different from a cobalt-yellow glass shield academic cover. Intelligent true numerical hook and memorable tactile surreal art."
+    },
+    {
+      "file": "thumbnails/insurance-premium-tax-credit-100m-naver.webp",
+      "size": [
+        1200,
+        720
+      ],
+      "concept": "소파의 부부와 보험 폴더·물음표, 생활형 클레이 CGI",
+      "original": "/Users/kwonriver/.codex/generated_images/019f2506-9d1d-7c33-965e-6df2c3217acd/exec-6b614fa8-09a3-4cc7-b280-cadf6a2ee078.png",
+      "prompt": "Use case: ads-marketing. Create a fresh premium Korean personal-finance blog cover for a horizontal 1200x720, 5:3 Naver link card. An affectionate visually sophisticated miniature clay-and-paper 3D scene: two adult characters, a working couple in simple contemporary casual clothes, sitting side-by-side on a warm white sofa, each holding a separate clearly visible cobalt or coral insurance folder. The two folder covers say only '내 보험' and '배우자 보험'. A large tactile pink question-mark sculpture sits between the two folders, conveying who claims the insurance tax credit. Faces restrained and polished, expressive adult proportions, high-end stop-motion CGI texture, sunny neutral living room, no desk, no phone, no coins, no screenshots. Integrate large beautiful exact Korean headline in clean upper-middle negative space in two lines '우리 부부 보험료' / '누가 공제받을까요?'. Text charcoal with a subtle coral highlight. Important words, two characters and folders fully inside central90% safe area, ample edges, readable at small card size. White, coral and cobalt balanced with small natural warm accents. No additional text, no platform labels, no bank logos, no watermark, no guarantee. Distinct friendly lifestyle composition, not a glass shield infographic or a giant numbered tax poster."
+    }
+  ],
+  "verification": {
+    "manualAdCount": 2,
+    "manualAdPlacement": "H2 -> ad -> first section paragraph",
+    "naverTagCount": 26,
+    "allImagesVisuallyInspected": true,
+    "tistoryDraft": {
+      "status": "awaiting_user_to_open_blank_html_editor_after_browser_dialog_focus_failure",
+      "blogId": "kwonriver-carstroy",
+      "existingDraftCountObserved": 1,
+      "existingDraftPreserved": true,
+      "bodyEntered": false,
+      "thumbnailUploaded": false,
+      "published": false
+    },
+    "tests": {"command": "python3 -m unittest discover -s tests -p '*_test.py'", "passed": 42},
+    "localHttp": {"sitemapPages": 107, "supportingFiles": 109, "passed": true},
+    "localDesktop": {"clientWidth": 1219, "scrollWidth": 1219},
+    "localMobile": {"requestedViewport": [375, 812], "clientWidth": 360, "scrollWidth": 360, "tableHeadersShortened": true, "proof": "/tmp/insurance-site-mobile.jpg", "viewportOverrideReset": true},
+    "imageDimensionsVerified": true,
+    "naverDraft": {
+      "status": "not_requested_for_this_post",
+      "published": false
+    }
+  }
+}

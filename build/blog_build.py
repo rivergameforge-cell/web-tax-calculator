@@ -674,6 +674,25 @@ POSTS = [
         "customHtml": False,
     },
     {
+        "file": "보험료_세액공제_100만원_맞벌이_계산",
+        "slug": "insurance-premium-tax-credit-100m",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-14",
+        "readMin": 9,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "급여와 기납부세액 구조 참고",
+        "ctaHeading": "급여와 기납부세액의 관계 참고",
+        "ctaDescription": "이 간이 계산기는 보장성보험료 12%·15% 세액공제를 지원하지 않습니다. 이번 보험료 납입액이나 공제액을 보험료 칸에 입력하지 말고, 확정 연말정산은 회사·홈택스에서 확인하세요.",
+        "related": [
+            ("/blog/medical-expense-tax-credit-3-percent.html", "보험료와 실손보험금의 차이"),
+            ("/blog/parent-dependent-deduction-pension.html", "부모님 기본공제의 소득 기준"),
+            ("/blog/mid-year-resignation-tax-settlement.html", "중도퇴사 연말정산과 결정세액"),
+            ("/income/employment.html", "근로소득세 간이 계산기"),
+        ],
+        "customHtml": False,
+    },
+    {
         "file": "전세대출_소득공제_원리금40_청약합산400_계산",
         "slug": "jeonse-loan-principal-interest-deduction",
         "category": "labor",
@@ -1095,8 +1114,8 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     </div>
 
     <div class="cta-box">
-      <h3>👉 지금 바로 계산해보기</h3>
-      <p>입력만 하면 즉시 결과 확인. 회원가입 없이 무료로 이용 가능합니다.</p>
+      <h3>{cta_heading}</h3>
+      <p>{cta_description}</p>
       <a href="{cta_href}" class="cta-btn">{cta_label} →</a>
     </div>
 
@@ -1153,6 +1172,8 @@ def render_post(meta: dict, parsed: dict) -> str:
         read_min=meta["readMin"],
         cta_href=canonical_calculator_links(meta["ctaHref"]),
         cta_label=html_escape(meta["ctaLabel"]),
+        cta_heading=html_escape(meta.get("ctaHeading", "👉 지금 바로 계산해보기")),
+        cta_description=html_escape(meta.get("ctaDescription", "입력만 하면 즉시 결과 확인. 회원가입 없이 무료로 이용 가능합니다.")),
         body_html=body_html,
         related_html=related_html,
         headline_json=json.dumps(parsed["title"], ensure_ascii=False),

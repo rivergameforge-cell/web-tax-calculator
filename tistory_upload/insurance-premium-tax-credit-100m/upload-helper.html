@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티스토리 업로드 도우미 - 보험료 200만원 냈는데 공제는 12만원? 실손·자동차보험 연말정산 누락 점검</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 24px;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 20px;
+    }
+    section {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 0 0 12px; }
+    label { display: block; font-size: 13px; color: #6b7280; margin-bottom: 8px; }
+    textarea, input {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      background: #f9fafb;
+    }
+    textarea { min-height: 320px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+    button, a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #2563eb;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 8px 8px 0 0;
+    }
+    button.secondary { background: #475569; }
+    .hint { color: #64748b; font-size: 13px; margin: 8px 0 0; }
+    .side img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      display: block;
+    }
+    .no-image {
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 28px 12px;
+      text-align: center;
+      color: #64748b;
+    }
+    .checklist li { margin-bottom: 8px; }
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>티스토리 업로드 도우미</h1>
+    <div>보험료를 200만 원 냈는데 세액공제 계산액은 12만 원. 실손보험과 자동차보험이 따로 있으니 한도도 각각 생기는 것 아닐까요?   일반 보장성보험은 근로자 한 사람의 적격 보험료를 합산해 연 100만 원까지만 12%를 적용합니다. 보험사가 여러 곳이어도 같은 한도입니다. 더 중요한…</div>
+  </header>
+  <main>
+    <div>
+      <section>
+        <h2>1. 제목</h2>
+        <label>티스토리 제목 입력란에 붙여넣기</label>
+        <input id="title" value="보험료 200만원 냈는데 공제는 12만원? 실손·자동차보험 연말정산 누락 점검">
+        <button onclick="copyValue('title')">제목 복사</button>
+      </section>
+
+      <section>
+        <h2>2. 본문 HTML</h2>
+        <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
+        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;보험료를 200만 원 냈는데 세액공제 계산액은 12만 원. 실손보험과 자동차보험이 따로 있으니 한도도 각각 생기는 것 아닐까요?&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;일반 보장성보험은 &lt;b&gt;근로자 한 사람의 적격 보험료를 합산해 연 100만 원까지만&lt;/b&gt; 12%를 적용합니다. 보험사가 여러 곳이어도 같은 한도입니다. 더 중요한 것은 가족 보험료가 내 공제 대상에 맞는지입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;아래는 &lt;b&gt;2026년 귀속, 2026년 10월 14일 현행 기준 확인&lt;/b&gt;에 따른 제출 전 점검입니다. 2026년 재직자의 통상적인 회사 연말정산은 2027년에 진행됩니다. 예시는 가상 사례이며, 공제 계산액이 그대로 환급 입금액이 되는 것은 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;img src=&quot;https://taxcalc.co.kr/thumbnails/insurance-premium-tax-credit-100m-tistory.webp&quot; alt=&quot;보험료 200만 원 납부 시 일반 보장성보험 국세 공제 최대 12만 원이라는 점검 질문&quot; width=&quot;1080&quot; height=&quot;1080&quot; /&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;보험료 200만 원, 어디서 100만 원 한도를 적용할까?&lt;/h2&gt;
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;한 해 내내 근무한 근로자가 본인 명의·본인 보장의 적격 실손·암보험료 120만 원과 자동차보험료 80만 원을 실제로 냈다고 가정하겠습니다. 모두 일반 보장성보험입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;적격 보험료 합계: 120만 원 + 80만 원 = 200만 원&lt;br /&gt;공제대상금액: 200만 원과 100만 원 중 작은 금액 = 100만 원&lt;br /&gt;국세 세액공제 계산액: 100만 원 × 12% = &lt;b&gt;12만 원&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;200만 원의 12%인 24만 원으로 계산하거나 보험별로 12만 원씩 적용하면 안 됩니다. 100만 원은 보험료 한도입니다. 한도와 공제율은 &lt;a href=&quot;https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874&amp;amp;mi=6425&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;국세청 보험료 세액공제 기준&lt;/a&gt;에서 확인할 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;지방소득세 감소 효과까지 단순 합산하면 최대 13만2,000원으로 설명할 수 있습니다. 다만 법정 국세 공제율은 12%이고, 실제 공제는 남아 있는 세액과 다른 공제 선택에 따라 달라집니다. &lt;b&gt;보험료를 냈다고 13만2,000원이 무조건 입금되는 것은 아닙니다.&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;맞벌이 배우자 보험료, 내 카드로 결제하면 내 공제일까?&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;부부가 모두 소득이 있어 서로 기본공제대상자가 아니라고 가정해보겠습니다. 남편이 계약자이면서 보험료를 내고, 피보험자는 아내만인 계약이라면 남편은 아내가 기본공제대상이 아니어서 공제받지 못합니다. 아내도 보험료를 직접 부담하지 않아 이 사례의 보험료를 자기 공제로 넣을 수 없습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;돈이 빠져나간 카드와 보험계약 명의 하나만 보면 놓치기 쉽습니다. &lt;b&gt;실제 부담자 → 계약자 → 피보험자 → 기본공제 관계&lt;/b&gt;를 한 묶음으로 확인하세요. 연봉이 높은 쪽에 넣는 것이 항상 가능한 공제는 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;배우자의 소득 요건은 연 소득금액 합계액 100만 원 이하입니다. 근로소득만 있으면 총급여 500만 원 이하 기준을 적용합니다. 배우자는 나이 제한이 없습니다. 이 범위 안에 있는 배우자의 보험료를 근로자가 실제로 부담했다면 계약·피보험자 요건을 갖춰 공제를 검토할 수 있습니다. &lt;a href=&quot;https://www.nts.go.kr/nts/na/ntt/selectNttInfo.do?mi=5850&amp;amp;nttSn=1348212&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;국세청 가족 소득 요건 안내&lt;/a&gt;를 함께 확인하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;본인도 피보험자에 포함된 부부 공동 계약은 배우자만 보장하는 위 사례와 다릅니다. 계약자와 납부자가 다른 경우도 납입증명서와 실제 부담 자료로 개별 확인하세요. 계약 변경만으로 과거 납부액까지 소급해 자동 공제되는 것은 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;자녀 보험료는 기본공제 신청자부터 맞추세요&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;남편이 적격 자녀의 기본공제를 받고 자녀 보험료도 실제로 부담했다면, 그 보험료는 남편의 일반 보장성보험료에 합산해 한도를 확인합니다. 자녀 보험이라는 이유로 100만 원 한도가 추가되지는 않습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;반대로 자녀 기본공제는 남편에게, 보험료 부담은 아내에게 연결돼 있다면 어느 쪽에나 자유롭게 넣을 수 있는 자료가 아닙니다. 기본공제와 실제 지출 자료를 함께 정리하고 중복 제출하지 마세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;가족 보험료에는 기본공제의 나이·소득 요건이 적용됩니다. 일반적인 자녀는 20세 이하, 부모님은 60세 이상이며 법정 장애인은 나이 제한을 받지 않습니다. 소득금액 100만 원 이하, 근로소득만 있다면 총급여 500만 원 이하인지도 확인합니다. &lt;b&gt;21세 대학생 자녀에게 소득이 없더라도 일반 보험료 공제의 나이 요건에 걸릴 수 있습니다.&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;의료비의 나이·소득 예외나 대학 교육비의 나이 예외를 보험료에 적용하지 않는 것이 핵심입니다. 부모님을 형제자매가 함께 부양한다면 기본공제 신청자와 보험료 부담자도 제출 전에 맞춰보세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;실손보험료·보험금·건강보험료, 세 칸으로 구분하기&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;보험사에 내는 실손보험료&lt;/b&gt;&lt;br /&gt;세법상 보장성 구분과 가족 자격을 확인해 보험료 세액공제에 반영합니다. 적격 자동차보험료 등과 합쳐 일반 100만 원 한도를 적용합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;병원비를 돌려받은 실손보험금&lt;/b&gt;&lt;br /&gt;같은 의료비를 보전받은 금액은 의료비 공제 계산에서 확인할 항목입니다. 보험료를 내는 행위와 보험금을 받는 행위가 서로 다른 공제에 연결됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;급여에서 공제된 사회보험료&lt;/b&gt;&lt;br /&gt;근로자 부담 건강보험·고용보험·장기요양보험료는 특별소득공제, 국민연금보험료는 연금보험료 공제입니다. 여기서 설명한 일반 보장성보험료 100만 원에 합산하지 않습니다. 연금저축보험 역시 별도 연금계좌 세액공제 요건을 봅니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;상품명에 보험이라는 단어가 있다고 모두 한 항목이 되지는 않습니다. 납입증명서의 공제 구분을 확인하면 가장 빠릅니다. 저축성보험은 일반 보장성보험료 공제로 그대로 넣지 않습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;장애인전용 15%, 일반 보험과 어디가 다를까?&lt;/h2&gt;
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;장애인전용 보장성보험은 일반 유형과 별도로 적격 보험료 연 100만 원 한도, 국세 15%를 적용합니다. 최대 국세 계산액은 15만 원입니다. 지방소득세 감소까지 단순 합산하면 최대 16만5,000원으로 설명할 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;단, 장애인이 일반 보험에 가입했다고 자동으로 15%가 되지는 않습니다. &lt;b&gt;계약 또는 납입영수증에 장애인전용 보험·공제로 표시&lt;/b&gt;돼 있는지, 기본공제대상 장애인이 피보험자 또는 수익자인지 등 요건을 확인해야 합니다. &lt;a href=&quot;https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1031480855&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;시행령의 장애인전용 구분&lt;/a&gt;이 기준입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;두 유형이 모두 적격이면 각각 계산하되, 같은 보험료를 일반·장애인전용에 중복 입력하지 않습니다. 간소화에서 구분이 다르거나 전용 전환이 있다면 보험사에 납입증명서와 적용 금액을 확인하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;보험료가 조회되는데도 환급이 안 늘어나는 이유&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;먼저 원천징수영수증의 &lt;b&gt;결정세액&lt;/b&gt;을 보세요. 다른 공제까지 반영한 소득세가 이미 0원이라면 보험료를 더 넣어도 환급이 늘지 않을 수 있습니다. 세액공제는 남아 있는 세금을 줄이는 것이지, 납부한 보험료를 별도 보조금으로 돌려주는 제도가 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;근로소득자의 연 13만 원 표준세액공제 선택도 확인해야 합니다. 보험료 12만 원에 표준세액공제 13만 원을 그대로 더하지 않습니다. 건강·고용보험료 등 특별소득공제, 다른 특별세액공제와 월세 공제의 전체 세금 효과를 함께 비교하세요. &lt;a href=&quot;https://www.law.go.kr/LSW/lsLawLinkInfo.do?chrClsCd=010202&amp;amp;lsJoLnkSeq=900180300&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;소득세법 제59조의4&lt;/a&gt;에서 선택 관계를 확인할 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;입사 전·퇴사 후에 낸 금액도 살펴보세요. 보험료 특별세액공제는 원칙적으로 근로 제공기간에 지급한 비용을 대상으로 합니다. 연중 혼인·취업 등으로 종전 가족의 기본공제 자격이 달라졌다면 사유 발생 전 지급액에 대한 법정 특례를 별도로 검토합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;제출 전 4가지, 보험료를 더 내기 전에 확인하세요&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;1. 납입증명서의 보장성 구분&lt;/b&gt;&lt;br /&gt;실손·자동차·암보험 등 일반 보장성 합계와 장애인전용 합계를 따로 확인합니다. 누락 자료는 보험사에 발급을 요청하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;2. 실제 부담자와 가족 자격&lt;/b&gt;&lt;br /&gt;계약자·피보험자·실제 납부자와 가족 기본공제 신청자를 함께 대조합니다. 부부·형제자매 간 중복 신청은 제외합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;3. 근로기간과 한도&lt;/b&gt;&lt;br /&gt;근무하지 않은 기간의 보험료를 구분하고, 일반·장애인전용 유형별 100만 원 한도를 적용합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;4. 표준세액공제와 결정세액&lt;/b&gt;&lt;br /&gt;다른 공제 선택 및 남아 있는 세금을 확인해야 실제 환급 변화를 알 수 있습니다. 공제 한도를 채우려고 불필요한 보험을 추가 가입할 이유는 없습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;내 총급여와 기납부세액의 관계를 보려면 아래 간이 계산기를 참고하세요. &lt;b&gt;현재 계산기의 보험료 칸은 특별소득공제 입력칸이며 보장성보험료 12%·15% 공제를 자동 계산하지 않습니다.&lt;/b&gt; 이번 글의 보험료 납입액이나 세액공제액을 그 칸에 넣지 말고, 확정 정산은 회사·홈택스에서 확인하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot; style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;https://taxcalc.co.kr/#income/employment&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;display: inline-block; padding: 14px 22px; background: #174da6; color: #ffffff; text-decoration: none; border-radius: 6px;&quot;&gt;&lt;b&gt;급여와 이미 낸 세금의 관계 확인하기&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;함께 읽으면 좋은 글&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://kwonriver.co.kr/entry/병원비-200만원-썼는데-공제-0원-의료비-연말정산-실손보험금-확인법&quot;&gt;병원비 200만원 썼는데 공제 0원? 의료비 연말정산 실손보험금 확인법&lt;/a&gt;&lt;br /&gt;보험료를 내는 것과 병원비를 보험금으로 돌려받는 것은 다른 계산입니다. 실손보험금 때문에 의료비 공제액이 달라지는 사례를 확인할 수 있습니다.&lt;/p&gt;</textarea>
+        <button onclick="copyValue('body')">본문 복사</button>
+        <p class="hint">이미지는 티스토리에 직접 업로드한 뒤 서론 다음, 첫 소제목 앞에 배치하세요. HTML을 붙여넣을 때도 업로드한 이미지 위치를 유지하세요.</p>
+      </section>
+
+      <section>
+        <h2>3. 태그</h2>
+        <label>티스토리 태그 입력란에 붙여넣기</label>
+        <input id="tags" value="보험료세액공제, 보험료연말정산, 보장성보험100만원, 실손보험료공제, 자동차보험세액공제, 맞벌이보험료공제, 자녀보험료공제, 장애인전용보험, 표준세액공제, 연말정산환급">
+        <button onclick="copyValue('tags')">태그 복사</button>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>썸네일</h2>
+        <img src="file:///Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/insurance-premium-tax-credit-100m-tistory.webp" alt="thumbnail preview">
+        <label style="margin-top:12px">로컬 이미지 경로</label>
+        <input id="imagePath" value="/Users/kwonriver/Desktop/ai/web_tex_calculator/thumbnails/insurance-premium-tax-credit-100m-tistory.webp">
+        <button onclick="copyValue('imagePath')">이미지 경로 복사</button>
+        <p class="hint">insurance-premium-tax-credit-100m-tistory.webp</p>
+      </section>
+
+      <section>
+        <h2>업로드 순서</h2>
+        <ol class="checklist">
+          <li>티스토리 글쓰기 화면을 연다.</li>
+          <li>제목을 복사해 입력한다.</li>
+          <li>썸네일 이미지를 업로드하고 대표 이미지로 지정한다.</li>
+          <li>에디터를 HTML 모드로 전환한다.</li>
+          <li>본문 HTML을 붙여넣고 서론 → 업로드한 썸네일 → 첫 소제목 순서를 확인한다.</li>
+          <li>태그를 붙여넣고 임시저장한다.</li>
+        </ol>
+        <a class="button" href="https://www.tistory.com/" target="_blank" rel="noopener">티스토리 열기</a>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    async function copyValue(id) {
+      const el = document.getElementById(id);
+      await navigator.clipboard.writeText(el.value);
+      const old = document.title;
+      document.title = '복사 완료';
+      setTimeout(() => document.title = old, 900);
+    }
+  </script>
+</body>
+</html>

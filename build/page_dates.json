@@ -70,8 +70,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "7f96b17fed5c042b131f9805eefb41230448da996db79e7439e9a40154e37236",
-    "modified": "2026-10-13",
+    "digest": "3b71a2f3ceb43f8c58354eb42fc6c2916d0fa2db96a9d5b88999845ab9eded34",
+    "modified": "2026-10-14",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -83,6 +83,11 @@
     "digest": "1e51d5dc3c1af7e719fbc695453e7275f57e42c1797d8ad26b8e85b0c167a016",
     "modified": "2026-07-19",
     "published": "2026-06-20"
+  },
+  "blog/insurance-premium-tax-credit-100m.html": {
+    "digest": "182e9bcc4ebbe85fdeb2a897ee17b91109de72f3f7f704781693673438f0de31",
+    "modified": "2026-10-14",
+    "published": "2026-10-14"
   },
   "blog/irp-why-start-young.html": {
     "digest": "ccff82cfb569999cc0869d75699a571abbb3234a92280d23b856dfc79295da52",
@@ -280,8 +285,8 @@
     "published": "2026-04-18"
   },
   "income/employment.html": {
-    "digest": "8cc1d1d316db1dc3dfc2d1025483adc0e12d7eda5e0ab349ba41fd0916b5d923",
-    "modified": "2026-10-13",
+    "digest": "a22af0d59356ce96db0355ab0ede7947a9d90eb13f8f05629c3244fcca302537",
+    "modified": "2026-10-14",
     "published": "2026-04-18"
   },
   "income/freelancer.html": {
@@ -350,8 +355,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "bb04ed3595b2b5b781dd44177a01367405602c4002fd23a867fe6d195113d32f",
-    "modified": "2026-10-13",
+    "digest": "44e5ec21d5ca8ec0488f107d79e50f8989fedbdae8671e8418a72a80a5983b51",
+    "modified": "2026-10-14",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
