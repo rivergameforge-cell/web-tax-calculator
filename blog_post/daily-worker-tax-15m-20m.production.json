@@ -221,15 +221,53 @@
       "proof": "output/daily-worker-post/site-live.png"
     },
     "tistoryDraft": {
-      "status": "awaiting_browser_recovery",
+      "status": "saved_and_verified_in_draft_list",
+      "verifiedAt": "2026-10-15",
+      "blogId": "kwonriver-carstroy",
+      "title": "일당 20만원 세금 1,480원? 일용직 급여명세서·3.3% 확인법",
+      "category": "돈 버는 생각",
+      "inputMode": "HTML",
       "existingDraftCountObserved": 1,
+      "draftCountAfter": 2,
+      "existingDraftPreserved": true,
+      "bodyEntered": true,
+      "bodyMatchesPreparedHtml": true,
+      "bodyComparisonNote": "Prepared remote-image paragraph replaced with the native image shortcode returned by the visible upload UI. DOM-backed CodeMirror source matched after ignoring whitespace, zero-width display marks and the hidden leading measurement pre.",
       "thumbnailUploaded": true,
-      "bodyEntered": false,
-      "saved": false,
+      "thumbnail": {
+        "count": 1,
+        "uploadedDirectly": true,
+        "position": "after three introduction paragraphs",
+        "naturalDimensions": [
+          1080,
+          1080
+        ],
+        "mobileRenderedDimensions": [
+          317,
+          317
+        ],
+        "loadedInPreview": true
+      },
+      "manualAdCount": 2,
+      "manualAdPlacement": "H2 -> ad -> first section paragraph",
+      "tagCount": 10,
+      "mobilePreview": {
+        "device": "iPhone X",
+        "viewport": [
+          375,
+          812
+        ],
+        "articleParagraphWidth": 317,
+        "paragraphSpacingChecked": true,
+        "proof": "output/daily-worker-post/tistory-mobile-actual.png",
+        "note": "Desktop-loaded advertising iframes retained their earlier width after preview resizing; authored paragraphs and image reflowed to317px. Skin and auto-ad settings unchanged."
+      },
+      "proof": "output/daily-worker-post/tistory-draft-saved.png",
+      "confirmationProof": "output/daily-worker-post/tistory-draft-confirmation.png",
       "published": false,
-      "error": "HTML 모드 전환 확인 뒤 브라우저의 Emulation.setFocusEmulationEnabled 명령이 시간 초과. 새 탭으로 복구 시도 후 같은 증상. 사용자에게 현재 확인창·HTML 화면 확인 요청.",
       "source": "blog_post/일용직_소득세_15만원_20만원_계산_티스토리.txt",
-      "package": "tistory_upload/일용직_소득세_15만원_20만원_계산/upload-helper.html"
+      "package": "tistory_upload/일용직_소득세_15만원_20만원_계산/upload-helper.html",
+      "recovery": "User opened HTML mode; resumed on existing editor tab and completed save."
     },
     "naverDraft": {
       "status": "not_requested"
@@ -248,7 +286,7 @@
       "clientWidth": 360,
       "scrollWidth": 360,
       "proof": "output/daily-worker-post/tistory-mobile-preview.png",
-      "note": "Local HTML preview only; actual Tistory draft not saved."
+      "note": "Local HTML preview checked on2026-10-14; actual Tistory draft saved and checked separately on2026-10-15."
     },
     "allThreeThumbnailsLive": {
       "commit": "d879bb7",
