@@ -193,7 +193,7 @@
       "compactProof": "output/interim-tax-post/naver-confirmation.png"
     },
     "website": {
-      "status": "local_verified_pending_push",
+      "status": "deployed_and_verified",
       "url": "https://taxcalc.co.kr/blog/november-income-tax-interim-payment.html",
       "desktop": {
         "width": 1265,
@@ -211,7 +211,15 @@
         "viewportOverrideReset": true
       },
       "formulaPresent": true,
-      "publicationDate": "2026-10-16"
+      "publicationDate": "2026-10-16",
+      "websiteCommit": "cb1e46207a9ef253c0126e2f90f0158f7fdf37db",
+      "pagesBuild": "built",
+      "httpStatus": 200,
+      "sitemapPagesVerified": 109,
+      "supportingFilesVerified": 111,
+      "allThreeThumbnailsStatus": 200,
+      "allThreeThumbnailsMatch": true,
+      "proof": "output/interim-tax-post/site-live.png"
     },
     "tests": {
       "command": "python3 -m unittest discover -s tests -p '*_test.py'",
@@ -227,5 +235,6 @@
       "strictThresholdBoundariesChecked": true,
       "deadlineWeekdaysVerified": true
     }
-  }
+  },
+  "imageGenerationMode": "built-in image_gen"
 }
