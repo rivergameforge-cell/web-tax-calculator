@@ -1,0 +1,20 @@
+{
+  "website": {
+    "base": 8000000,
+    "notice": 4000000,
+    "threshold": 2400000,
+    "estimated": 2000000
+  },
+  "tistory": {
+    "base": 6000000,
+    "notice": 3000000,
+    "threshold": 1800000,
+    "estimated": 1200000
+  },
+  "naver": {
+    "base": 4000000,
+    "notice": 2000000,
+    "threshold": 1200000,
+    "estimated": 1000000
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "topic": "2026년 11월 종합소득세 중간예납 고지서 확인",
+  "slug": "november-income-tax-interim-payment",
+  "checkedAt": "2026-10-16",
+  "skill": "korean-tax-blog-writer",
+  "sources": [
+    {
+      "title": "국세청 중간예납 취지 및 대상",
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7673&mi=2236",
+      "supports": [
+        "2026년 1~6월 소득세",
+        "신규사업자 등 제외",
+        "50만원 미만"
+      ]
+    },
+    {
+      "title": "국세청 계산·납부·분납",
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7674&mi=2237",
+      "supports": [
+        "2026-11-30 일반 기한",
+        "1천만원 초과 분납",
+        "2027-02-01 분납기한"
+      ],
+      "note": "산식 주석 일부의 2024·2025년 표기는 과거 연도라 그대로 옮기지 않음. 소득세법 제65조 제7항의 직전 과세기간 구조로 2025년 중간예납·2026년 확정신고 내역을 설명함."
+    },
+    {
+      "title": "국세청 추계액 신고",
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7675&mi=2238",
+      "supports": [
+        "추계액 < 기준액 × 30%",
+        "추계액 50만원 미만이어도 고지취소 위해 신고서 제출",
+        "기준액 없는 복식부기의무자 신고 의무"
+      ]
+    },
+    {
+      "title": "소득세법 제65조",
+      "url": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1032884331",
+      "supports": [
+        "기준액 구성",
+        "절반·1천원 미만 단수",
+        "30% 미달·적법 추계신고 시 고지 결정 없음",
+        "추계액 계산식"
+      ]
+    },
+    {
+      "title": "소득세법 제76조",
+      "url": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1029626393",
+      "supports": [
+        "확정신고 시 중간예납세액 등 반영"
+      ]
+    },
+    {
+      "title": "소득세법 제86조",
+      "url": "https://law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1026490123",
+      "supports": [
+        "50만원 미만 소액부징수·정확히 50만원 구분"
+      ]
+    }
+  ],
+  "relatedTistory": [
+    {
+      "title": "부가세 예정고지 150만원, 매출 줄었을 때 취소하고 예정신고할 수 있을까?",
+      "url": "https://kwonriver.co.kr/entry/부가세-예정고지-150만원-매출-줄었을-때-취소-예정신고",
+      "publicDate": "2026-10-05",
+      "verified": true
+    }
+  ],
+  "platforms": {
+    "website": {
+      "title": "2026 종합소득세 중간예납 계산 기준과 예시: 11월 고지서는 얼마일까?",
+      "angle": "정의·기준액 구성·경계값·공식·예시·FAQ",
+      "exampleBase": 8000000,
+      "notice": 4000000,
+      "comparisonThreshold": 2400000,
+      "assumedEstimatedTax": 2000000
+    },
+    "tistory": {
+      "title": "5월에 냈는데 11월에 또? 종합소득세 중간예납 고지서 300만원 확인법",
+      "angle": "고지서 받은 직후 세목·기준액·기한 확인 → 300만원 실무 사례 → 증빙·분납·처리",
+      "exampleBase": 6000000,
+      "notice": 3000000,
+      "comparisonThreshold": 1800000,
+      "assumedEstimatedTax": 1200000
+    },
+    "naver": {
+      "title": "5월에 종소세 냈는데 11월에 또 나오나요? 중간예납 고지서 읽는 순서",
+      "angle": "달력의 세금 숙제 공감 → 과세연도 구분 → 200만원 쉬운 사례 → 확인 목록",
+      "exampleBase": 4000000,
+      "notice": 2000000,
+      "comparisonThreshold": 1200000,
+      "assumedEstimatedTax": 1000000
+    }
+  },
+  "images": [
+    {
+      "platform": "Site",
+      "prompt": "Use case: editorial tax website Open Graph thumbnail. Generate a brand new premium Korean finance editorial illustration, landscape 1200x630 composition. Deep midnight blue background with a large crisp ivory tax notice, subtle cobalt architectural grid, elegant translucent calendar tile showing '11월', small restrained lime marker accent. A technical yet approachable tax briefing image with dimensional paper and realistic soft shadows. Integrate exceptionally legible Korean typography: main headline exactly '종합소득세 중간예납', secondary line exactly '계산 기준과 고지서 확인'. Small date strip exactly '2026.11.30'. Clear hierarchy, headline on left with generous negative space, documents on right. All text comfortably within central 85 percent, no extra writing, no fake official logos, no platform names, no refund claims, no coins. Polished editorial design, confident information-focused aesthetic.",
+      "result": "Generated images are saved to /Users/kwonriver/.codex/generated_images/01a13a97-3a29-7133-b139-606359525cfc as /Users/kwonriver/.codex/generated_images/01a13a97-3a29-7133-b139-606359525cfc/exec-4dc9b118-b6e7-4f6c-b682-2d853b3897e3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "file": "thumbnails/november-income-tax-interim-payment.webp",
+      "dimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "platform": "Tistory",
+      "prompt": "Use case: Korean finance blog editorial thumbnail. Brand new square 1080x1080 high-impact polished typographic poster. Black charcoal background with vivid vermilion orange paper calendar, a dramatic huge white '11월' in the center, two folded receipt strips labeled '5월' and '11월', tactile offset print, restrained grain, hard geometric spotlight. Exact headline at upper center in extremely legible Korean: '5월에 냈는데' then '11월에 또?' with second line huge. Exact supporting line near bottom '종합소득세 중간예납 확인법'. Strong visible hierarchy at phone size, no extra tiny text, no invented percentages, no refund promise, no official logo, no platform labels, no watermark. All text inside central 85% safe zone. Distinct from navy informational website and everyday lifestyle photography.",
+      "result": "Generated images are saved to /Users/kwonriver/.codex/generated_images/01a13a97-3a29-7133-b139-606359525cfc as /Users/kwonriver/.codex/generated_images/01a13a97-3a29-7133-b139-606359525cfc/exec-7de202c9-5492-49dc-a993-c5be097f7788.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "file": "thumbnails/november-income-tax-interim-payment-tistory.webp",
+      "dimensions": [
+        1080,
+        1080
+      ]
+    },
+    {
+      "platform": "Naver",
+      "prompt": "Use case: lifestyle Korean personal finance blog link-card thumbnail. Create brand new horizontal 5:3 composition for 1200x720. Photorealistic bright everyday shop-owner desk: small handwritten planner opened to November with simple large '11월', a plain white tax envelope marked only '소득세', a ceramic coffee cup and calculator, adult hand gently opening envelope, no face no personal data. Warm soft autumn daylight, light cream desk, muted sage and amber color accents, natural photographic still-life rather than a marketing poster. In uncluttered upper central area integrate a large perfectly legible Korean question on two lines exactly '5월에 냈는데,' / '11월에도 나오나요?' in friendly dark forest green typography. Modest subtitle '중간예납 고지서 읽는 순서'. All headline letters and important objects must be within central90 percent safe area. No extra small words, no branded banks, no coins, no fake official logos, no platform names, no watermark, no savings promises. Completely distinct from a black orange dramatic typographic calendar poster and a navy analytical site thumbnail.",
+      "result": "Generated images are saved to /Users/kwonriver/.codex/generated_images/01a13a97-3a29-7133-b139-606359525cfc as /Users/kwonriver/.codex/generated_images/01a13a97-3a29-7133-b139-606359525cfc/exec-e87e724a-6fc3-4044-a717-0a4001e86261.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "file": "thumbnails/november-income-tax-interim-payment-naver.webp",
+      "dimensions": [
+        1200,
+        720
+      ]
+    }
+  ],
+  "calculatorScope": "연간 종합소득세 간이 도구만 연결. 중간예납기준액·추계액·30% 요건·기납부세액 자동계산 불가를 모든 CTA 옆에 고지. 지방소득세 표시와 국세 사례 구분.",
+  "verification": {
+    "tistoryDraft": {
+      "status": "saved_and_verified_in_draft_list",
+      "blogId": "kwonriver-carstroy",
+      "category": "돈 버는 생각",
+      "inputMode": "HTML",
+      "published": false,
+      "draftCountBefore": 1,
+      "draftCountAfter": 2,
+      "existingDraftPreserved": true,
+      "bodyMatchesPreparedHtml": true,
+      "thumbnail": {
+        "uploadedDirectly": true,
+        "count": 1,
+        "position": "after three introduction paragraphs",
+        "naturalDimensions": [
+          1080,
+          1080
+        ],
+        "mobileWidth": 317,
+        "loaded": true
+      },
+      "manualAdCount": 2,
+      "manualAdPlacement": "H2 immediately followed by ad then body, in sections 1 and 6",
+      "tagCount": 10,
+      "relatedPostCount": 1,
+      "mobilePreview": {
+        "device": "iPhone X",
+        "viewport": [
+          375,
+          812
+        ],
+        "paragraphWidth": 317,
+        "blankParagraphHeight": 26,
+        "proof": "output/interim-tax-post/tistory-mobile.png"
+      },
+      "proof": "output/interim-tax-post/tistory-draft-saved.png",
+      "compactProof": "output/interim-tax-post/tistory-confirmation.png"
+    },
+    "naverDraft": {
+      "status": "saved_and_verified_in_draft_list",
+      "blogId": "kwonriver_car",
+      "editorUrl": "https://blog.naver.com/kwonriver_car/postwrite?categoryNo=14",
+      "savedAt": "2026-10-16T11:29:00+09:00",
+      "published": false,
+      "draftCountBefore": 3,
+      "draftCountAfter": 4,
+      "existingDraftsPreserved": true,
+      "thumbnail": {
+        "count": 1,
+        "position": "after introduction",
+        "representative": true,
+        "aiUsageMarked": true
+      },
+      "audit": {
+        "bodyNonemptyLines": 99,
+        "missingLines": 0,
+        "duplicateLines": 0,
+        "headingsIncludingSources": 8,
+        "headingsStyle": "19pt bold",
+        "bodyStyle": "16pt normal, left aligned",
+        "tagCount": 26,
+        "punctuationLineBreakViolations": 0,
+        "numbersAndUrlsPreserved": true
+      },
+      "proof": "output/interim-tax-post/naver-draft-saved.png",
+      "compactProof": "output/interim-tax-post/naver-confirmation.png"
+    },
+    "website": {
+      "status": "local_verified_pending_push",
+      "url": "https://taxcalc.co.kr/blog/november-income-tax-interim-payment.html",
+      "desktop": {
+        "width": 1265,
+        "scrollWidth": 1265
+      },
+      "mobile": {
+        "width": 360,
+        "scrollWidth": 360,
+        "tables": 3,
+        "tableWidths": [
+          328,
+          328,
+          328
+        ],
+        "viewportOverrideReset": true
+      },
+      "formulaPresent": true,
+      "publicationDate": "2026-10-16"
+    },
+    "tests": {
+      "command": "python3 -m unittest discover -s tests -p '*_test.py'",
+      "passed": 43,
+      "localHttp": {
+        "sitemapPages": 109,
+        "supportingFiles": 111
+      }
+    },
+    "calculations": {
+      "file": "output/interim-tax-post/calculation-checks.json",
+      "allExamplesReproduced": true,
+      "strictThresholdBoundariesChecked": true,
+      "deadlineWeekdaysVerified": true
+    }
+  }
+}

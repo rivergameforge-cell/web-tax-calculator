@@ -759,6 +759,33 @@ POSTS = [
         ],
         "customHtml": False,
     },
+    {
+        "file": "11월_종합소득세_중간예납_고지서_계산",
+        "slug": "november-income-tax-interim-payment",
+        "category": "business",
+        "categoryLabel": "사업 세금",
+        "date": "2026-10-16",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/comprehensive",
+        "ctaLabel": "연간 종합소득세 기본 구조 참고",
+        "ctaHeading": "연간 소득세 계산 구조를 함께 살펴보세요",
+        "ctaDescription": "이 간이 계산기는 연간 산출세액의 기본 구조를 보여줍니다. 중간예납기준액·상반기 추계액·30% 요건·기납부세액은 자동 계산하지 않으며, 지방소득세 표시와 본문의 국세 사례를 구분해 보세요.",
+        "related": [
+            [
+                "/income/comprehensive.html",
+                "종합소득세 계산기"
+            ],
+            [
+                "/blog/october-vat-preliminary-notice.html",
+                "부가세 예정고지와 신고 전환"
+            ],
+            [
+                "/income/freelancer.html",
+                "프리랜서 원천징수 계산기"
+            ]
+        ],
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------

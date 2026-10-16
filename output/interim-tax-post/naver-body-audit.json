@@ -1,0 +1,44 @@
+{
+  "actual": 101,
+  "duplicates": [],
+  "expected": 99,
+  "extra": [
+    "5월에 종소세 냈는데 11월에 또 나오나요? 중간예납 고지서 읽는 순서",
+    "사진 설명을 입력하세요."
+  ],
+  "headings": [
+    {
+      "classes": "se-ff-nanumsquare se-fs19 __se-node",
+      "text": "5월과 11월은 같은 소득을 정산하는 걸까요?"
+    },
+    {
+      "classes": "se-ff-nanumsquare se-fs19 __se-node",
+      "text": "고지서의 200만원은 어디서 나온 숫자일까요?"
+    },
+    {
+      "classes": "se-ff-nanumsquare se-fs19 __se-node",
+      "text": "50만원이면 안 내도 된다는 말은 조금 달라요"
+    },
+    {
+      "classes": "se-ff-nanumsquare se-fs19 __se-node",
+      "text": "요즘 매출이 줄었다면 30%는 무엇과 비교할까요?"
+    },
+    {
+      "classes": "se-ff-nanumsquare se-fs19 __se-node",
+      "text": "추계액이 50만원보다 작아도 신고는 필요할 수 있어요"
+    },
+    {
+      "classes": "se-ff-nanumsquare se-fs19 __se-node",
+      "text": "2026년 달력에는 어떤 날짜를 표시할까요?"
+    },
+    {
+      "classes": "se-ff-nanumsquare se-fs19 __se-node",
+      "text": "고지서가 오면 이 순서로 확인해 보세요"
+    },
+    {
+      "classes": "se-ff-nanumsquare se-fs19 __se-node",
+      "text": "출처 참고"
+    }
+  ],
+  "missing": []
+}
