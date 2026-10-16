@@ -29,20 +29,21 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/variables.css">
-  <link rel="stylesheet" href="/css/layout.css?v=10">
+  <link rel="stylesheet" href="/css/layout.css?v=11">
   <link rel="stylesheet" href="/css/components.css?v=6">
   <link rel="stylesheet" href="/css/calculator.css?v=3">
   <link rel="stylesheet" href="/css/responsive.css?v=3">
-  <link rel="stylesheet" href="/css/static-page.css?v=1">
+  <link rel="stylesheet" href="/css/static-page.css?v=2">
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js"
+          integrity="sha384-DKYJZ8NLiK8MN4/C5P2dtSmLQ4KwPaoqAfyA/DfmEc1VDxu4yyC7wy6K1Hs90nka"
+          crossorigin="anonymous"></script>
 {{SCHEMA_JSONLD}}
 {{FAQ_JSONLD}}
 </head>
-<body class="no-ads static-page">
-  <header class="static-header">
-    <a class="static-brand" href="/">TaxCalc Korea <small>taxcalc.co.kr · 2026년 7월 기준</small></a>
-    <nav aria-label="주 메뉴"><a href="/#calculators-{{CATEGORY_ID}}">{{CATEGORY_LABEL}}</a><a href="/blog/">세금 가이드</a></nav>
-    <button id="btn-theme" class="btn-icon" type="button" title="테마 변경" aria-label="테마 변경">◐</button>
-  </header>
+<body class="no-ads static-page" data-route-id="{{ROUTE_ID}}">
+  {{HEADER}}
+  <div class="static-layout">
+  <nav id="sidebar" aria-label="계산기 카테고리"></nav>
   <main class="static-main">
     <nav class="static-breadcrumb" aria-label="현재 위치"><a href="/">홈</a> &rsaquo; <a href="/#calculators-{{CATEGORY_ID}}">{{CATEGORY_LABEL}}</a> &rsaquo; {{TITLE}}</nav>
     <h1>{{TITLE}}</h1>
@@ -57,6 +58,7 @@
     <section class="static-related"><h2>관련 계산기</h2><div>{{RELATED_LINKS}}</div></section>
     <details class="static-directory"><summary>전체 계산기·정보 목록</summary>{{DIRECTORY}}</details>
   </main>
+  </div>
   <footer class="static-footer"><p>© 2026 TaxCalc Korea · 참고용 계산 서비스</p><nav aria-label="운영 정보"><a href="/">홈</a><a href="/blog/">가이드</a><a href="/about.html">소개·검증</a><a href="/privacy.html">개인정보처리방침</a><a href="/contact.html">문의</a></nav></footer>
 {{RUNTIME_SCRIPTS}}
 </body>

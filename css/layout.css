@@ -224,6 +224,10 @@ body {
     width: 30px;
     height: 30px;
   }
+
+  .share-group .btn-icon:not(#btn-share) {
+    display: none;
+  }
 }
 
 #btn-hamburger {
@@ -336,7 +340,7 @@ body {
 }
 
 .sidebar-items.open {
-  max-height: 600px;
+  max-height: none;
 }
 
 .sidebar-item {

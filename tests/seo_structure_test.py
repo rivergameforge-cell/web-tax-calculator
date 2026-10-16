@@ -35,7 +35,7 @@ class Document(HTMLParser):
             self.hrefs.append(attrs.get('href', ''))
         if tag == 'h1':
             self.h1 += 1
-        if tag in ('input', 'select', 'textarea'):
+        if tag in ('input', 'select', 'textarea') and attrs.get('id') != 'search-input':
             self.inputs += 1
         if tag == 'link' and attrs.get('rel') == 'canonical':
             self.canonical = attrs['href']
@@ -57,6 +57,19 @@ class Document(HTMLParser):
 
 
 class SiteTests(unittest.TestCase):
+    def test_static_pages_share_home_navigation(self):
+        home = SiteHTML((ROOT / 'index.html').read_text())
+        app_src = next(src for src in home.scripts if src.startswith('js/app.js?'))
+        for route in builder.load_all_content():
+            with self.subTest(route=route):
+                source = (ROOT / f'{route}.html').read_text()
+                page = SiteHTML(source)
+                self.assertEqual(page.elements['header'], home.elements['header'])
+                self.assertIn('sidebar', page.elements)
+                self.assertIn(f'data-route-id="{route}"', source)
+                self.assertIn('/' + app_src, page.scripts)
+                self.assertNotIn('Theme.init()', source)
+
     def test_all_sitemap_documents(self):
         tree = ElementTree.parse(ROOT / 'sitemap.xml')
         ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}

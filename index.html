@@ -102,7 +102,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/layout.css?v=10">
+  <link rel="stylesheet" href="css/layout.css?v=11">
   <link rel="stylesheet" href="css/components.css?v=6">
   <link rel="stylesheet" href="css/calculator.css?v=3">
   <link rel="stylesheet" href="css/responsive.css?v=3">
@@ -118,8 +118,8 @@
 
   <!-- ===== HEADER ===== -->
   <header id="header">
-    <button id="btn-hamburger" class="btn-icon" title="메뉴">☰</button>
-    <a class="header-logo" id="logo-home" href="#">
+    <button id="btn-hamburger" class="btn-icon" type="button" title="메뉴" aria-label="계산기 메뉴" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <a class="header-logo" id="logo-home" href="/">
       <div class="logo-icon">₩</div>
       <div>
         <div class="logo-text">세금계산기</div>
@@ -128,7 +128,7 @@
     </a>
     <div class="header-spacer"></div>
     <div class="header-search">
-      <input type="text" id="search-input" placeholder="세금 검색... (예: 취득세, 자동차세)">
+      <input type="text" id="search-input" aria-label="계산기 검색" placeholder="세금 검색... (예: 취득세, 자동차세)">
       <span class="search-icon">🔍</span>
       <div id="search-results"></div>
     </div>
@@ -166,7 +166,7 @@
     <div id="main-wrapper">
 
       <!-- ===== SIDEBAR ===== -->
-      <nav id="sidebar"></nav>
+      <nav id="sidebar" aria-label="계산기 카테고리"></nav>
 
       <!-- ===== MAIN CONTENT ===== -->
       <main id="main-content">
@@ -5690,7 +5690,7 @@
 <script src="js/calculators/stocks/dividend.js?v=2"></script>
 <script src="js/calculators/other/resident.js?v=4"></script>
 <script src="js/calculators/other/no-son-day.js?v=2"></script>
-<script src="js/app.js?v=23"></script>
+<script src="js/app.js?v=24"></script>
 
 <script>
   // Initialize calculators after DOM ready

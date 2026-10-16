@@ -246,3 +246,53 @@ F7: Analytics 미설치, 테마 localStorage, 외부 자원 요청, 공유 URL·
 - `python3 tests/check_http.py https://taxcalc.co.kr --revision e8840bb --stamp e8840bb`: 99개 페이지와 101개 지원 파일 모두 HTTP 200, canonical 일치, noindex 헤더 없음, 배포 응답과 커밋된 파일의 SHA-256 일치. 기존 로컬 썸네일 변경은 배포 비교 기준에 섞지 않았다.
 - 배포된 실제 브라우저: 취득세 6억원·85㎡→6,600,000원, 모바일 보험 월 300만원→291,521원, 초기화 완료 표시·가로 넘침 없음. 홈 title의 TaxCalc Korea/taxcalc.co.kr, 표준 링크 카드 56개, 최근 글 10월 5일·10월 1일·8월 11일 표시를 확인했다.
 - 커밋 후 동일 빌드 재검사도 6개 테스트 통과. 요청 변경 경로의 unstaged diff는 없고 사용자 기존 변경만 남아 있다.
+
+## NAV-2026-10-16: 개별 계산기에서 사라지는 카테고리
+
+요청: 계산기를 클릭하면 왼쪽 카테고리가 모두 사라지는 현상 수정.
+
+### 범위와 Pass 1
+
+- 진입/생성: 홈페이지 `index.html`, 56개 정적 계산기·정보 URL, `build/build.py`, `build/templates/calculator-page.html`, 구조 파서 `build/site_html.py`.
+- 공통 탐색: `js/app.js`, `js/router.js`, `js/ui.js`, `js/theme.js`, 공통 CSS `reset`, `variables`, `layout`, `components`, `calculator`, `responsive`, `static-page`.
+- 회귀: `tests/navigation_regression.cjs`, `tests/seo_structure_test.py`, 실제 브라우저의 메뉴·검색·입력·로고·히스토리와 데스크톱/태블릿/모바일 레이아웃.
+- 제외: 세율과 계산식 변경, 블로그 본문·새 콘텐츠, 광고 설정, 검색 계정 조작. 기존 사용자 변경은 보존한다.
+
+F-NAV1 / P1 / RESOLVED_VERIFIED: 홈페이지 카드가 정적 URL로 이동하지만 정적 템플릿은 사이드바·검색·공통 앱을 로드하지 않았다. 모든 계산기에서 탐색이 단절된다. 홈페이지 헤더를 빌드 시 재사용하고 공통 App을 로드하며 정적 경로에서는 Router 없이 현재 메뉴만 활성화하도록 수정했다.
+
+F-NAV2 / P2 / RESOLVED_VERIFIED: 사이드바 펼침 높이 600px 제한이 소득 분류의 마지막 항목을 자를 수 있었다. 펼친 목록은 실제 내용 높이를 사용한다. 모바일 메뉴 버튼의 aria-expanded, Escape 닫기와 홈 복귀 시 분류 aria 상태도 일치시켰다.
+
+완료 조건: 동일 범위 재검토 후 56개 페이지의 메뉴·활성 항목·계산 초기화 검사, 홈→복비→다른 분류→뒤로/앞으로→홈, 검색·모바일 메뉴·인쇄·테마 검증 및 Pages 배포 확인.
+
+### Pass 2: 전체 탐색 경로 재검토
+
+F-NAV3 / P2 / RESOLVED_VERIFIED: 접힌 분류가 높이만 0으로 바뀌어 숨은 링크를 키보드·보조기기로 선택할 수 있었다. 목록의 hidden 속성도 펼침 상태와 동기화했다.
+
+원래 범위의 홈/정적 진입, 헤더 생성, 공통 스크립트 순서, 현재 경로 표시, 검색, 해시 호환, 스타일·인쇄·모바일 분기와 회귀 검사를 처음부터 재검토했다. 공통 헤더를 추출하여 복제본 간 변형을 방지하고, 정적 페이지에서 Router를 호출하거나 테마 토글이 두 번 등록되지 않음을 확인했다. 새 탐색 결함은 없으며 실제 브라우저 검증 단계로 이동한다. 새 회귀는 재생성 전 56개 페이지 전부에서 헤더 누락을 재현했고 재생성 후 통과했다.
+
+### Pass 3: 실제 브라우저의 스크롤 경계
+
+F-NAV4 / P2 / RESOLVED_VERIFIED: 최초 구현의 모바일 메뉴가 문서 상단의 일반 흐름에만 나타나 긴 본문에서 메뉴를 열면 화면 밖이었다. Playwright에서 1,500px 스크롤 후 메뉴의 뷰포트 교차율 0으로 재현했다. 고정 위치를 새로 쓰지 않고 기존 sticky 동작을 모바일에도 유지한다.
+
+메뉴 열기/닫기·범주 확장·키보드 접근, 홈/정적 분기, 공통 헤더·CSS와 생성/회귀 경로 전체를 다시 검토했다. 수정 후 같은 스크롤 회귀와 전체 화면별 검사를 다시 실행한다.
+
+### Pass 4: 공통 모바일 헤더
+
+F-NAV5 / P2 / RESOLVED_VERIFIED: 320px 홈페이지에서 공유 버튼 4개 때문에 헤더 액션이 화면 오른쪽 밖으로 나갔다. 실제 브라우저의 요소 경계 단언으로 재현했다. 작은 화면은 기존 시스템 공유 버튼 하나로 통합하며 시스템 공유가 없는 경우 기존 링크 복사 폴백을 그대로 사용한다. 데스크톱의 개별 공유 버튼은 유지한다.
+
+### Pass 5: 최종 정적 재검토
+
+선언한 범위 전체를 다시 추적했다. 홈/개별 계산기 분기, 모든 분류의 링크·펼침·현재 항목, 공통 헤더와 JS 초기화·캐시 버전, 검색·해시·테마, CSS의 640/1024 경계와 sticky·인쇄, 빌드 날짜 안정성과 SEO 스키마를 대조했다. 추가 미해결 정적 결함은 없으며 수정된 전체 코드로 브라우저 및 자동 검사를 재실행한다.
+
+### 최종 검증
+
+- `python3 -m unittest discover -s tests -p '*_test.py'`: 43개 통과. 108개 공개 문서의 canonical·단일 H1·중복 ID·내부 링크·자원·JSON-LD와 56개 공통 헤더/메뉴, 두 번 재빌드의 동일 출력 확인.
+- `node tests/navigation_regression.cjs`: 17개 단언 통과. 홈 해시 호환·query 보존, 정적 페이지의 Router 미호출·활성/aria 메뉴·단일 테마 초기화 확인.
+- `node tests/calculator_regression.cjs`: 기존 계산 회귀 단언 68개 통과. `node --check js/app.js`, `git diff --check` 통과.
+- `PLAYWRIGHT_CHANNEL=chrome node tests/static_navigation_browser.cjs` (번들 Playwright 경로를 NODE_PATH에 지정): 로컬 Chrome headless에서 1440/1024/768/390/320px 각 56개, 총 280개 페이지 조합 통과. 각 페이지의 8개 분류·56개 링크·단일 현재 항목·펼침 분류·계산기 초기화·가로 넘침을 확인했다.
+- 실제 클릭/입력: 홈 카드→복비, 1억원 입력→550,000원 결과, 소득 분류 마지막 관세 링크 이동, 뒤로/앞으로, 검색→재산세, 테마 1회 토글/새로고침, 데스크톱 sticky와 인쇄, 로고→홈, 모바일 메뉴/Escape/긴 본문 뒤 열기, 기존 해시 리디렉션, 390/320px 홈 메뉴→복비 통과. 페이지 JS 오류 없음. 세율 정확성의 새 법률 검증이 아니라 기존 입력 동작의 보존 검사다.
+- `python3 tests/check_http.py http://127.0.0.1:8081`: 108개 페이지와 지원 파일 110개 일치.
+- 스크린샷: `/private/tmp/taxcalc-navigation/desktop-commission.png`, `mobile-menu.png`, `mobile-calculator.png`. 실제 렌더링에서 사이드바와 계산 결과의 동시 표시를 확인했다.
+- 최초 실행은 번들 Chromium 버전 불일치로 시작하지 못해 설치된 Chrome의 독립 headless 테스트 세션을 사용했다. 사용자의 로그인 브라우저·계정은 조작하지 않았다.
+
+잔여 한계: 카카오/LINE 인앱 WebView와 실제 스크린리더는 이 장비에서 직접 검증하지 않았다. 새 메뉴는 fixed 위치를 추가하지 않고 sticky와 표준 hidden/aria 속성을 사용한다. Pages 업로드와 공개 사이트 검증은 아래 후속 배포 기록으로 구분한다.

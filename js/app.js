@@ -195,6 +195,7 @@ const App = (() => {
       const itemList = document.createElement('div');
       itemList.className = 'sidebar-items';
       itemList.id = `items-${cat.id}`;
+      itemList.hidden = true;
 
       cat.items.forEach(item => {
         const el = document.createElement('a');
@@ -212,10 +213,15 @@ const App = (() => {
       catBtn.addEventListener('click', () => {
         const isOpen = itemList.classList.contains('open');
         // Close all
-        document.querySelectorAll('.sidebar-items').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.sidebar-items').forEach(el => {
+          el.classList.remove('open');
+          el.hidden = true;
+        });
         document.querySelectorAll('.sidebar-category').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.sidebar-category').forEach(el => el.classList.remove('active'));
         document.querySelectorAll('.sidebar-category').forEach(el => el.setAttribute('aria-expanded', 'false'));
         if (!isOpen) {
+          itemList.hidden = false;
           itemList.classList.add('open');
           catBtn.classList.add('open');
           catBtn.classList.add('active');
@@ -306,8 +312,20 @@ const App = (() => {
 
   function updateActiveNav(routeId) {
     document.querySelectorAll('.sidebar-item').forEach(el => {
-      el.classList.toggle('active', el.dataset.routeId === routeId);
+      const active = el.dataset.routeId === routeId;
+      el.classList.toggle('active', active);
+      if (active) el.setAttribute('aria-current', 'page');
+      else el.removeAttribute('aria-current');
     });
+    const catId = getCategoryOfRoute(routeId);
+    const category = document.getElementById(`cat-${catId}`);
+    category?.classList.add('open', 'active');
+    category?.setAttribute('aria-expanded', 'true');
+    const items = document.getElementById(`items-${catId}`);
+    if (items) {
+      items.hidden = false;
+      items.classList.add('open');
+    }
   }
 
   function updatePageTitleBar(routeId) {
@@ -385,15 +403,17 @@ const App = (() => {
   function initHamburger() {
     const btn = document.getElementById('btn-hamburger');
     const overlay = document.getElementById('sidebar-overlay');
-    if (!btn || !overlay) return;
+    if (!btn) return;
 
     btn.addEventListener('click', () => toggleSidebar());
-    overlay.addEventListener('click', () => closeSidebar());
+    overlay?.addEventListener('click', () => closeSidebar());
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeSidebar();
+    });
   }
 
   function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('sidebar-overlay');
     const isOpen = sidebar?.classList.contains('open');
     if (isOpen) closeSidebar();
     else openSidebar();
@@ -402,11 +422,13 @@ const App = (() => {
   function openSidebar() {
     document.getElementById('sidebar')?.classList.add('open');
     document.getElementById('sidebar-overlay')?.classList.add('visible');
+    document.getElementById('btn-hamburger')?.setAttribute('aria-expanded', 'true');
   }
 
   function closeSidebar() {
     document.getElementById('sidebar')?.classList.remove('open');
     document.getElementById('sidebar-overlay')?.classList.remove('visible');
+    document.getElementById('btn-hamburger')?.setAttribute('aria-expanded', 'false');
   }
 
   function init() {
@@ -415,6 +437,14 @@ const App = (() => {
     buildWelcomeCatalog();
     initHamburger();
     Theme.init();
+
+    // Static pages share navigation, but retain their own URL and calculator.
+    const routeId = document.body?.dataset.routeId;
+    if (routeId) {
+      updateActiveNav(routeId);
+      updateMobileChips(routeId);
+      return;
+    }
 
     // 로고 클릭 → 홈
     const logoBtn = document.getElementById('logo-home');
@@ -457,10 +487,14 @@ const App = (() => {
 
     // 사이드바·탭바·모바일칩 초기화
     document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll('.sidebar-items').forEach(el => el.classList.remove('open'));
+    document.querySelectorAll('.sidebar-items').forEach(el => {
+      el.classList.remove('open');
+      el.hidden = true;
+    });
     document.querySelectorAll('.sidebar-category').forEach(el => {
       el.classList.remove('open');
       el.classList.remove('active');
+      el.setAttribute('aria-expanded', 'false');
     });
     document.querySelectorAll('.mobile-cat-chip').forEach(el => el.classList.remove('active'));
     closeSidebar();

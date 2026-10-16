@@ -102,17 +102,19 @@ def load_runtime():
 def render_runtime(route):
     view_id = 'view-' + route.replace('/', '-')
     module = MODULES.get(view_id)
+    scripts = [src for src in SPA.scripts if src.split('?')[0] in
+               {'js/ui.js', 'js/theme.js', 'js/app.js', 'js/ads.js'}]
+    if module:
+        scripts.append(module[0])
+    tags = '\n'.join(f'<script src="/{escape(src, quote=True)}"></script>' for src in scripts)
     if not module:
-        return '', '<script src="/js/theme.js"></script><script>Theme.init();</script>', ''
+        return '', tags, ''
     if view_id not in SPA.elements:
         raise ValueError(f'Calculator view missing: {view_id}')
     src, symbol, code = module
     view = SPA.elements[view_id]
-    scripts = [src for src in SPA.scripts if src.split('?')[0] in
-               {'js/ui.js', 'js/theme.js', 'js/ads.js'}] + [src]
-    tags = '\n'.join(f'<script src="/{escape(src, quote=True)}"></script>' for src in scripts)
     tags += (f'\n<script>document.addEventListener("DOMContentLoaded", () => {{'
-             f'Theme.init(); {symbol}.init(); document.body.dataset.calculatorReady = "true";'
+             f'{symbol}.init(); document.body.dataset.calculatorReady = "true";'
              '});</script>')
     return f'<section id="calculator" class="static-calculator" aria-label="계산 입력과 결과">{view}</section>', tags, view + code
 
@@ -300,8 +302,10 @@ def render_page(meta: dict, template: str, all_pages: dict) -> str:
     guides = render_guides(meta['id'])
     signature = json.dumps(meta, ensure_ascii=False, sort_keys=True) + template + runtime_signature
     signature += json.dumps(sources, ensure_ascii=False) + limits + guides
+    header = SPA.elements['header']
+    signature += header
     signature += ''.join((ROOT / src.split('?')[0]).read_text(encoding='utf-8')
-                         for src in SPA.scripts if src.startswith(('js/ui.js', 'js/theme.js', 'js/ads.js')))
+                         for src in SPA.scripts if src.startswith(('js/ui.js', 'js/theme.js', 'js/ads.js', 'js/app.js')))
     signature += ''.join(path.read_text(encoding='utf-8') for path in sorted((ROOT / 'css').glob('*.css')))
     dates = document_dates(ROOT / f'{meta["id"]}.html', signature)
     meta['_modified'] = dates['modified']
@@ -341,6 +345,7 @@ def render_page(meta: dict, template: str, all_pages: dict) -> str:
         "{{FAQ_JSONLD}}":       faq_jsonld,
         '{{SCHEMA_JSONLD}}': '<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False).replace('<', '\\u003c') + '</script>',
         '{{CALCULATOR}}': calculator,
+        '{{HEADER}}': header,
         '{{RUNTIME_SCRIPTS}}': scripts,
         '{{PUBLISHED_DATE}}': dates['published'],
         '{{MODIFIED_DATE}}': dates['modified'],
