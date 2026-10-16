@@ -45,6 +45,8 @@ Write as a 20-year economics blogger who is knowledgeable, friendly, and natural
 - Begin with a relatable everyday question or situation and explain as if sitting beside the reader.
 - Translate technical terms into ordinary Korean before introducing the formal term.
 - Use short mobile-friendly paragraphs, visible subheadings, one-line takeaways, and step lists.
+- In Naver body text, insert a line break after sentence-ending periods (`.`) and prose commas (`,`), keeping the punctuation at the end of the preceding line. Use these boundaries instead of fixed character counts or mid-phrase wrapping. Preserve blank lines between paragraphs, and retain the same line breaks in copy-ready files and browser editor input.
+- Do not split punctuation inside numbers, dates, URLs, or other indivisible tokens. For example, keep `3.3%`, `1,480원`, and a complete source URL on the same line.
 - Add light situational humor or a warm aside where natural. Never joke about financial hardship, penalties, or the reader's mistake.
 - Avoid repeated commands, stiff textbook prose, forced slang, and excessive exclamation marks.
 - End with a practical checklist and one natural calculator link.
@@ -71,5 +73,5 @@ Confirm before delivery:
 2. Calculations reproduce correctly and state assumptions.
 3. Platform titles, openings, examples, and CTAs are genuinely different.
 4. Tistory markup and ads match repository rules.
-5. Naver has friendly scan-friendly prose and 20 to 30 relevant tags.
+5. Naver has friendly scan-friendly prose, line breaks at sentence-ending periods and prose commas without splitting numbers or URLs, and 20 to 30 relevant tags.
 6. No persona claims, unsupported guarantees, or misleading hooks remain.
