@@ -6,14 +6,18 @@
   "site": {
     "title": "2026 노란우산 소득공제 계산: 600만원 한도와 실제 세금 감소액 예시",
     "url": "https://taxcalc.co.kr/blog/yellow-umbrella-income-deduction.html",
-    "status": "ready_to_deploy"
+    "status": "deployed_verified",
+    "deployedContentCommit": "2a881c32b99735593ccb9d157281b5f152a4809e",
+    "pagesBuild": "built"
   },
   "tistory": {
     "title": "노란우산 600만원 넣으면 600만원 환급? 99만원 계산과 해약 전 확인사항",
     "status": "blocked_login_password_required",
     "manualAds": 2,
     "layout": "intro > thumbnail > headings and content",
-    "package": "tistory_upload/노란우산_소득공제_600만원_절세효과_계산/upload-helper.html"
+    "package": "tistory_upload/노란우산_소득공제_600만원_절세효과_계산/upload-helper.html",
+    "mobilePreviewVerified": false,
+    "note": "HTML package prepared; authenticated editor and native representative image upload awaiting user login. No draft saved and no publication performed."
   },
   "naver": {
     "title": "노란우산 매달 30만원 넣는데, 내 세금은 얼마나 줄어들까요?",
@@ -31,7 +35,9 @@
       "missing": 0,
       "extra": 0
     },
-    "evidence": "output/yellow-umbrella-post/naver-draft-saved.png"
+    "evidence": "output/yellow-umbrella-post/naver-draft-saved.png",
+    "mobilePreviewVerified": true,
+    "mobileEvidence": "output/yellow-umbrella-post/naver-mobile.png"
   },
   "sources": [
     {
@@ -68,7 +74,11 @@
     "mobileTablesWidth": 328,
     "horizontalOverflow": false,
     "calculations": "output/yellow-umbrella-post/content-validation.json",
-    "calculatorScope": "annual basic income tax structure only; no automatic Yellow Umbrella qualification/limit/rental apportionment/surrender/final refund"
+    "calculatorScope": "annual basic income tax structure only; no automatic Yellow Umbrella qualification/limit/rental apportionment/surrender/final refund",
+    "liveSitemapPages": 110,
+    "liveSupportingFiles": 112,
+    "liveImages": "all three HTTP200 with exact SHA256 match",
+    "liveEvidence": "output/yellow-umbrella-post/site-live.png"
   },
   "images": [
     {

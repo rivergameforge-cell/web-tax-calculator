@@ -1,0 +1,17 @@
+[
+  {
+    "file": "yellow-umbrella-income-deduction.webp",
+    "status": 200,
+    "sha256": "00a95ed4eb36fb686e93edd93f0633f1c2c26a3012bba8a705e7ff353ffd8afc"
+  },
+  {
+    "file": "yellow-umbrella-income-deduction-tistory.webp",
+    "status": 200,
+    "sha256": "812d5bd360c45644f14d15ece255ade0987605be109386d4a3baea3b74baaf6f"
+  },
+  {
+    "file": "yellow-umbrella-income-deduction-naver.webp",
+    "status": 200,
+    "sha256": "9bedb64bd5b0ab4d6c29092e8db8d82d9da893bb6fba3f27537f579960d98e8e"
+  }
+]
