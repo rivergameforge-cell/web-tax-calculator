@@ -1,0 +1,105 @@
+{
+  "topic": "노란우산 600만원 공제, 세금도 600만원 줄어들까요?",
+  "checkedAt": "2026-10-17",
+  "taxYear": 2026,
+  "mode": "built-in image_gen",
+  "site": {
+    "title": "2026 노란우산 소득공제 계산: 600만원 한도와 실제 세금 감소액 예시",
+    "url": "https://taxcalc.co.kr/blog/yellow-umbrella-income-deduction.html",
+    "status": "ready_to_deploy"
+  },
+  "tistory": {
+    "title": "노란우산 600만원 넣으면 600만원 환급? 99만원 계산과 해약 전 확인사항",
+    "status": "blocked_login_password_required",
+    "manualAds": 2,
+    "layout": "intro > thumbnail > headings and content",
+    "package": "tistory_upload/노란우산_소득공제_600만원_절세효과_계산/upload-helper.html"
+  },
+  "naver": {
+    "title": "노란우산 매달 30만원 넣는데, 내 세금은 얼마나 줄어들까요?",
+    "status": "draft_saved",
+    "savedAt": "2026-10-17 11:49 KST",
+    "draftCount": 5,
+    "tags": 26,
+    "headingStyle": "19px bold",
+    "bodyStyle": "16px NanumSquare, left aligned",
+    "punctuationLineBreaks": true,
+    "nativeImage": true,
+    "representativeImage": true,
+    "aiImageLabel": true,
+    "sourceLineComparison": {
+      "missing": 0,
+      "extra": 0
+    },
+    "evidence": "output/yellow-umbrella-post/naver-draft-saved.png"
+  },
+  "sources": [
+    {
+      "title": "조세특례제한법 제86조의3",
+      "url": "https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1022565429",
+      "verified": "2026-09-18 시행 현행 법률; 600/500/400/200만원 한도, 임대소득 안분, 법인대표 급여 요건"
+    },
+    {
+      "title": "노란우산 세금·이자 혜택",
+      "url": "https://www.8899.or.kr/cmnsCnts/view?menuId=C080301000",
+      "verified": "가입 시기별 대상소득과 법인대표 총급여 8천만원 기준, 부동산임대업 제외·안분"
+    },
+    {
+      "title": "국세청 기본세율",
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7667&mi=2227",
+      "note": "표제는 2023~2025 귀속. 아래 2026 중간예납 안내의 현행 기본세율표와 교차 확인."
+    },
+    {
+      "title": "국세청 2026 중간예납추계액 기본세율표",
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7675&mi=2238",
+      "verified": "2026 상반기 대상 본문 기본세율표: 1,400만원 이하6%, 5,000만원 이하15% 및 누진공제126만원"
+    },
+    {
+      "title": "노란우산 해약환급금",
+      "url": "https://www.8899.or.kr/cmnsCnts/view?menuId=C080403000",
+      "verified": "일반해약 기타소득금액=해약환급금-(부금납부액-실제소득공제액), 원천징수16.5% 일반 구조, 시기·사유별 예외"
+    }
+  ],
+  "verification": {
+    "unitTests": 43,
+    "localSitemapPages": 110,
+    "localSupportingFiles": 112,
+    "mobileWidth": 375,
+    "mobileTablesWidth": 328,
+    "horizontalOverflow": false,
+    "calculations": "output/yellow-umbrella-post/content-validation.json",
+    "calculatorScope": "annual basic income tax structure only; no automatic Yellow Umbrella qualification/limit/rental apportionment/surrender/final refund"
+  },
+  "images": [
+    {
+      "platform": "site",
+      "path": "thumbnails/yellow-umbrella-income-deduction.webp",
+      "size": [
+        1200,
+        630
+      ],
+      "prompt": "Use case: ads-marketing. Asset type: Korean tax website Open Graph editorial thumbnail, 1200x630 landscape composition. Primary request: explain yellow umbrella small business income deduction with credible information-focused design. Main visual a carefully crafted yellow umbrella protecting a neat stack of ivory tax documents on a pale warm gray desk, abstract dark forest-green calculator grid behind, refined realistic 3D editorial paper materials. Large legible Korean headline exactly '노란우산 소득공제'. Secondary line exactly '600만원 공제와 실제 세금 차이'. Small restrained year label '2026 기준'. Bright professional editorial style, charcoal and mustard yellow hierarchy, generous negative space. All type inside central85% safe area, no extra words, no official emblem or institutional logo, no refund guarantee, no platform labels, no watermark, no money rain.",
+      "original": "/Users/kwonriver/.codex/generated_images/01a13a97-3a29-7133-b139-606359525cfc/exec-90c8595b-b1be-42b9-81c3-9dae4ea4ad63.png"
+    },
+    {
+      "platform": "tistory",
+      "path": "thumbnails/yellow-umbrella-income-deduction-tistory.webp",
+      "size": [
+        1080,
+        1080
+      ],
+      "prompt": "Use case: ads-marketing. Asset type: square 1080x1080 Korean tax blog thumbnail. Brand-new bold contemporary editorial typography poster about yellow umbrella income deduction. Background saturated yellow with dimensional black receipt ribbon and a small folded yellow umbrella leaning against it. Main exact Korean question set in extremely large black letters on two lines '600만원 공제' / '600만원 환급?' with question mark unmistakable. Small eyebrow text '노란우산'. Lower strip exact copy '공제와 환급은 다릅니다'. Visually striking tax misconception explainer, disciplined flat typography plus tactile paper cut shapes, no cash piles, no coin symbols, no fake official logos, no watermark, no platform labels, no extra percentages or tiny writing. Central85% safe text area. Distinct from calm pale website documents and lifestyle cafe photography. Do not imply a guaranteed refund.",
+      "original": "/Users/kwonriver/.codex/generated_images/01a13a97-3a29-7133-b139-606359525cfc/exec-af0b26a9-dc96-4a90-b550-719d0658bfb4.png"
+    },
+    {
+      "platform": "naver",
+      "path": "thumbnails/yellow-umbrella-income-deduction-naver.webp",
+      "size": [
+        1200,
+        720
+      ],
+      "prompt": "Use case: photorealistic-natural. Asset type: Korean personal finance Naver blog link-card 1200x720 horizontal 5:3. Brand new warm natural photograph inside a small quiet independent cafe before opening: adult business owner's hands checking a small accounting notebook and a smartphone on an oak counter, folded yellow umbrella placed naturally beside the notebook, espresso machine softly blurred in background. No face no personal information, no bank logos. Morning sunlight, ivory linen, warm chestnut and muted blue accents, relatable everyday editorial photograph. Integrate large legible Korean question on two lines in clear upper central negative space, exactly '노란우산 월 30만원,' / '내 세금은 얼마나 줄까요?'. Small subtitle exactly '납입액과 공제액부터 구분해요'. All typography and focal notebook and hand safely within central90 percent so card crops do not cut them. Do not put numerical receipts on smartphone. No guaranteed refund, no official logo, no platform labels, no watermark. Entirely distinct from a bold yellow black poster or pale studio umbrella document illustration.",
+      "original": "/Users/kwonriver/.codex/generated_images/01a13a97-3a29-7133-b139-606359525cfc/exec-e1f62a07-5241-457d-ab46-ae5c11c0b8cf.png"
+    }
+  ]
+}

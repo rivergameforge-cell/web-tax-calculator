@@ -1,0 +1,60 @@
+<!-- 티스토리 제목 -->
+<!-- 노란우산 600만원 넣으면 600만원 환급? 99만원 계산과 해약 전 확인사항 -->
+<p data-ke-size="size16">노란우산에 600만원을 넣었는데 세금도 600만원 줄어들까요? <b>600만원은 최대 소득공제 한도이지 환급액이 아닙니다.</b> 조건을 갖춘 금액 전부가 15% 세율 구간에서 공제되는 단순 사례라면 지방소득세를 포함한 세금 차이는 99만원입니다.</p>
+<p data-ke-size="size16">더 중요한 것은 내 한도가 정말 600만원인지입니다. 매출과 소득금액을 혼동하거나, 임대업 소득을 빼지 않거나, 세율 구간이 달라지는 것을 놓치면 절세 예상액부터 어긋납니다.</p>
+<p data-ke-size="size16">아래는 <b>2026년 귀속, 2026년 10월 17일 확인한 일반 규정</b>입니다. 주로 2019년 이후 가입한 개인사업자의 기본 사례를 다루며, 숫자는 설명용 가정입니다. 가입 시기와 법인대표 여부가 다르면 적용 기준도 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><img src="https://taxcalc.co.kr/thumbnails/yellow-umbrella-income-deduction-tistory.webp" alt="노란우산 600만원 공제와 환급의 차이" width="1080" height="1080" /></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">먼저 세 숫자를 준비하세요: 납입액·소득금액·과세표준</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16"><b>① 해당 연도 실제 납입액.</b> 통장 잔액이나 가입 이후 누적액이 아니라 공제받을 연도에 납부한 내역을 확인합니다. 납입할 수 있는 금액과 세법상 소득공제 한도는 같은 개념이 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>② 사업소득금액.</b> 개인사업자의 한도 구간을 정하는 금액입니다. 필요경비 등을 반영한 소득금액이므로 매출액과 구분해야 합니다. 한도는 노란우산 공제를 적용하기 전의 사업소득금액으로 판단합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>③ 공제 전 과세표준.</b> 실제 세율을 적용할 금액입니다. 다른 소득공제 등을 반영한 뒤 이번 노란우산 공제를 적용하기 직전의 과세표준으로 전후 세금을 비교합니다. 소득금액에 보이는 한계세율을 납입액 전체에 곱하는 것부터 시작하지 마세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">600만원 납입해도 공제는 500만원일 수 있습니다</h2>
+<p data-ke-size="size16">부동산임대업 소득이 없는 개인사업자의 기본 한도는 아래와 같습니다. 실제 공제액은 납입액과 한도 중 작은 금액을 출발점으로 공제 대상 소득 범위 안에서 정합니다.</p>
+<p data-ke-size="size16">사업소득금액 4천만원 이하 → 연 600만원<br />4천만원 초과~6천만원 이하 → 연 500만원<br />6천만원 초과~1억원 이하 → 연 400만원<br />1억원 초과 → 연 200만원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">예를 들어 사업소득금액이 5천만원이면 600만원을 납입해도 기본 한도는 500만원입니다. 반대로 사업소득금액이 4천만원 이하라도 올해 360만원만 납입했다면, 기본 계산의 공제액은 360만원입니다. <b>공제한도와 납입액을 구분하는 것이 먼저입니다.</b> (<a href="https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1022565429" target="_blank" rel="noopener">조세특례제한법 제86조의3</a>)</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">월 50만원씩 넣은 적격 사례: 600만원이 99만원으로 바뀌는 계산</h2>
+<p data-ke-size="size16">12개월 동안 월 50만원씩 납입해 연 600만원을 냈고, 요건과 한도상 600만원 전액을 공제할 수 있다고 가정합니다. 공제 전 과세표준은 2,800만원, 다른 세액공제·감면·기납부세액은 없다고 놓겠습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">공제 후 과세표준: 2,800만원 − 600만원 = 2,200만원<br />공제 전 국세: 2,800만원 × 15% − 126만원 = 294만원<br />공제 후 국세: 2,200만원 × 15% − 126만원 = 204만원<br /><b>국세 차이 90만원 + 지방소득세 단순 차이 9만원 = 99만원</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이번에는 공제되는 600만원 전체가 15% 구간에 있어 16.5%를 곱한 결과와 같습니다. 하지만 공제 전 과세표준이 낮아 6% 구간으로 내려가면 같은 계산을 쓸 수 없습니다. <b>세금 차이 99만원도 실제 환급 입금액을 보장하는 숫자는 아닙니다.</b> (<a href="https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7667&amp;mi=2227" target="_blank" rel="noopener">국세청 기본세율 안내</a>)</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">임대소득·법인대표·공제할 소득이 없는 경우를 따로 보세요</h2>
+<p data-ke-size="size16"><b>임대업이 섞인 개인사업자.</b> 2019년 이후 가입자의 부동산임대업 소득은 공제 대상에서 제외됩니다. 다른 사업도 있다면 한도 안의 납입액에 비임대업 소득 비율을 적용하는 조정이 필요합니다. 임대소득만 있는데 ‘한도 600만원’부터 적용하면 맞지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>법인대표.</b> 2016년 이후 가입자는 해당 연도 총급여 8천만원 이하 요건을 확인하고, 공제 구간은 근로소득금액으로 살핍니다. 일반 직장인의 월급에 일괄 적용되는 제도가 아닙니다. 오래된 가입계약은 적용 세법도 별도로 대조하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>공제 대상 소득이 부족한 경우.</b> 납입액이 있어도 공제할 사업소득이 없거나 제한되면 기대한 공제효과가 나오지 않을 수 있습니다. 세액공제·감면이 함께 적용되는 신고도 단순 산출세액 차이와 최종 결과가 다를 수 있습니다. (<a href="https://www.8899.or.kr/cmnsCnts/view?menuId=C080301000" target="_blank" rel="noopener">공식 대상소득·가입시기별 안내</a>)</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">절세하려고 넣었다가 일반해약하면 과세가 생길 수 있습니다</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">노란우산은 자유롭게 넣고 빼는 통장과 다릅니다. 개인 사정에 따른 일반해약은 과세 대상 기타소득금액에 소득세 15%와 지방소득세 1.5%가 원천징수되는 일반 구조를 확인해야 합니다. 납입액 전체에 무조건 16.5%가 붙는다는 뜻은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">공식 계산 구조는 <b>해약환급금 − (부금납부액 − 실제 소득공제받은 금액)</b>을 기타소득금액으로 보는 방식입니다. 가입 시기와 납부 회차에 따라 세금 전 환급금 자체가 납입액보다 적을 수도 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">폐업 등 정상 공제금 지급 사유, 간주해약·특별해지, 과거 가입계약은 일반해약과 구분합니다. 기타소득 규모에 따른 최종 과세도 따로 확인하세요. 해약 전에는 본인 예상 지급액과 실제 소득공제 이력을 대조하는 것이 좋습니다. (<a href="https://www.8899.or.kr/cmnsCnts/view?menuId=C080403000" target="_blank" rel="noopener">공식 해약환급금·원천징수 안내</a>)</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">연말 추가납입 전, 공제 가능액과 운영자금을 같이 확인하세요</h2>
+<p data-ke-size="size16">① 가입일과 공제 대상 소득 종류 확인<br />② 올해 납입내역과 사업소득금액으로 한도 확인<br />③ 임대업 비율 등 조정 후 공제 가능액 확인<br />④ 공제 전후 과세표준으로 세금 차이 비교<br />⑤ 이미 낸 세금·다른 공제를 반영하고, 계약을 유지할 자금 여유도 확인</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">개인사업자는 종합소득세 신고 자료에서, 공제 요건에 맞는 법인대표는 연말정산 자료에서 해당 연도 납입액과 증빙 반영 여부를 대조하세요. ‘넣은 돈’과 ‘공제된 돈’을 구분해 기록하면 확인이 쉬워집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">연간 누진세율 구조는 아래 간이 계산기로 참고할 수 있습니다. <b>노란우산 가입 자격·공제한도·임대업 안분·해약 세금·최종 환급액을 자동 계산하는 도구는 아닙니다.</b> 실제 공제 가능액은 납부내역과 신고 자료로 먼저 확인하세요.</p>
+<p data-ke-size="size16" style="text-align:center;"><a href="https://taxcalc.co.kr/#income/comprehensive" target="_blank" rel="noopener" style="display:inline-block;padding:16px 24px;background:#33443b;color:#fff;border-radius:10px;text-decoration:none;font-weight:bold;">종합소득세 기본 세율 구조 확인하기</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16"><a href="https://kwonriver.co.kr/entry/5%EC%9B%94%EC%97%90-%EB%83%88%EB%8A%94%EB%8D%B0-11%EC%9B%94%EC%97%90-%EB%98%90-%EC%A2%85%ED%95%A9%EC%86%8C%EB%93%9D%EC%84%B8-%EC%A4%91%EA%B0%84%EC%98%88%EB%82%A9-%EA%B3%A0%EC%A7%80%EC%84%9C-300%EB%A7%8C%EC%9B%90-%ED%99%95%EC%9D%B8%EB%B2%95" target="_blank" rel="noopener">5월에 냈는데 11월에 또? 종합소득세 중간예납 고지서 300만원 확인법</a><br />개인사업자의 연말 세금 자금도 준비하고 있다면 함께 읽어보세요. 노란우산 소득공제와 이미 낸 중간예납세액이 최종 정산에서 어떻게 구분되는지 이해하는 데 도움이 됩니다.</p>
+<!-- 해시태그 -->
+<!-- 노란우산공제, 노란우산소득공제, 노란우산600만원, 노란우산절세, 소득공제환급차이, 개인사업자소득공제, 자영업자세금, 노란우산해약, 종합소득세공제, 2026노란우산 -->

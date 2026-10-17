@@ -75,8 +75,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "69deb7a2c5512f649efd678ba266dba3a9e2b5c086eec8b9f448403fbea1e5e0",
-    "modified": "2026-10-16",
+    "digest": "db3acd073969ebd7a41e60dbe5e9ba148d8973e34f1e5e416d6553d9b709ca3f",
+    "modified": "2026-10-17",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -249,6 +249,11 @@
     "modified": "2026-10-06",
     "published": "2026-06-23"
   },
+  "blog/yellow-umbrella-income-deduction.html": {
+    "digest": "f62879024870ec011a7068b33a303d1924ff8411b3317b1babd968eff5756f6b",
+    "modified": "2026-10-17",
+    "published": "2026-10-17"
+  },
   "contact.html": {
     "digest": "9164a5f7fb52d6b54426c562a9bc2a89441f427ab39be8a4302a23f736b202dc",
     "modified": "2026-10-06",
@@ -275,8 +280,8 @@
     "published": "2026-04-18"
   },
   "income/comprehensive.html": {
-    "digest": "100a85936d2063ce3171c8188aa6bb34397eba0d82169bb496ed1eabc26dd70f",
-    "modified": "2026-10-16",
+    "digest": "f9e67876d2c2678b6b78b8e1eb8b2d66720f4595c087d6d94b47d56b6c894801",
+    "modified": "2026-10-17",
     "published": "2026-04-18"
   },
   "income/corporate.html": {
@@ -365,8 +370,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "48c2cd3c32c1ff64a2ce4f5dd22063ab1cd787d24c2c7a2d74630c7fcf83bdbb",
-    "modified": "2026-10-16",
+    "digest": "c15ef9cd104cc5ae97938d21618f177650f8b685c293799140ab4bc9f943e5a1",
+    "modified": "2026-10-17",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {

@@ -786,6 +786,20 @@ POSTS = [
         ],
         "customHtml": False
     },
+    {'file': '노란우산_소득공제_600만원_절세효과_계산',
+     'slug': 'yellow-umbrella-income-deduction',
+     'category': 'business',
+     'categoryLabel': '사업 세금',
+     'date': '2026-10-17',
+     'readMin': 8,
+     'ctaHref': 'https://taxcalc.co.kr/#income/comprehensive',
+     'ctaLabel': '연간 종합소득세 기본 구조 참고',
+     'ctaHeading': '소득세의 누진세율 구조를 함께 확인하세요',
+     'ctaDescription': '이 간이 계산기는 연간 소득세의 기본 구조를 보여줍니다. 노란우산 가입 자격·소득별 공제한도·임대업 안분·해약 세금·최종 환급액은 자동 계산하지 '
+                       '않으므로 실제 공제는 납부내역과 신고 자료로 확인하세요.',
+     'related': [('/income/comprehensive.html', '종합소득세 계산기'),
+                 ('/blog/november-income-tax-interim-payment.html', '11월 종합소득세 중간예납 확인법')],
+     'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------
