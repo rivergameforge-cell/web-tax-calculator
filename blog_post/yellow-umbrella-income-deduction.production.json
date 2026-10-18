@@ -12,12 +12,22 @@
   },
   "tistory": {
     "title": "노란우산 600만원 넣으면 600만원 환급? 99만원 계산과 해약 전 확인사항",
-    "status": "blocked_login_password_required",
+    "status": "draft_saved",
     "manualAds": 2,
     "layout": "intro > thumbnail > headings and content",
     "package": "tistory_upload/노란우산_소득공제_600만원_절세효과_계산/upload-helper.html",
-    "mobilePreviewVerified": false,
-    "note": "HTML package prepared; authenticated editor and native representative image upload awaiting user login. No draft saved and no publication performed."
+    "mobilePreviewVerified": true,
+    "note": "Logged-in HTML editor draft saved. Intro spacing verified on iPhone X preview; 1080-square image renders at317px. Two authored ads follow H2 headings. Representative image explicitly selected. Final publication not performed.",
+    "savedAt": "2026-10-18 23:53 KST",
+    "draftCount": 2,
+    "nativeImage": true,
+    "representativeImage": true,
+    "tags": 10,
+    "bodyMatchesPrepared": true,
+    "evidence": "output/yellow-umbrella-post/tistory-draft-saved.png",
+    "mobileEvidence": "output/yellow-umbrella-post/tistory-mobile.png",
+    "representativeEvidence": "output/yellow-umbrella-post/tistory-representative.png",
+    "nativeBody": "output/yellow-umbrella-post/tistory-native-body.html"
   },
   "naver": {
     "title": "노란우산 매달 30만원 넣는데, 내 세금은 얼마나 줄어들까요?",
