@@ -6,13 +6,40 @@
   "site": {
     "title": "자동차세 연납 환급 계산: 차 팔았을 때 이전등록일·일할계산·납부승계 기준",
     "url": "https://taxcalc.co.kr/blog/vehicle-tax-sale-refund.html",
-    "status": "ready_to_deploy"
+    "status": "deployed_verified",
+    "commit": "3dcec59db1cd0de6bf19c4b21a0316d8fb275698",
+    "evidence": "output/vehicle-tax-sale-refund/site-live.png"
   },
   "tistory": {
-    "status": "pending_draft"
+    "status": "prepared_waiting_for_html_editor",
+    "title": "차 팔았는데 자동차세 고지서? 연납 환급·납부승계 5가지 확인",
+    "package": "tistory_upload/자동차세_매도_연납환급_이전등록일_일할계산/upload-helper.html",
+    "blocker": "HTML mode confirmation repeatedly leaves the newly created blank editor tab unresponsive. User has been asked to open a fresh HTML-mode editor. Article text has not been entered.",
+    "published": false,
+    "relatedPublishedPost": {
+      "title": "보험료 200만원 냈는데 공제는 12만 원? 실손·자동차보험 연말정산 누락 점검",
+      "url": "https://kwonriver.co.kr/entry/보험료-200만원-냈는데-공제는-12만-원-실손·자동차보험-연말정산-누락-점검",
+      "verified": "Public homepage rendered in CUA; title and actual article anchor confirmed, date 2026-10-14."
+    }
   },
   "naver": {
-    "status": "pending_draft"
+    "status": "draft_saved",
+    "title": "차 팔고 자동차세 환급 기다리는데, 어디서 확인하면 될까요?",
+    "savedAt": "2026-10-19T12:51:00+09:00",
+    "draftCountBefore": 5,
+    "draftCountAfter": 6,
+    "tags": 26,
+    "representativeImage": true,
+    "aiImageLabel": true,
+    "bodySourceComparison": {
+      "missing": 0,
+      "extra": 0
+    },
+    "evidence": [
+      "output/vehicle-tax-sale-refund/naver-draft-saved.png",
+      "output/vehicle-tax-sale-refund/naver-mobile.png"
+    ],
+    "published": false
   },
   "sources": [
     {
@@ -59,7 +86,11 @@
     ],
     "mobileTablesWidth": 328,
     "horizontalOverflow": false,
-    "calculatorScope": "annual vehicle tax estimate only; no sale-date proration, actual-paid reconciliation, transfer of prepaid tax or official refund calculation"
+    "calculatorScope": "annual vehicle tax estimate only; no sale-date proration, actual-paid reconciliation, transfer of prepaid tax or official refund calculation",
+    "liveSitemapPages": 111,
+    "liveSupportingFiles": 113,
+    "liveAssets": "output/vehicle-tax-sale-refund/live-assets.json",
+    "platformContent": "output/vehicle-tax-sale-refund/content-validation.json"
   },
   "images": [
     {

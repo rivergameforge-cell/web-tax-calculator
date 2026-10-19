@@ -1,0 +1,26 @@
+[
+  {
+    "file": "thumbnails/vehicle-tax-sale-refund.webp",
+    "url": "https://taxcalc.co.kr/thumbnails/vehicle-tax-sale-refund.webp",
+    "status": 200,
+    "sha256": "578c7610f86f3a37774c5812ad169671bdb196668338f813ffed6df1317a5141",
+    "bytes": 78890,
+    "matchesLocal": true
+  },
+  {
+    "file": "thumbnails/vehicle-tax-sale-refund-tistory.webp",
+    "url": "https://taxcalc.co.kr/thumbnails/vehicle-tax-sale-refund-tistory.webp",
+    "status": 200,
+    "sha256": "3c4e9a76f8f43634870e10335663e1147b16fc6fcdc5abf5b671215b0bf2fb39",
+    "bytes": 150010,
+    "matchesLocal": true
+  },
+  {
+    "file": "thumbnails/vehicle-tax-sale-refund-naver.webp",
+    "url": "https://taxcalc.co.kr/thumbnails/vehicle-tax-sale-refund-naver.webp",
+    "status": 200,
+    "sha256": "923965ae36473269538aaf3b7327a414018a0b704583453e40b53cb3c3ddd6c7",
+    "bytes": 118632,
+    "matchesLocal": true
+  }
+]
