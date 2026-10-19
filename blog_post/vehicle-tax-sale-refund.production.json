@@ -1,0 +1,93 @@
+{
+  "topic": "차 팔았는데 자동차세는요? 연납 환급과 이전등록 전 확인사항",
+  "checkedAt": "2026-10-19",
+  "taxYear": 2026,
+  "mode": "built-in image_gen",
+  "site": {
+    "title": "자동차세 연납 환급 계산: 차 팔았을 때 이전등록일·일할계산·납부승계 기준",
+    "url": "https://taxcalc.co.kr/blog/vehicle-tax-sale-refund.html",
+    "status": "ready_to_deploy"
+  },
+  "tistory": {
+    "status": "pending_draft"
+  },
+  "naver": {
+    "status": "pending_draft"
+  },
+  "sources": [
+    {
+      "title": "지방세법 제129조",
+      "url": "https://www.law.go.kr/법령/지방세법/제129조",
+      "verified": "현행 조문: 승계취득 소유기간별 양도인·양수인 각각 부과",
+      "evidence": "output/vehicle-tax-sale-refund/law-129.txt"
+    },
+    {
+      "title": "지방세법 제130조",
+      "url": "https://www.law.go.kr/법령/지방세법/제130조",
+      "verified": "이전등록일 원칙, 증빙 첨부 신청 시 양도일 기준 예외, 양도인 동의 납부승계",
+      "evidence": "output/vehicle-tax-sale-refund/law-130.txt"
+    },
+    {
+      "title": "지방세법 시행령 제126조",
+      "url": "https://www.law.go.kr/법령/지방세법시행령/제126조",
+      "verified": "2026-10-01 시행 현행: 연세액×일수/연총일수, 사용연수3년이상 비영업승용차는 기분세액×일수/기분총일수",
+      "evidence": "output/vehicle-tax-sale-refund/law-decree-126.txt"
+    },
+    {
+      "title": "의정부시 자동차세 일할계산",
+      "url": "https://www.ui4u.go.kr/car/contents.do?mId=0505000000",
+      "verified": "양도인 이전등록일 전일까지, 양수인 이전등록일부터, 양도일 기준 신청 및 연납 승계 동의"
+    },
+    {
+      "title": "양주시 지방세 환급",
+      "url": "https://www.yangju.go.kr/www/contents.do?key=2462",
+      "verified": "위택스·스마트위택스 조회신청, 본인명의 계좌 및 관할 세무부서 확인; 구체 UI경로·처리기한은 단정하지 않음"
+    },
+    {
+      "title": "동대문구 민원서식",
+      "url": "https://www.ddm.go.kr/www/selectBbsNttView.do?bbsNo=1&key=296&nttNo=12732",
+      "verified": "2026-03-06 갱신된 일할계산 신청서·연세액 납부승계 동의서 안내"
+    }
+  ],
+  "verification": {
+    "unitTests": 43,
+    "localSitemapPages": 111,
+    "localSupportingFiles": 113,
+    "mobileViewport": [
+      375,
+      812
+    ],
+    "mobileTablesWidth": 328,
+    "horizontalOverflow": false,
+    "calculatorScope": "annual vehicle tax estimate only; no sale-date proration, actual-paid reconciliation, transfer of prepaid tax or official refund calculation"
+  },
+  "images": [
+    {
+      "platform": "site",
+      "path": "thumbnails/vehicle-tax-sale-refund.webp",
+      "size": [
+        1200,
+        630
+      ],
+      "prompt": "Use case: ads-marketing. Asset type: 1200x630 landscape Open Graph Korean tax editorial thumbnail. Primary request: calm credible illustration of vehicle tax settlement after selling a car. Refined isometric blue compact car with no logo beside two clean cream calendar pages divided by a cobalt line and a tidy tax document, abstract precision materials, restrained blue, ivory, slate and coral accents, generous whitespace. Exact large Korean headline '자동차세 매도 정산'. Exact subtitle '연납 환급과 보유일수 기준'. Small label '2026'. All text inside central85% safe area, extremely legible. No guaranteed refund amount, no cash piles, no fake government logos, no platform names, no tiny invented receipt data, no watermark."
+    },
+    {
+      "platform": "tistory",
+      "path": "thumbnails/vehicle-tax-sale-refund-tistory.webp",
+      "size": [
+        1080,
+        1080
+      ],
+      "prompt": "Use case: ads-marketing. Asset type: 1080x1080 square Korean tax blog thumbnail. Bold navy and bright coral editorial poster with large white Korean typography. Exact main headline on two lines '차 팔았는데' / '자동차세 또?'. Exact lower caption '연납 환급·정산 확인'. Dynamic but orderly diagonal paper tax notice with a small stylized red car key and a departing white car silhouette, large question mark as headline punctuation. High contrast assertive practical tax explainer. Keep all text in central85% safe area, large headline dominates. No money guarantee, no official logo, no platform labels, no invented dates, no watermark. This must differ from a calm pale isometric website thumbnail and a natural desk photograph."
+    },
+    {
+      "platform": "naver",
+      "path": "thumbnails/vehicle-tax-sale-refund-naver.webp",
+      "size": [
+        1200,
+        720
+      ],
+      "prompt": "Use case: photorealistic-natural. Asset type: 1200x720 horizontal 5:3 Korean Naver blog lifestyle card. Natural morning photograph at a tidy home dining table: hands setting down a car key beside a closed cream document folder and smartphone, a neutral compact car softly out of focus through the window. Warm daylight, lived-in but uncluttered soft sage and cream tones, everyday personal finance editorial feeling. No face, no license plate, no readable private data, no banking logo. Large legible exact Korean question in upper central negative space on two lines '차는 넘겼는데,' / '세금도 정리됐을까요?'. Small exact subtitle '자동차세 환급 확인 순서'. All text and key focal elements inside central90% safe area for card cropping. No platform label, no official emblem, no guaranteed cash refund, no watermark. Distinct from infographic or bold poster."
+    }
+  ]
+}

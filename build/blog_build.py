@@ -800,6 +800,24 @@ POSTS = [
      'related': [('/income/comprehensive.html', '종합소득세 계산기'),
                  ('/blog/november-income-tax-interim-payment.html', '11월 종합소득세 중간예납 확인법')],
      'customHtml': False},
+    {
+        "file": "자동차세_매도_연납환급_이전등록일_일할계산",
+        "slug": "vehicle-tax-sale-refund",
+        "category": "vehicle",
+        "categoryLabel": "자동차 세금",
+        "date": "2026-10-19",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#vehicle/vehicle-tax",
+        "ctaLabel": "연간 자동차세 규모 참고",
+        "ctaHeading": "연간 세액과 매도 정산액을 구분해 보세요",
+        "ctaDescription": "이 도구는 연간 자동차세 규모를 참고하는 간이 계산기입니다. 이전등록일별 일할정산·실제 기납부액·납부승계·지자체 환급결정액은 자동 계산하지 않으므로 실제 고지서와 정산 자료를 함께 확인하세요.",
+        "related": [
+            ["/vehicle/vehicle-tax.html", "자동차세 계산기"],
+            ["/blog/vehicle-tax-overdue.html", "자동차세 미납 확인"],
+            ["/vehicle/acquisition.html", "자동차 취득세 계산기"]
+        ],
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------

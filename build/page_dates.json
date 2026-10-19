@@ -75,8 +75,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "db3acd073969ebd7a41e60dbe5e9ba148d8973e34f1e5e416d6553d9b709ca3f",
-    "modified": "2026-10-17",
+    "digest": "277fc2c50c88dc161d140e9e4937270c8d13432697dd2a039cd34ee33d77e392",
+    "modified": "2026-10-19",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -249,6 +249,11 @@
     "modified": "2026-10-06",
     "published": "2026-06-23"
   },
+  "blog/vehicle-tax-sale-refund.html": {
+    "digest": "350ee733aacd4e6b262aa7583e79b35210ef950498433add6cba34d523539c13",
+    "modified": "2026-10-19",
+    "published": "2026-10-19"
+  },
   "blog/yellow-umbrella-income-deduction.html": {
     "digest": "f62879024870ec011a7068b33a303d1924ff8411b3317b1babd968eff5756f6b",
     "modified": "2026-10-17",
@@ -370,8 +375,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "c15ef9cd104cc5ae97938d21618f177650f8b685c293799140ab4bc9f943e5a1",
-    "modified": "2026-10-17",
+    "digest": "6d3094434eadffb9db9d8bdbe5a09a7b9b05f0f4c7e95390cc4d8a9430f23a7b",
+    "modified": "2026-10-19",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
@@ -520,8 +525,8 @@
     "published": "2026-04-18"
   },
   "vehicle/acquisition.html": {
-    "digest": "a0a52d45fc2eb7a6aa267491d97a0dc0a759039f232dfd222e31e7a8f6268d6f",
-    "modified": "2026-10-16",
+    "digest": "74a7df2a06670d35c2e07aa4733ec10de5fe5b54b9e79e6d95032cac9ed5dc0b",
+    "modified": "2026-10-19",
     "published": "2026-04-18"
   },
   "vehicle/buying.html": {
@@ -545,8 +550,8 @@
     "published": "2026-04-18"
   },
   "vehicle/vehicle-tax.html": {
-    "digest": "0113f47060210599248e7361e607299a95a782efe60861434ed2bdcd408e05f4",
-    "modified": "2026-10-16",
+    "digest": "a032d640d625be68ab2c97e89c8dd312f5dee2c5507869992592820ebc3c2318",
+    "modified": "2026-10-19",
     "published": "2026-04-18"
   }
 }
