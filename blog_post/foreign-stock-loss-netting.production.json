@@ -6,13 +6,14 @@
   "site": {
     "title": "해외주식 손익통산 계산: 계좌는 손실인데 양도세가 나오는 이유",
     "url": "https://taxcalc.co.kr/blog/foreign-stock-loss-netting.html",
-    "status": "validated_ready_for_deployment"
+    "status": "deployed_verified",
+    "commit": "12953b37e13fd996f1b545e1471487731ace8bde",
+    "evidence": "output/foreign-stock-loss-netting/site-live.png"
   },
   "tistory": {
     "title": "해외주식 손실인데 양도세 121만원? 평가손실·손익통산 확인법",
-    "status": "package_ready_editor_blocked",
+    "status": "draft_saved_waiting_for_review",
     "published": false,
-    "blocker": "HTML mode confirmation accepted through browser dialog API, but editor tab becomes unresponsive (focus-emulation timeout). No new article text entered.",
     "package": "tistory_upload/해외주식_손익통산_평가손실_양도소득세_계산/upload-helper.html",
     "relatedPublishedPosts": [
       {
@@ -24,14 +25,42 @@
         "url": "https://kwonriver-carstroy.tistory.com/entry/금융소득-종합과세-계산-이자·배당-2천만원-넘으면-추가세금"
       }
     ],
-    "relatedVerification": "Actual public search results rendered in Chrome; titles and href attributes confirmed."
+    "relatedVerification": "Actual public search results rendered in Chrome; titles and href attributes confirmed.",
+    "draftCountBefore": 1,
+    "draftCountAfter": 2,
+    "tags": 10,
+    "category": "돈 버는 생각",
+    "remoteThumbnailRendered": true,
+    "remoteThumbnailNaturalWidth": 1080,
+    "remoteThumbnailMobileWidth": 317,
+    "representativeFileUploaded": false,
+    "representativeFileBlocker": "Chrome profile 가람 ChatGPT extension lacks Allow access to file URLs; upload attempt stopped without changing extension permissions. Hosted thumbnail is already present and rendered in the article body.",
+    "manualAdsVerified": 2,
+    "mobilePreviewWidth": 375,
+    "evidence": [
+      "output/foreign-stock-loss-netting/tistory-mobile-preview.png",
+      "output/foreign-stock-loss-netting/tistory-draft-saved.png"
+    ]
   },
   "naver": {
     "title": "해외주식 계좌는 마이너스인데, 세금은 왜 나올까요?",
     "blogId": "kwonriver_car",
-    "status": "prepared_editor_input_blocked",
+    "status": "draft_saved",
     "published": false,
-    "blocker": "Logged-in kwonriver_car new-post editor verified, but keyboard paste and fill time out on SmartEditor's visible input buffer; no article entered and no draft saved."
+    "draftCountBefore": 5,
+    "draftCountAfter": 6,
+    "bodyHashtags": 26,
+    "representativeImage": true,
+    "aiImageLabel": true,
+    "bodySourceComparison": {
+      "missing": 0,
+      "extra": 0,
+      "note": "Title paragraph excluded from body comparison."
+    },
+    "evidence": [
+      "output/foreign-stock-loss-netting/naver-draft-saved.png",
+      "output/foreign-stock-loss-netting/naver-mobile.png"
+    ]
   },
   "sources": [
     {
@@ -135,7 +164,20 @@
       "output/foreign-stock-loss-netting/site-desktop.png",
       "output/foreign-stock-loss-netting/site-mobile.png"
     ],
-    "buildPortability": "Explicit LF output; relative content source path keeps build signature portable. Unchanged content dates retained for55 calculator pages; only foreign stock guide backlink changes."
+    "buildPortability": "Explicit LF output; relative content source path keeps build signature portable. Unchanged content dates retained for55 calculator pages; only foreign stock guide backlink changes.",
+    "liveSitemapPages": 112,
+    "liveSupportingFiles": 114,
+    "liveThumbnails": {
+      "site": true,
+      "tistory": true,
+      "naver": true
+    },
+    "platformContent": {
+      "manualAds": 2,
+      "naverBodyHashtags": 26,
+      "layout": "introduction before thumbnail before sections; manual ads immediately after headings"
+    },
+    "browserInputRecovery": "Native browser paste and Escape recovered HTML editing; Playwright input-buffer keystrokes were not used after recovery."
   },
   "images": [
     {
