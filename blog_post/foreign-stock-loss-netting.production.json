@@ -8,20 +8,30 @@
     "url": "https://taxcalc.co.kr/blog/foreign-stock-loss-netting.html",
     "status": "deployed_verified",
     "commit": "12953b37e13fd996f1b545e1471487731ace8bde",
-    "evidence": "output/foreign-stock-loss-netting/site-live.png"
+    "evidence": "output/foreign-stock-loss-netting/site-live.png",
+    "relatedPublishedPosts": [
+      {
+        "url": "https://taxcalc.co.kr/blog/foreign-stock-capital-gains-deduction.html",
+        "displayLabel": "해외주식 250만 원 기본공제: 매도대금과 양도차익의 차이"
+      },
+      {
+        "url": "https://taxcalc.co.kr/blog/domestic-stock-capital-gains-major-shareholder.html",
+        "displayLabel": "국내주식 양도소득세 과세대상: 통산 가능한 국내주식 구분"
+      }
+    ]
   },
   "tistory": {
-    "title": "해외주식 손실인데 양도세 121만원? 평가손실·손익통산 확인법",
+    "title": "해외주식 손실인데 양도세 121만 원? 평가손실·손익통산 확인법",
     "status": "draft_saved_waiting_for_review",
     "published": false,
     "package": "tistory_upload/해외주식_손익통산_평가손실_양도소득세_계산/upload-helper.html",
     "relatedPublishedPosts": [
       {
-        "title": "해외주식 양도소득세 250만원 공제, 얼마까지 팔아야 세금이 없을까?",
+        "title": "해외주식 양도소득세 250만 원 공제, 얼마까지 팔아야 세금이 없을까?",
         "url": "https://kwonriver-carstroy.tistory.com/entry/해외주식-양도소득세-250만원-공제-세금"
       },
       {
-        "title": "금융소득 종합과세 계산, 이자·배당 2천만원 넘으면 추가세금 얼마일까",
+        "title": "금융소득 종합과세 계산, 이자·배당 2천만 원 넘으면 추가세금 얼마일까",
         "url": "https://kwonriver-carstroy.tistory.com/entry/금융소득-종합과세-계산-이자·배당-2천만원-넘으면-추가세금"
       }
     ],
@@ -39,14 +49,15 @@
     "mobilePreviewWidth": 375,
     "evidence": [
       "output/foreign-stock-loss-netting/tistory-mobile-preview.png",
-      "output/foreign-stock-loss-netting/tistory-draft-saved.png"
+      "output/foreign-stock-loss-netting/tistory-draft-saved.png",
+      "output/foreign-stock-loss-netting/tistory-related-preview.png"
     ]
   },
   "naver": {
-    "title": "해외주식 계좌는 마이너스인데, 세금은 왜 나올까요?",
+    "title": "해외 주식 계좌는 마이너스인데, 세금은 왜 나올까요?",
     "blogId": "kwonriver_car",
-    "status": "draft_saved",
-    "published": false,
+    "status": "published_updated_verified",
+    "published": true,
     "draftCountBefore": 5,
     "draftCountAfter": 6,
     "bodyHashtags": 26,
@@ -59,8 +70,19 @@
     },
     "evidence": [
       "output/foreign-stock-loss-netting/naver-draft-saved.png",
-      "output/foreign-stock-loss-netting/naver-mobile.png"
-    ]
+      "output/foreign-stock-loss-netting/naver-mobile.png",
+      "output/foreign-stock-loss-netting/naver-related-live.png"
+    ],
+    "url": "https://blog.naver.com/kwonriver_car/224449451318",
+    "relatedPublishedPosts": [
+      {
+        "title": "금융소득 2천만원 기준, 내 배당금도 종합과세일까?",
+        "displayLabel": "배당금의 금융소득 종합과세 기준",
+        "url": "https://blog.naver.com/kwonriver_car/224346598100"
+      }
+    ],
+    "userEditedParagraphsPreserved": true,
+    "relatedFooterAtEnd": true
   },
   "sources": [
     {
@@ -177,7 +199,17 @@
       "naverBodyHashtags": 26,
       "layout": "introduction before thumbnail before sections; manual ads immediately after headings"
     },
-    "browserInputRecovery": "Native browser paste and Escape recovered HTML editing; Playwright input-buffer keystrokes were not used after recovery."
+    "browserInputRecovery": "Native browser paste and Escape recovered HTML editing; Playwright input-buffer keystrokes were not used after recovery.",
+    "editorialCorrection": {
+      "amountStyle": "만 원",
+      "samePlatformRelatedPosts": {
+        "site": 2,
+        "tistory": 2,
+        "naver": 1
+      },
+      "naverUserEditedParagraphsPreserved": 83,
+      "missingUserEditedParagraphs": []
+    }
   },
   "images": [
     {

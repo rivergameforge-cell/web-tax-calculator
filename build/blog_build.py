@@ -830,10 +830,10 @@ POSTS = [
         "ctaHeading": "평가손익 대신 신고용 원화 금액을 넣어 보세요",
         "ctaDescription": "원화 매도·취득금액과 필요경비, 다른 과세대상 주식의 같은 해 손익을 입력하는 일반 세율 간이 계산기입니다. 증권사 자료·과거 결제일 환율·과세대상 판정·RIA 특례·신고를 자동 처리하지 않습니다.",
         "related": [
-            ["/stocks/foreign.html", "해외주식 양도소득세 계산기"],
-            ["/blog/foreign-stock-capital-gains-deduction.html", "해외주식 250만원 기본공제 계산"],
-            ["/blog/domestic-stock-capital-gains-major-shareholder.html", "국내주식 양도소득세 과세대상"]
+            ["/blog/foreign-stock-capital-gains-deduction.html", "해외주식 250만 원 기본공제: 매도대금과 양도차익의 차이"],
+            ["/blog/domestic-stock-capital-gains-major-shareholder.html", "국내주식 양도소득세 과세대상: 통산 가능한 국내주식 구분"]
         ],
+        "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
 ]
@@ -1215,7 +1215,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     </div>
 
     <div class="related-articles">
-      <h2>🔗 관련 계산기</h2>
+      <h2>{related_heading}</h2>
       {related_html}
     </div>
   </article>
@@ -1271,6 +1271,7 @@ def render_post(meta: dict, parsed: dict) -> str:
         cta_description=html_escape(meta.get("ctaDescription", "입력만 하면 즉시 결과 확인. 회원가입 없이 무료로 이용 가능합니다.")),
         body_html=body_html,
         related_html=related_html,
+        related_heading=html_escape(meta.get("relatedHeading", "🔗 관련 계산기")),
         headline_json=json.dumps(parsed["title"], ensure_ascii=False),
         description_json=json.dumps(parsed["description"], ensure_ascii=False),
         title_json=json.dumps(parsed["title"][:50], ensure_ascii=False),

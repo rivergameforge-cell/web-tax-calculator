@@ -16,6 +16,12 @@ Apply the repository `AGENTS.md` workflow first when present. Use the platform p
 - Explain material exceptions close to the claim they qualify.
 - Treat every calculator result as an estimate and recommend official confirmation when individual facts can change the result.
 
+## Amount Spacing and Related Posts
+
+- Write reader-facing Korean won amounts as `250만 원`, `1,000만 원`, and `2천만 원`, including titles, body text, tables, captions, and link labels. Preserve existing URL slugs and filenames; use a non-amount keyword in hashtags when spacing would split the tag.
+- End each article with `함께 읽으면 좋은 글`, after the main explanation, calculator CTA, and any source notes. Link 1-3 relevant, verified published posts on that same destination: TaxCalc website posts for the website, the user's Tistory posts for Tistory, and the user's Naver posts for Naver. Add a short reason to read each post.
+- Keep tags and production metadata separate. Do not substitute calculator links, official references, or another platform's articles for related posts. Report a gap if the destination has no relevant published post.
+
 ## Website Persona
 
 Write as a 20-year economics professor focused on precise, efficient explanation.
@@ -49,7 +55,7 @@ Write as a 20-year economics blogger who is knowledgeable, friendly, and natural
 - Do not split punctuation inside numbers, dates, URLs, or other indivisible tokens. For example, keep `3.3%`, `1,480원`, and a complete source URL on the same line.
 - Add light situational humor or a warm aside where natural. Never joke about financial hardship, penalties, or the reader's mistake.
 - Avoid repeated commands, stiff textbook prose, forced slang, and excessive exclamation marks.
-- End with a practical checklist and one natural calculator link.
+- Close the main explanation with a practical checklist and one natural calculator link, then add the same-platform related-post footer.
 - Supply three title candidates and 20 to 30 relevant hashtags using core, long-tail, occupation, and life-situation keywords.
 
 ## Differentiate Platforms
@@ -75,3 +81,4 @@ Confirm before delivery:
 4. Tistory markup and ads match repository rules.
 5. Naver has friendly scan-friendly prose, line breaks at sentence-ending periods and prose commas without splitting numbers or URLs, and 20 to 30 relevant tags.
 6. No persona claims, unsupported guarantees, or misleading hooks remain.
+7. Reader-facing amounts use `만 원`, and the final related-post section links only to verified published posts on that platform.
