@@ -1,0 +1,169 @@
+{
+  "topic": "해외주식 손익통산: 평가손실과 양도차손의 차이",
+  "checkedAt": "2026-10-21",
+  "taxYear": 2026,
+  "mode": "built-in image_gen",
+  "site": {
+    "title": "해외주식 손익통산 계산: 계좌는 손실인데 양도세가 나오는 이유",
+    "url": "https://taxcalc.co.kr/blog/foreign-stock-loss-netting.html",
+    "status": "validated_ready_for_deployment"
+  },
+  "tistory": {
+    "title": "해외주식 손실인데 양도세 121만원? 평가손실·손익통산 확인법",
+    "status": "package_ready_editor_blocked",
+    "published": false,
+    "blocker": "HTML mode confirmation accepted through browser dialog API, but editor tab becomes unresponsive (focus-emulation timeout). No new article text entered.",
+    "package": "tistory_upload/해외주식_손익통산_평가손실_양도소득세_계산/upload-helper.html",
+    "relatedPublishedPosts": [
+      {
+        "title": "해외주식 양도소득세 250만원 공제, 얼마까지 팔아야 세금이 없을까?",
+        "url": "https://kwonriver-carstroy.tistory.com/entry/해외주식-양도소득세-250만원-공제-세금"
+      },
+      {
+        "title": "금융소득 종합과세 계산, 이자·배당 2천만원 넘으면 추가세금 얼마일까",
+        "url": "https://kwonriver-carstroy.tistory.com/entry/금융소득-종합과세-계산-이자·배당-2천만원-넘으면-추가세금"
+      }
+    ],
+    "relatedVerification": "Actual public search results rendered in Chrome; titles and href attributes confirmed."
+  },
+  "naver": {
+    "title": "해외주식 계좌는 마이너스인데, 세금은 왜 나올까요?",
+    "blogId": "kwonriver_car",
+    "status": "prepared_editor_input_blocked",
+    "published": false,
+    "blocker": "Logged-in kwonriver_car new-post editor verified, but keyboard paste and fill time out on SmartEditor's visible input buffer; no article entered and no draft saved."
+  },
+  "sources": [
+    {
+      "title": "소득세법 제102조",
+      "url": "https://law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031191509",
+      "supports": "주식 양도소득 구분 내 양도차손 공제. 배당·급여와 구분."
+    },
+    {
+      "title": "소득세법 제103조",
+      "url": "https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1031623847",
+      "supports": "과세기간별 주식 양도소득 기본공제 250만원."
+    },
+    {
+      "title": "소득세법 제5조",
+      "url": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1029489919",
+      "supports": "일반 과세기간 1월1일~12월31일. 제102·103조와 함께 연간 계산 및 다음 해 손실 이월공제 없음의 근거로 검토."
+    },
+    {
+      "title": "국세청 주식 세액계산요령",
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=8800&mi=12274",
+      "supports": "과세대상 국내·국외주식 통산과 합산 공제; 비과세 국내주식 및 기타자산 분류 예외; 계속5년이상 국내주소거소 거주자 설명 범위."
+    },
+    {
+      "title": "국세청 세율",
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7711&mi=2312",
+      "supports": "일반 외국법인 발행 주식20%; 국외 상장 중소기업 내국법인 주식 등 예외."
+    },
+    {
+      "title": "국세청 신고납부기한",
+      "url": "https://i.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7708&mi=2309",
+      "supports": "국외주식 예정신고 면제, 다음 해5월 확정신고. 휴일 연장 규칙."
+    },
+    {
+      "title": "국세청 2026년8월5일 주식 양도세 보도자료",
+      "url": "https://b.nts.go.kr/yongsan/na/ntt/selectNttInfo.do?bbsId=1028&mi=2201&nttSn=1353905",
+      "supports": "2026년 국외주식 양도소득은 2027년5월 확정신고 안내."
+    },
+    {
+      "title": "국세청 해외주식 양도소득금액 계산보조자료",
+      "url": "https://taxlaw.nts.go.kr/downloadPDFFile.do?fleId=300000000001047678&fleSn=923559",
+      "supports": "원화 매수·매도 결제일 기준환율 환산과 취득가액 산정방식 안내."
+    },
+    {
+      "title": "미래에셋증권 해외주식 연말 매매 유의사항",
+      "url": "https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1490&messageId=2336327",
+      "supports": "선입선출·후입선출 계좌별 당일 재매수 손익 차이. 과거 연말 마지막 거래일은 사용하지 않음."
+    },
+    {
+      "title": "미래에셋증권 ETF 안내",
+      "url": "https://trading.securities.miraeasset.com/mw/mks/mks4318/n01.do",
+      "supports": "국내 상장 해외주식형 ETF는 일반 해외주식 직접투자 양도세와 과세체계 구분."
+    },
+    {
+      "title": "미래에셋증권 RIA 설명서",
+      "url": "https://securities.miraeasset.com/hki/hki3032/n51.do",
+      "supports": "2026년 별도 과세특례 존재 확인. 일반 예시와 계산기 적용 범위에서 제외."
+    }
+  ],
+  "verification": {
+    "unitTests": 43,
+    "localSitemapPages": 112,
+    "localSupportingFiles": 114,
+    "calculationExamples": [
+      {
+        "realizedGain": 8000000,
+        "realizedLoss": 0,
+        "tax": 1210000
+      },
+      {
+        "realizedGain": 8000000,
+        "realizedLoss": 3000000,
+        "tax": 550000
+      },
+      {
+        "realizedGain": 8000000,
+        "realizedLoss": 6000000,
+        "tax": 0
+      },
+      {
+        "realizedGain": 6000000,
+        "realizedLoss": 4000000,
+        "tax": 0
+      },
+      {
+        "realizedGain": 6000000,
+        "realizedLoss": 0,
+        "tax": 770000
+      }
+    ],
+    "allExamplesPassedExistingCalculator": true,
+    "mobileViewport": [
+      375,
+      812
+    ],
+    "horizontalOverflow": false,
+    "tableWidths": [
+      328,
+      328
+    ],
+    "evidence": [
+      "output/foreign-stock-loss-netting/site-desktop.png",
+      "output/foreign-stock-loss-netting/site-mobile.png"
+    ],
+    "buildPortability": "Explicit LF output; relative content source path keeps build signature portable. Unchanged content dates retained for55 calculator pages; only foreign stock guide backlink changes."
+  },
+  "images": [
+    {
+      "platform": "site",
+      "path": "thumbnails/foreign-stock-loss-netting.webp",
+      "size": [
+        1200,
+        630
+      ],
+      "prompt": "Use case: ads-marketing. Asset type: Korean financial education blog cover, landscape 1200x630 ratio. Primary request: polished navy and ivory editorial illustration explaining realized stock gains versus paper losses. A ledger card and two refined abstract chart cards on a clean desk, subtle teal accent. Large perfectly readable Korean headline exact: \"해외주식 손익통산\" and smaller exact subtitle \"평가손실과 매도손실의 차이\". Keep all typography comfortably inside middle 85% safe area. Elegant serious infographic cover, restrained trustworthy finance publication aesthetic, abundant negative space, crisp flat dimensional illustration. No other text or numerical claims. No logos, watermarks, fake brokerage screenshots, people or investment promises. Opaque background."
+    },
+    {
+      "platform": "tistory",
+      "path": "thumbnails/foreign-stock-loss-netting-tistory.webp",
+      "size": [
+        1080,
+        1080
+      ],
+      "prompt": "Use case: ads-marketing. Asset type: square 1080x1080 Korean blog thumbnail. Create a bold editorial finance illustration with a red falling stock chart card and a contrasting yellow tax receipt, charcoal background, strong large Korean headline exact \"계좌는 마이너스\" then \"양도세는 왜?\". Small rounded badge exact \"평가손실 ≠ 매도손실\". Clear thick Korean typography, mobile legibility, premium restrained poster composition, no realistic company logos, no persons, no numerical tax or profit claims, no platform labels, no watermarks. All important text inside central 85%, opaque background."
+    },
+    {
+      "platform": "naver",
+      "path": "thumbnails/foreign-stock-loss-netting-naver.webp",
+      "size": [
+        1200,
+        720
+      ],
+      "prompt": "Use case: ads-marketing. Asset type: Korean friendly educational blog cover in wide 5:3 landscape ratio for1200x720. Warm realistic stylized desk scene in morning light with a coffee cup, an open simple ledger and an anonymous smartphone displaying a small red downwards stock chart without numbers or text. Soft beige, sage and muted coral palette, empathetic calm mood. Large beautifully legible Korean headline exact \"손실 난 해외주식\" and second line exact \"세금도 줄어들까요?\". Typography fits central 85% safe area, quiet lifestyle composition distinct from finance infographic, no people, no brands, no watermark, no platform names, no invented market facts. Opaque background."
+    }
+  ]
+}

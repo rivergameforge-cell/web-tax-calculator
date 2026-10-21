@@ -245,7 +245,7 @@ def parse_content_file(path: Path) -> dict:
     meta.setdefault("changefreq", "monthly")
 
     meta["body"] = body
-    meta["source_path"] = str(path)
+    meta["source_path"] = path.relative_to(ROOT).as_posix()
     return meta
 
 
@@ -368,7 +368,7 @@ def write_output(meta: dict, html: str) -> Path:
     """출력 파일 쓰기."""
     out_path = OUTPUT_ROOT / f"{meta['id']}.html"
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text('\n'.join(line.rstrip() for line in html.splitlines()) + '\n', encoding="utf-8")
+    out_path.write_text('\n'.join(line.rstrip() for line in html.splitlines()) + '\n', encoding="utf-8", newline='\n')
     return out_path
 
 
@@ -422,7 +422,7 @@ def build_sitemap(pages: dict) -> None:
             lines.append("  </url>")
 
     lines.append("</urlset>")
-    SITEMAP_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    SITEMAP_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8", newline='\n')
 
 
 # ---------------------------------------------------------------------------
@@ -456,7 +456,7 @@ def main() -> int:
             no_faq.append(meta["id"])
 
     build_sitemap(pages)
-    DATES_PATH.write_text(json.dumps(DATES, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
+    DATES_PATH.write_text(json.dumps(DATES, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8', newline='\n')
     total_urls = len(pages) + len(STATIC_SITEMAP_URLS) + len(discover_blog_urls())
     print(f"\n▶ sitemap.xml 갱신 완료 ({total_urls} URL)")
     print(f"▶ 빌드 완료: {len(written)}개 파일")

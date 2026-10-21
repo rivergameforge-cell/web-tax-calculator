@@ -818,6 +818,24 @@ POSTS = [
         ],
         "customHtml": False
     },
+    {
+        "file": "해외주식_손익통산_평가손실_양도소득세_계산",
+        "slug": "foreign-stock-loss-netting",
+        "category": "finance",
+        "categoryLabel": "금융 세금",
+        "date": "2026-10-21",
+        "readMin": 9,
+        "ctaHref": "https://taxcalc.co.kr/#stocks/foreign",
+        "ctaLabel": "확정손익으로 해외주식 양도세 비교",
+        "ctaHeading": "평가손익 대신 신고용 원화 금액을 넣어 보세요",
+        "ctaDescription": "원화 매도·취득금액과 필요경비, 다른 과세대상 주식의 같은 해 손익을 입력하는 일반 세율 간이 계산기입니다. 증권사 자료·과거 결제일 환율·과세대상 판정·RIA 특례·신고를 자동 처리하지 않습니다.",
+        "related": [
+            ["/stocks/foreign.html", "해외주식 양도소득세 계산기"],
+            ["/blog/foreign-stock-capital-gains-deduction.html", "해외주식 250만원 기본공제 계산"],
+            ["/blog/domestic-stock-capital-gains-major-shareholder.html", "국내주식 양도소득세 과세대상"]
+        ],
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------
@@ -1587,7 +1605,7 @@ def update_homepage_latest(posts):
         <span class="site-blog-meta">{meta['date'].replace('-', '.')} · {meta['readMin']}분</span>
       </article>''')
     new = '<div class="site-blog-grid" id="site-latest-posts">\n' + '\n'.join(cards) + '\n    </div>'
-    path.write_text(source.replace(old, new, 1), encoding='utf-8')
+    path.write_text(source.replace(old, new, 1), encoding='utf-8', newline='\n')
 
 
 def main() -> int:
@@ -1621,12 +1639,12 @@ def main() -> int:
 
         html = render_post(meta, parsed)
         out_path = OUT_DIR / f"{meta['slug']}.html"
-        out_path.write_text(html, encoding="utf-8")
+        out_path.write_text(html, encoding="utf-8", newline='\n')
         print(f"  ✓ {out_path.relative_to(ROOT)}  (FAQ/H2 자동변환)")
 
     # 인덱스 재생성
     index_html = render_index(processed)
-    INDEX_PATH.write_text(index_html, encoding="utf-8")
+    INDEX_PATH.write_text(index_html, encoding="utf-8", newline='\n')
     update_homepage_latest(processed)
     print(f"\n▶ blog/index.html 재생성 — 총 {len(processed)}편")
     print(f"▶ 빌드 완료")

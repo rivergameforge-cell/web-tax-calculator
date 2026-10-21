@@ -54,6 +54,11 @@
     "modified": "2026-07-03",
     "published": "2026-07-03"
   },
+  "blog/foreign-stock-loss-netting.html": {
+    "digest": "a26d22db2a68358e21ba63056fd0645e26023f231bf71965704f479164eeec56",
+    "modified": "2026-10-21",
+    "published": "2026-10-21"
+  },
   "blog/four-major-insurance-guide.html": {
     "digest": "3904462ce7f1342cff8423da3aea0d379c3ade61c5e384a1d84b1c5c03a02ef8",
     "modified": "2026-07-03",
@@ -75,8 +80,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "277fc2c50c88dc161d140e9e4937270c8d13432697dd2a039cd34ee33d77e392",
-    "modified": "2026-10-19",
+    "digest": "e44ae8c88c8e7a7029df5503c46fc5892a189559816fb557863e7026746c2614",
+    "modified": "2026-10-21",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -265,187 +270,187 @@
     "published": "2026-05-05"
   },
   "fines/living.html": {
-    "digest": "4b7288103cb5c9cb30330b2a69b1861b839e9f1137d531ced62d27d0071cf573",
+    "digest": "15424153cb4795f52c37e60bf380c34fcdbffbab2e914bd135123e2e27dad197",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "fines/parking.html": {
-    "digest": "b5fb4b14d6e1dd9a5c553e3be3f598a72fc53049ee9e131db8238226290f4d61",
+    "digest": "2597f9d6e76eaa82f9cd5eb5e0a7c8a056ad1751499ac2d8cda2038ecd10c75c",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "fines/traffic.html": {
-    "digest": "85687ade958a999aeb98f86b9cbae0b659a5e72795984c38cf661dbcec0d683c",
+    "digest": "2648ce321c4913ee5f30726172c37d2f7cf163d528fc09dc77aadc564be41d5f",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/business.html": {
-    "digest": "f49324ba9027a9ac7a046c411e00d87fecfc043a9cf6c0b53ba80209a2bcf454",
+    "digest": "c91b3598ce31958b58cd532f1bc4c94098d46efe4246ce43ff64623fdca4e196",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/comprehensive.html": {
-    "digest": "f9e67876d2c2678b6b78b8e1eb8b2d66720f4595c087d6d94b47d56b6c894801",
+    "digest": "8c30ebaca8d317bf1cdea707ffe58eea71ce620ca62932ec4288259149b7bbd4",
     "modified": "2026-10-17",
     "published": "2026-04-18"
   },
   "income/corporate.html": {
-    "digest": "219e40cdff96631241ed9d0914c16b3ca0ae293ccd00738b7ce51f66ec5cedd1",
+    "digest": "76d960b1e505d11e894a5844c4628597d535728ae7d16f758e666134e611be14",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/customs.html": {
-    "digest": "a850f16069741d7300828a63075c51b1bbda14dd0b7ee43584d4a6c17f96a1a7",
+    "digest": "996a27060113bc79b8489f8c31323f6d32ab8e87b70c2488bad14a4f62e7972f",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/daily-worker.html": {
-    "digest": "744ed355a2445f543caf97a10ff87777b2aa07c89b46587fa24b544ca9d1a003",
+    "digest": "41c22ece3ea1c344afe0173730115222e40ca128f6cc52b864a0af1aa78f1abc",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/employment.html": {
-    "digest": "c7da569dd0a88c18db3b78821a62afe7718f3447dc7181be7c8a9beeb0597469",
+    "digest": "78cf3a6cc940154ca32b50e3657708d89ad1b79cdc4178b7942b086f554fd5af",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/freelancer.html": {
-    "digest": "d683f6a5d831dee37f1c8bf31f12525a304fbd28286440614e9965c593465bd8",
+    "digest": "db1a300e8607e987087cb9e8646b464beb5c73ad97005826eaa79e082f8e0dca",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/hourly-wage.html": {
-    "digest": "489ed11895bf2ef6b3f210dbdbb122ef10c7ec6869b31c6af173089de21e0f81",
+    "digest": "ef0938c37162787634bbda97f8998186ef99bd04bbfb95e6598ab64099dd9206",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/insurance.html": {
-    "digest": "c6667a004289ab3db2caaeceb6c149fcf15e09ceefc0ec4d4dbd3e622c7f5f6e",
+    "digest": "8cb5a10f58af0e892a7a6cf2489852aec8205d9ee79108aa4ac46ca3652b2317",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/interest-dividend.html": {
-    "digest": "b1bc7c0910ecb9562c9b1ddcae73145403ae4ddf663a13eb3b48e75dea65fbec",
+    "digest": "cc6b374d7739680452e6b9977d0e1d8809c2442bf37e7151e7f4ce65f1a340d9",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/other-income.html": {
-    "digest": "a2eadb371dc5374fe83007ea277b4cd59a95d98458be38f02ab56642095386b5",
+    "digest": "e8b7152dcfe8d230d77e0a273ea82add51b5f5772a44ece42435a0c8a27d1d81",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/penalty.html": {
-    "digest": "4a0204022313074696aa88cbfcc73579919f4c256d0962ee32e113f07eb38197",
+    "digest": "939b58d3ebced7734beb76eed7e02ab2136042304d0e55b387e01246a1f88948",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/pension-income.html": {
-    "digest": "7ac03c46f227e84c62e8aaefa115265b3833543b52dc8e4136b11f77056ca302",
+    "digest": "511f0fec0e6d129d4d9f07539df0be0b65b2ba3712897f242b52bdd0c850e055",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/pension-saving.html": {
-    "digest": "165dfb3d53dbc9f93e528ed61b0d96239344c211031b3a4df921de540cdad19d",
+    "digest": "eb7c18ddd1ace13d677cabbb91fed5d0151582da8c807fd2b54cae5128762f3a",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/rent-credit.html": {
-    "digest": "7b58b0074d5bd3b48e499febaad917bdc16994ba6bc25c2a9b006cf70e86ffa2",
+    "digest": "843c1816ed1dae3ddce361d865c4aadc07d2a40df89dc55f5a33e8e0c9795134",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/retirement.html": {
-    "digest": "82d3e847112d6c0b883a138b8a67e95511eb8f5268f1ad7592cb1aa088c47cbd",
+    "digest": "454547bd3c9409f5262854fd26e31a83df9099364a7eb6a5fa5a5b944c9d9b95",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/salary.html": {
-    "digest": "f185f60089d50766a7a5e6f68f0423abdf933ce0d97948672f60c8569c7e2dae",
+    "digest": "5512de48e89ffd08c7be69f4938db9dde9b0aea9b3a3bac354826a46302acf8f",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/severance.html": {
-    "digest": "0d566546249259ad6f6f239c2e7c435cea7b9e9d6113adbaf1bb525a7002be38",
+    "digest": "893a03d17186619ec7d71e4d992cf66d54fbff22b4e129ec36ad369ca014d890",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "income/vat.html": {
-    "digest": "d05b6cbd6b45da55b84008d2758f6ec31112b5322efc6bab7457bc65b10a3b5c",
+    "digest": "c0868faa2a6313baffe6f7fa9b046e402f47d5e2931cd2fd5c11b1a6fb1fd861",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "6d3094434eadffb9db9d8bdbe5a09a7b9b05f0f4c7e95390cc4d8a9430f23a7b",
-    "modified": "2026-10-19",
+    "digest": "370839b1f97578f583f41e6fbb1374fe8b14d1f4817b11080e035da36a8976b2",
+    "modified": "2026-10-21",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
-    "digest": "d1cf65bf94c24259d078dab5b3b2751fdc5c06780a4fb6278c6a00566e366069",
+    "digest": "e6d22810d9330a266d554dd7d8e38a00a38a1117975e30ae75048925722f0084",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "inherit/inheritance.html": {
-    "digest": "f40bb0b5f0f52ab93927c99da192ae79bdee0d4668890193680c7a28b5a4108f",
+    "digest": "805977a8635bb30d901931a022f55061e93c39cfd4652db85fcf44298034b9ab",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "loan/calculator.html": {
-    "digest": "e529b92826aea393bfaf6782f20302cf462b637f256ef3c8023248ac26026710",
+    "digest": "df63d9f7b7fbc0200e4c02c7f2b8f514f3e4d310dde9f2815e0c5bb2ae9ed152",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "loan/dsr.html": {
-    "digest": "ab835ff53c1d5c64b4cbd61b65f112246f29f8b756b4451a4034f6df155ea281",
+    "digest": "dfbcdba3c0f0ddf1fc99f717c2bb6838c9b9ac73b85ae017437fbaf130d685fb",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "loan/ltv.html": {
-    "digest": "37fcba23aeb95fbd236ef1dcb669d953f83ea59c58d6e6f0d25222142f57d2a6",
+    "digest": "c4e744d9753b6def089df46c299b1d9fc2044cb130a50fba4270a97c2634c009",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "other/customs-info.html": {
-    "digest": "ff90fb54bbaa3c22eccc0001e3a8b33e92d65bd8f6da680427fdba0a09395464",
+    "digest": "2ed3fa862abcc4be4d0ef76c66f2ecb43bf14129fa8936b91e750747f04a3c79",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "other/excise-info.html": {
-    "digest": "fd117fda26da209a504ccb355e3a6e1a1dce39d7cabdacd9f6fbcd4b5dafcdd8",
+    "digest": "1e19fbfec8a2b2b8a057fc599e838a72762f4fa39a7777dc1c11b1067d20a065",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "other/fuel.html": {
-    "digest": "161b0cadda50a686a684e5d833204051b6e2f3c9b2bf10c91e340c4d0bba96d7",
+    "digest": "930cfff6ffe86665db1dd4ba6f025800b430219ac5cd830f9629849d021abb23",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "other/leisure.html": {
-    "digest": "10ef642e040b0a9ee19b686dc55ae3d2faafd0f7c3e5955a2bfcbd31982375ca",
+    "digest": "a40e5dbf6a1936d53fc278b4dface88d32ac733a4f7090162199ad8d0991368a",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "other/liquor.html": {
-    "digest": "82dc636010f0ad27205858f38498f31fbb360faaacb359ab1c94a3f74c8ee2ea",
+    "digest": "42b6fbc75e5952ae0b306d796be08721c6c2f1df5a4233f39d6e8f2e7bcbd190",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "other/no-son-day.html": {
-    "digest": "9fdd9b4677cbd3ca63cef84b62e39dd1dc6297b39f94144f720b1aa219f20979",
+    "digest": "ed85269a5d661216a5adaf3e32c118cdbc2e2717c126c05347f5f2f65edd7a5b",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "other/progressive-tax.html": {
-    "digest": "7c3003f07986fb946ebac8d09d9a9274f0bc1e2a3d72c9d7d0e12fcfb7d9856d",
+    "digest": "48cb276930028c73259a41aec760816e3db33353448d51f9f00cf2831534b35f",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "other/resident.html": {
-    "digest": "dacac1db12088980a7ab7e4a4d2627fe7af112562f197d354beae6c32e698129",
+    "digest": "6b20695798fd6e6b9ace3a5644c7d255e7bf02a01bba9df09b805f7e01a6f062",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "other/tobacco.html": {
-    "digest": "91c697bd19d7922f8a3b9cb95d37594afc80f0d679b254bc1e90fef537bc3915",
+    "digest": "e857bbd9f4d800a70b333ccdbfe82494010d644570e2295901c393c9797dde36",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
@@ -455,102 +460,102 @@
     "published": "2026-04-07"
   },
   "real-estate/acquisition.html": {
-    "digest": "be29583c7f6dd41d0cb6949790abcfa073b618581a4196610d4c485d7ca13f15",
+    "digest": "5fb17e794ced98d104a5341da0b348965e29cecb0747ef628d74929f3439bd26",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "real-estate/capital-gains.html": {
-    "digest": "0d33f9080b8fed55f06b7736146e4d965c0a6947963aa107953363298e0f214a",
+    "digest": "da20605816d8b1f045391fb799b33e1df8449565802a397a4f7f3f7696d893e5",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "real-estate/commission.html": {
-    "digest": "e517a347f8084ab35709892ce3890a5c0ced31cf4f284a58e4d1f4125e0c4282",
+    "digest": "d80e430bc41b713651590d6d6bd9acdc521e37a7845dff98a8948b17b19421b7",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "real-estate/comprehensive.html": {
-    "digest": "2cab3ccf9c4608f00ab5d32a7b57df023b9451644cdb9cf369179ffbe8fbae5a",
+    "digest": "33c56b7f911ce05e349ff42bef0327cb0889bfe0cb996227bacc2d41516d7426",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "real-estate/officetel-acquisition.html": {
-    "digest": "976624cfd835dec351cd88a12bcd185435451294b4db65d5d6443b30e84d184c",
+    "digest": "12a0e22cccd726798c892034c96b998ee4eea63d3f470b75b4f8793c8301ccd1",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "real-estate/property-tax.html": {
-    "digest": "d077ca0a2afb9bbb1d5ad82f75790f71634ce3583e35c88cdc194a85e225c3ff",
+    "digest": "02af6727dcae06ba57ac4059a69f02e760e7ae7c876653c5f89de87251d1d687",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "real-estate/registration.html": {
-    "digest": "c3c5d44de93c3601400ce7254931ad32347b1b440695614e732d85a31c298635",
+    "digest": "4c325a28c47c5436bf3c9602b4a350110f4b2388dcf221be6afd67afb4b2b5fa",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "real-estate/rental-income.html": {
-    "digest": "b5f30d068a5766e4737af042885a52256b856b2977ca1e927d7c26b69cdd44be",
+    "digest": "0762236d647ca8a2b5b502c8d92172c54b51452f5e0cb5fdd3b59005850dd6b9",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "real-estate/stamp.html": {
-    "digest": "bc961f9adbf1a088c9903ef5effc8051a2a33ff0b7d18cfc38ef759ee849117a",
+    "digest": "037d9c6a2771e9c365d421026f1a7151bc52416cb523d7e89c37f0e04e4f0514",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "real-estate/total-cost.html": {
-    "digest": "eb1130b120b4fff2db4e2563d0330a52d93896ad05ac6415aafff5f4699b8f42",
+    "digest": "24ba205786c21f6bdf3e52e24281fe7fc93bec94441aad3a2c153fff1a5c5a37",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "stocks/dividend.html": {
-    "digest": "fcaf6c53e3c3593cea4ec8ff487c33e325d4ecc4b058698d1a0910904b1703f2",
+    "digest": "860e36d4c64a72ab48818e291f07351ea7e89bf80098eecc086a51e5e6dcef35",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "stocks/domestic.html": {
-    "digest": "591167dd4f0d991bc65ee0e0f055359434b2ccc13003b34c3b8fc86892043574",
+    "digest": "145b3bde8f8ac0f3416635eaa256c60841c0516e0e486d5e77bbd86f43bfbda4",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "stocks/foreign.html": {
-    "digest": "f5eb3aaf6f11b454ada251569217572c7256cf63df886439d29dc08d6aebed07",
-    "modified": "2026-10-16",
+    "digest": "4c8df98cd746697b457e4315a93fc0dd92b50340471affef85bd87feec386e4f",
+    "modified": "2026-10-21",
     "published": "2026-04-18"
   },
   "stocks/transaction.html": {
-    "digest": "674bd8f1ffe7bab405be717bb0bb8f8969d06ea1860ed3c696cca39d03d80c83",
+    "digest": "86e8877e8dd9f6f37d867896c72e7fb0b14bbcabae823b298dda6e42aff7f526",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "vehicle/acquisition.html": {
-    "digest": "74a7df2a06670d35c2e07aa4733ec10de5fe5b54b9e79e6d95032cac9ed5dc0b",
+    "digest": "fdda50ae7d4cfe24d6473f82ceb8413b4285ef0e3b4ded22a3b6eda8b01373f0",
     "modified": "2026-10-19",
     "published": "2026-04-18"
   },
   "vehicle/buying.html": {
-    "digest": "dcb912708f291ed380d96995f35c901d38024f8a50404e6febb0a84a3a2476c9",
+    "digest": "5a4b9f6c490f286c930303bf3afa0057a7f30e7231c2857cd6657e6b89d93c41",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "vehicle/excise.html": {
-    "digest": "ee9fefab57190a441bafdfc83d025c5388487c277e0ff99f23b764dd5488129f",
+    "digest": "c435b71237c6789252591473259bd3b764c6aa93c3e8edf65122a7e2e620743a",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "vehicle/installment.html": {
-    "digest": "eaa8137b537f02a74fadd525b2d49ffba2995a8f1e27bf64dad1448cd5f6b201",
+    "digest": "81261395471e3d4f7be25ed4f4fa7476afaf43b78ad1c01470dd2fd1179dbd1a",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "vehicle/overdue.html": {
-    "digest": "b49e27feb583eb422bd06286517202bf1a37f246fb4078433ff58660ed2278a7",
+    "digest": "34f5f0383156f7bf835de4f4d9d3da3e965eb747ef071fa37591cdd5032c32e4",
     "modified": "2026-10-16",
     "published": "2026-04-18"
   },
   "vehicle/vehicle-tax.html": {
-    "digest": "a032d640d625be68ab2c97e89c8dd312f5dee2c5507869992592820ebc3c2318",
+    "digest": "2b4c114cabb1a7bd14c4c1c82fc13275ca1104a76eb6fad7bcc0e6c9ca4830a1",
     "modified": "2026-10-19",
     "published": "2026-04-18"
   }
