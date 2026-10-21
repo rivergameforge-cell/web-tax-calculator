@@ -7,8 +7,8 @@
     "title": "해외주식 손익통산 계산: 계좌는 손실인데 양도세가 나오는 이유",
     "url": "https://taxcalc.co.kr/blog/foreign-stock-loss-netting.html",
     "status": "deployed_verified",
-    "commit": "12953b37e13fd996f1b545e1471487731ace8bde",
-    "evidence": "output/foreign-stock-loss-netting/site-live.png",
+    "commit": "8f5a1b76b46526a8e377acd37550bc7033a096fc",
+    "evidence": "output/foreign-stock-loss-netting/site-related-live.png",
     "relatedPublishedPosts": [
       {
         "url": "https://taxcalc.co.kr/blog/foreign-stock-capital-gains-deduction.html",
@@ -208,7 +208,16 @@
         "naver": 1
       },
       "naverUserEditedParagraphsPreserved": 83,
-      "missingUserEditedParagraphs": []
+      "missingUserEditedParagraphs": [],
+      "liveSiteVerified": true,
+      "naverPublishedUpdateVerified": true,
+      "tistorySavedUpdateVerified": true,
+      "skillValidation": "installed personal and repository skills passed",
+      "evidence": [
+        "output/foreign-stock-loss-netting/site-related-live.png",
+        "output/foreign-stock-loss-netting/naver-related-live.png",
+        "output/foreign-stock-loss-netting/tistory-related-preview.png"
+      ]
     }
   },
   "images": [
