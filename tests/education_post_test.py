@@ -87,7 +87,7 @@ class EducationPostTests(unittest.TestCase):
         ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
         entries = [e for e in tree.findall('s:url', ns) if e.findtext('s:loc', namespaces=ns) == url]
         self.assertEqual(len(entries), 1)
-        self.assertEqual(entries[0].findtext('s:lastmod', namespaces=ns), '2026-10-08')
+        self.assertGreaterEqual(entries[0].findtext('s:lastmod', namespaces=ns), '2026-10-08')
 
 
 if __name__ == '__main__':

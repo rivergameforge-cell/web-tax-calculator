@@ -138,7 +138,7 @@ class HousingSubscriptionPostTests(unittest.TestCase):
         ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
         entries = [e for e in ElementTree.parse(ROOT / 'sitemap.xml').findall('s:url', ns) if e.findtext('s:loc', namespaces=ns) == url]
         self.assertEqual(len(entries), 1)
-        self.assertEqual(entries[0].findtext('s:lastmod', namespaces=ns), '2026-10-10')
+        self.assertGreaterEqual(entries[0].findtext('s:lastmod', namespaces=ns), '2026-10-10')
         hashes = set()
         for image in self.record['images']:
             data = (ROOT / image['file']).read_bytes()

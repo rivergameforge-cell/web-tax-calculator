@@ -1,0 +1,543 @@
+{
+  "site": [
+    {
+      "slug": "severance-pay-guide",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/mid-year-resignation-tax-settlement.html",
+        "/blog/irp-why-start-young.html"
+      ]
+    },
+    {
+      "slug": "dividend-tax-saving",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/financial-income-comprehensive-tax-20m.html",
+        "/blog/stock-dividend-tax-guide.html"
+      ]
+    },
+    {
+      "slug": "officetel-acquisition",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/property-tax-guide.html",
+        "/blog/commission-calculation-method.html"
+      ]
+    },
+    {
+      "slug": "gift-vs-inheritance-tax",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/inheritance-taxable-scope.html",
+        "/blog/marriage-birth-gift-tax-deduction.html"
+      ]
+    },
+    {
+      "slug": "inheritance-tax-guide",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/inheritance-taxable-scope.html",
+        "/blog/gift-vs-inheritance-tax.html"
+      ]
+    },
+    {
+      "slug": "inheritance-taxable-scope",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/inheritance-tax-guide.html",
+        "/blog/gift-vs-inheritance-tax.html"
+      ]
+    },
+    {
+      "slug": "four-major-insurance-guide",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/salary-take-home.html",
+        "/blog/salary-50m-take-home.html"
+      ]
+    },
+    {
+      "slug": "monthly-rent-tax-credit",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/monthly-rent-tax-credit-8m-refund.html",
+        "/blog/jeonse-loan-principal-interest-deduction.html"
+      ]
+    },
+    {
+      "slug": "pension-saving-irp-credit",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/irp-why-start-young.html",
+        "/blog/mid-year-resignation-tax-settlement.html"
+      ]
+    },
+    {
+      "slug": "irp-why-start-young",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/pension-saving-irp-credit.html",
+        "/blog/severance-pay-guide.html"
+      ]
+    },
+    {
+      "slug": "real-estate-commission",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/commission-calculation-method.html",
+        "/blog/officetel-acquisition.html"
+      ]
+    },
+    {
+      "slug": "commission-calculation-method",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/real-estate-commission.html",
+        "/blog/jeonse-loan-principal-interest-deduction.html"
+      ]
+    },
+    {
+      "slug": "salary-50m-take-home",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/salary-take-home.html",
+        "/blog/four-major-insurance-guide.html"
+      ]
+    },
+    {
+      "slug": "salary-take-home",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/four-major-insurance-guide.html",
+        "/blog/salary-50m-take-home.html"
+      ]
+    },
+    {
+      "slug": "vehicle-tax-overdue",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/vehicle-tax-sale-refund.html",
+        "/blog/vehicle-acquisition-tax-guide.html"
+      ]
+    },
+    {
+      "slug": "speeding-fine-guide",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/parking-violation-fine.html",
+        "/blog/vehicle-tax-overdue.html"
+      ]
+    },
+    {
+      "slug": "vehicle-acquisition-tax-guide",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/vehicle-installment-calculation.html",
+        "/blog/vehicle-tax-sale-refund.html"
+      ]
+    },
+    {
+      "slug": "vehicle-installment-calculation",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/vehicle-installment-guide.html",
+        "/blog/vehicle-acquisition-tax-guide.html"
+      ]
+    },
+    {
+      "slug": "vehicle-installment-guide",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/vehicle-installment-calculation.html",
+        "/blog/dsr-calculation-guide.html"
+      ]
+    },
+    {
+      "slug": "dsr-calculation-guide",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/speculative-zone-ltv.html",
+        "/blog/vehicle-installment-guide.html"
+      ]
+    },
+    {
+      "slug": "property-tax-guide",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/officetel-acquisition.html",
+        "/blog/mortgage-interest-income-deduction.html"
+      ]
+    },
+    {
+      "slug": "stock-dividend-tax-guide",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/financial-income-comprehensive-tax-20m.html",
+        "/blog/dividend-tax-saving.html"
+      ]
+    },
+    {
+      "slug": "foreign-stock-capital-gains-deduction",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/foreign-stock-loss-netting.html",
+        "/blog/domestic-stock-capital-gains-major-shareholder.html"
+      ]
+    },
+    {
+      "slug": "domestic-stock-capital-gains-major-shareholder",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/foreign-stock-loss-netting.html",
+        "/blog/foreign-stock-capital-gains-deduction.html"
+      ]
+    },
+    {
+      "slug": "financial-income-comprehensive-tax-20m",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/stock-dividend-tax-guide.html",
+        "/blog/dividend-tax-saving.html"
+      ]
+    },
+    {
+      "slug": "monthly-rent-tax-credit-8m-refund",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/monthly-rent-tax-credit.html",
+        "/blog/jeonse-loan-principal-interest-deduction.html"
+      ]
+    },
+    {
+      "slug": "marriage-tax-credit-100m-guide",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/marriage-birth-gift-tax-deduction.html",
+        "/blog/monthly-rent-tax-credit-8m-refund.html"
+      ]
+    },
+    {
+      "slug": "credit-card-deduction-25-percent",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/medical-expense-tax-credit-3-percent.html",
+        "/blog/mid-year-resignation-tax-settlement.html"
+      ]
+    },
+    {
+      "slug": "vat-refund-output-input-tax",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/october-vat-preliminary-notice.html",
+        "/blog/november-income-tax-interim-payment.html"
+      ]
+    },
+    {
+      "slug": "other-income-tax-8-8-guide",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/income-tax-penalty-late-filing.html",
+        "/blog/november-income-tax-interim-payment.html"
+      ]
+    },
+    {
+      "slug": "income-tax-penalty-late-filing",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/november-income-tax-interim-payment.html",
+        "/blog/other-income-tax-8-8-guide.html"
+      ]
+    },
+    {
+      "slug": "parking-violation-fine",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/speeding-fine-guide.html",
+        "/blog/vehicle-tax-overdue.html"
+      ]
+    },
+    {
+      "slug": "speculative-zone-ltv",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/dsr-calculation-guide.html",
+        "/blog/mortgage-interest-income-deduction.html"
+      ]
+    },
+    {
+      "slug": "resident-tax-august-guide",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/november-income-tax-interim-payment.html",
+        "/blog/property-tax-guide.html"
+      ]
+    },
+    {
+      "slug": "marriage-birth-gift-tax-deduction",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/marriage-tax-credit-100m-guide.html",
+        "/blog/gift-vs-inheritance-tax.html"
+      ]
+    },
+    {
+      "slug": "earned-income-tax-credit-2026-payment",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/daily-worker-tax-15m-20m.html",
+        "/blog/salary-take-home.html"
+      ]
+    },
+    {
+      "slug": "october-vat-preliminary-notice",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/vat-refund-output-input-tax.html",
+        "/blog/november-income-tax-interim-payment.html"
+      ]
+    },
+    {
+      "slug": "mid-year-resignation-tax-settlement",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/severance-pay-guide.html",
+        "/blog/credit-card-deduction-25-percent.html"
+      ]
+    },
+    {
+      "slug": "medical-expense-tax-credit-3-percent",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/insurance-premium-tax-credit-100m.html",
+        "/blog/parent-dependent-deduction-pension.html"
+      ]
+    },
+    {
+      "slug": "parent-dependent-deduction-pension",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/medical-expense-tax-credit-3-percent.html",
+        "/blog/insurance-premium-tax-credit-100m.html"
+      ]
+    },
+    {
+      "slug": "education-tax-credit-university-900",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/parent-dependent-deduction-pension.html",
+        "/blog/medical-expense-tax-credit-3-percent.html"
+      ]
+    },
+    {
+      "slug": "mortgage-interest-income-deduction",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/housing-subscription-income-deduction.html",
+        "/blog/jeonse-loan-principal-interest-deduction.html"
+      ]
+    },
+    {
+      "slug": "daily-worker-tax-15m-20m",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/earned-income-tax-credit-2026-payment.html",
+        "/blog/salary-take-home.html"
+      ]
+    },
+    {
+      "slug": "insurance-premium-tax-credit-100m",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/medical-expense-tax-credit-3-percent.html",
+        "/blog/parent-dependent-deduction-pension.html"
+      ]
+    },
+    {
+      "slug": "jeonse-loan-principal-interest-deduction",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/housing-subscription-income-deduction.html",
+        "/blog/monthly-rent-tax-credit-8m-refund.html"
+      ]
+    },
+    {
+      "slug": "sme-employee-income-tax-reduction",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/salary-take-home.html",
+        "/blog/mid-year-resignation-tax-settlement.html"
+      ]
+    },
+    {
+      "slug": "housing-subscription-income-deduction",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/jeonse-loan-principal-interest-deduction.html",
+        "/blog/mortgage-interest-income-deduction.html"
+      ]
+    },
+    {
+      "slug": "november-income-tax-interim-payment",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/income-tax-penalty-late-filing.html",
+        "/blog/yellow-umbrella-income-deduction.html"
+      ]
+    },
+    {
+      "slug": "yellow-umbrella-income-deduction",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/november-income-tax-interim-payment.html",
+        "/blog/income-tax-penalty-late-filing.html"
+      ]
+    },
+    {
+      "slug": "vehicle-tax-sale-refund",
+      "added": true,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/vehicle-tax-overdue.html",
+        "/blog/vehicle-acquisition-tax-guide.html"
+      ]
+    },
+    {
+      "slug": "foreign-stock-loss-netting",
+      "added": false,
+      "bodyPreserved": true,
+      "urls": [
+        "/blog/foreign-stock-capital-gains-deduction.html",
+        "/blog/domestic-stock-capital-gains-major-shareholder.html"
+      ]
+    }
+  ],
+  "tistory": {
+    "status": "browser_connection_unavailable",
+    "inspected": false,
+    "updated": 0
+  },
+  "naver": {
+    "status": "browser_connection_unavailable",
+    "inspected": false,
+    "updated": 0
+  },
+  "verifiedPublishedSiteUrls": [
+    "https://taxcalc.co.kr/blog/commission-calculation-method.html",
+    "https://taxcalc.co.kr/blog/credit-card-deduction-25-percent.html",
+    "https://taxcalc.co.kr/blog/daily-worker-tax-15m-20m.html",
+    "https://taxcalc.co.kr/blog/dividend-tax-saving.html",
+    "https://taxcalc.co.kr/blog/domestic-stock-capital-gains-major-shareholder.html",
+    "https://taxcalc.co.kr/blog/dsr-calculation-guide.html",
+    "https://taxcalc.co.kr/blog/earned-income-tax-credit-2026-payment.html",
+    "https://taxcalc.co.kr/blog/education-tax-credit-university-900.html",
+    "https://taxcalc.co.kr/blog/financial-income-comprehensive-tax-20m.html",
+    "https://taxcalc.co.kr/blog/foreign-stock-capital-gains-deduction.html",
+    "https://taxcalc.co.kr/blog/foreign-stock-loss-netting.html",
+    "https://taxcalc.co.kr/blog/four-major-insurance-guide.html",
+    "https://taxcalc.co.kr/blog/gift-vs-inheritance-tax.html",
+    "https://taxcalc.co.kr/blog/housing-subscription-income-deduction.html",
+    "https://taxcalc.co.kr/blog/income-tax-penalty-late-filing.html",
+    "https://taxcalc.co.kr/blog/inheritance-tax-guide.html",
+    "https://taxcalc.co.kr/blog/inheritance-taxable-scope.html",
+    "https://taxcalc.co.kr/blog/insurance-premium-tax-credit-100m.html",
+    "https://taxcalc.co.kr/blog/irp-why-start-young.html",
+    "https://taxcalc.co.kr/blog/jeonse-loan-principal-interest-deduction.html",
+    "https://taxcalc.co.kr/blog/marriage-birth-gift-tax-deduction.html",
+    "https://taxcalc.co.kr/blog/marriage-tax-credit-100m-guide.html",
+    "https://taxcalc.co.kr/blog/medical-expense-tax-credit-3-percent.html",
+    "https://taxcalc.co.kr/blog/mid-year-resignation-tax-settlement.html",
+    "https://taxcalc.co.kr/blog/monthly-rent-tax-credit.html",
+    "https://taxcalc.co.kr/blog/monthly-rent-tax-credit-8m-refund.html",
+    "https://taxcalc.co.kr/blog/mortgage-interest-income-deduction.html",
+    "https://taxcalc.co.kr/blog/november-income-tax-interim-payment.html",
+    "https://taxcalc.co.kr/blog/october-vat-preliminary-notice.html",
+    "https://taxcalc.co.kr/blog/officetel-acquisition.html",
+    "https://taxcalc.co.kr/blog/other-income-tax-8-8-guide.html",
+    "https://taxcalc.co.kr/blog/parent-dependent-deduction-pension.html",
+    "https://taxcalc.co.kr/blog/parking-violation-fine.html",
+    "https://taxcalc.co.kr/blog/pension-saving-irp-credit.html",
+    "https://taxcalc.co.kr/blog/property-tax-guide.html",
+    "https://taxcalc.co.kr/blog/real-estate-commission.html",
+    "https://taxcalc.co.kr/blog/resident-tax-august-guide.html",
+    "https://taxcalc.co.kr/blog/salary-50m-take-home.html",
+    "https://taxcalc.co.kr/blog/salary-take-home.html",
+    "https://taxcalc.co.kr/blog/severance-pay-guide.html",
+    "https://taxcalc.co.kr/blog/sme-employee-income-tax-reduction.html",
+    "https://taxcalc.co.kr/blog/speculative-zone-ltv.html",
+    "https://taxcalc.co.kr/blog/speeding-fine-guide.html",
+    "https://taxcalc.co.kr/blog/stock-dividend-tax-guide.html",
+    "https://taxcalc.co.kr/blog/vat-refund-output-input-tax.html",
+    "https://taxcalc.co.kr/blog/vehicle-acquisition-tax-guide.html",
+    "https://taxcalc.co.kr/blog/vehicle-installment-calculation.html",
+    "https://taxcalc.co.kr/blog/vehicle-installment-guide.html",
+    "https://taxcalc.co.kr/blog/vehicle-tax-overdue.html",
+    "https://taxcalc.co.kr/blog/vehicle-tax-sale-refund.html",
+    "https://taxcalc.co.kr/blog/yellow-umbrella-income-deduction.html"
+  ],
+  "summary": {
+    "siteInspected": 51,
+    "siteAdded": 50,
+    "relatedLinks": 102,
+    "bodyPreserved": true,
+    "samePlatformOnly": true,
+    "idempotent": true,
+    "futureBuildFooterVerified": true
+  },
+  "verification": {
+    "existingTestsPassed": 43,
+    "existingTestsFailed": 0,
+    "sitemapDatesReflectFooterChanges": true,
+    "originalPublicationDatesPreserved": true,
+    "browserConnections": 0,
+    "deployment": "pending"
+  }
+}

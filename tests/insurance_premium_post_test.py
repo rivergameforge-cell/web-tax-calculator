@@ -118,7 +118,7 @@ class InsurancePremiumPostTests(unittest.TestCase):
         ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
         matches = [n for n in ElementTree.parse(ROOT / 'sitemap.xml').findall('s:url', ns) if n.findtext('s:loc', namespaces=ns) == url]
         self.assertEqual(len(matches), 1)
-        self.assertEqual(matches[0].findtext('s:lastmod', namespaces=ns), '2026-10-14')
+        self.assertGreaterEqual(matches[0].findtext('s:lastmod', namespaces=ns), '2026-10-14')
         hashes = set()
         for image in self.record['images']:
             data = (ROOT / image['file']).read_bytes()

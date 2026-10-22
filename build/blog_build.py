@@ -23,6 +23,36 @@ ROOT = Path(__file__).resolve().parent.parent
 POST_DIR = ROOT / "blog_post"
 OUT_DIR = ROOT / "blog"
 INDEX_PATH = OUT_DIR / "index.html"
+RELATED_POSTS_PATH = ROOT / "build" / "blog_related_posts.json"
+
+
+def add_related_posts(html: str, slug: str) -> str:
+    """Append the curated same-site footer without changing existing article content."""
+    if re.search(r'<h2\b[^>]*>\s*함께 읽으면 좋은 글\s*</h2>', html):
+        return html
+    related = json.loads(RELATED_POSTS_PATH.read_text(encoding="utf-8"))
+    targets = related["links"].get(slug, [])
+    if not targets:
+        return html
+    if not 1 <= len(targets) <= 3 or len(set(targets)) != len(targets):
+        raise ValueError(f"관련 글 개수 또는 중복 오류: {slug}")
+    entries = []
+    for target in targets:
+        if target == slug or not re.fullmatch(r'[a-z0-9-]+', target):
+            raise ValueError(f"관련 글 경로 오류: {slug} -> {target}")
+        if not (OUT_DIR / f"{target}.html").is_file():
+            raise ValueError(f"관련 글 HTML 누락: {target}")
+        label, reason = related["posts"][target]
+        entries.append(
+            f'      <a href="/blog/{target}.html">{html_escape(label)}</a>\n'
+            f'      <p>{html_escape(reason)}</p>'
+        )
+    section = ('    <div class="related-articles related-posts">\n'
+               '      <h2>함께 읽으면 좋은 글</h2>\n'
+               + "\n".join(entries) + '\n    </div>\n')
+    if html.count('</article>') != 1:
+        raise ValueError(f"본문 종료 위치가 모호합니다: {slug}")
+    return html.replace('  </article>', section + '  </article>', 1)
 
 
 def canonical_calculator_links(text):
@@ -1253,7 +1283,7 @@ def render_post(meta: dict, parsed: dict) -> str:
     if not related_html:
         related_html = '<a href="/blog/">다른 글 더 보기</a>'
 
-    return PAGE_TEMPLATE.format(
+    return add_related_posts(PAGE_TEMPLATE.format(
         title=html_escape(parsed["title"]),
         og_title=html_escape(parsed["title"]),
         breadcrumb_title=html_escape(parsed["title"][:50]),
@@ -1276,7 +1306,7 @@ def render_post(meta: dict, parsed: dict) -> str:
         description_json=json.dumps(parsed["description"], ensure_ascii=False),
         title_json=json.dumps(parsed["title"][:50], ensure_ascii=False),
         category_label_json=json.dumps(meta["categoryLabel"], ensure_ascii=False),
-    )
+    ), meta["slug"])
 
 
 # ---------------------------------------------------------------------------
@@ -1616,6 +1646,16 @@ def main() -> int:
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    if '--related-only' in sys.argv:
+        for meta in POSTS:
+            path = OUT_DIR / f"{meta['slug']}.html"
+            original = path.read_text(encoding="utf-8")
+            updated = add_related_posts(original, meta['slug'])
+            if updated != original:
+                path.write_text(updated, encoding="utf-8", newline='\n')
+                print(f"  ✓ 관련 글 추가: {meta['slug']}")
+        return 0
+
     processed = []
     only = set(sys.argv[sys.argv.index('--only') + 1].split(',')) if '--only' in sys.argv else None
     for meta in POSTS:
@@ -1635,7 +1675,12 @@ def main() -> int:
             continue
 
         if meta.get("customHtml"):
-            print(f"  · {meta['slug']:30s} (custom HTML, 본문 빌드 스킵)")
+            path = OUT_DIR / f"{meta['slug']}.html"
+            original = path.read_text(encoding="utf-8")
+            updated = add_related_posts(original, meta['slug'])
+            if updated != original:
+                path.write_text(updated, encoding="utf-8", newline='\n')
+            print(f"  · {meta['slug']:30s} (custom HTML, 관련 글만 확인)")
             continue
 
         html = render_post(meta, parsed)

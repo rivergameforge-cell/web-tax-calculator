@@ -21,6 +21,7 @@ Apply the repository `AGENTS.md` workflow first when present. Use the platform p
 - Write reader-facing Korean won amounts as `250만 원`, `1,000만 원`, and `2천만 원`, including titles, body text, tables, captions, and link labels. Preserve existing URL slugs and filenames; use a non-amount keyword in hashtags when spacing would split the tag.
 - End each article with `함께 읽으면 좋은 글`, after the main explanation, calculator CTA, and any source notes. Link 1-3 relevant, verified published posts on that same destination: TaxCalc website posts for the website, the user's Tistory posts for Tistory, and the user's Naver posts for Naver. Add a short reason to read each post.
 - Keep tags and production metadata separate. Do not substitute calculator links, official references, or another platform's articles for related posts. Report a gap if the destination has no relevant published post.
+- For Tistory and Naver, paste each related-post URL into its own paragraph and press Enter to create the editor's native link-preview card. Verify the rendered title, summary, and thumbnail when supplied by the destination; a plain text link alone does not complete this requirement. Preserve existing body content and publication state when adding cards to older posts.
 
 ## Website Persona
 
