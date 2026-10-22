@@ -538,6 +538,10 @@
     "sitemapDatesReflectFooterChanges": true,
     "originalPublicationDatesPreserved": true,
     "browserConnections": 0,
-    "deployment": "pending"
+    "deployment": "verified_live",
+    "deployedContentCommit": "e9463b6",
+    "pagesWorkflow": "https://github.com/rivergameforge-cell/web-tax-calculator/actions/runs/39708485461",
+    "liveSitemapPages": 112,
+    "liveSupportingFiles": 114
   }
 }
