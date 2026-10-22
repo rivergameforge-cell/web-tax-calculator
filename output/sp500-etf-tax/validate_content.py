@@ -74,5 +74,5 @@ for p in pages.values(): p['_modified']=build.DATES[f"{p['id']}.html"]['modified
 build.build_sitemap(pages)
 build.DATES_PATH.write_text(json.dumps(build.DATES,ensure_ascii=False,indent=2,sort_keys=True)+'\n',encoding='utf-8',newline='\n')
 result={'article':slug,'calculations':{k:str(v) for k,v in checks.items()},'relatedPosts':related,'tags':25,'amountSpacing':True,'thumbnails':[[1200,630],[1200,720]],'structuredData':True}
-(ROOT/'output/sp500-etf-tax/content-validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'output/sp500-etf-tax/content-validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 print(json.dumps(result,ensure_ascii=False))
