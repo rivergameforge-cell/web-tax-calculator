@@ -16,7 +16,7 @@ import re
 import sys
 import hashlib
 import subprocess
-from html import escape
+from html import escape, unescape
 from datetime import date
 from pathlib import Path
 
@@ -84,7 +84,7 @@ def load_runtime():
         title_match = re.search(r'<h1[^>]*>(.*?)</h1>', raw, re.DOTALL)
         if not title_match:
             raise ValueError(f'Blog missing heading: {path}')
-        title = strip_tags(title_match[1])
+        title = unescape(strip_tags(title_match[1]))
         published = re.search(r'"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})', raw)
         guide_date = published[1] if published else git_date(path, first=True)
         for link in set(doc.links):

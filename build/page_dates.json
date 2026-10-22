@@ -80,8 +80,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "88e494eae07791dd47b90e875ea6eb6d7b54329ad1b5826b940f8284550da7c6",
-    "modified": "2026-10-21",
+    "digest": "08de5e97d5bde60888888d5a220bfeef9137f20394bf63a4f39e7f1386f54176",
+    "modified": "2026-10-22",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -213,6 +213,11 @@
     "digest": "525fd429c4b32eb305b54f801ee610b43812b4be22f636a9410ff8870ad706a5",
     "modified": "2026-10-22",
     "published": "2026-10-10"
+  },
+  "blog/sp500-etf-domestic-us-tax.html": {
+    "digest": "4887c38f60c3043ece46daf3b72484f9406d987adc19294ab66ea86adf073521",
+    "modified": "2026-10-22",
+    "published": "2026-10-22"
   },
   "blog/speculative-zone-ltv.html": {
     "digest": "8aa996c38deb500f06ec48120ac49055263822ca30ad009d2abe10f5f2d09178",
@@ -370,8 +375,8 @@
     "published": "2026-04-18"
   },
   "income/severance.html": {
-    "digest": "893a03d17186619ec7d71e4d992cf66d54fbff22b4e129ec36ad369ca014d890",
-    "modified": "2026-10-16",
+    "digest": "37a2746a981d08e8e5c8fcdf51221da6fc3db3844e355f1797fccdfda00c33f0",
+    "modified": "2026-10-22",
     "published": "2026-04-18"
   },
   "income/vat.html": {
@@ -380,18 +385,18 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "3534414da92600d6d478118347e49775e447b14643ff1c20ba0024fbf96d65a8",
-    "modified": "2026-10-21",
+    "digest": "466311caae8cb96ae6d0600b7ee4449c4ee5f6ee7e64d2d28fcd9cca321b5ba6",
+    "modified": "2026-10-22",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
-    "digest": "e6d22810d9330a266d554dd7d8e38a00a38a1117975e30ae75048925722f0084",
-    "modified": "2026-10-16",
+    "digest": "c82d619bd986f23d774f298a3716f8bbf15a913881b1abcbc70344c0d3049566",
+    "modified": "2026-10-22",
     "published": "2026-04-18"
   },
   "inherit/inheritance.html": {
-    "digest": "805977a8635bb30d901931a022f55061e93c39cfd4652db85fcf44298034b9ab",
-    "modified": "2026-10-16",
+    "digest": "ceefcf3fa5c5988b22ae927e20abdc3f7ea735d2a105b94a01a0f67cddf3091e",
+    "modified": "2026-10-22",
     "published": "2026-04-18"
   },
   "loan/calculator.html": {
@@ -465,8 +470,8 @@
     "published": "2026-04-18"
   },
   "real-estate/capital-gains.html": {
-    "digest": "da20605816d8b1f045391fb799b33e1df8449565802a397a4f7f3f7696d893e5",
-    "modified": "2026-10-16",
+    "digest": "08524e46c0c1f5499f3ae3843ff759d768173f8b8c6bf52b00b27b5a18f4b893",
+    "modified": "2026-10-22",
     "published": "2026-04-18"
   },
   "real-estate/commission.html": {
@@ -520,8 +525,8 @@
     "published": "2026-04-18"
   },
   "stocks/foreign.html": {
-    "digest": "4c8df98cd746697b457e4315a93fc0dd92b50340471affef85bd87feec386e4f",
-    "modified": "2026-10-21",
+    "digest": "014cda25b50c0ccd9cad435229332ec38e570b001b13e8f4be4f1d8e89e45380",
+    "modified": "2026-10-22",
     "published": "2026-04-18"
   },
   "stocks/transaction.html": {

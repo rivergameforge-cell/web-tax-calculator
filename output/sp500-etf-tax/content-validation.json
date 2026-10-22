@@ -1,0 +1,30 @@
+{
+  "article": "sp500-etf-domestic-us-tax",
+  "calculations": {
+    "site_tax_base": "308000.000",
+    "site_loss_case_domestic": "770000.000",
+    "site_loss_case_us": "0.00",
+    "site_only_gain_domestic": "1540000.000",
+    "site_only_gain_us": "1650000.00",
+    "naver_tax_base": "154000.000",
+    "naver_loss_case_domestic": "616000.000",
+    "naver_loss_case_us": "0.00"
+  },
+  "relatedPosts": [
+    "/blog/foreign-stock-loss-netting.html",
+    "/blog/financial-income-comprehensive-tax-20m.html"
+  ],
+  "tags": 25,
+  "amountSpacing": true,
+  "thumbnails": [
+    [
+      1200,
+      630
+    ],
+    [
+      1200,
+      720
+    ]
+  ],
+  "structuredData": true
+}

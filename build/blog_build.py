@@ -866,6 +866,24 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "S&P500_ETF_국내상장_미국상장_세금_비교",
+        "slug": "sp500-etf-domestic-us-tax",
+        "category": "finance",
+        "categoryLabel": "금융 세금",
+        "date": "2026-10-22",
+        "readMin": 9,
+        "ctaHref": "https://taxcalc.co.kr/#stocks/foreign",
+        "ctaLabel": "미국 상장 ETF 양도세 참고 계산",
+        "ctaHeading": "상장 시장을 확인한 뒤 계산하세요",
+        "ctaDescription": "미국 상장 ETF의 일반적인 장내 매도에 해당하는 원화 양도손익을 비교하는 도구입니다. 국내 상장 해외 ETF의 과표기준가격·보유기간 과세·분배금·종합과세는 계산하지 않습니다. 과거 환율·취득가액·외국납부세액과 별도 특례는 실제 자료로 확인하세요.",
+        "related": [
+            ["/blog/foreign-stock-loss-netting.html", "해외주식 손익통산: 평가손실과 실제 매도손실의 차이"],
+            ["/blog/financial-income-comprehensive-tax-20m.html", "금융소득 종합과세: 이자·배당 합계 2천만 원 기준"]
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------
