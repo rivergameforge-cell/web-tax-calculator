@@ -1,0 +1,25 @@
+{
+  "title": "국내 S&P500 ETF도 250만 원 공제? 미국 상장과 세금 다른 이유",
+  "checked": "2026-10-23",
+  "ads": 2,
+  "adPlacement": "heading -> ad -> section text",
+  "imageSize": [
+    1080,
+    1080
+  ],
+  "imagePlacement": "introduction -> image -> first heading",
+  "related": [
+    "https://kwonriver-carstroy.tistory.com/entry/금융소득-종합과세-계산-이자·배당-2천만원-넘으면-추가세금",
+    "https://kwonriver-carstroy.tistory.com/entry/국내주식-양도소득세-계산-대주주-기준-50억-원-세금"
+  ],
+  "nativeCards": "to be verified in editor and published page",
+  "calculations": {
+    "domestic_gain_2m": "308000.000",
+    "tax_base_1_2m": "184800.000",
+    "domestic_gain_6m_loss_5m": "924000.000",
+    "us_gain_6m_loss_5m": "0.00",
+    "domestic_only_gain_8m": "1232000.000",
+    "us_only_gain_8m": "1210000.00"
+  },
+  "amountSpacing": true
+}
