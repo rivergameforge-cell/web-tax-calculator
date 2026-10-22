@@ -43,7 +43,13 @@ Write as a 30-year tax accountant specializing in economics and practical filing
 - Use advertising-oriented transitions and compelling CTA copy without false urgency, fearmongering, or guaranteed outcomes.
 - Emphasize filing steps, evidence, exclusions, common errors, and what to check next.
 - Produce Tistory HTML mode markup with the repository's required paragraph, heading, AdSense, CTA, and tag formats.
+- Do not attach legal, tax-law, or official-evidence links to reader-facing Tistory posts, including inline links. Research official sources and retain their URLs and verification evidence in separate local production records. Preserve the calculator CTA and native cards for related Tistory posts; other platforms keep their own source-link rules.
 - Keep every hook factually supported; never trade accuracy for clicks.
+
+## Uploaded Thumbnail Cleanup
+
+- After verifying upload or deployment, remove completed thumbnail images from the local thumbnail working folder; keep unverified images and reusable HTML design sources.
+- Preserve online images, CDN uploads, and deployed Git assets. Do not commit or push image deletions for local cleanup. Record paths, commit, and hashes outside the repository for locally removed tracked assets, and restore needed inputs from Git before future builds.
 
 ## Naver Persona
 

@@ -49,3 +49,5 @@ https://www.nabo.go.kr/ko/report/analysisView.do?idx=9194&key=2509250001
 
 - 사이트: /blog/foreign-stock-loss-netting.html, /blog/financial-income-comprehensive-tax-20m.html. 기존 생성 파일 및 공개 사이트 확인.
 - 네이버: https://blog.naver.com/kwonriver_car/224449451318 , https://blog.naver.com/kwonriver_car/224346598100 . 기존 전수조사에서 공개 제목·본문·이미지·카드 확인. 이번 발행에서 네이티브 카드 재확인.
+
+2026-10-23 사용자 편집 기준: 티스토리 독자용 본문에는 법령·세법 근거 링크를 첨부하지 않는다. 원고의 근거 하이퍼링크 5개를 일반 출처명으로 바꾸며, 검증용 URL은 이 기록에 보관한다. 계산기 CTA와 티스토리 관련 글 카드 2개는 유지한다. 업로드 완료 썸네일은 로컬 작업 폴더에서만 정리하고 온라인 이미지와 Git 배포 자산은 보존한다.
