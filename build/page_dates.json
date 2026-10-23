@@ -80,8 +80,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "08de5e97d5bde60888888d5a220bfeef9137f20394bf63a4f39e7f1386f54176",
-    "modified": "2026-10-22",
+    "digest": "afd0e6270da8efae409504764b074ccbb4d1b932a3f9ee17a4f5eec7bb733240",
+    "modified": "2026-10-23",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -103,6 +103,11 @@
     "digest": "64c0d2391e299e5d4520d19f0c928b4f5ac95b526a2b22e6c0578b343ae88e5b",
     "modified": "2026-10-22",
     "published": "2026-06-09"
+  },
+  "blog/isa-maturity-renewal-rejoin.html": {
+    "digest": "9e6592762332bf340a7537985e54b0191fb53b01b987227d21d28141b32d77e8",
+    "modified": "2026-10-23",
+    "published": "2026-10-23"
   },
   "blog/jeonse-loan-principal-interest-deduction.html": {
     "digest": "3cb6b5d75e9d47a53df57b04abdc036290892c46d0a7482093247e05953cd722",
@@ -335,8 +340,8 @@
     "published": "2026-04-18"
   },
   "income/interest-dividend.html": {
-    "digest": "cc6b374d7739680452e6b9977d0e1d8809c2442bf37e7151e7f4ce65f1a340d9",
-    "modified": "2026-10-16",
+    "digest": "11fcc3fb0fcb43db4db8dbebe4192cee11227ddb08f79ee732a5ea3fdda506e3",
+    "modified": "2026-10-23",
     "published": "2026-04-18"
   },
   "income/other-income.html": {
@@ -385,8 +390,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "466311caae8cb96ae6d0600b7ee4449c4ee5f6ee7e64d2d28fcd9cca321b5ba6",
-    "modified": "2026-10-22",
+    "digest": "e05a4c2ac2c059b2c4d4de5bedadd82eb58ac350221fa3a2c7f4c0ace2c0dfd0",
+    "modified": "2026-10-23",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {

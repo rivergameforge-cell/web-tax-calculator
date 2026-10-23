@@ -884,6 +884,24 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "ISA_만기_해지_재가입_3년_세금_계산",
+        "slug": "isa-maturity-renewal-rejoin",
+        "category": "finance",
+        "categoryLabel": "금융 세금",
+        "date": "2026-10-23",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/interest-dividend",
+        "ctaLabel": "일반계좌 이자·배당세 참고 계산",
+        "ctaHeading": "ISA와 비교할 일반계좌의 과세를 살펴보세요",
+        "ctaDescription": "일반계좌 이자·배당소득세를 비교하는 간이 도구입니다. ISA의 상품별 손익통산·비과세 한도·해지 정산 세액·연장 및 재가입 자격은 계산하지 않습니다. ISA 예상세금은 금융회사 자료를 확인하세요.",
+        "related": [
+            ["/blog/sp500-etf-domestic-us-tax.html", "S&P500 ETF 세금 비교 — ISA와 비교할 일반계좌의 과세 구분"],
+            ["/blog/financial-income-comprehensive-tax-20m.html", "금융소득 종합과세 — ISA 가입·연장 자격 확인에 필요한 기준"]
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------

@@ -1,0 +1,66 @@
+<!-- 티스토리 제목 -->
+<!-- ISA 3년 지났는데 해지해야 할까? 손실·만기연장 확인법 -->
+
+<p data-ke-size="size16">ISA로 번 돈이 450만 원이라면 세금은 얼마일까요? 일반형에서 금융회사가 계산한 통산 후 과세대상 순소득이 450만 원이고, 의무가입기간을 채워 적격 해지한다는 가정에서는 <b>24만 7,500원</b>입니다. ‘3년만 지나면 모두 비과세’라고 생각했다면 해지 버튼부터 누르기 전에 확인할 것이 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">핵심은 <b>최초 계약일, 3년 경과일, 실제 계약 만기일</b>을 나눠 보는 것입니다. 손실 난 ETF가 남아 있을 때도 화면의 평가손실과 세금 계산용 손실을 같은 숫자로 취급하면 안 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2026년 10월 23일 확인한 현행 일반 ISA 기준이며, 중개형 계좌를 중심으로 설명합니다. 새 제도 발표안과 현재 시행 규정은 구분합니다. 아래 금액은 금융회사의 과세손익 계산을 마친 단순 예시로, 개별 상품의 조정과 수수료는 제외합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p style="text-align:center;" data-ke-size="size16"><img src="https://taxcalc.co.kr/thumbnails/isa-maturity-renewal-rejoin-tistory.webp" alt="ISA 3년 경과와 실제 만기, 해지 전 확인사항" width="1080" height="1080" /></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">1. 3년이 지난 날이 실제 만기일인가요?</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins><script>     (adsbygoogle = window.adsbygoogle || []).push({});</script></center>
+<p data-ke-size="size16">ISA의 의무가입기간은 3년입니다. 최초 계약 후 3년 전 일반적인 사유로 해지하면 과세특례에 따른 소득세 상당액을 추징하는 문제가 생깁니다. 사망·해외이주 등 법정 특별해지 사유는 별도로 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">그렇다고 3년이 지나자마자 계좌를 닫아야 하는 것은 아닙니다. 예를 들어 2023년 10월 20일 가입하고 실제 만기를 2028년 10월 20일로 설정했다면, 2026년에 3년을 채웠어도 계약 만기는 남아 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">반대로 계약 만기를 처음부터 3년으로 정했다면 만기 연장 신청 기간을 확인해야 합니다. <b>의무가입기간 충족과 만기 처리 완료는 다른 일</b>입니다. 만기 뒤에도 매수·입금이나 세제혜택이 계속된다고 가정하지 마세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">2. 450만 원 이익인데 세금이 0원이 아닌 이유</h2>
+<p data-ke-size="size16">일반형 ISA는 계좌 해지 시 세법상 손익을 통산한 순소득 중 200만 원까지 비과세입니다. 요건을 충족한 서민형·농어민형은 400만 원이며, 해당 한도를 초과하는 금액에는 지방소득세를 포함해 9.9% 분리과세합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>일반형의 통산 후 과세대상 순소득 450만 원</b><br />→ (450만 원 − 200만 원) × 9.9%<br />→ 이 가정의 세액 24만 7,500원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">200만 원은 매년 주어지는 비과세 한도가 아닙니다. 3년 유지했으니 600만 원을 빼거나, 연장 버튼을 눌렀으니 새 한도가 생기는 방식도 아닙니다. 계좌 잔액 전체에 9.9%를 곱하는 계산과도 구분하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">3. 손실 난 ETF가 남아 있다면 평가손익부터 복사하지 마세요</h2>
+<p data-ke-size="size16">ISA는 같은 계좌에서 인정되는 이익과 손실을 통산하지만, 모든 상품의 평가손익을 그대로 합하는 제도는 아닙니다. 국내 상장 해외 ETF는 과표기준가격 등 상품별 계산이 필요하고, 국내 주식형 펀드 손실 등 통산에서 제외되는 경우도 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">증권사에 요청할 자료는 세 가지입니다. <b>현재 세제혜택 대상 과세손익, 매도·환매 후 예상 정산 세금, 해지까지 필요한 결제 일정</b>입니다. 계좌를 해지하면서 매도·환매하지 않고 남기는 상품은 손익통산과 세제혜택 적용이 달라질 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">손실로 정산해 닫은 ISA의 손실을 새로 가입한 ISA의 이익에서 빼지는 않습니다. 그렇다고 손실 계좌를 무조건 유지하라는 뜻은 아닙니다. 앞으로의 수익은 확정되지 않았고 자금 사용 시기와 투자 위험도 다릅니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">4. 연장과 재가입, 무엇을 다시 확인할까요?</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins><script>     (adsbygoogle = window.adsbygoogle || []).push({});</script></center>
+<p data-ke-size="size16"><b>연장:</b> 기존 계약을 이어갑니다. 신청 가능 기간을 실제 이용 금융회사에 확인하고, 가입·연장 요건과 일반형·서민형 등의 판정을 다시 살펴봅니다. 기존 계좌의 과세대상 손익을 이어 확인하는 것이지, 연장 때마다 비과세 한도를 새로 받는 구조는 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>적격 해지 후 재가입:</b> 기존 계좌의 세금을 정산하고 새 계약을 시작합니다. 재가입 자격을 충족해야 하며 새 계좌에는 3년의 의무가입기간을 다시 고려해야 합니다. 이전 계좌의 남은 납입한도나 손실을 새 계좌에 옮기는 것으로 이해하면 안 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">직전 3개 과세기간 중 금융소득종합과세 대상 이력이 있는지 등도 확인하세요. 금융회사를 옮기는 목적이라면 가입기간과 세제혜택을 잇는 <b>ISA 계좌이전</b> 절차부터 비교하는 편이 정확합니다. 이전 가능한 자산과 현금화 여부는 회사별 안내를 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">5. 300만 원만 필요해도 계좌 전체를 해지해야 하나요?</h2>
+<p data-ke-size="size16">계약기간 중 납입원금 범위의 일부 인출이 가능하므로, 현금이 일부 필요하다는 이유만으로 전체 해지를 전제할 필요는 없습니다. 다만 누적 인출액, 예상세금, 보유 상품의 매도·환매 및 결제를 반영한 실제 인출 가능액을 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">납입원금이 1,500만 원이고 이전 인출이 없는 계좌에서 300만 원을 인출하는 경우를 가정해 보겠습니다. 원금 범위라는 확인과 별개로 <b>그 300만 원만큼 새 납입한도가 생기지는 않습니다.</b> 특히 최초 계약 후 3년 전에 납입원금을 초과해 인출하면 중도해지로 보는 규정을 구분해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">현행 일반 ISA의 납입한도는 연 2천만 원, 누적 최대 1억 원이며 미사용 한도 이월이 가능합니다. 인출 가능한 원금과 올해 더 납입할 수 있는 한도는 서로 다른 숫자입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">6. 해지 버튼을 누르기 전 확인 순서</h2>
+<p data-ke-size="size16">① 최초 계약일·3년 경과일·실제 만기일을 확인합니다.<br />② 계좌 유형과 세법상 통산 후 과세손익을 조회합니다.<br />③ 연장 신청 기간·자격·필요 서류를 확인합니다.<br />④ 매도·환매·결제와 해지 가능일을 확인합니다.<br />⑤ 재가입 자격과 새 의무가입기간, 필요한 현금 규모를 비교합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">만기자금을 연금계좌로 옮기려면 60일 기한과 전환 세액공제 요건, 이후 인출 과세를 별도로 확인합니다. 연금계좌 전환이 현금을 자유롭게 쓰는 해지와 같지는 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일반계좌의 이자·배당세와 비교할 때는 아래 계산기를 참고할 수 있습니다. <b>ISA 손익통산·비과세 한도·해지 예상세금·가입자격을 판정하는 계산기는 아닙니다.</b> ISA 최종 세금은 금융회사 자료로 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p style="text-align:center;" data-ke-size="size16"><a href="https://taxcalc.co.kr/#income/interest-dividend" target="_blank" rel="noopener" style="display:inline-block;padding:16px 22px;background:#9c351f;color:#fff;border-radius:10px;text-decoration:none;font-weight:bold;">일반계좌 이자·배당세 참고 계산</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16">ISA와 비교하기 전에 일반계좌에서 국내·미국 상장 ETF의 세금이 어떻게 다른지 확인해 보세요.</p>
+<p data-ke-size="size16">https://kwonriver-carstroy.tistory.com/entry/국내-SP500-ETF-미국상장-250만-원-공제-세금-차이</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">가입·연장 자격을 확인할 때 금융소득종합과세의 기준도 함께 살펴볼 수 있습니다.</p>
+<p data-ke-size="size16">https://kwonriver-carstroy.tistory.com/entry/금융소득-종합과세-계산-이자·배당-2천만원-넘으면-추가세금</p>
+
+<!-- 해시태그 -->
+<!-- ISA만기, ISA해지, ISA재가입, ISA만기연장, 의무가입기간, 중개형ISA, ISA손익통산, ISA비과세, ISA중도인출, 절세계좌 -->
