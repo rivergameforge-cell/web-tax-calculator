@@ -46,6 +46,14 @@ Write as a 30-year tax accountant specializing in economics and practical filing
 - Do not attach legal, tax-law, or official-evidence links to reader-facing Tistory posts, including inline links. Research official sources and retain their URLs and verification evidence in separate local production records. Preserve the calculator CTA and native cards for related Tistory posts; other platforms keep their own source-link rules.
 - Keep every hook factually supported; never trade accuracy for clicks.
 
+## Thumbnail Style
+
+- For future TaxCalc, Tistory, and Naver thumbnails, follow the user-approved [illustrated ISA thumbnail](https://taxcalc.co.kr/thumbnails/isa-maturity-renewal-rejoin-tistory-v2.webp): a prominent subject illustration, depth, strong contrast, and a very short, very large Korean headline. The subject and headline must remain recognizable at roughly 150-170 px wide in a post listing.
+- Do not use explanatory text cards, tables, checklists, multi-panel comparisons, or dense small-print infographics as thumbnails. Put detailed explanations in the article body instead.
+- Create these raster visuals with the built-in image generation tool. Adapt the subject, wording, palette, and composition to the current topic and platform; the approved ISA props and wording are a style reference, not a reusable template for unrelated topics.
+- Keep platform-specific concepts and WebP sizes: website 1200x630, Tistory 1080x1080, Naver 1200x720. Keep Naver's headline and main subject within the central 90% safe area.
+- When replacing a Tistory thumbnail, check both the body image and the separately selected representative image. Verify the published post and its small listing thumbnail before reporting completion.
+
 ## Uploaded Thumbnail Cleanup
 
 - After verifying upload or deployment, remove completed thumbnail images from the local thumbnail working folder; keep unverified images and reusable HTML design sources.
@@ -89,3 +97,4 @@ Confirm before delivery:
 5. Naver has friendly scan-friendly prose, line breaks at sentence-ending periods and prose commas without splitting numbers or URLs, and 20 to 30 relevant tags.
 6. No persona claims, unsupported guarantees, or misleading hooks remain.
 7. Reader-facing amounts use `만 원`, and the final related-post section links only to verified published posts on that platform.
+8. Thumbnails use the approved illustration-led style, remain readable at listing size, and match the published representative image where applicable.
