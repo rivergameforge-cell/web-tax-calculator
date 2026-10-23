@@ -22,20 +22,8 @@ for x,n,h,sub in [(72,'01','기존 계약','실제 만기일 확인'),(434,'02',
 text(d,(75,558),'의무가입기간 충족 ≠ 반드시 해지',26,'#176A86',True)
 im.save(OUT/'isa-maturity-renewal-rejoin.webp','WEBP',quality=94)
 
-im=Image.new('RGB',(1080,1080),'#1C2330'); d=ImageDraw.Draw(im)
-d.rounded_rectangle((58,58,1022,1022),28,outline='#596273',width=2)
-d.rounded_rectangle((97,95,570,155),18,fill='#A83824')
-text(d,(121,106),'ISA · 해지 전 확인',28,'#FFFFFF',True)
-text(d,(95,225),'3년 지났는데',83,'#FFFFFF',True)
-text(d,(95,343),'해지해야 할까?',79,'#FFCF75',True)
-text(d,(100,482),'손실 · 만기일 · 연장 자격',36,'#D4DEEB')
-for y,a,b in [(599,'3년 경과','의무가입기간 충족'),(723,'실제 만기','계약 종료일 확인')]:
-    d.rounded_rectangle((98,y,982,y+100),18,fill='#303B4E')
-    text(d,(125,y+25),a,32,'#FFCF75',True)
-    text(d,(424,y+26),b,31,'#FFFFFF',True)
-text(d,(102,897),'해지·재가입 전, 계좌 날짜부터',32,'#FFFFFF',True)
-text(d,(104,952),'평가손익과 세금 계산용 손익은 별도',25,'#BFCBDC')
-im.save(OUT/'isa-maturity-renewal-rejoin-tistory.webp','WEBP',quality=94)
+# Tistory's replacement thumbnail is generated with the built-in image tool.
+# Do not recreate the retired dense text-card design. See tistory-thumbnail-v2.md.
 
 im=Image.new('RGB',(1200,720),'#FFF7ED'); d=ImageDraw.Draw(im)
 d.ellipse((864,-100,1330,355),fill='#F2DEC7')
@@ -49,4 +37,4 @@ for x,h,body,col in [(80,'날짜','3년 경과일과 만기일','#E1ECDD'),(638,
     text(d,(x+32,535),'서로 나눠 확인해요',25,'#606A60')
 text(d,(82,648),'원금 일부 인출과 계좌 해지도 다릅니다',27,'#6C6758')
 im.save(OUT/'isa-maturity-renewal-rejoin-naver.webp','WEBP',quality=94)
-print('3 platform thumbnails created')
+print('Website and Naver thumbnails created; generate Tistory separately.')
