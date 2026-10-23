@@ -110,6 +110,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://taxcalc.co.kr/blog/gohyang-donation-tax-credit.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://taxcalc.co.kr/blog/housing-subscription-income-deduction.html</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -512,7 +518,7 @@
   </url>
   <url>
     <loc>https://taxcalc.co.kr/income/employment.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

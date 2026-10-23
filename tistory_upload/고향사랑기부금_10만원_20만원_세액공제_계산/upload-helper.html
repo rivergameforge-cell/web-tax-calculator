@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티스토리 업로드 도우미 - 고향사랑기부금 20만 원 내면 얼마 환급? 답례품 6만 원과 구분하세요</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 24px;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 20px;
+    }
+    section {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 0 0 12px; }
+    label { display: block; font-size: 13px; color: #6b7280; margin-bottom: 8px; }
+    textarea, input {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      background: #f9fafb;
+    }
+    textarea { min-height: 320px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+    button, a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #2563eb;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 8px 8px 0 0;
+    }
+    button.secondary { background: #475569; }
+    .hint { color: #64748b; font-size: 13px; margin: 8px 0 0; }
+    .side img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      display: block;
+    }
+    .no-image {
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 28px 12px;
+      text-align: center;
+      color: #64748b;
+    }
+    .checklist li { margin-bottom: 8px; }
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>티스토리 업로드 도우미</h1>
+    <div>고향사랑기부금 20만 원을 내면 20만 4,000원을 돌려받는다는 안내를 보셨나요? 여기에는 세액공제 14만 4,000원과 답례품 최대 6만 원 상당 이 함께 들어 있습니다. 현금 20만 4,000원이 통장에 입금된다는 뜻이 아닙니다.   2026년부터 달라진 공제율만 보고 기부 금액…</div>
+  </header>
+  <main>
+    <div>
+      <section>
+        <h2>1. 제목</h2>
+        <label>티스토리 제목 입력란에 붙여넣기</label>
+        <input id="title" value="고향사랑기부금 20만 원 내면 얼마 환급? 답례품 6만 원과 구분하세요">
+        <button onclick="copyValue('title')">제목 복사</button>
+      </section>
+
+      <section>
+        <h2>2. 본문 HTML</h2>
+        <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
+        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;고향사랑기부금 20만 원을 내면 20만 4,000원을 돌려받는다는 안내를 보셨나요? 여기에는 &lt;b&gt;세액공제 14만 4,000원과 답례품 최대 6만 원 상당&lt;/b&gt;이 함께 들어 있습니다. 현금 20만 4,000원이 통장에 입금된다는 뜻이 아닙니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;2026년부터 달라진 공제율만 보고 기부 금액을 늘리기 전에, 올해 공제할 세금이 있는지 먼저 확인하세요. 이 글은 &lt;b&gt;2026년 10월 23일 확인한 현행 규정&lt;/b&gt;에 따라 사업소득이 없는 일반 근로자의 적격 기부를 설명합니다. 아래 계산은 소득세·지방소득세 공제 여력이 충분하다는 가정입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;!-- 썸네일: thumbnails/gohyang-donation-tax-credit-tistory.webp --&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;[썸네일 업로드 위치]&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;1. 20만 원 전체에 44%를 곱하지 않습니다&lt;/h2&gt;
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;2026년 일반적인 고향사랑기부금은 지방소득세를 포함해 &lt;b&gt;10만 원까지 전액, 10만 원 초과~20만 원 부분은 44%, 20만 원 초과 부분은 16.5%&lt;/b&gt;를 적용합니다. 올해 높아진 것은 두 번째 구간입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;20만 원 기부 가정&lt;/b&gt;&lt;br /&gt;첫 10만 원: 10만 원&lt;br /&gt;다음 10만 원: 10만 원 × 44% = 4만 4,000원&lt;br /&gt;합계 공제 계산액: 14만 4,000원&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;특별재난지역은 선포일부터 3개월 이내 적격 기부 등 요건을 충족하면 20만 원 초과 부분에 33%가 적용될 수 있습니다. 일반지역 표와 섞지 말고 선포 지역·기부일을 별도로 확인합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;2. 10만 원에서 20만 원으로 늘리면 무엇이 달라질까요?&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;공제를 충분히 적용받는다는 전제에서 10만 원을 기부하면 세금 감소 계산액은 10만 원, 답례품 한도는 3만 원 상당입니다. 20만 원이면 세금 감소 계산액은 14만 4,000원, 답례품 한도는 6만 원 상당입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;즉, 추가로 낸 10만 원에 대해 세금은 4만 4,000원 줄고, 답례품 한도는 3만 원 늘어납니다. &lt;b&gt;추가 현금 지출 10만 원이 그대로 환급되는 것은 아닙니다.&lt;/b&gt; 필요한 답례품인지와 기부 예산을 함께 판단하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;20만 원 기부에서 세금 감소만 빼면 현금 부담은 5만 6,000원입니다. 답례품을 최대 한도로 받더라도 그것은 현물·상품권 등의 별도 혜택입니다. 답례품 가치를 현금 환급액처럼 더해 ‘무조건 돈을 번다’고 계산하지 마세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;3. 월급에서 세금을 냈어도 전액 공제는 확인이 필요합니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;급여명세서의 원천징수액은 미리 낸 세금입니다. 최종 세금은 올해 소득과 각종 감면·공제를 반영해 정해집니다. 미리 낸 세금이 많다는 사실만으로 기부금 세액공제를 전부 쓸 수 있다고 단정할 수 없습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이 기부를 반영하기 전부터 적법한 정산 결과 소득세·지방소득세가 모두 0원이라면, 기부했다고 별도의 세금 환급 10만 원이 생기지는 않습니다. 공제 여력이 부족하면 위 계산액보다 실제 혜택이 줄 수 있고, &lt;b&gt;사용하지 못한 고향사랑기부금 공제는 다음 해로 이월되지 않습니다.&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;지난해 결정세액은 참고로 보되 올해 급여와 감면이 바뀌었다면 다시 확인하세요. 특히 중소기업 취업자 감면 등을 받고 있다면 회사 담당자에게 올해 예상 정산을 확인하는 편이 좋습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;4. 두 지역에 10만 원씩 내도 첫 구간은 한 번입니다&lt;/h2&gt;
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;같은 사람이 A지역에 10만 원, B지역에 10만 원을 기부하면 연간 합계는 20만 원입니다. 지역마다 10만 원 전액공제를 새로 받는 것이 아니어서, 앞의 가정에서는 합계 14만 4,000원을 계산합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;여러 지자체를 합친 1인당 연간 기부한도는 2천만 원입니다. 기부는 본인 명의로 하고 세액공제도 본인의 자료로 확인합니다. 배우자가 낸 고향사랑기부금을 세금이 많은 다른 배우자의 연말정산에 옮겨 넣을 수는 없습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;5. 고향보다 주민등록 주소지가 먼저입니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;태어난 고향에만 기부할 필요는 없습니다. 다만 주민등록상 주소지의 광역·기초 지자체는 제외합니다. 서울 중구에 주소를 둔 사람이라면 서울특별시와 서울 중구를 제외한 적격 지자체를 고르는 방식입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;답례품을 원한다면 기부 완료 후 포인트와 제공 여부를 확인하고 직접 주문 절차를 챙기세요. 품목별 조건·배송 안내도 확인합니다. 답례품 신청과 세액공제 반영은 서로 다른 확인사항입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;6. 올해 기부, 내년 정산 자료로 확인합니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;2026년 중 실제 지출한 적격 기부금은 통상 2027년 회사 연말정산에서 확인합니다. 올해 기부 완료일과 영수증을 보관하고, 홈택스·회사 자료에 금액이 제대로 들어왔는지 대조하세요. 조회가 누락됐다면 발급기관의 영수증 등 증빙을 보완합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;연말 마지막 날에는 서비스 운영시간과 결제 지연을 고려하세요. 기부 신청 화면만 열었다고 납부가 완료되는 것은 아닙니다. 사업소득이 있는 개인사업자·프리랜서는 10만 원 초과분의 필요경비 처리 등 별도 규정이 있어 이 근로자 계산표를 그대로 쓰지 않습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;7. 기부 버튼 전, 이 네 가지만 확인하세요&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;① 올해 다른 지역 기부까지 합친 본인 명의 총액&lt;br /&gt;② 주소지 제한과 적격 기부 경로&lt;br /&gt;③ 올해 예상 세액과 감면·공제 여력&lt;br /&gt;④ 답례품 필요 여부와 기부 완료·영수증 확인&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;세금 구조를 참고하려면 아래 근로소득세 계산기를 이용할 수 있습니다. 다만 이 계산기의 일반 기부금 칸은 고향사랑기부금의 첫 10만 원 전액·다음 구간 44%를 지원하지 않습니다. &lt;b&gt;이번 기부금이나 공제액을 그 칸에 입력하지 말고&lt;/b&gt;, 최종 반영은 회사·홈택스에서 확인하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a style=&quot;display:inline-block;padding:14px 22px;background:#176447;color:#fff;border-radius:8px;text-decoration:none;font-weight:bold;&quot; href=&quot;https://taxcalc.co.kr/#income/employment&quot;&gt;근로소득세 기본 구조 참고하기&lt;/a&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;함께 읽으면 좋은 글&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;올해 세액을 확인할 때 감면 적용 여부도 같이 살펴볼 수 있습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;https://kwonriver-carstroy.tistory.com/entry/청년-소득세-90-감면-중소기업-신청서·이직·경정청구-확인법&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;퇴사한 해라면 원천징수영수증의 결정세액과 추가 환급을 구분하는 데 도움이 됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;https://kwonriver-carstroy.tistory.com/entry/퇴사-후-연말정산-환급-원천징수영수증-결정세액&lt;/p&gt;</textarea>
+        <button onclick="copyValue('body')">본문 복사</button>
+        <p class="hint">이미지는 티스토리에 직접 업로드한 뒤 서론 다음, 첫 소제목 앞에 배치하세요. HTML을 붙여넣을 때도 업로드한 이미지 위치를 유지하세요.</p>
+      </section>
+
+      <section>
+        <h2>3. 태그</h2>
+        <label>티스토리 태그 입력란에 붙여넣기</label>
+        <input id="tags" value="고향사랑기부금, 고향사랑기부제, 기부금세액공제, 고향사랑답례품, 연말정산, 결정세액, 세액공제, 직장인절세, 기부금영수증, 연말정산준비">
+        <button onclick="copyValue('tags')">태그 복사</button>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>썸네일</h2>
+        <img src="file:///C:/Users/Kwonriver/source/web-tax-calculator/thumbnails/gohyang-donation-tax-credit-tistory.webp" alt="thumbnail preview">
+        <label style="margin-top:12px">로컬 이미지 경로</label>
+        <input id="imagePath" value="C:\Users\Kwonriver\source\web-tax-calculator\thumbnails\gohyang-donation-tax-credit-tistory.webp">
+        <button onclick="copyValue('imagePath')">이미지 경로 복사</button>
+        <p class="hint">gohyang-donation-tax-credit-tistory.webp</p>
+      </section>
+
+      <section>
+        <h2>업로드 순서</h2>
+        <ol class="checklist">
+          <li>티스토리 글쓰기 화면을 연다.</li>
+          <li>제목을 복사해 입력한다.</li>
+          <li>썸네일 이미지를 업로드하고 대표 이미지로 지정한다.</li>
+          <li>에디터를 HTML 모드로 전환한다.</li>
+          <li>본문 HTML을 붙여넣고 서론 → 업로드한 썸네일 → 첫 소제목 순서를 확인한다.</li>
+          <li>태그를 붙여넣고 임시저장한다.</li>
+        </ol>
+        <a class="button" href="https://www.tistory.com/" target="_blank" rel="noopener">티스토리 열기</a>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    async function copyValue(id) {
+      const el = document.getElementById(id);
+      await navigator.clipboard.writeText(el.value);
+      const old = document.title;
+      document.title = '복사 완료';
+      setTimeout(() => document.title = old, 900);
+    }
+  </script>
+</body>
+</html>

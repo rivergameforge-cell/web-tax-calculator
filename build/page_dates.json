@@ -69,6 +69,11 @@
     "modified": "2026-10-22",
     "published": "2026-05-20"
   },
+  "blog/gohyang-donation-tax-credit.html": {
+    "digest": "05a337178982b7423e29f3f1e86474b03cdff0aa6557e59ca131f35b873f9a8e",
+    "modified": "2026-10-23",
+    "published": "2026-10-23"
+  },
   "blog/housing-subscription-income-deduction.html": {
     "digest": "5222a835d515667ce606718c4c0b9dc3a08f5cd0a4d54cab285bddead1ba6108",
     "modified": "2026-10-22",
@@ -80,7 +85,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "afd0e6270da8efae409504764b074ccbb4d1b932a3f9ee17a4f5eec7bb733240",
+    "digest": "3dd2cf0004d2d7cc5ed1744e7a4f30820fde04a4e256cc5d0bcdf35631965fc8",
     "modified": "2026-10-23",
     "published": "2026-05-05"
   },
@@ -320,8 +325,8 @@
     "published": "2026-04-18"
   },
   "income/employment.html": {
-    "digest": "78cf3a6cc940154ca32b50e3657708d89ad1b79cdc4178b7942b086f554fd5af",
-    "modified": "2026-10-16",
+    "digest": "c841110e467ea20da74a4706ace5e544b60e653905a8e6c92a4ca1fd23a9fd08",
+    "modified": "2026-10-23",
     "published": "2026-04-18"
   },
   "income/freelancer.html": {
@@ -390,7 +395,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "e05a4c2ac2c059b2c4d4de5bedadd82eb58ac350221fa3a2c7f4c0ace2c0dfd0",
+    "digest": "beac3d57b9b6dd0f9f07d4f07be21e0f424ab55493fe0c783011c2245fd2e2f9",
     "modified": "2026-10-23",
     "published": "2026-04-02"
   },

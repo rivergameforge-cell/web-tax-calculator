@@ -50,7 +50,8 @@
     "november-income-tax-interim-payment": ["11월 종합소득세 중간예납 계산", "사업자의 중간예납 고지와 추계 신고를 확인하는 데 도움이 됩니다."],
     "yellow-umbrella-income-deduction": ["노란우산 소득공제와 절세효과 계산", "사업자의 납입액 공제와 종합소득세 계산의 관계를 살펴볼 수 있습니다."],
     "vehicle-tax-sale-refund": ["자동차 매도 시 자동차세 연납 환급", "차량을 처분할 때 이전등록일과 자동차세 정산을 확인하는 데 도움이 됩니다."],
-    "foreign-stock-loss-netting": ["해외주식 손익통산과 평가손실 구분", "계좌의 평가손실과 세금 계산에 반영되는 확정손익을 구분해 볼 수 있습니다."]
+    "foreign-stock-loss-netting": ["해외주식 손익통산과 평가손실 구분", "계좌의 평가손실과 세금 계산에 반영되는 확정손익을 구분해 볼 수 있습니다."],
+    "gohyang-donation-tax-credit": ["고향사랑기부금 세액공제와 답례품 비교", "10만 원·20만 원 기부의 세금 감소액과 실제 부담을 구분할 수 있습니다."]
   },
   "links": {
     "severance-pay-guide": ["mid-year-resignation-tax-settlement", "irp-why-start-young"],
@@ -103,6 +104,7 @@
     "november-income-tax-interim-payment": ["income-tax-penalty-late-filing", "yellow-umbrella-income-deduction"],
     "yellow-umbrella-income-deduction": ["november-income-tax-interim-payment", "income-tax-penalty-late-filing"],
     "vehicle-tax-sale-refund": ["vehicle-tax-overdue", "vehicle-acquisition-tax-guide"],
-    "foreign-stock-loss-netting": ["foreign-stock-capital-gains-deduction", "domestic-stock-capital-gains-major-shareholder"]
+    "foreign-stock-loss-netting": ["foreign-stock-capital-gains-deduction", "domestic-stock-capital-gains-major-shareholder"],
+    "gohyang-donation-tax-credit": ["sme-employee-income-tax-reduction", "mid-year-resignation-tax-settlement"]
   }
 }

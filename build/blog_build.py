@@ -902,6 +902,24 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "고향사랑기부금_10만원_20만원_세액공제_계산",
+        "slug": "gohyang-donation-tax-credit",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-23",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "급여와 기납부세액 구조 참고",
+        "ctaHeading": "고향사랑기부금은 별도 정산 자료로 확인하세요",
+        "ctaDescription": "이 간이 계산기의 일반 기부금 칸은 고향사랑기부금의 첫 10만 원 전액·다음 구간 44%를 지원하지 않습니다. 이번 기부금이나 공제액을 입력하지 말고, 실제 반영과 최종 환급액은 회사·홈택스에서 확인하세요.",
+        "related": [
+            ["/blog/sme-employee-income-tax-reduction.html", "중소기업 소득세 감면 — 올해 예상 세액을 확인할 때 함께 볼 조건"],
+            ["/blog/mid-year-resignation-tax-settlement.html", "중도퇴사 연말정산 — 결정세액과 추가 환급의 차이"]
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------
