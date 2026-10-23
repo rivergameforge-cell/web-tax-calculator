@@ -54,10 +54,10 @@
 <p data-ke-size="size16">&nbsp;</p>
 <h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
 <p data-ke-size="size16">올해 세액을 확인할 때 감면 적용 여부도 같이 살펴볼 수 있습니다.</p>
-<p data-ke-size="size16">https://kwonriver-carstroy.tistory.com/entry/청년-소득세-90-감면-중소기업-신청서·이직·경정청구-확인법</p>
+<p data-ke-size="size16">https://kwonriver-carstroy.tistory.com/1034</p>
 <p data-ke-size="size16">&nbsp;</p>
 <p data-ke-size="size16">퇴사한 해라면 원천징수영수증의 결정세액과 추가 환급을 구분하는 데 도움이 됩니다.</p>
-<p data-ke-size="size16">https://kwonriver-carstroy.tistory.com/entry/퇴사-후-연말정산-환급-원천징수영수증-결정세액</p>
+<p data-ke-size="size16">https://kwonriver-carstroy.tistory.com/1029</p>
 
 <!-- 해시태그 -->
 <!-- 고향사랑기부금, 고향사랑기부제, 기부금세액공제, 고향사랑답례품, 연말정산, 결정세액, 세액공제, 직장인절세, 기부금영수증, 연말정산준비 -->
