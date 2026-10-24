@@ -920,6 +920,24 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "연금저축_IRP_손실_세액공제_납입액_기준",
+        "slug": "pension-loss-tax-credit",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-24",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/pension-saving",
+        "ctaLabel": "적격 납입액으로 연금 공제 계산",
+        "ctaHeading": "평가잔액 대신 올해 납입액을 입력하세요",
+        "ctaDescription": "근로소득만 있는 경우의 일반 한도와 비율로 계산합니다. 실제 적용 세액과 최종 환급액, 인출·해지 세금, ISA 만기 전환 등 특별한 추가 한도는 반영하지 않으므로 금융회사·회사 정산 자료를 함께 확인하세요.",
+        "related": [
+            ["/blog/isa-maturity-renewal-rejoin.html", "ISA 만기와 손실 계좌의 해지·연장 확인"],
+            ["/blog/mid-year-resignation-tax-settlement.html", "중도퇴사 연말정산 — 결정세액과 추가 환급 구분"]
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------

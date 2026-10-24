@@ -85,8 +85,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "3dd2cf0004d2d7cc5ed1744e7a4f30820fde04a4e256cc5d0bcdf35631965fc8",
-    "modified": "2026-10-23",
+    "digest": "df0026247fcc1594411486fbd8800859d69d5830e7a5c457ec9c6850a273aa01",
+    "modified": "2026-10-24",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -183,6 +183,11 @@
     "digest": "b43cd3e14b94e9d3c307087001921aa8da13b267ab46d5dd521af0b40859e927",
     "modified": "2026-10-22",
     "published": "2026-05-19"
+  },
+  "blog/pension-loss-tax-credit.html": {
+    "digest": "81f5152d5d0f7064277bd8af8fc7b42ccc608a8dda26ec2845beaf0d60ffae79",
+    "modified": "2026-10-24",
+    "published": "2026-10-24"
   },
   "blog/pension-saving-irp-credit.html": {
     "digest": "395f03e351b29929962d6a37e27e33dd6221b5147f365a9e64edf82ee68ef879",
@@ -365,8 +370,8 @@
     "published": "2026-04-18"
   },
   "income/pension-saving.html": {
-    "digest": "eb7c18ddd1ace13d677cabbb91fed5d0151582da8c807fd2b54cae5128762f3a",
-    "modified": "2026-10-16",
+    "digest": "be742db865db0d091252bcc42d584a055ff68309837c8a3db23a3248e411aacc",
+    "modified": "2026-10-24",
     "published": "2026-04-18"
   },
   "income/rent-credit.html": {
@@ -395,8 +400,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "beac3d57b9b6dd0f9f07d4f07be21e0f424ab55493fe0c783011c2245fd2e2f9",
-    "modified": "2026-10-23",
+    "digest": "2d8de34049eeee9d916598f75ee0013cdfef5f4b5ee5cf1e1b3cb2665b2f7fa3",
+    "modified": "2026-10-24",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
