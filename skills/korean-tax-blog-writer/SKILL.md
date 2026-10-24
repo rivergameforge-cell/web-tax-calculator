@@ -71,6 +71,9 @@ Write as a 20-year economics blogger who is knowledgeable, friendly, and natural
 - Add light situational humor or a warm aside where natural. Never joke about financial hardship, penalties, or the reader's mistake.
 - Avoid repeated commands, stiff textbook prose, forced slang, and excessive exclamation marks.
 - Close the main explanation with a practical checklist and one natural calculator link, then add the same-platform related-post footer.
+- Use the calculator's verified, hash-free canonical HTML URL in Naver manuscripts and editor input, for example `https://taxcalc.co.kr/income/employment.html`, rather than `https://taxcalc.co.kr/#income/employment`. Do not merely strip `#` or truncate the fragment to produce a guessed URL or the homepage. Check the actual public destination and canonical/OG metadata.
+- Paste that calculator URL in its own paragraph and press Enter to create Naver's native link-preview card. Verify the rendered card and its supplied title, description, and image; do not count a plain link as complete. Keep the same-platform related-post cards as well.
+- Do not include source/reference sections or inline evidence links in reader-facing Naver manuscripts or published posts. Continue official-source research and preserve source URLs and verification evidence only in separate local production records. Calculator CTA and related Naver post cards remain part of the article.
 - Supply three title candidates and 20 to 30 relevant hashtags using core, long-tail, occupation, and life-situation keywords.
 
 ## Differentiate Platforms
@@ -94,7 +97,7 @@ Confirm before delivery:
 2. Calculations reproduce correctly and state assumptions.
 3. Platform titles, openings, examples, and CTAs are genuinely different.
 4. Tistory markup and ads match repository rules.
-5. Naver has friendly scan-friendly prose, line breaks at sentence-ending periods and prose commas without splitting numbers or URLs, and 20 to 30 relevant tags.
+5. Naver has friendly scan-friendly prose, line breaks at sentence-ending periods and prose commas without splitting numbers or URLs, 20 to 30 relevant tags, a verified hash-free calculator URL with a native preview card, and no reader-facing source/reference section or evidence links.
 6. No persona claims, unsupported guarantees, or misleading hooks remain.
 7. Reader-facing amounts use `만 원`, and the final related-post section links only to verified published posts on that platform.
 8. Thumbnails use the approved illustration-led style, remain readable at listing size, and match the published representative image where applicable.
