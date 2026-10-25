@@ -112,19 +112,7 @@
 같은 일당으로 일했다면 아래 계산기에서 매일 지급과 일괄 지급을 바꿔 비교해볼 수 있어요.
 사회보험료와 일용근로자 해당 여부는 자동 판단하지 않는 예상 계산이니, 결과를 급여명세서와 나란히 놓고 참고해보세요.
 
-https://taxcalc.co.kr/#income/daily-worker
-
-[출처 참고]
-2026년 10월 14일 확인. 아래 공식 자료의 현행 기준을 대조했어요.
-국세청 일용근로소득: 15만원 공제, 6%·55%, 소액부징수와 과세 종료
-https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7863&mi=6427
-소득세법 시행령 제20조: 일용근로자의 범위
-https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1031870361
-소득세법 제86조: 원천징수 소득세 1,000원 미만 소액부징수
-https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1029626419
-지방세법 제103조의13 및 지방회계법 제55조: 지방소득세 10%와 끝수 처리
-https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031061107
-https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1033382405
+https://taxcalc.co.kr/income/daily-worker.html
 
 [네이버 태그]
 #일용직소득세 #일용근로소득 #일당세금 #일당15만원 #일당20만원 #일당18만원 #일용직세금계산 #15만원공제 #소액부징수 #원천징수 #지방소득세 #급여명세서 #알바비 #알바세금 #단기알바 #단기근로 #일용근로자 #건설일용직 #일급계산 #근무일수 #주급 #일괄지급 #실수령액확인 #사회보험료 #사업소득구분 #연말정산대상

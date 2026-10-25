@@ -153,18 +153,6 @@ https://taxcalc.co.kr/stocks/foreign.html
 세액이 0원인지와 신고대상인지는 구분하고,
 연말 거래는 주문일뿐 아니라 결제일·귀속연도도 확인해 주세요.
 
-[출처 참고]
-2026년 10월 22일 확인.
-국회예산정책처 「2026 대한민국 조세」: 국내·국외 상장 ETF 소득 분류 비교.
-https://www.nabo.go.kr/board/file/down.do?fid=33319156
-삼성자산운용 ETF 세금 안내: 과표기준가격과 원천징수 계산.
-https://www.samsungfund.com/etf/insight/guide/view05.do
-국세청 주식 세액계산요령: 과세대상 주식 손익통산과 기본공제.
-https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=8800&mi=12274
-국세청 서면-2022-법규재산-5398: 국내 ETF 배당소득과 해외 ETF 양도손실 구분.
-https://taxlaw.nts.go.kr/qt/USEQTA002P.do?ntstDcmId=200000000000004867
-삼성자산운용 ISA 안내 및 국세청 국외주식 신고납부기한도 함께 확인했습니다.
-
 함께 읽으면 좋은 글
 
 평가손실과 실제 매도손실이 세금에서 어떻게 다른지 먼저 살펴보면 도움이 돼요.

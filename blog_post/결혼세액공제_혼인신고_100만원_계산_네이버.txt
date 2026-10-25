@@ -120,7 +120,7 @@
 대략적인 세금 구조를 먼저 보고 싶다면 아래 계산기로 흐름을 확인해 볼 수 있습니다.
 
 종합소득세 계산기
-https://taxcalc.co.kr/#income/comprehensive
+https://taxcalc.co.kr/income/comprehensive.html
 
 신혼부부라면 결혼세액공제 하나만 보기보다 월세, 신용카드, 연금저축 같은 항목을 같이 놓고 보는 게 좋습니다.
 
@@ -134,15 +134,6 @@ https://taxcalc.co.kr/#income/comprehensive
 부부 합산 최대 100만원이라는 말은 매력적이지만, 실제로는 각자 50만원씩 적용되는 구조라는 점을 꼭 기억해야 합니다.
 
 올해 혼인신고를 했거나 2026년 안에 혼인신고를 계획하고 있다면 연말정산 체크리스트에 결혼세액공제를 꼭 넣어두세요.
-
-
-[출처 참고]
-
-국세청 신혼부부를 위한 연말정산 체크 포인트
-https://www.nts.go.kr/webtv/na/ntt/selectNttInfo.do?mi=10675&nttSn=1340311
-
-정책브리핑 자주 묻는 연말정산 ⑧ 결혼 세액공제
-https://www.korea.kr/news/policyNewsView.do?newsId=148936697
 
 
 [네이버 태그]

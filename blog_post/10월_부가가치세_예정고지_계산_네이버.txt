@@ -113,21 +113,10 @@
 5. 실제 납부기한과 신고 후 고지 처리 상태 확인하기
 
 숫자가 복잡하게 느껴지면 먼저 거래 금액에 들어 있는 부가세와 공급가액부터 나눠보세요. 세금계산기의 부가세 계산 기능을 참고할 수 있습니다.
-https://taxcalc.co.kr/#income/vat
+https://taxcalc.co.kr/income/vat.html
 
 이 계산기는 거래 금액 확인용이며 예정고지 취소 가능 여부를 자동으로 판정하지는 않아요. 최종 신고 판단은 고지 내역과 실제 자료를 기준으로 확인해주세요.
 
-
-[출처 참고]
-국세청 「부가가치세 개요」 및 「신고납부기한」
-https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7693&mi=2272
-https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7694&mi=2273
-부가가치세법 제48조, 부가가치세법 시행령 제90조
-https://www.law.go.kr/법령/부가가치세법/제48조
-https://www.law.go.kr/법령/부가가치세법시행령/제90조
-국세청 2026년 10월 세무일정
-https://www.nts.go.kr/nts/ad/taxSchdul/selectList.do?mi=135747&taxYear=2026&taxMonth=10
-확인일: 2026년 10월 1일
 
 [네이버 태그]
 #부가가치세 #부가세 #10월부가세 #부가세예정고지 #예정고지 #예정신고 #부가세예정신고 #예정고지계산 #예정고지대상 #예정고지50만원 #부가세납부기한 #매출감소 #사업부진 #공급가액 #매입세액 #개인사업자 #일반과세자 #소규모법인 #자영업자 #소상공인 #가게운영 #사업자세금 #홈택스 #부가세정산 #부가세계산

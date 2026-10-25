@@ -141,7 +141,7 @@
 본세, 신고 유형, 납부지연일수, 미납세액을 입력하면 예상 가산세를 계산할 수 있습니다.
 
 종합소득세 가산세 계산기
-https://taxcalc.co.kr/#income/penalty
+https://taxcalc.co.kr/income/penalty.html
 
 신고 기한을 놓쳤다면 오늘 신고했을 때와 한 달 뒤 신고했을 때의 차이를 비교해 보는 것도 좋습니다.
 
@@ -159,12 +159,6 @@ https://taxcalc.co.kr/#income/penalty
 특히 신고 기한을 놓친 지 얼마 되지 않았다면 바로 신고하는 것이 가장 중요합니다.
 
 늦었다고 그냥 두면 가산세는 계속 늘어납니다.
-
-
-[출처 참고]
-
-국세청 가산세 안내
-https://www.nts.go.kr/gmt/cm/cntnts/cntntsView.do?cntntsId=239059&mi=41010
 
 
 [네이버 태그]

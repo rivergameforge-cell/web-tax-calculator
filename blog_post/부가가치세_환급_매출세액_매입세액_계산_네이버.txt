@@ -89,7 +89,7 @@
 신고 전에 매출과 매입 금액을 넣어 납부인지 환급인지 먼저 가늠해볼 수 있어요.
 
 부가가치세 계산기
-https://taxcalc.co.kr/#income/vat
+https://taxcalc.co.kr/income/vat.html
 
 계산기 결과는 준비용 예상치로 봐주세요. 실제 신고서에는 예정고지세액이나 각종 공제, 불공제 매입세액, 가산세 등이 함께 반영될 수 있습니다.
 
@@ -101,18 +101,6 @@ https://taxcalc.co.kr/#income/vat
 일반과세자인지 확인하고, 사업과 관련된 지출인지, 증빙이 제대로 준비됐는지를 하나씩 살펴보면 환급 가능한 금액의 윤곽이 보입니다.
 
 무엇보다 ‘돈을 많이 썼다’가 아니라 ‘공제 가능한 매입세액이 매출세액보다 크다’가 환급의 기준이라는 점만 기억해두세요.
-
-
-[출처 참고]
-
-국세청 2026년 제1기 부가가치세 확정신고 안내
-https://nts.go.kr/nts/na/ntt/selectNttInfo.do?bbsId=1028&mi=2201&nttSn=1352987
-
-국세청 일반과세자·간이과세자 세액계산 방법
-https://i.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7806&mi=2486
-
-국가법령정보센터 부가가치세법 제59조
-https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1017629513
 
 
 [네이버 태그]

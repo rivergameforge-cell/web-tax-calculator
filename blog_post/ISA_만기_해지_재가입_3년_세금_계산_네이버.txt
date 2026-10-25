@@ -112,12 +112,7 @@ ISA에는 3년의 의무가입기간이 있어요.
 ISA의 손익통산이나 비과세 한도,
 해지 세금과 가입자격을 계산하는 도구는 아닙니다.
 ISA 예상세금은 증권사의 과세자료로 확인해주세요.
-https://taxcalc.co.kr/#income/interest-dividend
-
-[출처 참고]
-현행 조세특례제한법 제91조의18과 금융회사 중개형 ISA 상품설명서의 가입기간·해지·인출·손익통산 안내를 대조했습니다.
-https://law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1021859593
-https://www.myasset.com/myasset/static/agreement/isa_prdDsc.pdf
+https://taxcalc.co.kr/income/interest-dividend.html
 
 ■ 함께 읽으면 좋은 글
 

@@ -109,7 +109,7 @@
 공시가격과 주택 수를 알고 있으면 예상 재산세를 먼저 계산해볼 수 있어요.
 
 재산세 계산기
-https://taxcalc.co.kr/#real-estate/property-tax
+https://taxcalc.co.kr/real-estate/property-tax.html
 
 계산 결과는 자금 계획을 세우는 참고용으로 활용해주세요. 실제 고지액은 지방자치단체의 과세자료와 감면 적용 여부에 따라 달라질 수 있습니다.
 
@@ -121,21 +121,6 @@ https://taxcalc.co.kr/#real-estate/property-tax
 그러니 고지서를 보자마자 이중과세라고 걱정하기보다, 7월 고지서와 나란히 놓고 과세 대상과 연세액을 먼저 비교해보세요.
 
 주택분인지 토지분인지, 6월 1일 현재 소유자가 누구인지까지 확인하면 왜 고지서가 왔는지 훨씬 선명하게 보일 거예요.
-
-
-[출처 참고]
-
-국가법령정보센터 지방세법 제115조
-https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1022463503
-
-국가법령정보센터 지방세법 시행령 제109조
-https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0109&lsiSeq=287223&urlMode=lsScJoRltInfoR
-
-국가법령정보센터 지방세법 제111조의2
-https://law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1033362253
-
-행정안전부 재산세 부과 설명
-https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=59645
 
 
 [네이버 태그]

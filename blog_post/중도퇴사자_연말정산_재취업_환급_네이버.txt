@@ -120,22 +120,7 @@
 
 기본적인 근로소득세 계산 구조가 궁금하면 아래 계산기를 참고해 보세요.
 다만 퇴사 후 확정 환급액은 계산기 숫자 하나가 아니라 실제 정산 자료와 공제 증빙으로 확인하는 것이 맞습니다.
-https://taxcalc.co.kr/#income/employment
-
-[출처 참고]
-2026년 10월 5일 확인 기준입니다. 개인별 다른 소득과 공제 요건에 따라 결과는 달라질 수 있어요.
-
-국가법령정보센터 소득세법 제134조: 중도퇴사 정산 시점
-https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1032883741
-
-국가법령정보센터 소득세법 제138조: 같은 해 재취업자의 근로소득 합산
-https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1032883555
-
-국세청 종합소득세 개요: 신고 기간과 신고 제외 대상
-https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7664&mi=2224
-
-국세청 특별세액공제: 중도퇴사자의 근로제공기간 지출
-https://g.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7874&mi=6595
+https://taxcalc.co.kr/income/employment.html
 
 [네이버 태그]
 #중도퇴사자연말정산 #퇴사후연말정산 #퇴사자연말정산 #연말정산환급 #연말정산누락공제 #원천징수영수증 #근로소득원천징수영수증 #결정세액 #차감징수세액 #총급여 #근로소득세 #종합소득세 #5월종합소득세 #종합소득세신고 #재취업연말정산 #이직연말정산 #미취업자연말정산 #2026년귀속연말정산 #퇴사자세금 #의료비세액공제 #교육비세액공제 #보험료세액공제 #지방소득세신고 #직장인세금 #퇴사준비

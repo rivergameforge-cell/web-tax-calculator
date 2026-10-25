@@ -114,13 +114,7 @@ IRP 일부 중도인출은 법정 사유에 제한돼요.
 평가잔고를 넣는 칸은 아니에요.
 최종 환급액이나 인출·해지 세금,
 ISA 전환 특례까지 확정하는 도구는 아니라는 점도 함께 기억해주세요.
-https://taxcalc.co.kr/#income/pension-saving
-
-[출처 참고]
-소득세법 제59조의3·제61조와 시행령 제40조의3,
-국세청 연금계좌 공제·연금외수령 안내를 확인했어요.
-국세청 재원별 과세 안내:
-https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7888&mi=6452
+https://taxcalc.co.kr/income/pension-saving.html
 
 함께 읽으면 좋은 글
 

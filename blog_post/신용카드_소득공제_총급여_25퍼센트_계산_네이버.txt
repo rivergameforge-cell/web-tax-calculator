@@ -79,21 +79,9 @@
 
 카드 공제 외에 다른 소득공제까지 반영한 세금 흐름이 궁금할 때는 아래 계산기를 함께 참고할 수 있습니다.
 
-https://taxcalc.co.kr/#income/comprehensive
+https://taxcalc.co.kr/income/comprehensive.html
 
 연말정산은 카드 한 항목으로 결정되지 않습니다. 연금저축, 월세, 의료비, 기부금처럼 세금에 직접 영향을 주는 항목을 같이 보는 게 훨씬 현실적입니다.
-
-
-[출처 참고]
-
-국세청 주요 세법 개정 내용
-https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7794&mi=2466
-
-국가법령정보센터 조세특례제한법 제126조의2
-https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1026416055
-
-찾기쉬운 생활법령정보 신용카드등의 소득공제
-https://easylaw.go.kr/CSP/CnpClsMainBtr.laf?ccfNo=3&cciNo=5&cnpClsNo=1&csmSeq=585&popMenu=ov
 
 
 [네이버 태그]

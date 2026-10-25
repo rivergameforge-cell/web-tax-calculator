@@ -119,7 +119,7 @@
 지역의 개인분 본세와 지방교육세율을 넣어 예상 금액을 확인할 수 있어요. 사업소분은 자본금 구간과 과세대상 면적도 함께 입력하면 됩니다.
 
 주민세 계산기
-https://taxcalc.co.kr/#other/resident
+https://taxcalc.co.kr/other/resident.html
 
 계산 결과는 표준세율 기준의 예상치로 봐주세요. 실제 고지액은 지방자치단체 조례와 감면, 사업장 과세제외 면적에 따라 달라질 수 있습니다.
 
@@ -131,21 +131,6 @@ https://taxcalc.co.kr/#other/resident
 개인분은 7월 1일 주소와 고지서 금액을 확인하고, 사업소분은 8천만원 기준과 사업장 전체 과세면적을 함께 살펴보면 됩니다.
 
 특히 집과 가게에서 각각 안내가 왔다면 중복이라고 생각하기 전에 개인분과 사업소분인지 먼저 확인해보세요.
-
-
-[출처 참고]
-
-국가법령정보센터 지방세법 제75조부터 제79조
-https://www.law.go.kr/lsLinkProc.do?ancYd=20160318&joNo=007500000%5E007600000%5E007700000%5E007800000%5E007900000&lsClsCd=L&lsId=2130787&lsNm=%EC%A7%80%EB%B0%A9%EC%84%B8%EB%B2%95&mode=4
-
-국가법령정보센터 지방세법 시행령 제79조
-https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0079&lsiSeq=287223&urlMode=lsScJoRltInfoR
-
-서울특별시 주민세 안내
-https://news.seoul.go.kr/gov/archives/200227
-
-국가법령정보센터 주민세 사업소분 신고서
-https://www.law.go.kr/flDownload.do?bylClsCd=110202&flSeq=160799931&gubun=
 
 
 [네이버 태그]

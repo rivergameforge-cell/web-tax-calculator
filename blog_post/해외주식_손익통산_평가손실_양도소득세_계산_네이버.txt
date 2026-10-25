@@ -117,19 +117,6 @@ RIA 등 별도 과세특례와 외국납부세액공제는 예시에서 제외�
 해외 주식 양도소득세 계산기
 https://taxcalc.co.kr/stocks/foreign.html
 
-[출처 참고]
-2026년 10월 21일 확인.
-국세청 주식 세액계산요령: 과세대상 국내·국외주식 통산과 기본공제.
-https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=8800&mi=12274
-국세청 세율 안내: 국외주식 세율과 예외.
-https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7711&mi=2312
-소득세법 제102조·제103조·제5조: 양도차손 공제와 기본공제 및 과세기간.
-https://law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031191509
-https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1031623847
-https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1029489919
-국세청 신고납부기한: 국외주식 예정신고 면제와 다음 해 5월 확정신고.
-https://i.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7708&mi=2309
-
 함께 읽으면 좋은 글
 배당금의 금융소득 종합과세 기준
 https://blog.naver.com/kwonriver_car/224346598100
