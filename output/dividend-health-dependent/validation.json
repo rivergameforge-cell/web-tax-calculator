@@ -7,5 +7,15 @@
   "amount_spacing": "pass outside preserved URLs",
   "related_posts": "verified same-platform URLs",
   "images": "sizes and visual review passed",
-  "examples": "all pension examples sum to 2,200만 원; financial examples use confirmed NHIS amounts"
+  "examples": "all pension examples sum to 2,200만 원; financial examples use confirmed NHIS amounts",
+  "tistory_browser_draft": {
+    "ads": 2,
+    "headingAdContentPlacements": 2,
+    "bodyImages": 1,
+    "nativeRelatedCards": 1,
+    "bodyMatchesValidatedSource": true,
+    "published": false,
+    "save_status": "임시저장 완료; 개수 2개 표시 확인",
+    "preview": "1080x1080 body image loaded; representative checked; related-card thumbnail visible at 375px preview"
+  }
 }
