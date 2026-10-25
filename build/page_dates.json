@@ -39,6 +39,11 @@
     "modified": "2026-10-22",
     "published": "2026-07-03"
   },
+  "blog/dual-income-year-end-deductions.html": {
+    "digest": "7abb3520e2725a420b8e088effbbf16e542b91c04d53d49abc295c3b92616a14",
+    "modified": "2026-10-26",
+    "published": "2026-10-26"
+  },
   "blog/earned-income-tax-credit-2026-payment.html": {
     "digest": "a734917d8ad6501e805a12c8fff2af7ff77f9f6776400c570026b805fe15a5bd",
     "modified": "2026-10-22",
@@ -90,8 +95,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "30445572c508d3ecadd6aefb8bcdc97860029f7117cbb9d9b360fa08228c9517",
-    "modified": "2026-10-25",
+    "digest": "fc7db7485a3097c0f69e4c2ddc0e9723a7deeb58cf4b42e5cf7b31b93e16d607",
+    "modified": "2026-10-26",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -335,8 +340,8 @@
     "published": "2026-04-18"
   },
   "income/employment.html": {
-    "digest": "c841110e467ea20da74a4706ace5e544b60e653905a8e6c92a4ca1fd23a9fd08",
-    "modified": "2026-10-23",
+    "digest": "55c45a7d2f074f96d68c6f69ec101e0c77ccfd78769bec15bda6e11500797a92",
+    "modified": "2026-10-26",
     "published": "2026-04-18"
   },
   "income/freelancer.html": {
@@ -405,8 +410,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "dacdc32fd90dac0ea1e165cfcb88fa0928e7457b222834b749e9fdcb9fb5ca98",
-    "modified": "2026-10-25",
+    "digest": "1d70273a5e74263324432afdb3f21d725cb9d54e41aceea0e5e8e63d5b1557b2",
+    "modified": "2026-10-26",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {

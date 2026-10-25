@@ -956,6 +956,24 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "맞벌이_부부_연말정산_공제_배분_기준",
+        "slug": "dual-income-year-end-deductions",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-26",
+        "readMin": 10,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "각자 급여의 세금 구조 참고",
+        "ctaHeading": "부부의 최종 공제 배분은 정산 자료로 비교하세요",
+        "ctaDescription": "각자의 근로소득세 계산 흐름을 살펴보는 간이 도구입니다. 부부 공제 배분 최적화·가족 자격·실제 부담자 판정과 귀속연도별 카드·자녀·한도·특례를 모두 처리하지 않으므로 확정 신고 계산과 구분하세요.",
+        "related": [
+            ["/blog/credit-card-deduction-25-percent.html", "신용카드 소득공제 — 25% 문턱 이후의 계산 순서"],
+            ["/blog/medical-expense-tax-credit-3-percent.html", "의료비 세액공제 — 실손보험금 차감과 3% 기준"]
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------

@@ -53,7 +53,8 @@
     "foreign-stock-loss-netting": ["해외주식 손익통산과 평가손실 구분", "계좌의 평가손실과 세금 계산에 반영되는 확정손익을 구분해 볼 수 있습니다."],
     "gohyang-donation-tax-credit": ["고향사랑기부금 세액공제와 답례품 비교", "10만 원·20만 원 기부의 세금 감소액과 실제 부담을 구분할 수 있습니다."],
     "pension-loss-tax-credit": ["연금계좌 손실과 세액공제 납입액 기준", "평가잔액과 공제 대상 납입액, 해지 과세를 구분하는 데 도움이 됩니다."],
-    "dividend-health-insurance-dependent": ["배당금과 건강보험 피부양자 소득·재산 기준", "금융소득 과세와 피부양자 자격을 구분하고 재산 구간·공적연금 합산을 확인하는 데 도움이 됩니다."]
+    "dividend-health-insurance-dependent": ["배당금과 건강보험 피부양자 소득·재산 기준", "금융소득 과세와 피부양자 자격을 구분하고 재산 구간·공적연금 합산을 확인하는 데 도움이 됩니다."],
+    "dual-income-year-end-deductions": ["맞벌이 부부 연말정산 공제 배분 기준", "자녀 공제와 카드 명의·의료비 실제 부담자를 구분해 부부 합계 세액을 비교할 수 있습니다."]
   },
   "links": {
     "severance-pay-guide": ["mid-year-resignation-tax-settlement", "irp-why-start-young"],
@@ -109,6 +110,7 @@
     "foreign-stock-loss-netting": ["foreign-stock-capital-gains-deduction", "domestic-stock-capital-gains-major-shareholder"],
     "gohyang-donation-tax-credit": ["sme-employee-income-tax-reduction", "mid-year-resignation-tax-settlement"],
     "pension-loss-tax-credit": ["isa-maturity-renewal-rejoin", "mid-year-resignation-tax-settlement"],
-    "dividend-health-insurance-dependent": ["financial-income-comprehensive-tax-20m", "parent-dependent-deduction-pension"]
+    "dividend-health-insurance-dependent": ["financial-income-comprehensive-tax-20m", "parent-dependent-deduction-pension"],
+    "dual-income-year-end-deductions": ["credit-card-deduction-25-percent", "medical-expense-tax-credit-3-percent"]
   }
 }
