@@ -19,6 +19,11 @@
     "modified": "2026-10-22",
     "published": "2026-10-14"
   },
+  "blog/dividend-health-insurance-dependent.html": {
+    "digest": "aa3b1c4487d49af47b6f0dc27c8c32c9f70b0ca0059ccd3ba50089af9228ec27",
+    "modified": "2026-10-25",
+    "published": "2026-10-25"
+  },
   "blog/dividend-tax-saving.html": {
     "digest": "750b7bf116bb060fdffde768a1d30dafea4df9bbd8c53577d4ae6e49e231aac1",
     "modified": "2026-10-22",
@@ -85,8 +90,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "df0026247fcc1594411486fbd8800859d69d5830e7a5c457ec9c6850a273aa01",
-    "modified": "2026-10-24",
+    "digest": "30445572c508d3ecadd6aefb8bcdc97860029f7117cbb9d9b360fa08228c9517",
+    "modified": "2026-10-25",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -350,8 +355,8 @@
     "published": "2026-04-18"
   },
   "income/interest-dividend.html": {
-    "digest": "11fcc3fb0fcb43db4db8dbebe4192cee11227ddb08f79ee732a5ea3fdda506e3",
-    "modified": "2026-10-23",
+    "digest": "923f76b92969c608216e70dbceeebdfb809d2a19f63c405b02b3dbef3ec5d37b",
+    "modified": "2026-10-25",
     "published": "2026-04-18"
   },
   "income/other-income.html": {
@@ -400,8 +405,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "2d8de34049eeee9d916598f75ee0013cdfef5f4b5ee5cf1e1b3cb2665b2f7fa3",
-    "modified": "2026-10-24",
+    "digest": "dacdc32fd90dac0ea1e165cfcb88fa0928e7457b222834b749e9fdcb9fb5ca98",
+    "modified": "2026-10-25",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {

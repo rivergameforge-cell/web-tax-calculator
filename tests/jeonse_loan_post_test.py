@@ -89,7 +89,7 @@ class JeonseLoanPostTests(unittest.TestCase):
         tags = re.findall(r'#([^\s#]+)', naver.split('[네이버 태그]')[1])
         self.assertEqual(len(tags), 26)
         self.assertEqual(len(set(tags)), len(tags))
-        self.assertEqual(naver.count('https://taxcalc.co.kr/#income/employment'), 1)
+        self.assertEqual(naver.count('https://taxcalc.co.kr/income/employment.html'), 1)
 
     def test_rules_and_calculator_limitations_are_explicit(self):
         for suffix in ('.md', '_티스토리.txt', '_네이버.txt'):

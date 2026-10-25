@@ -1,0 +1,15 @@
+{
+  "mode": "built-in image_gen",
+  "intent": "generate",
+  "prompts": {
+    "site": "Use case: stylized-concept. Create a premium Korean finance blog thumbnail, landscape composition for final 1200x630. Big sculpted glossy blue health-insurance protection shield with a simple family silhouette emblem, gold dividend coins beside a small ivory house in the foreground. Midnight navy studio backdrop, brilliant blue rim light and gold highlights, rich cinematic 3D depth, very polished like a high quality finance illustration. Main subject large and instantly recognizable. On the left/bottom, huge bold Korean headline exactly \"배당금과\\n피부양자\". White and luminous gold heavy sans-serif, subtle black outline/shadow. Text is short, legible at 150px thumbnail size, takes around 35% of composition; subject takes 60%. Keep all letters and major subjects inside center 90%. No other text, no logo, no checklist, no table, no infographic, no explanatory text card. Opaque background.",
+    "tistory": "Use case: stylized-concept. Korean finance blog square thumbnail, final 1080x1080 composition. Premium dramatic sculpted 3D illustration: a large vivid cyan medical protection shield bearing a generic family emblem, a gold coin stack, and a red warning signal glow on the edge, small realistic house symbol nearby. Midnight blue background, gold reflections, dramatic studio lighting, luxurious depth and contrast. Upper half dominated by illustration; lower half dominated by extremely large Korean headline exactly \"2천만 원 아래도\\n탈락?\" in bold white then vivid yellow with thick dark outline, readable at 150px. Use the spaced phrase \"만 원\" exactly. This is a question about eligibility, no claim that everyone loses it. No additional text, no tiny labels, no table, no checklist, no explanation card, no platform labels. Opaque background.",
+    "naver": "Use case: stylized-concept. Wide 5:3 Korean lifestyle-finance blog thumbnail for final 1200x720. Friendly premium 3D clay/ceramic illustration of a dignified older Korean couple standing next to an emerald medical-insurance shield with a tiny heart emblem and a compact warm ivory house, a few golden coins on the table. Warm coral and cream studio background with strong teal contrast, plush 3D materials, expressive but tasteful faces, beautiful soft shadows and clear depth. The couple and shield prominent. Huge bold dark teal Korean headline on left exactly \"부모님 건보,\\n괜찮을까?\" on two lines, readable at 150px. Text and main subjects entirely within central 90% safe area. Clean editorial scene, no explanation card, no table, no checklist, no small text, no logos, no platform labels, opaque background."
+  },
+  "reference": "https://taxcalc.co.kr/thumbnails/isa-maturity-renewal-rejoin-tistory-v2.webp",
+  "assets": {
+    "site": "thumbnails/dividend-health-insurance-dependent.webp",
+    "tistory": "thumbnails/dividend-health-insurance-dependent-tistory.webp",
+    "naver": "thumbnails/dividend-health-insurance-dependent-naver.webp"
+  }
+}

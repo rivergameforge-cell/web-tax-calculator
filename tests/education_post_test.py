@@ -58,7 +58,7 @@ class EducationPostTests(unittest.TestCase):
         self.assertIn('1,200만 원', website['body_md'])
         self.assertIn('1,000만 원', tistory['body'])
         self.assertIn('780만 원', naver)
-        self.assertEqual(naver.count('https://taxcalc.co.kr/#income/employment'), 1)
+        self.assertEqual(naver.count('https://taxcalc.co.kr/income/employment.html'), 1)
 
     def test_examples_and_2026_change(self):
         record = json.loads((ROOT / 'blog_post' / f'{SLUG}.production.json').read_text())

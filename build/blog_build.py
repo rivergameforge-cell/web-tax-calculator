@@ -938,6 +938,24 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "배당금_건강보험_피부양자_소득_재산_기준",
+        "slug": "dividend-health-insurance-dependent",
+        "category": "finance",
+        "categoryLabel": "금융 세금",
+        "date": "2026-10-25",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/interest-dividend",
+        "ctaLabel": "일반 이자·배당세 구조 참고",
+        "ctaHeading": "건강보험 자격은 공단 반영 자료로 확인하세요",
+        "ctaDescription": "일반 금융소득의 세금 구조를 살펴보는 간이 도구입니다. 피부양자 자격·재산요건·지역보험료를 판정하지 않으며, 배당 분리과세 특례 등 개별 제도를 모두 반영하지 않습니다.",
+        "related": [
+            ["/blog/financial-income-comprehensive-tax-20m.html", "금융소득 종합과세 — 건강보험과 구분할 세금 기준"],
+            ["/blog/parent-dependent-deduction-pension.html", "부모님 인적공제 — 국민연금과 연말정산의 별도 기준"]
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------

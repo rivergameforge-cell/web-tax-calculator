@@ -97,7 +97,7 @@ class HousingSubscriptionPostTests(unittest.TestCase):
         tags = re.findall(r'#([^\s#]+)', naver.split('[네이버 태그]')[1])
         self.assertEqual(len(tags), 26)
         self.assertEqual(len(tags), len(set(tags)))
-        self.assertEqual(naver.count('https://taxcalc.co.kr/#income/employment'), 1)
+        self.assertEqual(naver.count('https://taxcalc.co.kr/income/employment.html'), 1)
 
     def test_amounts_tax_boundaries_and_combined_caps(self):
         examples = self.record['examples']
