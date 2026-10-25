@@ -14,8 +14,19 @@
     "bodyImages": 1,
     "nativeRelatedCards": 1,
     "bodyMatchesValidatedSource": true,
-    "published": false,
+    "published": true,
     "save_status": "임시저장 완료; 개수 2개 표시 확인",
     "preview": "1080x1080 body image loaded; representative checked; related-card thumbnail visible at 375px preview"
+  },
+  "publication": {
+    "site": "https://taxcalc.co.kr/blog/dividend-health-insurance-dependent.html",
+    "tistory": "https://kwonriver-carstroy.tistory.com/entry/dividendhealthdependent2026",
+    "naver": "https://blog.naver.com/kwonriver_car/224453015764",
+    "all_public": true,
+    "naver_text_match": true,
+    "naver_cards": 3,
+    "tistory_ads": 2,
+    "tistory_cards": 1,
+    "thumbnail_cleanup": "103 assets intentionally absent locally; deployed files preserved"
   }
 }
