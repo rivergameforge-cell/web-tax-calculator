@@ -95,8 +95,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "fc7db7485a3097c0f69e4c2ddc0e9723a7deeb58cf4b42e5cf7b31b93e16d607",
-    "modified": "2026-10-26",
+    "digest": "3bad7ad3ab7676df322d2f0dcde57d6383df185b6c6cc2cf0377783ce454ef04",
+    "modified": "2026-10-28",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -188,6 +188,11 @@
     "digest": "120bcfe82e1aef7d451876442ee18744f47924d1cd6b58fb4720d9ee65939db1",
     "modified": "2026-10-22",
     "published": "2026-10-08"
+  },
+  "blog/parental-leave-spouse-deduction.html": {
+    "digest": "13741a13e6170d7e81d15e6f0f7d915586440d68831e3522d362f24c6659ac50",
+    "modified": "2026-10-28",
+    "published": "2026-10-28"
   },
   "blog/parking-violation-fine.html": {
     "digest": "b43cd3e14b94e9d3c307087001921aa8da13b267ab46d5dd521af0b40859e927",
@@ -340,8 +345,8 @@
     "published": "2026-04-18"
   },
   "income/employment.html": {
-    "digest": "55c45a7d2f074f96d68c6f69ec101e0c77ccfd78769bec15bda6e11500797a92",
-    "modified": "2026-10-26",
+    "digest": "4c86c65ffff6d8b33557ff054c1b273a6a8fdf79526e30ab4577d797316bbaf0",
+    "modified": "2026-10-28",
     "published": "2026-04-18"
   },
   "income/freelancer.html": {
@@ -410,8 +415,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "1d70273a5e74263324432afdb3f21d725cb9d54e41aceea0e5e8e63d5b1557b2",
-    "modified": "2026-10-26",
+    "digest": "7c794f04efca9bdd7d5eedfb2f5a8966cf9fe33e55ebb9bbf99545b3b7c4e131",
+    "modified": "2026-10-28",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {

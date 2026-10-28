@@ -974,6 +974,24 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "육아휴직_배우자_기본공제_연말정산_기준",
+        "slug": "parental-leave-spouse-deduction",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-10-28",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "근로소득세 계산 흐름 살펴보기",
+        "ctaHeading": "배우자 자격은 해당 연도의 실제 소득자료로 확인하세요",
+        "ctaDescription": "간이 계산기는 급여의 세금 구조를 참고하는 도구이며 배우자 공제 자격과 육아휴직기간·카드 공제를 판정하지 않습니다.",
+        "related": [
+            ["/blog/dual-income-year-end-deductions.html", "맞벌이 부부 연말정산 — 자녀·카드·의료비 배분 기준"],
+            ["/blog/medical-expense-tax-credit-3-percent.html", "의료비 세액공제 — 실제 부담자와 3% 기준"]
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------
