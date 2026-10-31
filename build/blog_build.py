@@ -992,6 +992,30 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "부모님_생활비_용돈_증여세_적금_판단기준",
+        "slug": "parent-support-living-expenses-gift-tax",
+        "category": "inherit",
+        "categoryLabel": "상속·증여",
+        "date": "2026-10-31",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#inherit/gift",
+        "ctaLabel": "일반 증여세 계산 흐름 살펴보기",
+        "ctaHeading": "생활비 여부를 판단한 다음 세액을 계산하세요",
+        "ctaDescription": "직계비속 → 직계존속 관계의 일반 증여세 참고 도구입니다. 생활비 비과세나 부양 필요성, 여러 직계비속의 공제 사용을 자동 판정하지 않습니다.",
+        "related": [
+            [
+                "/blog/parent-dependent-deduction-pension.html",
+                "부모님 인적공제 — 증여세와 구분할 연말정산 소득요건"
+            ],
+            [
+                "/blog/dividend-health-insurance-dependent.html",
+                "부모님 건강보험 피부양자 — 배당·연금·재산의 별도 기준"
+            ]
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------

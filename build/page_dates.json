@@ -95,8 +95,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "3bad7ad3ab7676df322d2f0dcde57d6383df185b6c6cc2cf0377783ce454ef04",
-    "modified": "2026-10-28",
+    "digest": "b963375fc48c346152732f0378bd742519145b6b933766a02ee0b534c4fe3a23",
+    "modified": "2026-10-31",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -188,6 +188,11 @@
     "digest": "120bcfe82e1aef7d451876442ee18744f47924d1cd6b58fb4720d9ee65939db1",
     "modified": "2026-10-22",
     "published": "2026-10-08"
+  },
+  "blog/parent-support-living-expenses-gift-tax.html": {
+    "digest": "b0a39627dc374a58a7910ec9e7d8e27cd4ed61cd9e3c5c9e6ef5f46730e67570",
+    "modified": "2026-10-31",
+    "published": "2026-10-31"
   },
   "blog/parental-leave-spouse-deduction.html": {
     "digest": "13741a13e6170d7e81d15e6f0f7d915586440d68831e3522d362f24c6659ac50",
@@ -415,13 +420,13 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "7c794f04efca9bdd7d5eedfb2f5a8966cf9fe33e55ebb9bbf99545b3b7c4e131",
-    "modified": "2026-10-28",
+    "digest": "fd3ed0cd3f09b3cbc42281fda7c9cda168ecd5d29897c63791477f2d78576f25",
+    "modified": "2026-10-31",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
-    "digest": "c82d619bd986f23d774f298a3716f8bbf15a913881b1abcbc70344c0d3049566",
-    "modified": "2026-10-22",
+    "digest": "7e4c1287b05add34b949fc186878d596959c37c584a7042a67430c73eb161d62",
+    "modified": "2026-10-31",
     "published": "2026-04-18"
   },
   "inherit/inheritance.html": {
