@@ -54,6 +54,11 @@
     "modified": "2026-10-22",
     "published": "2026-10-08"
   },
+  "blog/elementary-arts-academy-tax-credit.html": {
+    "digest": "ba7eefacdad114b8f67a7368dbe04f7f59cac919ae8a7cc0f4b1cd6b10533092",
+    "modified": "2026-11-05",
+    "published": "2026-11-05"
+  },
   "blog/financial-income-comprehensive-tax-20m.html": {
     "digest": "2b0d5dfc0c74ad1c8cfafc3806136c4310103ff3566b4d8f233f4145f738bb8e",
     "modified": "2026-10-22",
@@ -95,7 +100,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "b7a9b399b9751cb3464175514abf11bb4a1d63db4b7dc2a110834b684cd6723b",
+    "digest": "2346b4f5c7f0263e3850e13b04d2f6c1df7ff167edc663bbaf6977b6a4be65ed",
     "modified": "2026-11-05",
     "published": "2026-05-05"
   },
@@ -355,8 +360,8 @@
     "published": "2026-04-18"
   },
   "income/employment.html": {
-    "digest": "4c86c65ffff6d8b33557ff054c1b273a6a8fdf79526e30ab4577d797316bbaf0",
-    "modified": "2026-10-28",
+    "digest": "4e41020c7c3a5ab72ff4a7fbda30c9ad90c7339a57452e2a948c4ba9ab520eda",
+    "modified": "2026-11-05",
     "published": "2026-04-18"
   },
   "income/freelancer.html": {
@@ -425,7 +430,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "6b44d91dffabc11db45ee7bcf7a887abed4401fdee12e79ec68ad0b75cfe8b33",
+    "digest": "fa595dd47216dd1918c35c647f8103cc9ed67a6e8673e1d08ce915fbe2359349",
     "modified": "2026-11-05",
     "published": "2026-04-02"
   },

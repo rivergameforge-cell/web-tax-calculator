@@ -1,0 +1,42 @@
+<!-- 티스토리 제목 -->
+<!-- 태권도 월 14만 원, 연말정산 얼마? 초등 저학년 학원비 공제 확인법 -->
+<p data-ke-size="size16">태권도장에 월 14만 원씩 12개월을 냈다면, 요건을 모두 충족할 때 소득세에서 25만 2,000원을 공제하는 계산이 나옵니다. 도복값도 같은 날 함께 결제했다면 수강료부터 분리해 보세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2026년 11월 5일 확인한 현행 기준으로, 초등 저학년 자녀의 예체능 학원비를 연말정산에 올리기 전에 확인할 사항을 정리했습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<!-- THUMBNAIL -->
+<h2 data-ke-size="size26">1. 도장에 수업과 증빙부터 물어보세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins><script>     (adsbygoogle = window.adsbygoogle || []).push({});</script></center>
+<p data-ke-size="size16">태권도라는 종목명만으로 결정하지 않습니다. 해당 도장이 법령상 대상 체육시설에 해당하는지, 월 단위로 주 1회 이상 운영되는 수업인지 확인하세요. 피아노나 미술도 해당 학원의 예능 분야 과정으로 운영되는지 살펴봅니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">도장에 “월 수강료만 구분해서 연말정산용 교육비납입증명서를 발급받을 수 있을까요?”라고 문의하면 준비할 자료가 분명해집니다. 별도로 지불한 도복비와 일회 체험비는 이 제도의 수강료 계산에 넣지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">2. 만 9세가 됐어도 2학년이면 학년 기준을 보세요</h2>
+<p data-ke-size="size16">일반적인 2026년 귀속 정산은 12월 31일이 기준일입니다. 이날 초등학생이면서 만 9세 미만이거나 초등학교 2학년 이하라면 자녀 조건에 해당합니다. 2학년인 자녀는 만 9세여도 학년 조건을 충족합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2026년 1월 1일 이후 지출분에 적용하는 확대 규정입니다. 초등학생의 일반 영어·수학 학원비는 이 항목에 넣지 않습니다. 취학 전 아동은 별도 규정을 적용합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">3. 카드 결제액에서 수강료만 떼어 계산해 보세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins><script>     (adsbygoogle = window.adsbygoogle || []).push({});</script></center>
+<p data-ke-size="size16">초등학교 2학년 자녀의 적격 태권도 수강료가 월 14만 원이고, 12개월간 모두 납부했다고 가정하겠습니다. 별도 도복비 8만 원을 냈고 다른 적격 교육비와 지원금은 없는 예시입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">총 결제액은 176만 원입니다. 계산에는 월 14만 원 × 12개월 = 168만 원을 반영합니다. 소득세에서 공제할 금액은 168만 원 × 15% = 25만 2,000원입니다. 공제할 세액이 충분하다는 가정이며, 통장에 들어오는 환급액은 전체 정산 결과에 따라 달라집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">300만 원 한도는 자녀 한 명의 적격 교육비를 합산해 적용합니다. 같은 아이의 피아노 수강료와 학교 교육비가 적격이라면 합산한 다음 한도를 적용하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">4. 간소화 자료에서 빠졌다면</h2>
+<p data-ke-size="size16">홈택스에서 자녀 교육비의 기관과 금액을 먼저 확인하세요. 적격 수강료가 보이지 않거나 실제 납입액과 다르면 학원이나 도장에 교육비납입증명서를 요청하고 회사의 제출 일정에 맞춰 보완합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">맞벌이라면 자녀를 기본공제에 올리는 사람과 실제 납부 내역을 함께 확인하세요. 간소화 조회나 카드 결제 내역만으로 요건이 확정되지는 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">한도를 적용한 금액으로 계산해 보세요</h2>
+<p data-ke-size="size16">근로소득세 계산기의 교육비 항목에는 자녀별 한도를 적용한 적격 교육비를 넣으세요. 수강료 적격 여부나 자녀별 한도를 자동으로 판정하지 않는 참고 도구입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><a class="cta-btn" style="display:inline-block;padding:10px 16px;border-radius:8px;background:#1e3a5f;color:#fff;text-decoration:none;font-weight:700" href="https://taxcalc.co.kr/income/employment.html">교육비 공제 반영해 보기</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16">맞벌이 부부라면 자녀 공제와 지출 항목을 어떤 순서로 살펴야 하는지 먼저 정리해 보세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">https://kwonriver-carstroy.tistory.com/entry/dualincomeyearend2026</p>
+<!-- 해시태그 -->
+<!-- 태권도비연말정산, 초등예체능, 교육비세액공제, 태권도학원비, 피아노학원비, 미술학원비, 초등저학년, 교육비납입증명서, 2026연말정산, 맞벌이연말정산 -->

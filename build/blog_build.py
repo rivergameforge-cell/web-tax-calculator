@@ -1040,6 +1040,30 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "초등_저학년_예체능_학원비_교육비_세액공제",
+        "slug": "elementary-arts-academy-tax-credit",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-11-05",
+        "readMin": 7,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "근로소득세 계산기에 교육비 반영하기",
+        "ctaHeading": "한도를 반영한 적격 교육비로 계산하세요",
+        "ctaDescription": "교육비 항목은 입력액에 15%를 적용하는 참고 도구입니다. 자녀·기관·과정 요건과 자녀별 한도는 먼저 확인하세요.",
+        "related": [
+            [
+                "/blog/education-tax-credit-university-900.html",
+                "대학생 등록금 교육비 공제 — 별도 한도와 장학금"
+            ],
+            [
+                "/blog/dual-income-year-end-deductions.html",
+                "맞벌이 연말정산 — 자녀와 공제 항목 확인 순서"
+            ]
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------
