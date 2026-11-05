@@ -95,8 +95,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "b963375fc48c346152732f0378bd742519145b6b933766a02ee0b534c4fe3a23",
-    "modified": "2026-10-31",
+    "digest": "b7a9b399b9751cb3464175514abf11bb4a1d63db4b7dc2a110834b684cd6723b",
+    "modified": "2026-11-05",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -213,6 +213,11 @@
     "digest": "395f03e351b29929962d6a37e27e33dd6221b5147f365a9e64edf82ee68ef879",
     "modified": "2026-10-22",
     "published": "2026-05-31"
+  },
+  "blog/pension-savings-withdrawal-tax.html": {
+    "digest": "9351b283574893cfb8d46fe8d12ea0e96ad6e34d632ef6df43ef1449dfcf3928",
+    "modified": "2026-11-05",
+    "published": "2026-11-05"
   },
   "blog/property-tax-guide.html": {
     "digest": "129cd138c17c4ebebc00cbdb91793d66aa23ce36f99abb80f89b0184df901728",
@@ -390,8 +395,8 @@
     "published": "2026-04-18"
   },
   "income/pension-saving.html": {
-    "digest": "be742db865db0d091252bcc42d584a055ff68309837c8a3db23a3248e411aacc",
-    "modified": "2026-10-24",
+    "digest": "c59a410b7622ef7a97187b1ab1a7594deed0785e461df931c8301e9442a36715",
+    "modified": "2026-11-05",
     "published": "2026-04-18"
   },
   "income/rent-credit.html": {
@@ -420,8 +425,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "fd3ed0cd3f09b3cbc42281fda7c9cda168ecd5d29897c63791477f2d78576f25",
-    "modified": "2026-10-31",
+    "digest": "6b44d91dffabc11db45ee7bcf7a887abed4401fdee12e79ec68ad0b75cfe8b33",
+    "modified": "2026-11-05",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {

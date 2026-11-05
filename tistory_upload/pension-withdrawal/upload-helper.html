@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티스토리 업로드 도우미 - 연금저축 해지 전 확인할 세금: 미공제 원금과 실수령액 계산</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 24px;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 20px;
+    }
+    section {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 0 0 12px; }
+    label { display: block; font-size: 13px; color: #6b7280; margin-bottom: 8px; }
+    textarea, input {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      background: #f9fafb;
+    }
+    textarea { min-height: 320px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+    button, a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: #2563eb;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 8px 8px 0 0;
+    }
+    button.secondary { background: #475569; }
+    .hint { color: #64748b; font-size: 13px; margin: 8px 0 0; }
+    .side img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      display: block;
+    }
+    .no-image {
+      border: 1px dashed #cbd5e1;
+      border-radius: 8px;
+      padding: 28px 12px;
+      text-align: center;
+      color: #64748b;
+    }
+    .checklist li { margin-bottom: 8px; }
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>티스토리 업로드 도우미</h1>
+    <div>연말정산에서 한 번도 공제받지 않은 연금저축이라도, 해지 세금이 0원이라고 단정할 수는 없습니다. 납입액 600만 원을 전부 공제받지 않았어도 운용수익이 100만 원이면 그 수익에 일반 연금외수령 세금 16만 5,000원이 붙는 사례가 나옵니다.   해지 버튼을 누르기 전에 확인할 것…</div>
+  </header>
+  <main>
+    <div>
+      <section>
+        <h2>1. 제목</h2>
+        <label>티스토리 제목 입력란에 붙여넣기</label>
+        <input id="title" value="연금저축 해지 전 확인할 세금: 미공제 원금과 실수령액 계산">
+        <button onclick="copyValue('title')">제목 복사</button>
+      </section>
+
+      <section>
+        <h2>2. 본문 HTML</h2>
+        <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
+        <textarea id="body">&lt;p data-ke-size=&quot;size16&quot;&gt;연말정산에서 한 번도 공제받지 않은 연금저축이라도, 해지 세금이 0원이라고 단정할 수는 없습니다. 납입액 600만 원을 전부 공제받지 않았어도 운용수익이 100만 원이면 그 수익에 일반 연금외수령 세금 16만 5,000원이 붙는 사례가 나옵니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;해지 버튼을 누르기 전에 확인할 것은 과거 환급액보다 계좌의 과세제외 금액과 예상 실수령액입니다. 2026년 11월 5일 기준 일반 연금저축계좌의 연금외수령을 중심으로 정리합니다. 과거 개인연금저축·일반 연금보험과는 구분하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;!-- THUMBNAIL --&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;1. 세금부터 묻기 전에 이 세 숫자를 요청하세요&lt;/h2&gt;
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;금융회사에 ① 공제받지 않은 납입액 잔액, ② 공제받은 납입액, ③ 운용수익을 나눈 예상 지급내역을 요청하세요. 같은 원금이라도 공제 적용 이력에 따라 처리가 달라집니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;미공제 납입액은 확인된 범위에서 과세제외입니다. 공제받은 납입액과 운용수익은 일반 연금외수령 시 기타소득세 16.5%가 적용됩니다. 소득세 15%와 지방소득세 1.5%를 합한 비율이며, 부득이한 인출 등 예외는 별도입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;2. 공제를 한 번도 받지 않은 계좌의 해지 세금&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이전 연도에 넣은 600만 원 전부가 미공제 납입액으로 확인되고, 운용수익 100만 원이 남은 계좌를 가정하겠습니다. 퇴직금 원천·특별한 인출 사유·수수료·해지공제액은 없는 단순 사례입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;세전 지급액 700만 원 중 납입액 600만 원은 과세제외이고, 운용수익 100만 원은 과세 대상입니다. 전액을 해지하면 100만 원 × 16.5% = 16만 5,000원이 세금이고, 세후 수령액은 683만 5,000원입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;과거 공제받은 돈이 0원이어도 운용수익에 세금이 생길 수 있다는 뜻입니다. 같은 예에서 공제받은 납입액까지 있었다면 그 금액도 일반 연금외수령 과세 대상에 포함됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;3. 미공제 이력은 해지 접수 전에 반영 여부를 확인하세요&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;세액공제를 받지 않았다고 기억해도 금융회사에 해당 내용이 어떻게 반영돼 있는지 확인해야 합니다. 납입증명서는 돈을 넣었다는 자료이고, 실제 공제를 받았는지와는 구분됩니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;필요한 경우 연금보험료 등 소득·세액공제확인서 등의 제출 절차를 문의하세요. 최근 신고나 수정 사항이 있으면 확인 가능한 연도와 반영 시점까지 함께 살펴보는 편이 좋습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;미공제 원금에서 생긴 수익까지 과세제외가 되는 것은 아닙니다. 원금의 공제 이력과 운용수익을 나누어 요청하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;4. 전액 해지와 일부 인출의 실수령액은 다릅니다&lt;/h2&gt;
+&lt;center&gt;&lt;ins class=&quot;adsbygoogle&quot; style=&quot;display: block;&quot; data-ad-client=&quot;ca-pub-2792604427181547&quot; data-ad-slot=&quot;4883327520&quot; data-ad-format=&quot;auto&quot; data-full-width-responsive=&quot;true&quot;&gt;&lt;/ins&gt;
+&lt;script&gt;     (adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+&lt;/center&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;앞선 계좌에서 세전 200만 원만 인출하고 과세제외 금액 600만 원이 남아 있다면, 과세제외 금액부터 인출한 것으로 처리합니다. 이 경우에는 세금 없이 200만 원을 받고, 운용수익은 계좌에 남습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;연금저축펀드는 일부 인출 가능 여부와 현금화 일정을 확인할 수 있습니다. IRP는 일부 중도인출 제한이 별도로 있고, 퇴직금 원천은 퇴직소득세 체계이므로 이 숫자를 그대로 대입하지 마세요. 연금저축보험은 계약별 해지공제액도 확인합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;5. 예외 사유와 계좌이체는 별도로 확인합니다&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;의료목적 등 세법상 부득이한 인출에 해당하면 일반 기타소득 과세와 다른 규정을 검토합니다. 사유·기한·증빙·해당 금액 범위에 요건이 있으므로 단순히 생활비가 급하다는 이유로 예외라고 판단하지 마세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;금융회사나 상품을 바꾸려는 목적이라면 해지 전에 적격 계좌이체 가능 여부를 문의하세요. 본인 입출금 통장으로 해지금을 받은 뒤 새로 가입하는 것과 정식 계좌이체는 다릅니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;만 55세가 지났다는 이유만으로 전액 해지에 저율이 적용되는 것도 아닙니다. 연금수령 신청과 가입기간·수령한도 등 요건을 따로 확인합니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;납입 때의 공제와 해지 때의 세금을 나눠 보세요&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;아래 계산기는 올해 납입액과 총급여에 따른 공제 가능액을 참고하는 도구입니다. 실제 과거 공제 이력·미공제 잔액을 조회하거나 해지 세금을 계산하지는 않습니다. 해지 전에는 금융회사에서 세금과 비용을 뺀 예상 입금액을 받아 비교하세요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a class=&quot;cta-btn&quot; style=&quot;display:inline-block;padding:10px 16px;border-radius:8px;background-color:#1e3a5f;color:#ffffff;text-decoration:none;font-weight:700;&quot; href=&quot;https://taxcalc.co.kr/income/pension-saving.html&quot;&gt;연금저축·IRP 납입 공제 구조 살펴보기&lt;/a&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h2 data-ke-size=&quot;size26&quot;&gt;함께 읽으면 좋은 글&lt;/h2&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;계좌가 손실 중이라면 납입액 기준 공제와 평가잔액의 차이부터 살펴보세요. 해지 세금과 구분해 판단하는 데 도움이 되는 글입니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;https://kwonriver-carstroy.tistory.com/entry/pensionlosstaxcredit2026&lt;/p&gt;</textarea>
+        <button onclick="copyValue('body')">본문 복사</button>
+        <p class="hint">이미지는 티스토리에 직접 업로드한 뒤 서론 다음, 첫 소제목 앞에 배치하세요. HTML을 붙여넣을 때도 업로드한 이미지 위치를 유지하세요.</p>
+      </section>
+
+      <section>
+        <h2>3. 태그</h2>
+        <label>티스토리 태그 입력란에 붙여넣기</label>
+        <input id="tags" value="연금저축해지, 연금저축세금, 연금외수령, 과세제외금액, 세액공제확인서, 연금저축중도인출, 노후자금, IRP해지, 연금저축보험, 연말정산">
+        <button onclick="copyValue('tags')">태그 복사</button>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section>
+        <h2>썸네일</h2>
+        <img src="file:///C:/Users/Kwonriver/source/web-tax-calculator/thumbnails/pension-savings-withdrawal-tax-tistory.webp" alt="thumbnail preview">
+        <label style="margin-top:12px">로컬 이미지 경로</label>
+        <input id="imagePath" value="C:\Users\Kwonriver\source\web-tax-calculator\thumbnails\pension-savings-withdrawal-tax-tistory.webp">
+        <button onclick="copyValue('imagePath')">이미지 경로 복사</button>
+        <p class="hint">pension-savings-withdrawal-tax-tistory.webp</p>
+      </section>
+
+      <section>
+        <h2>업로드 순서</h2>
+        <ol class="checklist">
+          <li>티스토리 글쓰기 화면을 연다.</li>
+          <li>제목을 복사해 입력한다.</li>
+          <li>썸네일 이미지를 업로드하고 대표 이미지로 지정한다.</li>
+          <li>에디터를 HTML 모드로 전환한다.</li>
+          <li>본문 HTML을 붙여넣고 서론 → 업로드한 썸네일 → 첫 소제목 순서를 확인한다.</li>
+          <li>태그를 붙여넣고 임시저장한다.</li>
+        </ol>
+        <a class="button" href="https://www.tistory.com/" target="_blank" rel="noopener">티스토리 열기</a>
+      </section>
+    </aside>
+  </main>
+
+  <script>
+    async function copyValue(id) {
+      const el = document.getElementById(id);
+      await navigator.clipboard.writeText(el.value);
+      const old = document.title;
+      document.title = '복사 완료';
+      setTimeout(() => document.title = old, 900);
+    }
+  </script>
+</body>
+</html>

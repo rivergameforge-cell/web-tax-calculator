@@ -1016,6 +1016,30 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "연금저축_해지_세금_공제받지않은_납입액_인출순서",
+        "slug": "pension-savings-withdrawal-tax",
+        "category": "finance",
+        "categoryLabel": "금융 세금",
+        "date": "2026-11-05",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/pension-saving",
+        "ctaLabel": "납입 단계의 공제 구조 살펴보기",
+        "ctaHeading": "해지 실수령액은 금융회사 지급내역으로 확인하세요",
+        "ctaDescription": "총급여와 연간 납입액을 이용한 공제 가능액 참고 도구입니다. 실제 공제 이력·과세제외 잔액·해지 세금·최종 환급액을 확정하지 않습니다.",
+        "related": [
+            [
+                "/blog/pension-loss-tax-credit.html",
+                "연금계좌 손실 — 납입액과 평가잔액의 공제 기준"
+            ],
+            [
+                "/blog/isa-maturity-renewal-rejoin.html",
+                "ISA 만기 — 현금 수령과 연금계좌 전환의 차이"
+            ]
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------
