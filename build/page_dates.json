@@ -4,6 +4,11 @@
     "modified": "2026-10-06",
     "published": "2026-04-07"
   },
+  "blog/childcare-allowance-tax-exemption.html": {
+    "digest": "ec7c97c3b55e912faf795f697992edbe2b2a2c13fc2b000030db3a68e21c0cd8",
+    "modified": "2026-11-06",
+    "published": "2026-11-06"
+  },
   "blog/commission-calculation-method.html": {
     "digest": "002842c4813cd4486e80103f9bf7acc7a992e4de6793c13b5f74924824136ed5",
     "modified": "2026-10-22",
@@ -100,8 +105,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "2346b4f5c7f0263e3850e13b04d2f6c1df7ff167edc663bbaf6977b6a4be65ed",
-    "modified": "2026-11-05",
+    "digest": "e8800877828e41d1f820266257db96e0d4096391ad25473f96a7a3460584fbaf",
+    "modified": "2026-11-06",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -415,8 +420,8 @@
     "published": "2026-04-18"
   },
   "income/salary.html": {
-    "digest": "5512de48e89ffd08c7be69f4938db9dde9b0aea9b3a3bac354826a46302acf8f",
-    "modified": "2026-10-16",
+    "digest": "849645a08db05e24f409b7f5a1c0a147d067e3d334bd3300b4b84a03d6dac174",
+    "modified": "2026-11-06",
     "published": "2026-04-18"
   },
   "income/severance.html": {
@@ -430,8 +435,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "fa595dd47216dd1918c35c647f8103cc9ed67a6e8673e1d08ce915fbe2359349",
-    "modified": "2026-11-05",
+    "digest": "48ea8d08aad384174c6d24b908211905c1fef8074d20d48b446553d16d2b6973",
+    "modified": "2026-11-06",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {

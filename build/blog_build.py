@@ -1064,6 +1064,19 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "보육수당_비과세_자녀별_월한도_급여명세서",
+        "slug": "childcare-allowance-tax-exemption",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-11-06",
+        "readMin": 6,
+        "ctaHref": "https://taxcalc.co.kr/#income/salary",
+        "ctaLabel": "연봉·월급 실수령액 계산하기",
+        "ctaHeading": "비과세 수당을 반영해 월급을 비교하세요",
+        "ctaDescription": "공제 전 지급액과 확인된 월 비과세액을 각각 입력하는 참고 계산기입니다.",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------

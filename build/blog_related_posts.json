@@ -58,7 +58,8 @@
     "parental-leave-spouse-deduction": ["육아휴직 배우자 연말정산 기본공제", "육아휴직급여 비과세와 총급여·다른 소득을 나눠 배우자 공제 가능성을 확인합니다."],
     "parent-support-living-expenses-gift-tax": ["부모님 생활비·용돈 증여세 기준", "부양 필요성과 실제 생활비 지출을 확인하고, 적금·투자금과 증여재산공제를 나누어 살펴봅니다."],
     "pension-savings-withdrawal-tax": ["연금저축 해지 세금 — 미공제 납입액과 인출 순서", "공제받은 원금과 미공제 납입액을 나누고 전액 해지·일부 인출의 실수령액을 살펴봅니다."],
-    "elementary-arts-academy-tax-credit": ["한도를 반영한 적격 교육비로 계산하세요", "초등 저학년 예체능 수강료의 교육비 세액공제 요건과 한도를 확인합니다."]
+    "elementary-arts-academy-tax-credit": ["한도를 반영한 적격 교육비로 계산하세요", "초등 저학년 예체능 수강료의 교육비 세액공제 요건과 한도를 확인합니다."],
+    "childcare-allowance-tax-exemption": ["2026 보육수당 비과세", "자녀별 비과세 한도와 급여명세서의 과세액을 확인합니다."]
   },
   "links": {
     "severance-pay-guide": ["mid-year-resignation-tax-settlement", "irp-why-start-young"],
@@ -119,6 +120,7 @@
     "parental-leave-spouse-deduction": ["dual-income-year-end-deductions", "medical-expense-tax-credit-3-percent"],
     "parent-support-living-expenses-gift-tax": ["parent-dependent-deduction-pension", "dividend-health-insurance-dependent"],
     "pension-savings-withdrawal-tax": ["pension-loss-tax-credit", "isa-maturity-renewal-rejoin"],
-    "elementary-arts-academy-tax-credit": ["education-tax-credit-university-900", "dual-income-year-end-deductions"]
+    "elementary-arts-academy-tax-credit": ["education-tax-credit-university-900", "dual-income-year-end-deductions"],
+    "childcare-allowance-tax-exemption": ["elementary-arts-academy-tax-credit"]
   }
 }
