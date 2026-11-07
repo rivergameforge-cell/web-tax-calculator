@@ -1077,6 +1077,20 @@ POSTS = [
         "ctaDescription": "공제 전 지급액과 확인된 월 비과세액을 각각 입력하는 참고 계산기입니다.",
         "customHtml": False
     },
+    {
+        "file": "헬스장_PT_문화비_소득공제_시설이용료_계산",
+        "slug": "gym-pt-culture-tax-deduction",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-11-08",
+        "readMin": 5,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "연말정산 계산기 열기",
+        "ctaHeading": "총급여와 미리 낸 세금으로 정산 결과를 비교하세요",
+        "ctaDescription": "헬스장 결제액의 시설 이용분은 영수증으로 구분하고, 계산기는 전체 연말정산 흐름을 확인하는 데 활용하세요.",
+        "related": [("/income/salary.html", "총급여와 월급 실수령액 비교")],
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------

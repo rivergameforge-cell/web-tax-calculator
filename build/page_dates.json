@@ -94,6 +94,11 @@
     "modified": "2026-10-23",
     "published": "2026-10-23"
   },
+  "blog/gym-pt-culture-tax-deduction.html": {
+    "digest": "adaccca7d8eb32f8dd113065c12da76a13b8b077b6905783e78e58666169f9b7",
+    "modified": "2026-11-08",
+    "published": "2026-11-08"
+  },
   "blog/housing-subscription-income-deduction.html": {
     "digest": "5222a835d515667ce606718c4c0b9dc3a08f5cd0a4d54cab285bddead1ba6108",
     "modified": "2026-10-22",
@@ -105,8 +110,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "e8800877828e41d1f820266257db96e0d4096391ad25473f96a7a3460584fbaf",
-    "modified": "2026-11-06",
+    "digest": "022b864e9b042f4843559594e22ca4a7b1969a9c793d5dd38a8d6f20d858a8b5",
+    "modified": "2026-11-08",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -435,8 +440,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "48ea8d08aad384174c6d24b908211905c1fef8074d20d48b446553d16d2b6973",
-    "modified": "2026-11-06",
+    "digest": "d29adf007f2e47742dfaa1d175b5f47d31b3f7b84fd73273c3f995c7cb0d0c47",
+    "modified": "2026-11-08",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
