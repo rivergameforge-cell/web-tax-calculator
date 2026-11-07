@@ -1301,6 +1301,7 @@ def make_excerpt(desc: str, max_len: int = 160) -> str:
 PAGE_TEMPLATE = """<!DOCTYPE html>
 <html lang="ko">
 <head>
+  <script defer src="/js/analytics.js?v=1"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{description}">
@@ -1527,6 +1528,7 @@ def render_post(meta: dict, parsed: dict) -> str:
 INDEX_TEMPLATE = """<!DOCTYPE html>
 <html lang="ko">
 <head>
+  <script defer src="/js/analytics.js?v=1"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="세금계산기 블로그 - 부동산·자동차·소득·금융 세금에 대한 실전 가이드와 절세 팁을 정리합니다. 2026년 최신 세율 기준.">

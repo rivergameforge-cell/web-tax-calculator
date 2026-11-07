@@ -51,6 +51,8 @@ def git_date(path: Path, first=False) -> str:
 def document_dates(path: Path, signature=None) -> dict:
     key = path.relative_to(ROOT).as_posix()
     content = signature if signature is not None else path.read_text(encoding='utf-8')
+    # A tracking tag update does not change the page's editorial content.
+    content = re.sub(r'^  <script defer src="/js/analytics\.js(?:\?v=\d+)?"></script>\n', '', content, flags=re.MULTILINE)
     digest = hashlib.sha256(content.encode()).hexdigest()
     previous = DATES.get(key)
     if previous and previous['digest'] == digest:
