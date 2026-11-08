@@ -1,0 +1,44 @@
+<!-- 티스토리 제목 -->
+<!-- 주말부부 월세 두 집, 2026년 연말정산에서 둘 다 받는 주소 조건 -->
+
+<p data-ke-size="size16">부부가 매달 월세를 65만 원, 55만 원씩 내면 1년 지출은 1,440만 원입니다. 2026년 귀속 연말정산에서는 무주택 주말부부가 조건을 맞추면 두 사람 모두 월세 세액공제를 신청할 수 있습니다. 계산보다 먼저 볼 것은 계약서 두 장과 주민등록 주소입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<!-- THUMBNAIL: 서론 다음에 대표 이미지 첨부 -->
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">1. 두 집의 주소를 이렇게 대조하세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16"><strong>① 부부의 등본을 서로 비교합니다.</strong> 각 주소가 속한 시·군·자치구가 서로 달라야 합니다. 같은 자치구에서 동만 다르면 배우자 추가 공제의 별도 거주 요건을 충족하지 못합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><strong>② 각자 계약서와 등본을 비교합니다.</strong> 공제받으려는 집의 계약서 주소가 신청자의 등본 주소와 일치하는지 확인하세요. 계약은 신청자 본인 또는 법에서 정한 기본공제대상자가 체결해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><strong>③ 12월 31일 기준 무주택 요건을 확인합니다.</strong> 부부는 주소가 달라도 무주택 여부를 볼 때 같은 세대로 봅니다. 세대주와 배우자 양쪽의 부모·자녀 등 직계존비속과 그 배우자, 형제자매가 배우자와 주소를 같이한다면 그 가족의 주택 보유 여부도 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">2. 두 사람이 각각 확인할 급여와 주택 기준</h2>
+<p data-ke-size="size16">월세 공제를 적용받는 세대주와 추가로 신청하는 배우자는 각각 근로소득이 있고 총급여 8,000만 원 이하, 종합소득금액 7,000만 원 이하라는 요건을 충족해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">공제 대상 주택은 원칙적으로 국민주택규모 이하 또는 기준시가 4억 원 이하입니다. 해당 근로자의 기본공제대상 자녀·손자녀가 3명 이상이면 전용면적 100㎡ 기준을 적용할 수 있습니다. 주거용 오피스텔과 고시원도 요건을 충족하면 대상이 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">3. 1,440만 원을 냈다면 한도는 어떻게 나뉠까요?</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">두 사람 모두 요건을 충족하고 12개월치 월세를 냈다고 가정하겠습니다. 공제율을 곱하기 전에 부부 합산 연 1,000만 원 한도를 먼저 적용합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><strong>세대주</strong> 월 65만 원 × 12개월 = 공제 대상 780만 원<br /><strong>배우자</strong> 월 55만 원 × 12개월 = 660만 원 지출, 남은 한도 220만 원을 공제 대상으로 적용</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">세대주 780만 원과 배우자 220만 원에 각자의 공제율을 곱합니다. 총급여 5,500만 원 이하이면서 종합소득금액 4,500만 원 이하라면 17%를 적용합니다. 이 기준을 넘지만 일반 공제 요건을 충족하면 15%입니다. 정산 때 실제로 돌려받는 금액은 다른 공제와 회사가 미리 뗀 세금에 따라서도 달라집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">4. 회사 제출 전에 두 집의 서류를 따로 묶어두세요</h2>
+<p data-ke-size="size16">각자의 주민등록표 등본과 임대차계약서 사본, 계좌이체 내역을 한 묶음으로 챙깁니다. 관리비를 월세와 함께 보냈다면 계약서에서 월세 부분을 구분하세요. 두 사람의 적격 월세와 세대주 공제 후 남은 한도를 따로 적어두면 서로 다른 회사에 자료를 제출할 때도 대조하기 쉽습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">합산 한도를 나눈 뒤 각자 적용되는 공제율과 공제액을 비교해 보세요. 아래 계산기는 개인별 참고용이며 두 집의 자격과 합산 한도는 위 순서대로 먼저 확인합니다.</p>
+<p data-ke-size="size16"><a href="https://taxcalc.co.kr/income/rent-credit.html" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#2159a6;color:#fff;padding:12px 18px;border-radius:7px;text-decoration:none;">월세 세액공제 계산기 열기</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16">한 집 월세부터 얼마나 공제되는지 보고 싶다면 월 80만 원을 기준으로 풀어본 계산 예시를 참고하세요.</p>
+<p data-ke-size="size16">https://kwonriver-carstroy.tistory.com/entry/월세-80만-원-연말정산-세액공제-계산법</p>
+
+<!-- 해시태그 -->
+<!-- 주말부부월세, 월세세액공제, 2026연말정산, 맞벌이연말정산, 월세공제서류, 부부합산한도, 무주택세대, 주민등록등본 -->

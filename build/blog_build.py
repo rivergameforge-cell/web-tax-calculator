@@ -1078,6 +1078,19 @@ POSTS = [
         "customHtml": False
     },
     {
+        "file": "주말부부_월세_세액공제_부부합산_계산",
+        "slug": "weekend-couple-rent-tax-credit",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-11-08",
+        "readMin": 5,
+        "ctaHref": "https://taxcalc.co.kr/#income/rent-credit",
+        "ctaLabel": "월세 세액공제 계산기 열기",
+        "ctaHeading": "각자 인정되는 월세로 세액공제액을 비교하세요",
+        "ctaDescription": "부부 합산 한도를 먼저 적용한 뒤 각자의 월세 세액공제를 가늠할 수 있습니다.",
+        "customHtml": False
+    },
+    {
         "file": "헬스장_PT_문화비_소득공제_시설이용료_계산",
         "slug": "gym-pt-culture-tax-deduction",
         "category": "labor",

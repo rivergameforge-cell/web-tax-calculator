@@ -110,7 +110,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "022b864e9b042f4843559594e22ca4a7b1969a9c793d5dd38a8d6f20d858a8b5",
+    "digest": "9590203d3d8c452cc94b7720f4a98a1b44886913e7e7a56cfe8319afdf99a529",
     "modified": "2026-11-08",
     "published": "2026-05-05"
   },
@@ -319,6 +319,11 @@
     "modified": "2026-10-22",
     "published": "2026-10-19"
   },
+  "blog/weekend-couple-rent-tax-credit.html": {
+    "digest": "4fe1e01f18d430dd5986f3be46194374ef2f568873c2ac0829604fd215d47db8",
+    "modified": "2026-11-08",
+    "published": "2026-11-08"
+  },
   "blog/yellow-umbrella-income-deduction.html": {
     "digest": "626fd8e6b329a1305ab2f2a5a30ce025c6ea983c26bde1cf2114b808f19fac3d",
     "modified": "2026-10-22",
@@ -370,8 +375,8 @@
     "published": "2026-04-18"
   },
   "income/employment.html": {
-    "digest": "4e41020c7c3a5ab72ff4a7fbda30c9ad90c7339a57452e2a948c4ba9ab520eda",
-    "modified": "2026-11-05",
+    "digest": "a3c720b812350b3a734a81492a80636b7d712b1a1ad52e4b6e2472b7c73654d0",
+    "modified": "2026-11-08",
     "published": "2026-04-18"
   },
   "income/freelancer.html": {
@@ -415,8 +420,8 @@
     "published": "2026-04-18"
   },
   "income/rent-credit.html": {
-    "digest": "843c1816ed1dae3ddce361d865c4aadc07d2a40df89dc55f5a33e8e0c9795134",
-    "modified": "2026-10-16",
+    "digest": "e47178bd5ea0ce63fc93d2680ff19b84886325e8b3666a083dda4263116bb240",
+    "modified": "2026-11-08",
     "published": "2026-04-18"
   },
   "income/retirement.html": {
@@ -425,8 +430,8 @@
     "published": "2026-04-18"
   },
   "income/salary.html": {
-    "digest": "849645a08db05e24f409b7f5a1c0a147d067e3d334bd3300b4b84a03d6dac174",
-    "modified": "2026-11-06",
+    "digest": "f1149cf274be5767a7dccdb1dd389e307eefece0d4e878a009f1c8971fdc9a61",
+    "modified": "2026-11-08",
     "published": "2026-04-18"
   },
   "income/severance.html": {
@@ -440,7 +445,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "d29adf007f2e47742dfaa1d175b5f47d31b3f7b84fd73273c3f995c7cb0d0c47",
+    "digest": "b249610b8746b94dbba666d688173e721bc5231a3b64d9d3669499a7509a69a7",
     "modified": "2026-11-08",
     "published": "2026-04-02"
   },
