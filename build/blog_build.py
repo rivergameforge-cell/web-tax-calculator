@@ -1078,6 +1078,19 @@ POSTS = [
         "customHtml": False
     },
     {
+        "file": "폐업_11월_지역건보료_소득조정_정산",
+        "slug": "november-health-insurance-after-closure",
+        "category": "business",
+        "categoryLabel": "사업 세금",
+        "date": "2026-11-08",
+        "readMin": 6,
+        "ctaHref": "https://taxcalc.co.kr/#income/comprehensive",
+        "ctaLabel": "종합소득세 계산기 열기",
+        "ctaHeading": "폐업 전후의 소득세도 확인하세요",
+        "ctaDescription": "가게 소득과 재취업 소득에 대한 세금을 살펴보는 도구입니다. 지역가입자 보험료는 공단 고지서에서 확인하세요.",
+        "customHtml": False
+    },
+    {
         "file": "주말부부_월세_세액공제_부부합산_계산",
         "slug": "weekend-couple-rent-tax-credit",
         "category": "labor",

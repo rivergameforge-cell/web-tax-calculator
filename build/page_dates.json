@@ -110,7 +110,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "9590203d3d8c452cc94b7720f4a98a1b44886913e7e7a56cfe8319afdf99a529",
+    "digest": "ed9f6c18d2442deb44ff3ee5b036110b211a66605e638e061825a2efe461f576",
     "modified": "2026-11-08",
     "published": "2026-05-05"
   },
@@ -178,6 +178,11 @@
     "digest": "7a71e2f84204b00d668e21719b3c0e593781437366e0f19665e37d52c1e3b8d8",
     "modified": "2026-10-22",
     "published": "2026-10-11"
+  },
+  "blog/november-health-insurance-after-closure.html": {
+    "digest": "1213baa50aad1ea6f42b61a8af7dfdd073aee2f59b98b8a26074fbd7b51d0322",
+    "modified": "2026-11-08",
+    "published": "2026-11-08"
   },
   "blog/november-income-tax-interim-payment.html": {
     "digest": "467cfaa85f26e84dc30985732ef22c7af2210fa0cad690967d2bc4ed73dd2a4b",
@@ -355,8 +360,8 @@
     "published": "2026-04-18"
   },
   "income/comprehensive.html": {
-    "digest": "8c30ebaca8d317bf1cdea707ffe58eea71ce620ca62932ec4288259149b7bbd4",
-    "modified": "2026-10-17",
+    "digest": "b3f54da2fd0fecdd5475f4d1cda4df5a832c3376fb5bbed1043773b4b051ccfc",
+    "modified": "2026-11-08",
     "published": "2026-04-18"
   },
   "income/corporate.html": {
@@ -445,7 +450,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "b249610b8746b94dbba666d688173e721bc5231a3b64d9d3669499a7509a69a7",
+    "digest": "266e89b4ce10155d47508bb449780010d9c39ff3f3d1c02d301c3267c85c8d05",
     "modified": "2026-11-08",
     "published": "2026-04-02"
   },
