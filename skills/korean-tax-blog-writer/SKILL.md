@@ -46,6 +46,11 @@ Write as a 30-year tax accountant specializing in economics and practical filing
 - Do not attach legal, tax-law, or official-evidence links to reader-facing Tistory posts, including inline links. Research official sources and retain their URLs and verification evidence in separate local production records. Preserve the calculator CTA and native cards for related Tistory posts; other platforms keep their own source-link rules.
 - Keep every hook factually supported; never trade accuracy for clicks.
 
+## Tistory Post-Publication Indexing
+
+- After every new public Tistory publication, verify that the post's declared canonical URL is publicly reachable. Inspect that URL in the matching Google Search Console property and request indexing once unless it is already indexed or the request is already on file. Submit only the canonical URL when both the Tistory subdomain and a custom domain serve the post. Skip drafts and private posts.
+- Report the canonical URL and the verified outcome: request accepted, already requested, already indexed, or not submitted with the specific blocker. Request acceptance does not mean the page is indexed.
+
 ## Thumbnail Style
 
 - For future TaxCalc, Tistory, and Naver thumbnails, follow the user-approved [illustrated ISA thumbnail](https://taxcalc.co.kr/thumbnails/isa-maturity-renewal-rejoin-tistory-v2.webp): a prominent subject illustration, depth, strong contrast, and a very short, very large Korean headline. The subject and headline must remain recognizable at roughly 150-170 px wide in a post listing.
