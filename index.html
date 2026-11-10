@@ -1899,13 +1899,17 @@
                         <span class="radio-label">주택</span>
                       </label>
                       <label class="radio-option">
+                        <input type="radio" name="comm-prop" value="officetel">
+                        <span class="radio-label">법정 면적·설비 요건을 충족한 오피스텔</span>
+                      </label>
+                      <label class="radio-option">
                         <input type="radio" name="comm-prop" value="other">
-                        <span class="radio-label">주택 외 (토지·상가·오피스텔 등)</span>
+                        <span class="radio-label">그 외 (토지·상가·요건 미충족 오피스텔)</span>
                       </label>
                     </div>
                   </div>
 
-                  <!-- 거래 유형 (주택만) -->
+                  <!-- 거래 유형 -->
                   <div class="form-group" id="comm-trans-section">
                     <div class="form-label">거래 유형 <span class="required">*</span></div>
                     <div class="radio-group">
@@ -1933,15 +1937,6 @@
                     </div>
                   </div>
 
-                  <!-- 전세/월세 보증금 (전세·월세일 때) -->
-                  <div class="form-group" id="comm-deposit-section" style="display:none">
-                    <label class="form-label" for="comm-deposit">월세 보증금</label>
-                    <div class="num-input-wrap">
-                      <input type="text" id="comm-deposit" class="input" placeholder="0" inputmode="numeric">
-                      <span class="num-input-unit">원</span>
-                    </div>
-                  </div>
-
                   <!-- 월세액 (월세일 때) -->
                   <div class="form-group" id="comm-monthly-section" style="display:none">
                     <label class="form-label" for="comm-monthly-rent">월세액 <span class="required">*</span></label>
@@ -1949,7 +1944,7 @@
                       <input type="text" id="comm-monthly-rent" class="input" placeholder="0" inputmode="numeric">
                       <span class="num-input-unit">원/월</span>
                     </div>
-                    <div class="form-hint">환산보증금 = 보증금 + (월세 × 100)</div>
+                    <div class="form-hint">보증금 + (월세 × 100)이 5천만 원 미만이면 월세에 70을 곱해 다시 계산합니다.</div>
                   </div>
 
                   <div class="calc-action-bar">
@@ -5504,6 +5499,18 @@
       <a href="/blog/" class="site-blog-all">블로그 전체 보기 →</a>
     </div>
 
+    <nav aria-label="연말정산과 세금 가이드">
+      <p class="site-blog-desc"><strong>연말정산 바로가기</strong>:
+        <a href="/blog/credit-card-deduction-25-percent.html">신용카드 25% 기준</a> ·
+        <a href="/blog/dual-income-year-end-deductions.html">맞벌이 공제 배분</a> ·
+        <a href="/blog/weekend-couple-rent-tax-credit.html">주말부부 월세 공제</a>
+      </p>
+      <p class="site-blog-desc">
+        <a href="/blog/#pension-investing">연금·투자</a> ·
+        <a href="/blog/#property-car">부동산·자동차</a> ·
+        <a href="/blog/#business">사업자 신고·보험료</a>
+      </p>
+    </nav>
     <div class="site-blog-grid" id="site-latest-posts">
 <article class="site-blog-card">
         <a class="site-blog-thumb" href="/blog/november-health-insurance-after-closure.html"><img src="/thumbnails/november-health-insurance-after-closure.webp" alt="2026년 11월 지역건보료가 오른 이유, 폐업 후 소득 조정과 정산" width="1200" height="630" loading="lazy"></a>
@@ -5650,7 +5657,7 @@
 <script src="js/calculators/loan/ltv.js?v=6"></script>
 <script src="js/calculators/real-estate/acquisition.js?v=7"></script>
 <script src="js/calculators/real-estate/officetel-acquisition.js?v=1"></script>
-<script src="js/calculators/real-estate/commission.js?v=4"></script>
+<script src="js/calculators/real-estate/commission.js?v=5"></script>
 <script src="js/calculators/real-estate/capital-gains.js?v=5"></script>
 <script src="js/calculators/real-estate/comprehensive.js?v=4"></script>
 <script src="js/calculators/real-estate/property-tax.js?v=3"></script>
@@ -5659,7 +5666,7 @@
 <script src="js/calculators/inherit/gift.js?v=6"></script>
 <script src="js/calculators/real-estate/stamp.js?v=2"></script>
 <script src="js/calculators/real-estate/registration.js?v=1"></script>
-<script src="js/calculators/real-estate/total-cost.js?v=4"></script>
+<script src="js/calculators/real-estate/total-cost.js?v=5"></script>
 <script src="js/calculators/vehicle/buying.js?v=4"></script>
 <script src="js/calculators/vehicle/installment.js?v=1"></script>
 <script src="js/calculators/vehicle/overdue.js?v=4"></script>

@@ -29,23 +29,17 @@ const CalcTotalCost = (() => {
 
   // ── 중개보수율 (매매) ──
   const COMM_RATES = [
-    { limit:  50_000_000, rate: 0.006, max:  250_000 },
-    { limit: 200_000_000, rate: 0.005, max:  800_000 },
-    { limit: 600_000_000, rate: 0.004, max: null },
-    { limit: 900_000_000, rate: 0.005, max: null },
-    { limit: 1_200_000_000, rate: 0.005, max: null },
-    { limit: 1_500_000_000, rate: 0.006, max: null },
-    { limit: Infinity,    rate: 0.007, max: null },
+    [50_000_000, 6, 250_000],
+    [200_000_000, 5, 800_000],
+    [900_000_000, 4],
+    [1_200_000_000, 5],
+    [1_500_000_000, 6],
+    [Infinity, 7],
   ];
 
   function getCommission(price) {
-    for (const b of COMM_RATES) {
-      if (price <= b.limit) {
-        const fee = Math.floor(price * b.rate);
-        return b.max ? Math.min(fee, b.max) : fee;
-      }
-    }
-    return 0;
+    const [, perMille, maxFee] = COMM_RATES.find(([limit]) => price < limit);
+    return Math.min(Math.floor(price * perMille / 1000), maxFee ?? Infinity);
   }
 
   // ── 인지세 ──

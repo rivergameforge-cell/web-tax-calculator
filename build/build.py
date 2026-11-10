@@ -37,6 +37,7 @@ DATES = json.loads(DATES_PATH.read_text()) if DATES_PATH.exists() else {}
 SPA = None
 MODULES = {}
 GUIDES = {}
+BLOG_ARTICLES = {}
 
 
 def git_date(path: Path, first=False) -> str:
@@ -89,6 +90,8 @@ def load_runtime():
         title = unescape(strip_tags(title_match[1]))
         published = re.search(r'"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})', raw)
         guide_date = published[1] if published else git_date(path, first=True)
+        guide = (path, title, guide_date)
+        BLOG_ARTICLES[path.stem] = guide
         for link in set(doc.links):
             if link.startswith('https://taxcalc.co.kr/'):
                 link = link.removeprefix('https://taxcalc.co.kr')
@@ -98,7 +101,7 @@ def load_runtime():
                 route = link[1:-5]
             else:
                 continue
-            GUIDES.setdefault(route, []).append((path, title, guide_date))
+            GUIDES.setdefault(route, []).append(guide)
 
 
 def render_runtime(route):
@@ -130,9 +133,14 @@ def render_directory(pages):
     return ''.join(sections)
 
 
-def render_guides(route):
-    unique = {item[0]: item for item in GUIDES.get(route, [])}
-    guides = sorted(unique.values(), key=lambda item: (item[2], item[0].name), reverse=True)[:3]
+def render_guides(route, featured=()):
+    unique = {item[0].stem: item for item in GUIDES.get(route, [])}
+    if len(set(featured)) != len(featured) or any(slug not in BLOG_ARTICLES for slug in featured):
+        raise ValueError(f'{route}: invalid featured blog guide')
+    guides = [BLOG_ARTICLES[slug] for slug in featured]
+    for slug in featured:
+        unique.pop(slug, None)
+    guides += sorted(unique.values(), key=lambda item: (item[2], item[0].name), reverse=True)[:max(0, 3 - len(guides))]
     if not guides:
         return ''
     links = ''.join(f'<li><a href="/blog/{path.name}">{escape(title)}</a></li>' for path, title, _ in guides)
@@ -301,7 +309,7 @@ def render_page(meta: dict, template: str, all_pages: dict) -> str:
     calculator, scripts, runtime_signature = render_runtime(meta['id'])
     sources = REFERENCES[meta['id']]
     limits = PAGE_LIMITS.get(meta['id'], LIMITS[category_id])
-    guides = render_guides(meta['id'])
+    guides = render_guides(meta['id'], meta.get('featured_guides', ()))
     signature = json.dumps(meta, ensure_ascii=False, sort_keys=True) + template + runtime_signature
     signature += json.dumps(sources, ensure_ascii=False) + limits + guides
     header = SPA.elements['header']

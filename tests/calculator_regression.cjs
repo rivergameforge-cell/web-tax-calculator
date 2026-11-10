@@ -31,6 +31,27 @@ for (const houseCount of [2, 3, 4]) {
   eq(acquisition({ ...base, area: 86 }).ruralTax, houseCount === 2 ? 3000000 : 5000000);
 }
 eq(acquisition({ type: 'housing', price: 600000000, houseCount: 1, area: 85 }).total, 6600000);
+const commission = moduleCalc('js/calculators/real-estate/commission.js', 'CalcCommission');
+const houseFee = (transType, price) => commission({ propertyType: 'housing', transType, price }).fee;
+for (const [price, fee] of [[49999999,250000],[50000000,250000],[199999999,800000],[200000000,800000],
+    [700000000,2800000],[899999999,3599999],[900000000,4500000],[1190000000,5950000],
+    [1200000000,7200000],[1500000000,10500000]]) {
+  eq(houseFee('매매', price), fee);
+}
+for (const [price, fee] of [[400000000,1200000],[599999999,1799999],[600000000,2400000],
+    [1200000000,6000000],[1500000000,9000000]]) {
+  eq(houseFee('전세', price), fee);
+}
+const monthlyFee = (price, monthlyRent) => commission({ propertyType: 'housing', transType: '월세', price, monthlyRent });
+eq(monthlyFee(0, 400000).basePrice, 28000000);
+eq(monthlyFee(0, 400000).fee, 140000);
+eq(monthlyFee(10000000, 400000).basePrice, 50000000);
+eq(monthlyFee(10000000, 500000).fee, 240000);
+eq(monthlyFee(10000000, 0), null);
+eq(commission({ propertyType: 'officetel', transType: '매매', price: 300000000 }).fee, 1500000);
+eq(commission({ propertyType: 'officetel', transType: '전세', price: 300000000 }).fee, 1200000);
+eq(commission({ propertyType: 'other', transType: '매매', price: 300000000 }).fee, 2700000);
+eq(commission({ propertyType: 'housing', transType: '매매', price: 1200000000 }).total, 7920000);
 const vat = moduleCalc('js/calculators/income/vat.js', 'CalcVat');
 eq(vat({ taxType: 'general', salesAmount: 10000000, purchaseAmount: 15000000 }).vatPayable, -500000);
 eq(vat({ taxType: 'general', salesAmount: 0, purchaseAmount: 15000000 }).vatPayable, -1500000);

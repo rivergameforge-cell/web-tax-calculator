@@ -171,6 +171,29 @@ class SiteTests(unittest.TestCase):
         finally:
             del builder.GUIDES[route]
 
+    def test_priority_blog_paths_exist_in_static_html(self):
+        posts = {meta['slug'] for meta in blog_build.POSTS}
+        index = Document((ROOT / 'blog/index.html').read_text())
+        self.assertTrue({f'/blog/{slug}.html' for slug in posts}.issubset(index.hrefs))
+        home = Document((ROOT / 'index.html').read_text())
+        employment = Document((ROOT / 'income/employment.html').read_text())
+        for slug in ('credit-card-deduction-25-percent', 'dual-income-year-end-deductions',
+                     'weekend-couple-rent-tax-credit'):
+            self.assertIn(f'/blog/{slug}.html', home.hrefs)
+            self.assertIn(f'/blog/{slug}.html', employment.hrefs)
+        self.assertIn('/blog/weekend-couple-rent-tax-credit.html',
+                      Document((ROOT / 'income/rent-credit.html').read_text()).hrefs)
+
+    def test_related_articles_can_be_refreshed_without_changing_body(self):
+        path = ROOT / 'blog/credit-card-deduction-25-percent.html'
+        html = path.read_text()
+        old = blog_build.GENERATED_RELATED.sub('', html)
+        self.assertNotEqual(old, html)
+        updated = blog_build.add_related_posts(old, path.stem)
+        self.assertEqual(updated, html)
+        self.assertEqual(blog_build.add_related_posts(updated, path.stem), html)
+        self.assertIn('/blog/gym-pt-culture-tax-deduction.html', updated)
+
     def test_medical_tistory_article_layout(self):
         source = ROOT / 'blog_post/의료비_세액공제_3퍼센트_실손보험금_티스토리.txt'
         post = tistory_prepare.parse_tistory_post(source)

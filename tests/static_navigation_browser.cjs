@@ -49,6 +49,16 @@ async function main() {
     await expect(page.locator('#sidebar')).toBeVisible();
     await page.locator('#comm-price').fill('100000000');
     await expect(page.locator('#comm-result .total')).toContainText('550,000');
+    await page.locator('#comm-price').fill('1200000000');
+    await expect(page.locator('#comm-result .total')).toContainText('7,920,000');
+    await page.locator('#comm-trans-section label').filter({ hasText: '월세' }).click();
+    await page.locator('#comm-price').fill('0');
+    await page.locator('#comm-monthly-rent').fill('400000');
+    await expect(page.locator('#comm-result .total')).toContainText('154,000');
+    await expect(page.locator('#comm-result')).toContainText('28,000,000');
+    await page.locator('#comm-trans-section label').filter({ hasText: '매매' }).click();
+    await page.locator('#comm-price').fill('1200000000');
+    await expect(page.locator('#comm-result .total')).toContainText('7,920,000');
     await page.screenshot({ path: path.join(output, 'desktop-commission.png') });
     await page.locator('#cat-income').click();
     await expect(page.locator('#items-real-estate')).toBeHidden();
@@ -113,6 +123,16 @@ async function main() {
       await page.locator('#nav-real-estate-commission').click();
       await expect(page).toHaveURL(`${base}/real-estate/commission.html`);
     }
+    await page.goto(base + '/real-estate/total-cost.html', { waitUntil: 'domcontentloaded' });
+    await page.locator('#tc-buy-price').fill('1200000000');
+    await expect(page.locator('#tc-buy-result')).toContainText('7,200,000');
+    await page.goto(base + '/blog/', { waitUntil: 'domcontentloaded' });
+    await expect(page.getByRole('heading', { name: '주제별 세금 가이드' })).toBeVisible();
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
+    await page.screenshot({ path: path.join(output, 'mobile-blog-guides.png') });
+    await page.locator('#year-end a[href="/blog/dual-income-year-end-deductions.html"]').click();
+    await expect(page).toHaveURL(base + '/blog/dual-income-year-end-deductions.html');
+    await expect(page.locator('article a[href="/blog/parental-leave-spouse-deduction.html"]')).toBeVisible();
     assert.deepEqual(errors, [], 'Unexpected browser errors');
     console.log('Home/card, calculator input, longest category, cross-category, back/forward, search, theme, sticky sidebar, print, logo, mobile and legacy URL flows passed');
   } finally {

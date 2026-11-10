@@ -24,10 +24,44 @@ POST_DIR = ROOT / "blog_post"
 OUT_DIR = ROOT / "blog"
 INDEX_PATH = OUT_DIR / "index.html"
 RELATED_POSTS_PATH = ROOT / "build" / "blog_related_posts.json"
+GENERATED_RELATED = re.compile(
+    r'^    <div class="related-articles related-posts">\n'
+    r'      <h2>함께 읽으면 좋은 글</h2>\n'
+    r'(?:      <a href="/blog/[a-z0-9-]+\.html">[^<]+</a>\n'
+    r'      <p>[^<]+</p>\n){1,3}    </div>\n', re.MULTILINE
+)
+
+BLOG_TOPICS = (
+    ("year-end", "연말정산: 카드·가족·월세", (
+        ("credit-card-deduction-25-percent", "신용카드 소득공제 25% 계산"),
+        ("dual-income-year-end-deductions", "맞벌이 부부 공제 배분"),
+        ("monthly-rent-tax-credit-8m-refund", "월세 세액공제 기본 조건"),
+        ("weekend-couple-rent-tax-credit", "주말부부 두 집의 월세 공제"),
+        ("gohyang-donation-tax-credit", "고향사랑기부금과 세액공제"),
+    )),
+    ("pension-investing", "연금·투자: 납입과 해지, 주식 손익", (
+        ("pension-loss-tax-credit", "손실 난 연금저축의 세액공제"),
+        ("pension-savings-withdrawal-tax", "연금저축 해지 시 과세 대상"),
+        ("isa-maturity-renewal-rejoin", "ISA 만기 연장과 해지 비교"),
+        ("foreign-stock-loss-netting", "해외주식 손익통산과 평가손실"),
+    )),
+    ("property-car", "부동산·자동차: 계약과 보유 비용", (
+        ("commission-calculation-method", "매매·전세·월세 복비 계산"),
+        ("real-estate-commission", "12억 아파트 복비 청구서 예시"),
+        ("property-tax-guide", "주택 재산세 납부와 계산"),
+        ("vehicle-tax-sale-refund", "차를 판 뒤 자동차세 환급"),
+    )),
+    ("business", "사업자: 고지서·신고·보험료", (
+        ("november-income-tax-interim-payment", "11월 종합소득세 중간예납"),
+        ("november-health-insurance-after-closure", "폐업 후 11월 지역건보료"),
+        ("vat-refund-output-input-tax", "매입세액과 부가세 환급"),
+    )),
+)
 
 
 def add_related_posts(html: str, slug: str) -> str:
-    """Append the curated same-site footer without changing existing article content."""
+    """Refresh the generated footer; leave hand-authored related sections intact."""
+    html = GENERATED_RELATED.sub("", html)
     if re.search(r'<h2\b[^>]*>\s*함께 읽으면 좋은 글\s*</h2>', html):
         return html
     related = json.loads(RELATED_POSTS_PATH.read_text(encoding="utf-8"))
@@ -168,6 +202,7 @@ POSTS = [
     {
         "file": "부동산_복비_블로그_포스팅",
         "slug": "real-estate-commission",
+        "modified": "2026-11-10",
         "category": "real-estate",
         "categoryLabel": "부동산 세금",
         "date": "2026-05-12",
@@ -185,6 +220,7 @@ POSTS = [
     {
         "file": "부동산_복비_계산방법",
         "slug": "commission-calculation-method",
+        "modified": "2026-11-10",
         "category": "real-estate",
         "categoryLabel": "부동산 세금",
         "date": "2026-06-16",
@@ -933,7 +969,8 @@ POSTS = [
         "ctaDescription": "근로소득만 있는 경우의 일반 한도와 비율로 계산합니다. 실제 적용 세액과 최종 환급액, 인출·해지 세금, ISA 만기 전환 등 특별한 추가 한도는 반영하지 않으므로 금융회사·회사 정산 자료를 함께 확인하세요.",
         "related": [
             ["/blog/isa-maturity-renewal-rejoin.html", "ISA 만기와 손실 계좌의 해지·연장 확인"],
-            ["/blog/mid-year-resignation-tax-settlement.html", "중도퇴사 연말정산 — 결정세액과 추가 환급 구분"]
+            ["/blog/mid-year-resignation-tax-settlement.html", "중도퇴사 연말정산 — 결정세액과 추가 환급 구분"],
+            ["/blog/pension-savings-withdrawal-tax.html", "계좌를 해지할 때는 공제받은 납입액과 공제받지 않은 원금의 과세 차이를 확인하세요."]
         ],
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
@@ -969,7 +1006,8 @@ POSTS = [
         "ctaDescription": "각자의 근로소득세 계산 흐름을 살펴보는 간이 도구입니다. 부부 공제 배분 최적화·가족 자격·실제 부담자 판정과 귀속연도별 카드·자녀·한도·특례를 모두 처리하지 않으므로 확정 신고 계산과 구분하세요.",
         "related": [
             ["/blog/credit-card-deduction-25-percent.html", "신용카드 소득공제 — 25% 문턱 이후의 계산 순서"],
-            ["/blog/medical-expense-tax-credit-3-percent.html", "의료비 세액공제 — 실손보험금 차감과 3% 기준"]
+            ["/blog/medical-expense-tax-credit-3-percent.html", "의료비 세액공제 — 실손보험금 차감과 3% 기준"],
+            ["/blog/parental-leave-spouse-deduction.html", "육아휴직 중이라면 배우자 기본공제에 어떤 소득을 포함하는지 확인하세요."]
         ],
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
@@ -1059,7 +1097,8 @@ POSTS = [
             [
                 "/blog/dual-income-year-end-deductions.html",
                 "맞벌이 연말정산 — 자녀와 공제 항목 확인 순서"
-            ]
+            ],
+            ["/blog/childcare-allowance-tax-exemption.html", "회사 보육수당과 직접 낸 교육비는 다릅니다. 급여에서 비과세되는 보육수당 기준을 확인하세요."]
         ],
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
@@ -1307,6 +1346,7 @@ def parse_post(md_path: Path) -> dict:
     body = raw.split(title_match.group(0), 1)[1]
     # 메타 라인 제거
     body = META_DESC_RE.sub("", body)
+    body = re.sub(r"^\*\*썸네일 파일명\*\*[ \t]*:[^\n]*$", "", body, flags=re.MULTILINE)
     body = re.sub(r"^`thumbnail_[a-z0-9_]+\.png`\s*$", "", body, flags=re.MULTILINE)
     body = re.sub(r"^\*\*썸네일 alt\*\*\s*:.+?$", "", body, flags=re.MULTILINE)
     body = re.sub(r"^\*\*해시태그\*\*\s*:.+?$", "", body, flags=re.MULTILINE)
@@ -1607,12 +1647,19 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     .hero {{ background: linear-gradient(135deg, #2563EB 0%, #1E3A8A 100%); color: white; padding: 36px 32px; border-radius: 16px; margin-bottom: 36px; }}
     .hero h1 {{ font-size: 28px; font-weight: 800; margin-bottom: 10px; letter-spacing: -0.5px; }}
     .hero p {{ font-size: 15.5px; opacity: 0.95; margin: 0; }}
+    .topic-guides {{ margin: 0 0 24px; }}
+    .topic-guides > h2 {{ margin-bottom: 12px; font-size: 20px; }}
+    .topic-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 12px; }}
+    .topic-group {{ padding: 14px 16px; background: white; color: #1f2937; border: 1px solid #e5e7eb; border-radius: 12px; }}
+    .topic-group h3 {{ margin-bottom: 8px; font-size: 15px; }}
+    .topic-group ul {{ padding-left: 20px; margin: 0; }}
+    .topic-group a {{ display: inline-block; padding: 3px 0; color: #1d4ed8; }}
     .filter-bar {{ display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; padding: 14px 16px; background: white; border: 1px solid #e5e7eb; border-radius: 12px; }}
     .filter-chip {{ background: #f3f4f6; color: #4b5563; border: 1px solid transparent; padding: 7px 14px; border-radius: 20px; font-size: 13.5px; font-weight: 600; cursor: pointer; transition: all 0.15s; font-family: inherit; }}
     .filter-chip:hover {{ background: #e5e7eb; }}
     .filter-chip.active {{ background: #2563EB; color: white; border-color: #2563EB; }}
     .filter-count {{ margin-left: auto; align-self: center; font-size: 12.5px; color: #6b7280; }}
-    .post-list {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }}
+    .post-list {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 20px; }}
     .post-card {{ background: white; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; transition: transform 0.15s, box-shadow 0.15s; display: flex; flex-direction: column; }}
     .post-card:hover {{ transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.06); }}
     .post-card.is-hidden {{ display: none; }}
@@ -1662,6 +1709,8 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
       <h1>세금계산기 블로그</h1>
       <p>부동산·자동차·소득·금융 세금에 대한 실전 가이드와 절세 팁을 정리합니다. 2026년 최신 세율 기준.</p>
     </div>
+
+{topic_guides}
 
     <div class="filter-bar" role="tablist" aria-label="블로그 카테고리 필터">
 {filter_chips}
@@ -1785,6 +1834,23 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 """
 
 
+def render_topic_guides(posts: list[dict]) -> str:
+    available = {p["meta"]["slug"] for p in posts}
+    groups = []
+    for topic, title, entries in BLOG_TOPICS:
+        links = []
+        for slug, label in entries:
+            if slug not in available or not (OUT_DIR / f"{slug}.html").is_file():
+                raise ValueError(f"주제별 가이드 대상 누락: {slug}")
+            links.append(f'<li><a href="/blog/{slug}.html">{html_escape(label)}</a></li>')
+        groups.append(f'<section class="topic-group" id="{topic}"><h3>{html_escape(title)}</h3>'
+                      f'<ul>{"".join(links)}</ul></section>')
+    return ('    <section class="topic-guides" aria-labelledby="topic-guides-heading">\n'
+            '      <h2 id="topic-guides-heading">주제별 세금 가이드</h2>\n'
+            '      <div class="topic-grid">\n        ' + '\n        '.join(groups)
+            + '\n      </div>\n    </section>')
+
+
 def render_index(posts: list[dict]) -> str:
     import json
 
@@ -1852,7 +1918,7 @@ def render_index(posts: list[dict]) -> str:
                 "headline": p["parsed"]["title"],
                 "url": f"https://taxcalc.co.kr/blog/{p['meta']['slug']}.html",
                 "datePublished": p["meta"]["date"],
-                "image": "https://taxcalc.co.kr/og-image.png",
+                "image": f"https://taxcalc.co.kr/thumbnails/{p['meta']['slug']}.webp",
             }
             for p in posts_sorted
         ],
@@ -1860,6 +1926,7 @@ def render_index(posts: list[dict]) -> str:
     jsonld_str = json.dumps(blog_jsonld, ensure_ascii=False, indent=2)
 
     return INDEX_TEMPLATE.format(
+        topic_guides=render_topic_guides(posts),
         filter_chips="\n".join(chips_html),
         total_count=len(posts_sorted),
         post_cards="\n".join(cards_html),
