@@ -62,7 +62,8 @@
     "childcare-allowance-tax-exemption": ["2026 보육수당 비과세", "자녀별 비과세 한도와 급여명세서의 과세액을 확인합니다."],
     "gym-pt-culture-tax-deduction": ["헬스장·수영장 소득공제", "시설 이용권과 PT를 함께 결제했을 때 인정되는 금액을 비교합니다."],
     "weekend-couple-rent-tax-credit": ["주말부부 월세 세액공제", "두 집의 월세에 부부 합산 한도를 적용하는 순서와 주소 요건을 확인합니다."],
-    "november-health-insurance-after-closure": ["폐업 후 11월 지역건보료", "소득자료 교체와 정산보험료를 구분하고 폐업 후 보험료 조정 절차를 확인합니다."]
+    "november-health-insurance-after-closure": ["폐업 후 11월 지역건보료", "소득자료 교체와 정산보험료를 구분하고 폐업 후 보험료 조정 절차를 확인합니다."],
+    "comprehensive-property-tax-installment": ["종부세 분납 기준과 농특세 계산", "종부세 본세의 금액 구간과 농특세 비율을 적용해 당초 기한과 분납기한에 낼 금액을 구분합니다."]
   },
   "links": {
     "severance-pay-guide": ["mid-year-resignation-tax-settlement", "irp-why-start-young"],
@@ -127,6 +128,7 @@
     "childcare-allowance-tax-exemption": ["elementary-arts-academy-tax-credit"],
     "gym-pt-culture-tax-deduction": ["credit-card-deduction-25-percent"],
     "weekend-couple-rent-tax-credit": ["monthly-rent-tax-credit-8m-refund", "dual-income-year-end-deductions"],
-    "november-health-insurance-after-closure": ["dividend-health-insurance-dependent", "november-income-tax-interim-payment"]
+    "november-health-insurance-after-closure": ["dividend-health-insurance-dependent", "november-income-tax-interim-payment"],
+    "comprehensive-property-tax-installment": ["property-tax-guide"]
   }
 }

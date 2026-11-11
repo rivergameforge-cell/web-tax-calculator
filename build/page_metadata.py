@@ -24,7 +24,7 @@ REFERENCES = {
     'real-estate/stamp': [law('인지세법', '3')],
     'real-estate/commission': [law('공인중개사법 시행규칙', '20')],
     'real-estate/property-tax': [law('지방세법', '111'), law('지방세법 시행령', '109')],
-    'real-estate/comprehensive': [law('종합부동산세법', '8'), law('종합부동산세법', '9')],
+    'real-estate/comprehensive': [law('종합부동산세법', '8'), law('종합부동산세법', '9'), law('종합부동산세법', '20'), law('종합부동산세법 시행령', '16')],
     'real-estate/rental-income': [INCOME, law('소득세법', '64의2')],
     'real-estate/capital-gains': [law('소득세법', '95'), law('소득세법', '104'), law('소득세법 시행령', '155')],
     'real-estate/total-cost': [LOCAL, INCOME, law('공인중개사법 시행규칙', '20')],

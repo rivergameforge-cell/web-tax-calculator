@@ -1156,6 +1156,19 @@ POSTS = [
         "related": [("/income/salary.html", "총급여와 월급 실수령액 비교")],
         "customHtml": False
     },
+    {
+        "file": "종부세_분납_250만원_농특세_납부액_계산",
+        "slug": "comprehensive-property-tax-installment",
+        "category": "real-estate",
+        "categoryLabel": "부동산 세금",
+        "date": "2026-11-11",
+        "readMin": 6,
+        "ctaHref": "https://taxcalc.co.kr/#real-estate/comprehensive",
+        "ctaLabel": "종합부동산세 예상 세액 살펴보기",
+        "ctaHeading": "분납 전에는 종부세와 농특세를 구분하세요",
+        "ctaDescription": "보유 조건에 따른 예상 세액을 보는 도구입니다. 실제 분납 금액과 신청·납부기한은 홈택스 고지 내역으로 확인하세요.",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------
