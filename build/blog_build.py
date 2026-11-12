@@ -1203,6 +1203,23 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "부동산_배액배상_기타소득_원천징수_종합소득세",
+        "slug": "real-estate-double-deposit-compensation-tax",
+        "category": "real-estate",
+        "categoryLabel": "부동산 세금",
+        "date": "2026-11-12",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/comprehensive",
+        "ctaLabel": "배상금을 합산한 종합소득세 예상액 비교하기",
+        "ctaHeading": "반환 계약금을 제외한 기타소득금액으로 계산하세요",
+        "ctaDescription": "과세 대상 추가 배상금에서 인정되는 필요경비를 차감한 금액을 입력합니다. 실제 신고에서는 원천징수세액 등을 별도로 확인해야 합니다.",
+        "related": [
+            ("/blog/other-income-tax-8-8-guide.html", "강연료·원고료의 기타소득 8.8% 계산 — 배상금과 다른 필요경비율 비교")
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------

@@ -120,7 +120,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "cf816b1842989ce1a043dd6cc789a8a733f2d760773cc8845a4f1edf3a2ba185",
+    "digest": "9c9e5ab9ee4ed991c2c0bfb9adfa1b9558680717d269a5dc2615c2e32fe7275a",
     "modified": "2026-11-12",
     "published": "2026-05-05"
   },
@@ -259,6 +259,11 @@
     "modified": "2026-11-10",
     "published": "2026-05-19"
   },
+  "blog/real-estate-double-deposit-compensation-tax.html": {
+    "digest": "1538fa2010506fd4136e36e8fabb5101474ec3b12b34581aae58157ed0e011bf",
+    "modified": "2026-11-12",
+    "published": "2026-11-12"
+  },
   "blog/resident-tax-august-guide.html": {
     "digest": "464412066fba56bd0677affc0f8f001a9efb08afc91b99b9c44769cbcb3f4002",
     "modified": "2026-10-22",
@@ -375,7 +380,7 @@
     "published": "2026-04-18"
   },
   "income/comprehensive.html": {
-    "digest": "3929dbebca33ec6e40baea3c102f3724a63d29cceb28810c97f0a3fc7a3a6a94",
+    "digest": "a6354e973a2161c05c73b3241b8313ce4f1cb34705f2290541093f473b2c1ed9",
     "modified": "2026-11-12",
     "published": "2026-04-18"
   },
@@ -465,7 +470,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "7850331eb7c86ba00beccf804fd1afd3474f92f92f4bac27c425d3d4b5dd6c03",
+    "digest": "b0c19502e8610a925867fd2952a2cd1d7e2f8d249756cee896234493966e919e",
     "modified": "2026-11-12",
     "published": "2026-04-02"
   },
