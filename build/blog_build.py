@@ -1169,6 +1169,23 @@ POSTS = [
         "ctaDescription": "보유 조건에 따른 예상 세액을 보는 도구입니다. 실제 분납 금액과 신청·납부기한은 홈택스 고지 내역으로 확인하세요.",
         "customHtml": False
     },
+    {
+        "file": "현금영수증_휴대전화번호_등록_누락조회",
+        "slug": "cash-receipt-phone-registration",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-11-12",
+        "readMin": 7,
+        "ctaHref": "https://taxcalc.co.kr/#income/employment",
+        "ctaLabel": "근로소득 연말정산 예상 세금 계산하기",
+        "ctaHeading": "누락 자료를 정리한 뒤 전체 정산 결과를 비교하세요",
+        "ctaDescription": "현금영수증 등록과 조회는 홈택스·손택스에서 진행합니다. 계산기는 공제 자료와 기납부세액을 바탕으로 예상 정산 흐름을 살펴보는 참고 도구입니다.",
+        "related": [
+            ("/blog/credit-card-deduction-25-percent.html", "신용카드 소득공제 계산 — 등록 후 확인할 총급여 25% 기준과 결제수단별 공제율")
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------

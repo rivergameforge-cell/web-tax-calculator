@@ -4,6 +4,11 @@
     "modified": "2026-10-06",
     "published": "2026-04-07"
   },
+  "blog/cash-receipt-phone-registration.html": {
+    "digest": "1f4825112eebf2ed1826c00e68930b60726155f4632377221b6d23cb696bcea9",
+    "modified": "2026-11-12",
+    "published": "2026-11-12"
+  },
   "blog/childcare-allowance-tax-exemption.html": {
     "digest": "ec7c97c3b55e912faf795f697992edbe2b2a2c13fc2b000030db3a68e21c0cd8",
     "modified": "2026-11-06",
@@ -115,8 +120,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "3dcd78a681daeafa54eb8ae08ed34b63bd58db96139a726bc6a060c552547559",
-    "modified": "2026-11-11",
+    "digest": "3a41a6dcd4787cb8b82e323b5437b8b8450b8d347bc479435e7cd2963e327de8",
+    "modified": "2026-11-12",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -455,8 +460,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "742f876f36e5ec0a05089c9bda7cb366621361206f2931c8e549310f38d83a69",
-    "modified": "2026-11-11",
+    "digest": "0349b35a5428afc36bd854fbf8ad9ae720174e8476471c5c70bde57b19014c89",
+    "modified": "2026-11-12",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
