@@ -1,0 +1,67 @@
+<!-- 티스토리 제목 -->
+<!-- 당근 판매액 1,000만 원, 전부 소득일까? 종합소득세 신고 전 구분법 -->
+
+<p data-ke-size="size16">당근에서 판매대금 1,000만 원을 받았다고 해서 1,000만 원 전부가 곧바로 과세 대상 사업소득이 되는 것은 아닙니다. 개인 물품 처분인지 판매 사업인지 구분하고, 사업이라면 매입원가와 비용을 확인하는 순서가 먼저입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">신고 안내문을 받았더라도 금액만 보고 확정 세액으로 판단하지 마세요. 2026년 11월 12일 확인한 법령을 기준으로, 실제 거래자료에서 확인할 항목을 정리합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<!-- 썸네일: secondhand-tistory.webp -->
+<h2 data-ke-size="size26">신고 안내를 받았다면 먼저 세 가지를 대조하세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">첫째, 안내문의 해당 연도와 소득 구분, 수입금액을 확인합니다. 실제 판매·정산 내역과 대조하고 취소·환불·중복 반영이 있는지 살펴보세요. 안내에 표시된 수입금액과 납부할 세금은 같은 개념이 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">둘째, 거래한 물건을 원래 사용하던 생활용품과 판매를 위해 사입한 상품으로 나눕니다. 구입내역, 사용 기간, 처분 경위, 추가 사입 여부를 정리하면 설명에 도움이 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">셋째, 판매 사업의 거래라면 상품 매입자료와 수수료·배송비 자료를 모읍니다. 거래 성격이나 안내 금액이 실제와 다르면 안내문에 적힌 담당 세무서에 자료를 제시해 확인하세요. 개인 거래라고 생각했다는 이유만으로 안내를 무시하는 것은 피해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">집 정리와 계속적인 상품 판매를 구분합니다</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">본인이 쓰던 가구나 입던 옷을 이사·교체 때문에 처분하는 일반적인 거래를, 중고거래 앱에서 팔았다는 이유만으로 판매 사업의 사업소득이라고 보지는 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">반면 이익을 얻기 위해 물건을 사들인 뒤 되팔고, 판매 후 다시 물량을 확보하는 활동을 계속한다면 판매 사업인지 검토해야 합니다. 소득세법상 도매·소매업 소득과 영리 목적의 계속·반복적인 유사 활동이 기준이 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">거래 횟수와 판매액 하나로 모든 경우의 면세선을 정할 수는 없습니다. 한 물건을 구입가보다 비싸게 팔았는지뿐 아니라 매입 목적과 거래를 이어가는 방식 등을 함께 확인합니다. 아래 계산은 일반 생활용품의 단순 처분이 아니라 판매 사업으로 확인된 경우를 가정합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">1,000만 원을 팔고 200만 원이 남는 예시</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">해당 연도 총수입금액 1,000만 원, 판매한 상품에 대응하는 매입원가 720만 원, 판매 관련 수수료·배송비 80만 원을 가정합니다. 장부와 증빙으로 모두 필요경비가 인정되고, 미판매 재고나 부가가치세 등 추가 조정은 없는 설명용 사례입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">사업소득금액 = 1,000만 원 − 720만 원 − 80만 원 = 200만 원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">200만 원은 납부세액이 아닙니다. 다른 종합과세 대상 소득과 합산해 세금을 계산하는 데 사용하는 금액입니다. 판매대금 전체에 3.3% 등 임의의 세율을 곱해 종합소득세를 확정할 수 없습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">매입액 중 아직 판매하지 않은 상품의 재고는 따로 확인해야 합니다. 수수료가 이미 빠진 정산액을 매출처럼 사용하고 그 수수료를 다시 경비로 빼는 중복 계산도 주의하세요. 개인 생활비를 경비로 넣거나 장부·증빙 없이 예시의 경비 비율만 적용하는 방법도 적절하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">직장인도 별도의 신고와 등록을 확인해야 합니다</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">회사 연말정산을 했더라도 별도의 과세 대상 판매 사업소득이 있다면 일반적으로 다음 해 5월 종합소득세 신고를 검토합니다. 근로소득 등 합산할 다른 소득, 공제, 기납부세액을 반영하므로 실제 납부액은 사람마다 달라집니다. 성실신고확인 대상이나 개별 기한연장은 해당 안내를 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">사업자등록이 없거나 대금을 받을 때 3.3%를 떼지 않았다는 사정만으로 사업소득이 아니라고 판단할 수 없습니다. 등록 여부보다 실제 활동의 성격부터 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">사업에 해당하면 사업자등록과 부가가치세 과세 여부·과세유형도 별도로 살펴봅니다. 사업자등록은 원칙적으로 사업 개시일부터 20일 이내에 신청합니다. 간이과세나 부가세 납부면제 기준은 종합소득세의 일반적인 면세 기준이 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">입금내역과 함께 남겨 둘 자료</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">① 판매별 물건명·거래일·판매대금·취소 및 환불내역.<br />② 개인 사용 물품의 구입·사용·처분 경위를 설명할 자료.<br />③ 사입 상품의 매입대금과 판매한 상품에 대응하는 원가자료.<br />④ 수수료·배송비·재고내역 및 관련 증빙.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">개인 사용 물건과 사입 상품을 함께 판매했다면 거래별로 구분하세요. 서화·골동품, 사업용 자산 등 별도 규정이 있는 대상은 이 글의 일반 생활용품 사례와 따로 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">수입이 적거나 사업에서 손실이 났다고 해서 신고 여부를 자동으로 생략할 수도 없습니다. 과세표준이 없거나 결손금이 있는 경우까지 포함한 신고 규정을 확인하고 본인의 의무를 점검하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">판매 사업으로 확인된 소득의 세금 흐름은 아래 계산기로 가늠할 수 있습니다. 사업소득금액 칸에 인정되는 필요경비를 차감한 금액을 입력하고, 다른 소득과 공제도 함께 반영하세요. 계산기는 사업성 판정이나 실제 세금 신고를 대신하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p><p data-ke-size="size16"><a href="https://taxcalc.co.kr/income/comprehensive.html" style="display:inline-block;padding:16px 22px;background:#1657be;color:#fff;border-radius:8px;text-decoration:none;">사업소득과 다른 소득의 예상 세금 비교하기</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">사업 비용 증빙을 챙길 때는 현금영수증의 용도와 누락 여부도 확인해야 합니다. 개인 소득공제용과 지출증빙용을 구분하고 누락 내역을 확인하는 글도 함께 살펴보세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">https://kwonriver.co.kr/entry/cashreceipt2026</p>
+
+<!-- 해시태그 -->
+<!-- 중고거래세금, 당근세금, 종합소득세, 사업소득, 리셀세금, 필요경비, 사업자등록, 직장인부업, 매입원가, 부가가치세 -->

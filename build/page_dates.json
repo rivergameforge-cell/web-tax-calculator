@@ -120,7 +120,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "3a41a6dcd4787cb8b82e323b5437b8b8450b8d347bc479435e7cd2963e327de8",
+    "digest": "27a6e0f50eec43ff9b1c6819e0101ac6d3deeb2f2a125ec07a6a3aed1eba15ef",
     "modified": "2026-11-12",
     "published": "2026-05-05"
   },
@@ -274,6 +274,11 @@
     "modified": "2026-11-10",
     "published": "2026-06-30"
   },
+  "blog/secondhand-trade-income-tax.html": {
+    "digest": "2c309bbedd376aaf7562d57e3253ae4d7484120db1a5407684397e350765a2d2",
+    "modified": "2026-11-12",
+    "published": "2026-11-12"
+  },
   "blog/severance-pay-guide.html": {
     "digest": "4ab1a91c8c9fe5f8a4c29ccdbcb95b9ba203fc33aff8c595c6c1c6667b3037c2",
     "modified": "2026-10-22",
@@ -370,8 +375,8 @@
     "published": "2026-04-18"
   },
   "income/comprehensive.html": {
-    "digest": "b3f54da2fd0fecdd5475f4d1cda4df5a832c3376fb5bbed1043773b4b051ccfc",
-    "modified": "2026-11-08",
+    "digest": "3929dbebca33ec6e40baea3c102f3724a63d29cceb28810c97f0a3fc7a3a6a94",
+    "modified": "2026-11-12",
     "published": "2026-04-18"
   },
   "income/corporate.html": {
@@ -460,7 +465,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "0349b35a5428afc36bd854fbf8ad9ae720174e8476471c5c70bde57b19014c89",
+    "digest": "7850331eb7c86ba00beccf804fd1afd3474f92f92f4bac27c425d3d4b5dd6c03",
     "modified": "2026-11-12",
     "published": "2026-04-02"
   },

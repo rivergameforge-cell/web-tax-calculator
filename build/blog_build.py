@@ -1186,6 +1186,23 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "중고거래_당근_종합소득세_사업소득_기준",
+        "slug": "secondhand-trade-income-tax",
+        "category": "income",
+        "categoryLabel": "소득 세금",
+        "date": "2026-11-12",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#income/comprehensive",
+        "ctaLabel": "종합소득세 예상 세금 비교하기",
+        "ctaHeading": "사업소득으로 확인된 금액으로 계산하세요",
+        "ctaDescription": "판매대금 전체가 아니라 인정되는 필요경비를 차감한 사업소득금액을 입력합니다. 계산기는 거래의 사업성 판정이나 실제 신고를 대신하지 않습니다.",
+        "related": [
+            ("/blog/income-tax-penalty-late-filing.html", "종합소득세 가산세 계산 — 신고 대상인데 기한을 놓친 경우의 확인사항")
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------
