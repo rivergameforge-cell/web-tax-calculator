@@ -1189,8 +1189,8 @@ POSTS = [
     {
         "file": "중고거래_당근_종합소득세_사업소득_기준",
         "slug": "secondhand-trade-income-tax",
-        "category": "income",
-        "categoryLabel": "소득 세금",
+        "category": "business",
+        "categoryLabel": "사업 세금",
         "date": "2026-11-12",
         "readMin": 8,
         "ctaHref": "https://taxcalc.co.kr/#income/comprehensive",
