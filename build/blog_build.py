@@ -1220,6 +1220,23 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "스톡옵션_RSU_RSA_주식성과급_세금_계산",
+        "slug": "stock-option-rsu-share-compensation-tax",
+        "category": "labor",
+        "categoryLabel": "근로 세금",
+        "date": "2026-11-12",
+        "readMin": 9,
+        "ctaHref": "https://taxcalc.co.kr/#income/comprehensive",
+        "ctaLabel": "주식 보상 반영 전후 예상 세금 비교하기",
+        "ctaHeading": "총급여와 근로소득금액을 구분해 입력하세요",
+        "ctaDescription": "회사에서 확인한 주식 보상 소득을 급여와 합산하고 근로소득공제를 반영한 금액을 사용합니다. 계산기는 소득 귀속·주식 평가·벤처기업 특례를 자동 판단하지 않습니다.",
+        "related": [
+            ("/blog/mid-year-resignation-tax-settlement.html", "중도퇴사자 연말정산 — 행사 시점을 검토할 때 함께 볼 마지막 급여와 원천징수 내역")
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------
@@ -1943,7 +1960,8 @@ def render_index(posts: list[dict]) -> str:
         )
 
     # 카드: 날짜 내림차순 정렬
-    posts_sorted = sorted(posts, key=lambda p: p["meta"]["date"], reverse=True)
+    # Later registrations lead when multiple posts share the same publication day.
+    posts_sorted = sorted(reversed(posts), key=lambda p: p["meta"]["date"], reverse=True)
     cards_html = []
     for p in posts_sorted:
         meta = p["meta"]
@@ -2009,7 +2027,7 @@ def update_homepage_latest(posts):
     source = path.read_text(encoding='utf-8')
     old = SiteHTML(source).elements['site-latest-posts']
     cards = []
-    for post in sorted(posts, key=lambda p: p['meta']['date'], reverse=True)[:3]:
+    for post in sorted(reversed(posts), key=lambda p: p['meta']['date'], reverse=True)[:3]:
         meta, parsed = post['meta'], post['parsed']
         if not (OUT_DIR / (meta['slug'] + '.html')).exists():
             continue

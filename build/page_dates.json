@@ -120,7 +120,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "9c9e5ab9ee4ed991c2c0bfb9adfa1b9558680717d269a5dc2615c2e32fe7275a",
+    "digest": "0b892c15a7ad83f94e3a8b243acaa3b970303cc963a68783888b1310a7d079d2",
     "modified": "2026-11-12",
     "published": "2026-05-05"
   },
@@ -314,6 +314,11 @@
     "modified": "2026-11-10",
     "published": "2026-05-19"
   },
+  "blog/stock-option-rsu-share-compensation-tax.html": {
+    "digest": "1ddf34f5df25aa9eba89d76ab97a2081294bbd45174bb7da75d67de018c3469b",
+    "modified": "2026-11-12",
+    "published": "2026-11-12"
+  },
   "blog/vat-refund-output-input-tax.html": {
     "digest": "24b60d6f4a02f4f9c8546e012383b77a4c1245205f97e87ebf1c3a008a859cc8",
     "modified": "2026-10-22",
@@ -380,7 +385,7 @@
     "published": "2026-04-18"
   },
   "income/comprehensive.html": {
-    "digest": "a6354e973a2161c05c73b3241b8313ce4f1cb34705f2290541093f473b2c1ed9",
+    "digest": "6288ea1da4b00611cfba11e85adf453024e398bf308b9df4b56d59fb8f4c8a1d",
     "modified": "2026-11-12",
     "published": "2026-04-18"
   },
@@ -470,7 +475,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "b0c19502e8610a925867fd2952a2cd1d7e2f8d249756cee896234493966e919e",
+    "digest": "93f3f2fd811756468f9f3956f54fcc9e575aa2e3c467751a4d015cc8320f0d55",
     "modified": "2026-11-12",
     "published": "2026-04-02"
   },
