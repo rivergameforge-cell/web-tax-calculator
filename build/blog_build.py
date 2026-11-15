@@ -1270,6 +1270,20 @@ POSTS = [
                   '부모님 자금 차용과 증여세 — 주택 자금 조달 때 감면과 별도로 확인할 세금')],
      'relatedHeading': '함께 읽으면 좋은 글',
      'customHtml': False},
+    {'file': '해외직구_반품_관세부가세_환급_신청',
+     'slug': 'overseas-return-customs-vat-refund',
+     'category': 'other',
+     'categoryLabel': '기타 세금',
+     'date': '2026-11-15',
+     'readMin': 8,
+     'ctaHref': 'https://taxcalc.co.kr/#income/customs',
+     'ctaLabel': '구매 전 예상 관부가세 비교하기',
+     'ctaHeading': '반품 환급은 실제 납부 내역으로 확인하세요',
+     'ctaDescription': '일반적인 구매 예상 세액을 비교하는 도구입니다. 반품 환급액·수출신고 필요 여부·기한·환급권 양도를 자동 판단하지 않습니다.',
+     'related': [('/blog/secondhand-trade-income-tax.html',
+                  '당근 중고거래와 종합소득세 — 해외 반품 대신 국내 판매를 선택할 때 구분할 세금')],
+     'relatedHeading': '함께 읽으면 좋은 글',
+     'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------

@@ -130,7 +130,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "481631ff8ea4b17954db8db8d3e258b7da171f261024889fa60316d104c4c51c",
+    "digest": "f5dc38fa45a47046c08afbc418854588fff2dcca4ef6e12f88b03061effdc8da",
     "modified": "2026-11-15",
     "published": "2026-05-05"
   },
@@ -223,6 +223,11 @@
     "digest": "e3cdbabc1c6b49edf616b482703bff6ff230baece0e7420b9f1f67ca26e088ef",
     "modified": "2026-10-22",
     "published": "2026-07-10"
+  },
+  "blog/overseas-return-customs-vat-refund.html": {
+    "digest": "9dbaff826a78decd1b8c8b25ba4adc3b8a50ac80299732690c795f44b8d3d50e",
+    "modified": "2026-11-15",
+    "published": "2026-11-15"
   },
   "blog/parent-dependent-deduction-pension.html": {
     "digest": "1657babbef810f9119e3129942060e1edd6448a732fdf91928b871ac8372fa2e",
@@ -405,8 +410,8 @@
     "published": "2026-04-18"
   },
   "income/customs.html": {
-    "digest": "996a27060113bc79b8489f8c31323f6d32ab8e87b70c2488bad14a4f62e7972f",
-    "modified": "2026-10-16",
+    "digest": "251105c3afb7d0e29ec71e470a5366ff0ef4405b7f837af08775b94526adc9bb",
+    "modified": "2026-11-15",
     "published": "2026-04-18"
   },
   "income/daily-worker.html": {
@@ -485,7 +490,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "b94e016ffec8ca1af0372d8e669882443767c45aed3b4080cc989f1fbb4ff8f2",
+    "digest": "9cb5201946d881e7a9477c4febe02a414608a9630aed479e237f9436d4356bf8",
     "modified": "2026-11-15",
     "published": "2026-04-02"
   },
