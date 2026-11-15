@@ -1284,6 +1284,21 @@ POSTS = [
                   '당근 중고거래와 종합소득세 — 해외 반품 대신 국내 판매를 선택할 때 구분할 세금')],
      'relatedHeading': '함께 읽으면 좋은 글',
      'customHtml': False},
+    {'file': '복지포인트_근로소득_과세_급여명세서_확인',
+     'slug': 'welfare-points-income-tax',
+     'category': 'income',
+     'categoryLabel': '소득세',
+     'date': '2026-11-15',
+     'readMin': 8,
+     'ctaHref': 'https://taxcalc.co.kr/#income/employment',
+     'ctaLabel': '근로소득세 계산 흐름 비교하기',
+     'ctaHeading': '포인트가 반영된 연간 총급여를 확인하세요',
+     'ctaDescription': '근로소득공제 전 총급여를 한 번만 입력하는 간이 비교 도구입니다. 개별 공제 전체·포인트 과세 시기·기금 판정·회사 원천징수 및 비현금 정산을 모두 '
+                       '반영하지 않습니다.',
+     'related': [('/blog/stock-option-rsu-share-compensation-tax.html',
+                  '스톡옵션·RSU·RSA 세금 — 비현금 보상의 근로소득과 과세 시기 이해하기')],
+     'relatedHeading': '함께 읽으면 좋은 글',
+     'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------

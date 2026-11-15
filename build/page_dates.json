@@ -130,7 +130,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "f5dc38fa45a47046c08afbc418854588fff2dcca4ef6e12f88b03061effdc8da",
+    "digest": "f3072a0bda15007f8f6a8c7b45cb4d482d36cbeafa19315c775605da76c60bd4",
     "modified": "2026-11-15",
     "published": "2026-05-05"
   },
@@ -369,6 +369,11 @@
     "modified": "2026-11-08",
     "published": "2026-11-08"
   },
+  "blog/welfare-points-income-tax.html": {
+    "digest": "6f586f03ebf600b9b86a07bbaac21490887b45daaaa0ef855fb3cabe7b805322",
+    "modified": "2026-11-15",
+    "published": "2026-11-15"
+  },
   "blog/yellow-umbrella-income-deduction.html": {
     "digest": "626fd8e6b329a1305ab2f2a5a30ce025c6ea983c26bde1cf2114b808f19fac3d",
     "modified": "2026-10-22",
@@ -490,7 +495,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "9cb5201946d881e7a9477c4febe02a414608a9630aed479e237f9436d4356bf8",
+    "digest": "c61109a67f3032d27e9183fd4f6c5c0182c21a8b5f314a4547dbef55c7621731",
     "modified": "2026-11-15",
     "published": "2026-04-02"
   },
