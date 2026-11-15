@@ -84,6 +84,11 @@
     "modified": "2026-10-22",
     "published": "2026-07-14"
   },
+  "blog/first-home-acquisition-tax-refund.html": {
+    "digest": "dac1691a938b0feccfaae5fdff4cd66a7fae6e9a4e37eb147f535dae6b77e8ab",
+    "modified": "2026-11-15",
+    "published": "2026-11-15"
+  },
   "blog/foreign-stock-capital-gains-deduction.html": {
     "digest": "0cbfca367c193c8898cea59cd061f4f3d17279b6acd3c2b72a6f1d713d9d1fe1",
     "modified": "2026-10-22",
@@ -125,7 +130,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "20cccba096105936222e9fb50fd9adbd87857d84559bf40d0aa710f3736486dd",
+    "digest": "481631ff8ea4b17954db8db8d3e258b7da171f261024889fa60316d104c4c51c",
     "modified": "2026-11-15",
     "published": "2026-05-05"
   },
@@ -480,7 +485,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "d7ccac936a7d58d50ecae82a4534079fe88b96671ff9ddfcd32ff3564f63f1a8",
+    "digest": "b94e016ffec8ca1af0372d8e669882443767c45aed3b4080cc989f1fbb4ff8f2",
     "modified": "2026-11-15",
     "published": "2026-04-02"
   },
@@ -560,8 +565,8 @@
     "published": "2026-04-07"
   },
   "real-estate/acquisition.html": {
-    "digest": "800673a43e6b03fdda60869e52f7986c324fc687a2ac4eb80dabba2f5f79f446",
-    "modified": "2026-11-10",
+    "digest": "8cbc4b0ada1f76bd754ee4f72d8afca4fa50434e22163cbd50761835a20afd3d",
+    "modified": "2026-11-15",
     "published": "2026-04-18"
   },
   "real-estate/capital-gains.html": {

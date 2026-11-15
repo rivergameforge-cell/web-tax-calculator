@@ -1,0 +1,91 @@
+<!-- 티스토리 제목 -->
+<!-- 생애최초 취득세 감면 놓쳤다면? 200만 원 환급 검토와 경정청구 순서 -->
+
+<p data-ke-size="size16">취득세 본세 280만 원을 전액 냈지만 감면 후 세액이 80만 원이라면, 차액 200만 원을 다시 검토할 수 있습니다. 2026년에 산 일반 아파트가 생애최초 요건을 모두 충족했다는 가정입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">신청서를 안 냈다는 사실과 감면 대상이 아니었다는 사실은 다릅니다. 다만 신청만 하면 정액을 받는 제도는 아닙니다. 2026년 11월 15일 확인한 기준으로 서류를 꺼내는 순서부터 정리합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<!-- 썸네일: first-home-tistory.webp -->
+<h2 data-ke-size="size26">1. 환급 조회보다 기존 신고서를 먼저 확인하세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">첫 단계는 취득세 신고서와 납부 내역을 확인하는 일입니다. 감면 코드와 감면세액이 이미 들어갔는지, 본세와 부가되는 세금을 구분했는지 살펴보세요. 대리 신고했다면 당시 자료를 요청할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">생애최초 감면 대상이었는데 신고에서 빠졌다면 경정청구 때 감면신청서와 요건 증빙을 함께 제출하는 절차를 검토합니다. 이미 확정된 환급금 조회만으로 누락 감면이 새로 적용되지는 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">문의할 곳은 주택 소재지 시·군·구의 취득세 담당 부서입니다. 취득세는 지방세이므로 연말정산이나 종합소득세 공제 항목에 넣어 해결하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">2. 2억 8,000만 원 아파트의 차액 계산</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2026년 취득한 인구감소지역 밖 아파트이고 일반세율 1%가 적용되며 생애최초 요건을 모두 충족했다고 가정합니다. 다른 감면이 없는 취득세 본세만 비교합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">감면 전 본세: 2억 8,000만 원 × 1% = 280만 원.<br />일반 감면액: 200만 원.<br />감면 후 본세: 80만 원.<br />본세 280만 원을 전액 냈다면 과다 납부 검토액: 200만 원.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">실제 환급은 심사에서 인정된 차액입니다. 지방교육세·농어촌특별세의 적용과 조정도 별도로 확인해야 하므로 위 금액을 납부 영수증 전체와 바로 비교하지 마세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">감면 전 본세가 170만 원이었다면 일반 한도 200만 원을 모두 지급하는 것이 아니라 해당 본세 범위에서 감면합니다. 공동명의도 주택 전체의 한도를 나누어 적용하며 부부별 한도를 합쳐 두 배로 늘리지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">3. 대상 요건과 300만 원 유형을 구분하세요</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">현행법은 성년인 대한민국 국민이 본인 거주 목적으로 취득가액 12억 원 이하 주택을 유상 취득하는 경우를 대상으로 합니다. 부담부증여는 제외합니다. 취득일 현재 본인과 배우자의 주택 소유 이력을 확인하며 외국인 배우자도 법정 범위에서 포함됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">현재 부부 합산 소득 상한 요건은 없습니다. 주택 소유 이력은 상속 공유지분을 모두 처분한 경우 등 법정 예외가 있으므로 현재 무주택이라는 사실만으로 판단하지 않습니다. 현행 적용기한은 2028년 12월 31일까지입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일반 주택 감면 한도는 200만 원입니다. 300만 원은 다음 유형을 따로 검토합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">① 전용면적 60㎡ 이하인 아파트 외 공동주택 및 도시형생활주택: 취득가액 3억 원 이하, 수도권은 6억 원 이하 등 해당 요건 확인.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">② 건축물대장에 호수별 전용면적이 구분된 다가구주택의 법정 60㎡ 이하 호수 부분: 위 가격 요건 등 확인.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">③ 인구감소지역 소재 주택: 소형주택의 면적·가격 조건과 구분해 판단하되 공통 취득가액 12억 원 이하 등 기본 요건 충족.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">단순히 작은 아파트이거나 실제 주거용으로 쓰는 오피스텔이라는 이유만으로 특례를 적용하지 마세요. 공부상 유형과 해당 지방세법상 주택 범위를 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">4. 청구기한은 ‘법정신고기한 후 5년’입니다</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일반적인 경정청구는 법정신고기한이 지난 후 5년 이내인지 확인합니다. 취득일이나 실제 세금 납부일로부터 무조건 5년이라고 계산하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">과세관청의 결정·경정이 있었다면 이를 안 날 또는 통지받은 날부터 90일 이내라는 제한도 함께 적용되며 이때도 법정신고기한 후 5년 범위 안이어야 합니다. 후발적 사유의 별도 청구는 법정 사유가 있어야 하므로 ‘오늘 감면을 알았다’는 이유로 기한이 새로 시작되지는 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">기한이 가까우면 환급 예상액보다 정확한 기한과 접수 방법 확인이 먼저입니다. 제출 양식과 방문·우편·온라인 등 가능한 채널은 관할 지자체의 현재 안내를 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">5. 서류는 이 순서로 준비하세요</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">1단계. 취득세 신고서·납부 내역과 매매계약서를 모아 취득일, 신고일과 세액을 정리합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2단계. 본인과 배우자의 주택 소유 이력, 주택 유형·면적·가액, 현재 이용 상황을 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">3단계. 관할 부서에 ‘생애최초 취득세 감면 누락 경정청구’라고 문의하고 당시 적용 요건과 서류 목록을 받습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">4단계. 경정청구서·감면신청서와 증빙을 제출합니다. 가족관계·주민등록 자료, 등기·건축물대장, 예외 보유 이력 자료 등은 실제 요구 범위에 맞춥니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">5단계. 접수 사실과 처리 결과를 보관하고 환급액 및 이후 추징 조건을 확인합니다. 법상 원칙적인 처리 통지 기한 2개월은 무조건 두 달 안에 입금된다는 약속이 아닙니다. 처리가 곤란하면 진행상황 등을 통지하는 규정도 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">6. 과거 취득분은 추징 규정을 함께 확인하세요</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">현행법은 원칙적으로 취득일부터 3년 이내 매각·증여하거나 임대 등 다른 용도로 쓰면 감면세액을 추징합니다. 배우자에게 지분을 매각·증여하는 경우는 해당 규정의 예외입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">기존 임차인이 계속 살고 취득일 기준 남은 임대차기간이 1년 이내인 주택에서 임대인 지위를 승계한 경우에는 법정 임대차기간 만료일부터 3년을 세는 특례를 확인합니다. 모든 임대에 적용되는 유예가 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2026년 이전 취득분은 당시 감면 요건과 개정법 부칙까지 살펴야 합니다. 시행 전에 종전 규정의 추징사유가 이미 발생했다면 새 규정이 자동으로 그 사유를 없애지는 않습니다. 취득일 하나만 보고 사후관리 규정을 단정하지 마세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">예상 세액을 비교하고 관할 부서에 확인하세요</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래 계산기는 일반적인 취득세 비교에 활용할 수 있습니다. 일반 생애최초 200만 원 및 인구감소지역 300만 원 한도를 반영하지만 소형 비아파트의 300만 원 특례 전체는 자동 판정하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">과거 취득분 법령과 경정청구 기한, 추징 여부도 계산 결과만으로 확정할 수 없습니다. 신고서와 실제 주택 정보를 바탕으로 담당 부서에서 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p><p data-ke-size="size16"><a href="https://taxcalc.co.kr/real-estate/acquisition.html" style="display:inline-block;padding:16px 22px;background:#1657be;color:#fff;border-radius:8px;text-decoration:none;">예상 취득세 비교하기</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">집을 살 때의 취득세와 집을 산 뒤 내는 주담대 이자 공제는 별개입니다. 아래 글에서 공동명의·대환·서류 때문에 이자 공제를 놓치는 경우도 이어서 확인해보세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">https://kwonriver.co.kr/entry/%EC%A3%BC%EB%8B%B4%EB%8C%80-%EC%9D%B4%EC%9E%90-900%EB%A7%8C%EC%9B%90-%EB%83%88%EB%8A%94%EB%8D%B0-%EA%B3%B5%EC%A0%9C-%EB%AA%BB-%EB%B0%9B%EB%8A%94-%EC%9D%B4%EC%9C%A0-%EA%B3%B5%EB%8F%99%EB%AA%85%EC%9D%98%C2%B7%EB%8C%80%ED%99%98%C2%B7%EC%84%9C%EB%A5%98-%ED%99%95%EC%9D%B8%EB%B2%95</p>
+
+<!-- 해시태그 -->
+<!-- 생애최초취득세, 취득세감면, 취득세환급, 경정청구, 내집마련, 공동명의, 부동산세금, 주택취득세, 지방세, 취득세추징 -->

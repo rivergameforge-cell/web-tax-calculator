@@ -128,6 +128,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://taxcalc.co.kr/blog/first-home-acquisition-tax-refund.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://taxcalc.co.kr/blog/foreign-stock-capital-gains-deduction.html</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -479,7 +485,7 @@
   <!-- 부동산 -->
   <url>
     <loc>https://taxcalc.co.kr/real-estate/acquisition.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

@@ -1255,6 +1255,21 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {'file': '생애최초_취득세_감면누락_경정청구_환급',
+     'slug': 'first-home-acquisition-tax-refund',
+     'category': 'real-estate',
+     'categoryLabel': '부동산',
+     'date': '2026-11-15',
+     'readMin': 8,
+     'ctaHref': 'https://taxcalc.co.kr/#real-estate/acquisition',
+     'ctaLabel': '예상 취득세 비교하기',
+     'ctaHeading': '예상 세액과 실제 환급 판단을 구분하세요',
+     'ctaDescription': '일반 생애최초·인구감소지역 한도의 예상 계산입니다. 소형 비아파트 특례 전체, 과거 법령과 청구기한·추징 여부는 관할 지자체에 확인하세요.',
+     'related': [('/blog/mortgage-interest-income-deduction.html', '주담대 이자 소득공제 — 주택 구입 뒤 연말정산에서 확인할 별도 공제'),
+                 ('/blog/family-loan-promissory-note-gift-tax.html',
+                  '부모님 자금 차용과 증여세 — 주택 자금 조달 때 감면과 별도로 확인할 세금')],
+     'relatedHeading': '함께 읽으면 좋은 글',
+     'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------
