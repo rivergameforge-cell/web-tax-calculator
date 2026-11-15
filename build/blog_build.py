@@ -1237,6 +1237,24 @@ POSTS = [
         "relatedHeading": "함께 읽으면 좋은 글",
         "customHtml": False
     },
+    {
+        "file": "부모님_전세금_차용증_무이자대출_증여세_계산",
+        "slug": "family-loan-promissory-note-gift-tax",
+        "category": "inherit",
+        "categoryLabel": "상속·증여",
+        "date": "2026-11-15",
+        "readMin": 8,
+        "ctaHref": "https://taxcalc.co.kr/#inherit/gift",
+        "ctaLabel": "실제 증여액의 예상 증여세 계산하기",
+        "ctaHeading": "대출과 증여를 구분한 뒤 계산하세요",
+        "ctaDescription": "실제 증여하기로 정한 금액만 입력합니다. 계산기는 가족 간 차입 인정 여부나 무이자·저리 대출 이익을 자동 판단하지 않습니다.",
+        "related": [
+            ("/blog/parent-support-living-expenses-gift-tax.html", "부모님 생활비·용돈 증여세 — 대출과 별도로 실제 사용처가 중요한 이유"),
+            ("/blog/marriage-birth-gift-tax-deduction.html", "혼인·출산 증여재산공제 — 전세금 일부를 증여하기로 했다면 확인할 공제")
+        ],
+        "relatedHeading": "함께 읽으면 좋은 글",
+        "customHtml": False
+    },
 ]
 
 # ---------------------------------------------------------------------------

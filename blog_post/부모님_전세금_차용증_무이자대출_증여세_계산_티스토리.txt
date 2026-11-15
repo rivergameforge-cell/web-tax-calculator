@@ -1,0 +1,85 @@
+<!-- 티스토리 제목 -->
+<!-- 부모님 전세금 3억 원, 차용증만 쓰면 끝? 무이자·이자 2% 비교 -->
+
+<p data-ke-size="size16">부모님께 전세금 3억 원을 1년간 무이자로 빌렸다면, 연 4.6%로 계산한 이익은 1,380만 원입니다. 납부할 세금이 1,380만 원이라는 뜻은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">반대로 연 2%의 세전 이자 600만 원을 실제 지급했다면 같은 조건의 이익은 780만 원으로 달라집니다. 두 계산 모두 원금이 실제 대출로 인정된다는 전제부터 필요합니다. 2026년 11월 15일 확인한 부모·자녀 간 개인 대출의 일반 기준으로 계약과 송금을 점검해보겠습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<!-- 썸네일: family-loan-tistory.webp -->
+<h2 data-ke-size="size26">차용증을 쓰기 전에 상환 계획부터 맞추세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">자녀의 소득·보유 자금이나 전세 종료 시 반환받을 보증금처럼 구체적인 재원을 설명할 수 있는지 먼저 봅니다. 차용증의 이름만으로 대출이 확정되지는 않습니다. 만기와 상환 방식도 실제로 이행 가능해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">당사자, 원금, 차입일, 이자 유무와 지급일, 원금 상환기일·분할상환 방법을 실제 약정대로 적습니다. 전세 연장으로 상환 시기가 바뀌면 그때의 합의와 사유를 남깁니다. 나중에 계약일을 소급해 꾸미는 방식으로 해결하려 해서는 안 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">최초 송금과 이후 상환이 이어지는 금융거래 자료도 보관하세요. 공증이나 ‘차입금’이라는 이체 메모가 있어도 상환능력과 실제 이행을 함께 본다는 점은 같습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">3억 원 무이자와 연 2%, 계산은 이렇게 달라집니다</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">실제 차입으로 인정되고 부모 개인에게 1년간 빌리며, 중도상환 없이 원금이 유지된 설명용 예시입니다. 법인 대출이나 대여업은 이 사례와 구분합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">① 무이자 대출<br />3억 원 × 4.6% = 이익 1,380만 원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">② 연 2%로 세전 이자를 실제 지급한 대출<br />적정이자 상당액: 3억 원 × 4.6% = 1,380만 원<br />실제 지급한 세전 이자: 3억 원 × 2% = 600만 원<br />이익: 1,380만 원 − 600만 원 = 780만 원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">현재 적정이자율 연 4.6%는 이익 계산의 기준입니다. 모든 차용증에 반드시 연 4.6%를 적어야 한다는 뜻은 아닙니다. 금리와 별개로 실제 차입과 상환이 확인되어야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">계산한 이익이 1,000만 원 미만이면 금전 무상·저리 대출 이익의 과세에서 제외합니다. 위 사례에서는 무이자 이익 1,380만 원은 제외 기준에 들어가지 않고, 연 2% 지급 시 이익 780만 원은 기준 미만입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">1,380만 원은 납부세액이 아닙니다. 1,000만 원을 공제한 380만 원만 증여재산가액으로 보는 계산도 아닙니다. 이익이 정확히 1,000만 원이면 ‘미만’이 아니므로 제외되지 않는다는 점도 구분하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">2억 1,700만 원이라는 숫자가 해결하지 못하는 것</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2억 1,700만 원을 무이자로 1년 빌리면 연 4.6%의 이익은 998만 2,000원입니다. 알려진 금액은 이자 이익의 기준에서 나온 숫자이지 원금 자체의 증여 비과세 한도가 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">갚을 의사나 능력이 없어 대출로 인정되지 않는다면 원금의 증여 여부를 따로 판단합니다. 이익이 작다는 계산만으로 형식적인 차용증이 실제 채무가 되는 것은 아닙니다. 전세금이라는 이름도 생활비 비과세를 자동 보장하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">대출이 1년 이상 지속되면 법에서 정한 주기에 따라 매년 새로 대출받은 것으로 보아 이익을 계산합니다. 기간을 정하지 않은 경우는 1년으로 봅니다. 중도상환·추가 차입·여러 번의 송금이 있으면 날짜와 잔액에 맞는 계산을 별도로 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">세전 이자 600만 원을 전부 송금하기 전에</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">대여업을 하지 않는 거주자인 부모 개인에게 지급하는 대여금 이자는 일반적으로 ‘비영업대금의 이익’입니다. 지급하는 자녀는 사업자가 아니어도 원천징수 의무를 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일반적인 소득세 원천징수 25%에 그 소득세의 10%인 지방소득세를 더하면 세전 이자의 27.5%입니다. 원금 반환액에 적용하는 세율이 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">세전 이자 600만 원을 한 번에 지급하는 예시<br />소득세: 600만 원 × 25% = 150만 원<br />지방소득세: 150만 원 × 10% = 15만 원<br />부모에게 송금하는 이자: 600만 원 − 165만 원 = 435만 원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">부모에게 보내는 435만 원과 징수해 납부하는 세금 165만 원을 합친 세전 이자가 600만 원입니다. 약정 이자가 세전인지, 실제 지급·원천징수가 어떻게 이루어졌는지 자료로 맞춰두세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일반적으로 징수일이 속한 달의 다음 달 10일까지 국세·지방세를 신고·납부하는 절차를 확인합니다. 지급명세서 등 필요한 자료 제출도 함께 챙깁니다. 부모님의 다른 금융소득에 따른 종합소득세 여부는 별도로 검토합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">계약서와 통장에서 확인할 다섯 가지</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">① 당사자·원금·차입일이 실제 송금과 맞는지.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">② 만기와 상환 방식이 실제 소득·자금 계획으로 이행 가능한지.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">③ 원금과 이자를 구분한 이체 내역이 계약과 연결되는지.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">④ 이자를 지급했다면 세전 이자·원천징수·납부 자료가 맞는지.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">⑤ 갚은 자금이 자녀의 소득이나 보증금 반환 등에서 나왔는지.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">부모에게 돈을 다시 받아 갚은 것처럼 꾸미는 경우에도 실제 자금 출처를 따로 봅니다. 서류나 메모만으로 검토를 끝내지 마세요. 보증금으로 갚기로 했다면 만기 때 실제 반환액과 상환 흐름을 연결해두는 것이 좋습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일부는 증여하고 나머지는 빌린 경우라면 금액과 성격을 나누어 관리합니다. 증여 부분의 공제·신고와 대출의 상환·이자 이익은 각각 확인합니다. 금액이 크거나 상환 계획이 불분명하다면 계약과 금융자료를 토대로 개별 검토가 필요합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">증여로 정한 금액만 계산기에 넣어보세요</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래 계산기는 실제 증여하기로 한 금액의 일반적인 예상 세액을 확인하는 참고 도구입니다. 대출 원금을 통째로 증여액에 입력하는 용도가 아니며, 가족 간 차입 인정이나 무이자·저리 대출 이익을 자동 판정하지 않습니다. 거래 성격을 먼저 확인한 뒤 계산해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p><p data-ke-size="size16"><a href="https://taxcalc.co.kr/inherit/gift.html" style="display:inline-block;padding:16px 22px;background:#1657be;color:#fff;border-radius:8px;text-decoration:none;">실제 증여액의 예상 증여세 계산하기</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">부모님과 오가는 돈을 생활비라고 생각했다면 실제 사용처도 확인해야 합니다. 매달 드린 돈을 부모님이 적금으로 모은 경우를 정리한 글에서 생활비 비과세와 증여의 구분을 이어서 볼 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">https://kwonriver.co.kr/entry/parentlivinggift2026</p>
+
+<!-- 해시태그 -->
+<!-- 부모자녀차용증, 전세금차용, 무이자대출, 증여세, 적정이자율, 원금상환, 이자원천징수, 비영업대금이익, 상환증빙, 가족간대출 -->

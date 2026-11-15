@@ -74,6 +74,11 @@
     "modified": "2026-11-10",
     "published": "2026-11-05"
   },
+  "blog/family-loan-promissory-note-gift-tax.html": {
+    "digest": "bab551887dc673f7569b1e3cb8b85b07bae1c296afef3e30443741bfaf27e366",
+    "modified": "2026-11-15",
+    "published": "2026-11-15"
+  },
   "blog/financial-income-comprehensive-tax-20m.html": {
     "digest": "2b0d5dfc0c74ad1c8cfafc3806136c4310103ff3566b4d8f233f4145f738bb8e",
     "modified": "2026-10-22",
@@ -120,8 +125,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "0b892c15a7ad83f94e3a8b243acaa3b970303cc963a68783888b1310a7d079d2",
-    "modified": "2026-11-12",
+    "digest": "20cccba096105936222e9fb50fd9adbd87857d84559bf40d0aa710f3736486dd",
+    "modified": "2026-11-15",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -475,13 +480,13 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "93f3f2fd811756468f9f3956f54fcc9e575aa2e3c467751a4d015cc8320f0d55",
-    "modified": "2026-11-12",
+    "digest": "d7ccac936a7d58d50ecae82a4534079fe88b96671ff9ddfcd32ff3564f63f1a8",
+    "modified": "2026-11-15",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
-    "digest": "7e4c1287b05add34b949fc186878d596959c37c584a7042a67430c73eb161d62",
-    "modified": "2026-10-31",
+    "digest": "4a4415f7e8dc4b8b8ab41736b793285fed031307d3018f52d59510610b2bf612",
+    "modified": "2026-11-15",
     "published": "2026-04-18"
   },
   "inherit/inheritance.html": {
