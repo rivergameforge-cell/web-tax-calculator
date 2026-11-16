@@ -481,6 +481,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://taxcalc.co.kr/blog/youtube-small-income-business-registration.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- 대출 -->
   <url>
     <loc>https://taxcalc.co.kr/loan/calculator.html</loc>

@@ -1,0 +1,81 @@
+<!-- 티스토리 제목 -->
+<!-- 유튜브 수익 월 30만 원, 면세면 신고도 끝? 사업자등록·세금 확인 순서 -->
+
+<p data-ke-size="size16">월 30만 원씩 유튜브 수입이 생겼다면 1년 수입은 360만 원입니다. 수입이 작다고 사업자등록을 미뤄도 되는지, 면세사업자로 등록하면 신고할 일이 없는지부터 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">핵심은 등록, 부가가치세, 종합소득세를 따로 보는 것입니다. 계속·반복하는 수익 활동이라면 액수만으로 등록 면제를 판단할 수 없습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래 순서대로 제작 인력과 시설, 수입·경비 증빙과 신고 일정을 점검하세요. 국내 거주 개인의 영상 콘텐츠 창작 활동에 관한 설명이며 글 광고나 상품 판매에 같은 코드를 일괄 적용하는 내용은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<!-- 썸네일: youtube-tistory.webp -->
+<h2 data-ke-size="size26">1. ‘정규직 없음’ 다음에 외주 업무도 확인하세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">먼저 영상을 계속·반복적으로 제작해 광고·협찬 등의 수익을 얻는 사업인지 확인합니다. 일회적 취미와 사업의 구분은 실제 제공 방식, 계약과 반복성을 함께 판단합니다. 월 30만 원이라는 숫자 자체가 등록 면제선은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">국세청 안내상 제작 인력을 두거나 사업용 물적 시설 등을 갖춘 과세 유형은 미디어 콘텐츠 창작업 921505입니다. 해당 인력·물적 시설 없이 독립적으로 제공하는 면세 인적용역 요건에 맞으면 1인 미디어 콘텐츠 창작자 940306을 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">인력과 시설이 모두 있어야만 과세되는 것은 아닙니다. ‘직원을 직접 고용하지 않았다’는 설명만으로 면세 코드를 선택하지 마세요. 고용 외의 형태라도 주된 업무에 타인의 노무 등을 제공받는 경우가 면세 요건 판단에 포함됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">외주 계약의 업무 범위와 실제 수행 내용을 함께 확인하세요. 촬영 장소나 장비도 법정 물적 시설에 해당하는지 검토해야 하므로 집에서 작업한다는 사실 하나만으로 면세를 확정하지 않습니다. 판단이 불분명하면 계약서와 공간·장비 사용 자료를 관할 세무서에 제시해 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">2. 사업 개시일을 확인한 뒤 등록을 진행합니다</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">사업자등록 신청의 일반적인 기준은 사업 개시일부터 20일 이내입니다. 사업 시작 전 신청도 가능합니다. 홈택스 또는 관할 세무서에서 실제 사업 내용에 맞는 업종과 과세 유형 및 제출 서류를 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">첫 계좌 입금일을 무조건 사업 개시일로 놓고 20일을 계산하면 안 됩니다. 채널 개설, 수익화 승인, 용역 제공과 실제 수익 활동을 시작한 내역을 함께 확인합니다. 지급 기준액 때문에 인출이 늦어진 경우도 구분해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이미 활동 중이라면 등록 문제와 발생한 사업소득의 신고를 함께 정리하세요. 미등록 상태라는 이유로 소득 자체가 신고 대상에서 빠지는 것은 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">3. 360만 원에서 빼는 것은 인정되는 필요경비입니다</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">매달 30만 원의 수입이 12개월 발생하고 장부로 실제 경비를 계산한다고 가정합니다. 해당 연도에 인정되는 사업 관련 필요경비가 90만 원이면 사업소득금액은 270만 원입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">연간 총수입금액: 30만 원 × 12개월 = 360만 원.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">사업소득금액: 360만 원 − 필요경비 90만 원 = 270만 원.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">270만 원은 납부할 세금이 아닙니다. 다른 종합소득과 합산한 뒤 소득공제·세율·세액공제와 이미 낸 세금 등을 적용해야 실제 추가 납부액 또는 환급액이 결정됩니다. 경비 90만 원은 고정 공제나 정액 경비율을 뜻하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">개인 소비는 사업 경비와 분리하고 겸용 지출은 사업 관련 부분을 구분합니다. 장비 구입비도 무조건 산 해에 전액 경비가 되는 것은 아니므로 감가상각 등 처리 방식을 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">4. 면세 등록 뒤에도 신고 달력을 확인하세요</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">면세는 해당 용역의 부가가치세가 면제된다는 뜻입니다. 사업자등록과 종합소득세가 모두 면제된다는 뜻이 아닙니다. 간이과세는 부가가치세 과세사업자에게 적용되는 별도 방식으로 면세와 구분합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">면세 1인 미디어 창작자는 원칙적으로 다음 해 2월 10일까지 사업장현황신고를 확인합니다. 해당 연도 사업소득은 다음 해 5월 종합소득세 신고도 확인합니다. 신고 제외 사유와 기한 특례 등은 개별 상황에 맞게 따로 살펴봅니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">과세사업자는 자신의 과세 유형에 맞는 부가가치세 신고도 검토해야 합니다. 해외 플랫폼 외화 수입이라는 이유만으로 신고가 없어지지 않습니다. 영세율은 별도의 거래·증빙 요건을 확인하는 문제이며 면세와 동일하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">직장인은 회사 연말정산과 부업 사업소득 정산을 구분하세요. 원천징수 내역이 있거나 최종 납부세액이 없을 수 있다는 사실만으로 신고 의무까지 없다고 판단하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">5. 정산서와 순입금액의 차이를 남겨두세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">첫째, 광고·협찬 등 수입 종류별로 플랫폼의 월별 수입·지급 명세를 보관합니다. 계좌에 들어온 순입금액만 수입 장부에 옮기지 말고 수수료 등 차감 내역과 대조하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">둘째, 사업에 쓴 비용의 영수증과 지급 기록을 모읍니다. 개인 사용분과 사업 사용분을 구분할 자료를 함께 남깁니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">셋째, 인력·외주 계약과 실제 업무 내역, 촬영 공간·장비 사용 자료를 보관합니다. 매출이 늘거나 제작 방식이 달라지면 등록 업종과 과세 유형을 다시 확인해야 할 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">넷째, 계약·수익화·용역 제공 내역으로 사업 개시 시점을 확인합니다. 신청과 신고에 필요한 자료를 같은 폴더에 모으면 다음 정산 때 대조하기 수월합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">6. 계산기에는 매출 대신 사업소득금액을 넣습니다</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래 종합소득세 계산기에서 사업소득 칸에는 위 예시의 매출 360만 원이 아니라 필요경비를 반영한 소득금액 270만 원을 입력합니다. 근로소득이 있으면 총급여가 아닌 근로소득공제 후 근로소득금액을 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">계산기는 기본적인 합산·공제·세율 흐름을 비교하는 추정 도구입니다. 업종·과세 유형과 경비 인정 여부를 판정하지 않고 실제 세액공제 및 기납부세액 등을 모두 반영하지도 않습니다. 결과를 신고서의 최종 추가 납부액이나 환급액으로 확정하지 마세요.</p>
+<p data-ke-size="size16">&nbsp;</p><p data-ke-size="size16"><a href="https://taxcalc.co.kr/income/comprehensive.html" style="display:inline-block;padding:16px 22px;background:#1657be;color:#fff;border-radius:8px;text-decoration:none;">사업소득금액으로 종합소득세 기본 흐름 살펴보기</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">당근 판매액을 전부 과세 소득으로 보지 않고 생활용품 처분과 판매 사업을 구분한 글입니다. 수입과 소득금액의 차이를 비교하는 데 도움이 됩니다. 유튜브 업종코드를 중고 판매에 적용하는 안내는 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">https://kwonriver.co.kr/entry/secondhandincometax2026</p>
+
+<!-- 해시태그 -->
+<!-- 유튜브사업자등록, 유튜브세금, 유튜브수익, 콘텐츠창작자, 면세사업자, 과세사업자, 종합소득세, 사업장현황신고, 필요경비, 직장인부업 -->

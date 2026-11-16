@@ -1315,6 +1315,21 @@ POSTS = [
                   '생애최초 취득세 감면과 경정청구 — 일반 매수의 별도 요건을 비교하는 글이며 재산분할 적용 안내는 아닙니다')],
      'relatedHeading': '함께 읽으면 좋은 글',
      'customHtml': False},
+    {'file': '유튜브_소액수익_사업자등록_과세면세_신고기준',
+     'slug': 'youtube-small-income-business-registration',
+     'category': 'business',
+     'categoryLabel': '사업 세금',
+     'date': '2026-11-16',
+     'readMin': 8,
+     'ctaHref': 'https://taxcalc.co.kr/#income/comprehensive',
+     'ctaLabel': '종합소득세 기본 흐름 살펴보기',
+     'ctaHeading': '매출 대신 소득금액을 넣어 비교하세요',
+     'ctaDescription': '사업소득에는 필요경비 반영 후 금액을, 근로소득에는 근로소득공제 후 금액을 입력합니다. 실제 세액공제·기납부세액 등을 모두 반영하지 않아 최종 추가 '
+                       '납부액이나 환급액을 확정하는 도구는 아닙니다.',
+     'related': [('/blog/secondhand-trade-income-tax.html',
+                  '당근 중고거래 종합소득세 기준 — 일상적 처분과 반복하는 사업, 수입과 소득금액의 차이를 비교하세요')],
+     'relatedHeading': '함께 읽으면 좋은 글',
+     'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------

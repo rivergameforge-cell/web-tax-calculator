@@ -135,7 +135,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "1caa84652a9b055e389e60ee5e3eab0bd21c113b97b89080c082932d74a54ebd",
+    "digest": "65f4409d3c45e6b9f8d628915135a1c8c34aadb4e07cc0da94ed425eefdfb670",
     "modified": "2026-11-16",
     "published": "2026-05-05"
   },
@@ -384,6 +384,11 @@
     "modified": "2026-10-22",
     "published": "2026-10-17"
   },
+  "blog/youtube-small-income-business-registration.html": {
+    "digest": "6921ac216291aa0dbae5b598b1f574f029a0fcce395b8ae9fe1d466a0bc36478",
+    "modified": "2026-11-16",
+    "published": "2026-11-16"
+  },
   "contact.html": {
     "digest": "9164a5f7fb52d6b54426c562a9bc2a89441f427ab39be8a4302a23f736b202dc",
     "modified": "2026-10-06",
@@ -500,7 +505,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "5b5ac3ad970b4a5c7859b68491d4561a3714120345f63c4fd3dd1aaef364efb4",
+    "digest": "69263f0b53527acb47085eea49a60b8d298bd3db9d2e6f131ccbd1ea1c7fbb31",
     "modified": "2026-11-16",
     "published": "2026-04-02"
   },
