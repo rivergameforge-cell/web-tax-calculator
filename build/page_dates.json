@@ -44,6 +44,11 @@
     "modified": "2026-10-22",
     "published": "2026-05-05"
   },
+  "blog/divorce-property-division-tax.html": {
+    "digest": "ddceb7e4a36b82929b07ef653f2cabd2a72ba4edc0d226c0e27513fe4fe51656",
+    "modified": "2026-11-16",
+    "published": "2026-11-16"
+  },
   "blog/domestic-stock-capital-gains-major-shareholder.html": {
     "digest": "ebd72506fc02a07238ec4f3e4075641563d6415289ed091f1a8f53765e229c02",
     "modified": "2026-10-22",
@@ -130,8 +135,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "28847ea735ca10f1fd955b5cf2b9e09b9cc1d3be57c08cabea872fbb185dd82c",
-    "modified": "2026-11-15",
+    "digest": "20966ada1305e2337b645a05a87cd24a7b3d2725179dd412f79adaf67fff7810",
+    "modified": "2026-11-16",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -495,8 +500,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "2424a219c85834bb27623cb5c40eab06e77d3cde2e5a93c6e4e019e9a563326f",
-    "modified": "2026-11-15",
+    "digest": "5b5ac3ad970b4a5c7859b68491d4561a3714120345f63c4fd3dd1aaef364efb4",
+    "modified": "2026-11-16",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
@@ -575,8 +580,8 @@
     "published": "2026-04-07"
   },
   "real-estate/acquisition.html": {
-    "digest": "8cbc4b0ada1f76bd754ee4f72d8afca4fa50434e22163cbd50761835a20afd3d",
-    "modified": "2026-11-15",
+    "digest": "3dca5926e7a482fa05bbaffe6ca540e4946f839d204d3f8025b73c9090f4f777",
+    "modified": "2026-11-16",
     "published": "2026-04-18"
   },
   "real-estate/capital-gains.html": {

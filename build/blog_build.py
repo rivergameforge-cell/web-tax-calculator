@@ -1299,6 +1299,21 @@ POSTS = [
                   '스톡옵션·RSU·RSA 세금 — 비현금 보상의 근로소득과 과세 시기 이해하기')],
      'relatedHeading': '함께 읽으면 좋은 글',
      'customHtml': False},
+    {'file': '이혼_재산분할_위자료_취득세_양도소득세',
+     'slug': 'divorce-property-division-tax',
+     'category': 'real-estate',
+     'categoryLabel': '부동산 세금',
+     'date': '2026-11-16',
+     'readMin': 8,
+     'ctaHref': 'https://taxcalc.co.kr/#real-estate/acquisition',
+     'ctaLabel': '일반 매매 취득세 비교하기',
+     'ctaHeading': '재산분할과 일반 매매의 계산을 구분하세요',
+     'ctaDescription': '이 계산기는 일반적인 매매 취득세 비교용입니다. 재산분할 특례·위자료 대물변제의 취득 유형과 세액을 계산하지 않으므로 해당 신고 세액으로 사용하지 '
+                       '마세요.',
+     'related': [('/blog/first-home-acquisition-tax-refund.html',
+                  '생애최초 취득세 감면과 경정청구 — 일반 매수의 별도 요건을 비교하는 글이며 재산분할 적용 안내는 아닙니다')],
+     'relatedHeading': '함께 읽으면 좋은 글',
+     'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------

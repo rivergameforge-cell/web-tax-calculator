@@ -1,0 +1,77 @@
+<!-- 티스토리 제목 -->
+<!-- 과세표준 4억 원, 재산분할 취득세는 600만 원? 위자료와 확인 순서 -->
+
+<p data-ke-size="size16">재산분할로 새로 받는 부동산의 취득세 과세표준이 4억 원이고 본세 1.5%가 적용된다면 취득세 본세만 600만 원입니다. ‘이혼 재산분할은 세금이 없다’고 생각하면 등기 자금 계획에서 빠뜨릴 수 있는 부분입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">다만 600만 원은 지방교육세·농어촌특별세와 등기 비용을 합친 총액이 아닙니다. 별도 중과나 다른 특례가 없는 일반적인 재산분할의 계산 예시입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">먼저 판결문이나 합의서에서 부동산 이전이 재산분할인지 위자료 지급인지 구분하세요. 위자료 대신 집을 넘기는 경우에는 지급자의 양도세까지 따로 검토해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<!-- 썸네일: divorce-tistory.webp -->
+<h2 data-ke-size="size26">1. 세금 계산 전에 이전 원인부터 확정하세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">혼인 중 공동으로 형성한 재산의 실질적인 재산분할이면 그 이전 자체를 증여나 유상양도로 보지 않는 것이 기본입니다. 받는 사람의 증여세와 넘기는 사람의 양도세가 해당 이전에 대해 과세되지 않는다는 설명입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">받는 사람의 취득세까지 비과세라는 뜻은 아닙니다. 법률혼의 이혼에 따른 재산분할인지, 실제 매매·증여 또는 위자료 정산 부분이 섞였는지 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">등기 원인과 합의서 문구만 따로 보지 말고 판결문·조정조서와 실제 이행 내용을 함께 맞춰보세요. 이름만 재산분할이라고 붙여 다른 성격의 이전까지 같은 처리로 바꿀 수는 없습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">2. 4억 원 × 1.5% = 본세 600만 원</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이번에 새로 취득하는 부동산 또는 지분에 관한 지방세 과세표준이 4억 원으로 확인되었다고 가정합니다. 지방세법상 재산분할 특례가 적용되고 별도 중과·감면은 없는 일반 사례입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일반적인 해당 무상취득 표준세율 3.5% − 중과기준세율 2% = 취득세 본세율 1.5%.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">4억 원 × 1.5% = 취득세 본세 600만 원.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">지방교육세와 농어촌특별세는 해당 부동산 종류·면적과 적용 규정에 따라 별도로 확인합니다. 등기 관련 비용도 이 예시에 포함하지 않았습니다. 본세 계산값을 총납부액으로 안내받지 않도록 구분하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">시세나 합의서의 평가액을 과세표준으로 바로 확정해서는 안 됩니다. 관할 시·군·구에 취득 원인에 맞는 과세표준과 새로 취득하는 지분을 확인한 다음 본세·부가 세목을 나누어 계산합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">3. 위자료로 집을 넘기면 지급자 양도세를 검토합니다</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">적정한 이혼 위자료를 받는 사람에게 그 위자료 자체에 대한 증여세·소득세가 부과되지 않는다는 설명은 가능합니다. 그러나 위자료 지급자가 부동산으로 대물변제하면 지급자에게는 유상양도에 해당하는 거래가 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">따라서 지급자 쪽에서 양도차익과 적용 가능한 비과세·공제 요건을 확인해야 합니다. 과세대상 거래에 해당한다는 것과 실제 납부세액이 반드시 발생한다는 것은 구분합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">위자료로 집을 받는 사람의 취득세에도 재산분할 본세율 1.5%를 그대로 넣지 마세요. 취득 원인과 주택·지분·주택 수 등 사실관계에 맞는 지방세 계산을 별도로 검토해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">4. 재산분할 당시 평가액을 나중의 취득가액으로 착각하지 마세요</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">재산분할로 받은 부동산을 이후 매도할 때에는 원래 소유했던 배우자의 당초 취득 시기와 취득가액을 기준으로 검토합니다. 현재 명의로 등기한 날짜나 분할 때의 평가액만으로 양도차익을 계산하면 오류가 생길 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">원래 매매계약서, 취득 관련 세금·비용 증빙과 지분별 이력을 확보해두세요. 취득세 계산에 사용한 과세표준과 나중에 양도세 계산에서 공제할 취득가액을 같은 숫자로 취급하지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">위자료로 취득한 부동산은 재산분할과 취득 시기·가액의 판단이 다를 수 있습니다. 개별 판결·합의와 실제 대물변제 내용을 확인해야 합니다. 오래 보유했다는 사실 하나만으로 비과세를 단정하지 마세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">5. 등기 전 실무 확인 목록</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">첫째, 판결문·조정조서 또는 합의서에서 재산분할·위자료·그 밖의 정산금을 구분합니다. 혼인 전 재산이나 별도 증여·매매가 포함된 경우에도 실질을 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">둘째, 등기사항증명서로 이미 보유한 지분과 새로 이전되는 지분을 구분합니다. 현금 지급과 채무·임대보증금 인수 내역도 합의 내용과 맞춥니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">셋째, 관할 지방세 담당 부서에 취득 원인, 과세표준, 특례 적용, 부가 세목과 신고 시기·서류를 확인합니다. 실제 신고에서는 본세만 준비하지 않도록 전체 비용을 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">넷째, 향후 매도를 위해 당초 취득 자료를 보관합니다. 권리관계가 섞여 있거나 해석이 불분명하면 같은 자료를 법률·세무 전문가에게 함께 검토받는 것이 좋습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">6. 집을 매도해 현금으로 나누는 경우와 계산기 주의점</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">집을 제3자에게 팔아 분할금을 마련하면 그 제3자 매매에 대한 양도세는 따로 검토합니다. 부부 사이에 재산분할로 집을 직접 이전하는 경우와 동일하게 보아서는 안 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래 취득세 계산기는 일반적인 매매 취득세 비교용입니다. 재산분할 특례나 위자료 대물변제의 취득 유형을 선택·판정하는 기능은 없습니다. 이혼 재산 이전의 신고 세액을 산출하는 용도로 사용하지 마세요. 확인된 과세표준·세율·부가 세목을 기준으로 관할 부서에서 따로 확인하는 순서가 필요합니다.</p>
+<p data-ke-size="size16">&nbsp;</p><p data-ke-size="size16"><a href="https://taxcalc.co.kr/real-estate/acquisition.html" style="display:inline-block;padding:16px 22px;background:#1657be;color:#fff;border-radius:8px;text-decoration:none;">일반 매매 취득세 비교하기 — 재산분할 계산 미지원</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일반적인 첫 집 매수의 취득세 감면을 놓쳤을 때 확인하는 경정청구 절차입니다. 재산분할과 다른 취득 원인에서 요건을 어떻게 확인하는지 비교하는 데 도움이 됩니다. 생애최초 매수 감면을 이혼 재산분할에 그대로 적용하는 안내는 아닙니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">https://kwonriver.co.kr/entry/firsthomeacquisitionrefund2026</p>
+
+<!-- 해시태그 -->
+<!-- 이혼재산분할, 재산분할취득세, 위자료, 위자료세금, 양도소득세, 부동산이전, 소유권이전등기, 취득세, 과세표준, 재산분할합의서 -->
