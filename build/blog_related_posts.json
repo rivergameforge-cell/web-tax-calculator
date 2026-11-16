@@ -63,7 +63,8 @@
     "gym-pt-culture-tax-deduction": ["헬스장·수영장 소득공제", "시설 이용권과 PT를 함께 결제했을 때 인정되는 금액을 비교합니다."],
     "weekend-couple-rent-tax-credit": ["주말부부 월세 세액공제", "두 집의 월세에 부부 합산 한도를 적용하는 순서와 주소 요건을 확인합니다."],
     "november-health-insurance-after-closure": ["폐업 후 11월 지역건보료", "소득자료 교체와 정산보험료를 구분하고 폐업 후 보험료 조정 절차를 확인합니다."],
-    "comprehensive-property-tax-installment": ["종부세 분납 기준과 농특세 계산", "종부세 본세의 금액 구간과 농특세 비율을 적용해 당초 기한과 분납기한에 낼 금액을 구분합니다."]
+    "comprehensive-property-tax-installment": ["종부세 분납 기준과 농특세 계산", "종부세 본세의 금액 구간과 농특세 비율을 적용해 당초 기한과 분납기한에 낼 금액을 구분합니다."],
+    "cash-receipt-phone-registration": ["현금영수증 번호 등록과 조회 누락 확인", "홈택스에서 사용내역이 보이지 않을 때 휴대전화번호 등록과 자진발급 영수증을 나누어 확인합니다."]
   },
   "links": {
     "severance-pay-guide": ["mid-year-resignation-tax-settlement", "irp-why-start-young"],
@@ -74,7 +75,7 @@
     "inheritance-taxable-scope": ["inheritance-tax-guide", "gift-vs-inheritance-tax"],
     "four-major-insurance-guide": ["salary-take-home", "salary-50m-take-home"],
     "monthly-rent-tax-credit": ["monthly-rent-tax-credit-8m-refund", "jeonse-loan-principal-interest-deduction"],
-    "pension-saving-irp-credit": ["irp-why-start-young", "mid-year-resignation-tax-settlement"],
+    "pension-saving-irp-credit": ["irp-why-start-young", "mid-year-resignation-tax-settlement", "pension-savings-withdrawal-tax"],
     "irp-why-start-young": ["pension-saving-irp-credit", "severance-pay-guide"],
     "real-estate-commission": ["commission-calculation-method", "officetel-acquisition"],
     "commission-calculation-method": ["real-estate-commission", "jeonse-loan-principal-interest-deduction"],
@@ -93,7 +94,7 @@
     "financial-income-comprehensive-tax-20m": ["stock-dividend-tax-guide", "dividend-tax-saving"],
     "monthly-rent-tax-credit-8m-refund": ["monthly-rent-tax-credit", "jeonse-loan-principal-interest-deduction", "weekend-couple-rent-tax-credit"],
     "marriage-tax-credit-100m-guide": ["marriage-birth-gift-tax-deduction", "monthly-rent-tax-credit-8m-refund"],
-    "credit-card-deduction-25-percent": ["medical-expense-tax-credit-3-percent", "mid-year-resignation-tax-settlement", "gym-pt-culture-tax-deduction"],
+    "credit-card-deduction-25-percent": ["cash-receipt-phone-registration", "medical-expense-tax-credit-3-percent", "gym-pt-culture-tax-deduction"],
     "vat-refund-output-input-tax": ["october-vat-preliminary-notice", "november-income-tax-interim-payment"],
     "other-income-tax-8-8-guide": ["income-tax-penalty-late-filing", "november-income-tax-interim-payment"],
     "income-tax-penalty-late-filing": ["november-income-tax-interim-payment", "other-income-tax-8-8-guide"],
@@ -106,7 +107,7 @@
     "mid-year-resignation-tax-settlement": ["severance-pay-guide", "credit-card-deduction-25-percent"],
     "medical-expense-tax-credit-3-percent": ["insurance-premium-tax-credit-100m", "parent-dependent-deduction-pension"],
     "parent-dependent-deduction-pension": ["medical-expense-tax-credit-3-percent", "insurance-premium-tax-credit-100m", "parent-support-living-expenses-gift-tax"],
-    "education-tax-credit-university-900": ["parent-dependent-deduction-pension", "medical-expense-tax-credit-3-percent"],
+    "education-tax-credit-university-900": ["parent-dependent-deduction-pension", "medical-expense-tax-credit-3-percent", "childcare-allowance-tax-exemption"],
     "mortgage-interest-income-deduction": ["housing-subscription-income-deduction", "jeonse-loan-principal-interest-deduction"],
     "daily-worker-tax-15m-20m": ["earned-income-tax-credit-2026-payment", "salary-take-home"],
     "insurance-premium-tax-credit-100m": ["medical-expense-tax-credit-3-percent", "parent-dependent-deduction-pension"],
@@ -126,7 +127,7 @@
     "pension-savings-withdrawal-tax": ["pension-loss-tax-credit", "isa-maturity-renewal-rejoin"],
     "elementary-arts-academy-tax-credit": ["education-tax-credit-university-900", "dual-income-year-end-deductions", "childcare-allowance-tax-exemption"],
     "childcare-allowance-tax-exemption": ["elementary-arts-academy-tax-credit"],
-    "gym-pt-culture-tax-deduction": ["credit-card-deduction-25-percent"],
+    "gym-pt-culture-tax-deduction": ["credit-card-deduction-25-percent", "cash-receipt-phone-registration"],
     "weekend-couple-rent-tax-credit": ["monthly-rent-tax-credit-8m-refund", "dual-income-year-end-deductions"],
     "november-health-insurance-after-closure": ["dividend-health-insurance-dependent", "november-income-tax-interim-payment"],
     "comprehensive-property-tax-installment": ["property-tax-guide"]

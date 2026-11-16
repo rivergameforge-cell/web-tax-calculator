@@ -34,6 +34,7 @@ GENERATED_RELATED = re.compile(
 BLOG_TOPICS = (
     ("year-end", "연말정산: 카드·가족·월세", (
         ("credit-card-deduction-25-percent", "신용카드 소득공제 25% 계산"),
+        ("cash-receipt-phone-registration", "현금영수증 번호 등록과 조회 누락"),
         ("dual-income-year-end-deductions", "맞벌이 부부 공제 배분"),
         ("monthly-rent-tax-credit-8m-refund", "월세 세액공제 기본 조건"),
         ("weekend-couple-rent-tax-credit", "주말부부 두 집의 월세 공제"),
