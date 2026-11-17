@@ -1375,6 +1375,21 @@ POSTS = [
                   '부모님 생활비·용돈 증여세 — 같은 가족 송금도 실제 사용처에 따라 달라지는 기준을 확인하세요')],
      'relatedHeading': '함께 읽으면 좋은 글',
      'customHtml': False},
+    {'file': '장기수선충당금_반환_납부확인서_이사정산_계산',
+     'slug': 'long-term-repair-reserve-refund',
+     'category': 'real-estate',
+     'categoryLabel': '부동산',
+     'date': '2026-11-18',
+     'readMin': 8,
+     'ctaHref': 'https://taxcalc.co.kr/#real-estate/commission',
+     'ctaLabel': '새집 중개보수 상한 계산',
+     'ctaHeading': '이사 때 받을 돈과 나갈 돈을 구분하세요',
+     'ctaDescription': '장기수선충당금 반환액은 납부확인서·정산 내역으로 확인하고, 새집 계약 때 별도로 나갈 중개보수 상한을 비교합니다. 이 계산기는 반환액이나 반환 권리를 '
+                       '계산하지 않습니다.',
+     'related': [('/blog/commission-calculation-method.html',
+                  '부동산 복비 계산법 — 매매·전세·월세의 중개보수 상한과 거래금액을 함께 확인하세요')],
+     'relatedHeading': '함께 읽으면 좋은 글',
+     'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------
