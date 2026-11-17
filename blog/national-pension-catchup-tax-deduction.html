@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <script defer src="/js/analytics.js?v=1"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="국민연금 추납보험료는 납부한 연도의 연금보험료 소득공제를 확인합니다. 600만 원 공제와 실제 환급액의 차이, 분할납부·배우자 대납·확인 서류를 계산 예시로 설명합니다.">
+  <meta name="keywords" content="국민연금추납,,연금보험료공제,,소득공제,,연말정산,,추후납부,,분할납부,,환급액계산">
+  <meta name="author" content="세금계산기">
+  <meta name="theme-color" content="#2563EB">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google-adsense-account" content="ca-pub-2792604427181547">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2792604427181547" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/og-image.png">
+  <link rel="canonical" href="https://taxcalc.co.kr/blog/national-pension-catchup-tax-deduction.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="세금계산기">
+  <meta property="og:title" content="국민연금 추납 소득공제 기준과 환급액 계산: 납부연도·분할납부·배우자 구분">
+  <meta property="og:description" content="국민연금 추납보험료는 납부한 연도의 연금보험료 소득공제를 확인합니다. 600만 원 공제와 실제 환급액의 차이, 분할납부·배우자 대납·확인 서류를 계산 예시로 설명합니다.">
+  <meta property="og:url" content="https://taxcalc.co.kr/blog/national-pension-catchup-tax-deduction.html">
+  <meta property="og:image" content="https://taxcalc.co.kr/thumbnails/national-pension-catchup-tax-deduction.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="article:published_time" content="2026-11-17">
+  <meta property="article:modified_time" content="2026-11-17">
+  <meta property="article:section" content="근로 세금">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="국민연금 추납 소득공제 기준과 환급액 계산: 납부연도·분할납부·배우자 구분">
+  <meta name="twitter:description" content="국민연금 추납보험료는 납부한 연도의 연금보험료 소득공제를 확인합니다. 600만 원 공제와 실제 환급액의 차이, 분할납부·배우자 대납·확인 서류를 계산 예시로 설명합니다.">
+  <meta name="twitter:image" content="https://taxcalc.co.kr/thumbnails/national-pension-catchup-tax-deduction.webp">
+
+  <title>국민연금 추납 소득공제 기준과 환급액 계산: 납부연도·분할납부·배우자 구분 | 세금계산기 블로그</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>.table-scroll{overflow-x:auto;margin:24px 0}.table-scroll table{width:100%;border-collapse:collapse;min-width:320px}.table-scroll th,.table-scroll td{padding:10px 12px;border:1px solid #ddd;text-align:left}.table-scroll th{background:#f3f4f6}</style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "국민연금 추납 소득공제 기준과 환급액 계산: 납부연도·분할납부·배우자 구분",
+    "description": "국민연금 추납보험료는 납부한 연도의 연금보험료 소득공제를 확인합니다. 600만 원 공제와 실제 환급액의 차이, 분할납부·배우자 대납·확인 서류를 계산 예시로 설명합니다.",
+    "image": "https://taxcalc.co.kr/thumbnails/national-pension-catchup-tax-deduction.webp",
+    "author": { "@type": "Organization", "name": "세금계산기", "url": "https://taxcalc.co.kr/" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "세금계산기",
+      "logo": { "@type": "ImageObject", "url": "https://taxcalc.co.kr/og-image.png" }
+    },
+    "datePublished": "2026-11-17",
+    "dateModified": "2026-11-17",
+    "mainEntityOfPage": "https://taxcalc.co.kr/blog/national-pension-catchup-tax-deduction.html",
+    "articleSection": "근로 세금",
+    "inLanguage": "ko"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "세금계산기", "item": "https://taxcalc.co.kr/" },
+      { "@type": "ListItem", "position": 2, "name": "블로그", "item": "https://taxcalc.co.kr/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "국민연금 추납 소득공제 기준과 환급액 계산: 납부연도·분할납부·배우자 구분", "item": "https://taxcalc.co.kr/blog/national-pension-catchup-tax-deduction.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Pretendard', -apple-system, sans-serif; background: #f8f9fa; color: #1f2937; line-height: 1.85; }
+    .top-bar { background: #2563EB; padding: 14px 24px; display: flex; align-items: center; gap: 12px; }
+    .top-bar a { color: white; text-decoration: none; font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+    .top-bar .logo-mark { width: 34px; height: 34px; background: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 900; color: #2563EB; }
+    .breadcrumb { background: #eef2ff; padding: 10px 24px; font-size: 13px; color: #4338ca; }
+    .breadcrumb a { color: #4338ca; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .container { max-width: 760px; margin: 0 auto; padding: 36px 20px 80px; }
+    .meta-line { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; font-size: 13px; color: #6b7280; margin-bottom: 14px; }
+    .meta-line .tag { background: #eef2ff; color: #4338ca; padding: 3px 10px; border-radius: 6px; font-weight: 600; }
+    article h1 { font-size: 28px; font-weight: 800; color: #111827; margin: 0 0 14px; letter-spacing: -0.5px; line-height: 1.4; }
+    .lead { font-size: 17px; color: #4b5563; margin: 0 0 28px; padding: 18px 22px; background: white; border-left: 4px solid #2563EB; border-radius: 0 10px 10px 0; }
+    article h2 { font-size: 22px; font-weight: 700; color: #1e40af; margin: 44px 0 14px; padding-bottom: 10px; border-bottom: 2px solid #dbeafe; line-height: 1.4; }
+    article h3 { font-size: 17px; font-weight: 700; color: #1f2937; margin: 24px 0 10px; }
+    article p { margin-bottom: 16px; font-size: 16px; }
+    article ul { margin: 10px 0 20px 22px; font-size: 15.5px; }
+    article ul li { margin-bottom: 8px; line-height: 1.7; }
+    article strong { color: #111827; font-weight: 700; }
+    article a { color: #2563EB; }
+    article code { background: #f3f4f6; padding: 1px 6px; border-radius: 4px; font-size: 14px; }
+    .quote { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 16px 22px; margin: 22px 0; border-radius: 0 10px 10px 0; font-size: 15px; color: #78350f; line-height: 1.7; }
+    .quote strong { color: #92400e; }
+    .source-note { background: #f8fafc; border: 1px solid #dbeafe; border-radius: 10px; padding: 16px 20px; margin: 32px 0 20px; font-size: 14px; color: #475569; }
+    .source-note strong { display: block; color: #1e40af; margin-bottom: 6px; }
+    .cta-box { background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%); color: white; padding: 32px 28px; border-radius: 14px; text-align: center; margin: 40px 0 24px; box-shadow: 0 8px 24px rgba(37,99,235,0.25); }
+    .cta-box h3 { color: white; font-size: 22px; font-weight: 700; margin: 0 0 10px; border: none; padding: 0; }
+    .cta-box p { font-size: 15px; opacity: 0.95; margin-bottom: 20px; }
+    .cta-btn { display: inline-block; background: white; color: #2563EB; padding: 14px 32px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 16px; transition: transform 0.15s; }
+    .cta-btn:hover { transform: translateY(-2px); }
+    .related-articles { margin-top: 48px; background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; }
+    .related-articles h2 { margin: 0 0 14px; font-size: 17px; border: none; padding: 0; color: #1f2937; }
+    .related-articles a { display: block; padding: 12px 14px; background: #f3f4f6; border-radius: 8px; text-decoration: none; color: #1f2937; font-size: 14px; font-weight: 500; margin-top: 8px; }
+    .related-articles a:hover { background: #dbeafe; color: #1e40af; }
+    footer { background: #111827; color: #9ca3af; padding: 32px 24px; text-align: center; font-size: 13px; margin-top: 60px; }
+    footer a { color: #d1d5db; text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: white; }
+    @media (max-width: 640px) {
+      article h1 { font-size: 22px; }
+      article h2 { font-size: 19px; }
+      .container { padding: 24px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="/">
+      <div class="logo-mark">₩</div>
+      세금계산기
+    </a>
+  </div>
+
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="/">홈</a> &rsaquo;
+    <a href="/blog/">블로그</a> &rsaquo;
+    <span>국민연금 추납 소득공제 기준과 환급액 계산: 납부연도·분할납부·배우자 구분</span>
+  </nav>
+
+  <article class="container">
+    <div class="meta-line">
+      <span class="tag">근로 세금</span>
+      <span>2026.11.17.</span>
+      <span>&middot; 읽는 시간 약 8분</span>
+    </div>
+
+    <h1>국민연금 추납 소득공제 기준과 환급액 계산: 납부연도·분할납부·배우자 구분</h1>
+
+    <p class="lead">국민연금 추납보험료는 납부한 연도의 연금보험료 소득공제를 확인합니다. 600만 원 공제와 실제 환급액의 차이, 분할납부·배우자 대납·확인 서류를 계산 예시로 설명합니다.</p>
+
+    <p>국민연금 추납보험료를 냈다면 납부한 연도의 연금보험료 소득공제를 확인할 수 있습니다. 다만 추납액을 세금에서 그대로 빼는 제도는 아닙니다. 공제 대상 금액과 실제 세금 감소액, 최종 환급액은 서로 다릅니다.</p>
+<p>판단 순서는 본인의 공제 대상 보험료인지, 어느 연도에 실제 납부했는지, 공제 전후 과세표준과 결정세액이 어떻게 변하는지입니다. 신청서의 총액만으로 연말정산 환급액을 확정하지 않습니다.</p>
+<p>2026년 11월 17일 확인한 법령과 국민연금공단 안내를 기준으로 국내 거주 개인의 일반적인 추납보험료 공제를 설명합니다. 추납 신청 자격과 예상 연금액은 공단에서 별도로 확인해야 합니다.</p>
+<h2>1. 국민연금 추납은 연금보험료 소득공제입니다</h2>
+<p>소득세법 제51조의3은 종합소득이 있는 거주자가 공적연금 관련법에 따른 기여금·개인부담금을 납입한 경우 해당 과세기간의 소득에서 공제하도록 정합니다. 국민연금 추납보험료도 본인의 공제 대상 납부액을 확인해 연금보험료 공제에 반영합니다. <a href="https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1000819914">소득세법 제51조의3</a></p>
+<p>소득공제는 세율을 적용하기 전 소득을 줄이는 방식입니다. 연금저축·IRP의 연금계좌 세액공제와 구분해야 하며, 추납액에 연금계좌 세액공제율을 그대로 곱해 환급액을 계산해서는 안 됩니다.</p>
+<p>추납은 납부예외 등 인정되는 과거 기간에 대해 보험료를 내고 가입기간을 추가로 인정받는 제도입니다. 누구나 여유자금을 자유롭게 넣는 금융계좌가 아니므로 현재 가입 상태와 추납 가능한 기간을 먼저 확인합니다. <a href="https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0047M0.do">국민연금공단 추후납부 안내</a></p>
+<h2>2. 과거 가입기간을 채워도 공제는 납부연도에 확인합니다</h2>
+<p>추납 대상 기간이 과거라는 이유로 과거 연말정산에 나누어 넣는 것은 아닙니다. 2026년에 실제 납부한 본인의 공제 대상 추납보험료는 2026년 귀속 소득공제에서 확인합니다. 단순 신청액과 납부 완료액을 구분해야 합니다.</p>
+<p>예를 들어 승인받은 추납보험료가 600만 원이고 그중 공제 대상 보험료 200만 원을 2026년에, 400만 원을 2027년에 실제 납부했다면 각 연도의 공제에서 해당 납부액을 확인합니다. 신청한 해에 600만 원 전체를 공제하는 예시가 아닙니다.</p>
+<p>공단은 일시납 또는 월 단위 최대 60회 분할납부를 안내하며 분할납부이자가 추가될 수 있다고 설명합니다. 총 계좌 출금액을 모두 공제 대상 보험료로 단정하지 말고 연도별 소득공제용 납부확인서와 대조합니다.</p>
+<p>통상 신청 다음 달 고지·납부 일정이 안내되므로 연말 신청과 실제 납부연도가 달라질 수 있습니다. 연말의 당월 납부 가능 여부와 처리 기한 등은 공단에 확인하세요. ‘12월에 신청만 하면 올해 공제’ 또는 ‘12월 신청은 반드시 내년 공제’라고 일괄 판단하지 않습니다.</p>
+<h2>3. 추납 600만 원이면 산출소득세가 얼마나 달라질까요?</h2>
+<p>다른 소득과 공제를 이미 반영한 뒤, 추가 추납공제 전 과세표준이 3,200만 원인 사례를 가정합니다. 추가로 공제받을 수 있는 추납보험료가 600만 원이고 공제가 전액 반영되면 과세표준은 2,600만 원입니다.</p>
+<div class="table-scroll"><table><thead><tr><th>구분</th><th>추납공제 전</th><th>추납공제 후</th></tr></thead><tbody>
+<tr><td>과세표준</td><td>3,200만 원</td><td>2,600만 원</td></tr>
+<tr><td>산출소득세 계산</td><td>3,200만 원 × 15% − 126만 원</td><td>2,600만 원 × 15% − 126만 원</td></tr>
+<tr><td>산출소득세</td><td>354만 원</td><td>264만 원</td></tr>
+</tbody></table></div>
+<p>산출소득세 감소액은 90만 원입니다. 이 예시에서는 공제로 줄어든 과세표준이 같은 15% 구간 안에 있어 600만 원 × 15%로도 계산됩니다. 세율 구간을 넘으면 같은 방식으로 단일 세율을 곱할 수 없습니다. <a href="https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7667&amp;mi=2227">국세청 종합소득세 세율표</a></p>
+<p>90만 원은 세액공제와 지방소득세, 이미 낸 세금을 반영하기 전 산출소득세의 차이입니다. 실제 결정세액 감소액이나 환급액을 보장하는 숫자가 아닙니다. 연봉이 아닌 과세표준을 출발점으로 삼았다는 점도 중요합니다.</p>
+<h2>4. ‘전액 공제 대상’이어도 전액 환급은 아닙니다</h2>
+<p>공제 대상 보험료 전액을 확인한다는 설명과 모든 사람이 그만큼 절세한다는 설명은 다릅니다. 법은 인적공제·연금보험료공제 등 관련 공제 합계가 종합소득금액을 초과할 때의 조정도 규정합니다.</p>
+<p>해당 연도에 종합소득이 없거나 공제 전부터 낼 세금이 거의 없으면 추가 납부로 즉시 생기는 세금 감소 효과가 작거나 없을 수 있습니다. 남는 공제액을 배우자에게 옮기거나 임의로 다른 연도에 몰아 넣는 방식으로 처리하지 않습니다.</p>
+<p>국세 소득세 정산의 기본 관계는 ‘기납부 소득세 − 결정소득세’입니다. 양수이면 환급, 음수이면 추가 납부 방향입니다. 공제로 세금이 줄어도 기존 추가 납부액이 줄어드는 결과일 수 있으며, 추납액 전체가 별도 현금으로 돌아오는 것은 아닙니다.</p>
+<h2>5. 배우자 추납과 반환일시금 반납을 구분합니다</h2>
+<p>연금보험료 공제는 본인의 부담분을 확인하는 항목입니다. 배우자 명의 국민연금 추납보험료를 대신 보냈다는 이유만으로 송금한 사람이 자신의 연말정산에 공제할 수는 없습니다. 배우자를 기본공제 대상자로 올리는 문제와도 별개입니다.</p>
+<p>반환일시금을 되돌려 가입기간을 복원하는 반납금은 추납보험료와 성격이 다릅니다. 반납금을 추납보험료로 바꾸어 입력하거나 모든 공단 납부금을 같은 공제액으로 합치지 마세요. 납부 항목과 소득공제용 확인액을 구분합니다. <a href="https://www.nps.or.kr/html/download/easy/easy_20111018.pdf">국민연금공단 공제 안내 자료</a></p>
+<p>정기 국민연금 본인 부담분과 추납액이 이미 합산된 자료라면 추납 영수증을 다시 더하지 않습니다. 회사 부담 보험료도 근로자 본인의 공제액으로 넣지 않습니다.</p>
+<h2>6. 연말정산에 제출하기 전 확인할 자료</h2>
+<ul>
+<li>추납 신청·결정 내역: 신청 총액과 대상 기간 확인</li>
+<li>실제 납부 내역: 납부일, 연도별 보험료와 부가 항목 구분</li>
+<li>연말정산 간소화 자료 또는 소득공제용 납부확인서: 공제 대상 금액 대조</li>
+<li>회사 연말정산 입력 내역: 정기 보험료와 추납액 중복 여부 확인</li>
+<li>근로소득 원천징수영수증: 공제 전후 과세표준·결정세액·기납부세액 확인</li>
+</ul>
+<p>공단은 본인 부담 연금보험료에 대한 소득공제용 확인 서비스를 제공합니다. 자료가 없거나 실제 납부액과 다르면 확인서와 납부 기록을 가지고 공단 및 회사 담당자에게 확인합니다. 2026년 귀속 간소화 서비스의 구체적인 공개·제출 일정은 추후 안내와 회사 일정을 따릅니다. <a href="https://nps.or.kr/elctcvlcpt/comm/getOHAC0000M5.do?menuId=MN24001058">국민연금공단 납부확인 서비스</a></p>
+<h2>7. 자주 묻는 질문</h2>
+<h3>추납을 많이 할수록 무조건 유리한가요?</h3>
+<p>세금만으로 판단하지 않습니다. 가입기간 증가에 따른 예상 연금액, 납부 자금과 분할이자, 소득공제 효과가 다릅니다. 본인의 공단 예상액과 납부 계획을 비교해야 합니다.</p>
+<h3>직장인이 아니면 소득공제를 못 받나요?</h3>
+<p>연금보험료 공제는 종합소득이 있는 거주자의 공제 항목입니다. 사업소득 등이 있으면 종합소득세 신고에서 본인의 해당 납부액을 확인합니다. 사업 경비와 소득공제에 같은 금액을 이중 반영하지 않습니다.</p>
+<h3>계산기로 환급액을 바로 확정할 수 있나요?</h3>
+<p><a href="https://taxcalc.co.kr/income/comprehensive.html">종합소득세 계산기</a>에서 근로소득은 총급여가 아닌 근로소득금액을, 사업소득은 필요경비 반영 후 금액을 사용합니다. ‘소득공제 합계’에는 확인한 기존 공제와 추가 추납공제를 중복 없이 반영해 기본 세율 흐름을 비교할 수 있습니다.</p>
+<p>이 계산기는 추납의 공제 자격·한도를 자동 판정하거나 실제 세액공제와 기납부세액을 모두 반영하지 않습니다. 계산 결과를 최종 환급액이나 추가 납부액으로 확정하지 말고 실제 연말정산·신고 자료와 대조하세요.</p>
+
+    <div class="source-note">
+      <strong>자료 기준 및 검토 안내</strong>
+      <p style="margin:0">세금계산기 운영팀이 국세청, 행정안전부, 위택스, 법제처 국가법령정보센터 등 공개 자료를 기준으로 작성했습니다. 한시 감면·지역별 조례·개별 예외는 바뀔 수 있으므로 실제 신고 전 공식 기관에서 최종 확인하세요.</p>
+    </div>
+
+    <div class="cta-box">
+      <h3>확인한 공제액을 중복 없이 반영하세요</h3>
+      <p>근로소득금액·사업소득금액과 소득공제 합계로 기본 세율 흐름을 비교합니다. 추납 공제 자격·한도를 자동 판정하거나 실제 세액공제·기납부세액을 모두 반영하지 않아 최종 환급액을 확정할 수 없습니다.</p>
+      <a href="https://taxcalc.co.kr/income/comprehensive.html" class="cta-btn">소득공제 전후 기본 세율 비교 →</a>
+    </div>
+
+    <div class="related-articles">
+      <h2>함께 읽으면 좋은 글</h2>
+      <a href="/blog/pension-loss-tax-credit.html">연금저축·IRP 손실과 세액공제 — 국민연금 추납의 소득공제와 다른 계산 구조를 비교하세요</a>
+    </div>
+  </article>
+
+  <footer>
+    <div>© 2026 세금계산기 (taxcalc.co.kr) · 모든 계산은 참고용입니다</div>
+    <div style="margin-top:10px">
+      <a href="/">홈</a> &middot;
+      <a href="/blog/">블로그</a> &middot;
+      <a href="/about.html">사이트 소개</a> &middot;
+      <a href="/privacy.html">개인정보처리방침</a> &middot;
+      <a href="/contact.html">문의하기</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1330,6 +1330,21 @@ POSTS = [
                   '당근 중고거래 종합소득세 기준 — 일상적 처분과 반복하는 사업, 수입과 소득금액의 차이를 비교하세요')],
      'relatedHeading': '함께 읽으면 좋은 글',
      'customHtml': False},
+    {'file': '국민연금_추납_소득공제_납부연도_환급액',
+     'slug': 'national-pension-catchup-tax-deduction',
+     'category': 'labor',
+     'categoryLabel': '근로 세금',
+     'date': '2026-11-17',
+     'readMin': 8,
+     'ctaHref': 'https://taxcalc.co.kr/#income/comprehensive',
+     'ctaLabel': '소득공제 전후 기본 세율 비교',
+     'ctaHeading': '확인한 공제액을 중복 없이 반영하세요',
+     'ctaDescription': '근로소득금액·사업소득금액과 소득공제 합계로 기본 세율 흐름을 비교합니다. 추납 공제 자격·한도를 자동 판정하거나 실제 세액공제·기납부세액을 모두 '
+                       '반영하지 않아 최종 환급액을 확정할 수 없습니다.',
+     'related': [('/blog/pension-loss-tax-credit.html',
+                  '연금저축·IRP 손실과 세액공제 — 국민연금 추납의 소득공제와 다른 계산 구조를 비교하세요')],
+     'relatedHeading': '함께 읽으면 좋은 글',
+     'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------

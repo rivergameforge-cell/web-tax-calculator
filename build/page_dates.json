@@ -135,8 +135,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "65f4409d3c45e6b9f8d628915135a1c8c34aadb4e07cc0da94ed425eefdfb670",
-    "modified": "2026-11-16",
+    "digest": "3a6b0c13b85129ae1d7e261b0beaaee471c7bcd748740bc7fb1c2f46f55e9f9d",
+    "modified": "2026-11-17",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -203,6 +203,11 @@
     "digest": "7a71e2f84204b00d668e21719b3c0e593781437366e0f19665e37d52c1e3b8d8",
     "modified": "2026-10-22",
     "published": "2026-10-11"
+  },
+  "blog/national-pension-catchup-tax-deduction.html": {
+    "digest": "f646c2f080c0e4edf15500c0bb61dfa808833451f4946cdc28a2a23f7de45a7f",
+    "modified": "2026-11-17",
+    "published": "2026-11-17"
   },
   "blog/november-health-insurance-after-closure.html": {
     "digest": "1213baa50aad1ea6f42b61a8af7dfdd073aee2f59b98b8a26074fbd7b51d0322",
@@ -505,8 +510,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "69263f0b53527acb47085eea49a60b8d298bd3db9d2e6f131ccbd1ea1c7fbb31",
-    "modified": "2026-11-16",
+    "digest": "e543ac65dee846c964527d77db914f771524ac492079a128f1d7f21d2413a882",
+    "modified": "2026-11-17",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
