@@ -1,0 +1,68 @@
+<!-- 티스토리 제목 -->
+<!-- 면세점 가방 1,100달러, 자진신고하면 얼마? 입국 세금 계산·신고 순서 -->
+
+<p data-ke-size="size16">1,100달러짜리 면세점 가방 한 개라면 입국 세금은 얼마일까요? 일반 가방 간이세율 15%, 면세 800달러, 가정 환율 1,400원을 적용하고 자진신고 감면 요건을 충족한다면 예상 납부액은 4만 4,100원입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">단, 이 숫자는 한 사람이 다른 일반 구매품 없이 가방 한 개만 반입하는 단순 예시입니다. 고급 가방의 별도 과세, 면세 범위 배분, 세관 인정 가격이 바뀌면 결과도 달라집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">입국장에서 먼저 확인할 것은 ‘면세점에서 샀는가’보다 ‘무엇을 얼마에 취득해 반입하는가’입니다. 영수증부터 신고까지 순서대로 짚어보겠습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<!-- 썸네일: bag-tistory.webp -->
+<h2 data-ke-size="size26">1. 영수증과 함께 가져오는 물품부터 모으세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2026년 11월 17일 확인 기준 일반 여행자 휴대품의 기본 면세 범위는 1인당 미화 800달러입니다. 국내 면세점에서 샀다는 이유로 이 기준에서 제외되지 않습니다. 해외 매장 구매품과 선물 등 이번에 취득해 반입하는 일반 물품도 함께 확인합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">첫째, 가방 영수증과 최종 결제 자료를 준비합니다. 할인·쿠폰·포인트 내역이 있다면 구입가격을 확인할 수 있도록 함께 보관하세요. 모든 할인 수단을 임의로 빼기보다는 세관이 인정하는 가격을 확인하는 것이 순서입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">둘째, 가방 외의 일반 구매품도 적어봅니다. 800달러는 매장마다 새로 생기는 공제가 아닙니다. 입국장 면세점 구입품도 합산하며, 해당 매장의 국산품에 면세 범위를 우선 적용하는 기준이 있어 여러 물품이면 배분부터 달라질 수 있습니다. 술·담배·향수는 별도 면세 범위를 구분합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">2. 1,100달러 가방의 예상 납부액을 계산해보세요</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">세관 인정 가격 1,100달러인 일반 가방 한 개만 반입하고, 800달러를 전부 적용할 수 있다고 가정합니다. 개별소비세 대상 고급 가방이나 FTA 등 별도 적용은 없는 사례입니다. 환율은 실제 조회값이 아닌 설명용 1달러당 1,400원입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">① 면세 초과분: 1,100달러 − 800달러 = 300달러<br />② 원화 과세가격: 300달러 × 1,400원 = 42만 원<br />③ 간이세율 15% 적용: 42만 원 × 15% = 6만 3,000원<br />④ 자진신고 감면 30%: 6만 3,000원 × 30% = 1만 8,900원<br />⑤ 감면 후 예상 납부액: 6만 3,000원 − 1만 8,900원 = 4만 4,100원</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">자진신고 감면 요건을 충족하고 감면 한도 이내라는 가정입니다. 간이세율에는 관련 세금이 통합돼 있으므로 여기에 부가세 10%를 다시 더하지 않습니다. 실제 세관 환율과 인정 가격으로 다시 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">3. 모든 가방에 15%를 곱하면 안 됩니다</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">현행 일반 가방 간이세율은 15%입니다. 과거 안내의 20%를 그대로 적용하지 마세요. 다만 개별소비세 대상 고급 가방은 별도 세액 계산 구조가 있어 ‘가방은 언제나 15%’라고 계산하는 것도 맞지 않습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">가방 가격이 높거나 다른 물품이 섞였다면 품목과 면세 배분을 넣어 여행자 휴대품 예상세액을 확인하고, 필요하면 세관에서 적용 방식을 확인하세요. 아래 계산 예시를 모든 명품 구매에 그대로 대입해서는 안 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">4. 신고 대상이면 반출구를 지나기 전에 확인하세요</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">면세 범위를 초과하는 과세 대상 물품은 입국 세관 절차에서 신고합니다. 관세청 여행자 세관신고 앱·모바일 웹 등 제공되는 신고 방식으로 물품과 가격을 적고, 세관 안내에 따라 확인·납부를 진행하세요. 전자 신고 이용 조건이나 현장 절차가 다르면 해당 입국장의 안내를 따르면 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">가방을 포장 없이 들고 있다고 신고 필요성이 자동으로 사라지지는 않습니다. 여행 중 새로 산 가방과 원래 국내에서 사용하던 가방을 구분하세요. 기존 물품은 구입·소유 자료 등을 남겨두면 확인에 도움이 됩니다. 판매 목적 물품도 일반적인 개인 사용 사례와 구분해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">5. 감면 한도와 가족 합산에서 다시 점검하세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">자진신고하면 납부할 관세의 30%를 최대 20만 원까지 감면받을 수 있습니다. 위 간이세율 예시의 감면액은 1만 8,900원으로 한도 안입니다. 별도 세목이 있는 경우 감면 대상 세액을 확인해야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">예를 들어 감면 대상 관세 자체가 80만 원이면 30%는 24만 원이지만 감면은 20만 원까지입니다. 20만 원을 구매가격에서 빼거나 입국 면세 범위에 더하면 안 됩니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">또 부부가 가방 한 개를 가져오면서 800달러씩 합쳐 1,600달러 면세라고 계산할 수 없습니다. 한 물품 또는 한 세트에 동반 가족의 면세 범위를 모을 수 없기 때문입니다. 대표 신고가 가능하다는 절차와 면세 한도 합산은 별개입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">6. 여행자 휴대품 계산기에서 조건을 확인하세요</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">직접 가지고 입국하는 물품은 관세청 여행자 휴대품 예상세액 조회에서 품목과 가격을 확인하세요. 계산값은 예상치이며 최종 세액은 실제 통관 조건에 따라 달라집니다.</p>
+<p data-ke-size="size16">&nbsp;</p><p data-ke-size="size16"><a href="https://www.customs.go.kr/kcs/ad/tax/ItemTaxCalculation.do" style="display:inline-block;padding:16px 22px;background:#1657be;color:#fff;border-radius:8px;text-decoration:none;">관세청 여행자 휴대품 예상세액 확인</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">택배 해외직구의 관세·부가세와 비교하려면 TaxCalc 해외직구 계산기를 참고할 수 있습니다. 이 도구는 택배 기준으로 여행자 800달러 면세와 자진신고 감면을 계산하지 않습니다. 이번 휴대품 세금 확인에는 위 관세청 여행자 계산기를 사용하세요.</p>
+<p data-ke-size="size16">&nbsp;</p><p data-ke-size="size16"><a href="https://taxcalc.co.kr/income/customs.html" style="display:inline-block;padding:16px 22px;background:#1657be;color:#fff;border-radius:8px;text-decoration:none;">택배 직구 세금 비교용 TaxCalc 계산기</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">직접 휴대하는 가방과 달리, 해외직구 택배를 반품했다면 이미 낸 관세·부가세의 환급 절차를 확인해야 합니다. 환불 영수증 외에 어떤 증빙이 필요한지 아래 글에서 이어서 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">https://kwonriver.co.kr/entry/customsreturnrefund2026</p>
+
+<!-- 해시태그 -->
+<!-- 면세점가방, 입국관세, 여행자휴대품, 면세한도, 자진신고, 관세감면, 간이세율, 해외여행, 세관신고, 가방세금 -->

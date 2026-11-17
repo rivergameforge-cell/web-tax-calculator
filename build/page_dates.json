@@ -64,6 +64,11 @@
     "modified": "2026-11-10",
     "published": "2026-10-26"
   },
+  "blog/duty-free-bag-arrival-tax.html": {
+    "digest": "4a0ed70fffc6eae7e597e5b35acf237d728b8829362c32db2440373fc77614ed",
+    "modified": "2026-11-17",
+    "published": "2026-11-17"
+  },
   "blog/earned-income-tax-credit-2026-payment.html": {
     "digest": "a734917d8ad6501e805a12c8fff2af7ff77f9f6776400c570026b805fe15a5bd",
     "modified": "2026-10-22",
@@ -135,7 +140,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "3a6b0c13b85129ae1d7e261b0beaaee471c7bcd748740bc7fb1c2f46f55e9f9d",
+    "digest": "eb8db4c750747ac9b4b46814f711c62f05a83dc3bee2618eab8a1b1906bad7e7",
     "modified": "2026-11-17",
     "published": "2026-05-05"
   },
@@ -430,8 +435,8 @@
     "published": "2026-04-18"
   },
   "income/customs.html": {
-    "digest": "251105c3afb7d0e29ec71e470a5366ff0ef4405b7f837af08775b94526adc9bb",
-    "modified": "2026-11-15",
+    "digest": "550ba4f4ba8bf10619487d33ecac4a695851f79f02feb8d1ac799a37acb803e2",
+    "modified": "2026-11-17",
     "published": "2026-04-18"
   },
   "income/daily-worker.html": {
@@ -510,7 +515,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "e543ac65dee846c964527d77db914f771524ac492079a128f1d7f21d2413a882",
+    "digest": "eff230da2e368e1e38090dd70f489c86a364d0180825ebc6f92e8a39b62345d2",
     "modified": "2026-11-17",
     "published": "2026-04-02"
   },

@@ -1345,6 +1345,21 @@ POSTS = [
                   '연금저축·IRP 손실과 세액공제 — 국민연금 추납의 소득공제와 다른 계산 구조를 비교하세요')],
      'relatedHeading': '함께 읽으면 좋은 글',
      'customHtml': False},
+    {'file': '면세점_가방_입국관세_800달러_자진신고_계산',
+     'slug': 'duty-free-bag-arrival-tax',
+     'category': 'other',
+     'categoryLabel': '기타 세금',
+     'date': '2026-11-17',
+     'readMin': 8,
+     'ctaHref': 'https://www.customs.go.kr/kcs/ad/tax/ItemTaxCalculation.do',
+     'ctaLabel': '여행자 휴대품 예상세액 조회',
+     'ctaHeading': '휴대품은 여행자 기준으로 확인하세요',
+     'ctaDescription': '관세청 계산기에서 반입 품목과 가격으로 예상 세액을 확인합니다. 실제 인정 가격·세관 환율·고급 가방 별도 과세·면세 범위 배분에 따라 최종 세액은 '
+                       '달라집니다.',
+     'related': [('/blog/overseas-return-customs-vat-refund.html',
+                  '해외직구 반품 관세·부가세 환급 — 택배 직구 반품 때 챙길 증빙과 환급 절차를 비교하세요')],
+     'relatedHeading': '함께 읽으면 좋은 글',
+     'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------
