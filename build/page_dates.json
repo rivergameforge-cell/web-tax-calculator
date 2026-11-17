@@ -140,7 +140,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "eb8db4c750747ac9b4b46814f711c62f05a83dc3bee2618eab8a1b1906bad7e7",
+    "digest": "2c03eb432372a36f4636651d9a5aa2c8d587920222df4f35f7d93ea3685604d0",
     "modified": "2026-11-17",
     "published": "2026-05-05"
   },
@@ -173,6 +173,11 @@
     "digest": "3cb6b5d75e9d47a53df57b04abdc036290892c46d0a7482093247e05953cd722",
     "modified": "2026-10-22",
     "published": "2026-10-13"
+  },
+  "blog/lottery-winnings-family-gift-tax.html": {
+    "digest": "5cc72412a9eb73e719b0eebba773f5eed8c74d8f7a4144286bbfdb0bfdd57f34",
+    "modified": "2026-11-17",
+    "published": "2026-11-17"
   },
   "blog/marriage-birth-gift-tax-deduction.html": {
     "digest": "6cce991f686afce10d02845c37d841ec1d144a28ed5604e43dcec0806b9f713a",
@@ -515,13 +520,13 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "eff230da2e368e1e38090dd70f489c86a364d0180825ebc6f92e8a39b62345d2",
+    "digest": "0a1974e644ce242a68d4cc4a55957c6f1bc3c61a496efecbe41276e5e4899b34",
     "modified": "2026-11-17",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
-    "digest": "4a4415f7e8dc4b8b8ab41736b793285fed031307d3018f52d59510610b2bf612",
-    "modified": "2026-11-15",
+    "digest": "f6e11ab7427e1ce4e769c68b3ee1eb620c8189e47d72cd9af81e16bbb1ec6405",
+    "modified": "2026-11-17",
     "published": "2026-04-18"
   },
   "inherit/inheritance.html": {

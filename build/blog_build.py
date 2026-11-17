@@ -1360,6 +1360,21 @@ POSTS = [
                   '해외직구 반품 관세·부가세 환급 — 택배 직구 반품 때 챙길 증빙과 환급 절차를 비교하세요')],
      'relatedHeading': '함께 읽으면 좋은 글',
      'customHtml': False},
+    {'file': '로또_당첨금_가족증여_공동구매_증여세_계산',
+     'slug': 'lottery-winnings-family-gift-tax',
+     'category': 'inherit',
+     'categoryLabel': '상속·증여',
+     'date': '2026-11-17',
+     'readMin': 9,
+     'ctaHref': 'https://taxcalc.co.kr/#inherit/gift',
+     'ctaLabel': '가족 관계별 증여세 예상액 계산',
+     'ctaHeading': '실제로 이전하는 증여액을 넣으세요',
+     'ctaDescription': '당첨금 총액 대신 가족에게 실제로 증여할 금액, 증여 관계, 과거 증여·공제 조건을 입력해 예상 세액을 비교합니다. 공동구매 인정과 공제 자격은 자동 '
+                       '판정하지 않습니다.',
+     'related': [('/blog/parent-support-living-expenses-gift-tax.html',
+                  '부모님 생활비·용돈 증여세 — 같은 가족 송금도 실제 사용처에 따라 달라지는 기준을 확인하세요')],
+     'relatedHeading': '함께 읽으면 좋은 글',
+     'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------
