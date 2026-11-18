@@ -1,0 +1,41 @@
+<!-- 티스토리 제목 -->
+<!-- 동물병원에서 11만 6,000원 결제, 영수증 부가세 6,000원 확인하는 법 -->
+
+<p data-ke-size="size16">고양이 치주질환 치료비 5만 원과 별도로 구매한 이동장 6만 6,000원을 한 번에 결제했다고 가정해 봅시다. 카드 승인액은 11만 6,000원입니다. 이때 전표에 찍힌 부가세 6,000원은 어느 항목에서 나온 걸까요?</p>
+<p data-ke-size="size16">&nbsp;</p>
+<!-- 썸네일: pet-tistory.webp -->
+<h2 data-ke-size="size26">진료일과 항목명을 먼저 맞추세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">2026년 1월 1일부터 치주질환과 치아 파절 치료 등이 면세 진료 항목에 추가됐습니다. 같은 치과 진료라도 명세에 어떤 치료가 적혔는지 확인하세요. 진료일이 시행 전이라면 당시 기준으로 살펴봐야 합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">과세 금액에서 세액을 분리하세요</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">예시의 치주질환 치료비 5만 원은 면세입니다. 이동장 가격이 부가세 포함 6만 6,000원이라면 공급가액은 6만 원이고 부가세는 6,000원입니다. 따라서 결제액은 5만 원 + 6만 원 + 6,000원입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">세금 포함 가격만 아는 경우 과세 품목의 결제액을 11로 나누면 세액을 구할 수 있습니다. 전체 승인액을 11로 나누면 면세 진료비까지 계산에 들어갑니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">미용과 치료가 같은 날이었다면</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">예방접종 뒤 외모 관리를 위해 맡긴 털 미용은 별도 과세 서비스입니다. 반면 치료 과정에 포함된 처치를 보호자가 임의로 미용비로 떼어 계산할 필요는 없습니다. 병원이 어떤 항목으로 수납했는지부터 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">총액만 있는 전표로 문의하는 순서</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">진료일과 결제액을 알려주고 항목별 수납 내역을 요청하세요. 면세 진료비와 과세 물품·서비스 금액을 표시한 다음 과세 가격에 세금이 포함됐는지 확인합니다. 명세와 전표가 여전히 맞지 않으면 금액이 다른 항목을 짚어 병원에 설명을 요청하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">아래 계산기로 예시를 확인하려면 일반과세를 선택하고 매출 공급가액에 이동장값 6만 원, 매입액에 0원을 입력하세요. 결과 중 매출세액이 영수증의 6,000원에 해당합니다.</p>
+<p data-ke-size="size16">&nbsp;</p><p data-ke-size="size16"><a href="https://taxcalc.co.kr/income/vat.html" style="display:inline-block;padding:16px 22px;background:#1657be;color:#fff;border-radius:8px;text-decoration:none;">과세 품목의 매출세액 계산하기</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">현금으로 결제했다면 홈택스에서 발급 내역을 찾아보세요. 휴대전화번호를 등록하지 않아 조회가 안 될 때 확인할 절차도 함께 정리했습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">https://kwonriver.co.kr/entry/cashreceipt2026</p>
+
+<!-- 해시태그 -->
+<!-- 동물병원비, 반려동물진료비, 동물병원영수증, 강아지예방접종, 고양이진료비, 반려견, 반려묘, 초보보호자, 강아지미용, 동물병원부가세 -->

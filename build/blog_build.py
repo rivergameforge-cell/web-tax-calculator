@@ -1390,6 +1390,20 @@ POSTS = [
                   '부동산 복비 계산법 — 매매·전세·월세의 중개보수 상한과 거래금액을 함께 확인하세요')],
      'relatedHeading': '함께 읽으면 좋은 글',
      'customHtml': False},
+    {'file': '동물병원비_예방접종_미용_부가세_계산',
+ 'slug': 'pet-vet-bill-vat',
+ 'category': 'income',
+ 'categoryLabel': '소득·세금',
+ 'date': '2026-11-18',
+ 'readMin': 4,
+ 'ctaHref': 'https://taxcalc.co.kr/#income/vat',
+ 'ctaLabel': '부가세 계산하기',
+ 'ctaHeading': '과세 품목의 공급가액으로 계산해 보세요',
+ 'ctaDescription': '일반과세에서 미용 공급가액 5만 원과 매입액 0원을 넣으면 매출세액 5,000원을 확인할 수 있습니다.',
+ 'related': [('/blog/cash-receipt-phone-registration.html',
+              '현금영수증 휴대전화번호 등록과 결제 내역 조회 방법')],
+ 'relatedHeading': '함께 읽으면 좋은 글',
+ 'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------

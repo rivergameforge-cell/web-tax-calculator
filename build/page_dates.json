@@ -140,7 +140,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "4dd2f413367a530753c7e1898e690006a85213050fb296ea036fe48f2ae912c3",
+    "digest": "831dd53aee81e70b4bd6fb2af8d7a692cb06807d7a586c5b3d2bbba3f6c42987",
     "modified": "2026-11-18",
     "published": "2026-05-05"
   },
@@ -288,6 +288,11 @@
     "digest": "9351b283574893cfb8d46fe8d12ea0e96ad6e34d632ef6df43ef1449dfcf3928",
     "modified": "2026-11-05",
     "published": "2026-11-05"
+  },
+  "blog/pet-vet-bill-vat.html": {
+    "digest": "7ee3d08a0f81ab591e49ddbab7333e4e706b3e29943675c337af9c78de3dc116",
+    "modified": "2026-11-18",
+    "published": "2026-11-18"
   },
   "blog/property-tax-guide.html": {
     "digest": "ef5825c8084b476e1cd94b587bffb43bf9f7106f592486ca7ecbed0ddb0dea34",
@@ -520,12 +525,12 @@
     "published": "2026-04-18"
   },
   "income/vat.html": {
-    "digest": "c0868faa2a6313baffe6f7fa9b046e402f47d5e2931cd2fd5c11b1a6fb1fd861",
-    "modified": "2026-10-16",
+    "digest": "606dc03d70dbbed5aab003e610e21a1422497d94c706da72224fed9345024dd1",
+    "modified": "2026-11-18",
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "781e33b4321a3f156026162fcb50f1f787085c031813c5725ffd6f58d8639a4c",
+    "digest": "0756cb85ac9e8219e991c0890b9353333a1be7b8bd6c3488c465c9cd5e4cff85",
     "modified": "2026-11-18",
     "published": "2026-04-02"
   },
