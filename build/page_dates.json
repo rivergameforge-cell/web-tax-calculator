@@ -145,8 +145,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "b9a674450ef53074a94edb983aa0f17a3152148eea8848488cf7bce7ec22afc0",
-    "modified": "2026-11-18",
+    "digest": "d9d51ba22d459bed5f1ad119dfcd6aed963f5e3201003713e8f80246aec37efb",
+    "modified": "2026-11-19",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -379,6 +379,11 @@
     "modified": "2026-11-10",
     "published": "2026-05-19"
   },
+  "blog/vehicle-bond-refund.html": {
+    "digest": "65c443e9b324b7694a56933b8f6eef7ad961f2132d931f28cc6d712ca1b7d507",
+    "modified": "2026-11-19",
+    "published": "2026-11-19"
+  },
   "blog/vehicle-installment-calculation.html": {
     "digest": "b87cb115d93acc5a7f6ca587ec545376e5570ec4bc2bc2bc689c9504874ecf06",
     "modified": "2026-11-10",
@@ -535,8 +540,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "6527c366b1a4bc90d7275612a084a0de52a756bea9d925665fc777d14a7206ce",
-    "modified": "2026-11-18",
+    "digest": "7ee4348bd24631f9b3382462e08ef0cf9119800422961a9635f821c94a3ae192",
+    "modified": "2026-11-19",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
@@ -685,8 +690,8 @@
     "published": "2026-04-18"
   },
   "vehicle/acquisition.html": {
-    "digest": "fdda50ae7d4cfe24d6473f82ceb8413b4285ef0e3b4ded22a3b6eda8b01373f0",
-    "modified": "2026-10-19",
+    "digest": "0ddf308bc032c8c1b909c99061a8298925c56368276fa4b5c4710063a72e6a6c",
+    "modified": "2026-11-19",
     "published": "2026-04-18"
   },
   "vehicle/buying.html": {

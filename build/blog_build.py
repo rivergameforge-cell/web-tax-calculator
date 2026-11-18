@@ -1419,6 +1419,20 @@ POSTS = [
               '폐업 후 지역건강보험료 소득 조정과 정산 방법')],
  'relatedHeading': '함께 읽으면 좋은 글',
  'customHtml': False},
+    {'file': '자동차채권_공채할인_만기_환급조회',
+ 'slug': 'vehicle-bond-refund',
+ 'category': 'vehicle',
+ 'categoryLabel': '자동차',
+ 'date': '2026-11-19',
+ 'readMin': 4,
+ 'ctaHref': 'https://taxcalc.co.kr/#vehicle/acquisition',
+ 'ctaLabel': '자동차 취득세 계산하기',
+ 'ctaHeading': '차를 등록할 때의 취득세 예상액',
+ 'ctaDescription': '차량 조건으로 취득세를 가늠하고, 보유한 공채의 상환액은 취급 은행에서 확인하세요.',
+ 'related': [('/blog/vehicle-tax-sale-refund.html',
+              '자동차세 연납 후 차를 팔았을 때 일할 환급액 계산')],
+ 'relatedHeading': '함께 읽으면 좋은 글',
+ 'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------
