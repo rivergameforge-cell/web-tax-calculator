@@ -14,6 +14,11 @@
     "modified": "2026-11-06",
     "published": "2026-11-06"
   },
+  "blog/closed-merchant-card-fee-refund.html": {
+    "digest": "c786960ddcab5d82fc5131734d209accad7b36e203bb122e4263fcc4c953fe4d",
+    "modified": "2026-11-18",
+    "published": "2026-11-18"
+  },
   "blog/commission-calculation-method.html": {
     "digest": "6ca2500c363b4eb30bf78c6ab06d65984449dbdf644a8d67ef5a9b1e2df90ff2",
     "modified": "2026-11-10",
@@ -140,7 +145,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "831dd53aee81e70b4bd6fb2af8d7a692cb06807d7a586c5b3d2bbba3f6c42987",
+    "digest": "b9a674450ef53074a94edb983aa0f17a3152148eea8848488cf7bce7ec22afc0",
     "modified": "2026-11-18",
     "published": "2026-05-05"
   },
@@ -525,12 +530,12 @@
     "published": "2026-04-18"
   },
   "income/vat.html": {
-    "digest": "606dc03d70dbbed5aab003e610e21a1422497d94c706da72224fed9345024dd1",
+    "digest": "c270f648b4de7cf97adc688912594cbf5a16ed1026dee7f2cba98ec11c2cd9b4",
     "modified": "2026-11-18",
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "0756cb85ac9e8219e991c0890b9353333a1be7b8bd6c3488c465c9cd5e4cff85",
+    "digest": "6527c366b1a4bc90d7275612a084a0de52a756bea9d925665fc777d14a7206ce",
     "modified": "2026-11-18",
     "published": "2026-04-02"
   },

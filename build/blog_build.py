@@ -1404,6 +1404,21 @@ POSTS = [
               '현금영수증 휴대전화번호 등록과 결제 내역 조회 방법')],
  'relatedHeading': '함께 읽으면 좋은 글',
  'customHtml': False},
+    {'file': '폐업_신규가맹점_카드수수료_환급_조회',
+ 'slug': 'closed-merchant-card-fee-refund',
+ 'category': 'income',
+ 'categoryLabel': '소득·세금',
+ 'date': '2026-11-18',
+ 'readMin': 4,
+ 'ctaHref': 'https://taxcalc.co.kr/#income/vat',
+ 'ctaLabel': '부가세 계산하기',
+ 'ctaHeading': '폐업 정산 때 부가세도 따로 확인하세요',
+ 'ctaDescription': '과세 매출과 매입을 바탕으로 부가세를 가늠할 수 있습니다. 카드수수료 차액은 가맹점 조회 내역에서 '
+                   '확인하세요.',
+ 'related': [('/blog/november-health-insurance-after-closure.html',
+              '폐업 후 지역건강보험료 소득 조정과 정산 방법')],
+ 'relatedHeading': '함께 읽으면 좋은 글',
+ 'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------
