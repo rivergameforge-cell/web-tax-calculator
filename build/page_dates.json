@@ -145,8 +145,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "d9d51ba22d459bed5f1ad119dfcd6aed963f5e3201003713e8f80246aec37efb",
-    "modified": "2026-11-19",
+    "digest": "25dff0f422f7f57ce90ba6a32954425364c57af98c8bb61b9baa82d0d35492b6",
+    "modified": "2026-11-21",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -298,6 +298,11 @@
     "digest": "7ee3d08a0f81ab591e49ddbab7333e4e706b3e29943675c337af9c78de3dc116",
     "modified": "2026-11-18",
     "published": "2026-11-18"
+  },
+  "blog/promotion-loan-rate-cut.html": {
+    "digest": "f37722e8af04c92e5701c8ebf5e2e93f9849a62102825b3e797a9e449d37345c",
+    "modified": "2026-11-21",
+    "published": "2026-11-21"
   },
   "blog/property-tax-guide.html": {
     "digest": "ef5825c8084b476e1cd94b587bffb43bf9f7106f592486ca7ecbed0ddb0dea34",
@@ -540,8 +545,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "7ee4348bd24631f9b3382462e08ef0cf9119800422961a9635f821c94a3ae192",
-    "modified": "2026-11-19",
+    "digest": "ec4b1b6f91302d8d382c3ecdf6c56b3bd46f255b6d698a7e6b86c1143ef4d1d9",
+    "modified": "2026-11-21",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
@@ -555,8 +560,8 @@
     "published": "2026-04-18"
   },
   "loan/calculator.html": {
-    "digest": "df63d9f7b7fbc0200e4c02c7f2b8f514f3e4d310dde9f2815e0c5bb2ae9ed152",
-    "modified": "2026-10-16",
+    "digest": "71e63471b58b551f7960131c8e9405529512bc8cf7e9b3bfbff42370ca1c544e",
+    "modified": "2026-11-21",
     "published": "2026-04-18"
   },
   "loan/dsr.html": {

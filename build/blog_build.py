@@ -1433,6 +1433,20 @@ POSTS = [
               '자동차세 연납 후 차를 팔았을 때 일할 환급액 계산')],
  'relatedHeading': '함께 읽으면 좋은 글',
  'customHtml': False},
+    {'file': '승진_신용대출_금리인하요구권_이자계산',
+ 'slug': 'promotion-loan-rate-cut',
+ 'category': 'loan',
+ 'categoryLabel': '대출',
+ 'date': '2026-11-21',
+ 'readMin': 4,
+ 'ctaHref': 'https://taxcalc.co.kr/#loan/calculator',
+ 'ctaLabel': '대출이자 계산하기',
+ 'ctaHeading': '내 대출의 남은 이자 비교하기',
+ 'ctaDescription': '동일한 잔액·기간·상환 방식을 입력하고 금리만 바꿔 총이자 차이를 확인하세요.',
+ 'related': [('/blog/dsr-calculation-guide.html',
+              'DSR 계산 방법과 연소득 대비 원리금 상환 부담')],
+ 'relatedHeading': '함께 읽으면 좋은 글',
+ 'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------
