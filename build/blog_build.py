@@ -1449,6 +1449,7 @@ POSTS = [
  'customHtml': False},
     {'file': '신용대출_계약철회_중도상환_비용계산',
  'slug': 'loan-withdrawal',
+ 'showThumbnail': True,
  'category': 'loan',
  'categoryLabel': '대출',
  'date': '2026-11-22',
@@ -1707,6 +1708,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <meta property="og:description" content="{description}">
   <meta property="og:url" content="https://taxcalc.co.kr/blog/{slug}.html">
   <meta property="og:image" content="https://taxcalc.co.kr/thumbnails/{slug}.webp">
+  <meta property="og:image:alt" content="{image_alt}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="ko_KR">
@@ -1718,6 +1720,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <meta name="twitter:title" content="{og_title}">
   <meta name="twitter:description" content="{description}">
   <meta name="twitter:image" content="https://taxcalc.co.kr/thumbnails/{slug}.webp">
+  <meta name="twitter:image:alt" content="{image_alt}">
 
   <title>{title} | 세금계산기 블로그</title>
 
@@ -1828,6 +1831,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 
     <p class="lead">{description}</p>
 
+    {hero_image}
     {body_html}
 
     <div class="source-note">
@@ -1880,9 +1884,15 @@ def render_post(meta: dict, parsed: dict) -> str:
     if not related_html:
         related_html = '<a href="/blog/">다른 글 더 보기</a>'
 
+    hero_image = ""
+    if meta.get("showThumbnail"):
+        alt = html_escape(parsed["thumbnail_alt"] or parsed["title"])
+        hero_image = f'<img src="/thumbnails/{meta["slug"]}.webp" alt="{alt}" width="1200" height="630" style="max-width:100%;height:auto">'
     return add_related_posts(PAGE_TEMPLATE.format(
         title=html_escape(parsed["title"]),
         og_title=html_escape(parsed["title"]),
+        image_alt=html_escape(parsed["thumbnail_alt"] or parsed["title"]),
+        hero_image=hero_image,
         breadcrumb_title=html_escape(parsed["title"][:50]),
         description=html_escape(parsed["description"]),
         keywords=html_escape(",".join(parsed["hashtags"])),
@@ -2193,7 +2203,7 @@ def render_index(posts: list[dict]) -> str:
         excerpt = make_excerpt(parsed["description"])
         cards_html.append(f'''      <article class="post-card" data-category="{meta['category']}">
         <a class="post-thumb" href="/blog/{meta['slug']}.html">
-          <img src="/thumbnails/{meta['slug']}.webp" alt="{html_escape(parsed['title'][:60])}" width="1200" height="630" loading="lazy">
+          <img src="/thumbnails/{meta['slug']}.webp" alt="{html_escape(parsed['thumbnail_alt'] or parsed['title'])}" width="1200" height="630" loading="lazy">
         </a>
         <div class="post-body">
           <div class="post-meta">
@@ -2256,7 +2266,7 @@ def update_homepage_latest(posts):
         if not (OUT_DIR / (meta['slug'] + '.html')).exists():
             continue
         cards.append(f'''<article class="site-blog-card">
-        <a class="site-blog-thumb" href="/blog/{meta['slug']}.html"><img src="/thumbnails/{meta['slug']}.webp" alt="{html_escape(parsed['title'])}" width="1200" height="630" loading="lazy"></a>
+        <a class="site-blog-thumb" href="/blog/{meta['slug']}.html"><img src="/thumbnails/{meta['slug']}.webp" alt="{html_escape(parsed['thumbnail_alt'] or parsed['title'])}" width="1200" height="630" loading="lazy"></a>
         <h3><a href="/blog/{meta['slug']}.html">{html_escape(parsed['title'])}</a></h3>
         <p>{html_escape(make_excerpt(parsed['description']))}</p>
         <span class="site-blog-meta">{meta['date'].replace('-', '.')} · {meta['readMin']}분</span>

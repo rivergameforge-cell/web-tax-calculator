@@ -3,7 +3,7 @@
 
 <p data-ke-size="size16">은행 앱에서 오늘의 중도상환수수료가 ‘0원’으로 조회됐습니다. 대출을 받은 지 일주일이라 철회도 가능하다면 어떤 메뉴를 골라야 할까요? 오늘 빠져나갈 돈과 처리 후 남는 대출정보를 각각 살펴보면 결정하기 쉽습니다.</p>
 <p data-ke-size="size16">&nbsp;</p>
-<!-- 썸네일: withdrawal-tistory.webp -->
+<p data-ke-size="size16"><img src="https://taxcalc.co.kr/thumbnails/loan-withdrawal-tistory.webp" alt="‘대출 7일째 철회할까?’라는 문구 옆에 놓인 7일 달력과 철회 표시가 찍힌 대출계약서" width="1080" height="1080" style="max-width:100%;height:auto" /></p>
 <h2 data-ke-size="size26">오늘 날짜로 두 금액을 받아 보세요</h2>
 <center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>

@@ -149,8 +149,10 @@ def text_excerpt(body: str, limit: int = 160) -> str:
 def render_helper(title: str, body: str, tags: str, image_path: Path | None) -> str:
     image_abs = str(image_path) if image_path else ""
     image_name = image_path.name if image_path else "이미지 없음"
+    body_alt = re.search(r'<img\b[^>]*?\balt="([^"]+)"', body, re.I)
+    preview_alt = html.unescape(body_alt.group(1)) if body_alt else title
     preview_image = (
-        f'<img src="{image_path.resolve().as_uri()}" alt="thumbnail preview">'
+        f'<img src="{image_path.resolve().as_uri()}" alt="{html.escape(preview_alt)}">'
         if image_path
         else '<div class="no-image">연결된 썸네일이 없습니다.</div>'
     )
@@ -257,7 +259,7 @@ def render_helper(title: str, body: str, tags: str, image_path: Path | None) -> 
         <label>티스토리 에디터를 HTML 모드로 전환한 뒤 붙여넣기</label>
         <textarea id="body">{html.escape(body)}</textarea>
         <button onclick="copyValue('body')">본문 복사</button>
-        <p class="hint">이미지는 티스토리에 직접 업로드한 뒤 서론 다음, 첫 소제목 앞에 배치하세요. HTML을 붙여넣을 때도 업로드한 이미지 위치를 유지하세요.</p>
+        <p class="hint">본문에 이미지가 있으면 그대로 사용하세요. 직접 업로드할 때는 이미지 설정의 대체 텍스트에 아래 설명을 입력하고, 서론 다음에 이미지가 한 번만 표시되는지 확인하세요.</p>
       </section>
 
       <section>
@@ -272,6 +274,9 @@ def render_helper(title: str, body: str, tags: str, image_path: Path | None) -> 
       <section>
         <h2>썸네일</h2>
         {preview_image}
+        <label for="imageAlt">대체 텍스트</label>
+        <input id="imageAlt" value="{html.escape(preview_alt)}">
+        <button onclick="copyValue('imageAlt')">대체 텍스트 복사</button>
         <label style="margin-top:12px">로컬 이미지 경로</label>
         <input id="imagePath" value="{html.escape(image_abs)}">
         <button onclick="copyValue('imagePath')">이미지 경로 복사</button>
