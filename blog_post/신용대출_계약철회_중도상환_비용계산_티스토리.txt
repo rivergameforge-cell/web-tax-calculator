@@ -1,0 +1,37 @@
+<!-- 티스토리 제목 -->
+<!-- 신용대출 철회 14일, 중도상환수수료가 0원일 때도 철회가 유리할까? -->
+
+<p data-ke-size="size16">은행 앱에서 오늘의 중도상환수수료가 ‘0원’으로 조회됐습니다. 대출을 받은 지 일주일이라 철회도 가능하다면 어떤 메뉴를 골라야 할까요? 오늘 빠져나갈 돈과 처리 후 남는 대출정보를 각각 살펴보면 결정하기 쉽습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<!-- 썸네일: withdrawal-tistory.webp -->
+<h2 data-ke-size="size26">오늘 날짜로 두 금액을 받아 보세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">앱의 중도상환 예상조회에서 원금·이자·수수료를 적어 두세요. 이어 같은 계좌의 계약 철회 정산액을 조회합니다. 철회에는 중도상환수수료가 없지만 사용이자와 은행이 대신 낸 제3자 비용은 고객이 부담할 수 있습니다. 은행이 돌려줄 수수료가 있는지도 물어보세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">예를 들어 사용이자가 8,000원이고 중도상환수수료가 면제라고 해 보겠습니다. 철회 시 반환할 비용도 없다면 두 경우 모두 원금 외에 8,000원을 냅니다. 철회할 때 반환할 부대비용이 1만 원 있고 별도 환급액이 없다면 철회 쪽 지출은 1만 8,000원입니다. 실제 금액은 상품과 거래 내역에 따라 달라집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">계약일과 입금일이 다르면 어느 날짜를 볼까?</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">철회 대상 대출의 법정 기한은 원칙적으로 계약서류를 제공받은 날부터 14일입니다. 서류 제공이 적법하게 생략됐다면 계약일을 봅니다. 그보다 늦게 대출금이 입금됐다면 지급일이 기준입니다. 은행에 상품명과 실행일을 알려주고 해당 계좌의 마지막 접수일과 당일 마감 시각을 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">접수와 정산을 함께 마치세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">대출을 철회하려면 은행이 받는 방식으로 철회 의사를 표시하고 원금·사용이자·대상 부대비용을 반환해야 합니다. 전액 상환 메뉴만 눌렀다면 거래 내역을 열어 처리 방식을 확인하세요. 이미 상환한 거래의 처리 가능 여부는 해당 은행에 바로 문의하는 편이 정확합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">일반 상환은 채무를 갚은 이력이 남습니다. 철회가 완료된 경우 은행은 해당 대출정보가 5영업일 이내 삭제된다고 안내합니다. 처리 완료일과 접수 내역을 보관해 두세요. 대출을 유지할 때 남은 이자 부담도 함께 살펴보고 싶다면 아래 계산기에 잔액과 남은 기간을 넣어 보세요.</p>
+<p data-ke-size="size16">&nbsp;</p><p data-ke-size="size16"><a href="https://taxcalc.co.kr/loan/calculator.html" style="display:inline-block;padding:16px 22px;background:#1657be;color:#fff;border-radius:8px;text-decoration:none;">남은 대출의 월 상환액 계산하기</a></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">최근 직급이나 연소득이 올랐다면 유지할 대출의 금리를 낮춰 달라고 신청할 수 있는지도 확인하세요. 승진 후 금리인하요구권 신청 시점과 이자 차이를 다룬 글입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">https://kwonriver.co.kr/entry/promotionratecut2026</p>
+
+<!-- 해시태그 -->
+<!-- 대출계약철회, 중도상환, 신용대출, 청약철회권, 중도상환수수료, 대출이자, 이자계산, 대출상환, 전액상환, 은행앱 -->

@@ -1447,6 +1447,20 @@ POSTS = [
               'DSR 계산 방법과 연소득 대비 원리금 상환 부담')],
  'relatedHeading': '함께 읽으면 좋은 글',
  'customHtml': False},
+    {'file': '신용대출_계약철회_중도상환_비용계산',
+ 'slug': 'loan-withdrawal',
+ 'category': 'loan',
+ 'categoryLabel': '대출',
+ 'date': '2026-11-22',
+ 'readMin': 4,
+ 'ctaHref': 'https://taxcalc.co.kr/#loan/calculator',
+ 'ctaLabel': '대출이자 계산하기',
+ 'ctaHeading': '대출을 유지하면 이자는 얼마나 남을까?',
+ 'ctaDescription': '잔액과 남은 기간을 넣어 앞으로 낼 이자와 월 상환액을 확인하세요.',
+ 'related': [('/blog/promotion-loan-rate-cut.html',
+              '대출을 유지할 때 승진 후 금리인하요구권으로 줄일 수 있는 이자')],
+ 'relatedHeading': '함께 읽으면 좋은 글',
+ 'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------

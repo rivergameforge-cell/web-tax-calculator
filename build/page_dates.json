@@ -145,8 +145,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "25dff0f422f7f57ce90ba6a32954425364c57af98c8bb61b9baa82d0d35492b6",
-    "modified": "2026-11-21",
+    "digest": "00dab80b6aa4fbae40bc2178f0872a10a1af293f0c520156cdeb1e3846c4cbac",
+    "modified": "2026-11-22",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -178,6 +178,11 @@
     "digest": "3cb6b5d75e9d47a53df57b04abdc036290892c46d0a7482093247e05953cd722",
     "modified": "2026-10-22",
     "published": "2026-10-13"
+  },
+  "blog/loan-withdrawal.html": {
+    "digest": "83360762a5cd7c52531332c24e18747907149f52c6adc3f07d8dd5fa1acd4d85",
+    "modified": "2026-10-06",
+    "published": "2026-10-06"
   },
   "blog/long-term-repair-reserve-refund.html": {
     "digest": "f3bf5a734849e34640be123879a8b6e5808e3cb0ea80385cf3ca25a1cfc8ec5a",
@@ -545,8 +550,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "ec4b1b6f91302d8d382c3ecdf6c56b3bd46f255b6d698a7e6b86c1143ef4d1d9",
-    "modified": "2026-11-21",
+    "digest": "e1dfe0ec951ad62c91e3b279a4e526b77a750927fd3ed9372757482b09f1814a",
+    "modified": "2026-11-22",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {
@@ -560,8 +565,8 @@
     "published": "2026-04-18"
   },
   "loan/calculator.html": {
-    "digest": "71e63471b58b551f7960131c8e9405529512bc8cf7e9b3bfbff42370ca1c544e",
-    "modified": "2026-11-21",
+    "digest": "46d83afeed164599afd41738cee6bc4834ea09cb437c79b8dda77bd9cc7b2738",
+    "modified": "2026-11-22",
     "published": "2026-04-18"
   },
   "loan/dsr.html": {
