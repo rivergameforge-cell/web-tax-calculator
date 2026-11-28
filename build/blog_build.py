@@ -1492,6 +1492,21 @@ POSTS = [
               '겨울 난방비 지원금 확인하기 · 에너지바우처 신청과 고지서 차감액')],
  'relatedHeading': '함께 읽으면 좋은 글',
  'customHtml': False},
+    {'file': '12월_자동차세_고지서_납부조회_2026',
+     'slug': 'december-vehicle-tax-payment-2026',
+     'showThumbnail': True,
+     'category': 'vehicle',
+     'categoryLabel': '자동차 세금',
+     'date': '2026-11-29',
+     'readMin': 4,
+     'ctaHref': '/vehicle/vehicle-tax.html',
+     'ctaLabel': '자동차세 계산기',
+     'ctaHeading': '내 차의 예상 연간 자동차세를 확인하세요',
+     'ctaDescription': '차종·배기량·차령으로 계산한 예상액입니다. 실제 고지액과 납부 여부는 위택스 또는 서울시 이택스에서 확인하세요.',
+     'related': [['/blog/vehicle-tax-overdue.html', '납부기한이 지난 자동차세의 미납 조회와 납부'],
+                 ['/blog/vehicle-tax-sale-refund.html', '연납 후 차를 팔았을 때 자동차세 일할 정산과 환급']],
+     'relatedHeading': '함께 읽으면 좋은 글',
+     'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------

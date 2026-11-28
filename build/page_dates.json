@@ -44,6 +44,11 @@
     "modified": "2026-10-22",
     "published": "2026-10-14"
   },
+  "blog/december-vehicle-tax-payment-2026.html": {
+    "digest": "434fd3ea6db8a25fc4537ff0ec1e21163e62a6b38ade8cb1033582d193489edf",
+    "modified": "2026-11-29",
+    "published": "2026-11-29"
+  },
   "blog/dividend-health-insurance-dependent.html": {
     "digest": "aa3b1c4487d49af47b6f0dc27c8c32c9f70b0ca0059ccd3ba50089af9228ec27",
     "modified": "2026-10-25",
@@ -155,7 +160,7 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "274e7825737f01bd93f4e477f13bdabef4b306d1dbd6065309acd101ee2e55e0",
+    "digest": "39aa77fc70eb09210ee273de26bd654ec3629a114307b193d5113f5ca63e4c42",
     "modified": "2026-11-29",
     "published": "2026-05-05"
   },
@@ -560,7 +565,7 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "3b07297f9a7ba402a68f86fdaaf5408bb0578f242c05a99d7be68d856986557e",
+    "digest": "81c41680b9bbff9eea08e0bd1de6d793af9ac75b457d84a87030013c55e21696",
     "modified": "2026-11-29",
     "published": "2026-04-02"
   },
@@ -735,8 +740,8 @@
     "published": "2026-04-18"
   },
   "vehicle/vehicle-tax.html": {
-    "digest": "2b4c114cabb1a7bd14c4c1c82fc13275ca1104a76eb6fad7bcc0e6c9ca4830a1",
-    "modified": "2026-10-19",
+    "digest": "ce823c5f7c8bac76aae801caa037537b347f01f20d6bcbbcf2a853bf5d234dd2",
+    "modified": "2026-11-29",
     "published": "2026-04-18"
   }
 }
