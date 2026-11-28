@@ -1,0 +1,35 @@
+<!-- 티스토리 제목 -->
+<!-- 문화누리카드로 예매한 표, 12월 말에 취소하면 지원금 다시 쓸 수 있을까? -->
+
+<p data-ke-size="size16">연말에 예매한 표를 취소했는데 카드 잔액이 그대로일 수 있습니다. 문화누리카드 지원금은 12월 31일까지라서, 취소한 날짜보다 잔액이 돌아온 날짜에 따라 다시 쓸 수 있는 금액이 달라집니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><img src="https://taxcalc.co.kr/thumbnails/culture-nuri-card-balance-2026-tistory.webp" alt="12월 31일까지 남은 지원금이라는 문구와 달력, 보라색 카드와 공연 티켓" width="1080" height="1080" style="max-width:100%;height:auto" /></p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">취소 버튼을 누르기 전에 가맹점에 물어보세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">“지금 취소하면 카드 승인 취소는 오늘 처리되나요?” 결제 당일에 취소할 때는 대부분 당일 환불되지만, 기차나 시외버스 요금 등은 당일 환불을 기대하기 어렵습니다. 결제일이 지난 건은 가맹점에 따라 3~10영업일 정도 걸릴 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">예를 들어 12월 말에 2만 4,000원짜리 기차표를 취소했다고 가정해볼게요. 수수료가 없고 12월 31일 마감 전에 2만 4,000원이 실제 복원되면 남은 기간 동안 쓸 수 있습니다. 1월에 반영되면 그 금액은 2026년 지원금으로 다시 쓸 수 없습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">카드의 두 잔액을 구분하세요</h2>
+<p data-ke-size="size16">기본 지원금은 2026년 기준 1인당 15만 원입니다. 추가 지원 대상자는 1만 원을 더 받습니다. 올해 받은 지원금 중 남은 금액은 12월 31일 23시 59분이 지나면 국고로 돌아갑니다. 같은 카드에 내가 넣은 본인 충전금 잔액은 다음 해로 이월할 수 있으며, 사용기한은 카드의 유효기간을 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">내년 공연을 올해 미리 예매하고 1월에 취소하는 경우에도 올해 지원금에 해당하는 취소액은 국고로 반납됩니다. 예매 날짜와 공연 날짜가 다를 때는 가맹점의 취소·환불 조건을 특히 잘 살펴보세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">잔액 확인은 이렇게 하세요</h2>
+<center><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-2792604427181547" data-ad-slot="4883327520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</center>
+<p data-ke-size="size16">문화누리카드 누리집이나 앱의 ‘카드사용내역 및 잔액확인’에서 확인하세요. 전화는 문화누리카드 고객지원센터 1544-3412에서 2번을 누르면 잔액을 조회할 수 있습니다. 아직 환불이 표시되지 않는 건은 카드사에서 실제 반영 여부를 확인하세요.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">남은 지원금을 쓸 곳을 찾고 있다면 결제하기 전에 문화누리카드 가맹 여부부터 확인하세요. 서점·영화관·공연장이라고 해도 등록된 가맹점에서만 사용할 수 있습니다. 2026년도 신규 발급과 재충전은 11월 30일 오후 6시까지 접수하며, 지역 예산에 따라 조기에 마감될 수 있습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">함께 읽으면 좋은 글</h2>
+<p data-ke-size="size16">겨울 난방비 지원을 받고 있다면 에너지바우처 사용기한과 고지서 차감 방식도 확인해 보세요. 제도마다 사용 종료일과 잔액 확인 방법이 다릅니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><a href="https://kwonriver.co.kr/entry/energyvoucher2026">https://kwonriver.co.kr/entry/energyvoucher2026</a></p>
+
+<!-- 해시태그 -->
+<!-- 문화누리카드, 문화누리카드잔액, 문화누리카드사용기한, 문화누리카드환불, 문화생활지원, 연말지원금, 잔액조회 -->

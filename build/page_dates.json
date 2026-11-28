@@ -34,6 +34,11 @@
     "modified": "2026-11-16",
     "published": "2026-07-19"
   },
+  "blog/culture-nuri-card-balance-2026.html": {
+    "digest": "fa61d79b1e138af339a286e07979d94d2da386dcdd26418a56e38a951b1f1e1c",
+    "modified": "2026-10-06",
+    "published": "2026-10-06"
+  },
   "blog/daily-worker-tax-15m-20m.html": {
     "digest": "dc4aa9755b75234c82b38df8822c409303cda1956f60f82b12f392f552cee941",
     "modified": "2026-10-22",
@@ -150,8 +155,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "2d6c7b803c63f68ebdaba97570004171ad275408fa65c290d16c1fd97eb1a3ed",
-    "modified": "2026-11-28",
+    "digest": "274e7825737f01bd93f4e477f13bdabef4b306d1dbd6065309acd101ee2e55e0",
+    "modified": "2026-11-29",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -555,8 +560,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "c7ee02a87f34418aae12a2c953f003e4556878d7dd8a5046757564d7f8b97dff",
-    "modified": "2026-11-28",
+    "digest": "3b07297f9a7ba402a68f86fdaaf5408bb0578f242c05a99d7be68d856986557e",
+    "modified": "2026-11-29",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {

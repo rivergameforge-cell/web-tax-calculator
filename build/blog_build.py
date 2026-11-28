@@ -1477,6 +1477,21 @@ POSTS = [
               '가구 소득에 따른 2026년 근로장려금 지급 기준')],
  'relatedHeading': '함께 읽으면 좋은 글',
  'customHtml': False},
+    {'file': '문화누리카드_잔액_연말취소_2026',
+ 'slug': 'culture-nuri-card-balance-2026',
+ 'showThumbnail': True,
+ 'category': 'other',
+ 'categoryLabel': '생활 경제',
+ 'date': '2026-11-29',
+ 'readMin': 4,
+ 'ctaHref': 'https://m.mnuri.kr/card/confirmBalance/cardIssue_step01.do',
+ 'ctaLabel': '문화누리카드 잔액 조회',
+ 'ctaHeading': '카드에 남은 지원금을 확인하세요',
+ 'ctaDescription': '문화누리카드 공식 누리집에서 본인인증 후 사용내역과 잔액을 볼 수 있습니다.',
+ 'related': [('/blog/energy-voucher-2026.html',
+              '겨울 난방비 지원금 확인하기 · 에너지바우처 신청과 고지서 차감액')],
+ 'relatedHeading': '함께 읽으면 좋은 글',
+ 'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------
