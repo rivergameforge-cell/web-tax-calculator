@@ -89,6 +89,11 @@
     "modified": "2026-11-10",
     "published": "2026-11-05"
   },
+  "blog/energy-voucher-2026.html": {
+    "digest": "f88d1a507ae46b9ea5126ebb246729456010ad5dcf6428ee75f282b0c6f0dac3",
+    "modified": "2026-10-06",
+    "published": "2026-10-06"
+  },
   "blog/family-loan-promissory-note-gift-tax.html": {
     "digest": "bab551887dc673f7569b1e3cb8b85b07bae1c296afef3e30443741bfaf27e366",
     "modified": "2026-11-15",
@@ -145,8 +150,8 @@
     "published": "2026-07-12"
   },
   "blog/index.html": {
-    "digest": "00dab80b6aa4fbae40bc2178f0872a10a1af293f0c520156cdeb1e3846c4cbac",
-    "modified": "2026-11-22",
+    "digest": "2d6c7b803c63f68ebdaba97570004171ad275408fa65c290d16c1fd97eb1a3ed",
+    "modified": "2026-11-28",
     "published": "2026-05-05"
   },
   "blog/inheritance-tax-guide.html": {
@@ -180,8 +185,8 @@
     "published": "2026-10-13"
   },
   "blog/loan-withdrawal.html": {
-    "digest": "83360762a5cd7c52531332c24e18747907149f52c6adc3f07d8dd5fa1acd4d85",
-    "modified": "2026-10-06",
+    "digest": "260ccae3930b8b48f76448fa10ea8d02e28f114169bf77f6e269cc33538808c6",
+    "modified": "2026-11-28",
     "published": "2026-10-06"
   },
   "blog/long-term-repair-reserve-refund.html": {
@@ -550,8 +555,8 @@
     "published": "2026-04-18"
   },
   "index.html": {
-    "digest": "e1dfe0ec951ad62c91e3b279a4e526b77a750927fd3ed9372757482b09f1814a",
-    "modified": "2026-11-22",
+    "digest": "c7ee02a87f34418aae12a2c953f003e4556878d7dd8a5046757564d7f8b97dff",
+    "modified": "2026-11-28",
     "published": "2026-04-02"
   },
   "inherit/gift.html": {

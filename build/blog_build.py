@@ -1462,6 +1462,21 @@ POSTS = [
               '대출을 유지할 때 승진 후 금리인하요구권으로 줄일 수 있는 이자')],
  'relatedHeading': '함께 읽으면 좋은 글',
  'customHtml': False},
+    {'file': '에너지바우처_겨울_요금차감_2026',
+ 'slug': 'energy-voucher-2026',
+ 'showThumbnail': True,
+ 'category': 'other',
+ 'categoryLabel': '생활 경제',
+ 'date': '2026-11-28',
+ 'readMin': 4,
+ 'ctaHref': 'https://www.energyv.or.kr/info/energyv_smu.do',
+ 'ctaLabel': '에너지바우처 모의계산',
+ 'ctaHeading': '우리 세대의 신청 요건 확인하기',
+ 'ctaDescription': '한국에너지공단의 모의계산에서 소득과 세대원 특성을 확인하세요.',
+ 'related': [('/blog/earned-income-tax-credit-2026-payment.html',
+              '가구 소득에 따른 2026년 근로장려금 지급 기준')],
+ 'relatedHeading': '함께 읽으면 좋은 글',
+ 'customHtml': False},
 ]
 
 # ---------------------------------------------------------------------------
